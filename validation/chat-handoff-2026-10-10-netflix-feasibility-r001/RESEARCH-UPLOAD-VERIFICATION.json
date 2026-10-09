@@ -1,0 +1,51 @@
+{
+  "verified_at": "2026-10-09T23:51:06.472605+00:00",
+  "repository": "zdadoosh22/company-research-work",
+  "url": "https://github.com/zdadoosh22/company-research-work",
+  "repository_id": 1412109923,
+  "private": true,
+  "standalone": true,
+  "branch": "main",
+  "commit": "1886bebe9865c091ef40224324cd579fd0c512c1",
+  "tree_files": 499,
+  "all_blob_ids_match": true,
+  "critical_raw_byte_checks": [
+    {
+      "path": "validation/netflix-feasibility-checkpoint-2026-10-10.md",
+      "sha256": "1fdfca08497ef2593d9a24b45b3b2f6bb8c8f81ef1cf63c9ac2ae9229177111d",
+      "bytes": 7168,
+      "match": true
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-feasibility-disposition-r001.json",
+      "sha256": "5ec4139b2742887ba4df1b247efc058bbe1730b7e492a1fee013ba856b9e71bd",
+      "bytes": 2945,
+      "match": true
+    },
+    {
+      "path": "validation/netflix-framework-calculations-r002.json",
+      "sha256": "9308b21d0002acd1ac9887e464b91448dbd234ea94e3da0c4b90de7338f39747",
+      "bytes": 200784,
+      "match": true
+    },
+    {
+      "path": "validation/netflix-framework-astra-challenge-r002.json",
+      "sha256": "e0b88266c98a568386e554f7e7642226d0df873bdb7f6ef4151970aef0ec7547",
+      "bytes": 29068,
+      "match": true
+    },
+    {
+      "path": "validation/netflix-framework-clarifications-r003.md",
+      "sha256": "11b1aea5a4db44fee2c82efe1584904b95b105ff2d8530bd5796c2816eeb49b2",
+      "bytes": 1381,
+      "match": true
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+      "bytes": 59411,
+      "match": true
+    }
+  ],
+  "chat_plugin_access_demonstrated": false
+}

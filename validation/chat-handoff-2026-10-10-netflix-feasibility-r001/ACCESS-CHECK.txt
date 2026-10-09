@@ -1,0 +1,5 @@
+Repository: zdadoosh22/company-research-work
+Project: Company research2 only
+Checkpoint: Netflix conditional feasibility,10October2026
+Challenge ID: 8851903a-0af5-4ea0-b016-44731013f73f
+Return this ID only after actual GitHub retrieval at the supplied commit; attachments do not prove access.
