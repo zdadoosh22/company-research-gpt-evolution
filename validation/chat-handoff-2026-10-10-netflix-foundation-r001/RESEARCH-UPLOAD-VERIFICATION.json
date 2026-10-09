@@ -1,0 +1,46 @@
+{
+  "verified_at": "2026-10-09T23:03:05.315830+00:00",
+  "repository": "zdadoosh22/company-research-work",
+  "commit": "ec115a40b27e23c357ede4c9a11e382321bb6c6d",
+  "branch": "main",
+  "tree_files": 460,
+  "all_blob_ids_match": true,
+  "critical_raw_byte_checks": [
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+      "bytes": 59411,
+      "match": true
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-foundation-disposition-r001.md",
+      "sha256": "9d80977ce8824d9788052c198696d86322c4890b53abaefa16b9f11be07dbb4e",
+      "bytes": 6170,
+      "match": true
+    },
+    {
+      "path": "validation/netflix-foundation-astra-challenge-r001.md",
+      "sha256": "9e7e7ce16a2a47a60d64833a1cbd58d43db58418de38878f4ff75ae8388d60bd",
+      "bytes": 14231,
+      "match": true
+    },
+    {
+      "path": "validation/netflix-foundation-astra-challenge-r002.md",
+      "sha256": "2f9b78eb306328eae687b5763509cfec6a21dd4d95a1cc10bc428a59aaa7ea3c",
+      "bytes": 4704,
+      "match": true
+    },
+    {
+      "path": "validation/netflix-foundation-calculations-r002.py",
+      "sha256": "520acad1746f6ca637ea432ce8e712953f2321b3a280a76184e73064d683593e",
+      "bytes": 8191,
+      "match": true
+    },
+    {
+      "path": "validation/netflix-foundation-checkpoint-2026-10-10.md",
+      "sha256": "d516474501c7bacf6b13b0e98fc9ad25f144a8af07f6f2a1c49361a028bb2253",
+      "bytes": 5731,
+      "match": true
+    }
+  ]
+}

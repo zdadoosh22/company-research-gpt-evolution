@@ -1,0 +1,4 @@
+Repository-retrieval challenge (non-secret): e2ced1ab-8c7d-4c26-9b25-6ffe7860cc77
+Project: Company research (work)
+Scope: Netflix foundation handoff
+Retrieve through GitHub at pinned publishing commit; do not upload this with fallback attachments.
