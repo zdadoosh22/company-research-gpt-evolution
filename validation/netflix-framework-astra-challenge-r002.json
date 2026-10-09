@@ -1,0 +1,818 @@
+{
+  "schema": "independent-model-challenge-v1",
+  "revision": "r002",
+  "stage": "Netflix changed conditional economic framework",
+  "reviewed_utc": "2026-10-09T23:45:47.231101+00:00",
+  "london_date": "2026-10-10",
+  "information_cutoff": "2026-10-09",
+  "model_route": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning": "high",
+    "selected_route_reported_by_parent": "GPT-6 Astra High",
+    "reported_backend_model": null,
+    "reported_actual_reasoning": null,
+    "identity_limit": "Independently delegated review performed; backend identity and actual setting not exposed to reviewer."
+  },
+  "outcome": "accept_limited_conditional_framework_with_reviewed_r003_clarification",
+  "unresolved_material_findings": 0,
+  "investment_approval": false,
+  "actionable": false,
+  "current_intrinsic_value": null,
+  "entry_ceiling": null,
+  "prior_finding_disposition": {
+    "id": "NFLX-FEAS-ASTRA-001",
+    "outcome": "resolved_for_scoped_conditional_framework",
+    "reason": "r002 calculates combined causal cash paths, commitment schedules, rate sensitivities, funded terminal economics and a limited historical conversion diagnostic. This does not approve a current value or opportunity."
+  },
+  "findings": [
+    {
+      "id": "NFLX-FRAME-ASTRA-001",
+      "severity": "low",
+      "type": "verified_prose_defect",
+      "location": "monitoring/studies/2026-10-10-netflix-framework-r002.md Results paragraph",
+      "finding": "Negative annual distribution is inaccurate: only the6bn downside stress produces negative2028FCFE; distribution is zero and the reserve funds the shortfall. All4bn downside annualFCFE remain positive.",
+      "proposed_fix": "Clarify6bn stress negativeFCFE, zero distribution and reserve draw; distinguish4bn case.",
+      "outcome": "closed_by_actual_review_of_frozen_r003_supplement",
+      "correction_path": "validation/netflix-framework-clarifications-r003.md",
+      "correction_sha256": "11b1aea5a4db44fee2c82efe1584904b95b105ff2d8530bd5796c2816eeb49b2",
+      "economic_inputs_changed": false
+    }
+  ],
+  "reviewed_scope": {
+    "main_manifest": "validation/netflix-framework-review-input-r002.json",
+    "main_file_count": 8,
+    "supplement_manifest": "validation/netflix-framework-clarification-review-input-r003.json",
+    "supplement_file_count": 1,
+    "preserved_predecessor_file_count": 36,
+    "closed_foundation_audit_repeated": false
+  },
+  "check_count": 118,
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "name": "Frozen hash and size monitoring/studies/2026-10-10-netflix-framework-r002.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-framework-calculations-r002.py",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-framework-calculations-r002.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-feasibility-astra-challenge-r001.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-feasibility-astra-challenge-r001.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-10-netflix-framework-r002/20261009T232956Z-sector-betas-10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b.html",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-10-netflix-framework-r002/20261009T232958Z-fed-inflation-reference-7ab589467712758fbe8ceffd3b82cf8b107576a0ca3a3039417542d4bb113c14.html",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-10-netflix-framework-r002/source-retrieval-register.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size AGENTS.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size workflows/model-review.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/DECISION-SCOPE.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size methodology/current.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size methodology/company-research-v1.0.0.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-feasibility-calculations-r001.py",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-feasibility-calculations-r001.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-feasibility-baseline-2026-10-10-r001.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/2026-10-09-netflix-foundation-r001.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/decisions/2026-10-10-netflix-foundation-disposition-r001.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/decisions/2026-10-10-netflix-foundation-disposition-r001.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-foundation-calculations-r002.py",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-foundation-calculations-r002.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-foundation-cash-note-r001.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-foundation-cash-note-r001.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-foundation-source-note-r001.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-foundation-source-note-r001.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-foundation-expectations-r001.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-foundation-adverse-tests-r001.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-foundation-astra-challenge-r001.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size validation/netflix-foundation-astra-challenge-r002.md",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T231744Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T231744Z-valuation-input-home-755ad4d972431c7852bc0a723630d86cbfc84b14febb259858d1938458c0e0c7.html",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T231745Z-engagement-h1-fef3c5879f2196c01454d604ef5e0ae541b0bf3477b67411211fe188c1961711.html",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T232047Z-q1-letter-d3565e03e6a861c5fe111851670d4633b7d692dfa570de2270cbd63d70c78608.derived.txt",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T232047Z-q1-letter-d3565e03e6a861c5fe111851670d4633b7d692dfa570de2270cbd63d70c78608.pdf",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/source-retrieval-register.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224845274012Z-q4-2025-letter-d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327.pdf",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224846955058Z-q2-2026-sec-b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98.html",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224847361078Z-july-issue-sec-91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd.html",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224940614552Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224940722917Z-july-underwriting-920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd.html",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224950280191Z-2025-10k-3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af.html",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/20261009T125707505467Z-q2-letter-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Frozen hash and size monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/20261009T125829535587Z-q3-2025-letter-cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031.pdf",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields downside/covered",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal downside/covered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares downside/covered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry downside/covered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields downside/partial_uncovered",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal downside/partial_uncovered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares downside/partial_uncovered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry downside/partial_uncovered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields downside/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal downside/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares downside/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry downside/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields downside/beyond_management_range_stress",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal downside/beyond_management_range_stress",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares downside/beyond_management_range_stress",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry downside/beyond_management_range_stress",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields central/covered",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal central/covered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares central/covered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry central/covered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields central/partial_uncovered",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal central/partial_uncovered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares central/partial_uncovered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry central/partial_uncovered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields central/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal central/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares central/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry central/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields central/beyond_management_range_stress",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal central/beyond_management_range_stress",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares central/beyond_management_range_stress",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry central/beyond_management_range_stress",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields upside/covered",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal upside/covered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares upside/covered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry upside/covered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields upside/partial_uncovered",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal upside/partial_uncovered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares upside/partial_uncovered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry upside/partial_uncovered",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields upside/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal upside/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares upside/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry upside/full_uncovered_range_endpoint",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent 200 annual fields upside/beyond_management_range_stress",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "Independent component and terminal upside/beyond_management_range_stress",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent conversion diagnostic and shares upside/beyond_management_range_stress",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "No current value or entry upside/beyond_management_range_stress",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity downside/covered/0.0949",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity downside/covered/0.1170",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity downside/full_uncovered_range_endpoint/0.0949",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity downside/full_uncovered_range_endpoint/0.1170",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity central/covered/0.0949",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity central/covered/0.1170",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity central/full_uncovered_range_endpoint/0.0949",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity central/full_uncovered_range_endpoint/0.1170",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity upside/covered/0.0949",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity upside/covered/0.1170",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity upside/full_uncovered_range_endpoint/0.0949",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent rate sensitivity upside/full_uncovered_range_endpoint/0.1170",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Four billion downside has no negative annual FCFE",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Six billion downside draws reserve in 2028 only",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Zero distribution and adequate annual reserve for six billion stress",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Four billion PV loss matches dated explicit deductions",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Independent historical cash bridge and fully decomposed residual",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Isolated author replay equals frozen JSON",
+      "pass": true,
+      "details": {
+        "author_assertions": 78
+      }
+    },
+    {
+      "name": "Actual authored model rejects unfunded negative-economics mutation",
+      "pass": true,
+      "details": {
+        "rejected": true,
+        "reason": "downside/beyond_management_range_stress/0.105950 funded annual path"
+      }
+    },
+    {
+      "name": "Higher growth reinvestment lowers upside component",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "New official-origin source content sector-betas",
+      "pass": true,
+      "details": {
+        "id": "sector-betas",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+        "review_retrieved_utc": "2026-10-09T23:43:07.282342+00:00",
+        "final_url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+        "status": 200,
+        "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+        "bytes": 464334,
+        "matches_frozen_raw": true
+      }
+    },
+    {
+      "name": "New official-origin source content fed-inflation-reference",
+      "pass": true,
+      "details": {
+        "id": "fed-inflation-reference",
+        "url": "https://www.federalreserve.gov/faqs/economy_14400.htm",
+        "review_retrieved_utc": "2026-10-09T23:43:07.283348+00:00",
+        "final_url": "https://www.federalreserve.gov/faqs/economy_14400.htm",
+        "status": 200,
+        "sha256": "4a9ff8e4932c2e39a2ebc9bda6b11f4e9cdb0986803aa179a2b35714465d65da",
+        "bytes": 83885,
+        "matches_frozen_raw": false,
+        "raw_difference_note": "Raw HTML differs; compare visible text separately. Review observed changing Cloudflare email-encoding and challenge attributes.",
+        "normalized_visible_text_matches": true
+      }
+    },
+    {
+      "name": "Supplement r003 frozen hash and byte length",
+      "pass": true,
+      "details": {
+        "path": "validation/netflix-framework-clarifications-r003.md",
+        "sha256": "11b1aea5a4db44fee2c82efe1584904b95b105ff2d8530bd5796c2816eeb49b2",
+        "bytes": 1381
+      }
+    },
+    {
+      "name": "Supplement r003 six decimal cash figures agree",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Supplement r003 distinguishes zero distribution and the 6bn stress",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "Fed raw variation isolated to Cloudflare email/challenge encodings",
+      "pass": true,
+      "details": null
+    }
+  ],
+  "reconstructed_outputs": [
+    {
+      "case": "downside",
+      "coverage": "covered",
+      "per_claim": 15.901333982795661,
+      "terminal_percent": 50.368581124369705,
+      "minimum_liquidity": 9127.91
+    },
+    {
+      "case": "downside",
+      "coverage": "partial_uncovered",
+      "per_claim": 15.51474819629014,
+      "terminal_percent": 51.623630661930854,
+      "minimum_liquidity": 9127.91
+    },
+    {
+      "case": "downside",
+      "coverage": "full_uncovered_range_endpoint",
+      "per_claim": 15.128162409784624,
+      "terminal_percent": 52.942823391432825,
+      "minimum_liquidity": 9127.91
+    },
+    {
+      "case": "downside",
+      "coverage": "beyond_management_range_stress",
+      "per_claim": 14.741576623279107,
+      "terminal_percent": 54.33120562107029,
+      "minimum_liquidity": 8315.998543715068
+    },
+    {
+      "case": "central",
+      "coverage": "covered",
+      "per_claim": 33.40499121209821,
+      "terminal_percent": 51.747634188411354,
+      "minimum_liquidity": 9127.91
+    },
+    {
+      "case": "central",
+      "coverage": "partial_uncovered",
+      "per_claim": 33.01840542559269,
+      "terminal_percent": 52.35350535646665,
+      "minimum_liquidity": 9127.91
+    },
+    {
+      "case": "central",
+      "coverage": "full_uncovered_range_endpoint",
+      "per_claim": 32.631819639087176,
+      "terminal_percent": 52.973731910437515,
+      "minimum_liquidity": 9127.91
+    },
+    {
+      "case": "central",
+      "coverage": "beyond_management_range_stress",
+      "per_claim": 32.245233852581656,
+      "terminal_percent": 53.60883016738781,
+      "minimum_liquidity": 9127.91
+    },
+    {
+      "case": "upside",
+      "coverage": "covered",
+      "per_claim": 53.04632270203135,
+      "terminal_percent": 51.86091023996465,
+      "minimum_liquidity": 9127.91
+    },
+    {
+      "case": "upside",
+      "coverage": "partial_uncovered",
+      "per_claim": 52.659736915525826,
+      "terminal_percent": 52.241631678170286,
+      "minimum_liquidity": 9127.91
+    },
+    {
+      "case": "upside",
+      "coverage": "full_uncovered_range_endpoint",
+      "per_claim": 52.27315112902031,
+      "terminal_percent": 52.62798436275954,
+      "minimum_liquidity": 9127.91
+    },
+    {
+      "case": "upside",
+      "coverage": "beyond_management_range_stress",
+      "per_claim": 51.88656534251479,
+      "terminal_percent": 53.020094162141596,
+      "minimum_liquidity": 9127.91
+    }
+  ],
+  "source_origin_checks": [
+    {
+      "id": "sector-betas",
+      "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+      "review_retrieved_utc": "2026-10-09T23:43:07.282342+00:00",
+      "final_url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+      "status": 200,
+      "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+      "bytes": 464334,
+      "matches_frozen_raw": true
+    },
+    {
+      "id": "fed-inflation-reference",
+      "url": "https://www.federalreserve.gov/faqs/economy_14400.htm",
+      "review_retrieved_utc": "2026-10-09T23:43:07.283348+00:00",
+      "final_url": "https://www.federalreserve.gov/faqs/economy_14400.htm",
+      "status": 200,
+      "sha256": "4a9ff8e4932c2e39a2ebc9bda6b11f4e9cdb0986803aa179a2b35714465d65da",
+      "bytes": 83885,
+      "matches_frozen_raw": false,
+      "raw_difference_note": "Raw HTML differs; compare visible text separately. Review observed changing Cloudflare email-encoding and challenge attributes.",
+      "normalized_visible_text_matches": true
+    }
+  ],
+  "negative_cash_case": {
+    "case": "downside/beyond_management_range_stress",
+    "year": 2028,
+    "fcfe": -811.9114562849325,
+    "available_distribution": 0,
+    "minimum_liquidity": 8315.998543715068
+  },
+  "four_billion_downside_minimum_fcfe": 188.0885437150676,
+  "alternative_assumptions_not_errors": {
+    "upside_same_case_with_full_content_asset_growth_intensity": 49.63860320146895,
+    "upside_reported_half_intensity": 52.27315112902031
+  },
+  "reviewer_harness_notes": [
+    "Initial reviewer expected full Fed HTML byte equality; changed Cloudflare email/challenge encodings made that overly strict. Visible text matches and byte differences are isolated to those encodings. No frozen source was altered.",
+    "A slow general byte-diff helper was stopped and replaced by focused attribute comparison. Numeric reconstruction had already completed successfully."
+  ],
+  "remaining_limitations": [
+    "Explicit analyst forecast cases are not probabilities or exhaustive valuation bounds; stronger contraction/permanent impairment can be worse.",
+    "Aggregate content asset and cash roll simplifies licensed liabilities, production timing, incentives and FX; productivity is unproved.",
+    "Prospective cash-tax and interest scenarios are not contractual maxima or exact coupon schedules.",
+    "Historical claims/cash are pro forma conditions; actual January/current and intrayear funding are not verified.",
+    "Opening surplus cash and exercise proceeds are excluded, so components are not total equity values.",
+    "Constant judgemental equity discount rate and terminal persistence are assumptions; about half the component is terminal.",
+    "Historical-conversion cross-check has tax/accounting definition mismatch; same-input terminal earnings is only algebra.",
+    "No matched quarterly consensus, current price, event surprise, manual fill or advantage over cash established."
+  ],
+  "source_authenticity_note": "NYU raw refetch identical. Fed raw HTML differs only in Cloudflare email/challenge encodings; exact visible content and focused attribute-normalized bytes agree. Frozen archives unchanged.",
+  "authority_limits": "No trades/accounts/paid services/monitoring changes/new research stage/author-file edits. Parent alone dispositions, completes goal and publishes.",
+  "report": {
+    "path": "validation/netflix-framework-astra-challenge-r002.md",
+    "sha256": "1c5df5a6f41aa7a8ca899da695bf44bda8e8c0df2dc54135f221937adf5d8c73"
+  },
+  "reviewed_manifest": {
+    "path": "validation/netflix-framework-astra-reviewed-manifest-r002.json",
+    "sha256": "df4162bb3318d1f6d0115be4206ac9c1a4322d79bc54fcc8c470cc1bf4827e89"
+  }
+}

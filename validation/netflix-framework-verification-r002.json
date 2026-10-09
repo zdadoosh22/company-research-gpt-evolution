@@ -1,0 +1,109 @@
+{
+  "schema": "targeted-framework-verification-v1",
+  "scope": "Preservation, arithmetic, future-date/funding and conditional stress checks; no investment/operational acceptance",
+  "passed": 20,
+  "failed": 0,
+  "results": [
+    {
+      "name": "frozen inputs validation/netflix-feasibility-review-input-r001.json",
+      "pass": true,
+      "detail": 36
+    },
+    {
+      "name": "frozen inputs validation/netflix-framework-review-input-r002.json",
+      "pass": true,
+      "detail": 8
+    },
+    {
+      "name": "466 original predecessors preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "changed-model deterministic replay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "78 model checks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "historical cash population bridge fully decomposed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no current value or action produced",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "12 combined business/coverage paths",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "explicit 10-year paths",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "scheduled principal pays all except2054notes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all paths funded under named proforma condition",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mature growth has content reinvestment",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "future values do not import historical2026 cash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "independent scheduled uncovered PV downside",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "content asset roll downside",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "independent scheduled uncovered PV central",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "content asset roll central",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "independent scheduled uncovered PV upside",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "content asset roll upside",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "rate sensitivity lowers component at higher equity return",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "full_engineering_suite_rerun": false
+}

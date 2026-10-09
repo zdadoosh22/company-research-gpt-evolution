@@ -1,0 +1,80 @@
+{
+  "schema": "targeted-verification-v1",
+  "scope": "Preservation, exact source passages and reproducible bounded arithmetic only; no investment/forecast or operational acceptance",
+  "results": [
+    {
+      "name": "all predecessor bytes preserved",
+      "pass": true,
+      "details": {
+        "files": 466
+      }
+    },
+    {
+      "name": "all frozen review inputs preserved",
+      "pass": true,
+      "details": {
+        "files": 36
+      }
+    },
+    {
+      "name": "approved method 1.0.0 unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "calculation replay byte-identical",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "independent Fraction claims check",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "independent conditional response identity",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "numeric valuation and actionable conclusions withheld",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "new source bytes and retrieval outcomes verified",
+      "pass": true,
+      "details": {
+        "raw_files": 4,
+        "sec_direct_raw_failure_retained": "raw-unavailable"
+      }
+    },
+    {
+      "name": "Q1 archived primary actual passage",
+      "pass": true,
+      "details": {
+        "location": "Q1 issuer PDF p5, visually reviewed separately"
+      }
+    },
+    {
+      "name": "January pre-fee guide and Brazil timing primary passages",
+      "pass": true,
+      "details": {
+        "location": "Q4 2025 issuer cash-flow section"
+      }
+    },
+    {
+      "name": "author rate reference dated October not cached September",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "latest listed financial quarter not presumed October",
+      "pass": true,
+      "details": null
+    }
+  ],
+  "passed": 12,
+  "failed": 0,
+  "full_engineering_suite_rerun": false
+}

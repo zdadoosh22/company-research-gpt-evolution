@@ -1,0 +1,124 @@
+{
+  "schema": "netflix-feasibility-arithmetic-v1",
+  "revision": "r001",
+  "units": "USD million; shares million on post-Nov2025 split basis; source rates percent",
+  "guidance_bridge": {
+    "january_2026_fcf": "11000",
+    "april_july_2026_fcf": "12500",
+    "gross_termination_receipt": "2800",
+    "increase": "1500",
+    "unallocated_tax_and_other_changes_residual": "1300",
+    "receipt_cash_tax": null,
+    "scope": "Approximate, changed management projections; primarily after-tax fee impact does not isolate taxes or freeze every other component."
+  },
+  "conditional_receipt_envelope": {
+    "tax_assumption": [
+      "0",
+      "2800"
+    ],
+    "fcf_ex_receipt": [
+      "9700",
+      "12500"
+    ],
+    "economic_owner_cash": null
+  },
+  "claims_june_30": {
+    "actual_common": "4163.939676",
+    "known_options": "123.891603",
+    "known_unvested_awards": "2.012512",
+    "gross_potential_claims": "4289.843791",
+    "gross_dilution_percent": "3.023677689801383184111238791154900",
+    "per_share_ratio_no_proceeds": "0.9706506527663911387397182733453988",
+    "scope": "Dated gross known-award sensitivity; all exercises/no exercise proceeds; not current fully diluted shares and not a cap on future issuance."
+  },
+  "content_commitments": {
+    "management_range_total_three_years": [
+      "1000",
+      "4000"
+    ],
+    "incremental_uncovered_cash_conditional_range": [
+      "0",
+      "4000"
+    ],
+    "upper_total_divided_by_one_year_january_guide_percent": "36.36363636363636363636363636363636",
+    "scope": "Magnitude comparison across different periods only; not annual burden. Could overlap entirely with planned spend; exact timing, tax effect, replacement and forecast coverage unknown; management estimate not a contractual maximum."
+  },
+  "ad_guidance": {
+    "approx_2025_revenue": "1500",
+    "approx_2026_revenue": "3000",
+    "already_expected_sales_increment": "1500",
+    "scope": "Issuer interested guidance, in July revenue/margin baseline; not additional upside; no incremental margin chosen."
+  },
+  "issuer_fy_oi_interval": [
+    "16065.000",
+    "16191.000"
+  ],
+  "provider_fy_oi": "16120",
+  "q3_comparator_burden": "524.553",
+  "response_sensitivities": [
+    {
+      "per_share_earnings_ratio": "1",
+      "break_even_multiple_ratio": "1",
+      "support_ratio_at_10pct_compression": "0.9",
+      "support_ratio_at_20pct_compression": "0.8"
+    },
+    {
+      "per_share_earnings_ratio": "1.05",
+      "break_even_multiple_ratio": "0.9523809523809523809523809523809524",
+      "support_ratio_at_10pct_compression": "0.945",
+      "support_ratio_at_20pct_compression": "0.840"
+    },
+    {
+      "per_share_earnings_ratio": "1.10",
+      "break_even_multiple_ratio": "0.9090909090909090909090909090909091",
+      "support_ratio_at_10pct_compression": "0.990",
+      "support_ratio_at_20pct_compression": "0.880"
+    },
+    {
+      "per_share_earnings_ratio": "1.20",
+      "break_even_multiple_ratio": "0.8333333333333333333333333333333333",
+      "support_ratio_at_10pct_compression": "1.080",
+      "support_ratio_at_20pct_compression": "0.960"
+    }
+  ],
+  "response_scope": "Algebra for positive consistently defined per-share earnings and positive multiples. Chosen percentage changes are stress examples, not forecasts/probabilities/actual price returns; cash/FX/costs excluded.",
+  "discount_source": {
+    "as_of": "2026-10-01",
+    "author_treasury_reference_percent": "5.29",
+    "trailing_adjusted_payout_erp_percent": "4.20",
+    "default_spread_percent": ".22",
+    "adjusted_rf_percent": "5.07",
+    "adjusted_erp_percent": "4.42",
+    "illustrative_market_return_beta_one_percent": "9.49",
+    "netflix_beta": null,
+    "netflix_discount_rate": null,
+    "scope": "NYU author estimates and reference inputs, not independently obtained Treasury quote; beta-one sum is arithmetic, not Netflix required return."
+  },
+  "valuation": null,
+  "normalized_owner_cash": null,
+  "entry_ceiling": null,
+  "actionable": false,
+  "checks": [
+    "guide increase",
+    "unallocated residual not an actual tax amount",
+    "conditional FY receipt exclusion agrees with reviewed foundation",
+    "claims are positive and gross denominator larger",
+    "gross known-award dilution below 3.1 percent",
+    "anti-dilutive options not added again",
+    "cash tax envelope order",
+    "three-year upper magnitude/ref comparison",
+    "ad increment pre-tax contribution cannot exceed sales under stated assumption",
+    "guided OI bounds",
+    "matched provider OI is inside guide interval",
+    "prior-period-only comparator burden",
+    "multiple break-even 1",
+    "multiple break-even 1.05",
+    "multiple break-even 1.10",
+    "multiple break-even 1.20",
+    "ten percent improvement insufficient for ten percent compression",
+    "twenty percent improvement insufficient for twenty percent compression",
+    "author market sum beta one invariant",
+    "default adjustment not invariant at beta two"
+  ],
+  "check_count": 20
+}

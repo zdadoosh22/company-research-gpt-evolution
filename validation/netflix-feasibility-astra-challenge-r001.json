@@ -1,0 +1,347 @@
+{
+  "schema": "independent-model-challenge-v1",
+  "revision": "r001",
+  "stage": "Netflix bounded valuation and expectations feasibility",
+  "reviewed_utc": "2026-10-09T23:31:05.798910+00:00",
+  "london_date": "2026-10-10",
+  "information_cutoff": "2026-10-09",
+  "baseline_commit": "7eb97086243805ae82755c0bd79cccef55fc1963",
+  "model_route": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning": "high",
+    "selected_route_reported_by_parent": "GPT-6 Astra High",
+    "reported_backend_model": null,
+    "reported_actual_reasoning": null,
+    "identity_limit": "Separate delegated review performed; runtime backend model identity and actual reasoning setting not exposed to reviewer. Do not infer them from task name or writing."
+  },
+  "outcome": "changes_required_to_park_rationale_continue_bounded_conditional_construction",
+  "investment_approval": false,
+  "actionable": false,
+  "valuation": null,
+  "entry_ceiling": null,
+  "findings": [
+    {
+      "id": "NFLX-FEAS-ASTRA-001",
+      "severity": "medium",
+      "material": true,
+      "type": "verified_analytical_omission_supporting_judgement_not_false_financial_fact",
+      "locations": [
+        "monitoring/studies/2026-10-10-netflix-feasibility-r001.md:7",
+        "monitoring/studies/2026-10-10-netflix-feasibility-r001.md:41",
+        "monitoring/studies/2026-10-10-netflix-feasibility-r001.md:71",
+        "validation/netflix-feasibility-calculations-r001.py",
+        "validation/netflix-feasibility-calculations-r001.json"
+      ],
+      "finding": "The stage stops because the combined economic forecast is unbuilt, without calculating the commitment cash cases, a justified capitalization sensitivity or the proposed cross-check. Component bounds do not demonstrate conditional valuation infeasibility.",
+      "evidence": "Content calculation is 4000/11000 scale comparison only; sustainable owner cash, selected rate and valuation are null; draft itself says ordinary conservative assumptions may suffice.",
+      "proposed_fix": "Preserve r001 and build a bounded combined causal cash/valuation/expectations supplement. If its justified ranges defeat conclusions, identify that specific tested reason. Current intrinsic value and all investment decisions remain withheld until supported.",
+      "parent_disposition": "pending"
+    }
+  ],
+  "no_material_arithmetic_error_found": true,
+  "checks": [
+    {
+      "name": "Guide increase",
+      "actual": "1500",
+      "independent_expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "Unallocated residual",
+      "actual": "1300",
+      "independent_expected": "1300",
+      "pass": true
+    },
+    {
+      "name": "Receipt exclusion lower conditional endpoint",
+      "actual": "9700",
+      "independent_expected": "9700",
+      "pass": true
+    },
+    {
+      "name": "Receipt exclusion upper conditional endpoint",
+      "actual": "12500",
+      "independent_expected": "12500",
+      "pass": true
+    },
+    {
+      "name": "Gross existing award shares",
+      "actual": "4289.843791",
+      "independent_expected": "4289.843791",
+      "pass": true
+    },
+    {
+      "name": "Gross award dilution percent",
+      "actual": "3.023677689801383184111238791154900",
+      "independent_expected": "3.023677689801383184111238791154860140678",
+      "pass": true
+    },
+    {
+      "name": "Existing holder share ratio",
+      "actual": "0.9706506527663911387397182733453988",
+      "independent_expected": "0.9706506527663911387397182733453988371578",
+      "pass": true
+    },
+    {
+      "name": "Content magnitude comparison across periods",
+      "actual": "36.36363636363636363636363636363636",
+      "independent_expected": "36.36363636363636363636363636363636363636",
+      "pass": true
+    },
+    {
+      "name": "Issuer OI low",
+      "actual": "16065.000",
+      "independent_expected": "16065",
+      "pass": true
+    },
+    {
+      "name": "Issuer OI high",
+      "actual": "16191.000",
+      "independent_expected": "16191",
+      "pass": true
+    },
+    {
+      "name": "Q3 prior-period-only improvement",
+      "actual": "524.553",
+      "independent_expected": "524.553",
+      "pass": true
+    },
+    {
+      "name": "Break-even multiple 1",
+      "actual": "1",
+      "independent_expected": "1",
+      "pass": true
+    },
+    {
+      "name": "Ten percent compression 1",
+      "actual": "0.9",
+      "independent_expected": "0.9",
+      "pass": true
+    },
+    {
+      "name": "Twenty percent compression 1",
+      "actual": "0.8",
+      "independent_expected": "0.8",
+      "pass": true
+    },
+    {
+      "name": "Break-even multiple 21/20",
+      "actual": "0.9523809523809523809523809523809524",
+      "independent_expected": "0.9523809523809523809523809523809523809524",
+      "pass": true
+    },
+    {
+      "name": "Ten percent compression 21/20",
+      "actual": "0.945",
+      "independent_expected": "0.945",
+      "pass": true
+    },
+    {
+      "name": "Twenty percent compression 21/20",
+      "actual": "0.840",
+      "independent_expected": "0.84",
+      "pass": true
+    },
+    {
+      "name": "Break-even multiple 11/10",
+      "actual": "0.9090909090909090909090909090909091",
+      "independent_expected": "0.9090909090909090909090909090909090909091",
+      "pass": true
+    },
+    {
+      "name": "Ten percent compression 11/10",
+      "actual": "0.990",
+      "independent_expected": "0.99",
+      "pass": true
+    },
+    {
+      "name": "Twenty percent compression 11/10",
+      "actual": "0.880",
+      "independent_expected": "0.88",
+      "pass": true
+    },
+    {
+      "name": "Break-even multiple 6/5",
+      "actual": "0.8333333333333333333333333333333333",
+      "independent_expected": "0.8333333333333333333333333333333333333333",
+      "pass": true
+    },
+    {
+      "name": "Ten percent compression 6/5",
+      "actual": "1.080",
+      "independent_expected": "1.08",
+      "pass": true
+    },
+    {
+      "name": "Twenty percent compression 6/5",
+      "actual": "0.960",
+      "independent_expected": "0.96",
+      "pass": true
+    },
+    {
+      "name": "Illustrative market required return",
+      "actual": "9.49",
+      "independent_expected": "9.49",
+      "pass": true
+    },
+    {
+      "name": "Adjusted source risk free",
+      "actual": "5.07",
+      "independent_expected": "5.07",
+      "pass": true
+    },
+    {
+      "name": "Adjusted source ERP",
+      "actual": "4.42",
+      "independent_expected": "4.42",
+      "pass": true
+    },
+    {
+      "name": "Historical content obligations reconciliation",
+      "actual": "19614583/1000",
+      "independent_expected": "19614.583",
+      "pass": true
+    },
+    {
+      "name": "Isolated full author replay equals frozen JSON",
+      "pass": true,
+      "reported_author_checks": 20
+    },
+    {
+      "name": "Reviewer diagnostic cash",
+      "actual": "5795.198784",
+      "independent_expected": "5795.198784",
+      "pass": true
+    },
+    {
+      "name": "Reviewer diagnostic after contingent payment",
+      "actual": "1795.198784",
+      "independent_expected": "1795.198784",
+      "pass": true
+    }
+  ],
+  "check_count": 30,
+  "all_checks_passed": true,
+  "source_origin_checks": [
+    {
+      "id": "q1-letter-sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+      "review_retrieved_utc": "2026-10-09T23:26:45.885821+00:00",
+      "error": "HTTPError",
+      "detail": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "sec-submissions",
+      "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+      "review_retrieved_utc": "2026-10-09T23:26:45.886826+00:00",
+      "final_url": "https://data.sec.gov/submissions/CIK0001065280.json",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 160304,
+      "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "matches_frozen_raw": true
+    },
+    {
+      "id": "valuation-input-home",
+      "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+      "review_retrieved_utc": "2026-10-09T23:26:45.888837+00:00",
+      "final_url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 17069,
+      "sha256": "755ad4d972431c7852bc0a723630d86cbfc84b14febb259858d1938458c0e0c7",
+      "matches_frozen_raw": true
+    },
+    {
+      "id": "engagement-h1",
+      "url": "https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2026",
+      "review_retrieved_utc": "2026-10-09T23:26:45.888837+00:00",
+      "final_url": "https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2026",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 129839,
+      "sha256": "fef3c5879f2196c01454d604ef5e0ae541b0bf3477b67411211fe188c1961711",
+      "matches_frozen_raw": true
+    },
+    {
+      "id": "q1-letter-issuer-pdf",
+      "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q1/FINAL-Q1-26-Shareholder-Letter.pdf",
+      "review_retrieved_utc": "2026-10-09T23:26:46.075206+00:00",
+      "final_url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q1/FINAL-Q1-26-Shareholder-Letter.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "bytes": 297469,
+      "sha256": "d3565e03e6a861c5fe111851670d4633b7d692dfa570de2270cbd63d70c78608",
+      "matches_frozen_raw": true
+    }
+  ],
+  "independent_diagnostic": {
+    "classification": "conditional analyst stress illustration; not probability, forecast, floor, valuation or approval",
+    "units": "USD million unless ratio",
+    "guided_oi_low": "16065",
+    "amortization_conditional": "18064.3826",
+    "cash_content_ratio_assumption": "1.16",
+    "cash_interest_assumption": "800",
+    "cash_tax_fraction_assumption": "0.3",
+    "other_net_cash_drag_assumption": "2000",
+    "cash_before_uncovered_content_and_principal": "5795.198784",
+    "cash_after_hypothetical_4000_uncovered_later_year_and_before_principal": "1795.198784",
+    "h1_observed_incremental_oi_to_revenue_ratio": "0.3224597581725918898977579015524536597853",
+    "fy2025_cash_income_taxes_to_pretax_ratio": "0.1745234761076236905928936270018782395230",
+    "historical_fy2025_fcf_minus_sbc": "9092.604",
+    "limitations": [
+      "No claim that 2000 bounds the residual; decompose it before reliance.",
+      "30% is a prospective recurring tax stress, not receipt-tax allocation or a legal maximum.",
+      "16.065bn OI, amortization and spending persistence are explicit conditions, not established future actuals.",
+      "4000 is allocated only to a hypothetical later-year adverse payment after June 2027; this is not a FY2026 adjustment, annual repetition, or a maximum claim.",
+      "No tax benefit, replacement saving or extra revenue is credited on uncovered spending.",
+      "No financing inflow, discretionary buyback or current excess-cash value is assumed; mandatory principal and liquidity still need a dated funding schedule.",
+      "GAAP OI retains SBC expense; do not subtract SBC again in this construction."
+    ]
+  },
+  "source_reading_locations": {
+    "january_letter": "PDF pp2,6",
+    "april_letter": "Issuer PDF p5 and SEC web-reader Cash Flow and Capital Structure",
+    "july_letter": "PDF pp1,2,6",
+    "june_10q": "Cover; statements pp3,5; stock note p21; contractual requirements p35",
+    "annual_10k": "Statements pp39,41; cash requirements; income taxes pp64-68",
+    "engagement": "Body dated16July2026, publication cadence and97bn hours",
+    "nyu": "October1 ERP/reference-rate paragraph",
+    "sec_submissions": "Metadata only; exact current public-origin bytes match frozen JSON",
+    "provider_expectations": "Frozen foundation reading record only; not newly refreshed"
+  },
+  "required_followup_tests": [
+    "Causally distinct growth/margin paths constrained by historical incremental economics and disclosed guide",
+    "Separate recurring taxes/interest/SBC/content and reconcile other net cash drag",
+    "Dated zero/partial/full unknown-title overlap schedules; no4bnFY26orautomaticannualdeduction",
+    "Funded FCFE or coherent FCFF and claims bridge, plus meaningful cash-conversion cross-check",
+    "Price-independent required-return and terminal/reinvestment rationale with sensitivity",
+    "Consistent valuation date and prospective cash timing; January2027conditionals not Octoberintrinsic",
+    "Adverse surprise, no repricing, compression, delayed recognition and hour/day response separately from long-run value"
+  ],
+  "remaining_high_risk_components": [
+    "Growth and content cash persistence",
+    "Unvalidated other cash residual in reviewer diagnostic",
+    "Prospective taxes, mandatory principal and funding",
+    "Required return and terminal concentration",
+    "Unknown-title amount/timing/forecast overlap",
+    "Market expectations and days-to-months price response"
+  ],
+  "limits": [
+    "The reviewer diagnostic is a conditional stress example, not an economically proven owner-cash floor or valuation.",
+    "No new current quote, current capitalisation or event-date verification.",
+    "Completed foundation/other-company reviews not reopened.",
+    "No monitored jobs, accounts, trades, paid services, author files or frozen predecessors changed.",
+    "Parent alone dispositions, completes goal and publishes."
+  ],
+  "preservation": {
+    "frozen_files_checked": 36,
+    "all_match_before_and_after": true,
+    "reviewed_manifest": "validation/netflix-feasibility-astra-reviewed-manifest-r001.json",
+    "reviewed_manifest_sha256": "e32404900c3cd98ba01cf2b6a1d907774a8529f766a5cd702b2f18b54ce3cdb6"
+  },
+  "report": {
+    "path": "validation/netflix-feasibility-astra-challenge-r001.md",
+    "sha256": "0f76d3fa4e6617b15b8b3e8f885e0d47f4ca255edc2d70e4c80594a0d29a77e4"
+  }
+}

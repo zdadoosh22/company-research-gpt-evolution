@@ -1,0 +1,35 @@
+# Parent disposition: bounded Netflix conditional framework
+
+10 October2026Europe/London; evidence cutoff9October. Baseline main7eb97086243805ae82755c0bd79cccef55fc1963, private `zdadoosh22/company-research-work`. Approved method1.0.0 unchanged. This completes one authorised feasibility stage analytically; the active goal closes only after the checkpoint/handoff publication is verified.
+
+**Disposition: retain Netflix for later observation and planning, with a limited independently challenged conditional economic framework.** Do not retain the original provisional PARK rationale. No observation job or next stage is initiated by this label. Current/total equity valuation, an accepted investment, entry, portfolio allocation and execution remain withheld.
+
+## Independent findings and actual outcomes
+
+- **NFLX-FEAS-ASTRA-001, medium:** accepted. The original component tests did not establish infeasibility, and merely unbuilt cash/valuation work was an insufficient reason to stop. Frameworkr002 constructs combined owner-cash, funded reinvestment, dated principal, claims and terminal/rate tests. Actual scoped Astra r002 judged the omission resolved. Original draft and challenge are preserved.
+- **NFLX-FRAME-ASTRA-001, low:** accepted and closed by separately frozen **clarificationsr003**, actually reviewed in the scoped challenge. Original prose wrongly called a cash funding deficit a negative distribution. The4bn full-uncovered downside has all positive annualFCFE;2028 minimum188.088544m. Only the6bn beyond-range case has2028FCFE−811.911456m, zero available distribution and proforma reserve8,315.998544m. No financial assumption or calculation changed.
+- The upside full-content-intensity alternative found by Astra reduces the4bn-stress component52.27315→49.63860 per grossclaim, about5%. This is an alternative assumption sensitivity, not a verified error; retain it as a material productivity caveat. Joint changes in operating conversion could be larger. No likelihood is assigned.
+
+Selected/requested independent route: **GPT-6AstraHigh**, actually dispatched separately. Backend identity and actual reasoning configuration are not independently exposed and remain unknown. No Sol self-check is relabelled Astra. The new challenges address this stage only; completed foundationr001/r002, APP/JPM/discovery reviews remain closed.
+
+## Accepted scope and limitations
+
+Read frameworkr002 **with clarificationsr003** and both feasibility/framework challenges. It is a conditional proformaJanuary2027 cash-franchise component, excluding opening surplus-cash value and exercise proceeds, under datedJuneclaims and explicit future liquidity/debt assumptions. Ten-year paths fund content/other capital growth, preserve compensation expense, carry prospectively assumed taxes and financing cash, and test covered/partial/4bn/6bn unknown-title costs without adding known commitments again. It is not an actual January balance, October current value or complete company thesis. Values and sensitivities are analytical cases, not certified bounds or probabilities.
+
+Historical cash reconciliation is fully decomposed; the positive remainder is not a forecast plug. Rates are independently explained judgemental required returns, not measured Netflix beta. The earnings/cash diagnostic is deliberately limited by historical and future tax/accounting definitions; the same-input terminal algebra is merely a consistency check. Approximately half the component is terminal, so durable economics matter more than arithmetic precision. Potential existing-unvested-compensation overlap, content-cohort amortisation, intrayear liquidity, actual currency/coupon paths and shareholder distributions remain imperfectly modeled. Conditional annual funding is not actual financing assurance.
+
+The management/provider baseline retains its proper dates and definitions; matched quarterlyconsensus and current price-response edge are absent. Generic no-repricing/compression, adverse surprise, late recognition, manual delays, gaps/halts and eventpostponement constraints are applied without fictional future events/fills. A long-run cash component does not show superiority to cash over days to months. No value is fitted to historical71.57 or any current quote.
+
+## Verification and source qualification
+
+Parent:12 feasibility checks;20 changed-model checks;78 author arithmetic/model assertions. Astra:30 original independent records and118 scoped changed-work records, including120 annual rows,12rate cases, isolated replay, funding failure injection, the historical bridge and extra productivity sensitivity. These counts are separate records, not a confidence score or investment approval. All466 original tracked files,36original frozen review inputs,8new framework inputs and1prose correction remain preserved. Whole engineering suite not rerun; no new iPhone/broker/outage/trial test claimed.
+
+Primary issuer/SEC sources, free rate references and official Fed/NYU inputs were actually read and source paths/hashes recorded. Direct SECQ1 raw403 remains an access limitation; issuerPDF and web-readable exhibit corroborate the passage. NYU refetch matches bytes. Fed refetch differs in Cloudflare transport encodings; substantive text/normalized attributes match, so it is content corroboration, not byte equality. No frozen source was replaced. Model inputs are public; no private operational record establishes an economic conclusion.
+
+## Supersession and next decision
+
+The original draft's unbuilt-linkage PARK rationale and “tested” commitment prose are superseded by the actualr002 construction and this disposition. Its r001 awaiting-review status is historical. Frameworkr002's distribution wording is superseded by r003, not by silently editing its frozen bytes. The preceding foundation handoff's decision whether to authorise feasibility has been resolved by the actual bounded assignment and completed work; it is not permission to resume the retired broad growth goal. All original records and source limitations remain available.
+
+FullNetflix research and APP/JPM/Unilever pilots remain partial and not approved signals. Observation-only configuration is unchanged; declared sleeve cash is not verified broker reconciliation. Telegram/phone and unattended quotes remain unverified dependencies. No contribution, allocation, trade, account connection, paid service, monitor change or unrelated development occurred.
+
+**Exact next planning decision:** ask Chat to criticise the stated growth/conversion/tax/content/terminal assumptions and this framework's usefulness for a short holding window, then recommend one normal message or bounded /goal. It can recommend no furtherNetflix work. Any opportunity dossier/current-data reconciliation is a separately authorised stage; no post-event programme or operational acceptance starts automatically. Approved standing instructions and methodology have not changed, so no replacement reference text is required. Stop after the verified handoff.

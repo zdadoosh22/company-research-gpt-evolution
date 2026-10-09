@@ -1,0 +1,52 @@
+[
+  {
+    "id": "q1-letter-sec",
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+    "retrieved_at": "2026-10-09T23:17:44.360846+00:00",
+    "status": "raw-unavailable",
+    "error": "HTTPError"
+  },
+  {
+    "id": "sec-submissions",
+    "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+    "retrieved_at": "2026-10-09T23:17:44.539050+00:00",
+    "final_url": "https://data.sec.gov/submissions/CIK0001065280.json",
+    "path": "monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T231744Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+    "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+    "bytes": 160304,
+    "status": "archived-raw"
+  },
+  {
+    "id": "valuation-input-home",
+    "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+    "retrieved_at": "2026-10-09T23:17:44.791217+00:00",
+    "final_url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+    "path": "monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T231744Z-valuation-input-home-755ad4d972431c7852bc0a723630d86cbfc84b14febb259858d1938458c0e0c7.html",
+    "sha256": "755ad4d972431c7852bc0a723630d86cbfc84b14febb259858d1938458c0e0c7",
+    "bytes": 17069,
+    "status": "archived-raw"
+  },
+  {
+    "id": "engagement-h1",
+    "url": "https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2026",
+    "retrieved_at": "2026-10-09T23:17:45.789013+00:00",
+    "final_url": "https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2026",
+    "path": "monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T231745Z-engagement-h1-fef3c5879f2196c01454d604ef5e0ae541b0bf3477b67411211fe188c1961711.html",
+    "sha256": "fef3c5879f2196c01454d604ef5e0ae541b0bf3477b67411211fe188c1961711",
+    "bytes": 129839,
+    "status": "archived-raw"
+  },
+  {
+    "id": "q1-letter-issuer-pdf",
+    "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q1/FINAL-Q1-26-Shareholder-Letter.pdf",
+    "retrieved_at": "2026-10-09T23:20:47.033118+00:00",
+    "final_url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q1/FINAL-Q1-26-Shareholder-Letter.pdf",
+    "path": "monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T232047Z-q1-letter-d3565e03e6a861c5fe111851670d4633b7d692dfa570de2270cbd63d70c78608.pdf",
+    "sha256": "d3565e03e6a861c5fe111851670d4633b7d692dfa570de2270cbd63d70c78608",
+    "bytes": 297469,
+    "status": "archived-raw",
+    "derived_path": "monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T232047Z-q1-letter-d3565e03e6a861c5fe111851670d4633b7d692dfa570de2270cbd63d70c78608.derived.txt",
+    "derived_sha256": "7748a99b92f066243e08d838f22c8c6e7def5653b736def8e81cea2c12a1af36",
+    "note": "Raw retrieval and derived extraction succeeded. Subsequent console printing raised UnicodeEncodeError, initially misclassified; corrected before input freeze."
+  }
+]

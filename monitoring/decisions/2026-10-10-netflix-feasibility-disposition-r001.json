@@ -1,0 +1,71 @@
+{
+  "schema": "bounded-research-disposition-v1",
+  "saved_utc": "2026-10-09T23:46:55.818713+00:00",
+  "local_checkpoint_date": "2026-10-10",
+  "information_cutoff": "2026-10-09",
+  "baseline_commit": "7eb97086243805ae82755c0bd79cccef55fc1963",
+  "status": "bounded_conditional_framework_and_independent_review_complete",
+  "disposition": "retain_for_later_observation",
+  "framework_revision": "r002 with reviewed prose r003",
+  "required_corrections_open": [],
+  "full_company_approved": false,
+  "current_intrinsic_value": null,
+  "total_equity_value": null,
+  "positive_entry": false,
+  "actionable": false,
+  "portfolio_decision": null,
+  "execution_instruction": null,
+  "next_stage_authorised": false,
+  "methodology_version": "1.0.0",
+  "methodology_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+  "files": [
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-feasibility-disposition-r001.md",
+      "sha256": "121db4d846d3054fe0e63e4927208fe332abfc1ac2175fba73c306e310517192"
+    },
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+      "sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681"
+    },
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-framework-r002.md",
+      "sha256": "d87aafe9e180f1a0cd436ddcba350b1548903bdbff49acdd08bc017d259b31c4"
+    },
+    {
+      "path": "validation/netflix-framework-clarifications-r003.md",
+      "sha256": "11b1aea5a4db44fee2c82efe1584904b95b105ff2d8530bd5796c2816eeb49b2"
+    },
+    {
+      "path": "validation/netflix-feasibility-astra-challenge-r001.md",
+      "sha256": "0f76d3fa4e6617b15b8b3e8f885e0d47f4ca255edc2d70e4c80594a0d29a77e4"
+    },
+    {
+      "path": "validation/netflix-feasibility-astra-challenge-r001.json",
+      "sha256": "56678275d14804360945f554f55ff1df8e6c84e5863943c21bce2aabb9b8758b"
+    },
+    {
+      "path": "validation/netflix-framework-astra-challenge-r002.md",
+      "sha256": "1c5df5a6f41aa7a8ca899da695bf44bda8e8c0df2dc54135f221937adf5d8c73"
+    },
+    {
+      "path": "validation/netflix-framework-astra-challenge-r002.json",
+      "sha256": "e0b88266c98a568386e554f7e7642226d0df873bdb7f6ef4151970aef0ec7547"
+    },
+    {
+      "path": "validation/netflix-framework-calculations-r002.py",
+      "sha256": "5b4060b19937f9b533fc026eb166be6502ddf60cf40ea5aad2df033429b6ef7e"
+    },
+    {
+      "path": "validation/netflix-framework-calculations-r002.json",
+      "sha256": "9308b21d0002acd1ac9887e464b91448dbd234ea94e3da0c4b90de7338f39747"
+    },
+    {
+      "path": "validation/netflix-feasibility-verification-r001.json",
+      "sha256": "c137c565b05ca01d0c7d7a2cab07c53b45e7970645cdc7b01593b392b4689089"
+    },
+    {
+      "path": "validation/netflix-framework-verification-r002.json",
+      "sha256": "41431c93467584ffe7f31e21de6f6ebc7ae8f8ed344b9f79f9953c3b255c8bf2"
+    }
+  ]
+}

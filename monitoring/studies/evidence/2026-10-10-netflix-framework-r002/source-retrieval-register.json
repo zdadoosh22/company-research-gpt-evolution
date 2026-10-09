@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sector-betas",
+    "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+    "retrieved_at": "2026-10-09T23:29:56.690575+00:00",
+    "final_url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+    "path": "monitoring/studies/evidence/2026-10-10-netflix-framework-r002/20261009T232956Z-sector-betas-10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b.html",
+    "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+    "bytes": 464334,
+    "status": "archived-raw"
+  },
+  {
+    "id": "fed-inflation-reference",
+    "url": "https://www.federalreserve.gov/faqs/economy_14400.htm",
+    "retrieved_at": "2026-10-09T23:29:58.030247+00:00",
+    "final_url": "https://www.federalreserve.gov/faqs/economy_14400.htm",
+    "path": "monitoring/studies/evidence/2026-10-10-netflix-framework-r002/20261009T232958Z-fed-inflation-reference-7ab589467712758fbe8ceffd3b82cf8b107576a0ca3a3039417542d4bb113c14.html",
+    "sha256": "7ab589467712758fbe8ceffd3b82cf8b107576a0ca3a3039417542d4bb113c14",
+    "bytes": 83885,
+    "status": "archived-raw"
+  }
+]

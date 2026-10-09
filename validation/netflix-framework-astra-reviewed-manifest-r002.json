@@ -1,0 +1,64 @@
+{
+  "schema": "reviewed-manifest-v1",
+  "reviewed_utc": "2026-10-09T23:43:08.208888+00:00",
+  "review_input_sha256": "aa33852bdceb0acabf41001472c9db93988c2cb9e6c9c7a361037f3cc41ce64f",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-framework-r002.md",
+      "sha256": "d87aafe9e180f1a0cd436ddcba350b1548903bdbff49acdd08bc017d259b31c4",
+      "bytes": 15553
+    },
+    {
+      "path": "validation/netflix-framework-calculations-r002.py",
+      "sha256": "5b4060b19937f9b533fc026eb166be6502ddf60cf40ea5aad2df033429b6ef7e",
+      "bytes": 11418
+    },
+    {
+      "path": "validation/netflix-framework-calculations-r002.json",
+      "sha256": "9308b21d0002acd1ac9887e464b91448dbd234ea94e3da0c4b90de7338f39747",
+      "bytes": 200784
+    },
+    {
+      "path": "validation/netflix-feasibility-astra-challenge-r001.md",
+      "sha256": "0f76d3fa4e6617b15b8b3e8f885e0d47f4ca255edc2d70e4c80594a0d29a77e4",
+      "bytes": 16337
+    },
+    {
+      "path": "validation/netflix-feasibility-astra-challenge-r001.json",
+      "sha256": "56678275d14804360945f554f55ff1df8e6c84e5863943c21bce2aabb9b8758b",
+      "bytes": 14201
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-framework-r002/20261009T232956Z-sector-betas-10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b.html",
+      "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+      "bytes": 464334
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-framework-r002/20261009T232958Z-fed-inflation-reference-7ab589467712758fbe8ceffd3b82cf8b107576a0ca3a3039417542d4bb113c14.html",
+      "sha256": "7ab589467712758fbe8ceffd3b82cf8b107576a0ca3a3039417542d4bb113c14",
+      "bytes": 83885
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-framework-r002/source-retrieval-register.json",
+      "sha256": "ddc5a4ec5e634cb38da92165391d68605a7c86e0e3bf52073e0b7792566f1ce7",
+      "bytes": 1166
+    }
+  ],
+  "preserved_predecessor_manifest": {
+    "path": "validation/netflix-feasibility-review-input-r001.json",
+    "sha256": "365fe44cf44f8e9ed8919a9369d42e264ae3b17aa3ec8e08d61343d2e53bba70",
+    "all_36_match": true
+  },
+  "independent_script": {
+    "path": "work/netflix-framework-astra-r002/check.py",
+    "sha256": "38e2c85ef7a234e94a0b67e58d3ce3abaaf82aa3448e8ccf3072eed68f3a1f49"
+  },
+  "supplemental_files": [
+    {
+      "path": "validation/netflix-framework-clarifications-r003.md",
+      "sha256": "11b1aea5a4db44fee2c82efe1584904b95b105ff2d8530bd5796c2816eeb49b2",
+      "bytes": 1381
+    }
+  ],
+  "supplemental_manifest_sha256": "e6e2e6deb36a1ca19a5db4399008c5b482481ef34cea40ff0bdf08418a94ce68"
+}

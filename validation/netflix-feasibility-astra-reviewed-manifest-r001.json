@@ -1,0 +1,263 @@
+{
+  "schema": "reviewed-manifest-v1",
+  "reviewed_utc": "2026-10-09T23:28:21.570956+00:00",
+  "frozen_input_manifest_sha256": "365fe44cf44f8e9ed8919a9369d42e264ae3b17aa3ec8e08d61343d2e53bba70",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "9f5b1809330666ce2f54f981e592698c084120acad1cd20c43952abdf48ba704",
+      "bytes": 6628,
+      "actual_sha256": "9f5b1809330666ce2f54f981e592698c084120acad1cd20c43952abdf48ba704",
+      "matches_frozen": true
+    },
+    {
+      "path": "workflows/model-review.md",
+      "sha256": "448aa9e8b3f20cc2bb8f41ec6007c9b3fabce9af399a3cc36d7e37b2beb4c11e",
+      "bytes": 1804,
+      "actual_sha256": "448aa9e8b3f20cc2bb8f41ec6007c9b3fabce9af399a3cc36d7e37b2beb4c11e",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/DECISION-SCOPE.md",
+      "sha256": "b424a556978d65327aa6be45702691c824f894a550a6937e288f8b01031f00b8",
+      "bytes": 4912,
+      "actual_sha256": "b424a556978d65327aa6be45702691c824f894a550a6937e288f8b01031f00b8",
+      "matches_frozen": true
+    },
+    {
+      "path": "methodology/current.json",
+      "sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5",
+      "bytes": 358,
+      "actual_sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5",
+      "matches_frozen": true
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+      "bytes": 59411,
+      "actual_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+      "sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+      "bytes": 19765,
+      "actual_sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-feasibility-calculations-r001.py",
+      "sha256": "7588b0a46b6b2b812512098f3d1d4cdc2e061f169727d55cba94271a4d8c87d6",
+      "bytes": 6305,
+      "actual_sha256": "7588b0a46b6b2b812512098f3d1d4cdc2e061f169727d55cba94271a4d8c87d6",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-feasibility-calculations-r001.json",
+      "sha256": "35d4658a07fa0a519330f4a30b3fc487ef144a3aecd9d1f91a236be985d4b56b",
+      "bytes": 5100,
+      "actual_sha256": "35d4658a07fa0a519330f4a30b3fc487ef144a3aecd9d1f91a236be985d4b56b",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-feasibility-baseline-2026-10-10-r001.json",
+      "sha256": "8fd2c8398202caf4a477e5e48c2bd4791ed03d8160e84c36d305a4bcfc0f57e9",
+      "bytes": 87114,
+      "actual_sha256": "8fd2c8398202caf4a477e5e48c2bd4791ed03d8160e84c36d305a4bcfc0f57e9",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-foundation-r001.md",
+      "sha256": "552ec0b36c71122115e6ec365a2109368bb157b4c2dfff00fd1a6d29091eb5ef",
+      "bytes": 13261,
+      "actual_sha256": "552ec0b36c71122115e6ec365a2109368bb157b4c2dfff00fd1a6d29091eb5ef",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-foundation-disposition-r001.md",
+      "sha256": "9d80977ce8824d9788052c198696d86322c4890b53abaefa16b9f11be07dbb4e",
+      "bytes": 6170,
+      "actual_sha256": "9d80977ce8824d9788052c198696d86322c4890b53abaefa16b9f11be07dbb4e",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-foundation-disposition-r001.json",
+      "sha256": "aae4e7d9a8fbf661b40738a65243f0a07cb93a448e3a547f83abc689971a6fff",
+      "bytes": 2135,
+      "actual_sha256": "aae4e7d9a8fbf661b40738a65243f0a07cb93a448e3a547f83abc689971a6fff",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-foundation-calculations-r002.py",
+      "sha256": "520acad1746f6ca637ea432ce8e712953f2321b3a280a76184e73064d683593e",
+      "bytes": 8191,
+      "actual_sha256": "520acad1746f6ca637ea432ce8e712953f2321b3a280a76184e73064d683593e",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-foundation-calculations-r002.json",
+      "sha256": "a48e626b071cdf1e1f0e457088cc9f6e6d1905cba976952e282c3a287721ecb9",
+      "bytes": 6233,
+      "actual_sha256": "a48e626b071cdf1e1f0e457088cc9f6e6d1905cba976952e282c3a287721ecb9",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-foundation-cash-note-r001.md",
+      "sha256": "b6082a86ccdfc1202345246e84d1e24df35addd26e99d1fd28a1d9c417e96481",
+      "bytes": 15823,
+      "actual_sha256": "b6082a86ccdfc1202345246e84d1e24df35addd26e99d1fd28a1d9c417e96481",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-foundation-cash-note-r001.json",
+      "sha256": "774c36ea1243de96c9440a81426d98140d4788bbebcafd0b5c7869f39e335a3c",
+      "bytes": 13290,
+      "actual_sha256": "774c36ea1243de96c9440a81426d98140d4788bbebcafd0b5c7869f39e335a3c",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-foundation-source-note-r001.md",
+      "sha256": "b9bf5a030daa6b1339ecd0ed69cc14bd38ce0b28ddd4db3422b6b1731b71f79c",
+      "bytes": 6740,
+      "actual_sha256": "b9bf5a030daa6b1339ecd0ed69cc14bd38ce0b28ddd4db3422b6b1731b71f79c",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-foundation-source-note-r001.json",
+      "sha256": "96da6b4ded51476cadc14f301842754e73b6a5cc2fb227b708ddcde421e0fb25",
+      "bytes": 17437,
+      "actual_sha256": "96da6b4ded51476cadc14f301842754e73b6a5cc2fb227b708ddcde421e0fb25",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-foundation-expectations-r001.md",
+      "sha256": "f293b9d3e658e331bbea789c7c76ec5bf5bd76c6f7ede17fc78214e98a644099",
+      "bytes": 2370,
+      "actual_sha256": "f293b9d3e658e331bbea789c7c76ec5bf5bd76c6f7ede17fc78214e98a644099",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-foundation-adverse-tests-r001.md",
+      "sha256": "56ab47d8459d9649e5619d50a5a779b5a42da0d62dcc4eabea4f9dae78a8d320",
+      "bytes": 3531,
+      "actual_sha256": "56ab47d8459d9649e5619d50a5a779b5a42da0d62dcc4eabea4f9dae78a8d320",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-foundation-astra-challenge-r001.md",
+      "sha256": "9e7e7ce16a2a47a60d64833a1cbd58d43db58418de38878f4ff75ae8388d60bd",
+      "bytes": 14231,
+      "actual_sha256": "9e7e7ce16a2a47a60d64833a1cbd58d43db58418de38878f4ff75ae8388d60bd",
+      "matches_frozen": true
+    },
+    {
+      "path": "validation/netflix-foundation-astra-challenge-r002.md",
+      "sha256": "2f9b78eb306328eae687b5763509cfec6a21dd4d95a1cc10bc428a59aaa7ea3c",
+      "bytes": 4704,
+      "actual_sha256": "2f9b78eb306328eae687b5763509cfec6a21dd4d95a1cc10bc428a59aaa7ea3c",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T231744Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "bytes": 160304,
+      "actual_sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T231744Z-valuation-input-home-755ad4d972431c7852bc0a723630d86cbfc84b14febb259858d1938458c0e0c7.html",
+      "sha256": "755ad4d972431c7852bc0a723630d86cbfc84b14febb259858d1938458c0e0c7",
+      "bytes": 17069,
+      "actual_sha256": "755ad4d972431c7852bc0a723630d86cbfc84b14febb259858d1938458c0e0c7",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T231745Z-engagement-h1-fef3c5879f2196c01454d604ef5e0ae541b0bf3477b67411211fe188c1961711.html",
+      "sha256": "fef3c5879f2196c01454d604ef5e0ae541b0bf3477b67411211fe188c1961711",
+      "bytes": 129839,
+      "actual_sha256": "fef3c5879f2196c01454d604ef5e0ae541b0bf3477b67411211fe188c1961711",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T232047Z-q1-letter-d3565e03e6a861c5fe111851670d4633b7d692dfa570de2270cbd63d70c78608.derived.txt",
+      "sha256": "7748a99b92f066243e08d838f22c8c6e7def5653b736def8e81cea2c12a1af36",
+      "bytes": 48647,
+      "actual_sha256": "7748a99b92f066243e08d838f22c8c6e7def5653b736def8e81cea2c12a1af36",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/20261009T232047Z-q1-letter-d3565e03e6a861c5fe111851670d4633b7d692dfa570de2270cbd63d70c78608.pdf",
+      "sha256": "d3565e03e6a861c5fe111851670d4633b7d692dfa570de2270cbd63d70c78608",
+      "bytes": 297469,
+      "actual_sha256": "d3565e03e6a861c5fe111851670d4633b7d692dfa570de2270cbd63d70c78608",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-feasibility-r001/source-retrieval-register.json",
+      "sha256": "e47a7f1d0492dda79e20d385f324ea22beb234892aa43dbf75f7dfa89c817128",
+      "bytes": 3091,
+      "actual_sha256": "e47a7f1d0492dda79e20d385f324ea22beb234892aa43dbf75f7dfa89c817128",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224845274012Z-q4-2025-letter-d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327.pdf",
+      "sha256": "d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327",
+      "bytes": 2046074,
+      "actual_sha256": "d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224846955058Z-q2-2026-sec-b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98.html",
+      "sha256": "b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98",
+      "bytes": 1815731,
+      "actual_sha256": "b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224847361078Z-july-issue-sec-91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd.html",
+      "sha256": "91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd",
+      "bytes": 30710,
+      "actual_sha256": "91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224940614552Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "bytes": 160304,
+      "actual_sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224940722917Z-july-underwriting-920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd.html",
+      "sha256": "920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd",
+      "bytes": 158649,
+      "actual_sha256": "920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224950280191Z-2025-10k-3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af.html",
+      "sha256": "3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af",
+      "bytes": 2137854,
+      "actual_sha256": "3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/20261009T125707505467Z-q2-letter-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "bytes": 294574,
+      "actual_sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "matches_frozen": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/20261009T125829535587Z-q3-2025-letter-cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031.pdf",
+      "sha256": "cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031",
+      "bytes": 434472,
+      "actual_sha256": "cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031",
+      "matches_frozen": true
+    }
+  ],
+  "reviewer_check_script": {
+    "path": "work/netflix-feasibility-astra-r001/independent_checks.py",
+    "sha256": "e042c7a71046e03d1a212fee6c4a53dc7fa8f9c33826728a8c20f309741c0f0e"
+  }
+}
