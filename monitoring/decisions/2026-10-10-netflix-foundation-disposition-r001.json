@@ -1,0 +1,53 @@
+{
+  "schema": "bounded-research-disposition-v1",
+  "saved_utc": "2026-10-09T23:01:18.264694+00:00",
+  "local_checkpoint_date": "2026-10-10",
+  "information_cutoff": "2026-10-09",
+  "baseline_commit": "aacfd3ebb47a3520cc4157f6ebb4d4589862ce64",
+  "status": "bounded_foundation_and_independent_review_complete",
+  "required_corrections_open": [],
+  "full_company_approved": false,
+  "sustainable_cash_bounded": false,
+  "valuation": null,
+  "positive_entry": false,
+  "actionable": false,
+  "portfolio_decision": null,
+  "execution_instruction": null,
+  "next_stage_authorised": false,
+  "methodology_version": "1.0.0",
+  "methodology_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-foundation-r001.md",
+      "sha256": "552ec0b36c71122115e6ec365a2109368bb157b4c2dfff00fd1a6d29091eb5ef"
+    },
+    {
+      "path": "validation/netflix-foundation-astra-challenge-r001.md",
+      "sha256": "9e7e7ce16a2a47a60d64833a1cbd58d43db58418de38878f4ff75ae8388d60bd"
+    },
+    {
+      "path": "validation/netflix-foundation-astra-challenge-r001.json",
+      "sha256": "ae8e7c4090c71d77f3780c287f1bcdbf1220476ebf9d5887206e24af6f196b43"
+    },
+    {
+      "path": "validation/netflix-foundation-astra-challenge-r002.md",
+      "sha256": "2f9b78eb306328eae687b5763509cfec6a21dd4d95a1cc10bc428a59aaa7ea3c"
+    },
+    {
+      "path": "validation/netflix-foundation-astra-challenge-r002.json",
+      "sha256": "afb3da7191a001bd496b5955620f7f924bf9392bd6747ff2f37790363e15082c"
+    },
+    {
+      "path": "validation/netflix-foundation-calculations-r002.py",
+      "sha256": "520acad1746f6ca637ea432ce8e712953f2321b3a280a76184e73064d683593e"
+    },
+    {
+      "path": "validation/netflix-foundation-calculations-r002.json",
+      "sha256": "a48e626b071cdf1e1f0e457088cc9f6e6d1905cba976952e282c3a287721ecb9"
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-foundation-disposition-r001.md",
+      "sha256": "9d80977ce8824d9788052c198696d86322c4890b53abaefa16b9f11be07dbb4e"
+    }
+  ]
+}

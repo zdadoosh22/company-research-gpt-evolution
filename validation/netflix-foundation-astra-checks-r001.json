@@ -1,0 +1,346 @@
+{
+  "schema": "independent-review-checks-v1",
+  "checks": [
+    {
+      "name": "reported profit",
+      "actual": "3248.247",
+      "expected": "3248.247",
+      "pass": true
+    },
+    {
+      "name": "reported margin",
+      "actual": "28.2203333064878286912764359803782818",
+      "expected": "28.2203333064878286912764359803782818",
+      "pass": true
+    },
+    {
+      "name": "reported growth",
+      "actual": "31.3939487976129894062859136020136400",
+      "expected": "31.3939487976129894062859136020136400",
+      "pass": true
+    },
+    {
+      "name": "reported margin delta",
+      "actual": "4.96784709786675917808592793875080060",
+      "expected": "4.96784709786675917808592793875080060",
+      "pass": true
+    },
+    {
+      "name": "prior_period_only_sensitivity profit",
+      "actual": "3743.447",
+      "expected": "3743.447",
+      "pass": true
+    },
+    {
+      "name": "prior_period_only_sensitivity margin",
+      "actual": "32.5225643416808952185202358199481560",
+      "expected": "32.5225643416808952185202358199481560",
+      "pass": true
+    },
+    {
+      "name": "prior_period_only_sensitivity growth",
+      "actual": "14.0125664928607243537840925756395109",
+      "expected": "14.0125664928607243537840925756395110",
+      "pass": true
+    },
+    {
+      "name": "prior_period_only_sensitivity margin delta",
+      "actual": "0.665616062673692650842128099180926395",
+      "expected": "0.665616062673692650842128099180926400",
+      "pass": true
+    },
+    {
+      "name": "full_charge_sensitivity profit",
+      "actual": "3867.247",
+      "expected": "3867.247",
+      "pass": true
+    },
+    {
+      "name": "full_charge_sensitivity margin",
+      "actual": "33.5981221004791618503311857798406246",
+      "expected": "33.5981221004791618503311857798406246",
+      "pass": true
+    },
+    {
+      "name": "full_charge_sensitivity growth",
+      "actual": "10.3627464188348972796410469773459001",
+      "expected": "10.3627464188348972796410469773459000",
+      "pass": true
+    },
+    {
+      "name": "full_charge_sensitivity margin delta",
+      "actual": "-0.409941696124573980968821860711542155",
+      "expected": "-0.409941696124573980968821860711542200",
+      "pass": true
+    },
+    {
+      "name": "H1 2026 content cash",
+      "actual": "9911.018",
+      "expected": "9911.018",
+      "pass": true
+    },
+    {
+      "name": "H1 2025 content cash",
+      "actual": "8010.775",
+      "expected": "8010.775",
+      "pass": true
+    },
+    {
+      "name": "FY2025 content cash",
+      "actual": "17707.455",
+      "expected": "17707.455",
+      "pass": true
+    },
+    {
+      "name": "H1 content growth",
+      "actual": "23.7210881593853278865028664517478022",
+      "expected": "23.7210881593853278865028664517478020",
+      "pass": true
+    },
+    {
+      "name": "H1 amort growth",
+      "actual": "11.4173973042588383874670060270253394",
+      "expected": "11.4173973042588383874670060270253390",
+      "pass": true
+    },
+    {
+      "name": "FY licensed plus produced amort",
+      "actual": "16422.166",
+      "expected": "16422.166",
+      "pass": true
+    },
+    {
+      "name": "FY implied amort",
+      "actual": "18064.3826",
+      "expected": "18064.3826",
+      "pass": true
+    },
+    {
+      "name": "FY implied content cash",
+      "actual": "19870.82086",
+      "expected": "19870.82086",
+      "pass": true
+    },
+    {
+      "name": "H2 implied content cash",
+      "actual": "9959.80286",
+      "expected": "9959.80286",
+      "pass": true
+    },
+    {
+      "name": "H2 implied amort",
+      "actual": "9535.1736",
+      "expected": "9535.1736",
+      "pass": true
+    },
+    {
+      "name": "Content asset residual",
+      "actual": "-186.05",
+      "expected": "-186.050",
+      "pass": true
+    },
+    {
+      "name": "Content liability residual",
+      "actual": "-35.63",
+      "expected": "-35.630",
+      "pass": true
+    },
+    {
+      "name": "Unrecognized content commitments",
+      "actual": "19614.583",
+      "expected": "19614.583",
+      "pass": true
+    },
+    {
+      "name": "Commitment maturity sum",
+      "actual": "25106.705",
+      "expected": "25106.705",
+      "pass": true
+    },
+    {
+      "name": "Reported H1 FCF",
+      "actual": "6619.243",
+      "expected": "6619.243",
+      "pass": true
+    },
+    {
+      "name": "Receipt exclusion intercept",
+      "actual": "3819.243",
+      "expected": "3819.243",
+      "pass": true
+    },
+    {
+      "name": "Brazil exclusion intercept",
+      "actual": "4548.243",
+      "expected": "4548.243",
+      "pass": true
+    },
+    {
+      "name": "SBC sensitivity intercept",
+      "actual": "4276.526",
+      "expected": "4276.526",
+      "pass": true
+    },
+    {
+      "name": "Implied H2 FCF",
+      "actual": "5880.757",
+      "expected": "5880.757",
+      "pass": true
+    },
+    {
+      "name": "Pretax receipt/financing sensitivity",
+      "actual": "7900.672",
+      "expected": "7900.672",
+      "pass": true
+    },
+    {
+      "name": "Aggregate provision NI bridge",
+      "actual": "8684.205",
+      "expected": "8684.205",
+      "pass": true
+    },
+    {
+      "name": "Cash including restricted bridge",
+      "actual": "63.592",
+      "expected": "63.592",
+      "pass": true
+    },
+    {
+      "name": "Unrestricted change",
+      "actual": "65.551",
+      "expected": "65.551",
+      "pass": true
+    },
+    {
+      "name": "Restricted only change",
+      "actual": "-1.959",
+      "expected": "-1.959",
+      "pass": true
+    },
+    {
+      "name": "Financing components",
+      "actual": "-5900.441",
+      "expected": "-5900.441",
+      "pass": true
+    },
+    {
+      "name": "Investing components",
+      "actual": "-1000.518",
+      "expected": "-1000.518",
+      "pass": true
+    },
+    {
+      "name": "June carrying net debt",
+      "actual": "5181.396",
+      "expected": "5181.396",
+      "pass": true
+    },
+    {
+      "name": "Public gross July issuance",
+      "actual": "992.55",
+      "expected": "992.55",
+      "pass": true
+    },
+    {
+      "name": "Underwriter proceeds before other expenses",
+      "actual": "988.55",
+      "expected": "988.55",
+      "pass": true
+    },
+    {
+      "name": "Full year refinancing coupon difference",
+      "actual": "8.75",
+      "expected": "8.75",
+      "pass": true
+    },
+    {
+      "name": "Options rollforward",
+      "actual": "123.891603",
+      "expected": "123.891603",
+      "pass": true
+    },
+    {
+      "name": "RSU PSU rollforward",
+      "actual": "2.012512",
+      "expected": "2.012512",
+      "pass": true
+    },
+    {
+      "name": "Q2 share increment",
+      "actual": "71.997",
+      "expected": "71.997",
+      "pass": true
+    },
+    {
+      "name": "Provider margin",
+      "actual": "31.4720812182741116751269035532994924",
+      "expected": "31.4720812182741116751269035532994924",
+      "pass": true
+    },
+    {
+      "name": "Provider FCF gap",
+      "actual": "310",
+      "expected": "310",
+      "pass": true
+    },
+    {
+      "name": "Disney revenue sum",
+      "actual": "5532",
+      "expected": "5532",
+      "pass": true
+    },
+    {
+      "name": "Disney OI sum",
+      "actual": "712",
+      "expected": "712",
+      "pass": true
+    },
+    {
+      "name": "Original Q4 revenue 51000",
+      "actual": "13330.305",
+      "expected": "13330.305",
+      "pass": true
+    },
+    {
+      "name": "Original Q4 profit 51000",
+      "actual": "3647.393",
+      "expected": "3647.393",
+      "pass": true
+    },
+    {
+      "name": "Original Q4 revenue 51400",
+      "actual": "13730.305",
+      "expected": "13730.305",
+      "pass": true
+    },
+    {
+      "name": "Original Q4 profit 51400",
+      "actual": "3773.393",
+      "expected": "3773.393",
+      "pass": true
+    },
+    {
+      "name": "Original Q2 FCF decline",
+      "actual": "-32.7340190326320947318235364424581971",
+      "expected": "-32.7340190326320947",
+      "pass": true
+    },
+    {
+      "name": "Original diluted shares YoY",
+      "actual": "-2.01261260225463199829839094468045966",
+      "expected": "-2.012612602254632",
+      "pass": true
+    },
+    {
+      "name": "Frozen calculation replay equals saved JSON",
+      "pass": true
+    },
+    {
+      "name": "All arithmetic checks pass",
+      "pass": true
+    }
+  ],
+  "h2_2025_amortization": "8766.980",
+  "h2_amort_growth_percent": "8.76235145968166917228053445998508000",
+  "limitation": "Arithmetic and raw-source reading support bounded review only, not sustainable forecasts or approval."
+}

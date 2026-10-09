@@ -1,0 +1,33 @@
+# Netflix foundation r001: Brazil, demand and competitor source note
+
+Information cutoff: 9 October 2026. New bounded source investigation; originals preserved. This supplies evidence for a separate foundation author and Astra review. It does not approve Netflix, a valuation or any portfolio instruction. Approved methodology remains1.0.0. Exact raw/excerpt hashes, retrieval timestamps and limitations are in the adjacent JSON.
+
+## Brazil expense and cash are separate observations
+
+The Q3 2025 SEC filing Note8 reports approximately $619m operating expense following developments in another taxpayer's proceedings. Its liquidity discussion expects $619m deposits and separately describes approximately $200m direct-tax deposits paid in the first nine months. The MD&A expectation of little future operating impact is management's assessment, not legal clearance. The already archived Q3 issuer letter's attribution of about20% of the619 to2025 supplies a prior-period-only sensitivity of approximately495.2; it cannot locate the remaining123.8 exclusively in Q3 or establish a sustainable future tax cost.
+
+The June2026 filing's H1 MD&A identifies $729m non-routine Brazil non-income-tax cash payments for prior periods. General non-income-tax audit language remains in Note9; the older Brazil-specific paragraph is absent. Neither omission nor payment establishes final settlement. No disclosed bridge supports equating729 to619 plus110 interest, or classifying all729 as final expense rather than deposits. The payment must be considered separately when examining receipt-adjusted cash flow and possible recurring cash economics.
+
+Read source locations: [Q3 filing](https://www.sec.gov/Archives/edgar/data/1065280/000106528025000406/nflx-20250930.htm), Note8 / MD&A cost of revenues / liquidity cash requirements; [June filing](https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm), Note9 / H1 cash-flow MD&A. SEC web access worked; this agent's new raw downloads returned403. The parallel cash-source agent successfully archived authoritative June SEC HTML, SHA256 b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98; its729 passage was independently read and verified here. The older qualified mirror282bc9 has no literal729 anywhere and cannot corroborate this claim. Preserve both originals and use authoritative SEC for new analysis; the discrepancy's complete scope is untested. Q3 SEC raw remains unavailable here; the issuer Q3 PDF is archived. SEC publication dates were not independently checked in this note.
+
+## Official legal context, without an invented Netflix case linkage
+
+The [STF report](https://noticias.stf.jus.br/postsnoticias/stf-valida-alteracoes-que-ampliaram-cobranca-da-cide-tecnologia/) dated13August2025 describes a6–5 majority upholding expanded CIDE-Tecnologia incidence under Tema914. The named appeal is Scania Latin America's. The majority does not require contributor and funded sector to match, and requires science/technology use of the receipts. The [PGFN2026 annual report](https://www.gov.br/pgfn/pt-br/acesso-a-informacao/institucional/pgfn-em-numeros/pgfn_em_numeros_2026.pdf), PDFp.47, corroborates the constitutional ruling and earmarking. It is an official fiscal authority's retrospective, not a neutral commercial assessment or current docket.
+
+STF raw HTML was archived and its substantive body actually read despite web-tool failure. The current Tema914 docket remains403. The issuer passages do not name CIDE or Tema914, so the connection to Netflix's619/729 remains unverified. No assurance about later appeals, finality, refunds or continuing Netflix liability follows. A2026 private-law search result about appeals is discovery only and excluded from factual conclusions.
+
+## Independent viewing evidence has a narrow scope
+
+[Nielsen's June release](https://www.nielsen.com/news-center/2026/fox-and-nbcuniversal-score-with-fifa-world-cup-2026-success-in-nielsens-june-gauge-reports/), dated18August2026, covers1–28June. Netflix viewing rose month on month while share was flat or lower; totalTV rose3.1% and streaming about3%. This supports continued viewing demand, while competition for attention and denominators prevent assuming Netflix gained share. It measures US television usage, not global paid retention, computer/mobile usage, pricing elasticity or incremental advertising cash. Gauge is explicitly not the ad-sales currency ratings. This is partial contrary and supporting evidence; no causal Netflix financial forecast follows.
+
+The [current official Gauge landing page](https://www.nielsen.com/data-center/the-gauge/) links [July's release](https://www.nielsen.com/news-center/2026/tv-usage-kicks-usual-summer-slowdown-fueled-by-world-cup-and-streaming-in-nielsens-july-gauge-reports/), dated10September, covering29June–26July. Peacock viewing increased15%, Disney streaming4%, and YouTube6% to14.2% ofTV. The prose does not quantify Netflix July. It reports Tubi measurement parameters changed inJune and future methodological enhancements. June evidence is not presented as latest comprehensive demand clearance; July competitor gains do not prove Netflix churn. Dynamic landing snapshot is not assurance no newer source exists elsewhere.
+
+## Competitor monetization is real but not a matched Netflix valuation
+
+[Disney's5August2026 results](https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/q3-fy26-earnings.pdf), PDFpp.14,23,27, report June27quarter Entertainment SVOD revenue$5532m versus4972m and operating income712m versus329m. Subscription fees4715m versus4116m; ads851m versus830m; displayed SVOD margin12.9%. This is evidence of a competitor with growing subscription and advertising receipts and improved profitability.
+
+SVOD operating income/margin are expressly non-GAAP and exclude HuluLiveTV/Fubo; Disney group/segment results and fiscal period are not Netflix's same-basis metrics. The competitor issuer is an interested source. No mechanically comparable margin or multiple, nor causal Netflix member loss, is asserted. The PDF was downloaded, hashed and selected pages extracted and read.
+
+## Remaining decision questions
+
+Separate historical deposits/payments, recognized expense and future cash obligations. Treat management absence-of-material-future-impact as a claim to test, not automatic zero tax. Demand measurements constrain attention claims but cannot establish retention/monetization; targeted Netflix cohort/pricing/ad contribution evidence remains necessary for a positive persistence forecast. These findings narrow evidence gaps without approving economic entry. No service, funding, policy, standing order or allocation record changed.

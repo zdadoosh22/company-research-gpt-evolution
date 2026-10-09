@@ -1,0 +1,22 @@
+{
+  "scope": "Corrected cash label and audited-source attribution, plus source-calibrated adverse/response supplement; no valuation or positive-entry assumption",
+  "created_at": "2026-10-09T22:56:12.688381+00:00",
+  "files": [
+    {
+      "path": "validation/netflix-foundation-calculations-r002.py",
+      "sha256": "520acad1746f6ca637ea432ce8e712953f2321b3a280a76184e73064d683593e"
+    },
+    {
+      "path": "validation/netflix-foundation-calculations-r002.json",
+      "sha256": "a48e626b071cdf1e1f0e457088cc9f6e6d1905cba976952e282c3a287721ecb9"
+    },
+    {
+      "path": "validation/netflix-foundation-adverse-tests-r001.md",
+      "sha256": "56ab47d8459d9649e5619d50a5a779b5a42da0d62dcc4eabea4f9dae78a8d320"
+    },
+    {
+      "path": "validation/netflix-foundation-adverse-checks-r001.json",
+      "sha256": "34c20659ffd19ca245a894d7905870aa27ebd148527934b605bd59f8c5bde96e"
+    }
+  ]
+}

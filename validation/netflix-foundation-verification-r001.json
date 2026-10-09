@@ -1,0 +1,117 @@
+{
+  "schema": "targeted-verification-v1",
+  "verified_at": "2026-10-09T23:01:56.625500+00:00",
+  "checks": [
+    {
+      "name": "predecessor_preservation",
+      "passed": true,
+      "evidence": {
+        "count": 406,
+        "changed_or_missing": []
+      }
+    },
+    {
+      "name": "review_input_preservation",
+      "passed": true,
+      "evidence": {
+        "count": 41,
+        "changed_or_missing": []
+      }
+    },
+    {
+      "name": "source_context_h1_2026",
+      "passed": true,
+      "evidence": "<xbrli:context id=\"c-1\"><xbrli:entity><xbrli:identifier scheme=\"http://www.sec.gov/CIK\">0001065280</xbrli:identifier></xbrli:entity><xbrli:period><xbrli:startDate>2026-01-01</xbrli:startDate><xbrli:endDate>2026-06-30</xbrli:endDate></xbrli:period></xbrli:context>"
+    },
+    {
+      "name": "source_value_us-gaap:NetIncomeLoss",
+      "passed": true,
+      "evidence": {
+        "expected_usdm": "8684.205",
+        "raw_ix_values_converted_to_usdm": [
+          "8684.205",
+          "8684.205",
+          "8684.205",
+          "8684.205",
+          "8684.205"
+        ]
+      }
+    },
+    {
+      "name": "source_value_us-gaap:NetCashProvidedByUsedInOperatingActivities",
+      "passed": true,
+      "evidence": {
+        "expected_usdm": "7034.017",
+        "raw_ix_values_converted_to_usdm": [
+          "7034.017"
+        ]
+      }
+    },
+    {
+      "name": "source_value_us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "passed": true,
+      "evidence": {
+        "expected_usdm": "414.774",
+        "raw_ix_values_converted_to_usdm": [
+          "414.774"
+        ]
+      }
+    },
+    {
+      "name": "source_value_nflx:AdditionstoStreamingContentAssets",
+      "passed": true,
+      "evidence": {
+        "expected_usdm": "9774.440",
+        "raw_ix_values_converted_to_usdm": [
+          "9774.44"
+        ]
+      }
+    },
+    {
+      "name": "source_value_nflx:CostofServicesAmortizationofStreamingContentAssets",
+      "passed": true,
+      "evidence": {
+        "expected_usdm": "8529.209",
+        "raw_ix_values_converted_to_usdm": [
+          "8529.209",
+          "8529.209"
+        ]
+      }
+    },
+    {
+      "name": "saved_calculation_replay",
+      "passed": true,
+      "evidence": "Executed actual frozen calculation program; JSON matches saved output"
+    },
+    {
+      "name": "separate_cash_source_checks",
+      "passed": true,
+      "evidence": {
+        "count": 19,
+        "scope": "Independent cash researcher Decimal/source-hash checks; no engineering-suite rerun"
+      }
+    },
+    {
+      "name": "no_entry_or_valuation",
+      "passed": true,
+      "evidence": "No accepted opportunity or valuation produced"
+    },
+    {
+      "name": "h2_guidance_growth_consistency",
+      "passed": true,
+      "evidence": {
+        "prior_h2_amort_usdm": "8766.980",
+        "conditional_growth_percent": "8.762351459681669172280534500",
+        "interpretation": "Rounded management guidance; verifies slower H2 growth relative to its own prior-year period, not sustainable forecast"
+      }
+    }
+  ],
+  "passed": true,
+  "engineering_suite_rerun": false,
+  "analytical_approval": false,
+  "limitations": [
+    "Extracts inspected financially; not all PDF pages rendered.",
+    "No operational outage, phone delivery, broker execution or portfolio performance test.",
+    "Source/scale/replay integrity and arithmetic cannot establish forecasts or investment quality."
+  ]
+}

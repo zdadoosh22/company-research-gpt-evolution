@@ -1,0 +1,152 @@
+PDF page 1:
+August	5,	2026
+To	Our	Shareholders	and	the	Broader	Investment	Community,
+Our	strong	fiscal	Q3	results	and	reiterated	full-year	outlook	reinforce	our	confidence	that	we	are	
+uniquely	well	positioned.	Decades	of	IP	investment	have	built	deep	fan	connections	that	translate	into	
+strong	financial	results.	Our	accelerating	global	guests	growth	at	Experiences,	Toy	Story	5's	theatrical	
+and	consumer	products	success,	and	strong	ESPN	viewership	gains	all	helped	expand	our	consumer	
+reach	this	quarter.	Together,	our	results	show	a	unique	ability	to	engage	consumers	at	scale,	both	
+digitally	and	physically,	even	amid	macro	uncertainty.
+Revenues	increased	7%	for	the	third	quarter	to	$25.2	billion	from	$23.7	billion	in	Q3	fiscal	2025.	Income	
+before	income	taxes	increased	14%	to	$3.6	billion	from	$3.2	billion	in	Q3	fiscal	2025.	Total	segment	
+operating	income(1)	modestly	exceeded	our	prior	guidance.	Total	segment	operating	income	increased	
+21%	to	$5.6	billion	from	$4.6	billion	in	Q3	fiscal	2025.	Diluted	earnings	per	share	(EPS)	decreased	to	
+$1.51	from	$2.92	in	Q3	fiscal	2025.	Adjusted	EPS(1)	increased	to	$2.06	from	$1.61	in	Q3	fiscal	2025.
+Fiscal	2026	outlook:
+• We	continue	to	expect	fiscal	2026	adjusted	EPS	growth	of	approximately	12%,	excluding	the	
+impact	of	the	53rd	week.
+• We	continue	to	expect	fiscal	2026	adjusted	EPS	growth	of	approximately	16%,	including	the	
+impact	of	the	53rd	week.
+• We	expect	Q4	total	segment	operating	income	of	approximately	$4.9	billion,	including	the	impact	
+of	the	53rd	week.
+• We	are	now	targeting	at	least	$9	billion	in	share	repurchases	in	fiscal	2026.
+Fiscal	2027	outlook:
+• We	continue	to	expect	double-digit	growth	in	adjusted	EPS	in	fiscal	2027,	excluding	the	impact	of	
+the	53rd	week.	Note	that	in	Q4	fiscal	2027	we	will	lap	the	impact	of	the	53rd	week	in	Q4	fiscal	
+2026.
+Exhibit	99.1
+1
+(1)	Total	segment	operating	income,	diluted	EPS	excluding	certain	items	(also	referred	to	as	adjusted	EPS),	Entertainment	SVOD	operating	income	(also	
+referred	to	as	SVOD	operating	income),	SVOD	operating	margin	and	free	cash	flow	are	non-GAAP	financial	measures.	The	most	comparable	GAAP	
+measures	are	income	before	income	taxes,	diluted	EPS,	Entertainment	segment	operating	income,	Entertainment	segment	operating	margin	and	cash	
+provided	by	operations.	See	the	discussion	on	pages	23	through	27	for	how	we	define	and	calculate	these	measures,	a	reconciliation	thereof	to	the	most	
+directly	comparable	GAAP	measures	and	as	applicable,	why	the	Company	is	not	providing	the	forward-looking	quantitative	reconciliation	thereof	to	the	
+most	comparable	GAAP	measures.
+
+PDF page 14:
+Supplemental	SVOD	detail
+The	following	table	provides	supplemental	SVOD	detail:
+	 Quarter	Ended
+Change($	in	millions)
+June	27,
+2026
+June	28,
+2025
+Revenues
+Subscription	fees $	 4,715	 		 $	 4,116	 		 	 15	 		%	
+Advertising 	 851	 		 	 830	 		 	 3	 		%	
+Other 	 (34)	 		 	 26	 		 nm
+Total	revenues 	 5,532	 		 	 4,972	 		 	 11	 		%	
+Programming	and	production	costs 	 (2,577)	 	 	 (2,481)	 	 	 (4)	 	%	
+Other	expenses(1) 	 (2,243)	 	 	 (2,162)	 	 	 (4)	 	%	
+Total	costs	and	expenses 	 (4,820)	 	 	 (4,643)	 	 	 (4)	 	%	
+Entertainment	SVOD	operating	income(2) $	 712	 		 $	 329	 		 	 >100	 		%	
+(1) Includes	other	operating	expenses,	selling,	general	and	administrative	expenses	and	depreciation	and	amortization.
+(2) Entertainment	SVOD	operating	income	(also	referred	to	as	SVOD	operating	income)	is	a	non-GAAP	financial	measure.	
+The	most	comparable	GAAP	measure	is	Entertainment	segment	operating	income.	See	the	discussion	on	pages	23	
+through	27	for	how	we	define	and	calculate	this	measure	and	a	reconciliation	thereof	to	the	most	directly	
+comparable	GAAP	measure.
+Growth	in	subscription	fees	was	attributable	to	increases	of	9%	from	more	subscribers,	3%	from	
+higher	effective	rates	and	1%	from	a	favorable	foreign	exchange	impact.	
+Higher	advertising	revenue	was	due	to	an	increase	of	8%	from	more	impressions,	partially	offset	by	
+a	decrease	of	4%	from	lower	rates.	
+The	decrease	in	other	revenue	was	due	to	the	impact	of	our	foreign	exchange	hedging	program.
+Sports
+Operating	results	for	Sports	were	as	follows:
+	 Quarter	Ended
+Change(in	millions)
+June	27,
+2026
+June	28,
+2025
+Revenues
+Subscription	and	affiliate	fees $	 3,142	 $	 2,899	 	 8	 		%
+Advertising 	 1,204			 	 1,148			 	 5	 		%
+Other 	 154	 	 261	 	 (41)	 	%
+Total	revenues 	 4,500	 	 4,308	 	 4	 		%
+Operating	expenses 	 (3,304)	 	 (3,008)	 	 (10)	 	%
+Selling,	general,	administrative	and	other 	 (344)	 	 (276)	 	 (25)	 	%
+Depreciation	and	amortization 	 (29)	 	 (13)	 	 >(100)	 	%
+Total	costs	and	expenses 	 (3,677)	 	 (3,297)	 	 (12)	 	%
+Equity	in	the	income	of	investees 	 35	 	 26	 	 35	 		%
+Operating	Income $	 858	 $	 1,037	 	 (17)	 	%
+14
+
+PDF page 23:
+NON-GAAP	FINANCIAL	MEASURES
+This	earnings	release	presents	diluted	EPS	excluding	certain	items	(also	referred	to	as	adjusted	EPS),	
+total	segment	operating	income,	free	cash	flow,	Entertainment	SVOD	operating	income	and	SVOD	
+operating	margin.	Diluted	EPS	excluding	certain	items,	total	segment	operating	income,	free	cash	flow,	
+Entertainment	SVOD	operating	income	and	SVOD	operating	margin	are	important	financial	measures	for	
+the	Company	but	are	not	financial	measures	defined	by	GAAP.	
+These	measures	should	be	reviewed	in	conjunction	with	the	most	comparable	GAAP	financial	
+measures	and	are	not	presented	as	alternative	measures	of	diluted	EPS,	income	before	income	taxes,	
+cash	provided	by	operations,	Entertainment	segment	operating	income	or	Entertainment	segment	
+operating	margin	as	determined	in	accordance	with	GAAP.	Diluted	EPS	excluding	certain	items,	total	
+segment	operating	income,	free	cash	flow,	Entertainment	SVOD	operating	income	and	SVOD	operating	
+margin	as	we	have	calculated	them	may	not	be	comparable	to	similarly	titled	measures	reported	by	
+other	companies.
+Our	definitions	and	calculations	of	diluted	EPS	excluding	certain	items,	total	segment	operating	
+income,	free	cash	flow,	Entertainment	SVOD	operating	income	and	SVOD	operating	margin,	as	well	as	
+quantitative	reconciliations	of	each	of	these	measures	to	the	most	directly	comparable	GAAP	financial	
+measure,	are	provided	below.
+The	Company	is	not	providing	the	forward-looking	measure	for	diluted	EPS,	income	before	income	
+taxes,	Entertainment	segment	operating	income	or	Entertainment	segment	operating	margin,	which	are	
+the	most	directly	comparable	GAAP	measures	to	diluted	EPS	excluding	certain	items,	total	segment	
+operating	income,	Entertainment	SVOD	operating	income	and	SVOD	operating	margin,	respectively,	or	
+reconciliations	of	forward-looking	diluted	EPS	excluding	certain	items,	total	segment	operating	income,	
+Entertainment	SVOD	operating	income	and	SVOD	operating	margin	to	those	most	directly	comparable	
+GAAP	measures.	The	Company	is	unable	to	predict	or	estimate	with	reasonable	certainty	the	ultimate	
+outcome	of	certain	significant	items	required	for	such	GAAP	measures	without	unreasonable	effort.	
+Information	about	other	adjusting	items	that	is	currently	not	available	to	the	Company	could	have	a	
+potentially	unpredictable	and	significant	impact	on	future	GAAP	financial	results.
+Diluted	EPS	excluding	certain	items
+The	Company	uses	diluted	EPS	excluding	(1)	certain	items	affecting	comparability	of	results	from	
+period	to	period	and	(2)	amortization	of	intangible	assets,	including	purchase	accounting	step-up	
+adjustments	for	released	content	recognized	in	the	fiscal	2019	acquisition	of	TFCF	and	Hulu	and	business	
+acquisitions	occurring	after	fiscal	2025	(Acquisition	Amortization),	to	facilitate	the	evaluation	of	the	
+performance	of	the	Company’s	operations	exclusive	of	these	items,	and	these	adjustments	reflect	how	
+senior	management	is	evaluating	segment	performance.
+The	Company	believes	that	providing	diluted	EPS	exclusive	of	certain	items	impacting	comparability	
+is	useful	to	investors,	particularly	where	the	impact	of	the	excluded	items	is	significant	in	relation	to	
+reported	earnings	and	because	the	measure	allows	for	comparability	between	periods	of	the	operating	
+performance	of	the	Company’s	business	and	allows	investors	to	evaluate	the	impact	of	these	items	
+separately.
+23
+
+PDF page 27:
+Entertainment	SVOD	operating	income
+Entertainment	SVOD	operating	income	consists	of	operating	income	for	the	Disney+,	Hulu	
+subscription	video-on-demand	and	Disney+	Hotstar	(through	November	14,	2024)	streaming	services	
+(collectively,	“Entertainment	SVOD”	or	“SVOD”),	which	excludes	results	for	the	Hulu	Live	TV	and	Fubo	
+vMVPD	services.
+The	Company	uses	Entertainment	SVOD	operating	income	(and	related	SVOD	operating	margin)	as	a	
+measure	of	the	performance	of	Entertainment	SVOD,	and	we	believe	Entertainment	SVOD	operating	
+income	(and	related	SVOD	operating	margin)	assists	investors	by	allowing	them	to	evaluate	the	
+performance	of	Entertainment	SVOD	separately	from	our	other	Entertainment	businesses.
+The	following	table	reconciles	Entertainment	SVOD	operating	income	to	Entertainment	segment	
+operating	income:
+Quarter	Ended
+($	in	millions)
+June	27,
+2026
+June	28,
+2025 Change
+Entertainment	segment	operating	income(1) $	 1,680	 $	 1,022	 	 64	 		%
+Subtract:	Other	Entertainment	businesses	operating	income 	 968	 	 693	 	 40	 		%
+Entertainment	SVOD	operating	income(1) $	 712	 $	 329	 	 >100	 		%
+(1) For	the	current	quarter,	Entertainment	segment	operating	margin	and	SVOD	operating	margin	were	14.8%	and	
+12.9%,	respectively.	Entertainment	segment	operating	margin	is	calculated	as	Entertainment	segment	operating	
+income	divided	by	Entertainment	segment	revenue,	and	SVOD	operating	margin	is	calculated	as	Entertainment	SVOD	
+operating	income	divided	by	Entertainment	SVOD	revenue.
+27

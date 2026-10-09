@@ -1,0 +1,97 @@
+{
+  "schema": "astra-analytical-challenge-v1",
+  "version": "r001",
+  "completed_utc": "2026-10-09T22:59:08.430125+00:00",
+  "review_status": "independent_challenge_complete_parent_disposition_pending",
+  "disposition": "bounded_conclusion_survives_two_low_defects_require_dated_correction",
+  "material_unresolved_defect_found": false,
+  "findings": [
+    {
+      "id": "NFLX-ASTRA-001",
+      "type": "verified_defect",
+      "severity": "low",
+      "location": [
+        "validation/netflix-foundation-calculations-r001.py:cash.restricted_cash_change",
+        "validation/netflix-foundation-calculations-r001.json:cash.restricted_cash_change"
+      ],
+      "evidence": "June 10-Q p5: total cash/cash equivalents/restricted change63.592; unrestricted65.551; restricted-only-1.959, USDm",
+      "correction": "New revision: rename combined field explicitly; preserve all numeric values and restricted-only field",
+      "outcome": "open_parent_correction_required",
+      "conclusion_impact": "none_to_bounded_withholding"
+    },
+    {
+      "id": "NFLX-ASTRA-002",
+      "type": "verified_defect",
+      "severity": "low",
+      "location": [
+        "validation/netflix-foundation-calculations-r001.py:content.guidance_caution",
+        "validation/netflix-foundation-calculations-r001.json:content.guidance_caution"
+      ],
+      "evidence": "Original Q4 letterp14 table marked unaudited; annual 10-K cashflow and Note5 corroborate audited annual16422.166",
+      "correction": "Attribute audited annual base to10K and corroboration to unauditedletter in newrevision",
+      "outcome": "open_parent_correction_required",
+      "conclusion_impact": "none_to_bounded_withholding"
+    }
+  ],
+  "additional_qualifications": [
+    {
+      "type": "evidence_request",
+      "item": "Unknown future-title content commitments estimated1-4bn overthree years excluded fromtable; carryforward if modellingliquidity",
+      "stage_blocker": false
+    },
+    {
+      "type": "source_refinement",
+      "item": "Underwriting agreement purchaseprice98.855%=988.55m beforeothercosts supplementspublicgross992.55",
+      "stage_blocker": false
+    },
+    {
+      "type": "scope_guardrail",
+      "item": "Disney revenues are accrual revenue, not independently verified cash receipts; no cash-conversion conclusion accepted",
+      "stage_blocker": false
+    },
+    {
+      "type": "domain_guardrail",
+      "item": "Earnings/multiple support ratio assumes consistentlydefined positiveE andM; nottotalreturn orvalidnegativeEPSPEmethod",
+      "stage_blocker": false
+    }
+  ],
+  "reviewed_manifest": {
+    "path": "validation/netflix-foundation-astra-reviewed-manifest-r001.json",
+    "sha256": "f66b21c18573aa72d82ecfa1e41600a914429e6384aa587b71db6e95c7ff2b3d"
+  },
+  "config": {
+    "path": "validation/netflix-foundation-astra-config-r001.json",
+    "sha256": "6595c6d09ce90bc848dd97c99fe2a1520c76987092041074cf39182c29aa7478"
+  },
+  "checks": {
+    "path": "validation/netflix-foundation-astra-checks-r001.json",
+    "sha256": "71c5e6c78d62d7f1fbd682e88e06945fbcf0472f0c48ef55bf737b85c4755d0e",
+    "numerical": 55,
+    "replay": 1,
+    "aggregate": 1,
+    "passed": true
+  },
+  "report": {
+    "path": "validation/netflix-foundation-astra-challenge-r001.md",
+    "sha256": "9e7e7ce16a2a47a60d64833a1cbd58d43db58418de38878f4ff75ae8388d60bd"
+  },
+  "original_followup_review_status": "Materially reviewed here withr001supersessions; originalpendingstatuspreserved, notretrospectivelycertified",
+  "acceptance": {
+    "bounded_stage": "parent_disposition_pending_lowcorrections",
+    "sustainable_cash": false,
+    "company_approval": false,
+    "valuation": false,
+    "entry": false,
+    "trade": false
+  },
+  "backend_identity": "unknown",
+  "selected_route": "gpt-6-astra",
+  "remaining_limitations": [
+    "Receipt paidcash/provisiontax allocation",
+    "Brazil assessmentidentity/finality/recurrence",
+    "Content cashschedule andstockflowresidual attribution",
+    "Valuationdateclaims/cash/debt",
+    "Matchedestimate definitions andquarterlybaseline",
+    "No comprehensivelegal/news/proxyorexecutionclearance"
+  ]
+}

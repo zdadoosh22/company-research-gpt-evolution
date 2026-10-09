@@ -1,0 +1,11 @@
+# Netflix expectations check, r001
+
+Research cutoff: 9 October 2026. Retrieved 9 October 2026 UTC; this is a web-rendered derived reading record, not raw HTML or an independently verified S&P dataset. Original 8 October reference price remains historical; no executable quote is supplied or required for this stage.
+
+[Provider forecast page](https://stockanalysis.com/stocks/nflx/forecast/) was read directly: annual financial forecast table, definition note, source attribution and update footer. It displays FY2026 ending 31 December: revenue USD51.22bn, operating income USD16.12bn, net income USD15.26bn, adjusted EPS USD3.59 and FCF USD12.81bn, with 47 analysts. Its EPS and forward P/E use non-GAAP adjusted figures. Forecast footer says last updated/checked 8 October 2026; the price panel has a later 9 October timestamp. These timestamps describe different data, so a refreshed price does not prove refreshed forecasts. The page attributes aggregate forecasts to S&P Global and individual analyst records to TipRanks. Detailed 2027 forecasts remain gated; summary values do not reveal adjustments or dispersion. Quarterly comparable expectations were not established.
+
+[Provider data definitions](https://stockanalysis.com/data-sources/) was read directly, sections on financial forecasts and stock prices (page updated 14 June 2026). It confirms provider attribution and heterogeneous datasets; it does not disclose the instrument-level EPS adjustment bridge, cash-tax treatment or termination-receipt inclusion needed here.
+
+The only supported comparison is limited: 16.12/51.22 = 31.4721% displayed annual operating margin, versus issuer July guidance 31.5%; USD12.81bn displayed FCF is USD0.31bn above issuer approximately USD12.5bn. This does not establish surprise, matched GAAP consensus, sustainable owner cash or analyst expectations for the next quarter. Analyst count in the ratings panel is not the financial forecast sample size. Do not use price targets, adjusted EPS or headline forward P/E to select capitalization or an entry ceiling.
+
+No paid access or model-implied consensus was introduced. Exact vendor adjustment reconciliation remains unavailable; it blocks conclusions relying on matched EPS/FCF surprise, not the descriptive operating-margin comparison above. Prior follow-up remains unchanged, with this dated verification supplement.

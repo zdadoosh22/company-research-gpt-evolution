@@ -1,0 +1,104 @@
+[
+  {
+    "id": "nflx-tax-demand-disney-q3-2026",
+    "url": "https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/q3-fy26-earnings.pdf",
+    "retrieved_at_utc": "20261009T224904026975Z",
+    "response_url": "https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/q3-fy26-earnings.pdf",
+    "content_type": "application/pdf",
+    "http_status": 200,
+    "sha256": "567dca2c824be7bc8918688f0904d64e6bbf7c4599d4448388b8fc046faae518",
+    "bytes": 7726010,
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224904026975Z-nflx-tax-demand-disney-q3-2026-567dca2c824be7bc8918688f0904d64e6bbf7c4599d4448388b8fc046faae518.pdf",
+    "raw_archived": true,
+    "page_count": 29,
+    "derived_excerpt_path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224904026975Z-nflx-tax-demand-disney-q3-2026-selected-pages.txt",
+    "derived_excerpt_sha256": "db596236ea41a5810e1391c705692f313f3fa142cffbe6bb1cd824a1d382e624"
+  },
+  {
+    "id": "nflx-tax-demand-nielsen-june-2026",
+    "url": "https://www.nielsen.com/news-center/2026/fox-and-nbcuniversal-score-with-fifa-world-cup-2026-success-in-nielsens-june-gauge-reports/",
+    "retrieved_at_utc": "20261009T224905090605Z",
+    "response_url": "https://www.nielsen.com/news-center/2026/fox-and-nbcuniversal-score-with-fifa-world-cup-2026-success-in-nielsens-june-gauge-reports/",
+    "content_type": "text/html; charset=UTF-8",
+    "http_status": 200,
+    "sha256": "edfcd714d35de703a37aa9ac0508612eeb984b60fa9dbc55d7b0692d942b8309",
+    "bytes": 851227,
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224905090605Z-nflx-tax-demand-nielsen-june-2026-edfcd714d35de703a37aa9ac0508612eeb984b60fa9dbc55d7b0692d942b8309.html",
+    "raw_archived": true
+  },
+  {
+    "id": "nflx-tax-demand-pgfn-2026",
+    "url": "https://www.gov.br/pgfn/pt-br/acesso-a-informacao/institucional/pgfn-em-numeros/pgfn_em_numeros_2026.pdf",
+    "retrieved_at_utc": "20261009T224907057672Z",
+    "response_url": "https://www.gov.br/pgfn/pt-br/acesso-a-informacao/institucional/pgfn-em-numeros/pgfn_em_numeros_2026.pdf",
+    "content_type": "application/pdf",
+    "http_status": 200,
+    "sha256": "1188cd3fccbdcdf53631f8218f9931af7d177106ea2a5acf55d23e188837f6b5",
+    "bytes": 2856125,
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224907057672Z-nflx-tax-demand-pgfn-2026-1188cd3fccbdcdf53631f8218f9931af7d177106ea2a5acf55d23e188837f6b5.pdf",
+    "raw_archived": true,
+    "page_count": 54,
+    "derived_excerpt_path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224907057672Z-nflx-tax-demand-pgfn-2026-selected-pages.txt",
+    "derived_excerpt_sha256": "144abd97a8d9f7d4556a614043e91bd36971d60dfae437ca218b90f26e1f10f9"
+  },
+  {
+    "id": "nflx-tax-demand-stf-cide-news",
+    "url": "https://noticias.stf.jus.br/postsnoticias/stf-valida-alteracoes-que-ampliaram-cobranca-da-cide-tecnologia/",
+    "retrieved_at_utc": "20261009T224915211182Z",
+    "response_url": "https://noticias.stf.jus.br/postsnoticias/stf-valida-alteracoes-que-ampliaram-cobranca-da-cide-tecnologia/",
+    "content_type": "text/html; charset=UTF-8",
+    "http_status": 200,
+    "sha256": "0fee8b73d1172d283547a725dad9a8f6c311b95618541898db9030cce1287ed4",
+    "bytes": 67787,
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224915211182Z-nflx-tax-demand-stf-cide-news-0fee8b73d1172d283547a725dad9a8f6c311b95618541898db9030cce1287ed4.html",
+    "raw_archived": true
+  },
+  {
+    "id": "nflx-tax-demand-stf-tema914",
+    "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?classeProcesso=RE&incidente=4882983&numeroProcesso=928943&numeroTema=914",
+    "retrieved_at_utc": "20261009T224917791051Z",
+    "raw_archived": false,
+    "error_type": "HTTPError",
+    "http_status": 403
+  },
+  {
+    "id": "nflx-tax-demand-nflx-q3-2025-sec",
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000406/nflx-20250930.htm",
+    "retrieved_at_utc": "20261009T224918467855Z",
+    "raw_archived": false,
+    "error_type": "HTTPError",
+    "http_status": 403
+  },
+  {
+    "id": "nflx-tax-demand-nflx-q2-2026-sec",
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm",
+    "retrieved_at_utc": "20261009T224918555848Z",
+    "raw_archived": false,
+    "error_type": "HTTPError",
+    "http_status": 403
+  },
+  {
+    "id": "nflx-tax-demand-nielsen-july-2026",
+    "url": "https://www.nielsen.com/news-center/2026/tv-usage-kicks-usual-summer-slowdown-fueled-by-world-cup-and-streaming-in-nielsens-july-gauge-reports/",
+    "retrieved_at_utc": "20261009T225107122720Z",
+    "http_status": 200,
+    "response_url": "https://www.nielsen.com/news-center/2026/tv-usage-kicks-usual-summer-slowdown-fueled-by-world-cup-and-streaming-in-nielsens-july-gauge-reports/",
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "1beda1a5ad5b75c48a92c9370ad22478df3f74b4365d2891b134dcf0b70d5ca8",
+    "bytes": 849615,
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T225107122720Z-nflx-tax-demand-nielsen-july-2026-1beda1a5ad5b75c48a92c9370ad22478df3f74b4365d2891b134dcf0b70d5ca8.html",
+    "raw_archived": true
+  },
+  {
+    "id": "nflx-tax-demand-nielsen-gauge-current",
+    "url": "https://www.nielsen.com/data-center/the-gauge/",
+    "retrieved_at_utc": "20261009T225107356239Z",
+    "http_status": 200,
+    "response_url": "https://www.nielsen.com/data-center/the-gauge/",
+    "content_type": "text/html; charset=UTF-8",
+    "sha256": "62f7d511ed872c9c84ec59b86f4e0415b7c7186a3ae1bef59568ca51deeacdbd",
+    "bytes": 1449579,
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T225107356239Z-nflx-tax-demand-nielsen-gauge-current-62f7d511ed872c9c84ec59b86f4e0415b7c7186a3ae1bef59568ca51deeacdbd.html",
+    "raw_archived": true
+  }
+]

@@ -1,0 +1,295 @@
+{
+  "stage": "Netflix foundation r001 bounded source investigation",
+  "as_of_date": "2026-10-09",
+  "retrieved_at_utc": "2026-10-09T22:51:10.611535+00:00",
+  "methodology_version": "1.0.0",
+  "status": "Focused source note; no analytical approval or valuation",
+  "sources": [
+    {
+      "id": "nflx-tax-demand-disney-q3-2026",
+      "url": "https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/q3-fy26-earnings.pdf",
+      "retrieved_at_utc": "20261009T224904026975Z",
+      "response_url": "https://s206.q4cdn.com/979796730/files/doc_financials/2026/q3/q3-fy26-earnings.pdf",
+      "content_type": "application/pdf",
+      "http_status": 200,
+      "sha256": "567dca2c824be7bc8918688f0904d64e6bbf7c4599d4448388b8fc046faae518",
+      "bytes": 7726010,
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224904026975Z-nflx-tax-demand-disney-q3-2026-567dca2c824be7bc8918688f0904d64e6bbf7c4599d4448388b8fc046faae518.pdf",
+      "raw_archived": true,
+      "page_count": 29,
+      "derived_excerpt_path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224904026975Z-nflx-tax-demand-disney-q3-2026-selected-pages.txt",
+      "derived_excerpt_sha256": "db596236ea41a5810e1391c705692f313f3fa142cffbe6bb1cd824a1d382e624",
+      "publication_date": "2026-08-05",
+      "period": "Quarter ended 2026-06-27",
+      "locations": "PDF pp.1,14,23,27 (1-based)",
+      "classification": "Issuer-reported results and interested competitor commentary; SVOD metric non-GAAP"
+    },
+    {
+      "id": "nflx-tax-demand-nielsen-june-2026",
+      "url": "https://www.nielsen.com/news-center/2026/fox-and-nbcuniversal-score-with-fifa-world-cup-2026-success-in-nielsens-june-gauge-reports/",
+      "retrieved_at_utc": "20261009T224905090605Z",
+      "response_url": "https://www.nielsen.com/news-center/2026/fox-and-nbcuniversal-score-with-fifa-world-cup-2026-success-in-nielsens-june-gauge-reports/",
+      "content_type": "text/html; charset=UTF-8",
+      "http_status": 200,
+      "sha256": "edfcd714d35de703a37aa9ac0508612eeb984b60fa9dbc55d7b0692d942b8309",
+      "bytes": 851227,
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224905090605Z-nflx-tax-demand-nielsen-june-2026-edfcd714d35de703a37aa9ac0508612eeb984b60fa9dbc55d7b0692d942b8309.html",
+      "raw_archived": true,
+      "publication_date": "2026-08-18",
+      "period": "2026-06-01 through 2026-06-28",
+      "locations": "Article paragraphs beginning Overall streaming usage, and final methodological note",
+      "classification": "Independent audience measurement, US TV viewing, not financial/retention metrics"
+    },
+    {
+      "id": "nflx-tax-demand-pgfn-2026",
+      "url": "https://www.gov.br/pgfn/pt-br/acesso-a-informacao/institucional/pgfn-em-numeros/pgfn_em_numeros_2026.pdf",
+      "retrieved_at_utc": "20261009T224907057672Z",
+      "response_url": "https://www.gov.br/pgfn/pt-br/acesso-a-informacao/institucional/pgfn-em-numeros/pgfn_em_numeros_2026.pdf",
+      "content_type": "application/pdf",
+      "http_status": 200,
+      "sha256": "1188cd3fccbdcdf53631f8218f9931af7d177106ea2a5acf55d23e188837f6b5",
+      "bytes": 2856125,
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224907057672Z-nflx-tax-demand-pgfn-2026-1188cd3fccbdcdf53631f8218f9931af7d177106ea2a5acf55d23e188837f6b5.pdf",
+      "raw_archived": true,
+      "page_count": 54,
+      "derived_excerpt_path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224907057672Z-nflx-tax-demand-pgfn-2026-selected-pages.txt",
+      "derived_excerpt_sha256": "144abd97a8d9f7d4556a614043e91bd36971d60dfae437ca218b90f26e1f10f9",
+      "publication_date": "2026 (exact day unverified)",
+      "period": "Annual account of 2025 judgments",
+      "locations": "PDF p.47, Annex3, Tema914(RE928943)",
+      "classification": "Official fiscal-law authority retrospective; government revenue stakeholder, not latest court docket"
+    },
+    {
+      "id": "nflx-tax-demand-stf-cide-news",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-valida-alteracoes-que-ampliaram-cobranca-da-cide-tecnologia/",
+      "retrieved_at_utc": "20261009T224915211182Z",
+      "response_url": "https://noticias.stf.jus.br/postsnoticias/stf-valida-alteracoes-que-ampliaram-cobranca-da-cide-tecnologia/",
+      "content_type": "text/html; charset=UTF-8",
+      "http_status": 200,
+      "sha256": "0fee8b73d1172d283547a725dad9a8f6c311b95618541898db9030cce1287ed4",
+      "bytes": 67787,
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T224915211182Z-nflx-tax-demand-stf-cide-news-0fee8b73d1172d283547a725dad9a8f6c311b95618541898db9030cce1287ed4.html",
+      "raw_archived": true,
+      "publication_date": "2025-08-13T20:12 (publisher timezone unspecified)",
+      "period": "2025-08-13 judgment",
+      "locations": "Opening, Destina\u00e7\u00e3o integral a pesquisa, Importa\u00e7\u00e3o de tecnologia, No caso concreto and fixed thesis",
+      "classification": "Official court report; actual raw body read after web tool failed"
+    },
+    {
+      "id": "nflx-tax-demand-stf-tema914",
+      "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?classeProcesso=RE&incidente=4882983&numeroProcesso=928943&numeroTema=914",
+      "retrieved_at_utc": "20261009T224917791051Z",
+      "raw_archived": false,
+      "error_type": "HTTPError",
+      "http_status": 403,
+      "publication_date": null,
+      "period": "Current docket unavailable",
+      "locations": null,
+      "classification": "HTTP403; search result not adopted as verified"
+    },
+    {
+      "id": "nflx-tax-demand-nflx-q3-2025-sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000406/nflx-20250930.htm",
+      "retrieved_at_utc": "20261009T224918467855Z",
+      "raw_archived": false,
+      "error_type": "HTTPError",
+      "http_status": 403,
+      "publication_date": null,
+      "period": "Quarter and nine months ended2025-09-30",
+      "locations": "Note8 Non-Income Taxes; MD&A cost of revenues; Liquidity material cash requirements",
+      "classification": "SEC web-read filing; raw archive retrieval HTTP403",
+      "publication_date_status": "Not independently verified in this bounded source note"
+    },
+    {
+      "id": "nflx-tax-demand-nflx-q2-2026-sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm",
+      "retrieved_at_utc": "20261009T224918555848Z",
+      "raw_archived": false,
+      "error_type": "HTTPError",
+      "http_status": 403,
+      "publication_date": null,
+      "period": "Six months ended2026-06-30",
+      "locations": "Note9 Non-Income Taxes; MD&A Six months ended cash flows",
+      "classification": "SEC web-read filing; raw archive retrieval HTTP403",
+      "publication_date_status": "Not independently verified in this bounded source note"
+    },
+    {
+      "id": "nflx-tax-demand-nielsen-july-2026",
+      "url": "https://www.nielsen.com/news-center/2026/tv-usage-kicks-usual-summer-slowdown-fueled-by-world-cup-and-streaming-in-nielsens-july-gauge-reports/",
+      "retrieved_at_utc": "20261009T225107122720Z",
+      "http_status": 200,
+      "response_url": "https://www.nielsen.com/news-center/2026/tv-usage-kicks-usual-summer-slowdown-fueled-by-world-cup-and-streaming-in-nielsens-july-gauge-reports/",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "1beda1a5ad5b75c48a92c9370ad22478df3f74b4365d2891b134dcf0b70d5ca8",
+      "bytes": 849615,
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T225107122720Z-nflx-tax-demand-nielsen-july-2026-1beda1a5ad5b75c48a92c9370ad22478df3f74b4365d2891b134dcf0b70d5ca8.html",
+      "raw_archived": true,
+      "publication_date": "2026-09-10",
+      "period": "2026-06-29 through 2026-07-26",
+      "locations": "Peacock, summer surge bullet list, interval and methodological notes",
+      "classification": "Independent audience measurement, US TV viewing; article prose lacks exact Netflix July figure"
+    },
+    {
+      "id": "nflx-tax-demand-nielsen-gauge-current",
+      "url": "https://www.nielsen.com/data-center/the-gauge/",
+      "retrieved_at_utc": "20261009T225107356239Z",
+      "http_status": 200,
+      "response_url": "https://www.nielsen.com/data-center/the-gauge/",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "62f7d511ed872c9c84ec59b86f4e0415b7c7186a3ae1bef59568ca51deeacdbd",
+      "bytes": 1449579,
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\20261009T225107356239Z-nflx-tax-demand-nielsen-gauge-current-62f7d511ed872c9c84ec59b86f4e0415b7c7186a3ae1bef59568ca51deeacdbd.html",
+      "raw_archived": true,
+      "publication_date": null,
+      "period": "Latest displayed July2026; fetched current snapshot",
+      "locations": "Heading TV viewing trends in the U.S.; current chart heading July2026; Read more link",
+      "classification": "Dynamic primary-source landing page; not assurance latest available elsewhere"
+    },
+    {
+      "id": "nflx-tax-demand-q3-2025-existing-issuer-letter",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125829535587Z-q3-2025-letter-cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031.pdf",
+      "sha256": "cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031",
+      "bytes": 434472,
+      "original_preserved": true,
+      "locations": "PDF p.2 Financial Results and Outlook",
+      "classification": "Existing issuer raw PDF; original preserved",
+      "derived_excerpt_path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-tax-demand-q3-2025-existing-issuer-letter-derived-selected-passage.txt",
+      "derived_excerpt_sha256": "9fffc1075f4e7667c3bce3c7156316f82f56b85a5d43ba967eb00f6728eeb810"
+    },
+    {
+      "id": "nflx-tax-demand-q2-existing-filing-mirror",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix\\20261009T003431335392Z-q2-10q-mirror-282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9.html",
+      "sha256": "282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9",
+      "bytes": 3195808,
+      "original_preserved": true,
+      "locations": "MD&A Cash Flows: six months June2026",
+      "classification": "Previously qualified mirror, now proven not complete for Brazil729 assertion: zero literal729 in raw/parsedtext; do not use for that claim"
+    },
+    {
+      "id": "nflx-tax-demand-q2-authoritative-sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm",
+      "retrieved_utc": "20261009T224846955058Z",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224846955058Z-q2-2026-sec-b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98.html",
+      "sha256": "b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98",
+      "bytes": 1815731,
+      "status": "archived",
+      "locations": "MD&A H1 Cash Flows, sentence non-routine Brazil payments",
+      "classification": "Authoritative SEC raw independently archived by parallel cash source agent and checked here",
+      "derived_excerpt_path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-tax-demand-q2-authoritative-brazil-cash-derived.txt",
+      "derived_excerpt_sha256": "1ce73edea3cacf2f4ba3c9f96fbe35eec3a2cd46f5aa2ad1f70e577e402aa438"
+    }
+  ],
+  "findings": [
+    {
+      "id": "BRAZIL-CHARGE",
+      "status": "supported issuer actual plus management claim",
+      "claim": "Q3 2025 Note8 records approximately USD619m non-income-tax operating expense after another taxpayer judicial development. MD&A states future non-income-tax operating impact not expected material. Liquidity section separately expects USD619m deposits and reports approximately USD200m prior direct-tax deposits; these are not the same tax category.",
+      "source_ids": [
+        "nflx-tax-demand-nflx-q3-2025-sec",
+        "nflx-tax-demand-q3-2025-existing-issuer-letter"
+      ],
+      "limitation": "No named tax mechanism or case for Netflix in read passage; management expectation not independent legal clearance."
+    },
+    {
+      "id": "BRAZIL-2026-CASH",
+      "status": "supported issuer actual",
+      "claim": "H1 2026 MD&A reports USD729m non-routine payments connected with Brazil non-income-tax assessments for prior tax periods. June Note9 omits preceding Brazil-specific paragraph but retains general non-income-tax audit language.",
+      "source_ids": [
+        "nflx-tax-demand-nflx-q2-2026-sec",
+        "nflx-tax-demand-q2-authoritative-sec"
+      ],
+      "limitation": "No supported mapping619+110, deposit-versus-settlement breakdown, final resolution, or assurance of zero recurring tax cost."
+    },
+    {
+      "id": "CIDE-CONTEXT",
+      "status": "supported official general legal context",
+      "claim": "STF official report dated13August2025 says majority upheld expanded CIDE-Tecnologia incidence under Tema914, rejected Scania Latin America appeal; split6\u20135. PGFN2026 report corroborates constitutional ruling and science/technology earmarking.",
+      "source_ids": [
+        "nflx-tax-demand-stf-cide-news",
+        "nflx-tax-demand-pgfn-2026"
+      ],
+      "limitation": "Not Netflix litigation or proof its619/729 assess CIDE; current docket inaccessible. No exact tax forecast inferred."
+    },
+    {
+      "id": "DEMAND-JUNE",
+      "status": "supported independent measurement",
+      "claim": "Nielsen June interval: Netflix viewing increased month on month while TV share flat or lower, amid totalTV+3.1% and streaming about+3%. Competition for attention included sports/Peacock; Netflix paid retention, pricing elasticity, global revenue and ad contribution not measured.",
+      "source_ids": [
+        "nflx-tax-demand-nielsen-june-2026",
+        "nflx-tax-demand-nielsen-gauge-current"
+      ],
+      "limitation": "US TV-set measurement only; not ad-sales currency ratings or computers/mobile. June is not claimed latest available."
+    },
+    {
+      "id": "DEMAND-JULY",
+      "status": "supported independent measurement",
+      "claim": "Official currently linked July release dated10September: Peacock viewing+15%, Disney streaming+4%, YouTube+6% and14.2% ofTV; totalstreaming49.0%. Article prose has no exact Netflix July metric.",
+      "source_ids": [
+        "nflx-tax-demand-nielsen-july-2026"
+      ],
+      "limitation": "Not evidence Netflix lost users or global monetization fell. Tubi parameters changed inJune; no mechanical trend peer valuation."
+    },
+    {
+      "id": "DISNEY-SVOD",
+      "status": "supported interested competitor disclosure",
+      "claim": "June27quarter Disney Entertainment SVOD revenue USD5532m vs4972m, operating income712m vs329m; displayed margin12.9%. Subscription fees4715m vs4116m; ads851m vs830m.",
+      "source_ids": [
+        "nflx-tax-demand-disney-q3-2026"
+      ],
+      "limitation": "Non-GAAP SVOD measure excludes HuluLiveTV/Fubo; scope/calendar and broadersegment mix differ fromNetflix. Competitive monetization plausible, direct causal NFLX share loss not established."
+    },
+    {
+      "id": "MIRROR-DISCREPANCY",
+      "status": "verified provenance discrepancy",
+      "claim": "Previously archived June mirror contains no literal729 whereas freshly archived authoritative SEC June source explicitly records729 prior-period Brazil payments. Originals unchanged. Scope of mirror discrepancy not comprehensively analysed.",
+      "source_ids": [
+        "nflx-tax-demand-q2-existing-filing-mirror",
+        "nflx-tax-demand-q2-authoritative-sec"
+      ],
+      "limitation": "Old mirror is not adequate corroboration of729; use authoritative SEC. This does not independently invalidate every other mirror number or prove malicious alteration."
+    }
+  ],
+  "operations_modified": false,
+  "originals_modified": false,
+  "checks": [
+    {
+      "source_id": "nflx-tax-demand-disney-q3-2026",
+      "raw_sha256_matches": true
+    },
+    {
+      "source_id": "nflx-tax-demand-nielsen-june-2026",
+      "raw_sha256_matches": true
+    },
+    {
+      "source_id": "nflx-tax-demand-pgfn-2026",
+      "raw_sha256_matches": true
+    },
+    {
+      "source_id": "nflx-tax-demand-stf-cide-news",
+      "raw_sha256_matches": true
+    },
+    {
+      "source_id": "nflx-tax-demand-nielsen-july-2026",
+      "raw_sha256_matches": true
+    },
+    {
+      "source_id": "nflx-tax-demand-nielsen-gauge-current",
+      "raw_sha256_matches": true
+    },
+    {
+      "source_id": "nflx-tax-demand-q3-2025-existing-issuer-letter",
+      "raw_sha256_matches": true,
+      "material_anchor_present": true
+    },
+    {
+      "source_id": "nflx-tax-demand-q2-existing-filing-mirror",
+      "raw_sha256_matches": true,
+      "material_anchor_present": false
+    },
+    {
+      "source_id": "nflx-tax-demand-q2-authoritative-sec",
+      "raw_sha256_matches": true,
+      "material_anchor_present": true
+    }
+  ]
+}

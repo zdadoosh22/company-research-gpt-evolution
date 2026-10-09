@@ -1,0 +1,25 @@
+{
+  "verified_at": "2026-10-09T22:57:26.051791+00:00",
+  "checks": [
+    {
+      "name": "demand_profit_burden",
+      "actual": "524.553",
+      "expected": "524.553",
+      "passed": true
+    },
+    {
+      "name": "historical_content_gap_change",
+      "actual": "1026.220",
+      "expected": "1026.220",
+      "passed": true
+    },
+    {
+      "name": "separate_tax_cash_stress_intercept",
+      "actual": "3090.243",
+      "expected": "3090.243",
+      "passed": true
+    }
+  ],
+  "simulated_trades": false,
+  "numerical_forecasts_selected": false
+}

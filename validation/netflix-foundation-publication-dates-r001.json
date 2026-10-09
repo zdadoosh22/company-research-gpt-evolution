@@ -1,0 +1,36 @@
+{
+  "verified_at": "2026-10-09T22:56:37.462554+00:00",
+  "source": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224940614552Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+  "source_sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+  "class": "derived SEC metadata, filing date distinct from period end and original issuer release date",
+  "filings": [
+    {
+      "accessionNumber": "0001193125-26-312575",
+      "filingDate": "2026-07-22",
+      "reportDate": "2026-07-20",
+      "primaryDocument": "d171951d8k.htm",
+      "form": "8-K"
+    },
+    {
+      "accessionNumber": "0001065280-26-000212",
+      "filingDate": "2026-07-17",
+      "reportDate": "2026-06-30",
+      "primaryDocument": "nflx-20260630.htm",
+      "form": "10-Q"
+    },
+    {
+      "accessionNumber": "0001065280-26-000034",
+      "filingDate": "2026-01-23",
+      "reportDate": "2025-12-31",
+      "primaryDocument": "nflx-20251231.htm",
+      "form": "10-K"
+    },
+    {
+      "accessionNumber": "0001065280-25-000406",
+      "filingDate": "2025-10-22",
+      "reportDate": "2025-09-30",
+      "primaryDocument": "nflx-20250930.htm",
+      "form": "10-Q"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "netflix-foundation-calculations-v1",
+  "units": "USD million; percentages and ratios labelled",
+  "inputs_source": "Q2 2026 and Q3 2025 shareholder letters; H1 Brazil and financing-cost observations from June 10-Q, separately archived in cash note",
+  "comparators": {
+    "reported": {
+      "profit": "3248.247",
+      "margin_percent": "28.2203333064878286912764359803782818",
+      "guided_profit_growth_percent": "31.3939487976129894062859136020136400",
+      "guided_margin_delta_pp": "4.96784709786675917808592793875080060"
+    },
+    "prior_period_only_sensitivity": {
+      "profit": "3743.447",
+      "margin_percent": "32.5225643416808952185202358199481560",
+      "guided_profit_growth_percent": "14.0125664928607243537840925756395110",
+      "guided_margin_delta_pp": "0.665616062673692650842128099180926400"
+    },
+    "full_charge_sensitivity": {
+      "profit": "3867.247",
+      "margin_percent": "33.5981221004791618503311857798406246",
+      "guided_profit_growth_percent": "10.3627464188348972796410469773459000",
+      "guided_margin_delta_pp": "-0.409941696124573980968821860711542200"
+    }
+  },
+  "approx_prior_period_charge": "495.20",
+  "q3_2026_guided_margin_percent": "33.1881804043545878693623639191290824",
+  "content": {
+    "cash_2026_h1": "9911.018",
+    "cash_2025_h1": "8010.775",
+    "amortization_2026_h1": "8529.209",
+    "amortization_2025_h1": "7655.186",
+    "cash_growth_percent": "23.7210881593853278865028664517478020",
+    "amortization_growth_percent": "11.4173973042588383874670060270253390",
+    "cash_to_amort_2026": "1.16200904444949115445523729105477425",
+    "cash_to_amort_2025": "1.04645073287572633767487818062160737",
+    "cash_minus_amort_2026": "1381.809",
+    "cash_minus_amort_2025": "355.589",
+    "full_year_guidance_identity": "H2 cash content ~= 1.1*A_FY - 9911.018; H2 amortization = A_FY - 8529.209; H2 cash-amort ~= 0.1*A_FY - 1381.809",
+    "fy2025_amortization": "16422.166",
+    "conditional_fy2026_amortization": "18064.38260",
+    "conditional_fy2026_cash_content": "19870.820860",
+    "conditional_h2_cash_content": "9959.802860",
+    "conditional_h2_amortization": "9535.17360",
+    "conditional_h2_cash_minus_amort": "424.629260",
+    "guidance_caution": "2025 audited annual amortization from Q4 letter p14; applying issuer approximately 10% growth and approximately 1.1x cash ratio compounds rounded guidance, not a precise forecast or sustainable spending floor",
+    "asset_rollforward_residual": "-186.050",
+    "asset_residual_caution": "cash-flow additions need not equal balance-sheet asset additions; FX/other movements unresolved; do not plug residual into sustainable cash"
+  },
+  "cash": {
+    "reported_h1_fcf": "6619.243",
+    "gross_receipt_subtraction_intercept": "3819.243",
+    "prior_brazil_payment_exclusion_intercept": "4548.243",
+    "same_with_sbc_cost_intercept": "4276.526",
+    "h1_receipt_tax_identity": "FCF ex receipt and related paid taxes = 3819.243 + T_cash_H1; not normalized FCF",
+    "h1_brazil_sensitivity_identity": "If excluding all disclosed prior-period Brazil cash as nonrecurring: 4548.243 + T_cash_H1; recurrence and claim status remain uncertain",
+    "sbc_identity": "Cash-equivalent SBC sensitivity = 4276.526 + T_cash_H1, before other recurring adjustments; alternative claims treatment must not deduct SBC again",
+    "fy_identity": "FY guidance ex receipt and associated FY cash taxes ~= 9700 + T_cash_FY; do not add 729 again unless known included and deliberately excluded",
+    "h2_guided_fcf": "5880.757",
+    "restricted_cash_change": "63.592",
+    "unrestricted_cash_change": "65.551",
+    "restricted_component_change": "-1.959",
+    "financing_cash_flow": "-5900.441",
+    "cash_plus_st_investments_june": "9127.910",
+    "debt_carrying_june": "14309.306",
+    "dated_net_debt_carrying_june": "5181.396"
+  },
+  "earnings": {
+    "reported_h1_pretax": "10615.672",
+    "receipt_exclusion_pretax": "7815.672",
+    "plus_approx_transaction_financing_expense_sensitivity": "7900.672",
+    "tax_identity": "Net income excluding receipt = 5884.205 + T_provision_receipt. Adding 85 issuance amortization also needs its own associated tax provision. Total effective tax rate cannot allocate either.",
+    "expense_warning": "85 is approximate accounting amortization, not an additional cash addback to already reconciled CFO"
+  },
+  "expectations": {
+    "external_fy_operating_margin_percent": "31.4720812182741116751269035532994924",
+    "issuer_fy_op_profit_low": "16065.000",
+    "issuer_fy_op_profit_high": "16191.000",
+    "external_fcf_gap_to_guide": "310",
+    "scope": "Displayed FY2026 figures, provider last-updated Oct8; GAAP/adjusted/tax/termination FCF definitions not reconciled; no quarterly consensus"
+  },
+  "stress_interfaces": {
+    "demand": "Delta OI = contribution_rate * Delta revenue - Delta fixed/content expense; contribution_rate unquantified, so no numerical demand-loss forecast",
+    "content": "Incremental cash payments C reduce CFO-minus-capex by C absent offsetting liability/tax/cash changes; a repeat of observed H1 cash-amort excess is a burden, not an incremental forecast",
+    "tax": "Repeat of disclosed 729 prior-period cash payment reduces otherwise identical cash by 729; illustrative historical-sized shock, not probability or same-claim double counting",
+    "no_repricing": "E1=E0 and M1=M0 imply unchanged earnings-capitalization support; no positive return inferred",
+    "compression": "Support ratio = (E1/E0)*(M1/M0); no M or expected return selected",
+    "late": "Positive thesis does not imply value > actual delayed response price; refresh evidence, claims and quote before any future decision",
+    "gap_halt_delay": "No executable quote or changed event date => no assumed fill; gaps can pass stops and limits can remain unfilled"
+  },
+  "checks": "Comparator Decimal/Fraction agreement and issuer cash/profit identities asserted; analytical review separate",
+  "actionable": false,
+  "valuation": null,
+  "entry_ceiling": null
+}

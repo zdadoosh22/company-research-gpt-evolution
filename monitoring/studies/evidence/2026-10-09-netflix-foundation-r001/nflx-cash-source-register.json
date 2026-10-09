@@ -1,0 +1,56 @@
+[
+  {
+    "id": "q4-2025-letter",
+    "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2025/q4/FINAL-Q4-25-Shareholder-Letter.pdf",
+    "retrieved_utc": "20261009T224845274012Z",
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224845274012Z-q4-2025-letter-d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327.pdf",
+    "sha256": "d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327",
+    "bytes": 2046074,
+    "status": "archived"
+  },
+  {
+    "id": "q2-2026-sec",
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm",
+    "retrieved_utc": "20261009T224846955058Z",
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224846955058Z-q2-2026-sec-b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98.html",
+    "sha256": "b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98",
+    "bytes": 1815731,
+    "status": "archived"
+  },
+  {
+    "id": "july-issue-sec",
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526312575/d171951d8k.htm",
+    "retrieved_utc": "20261009T224847361078Z",
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224847361078Z-july-issue-sec-91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd.html",
+    "sha256": "91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd",
+    "bytes": 30710,
+    "status": "archived"
+  },
+  {
+    "id": "sec-submissions",
+    "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+    "retrieved_utc": "20261009T224940614552Z",
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224940614552Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+    "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+    "bytes": 160304,
+    "status": "archived"
+  },
+  {
+    "id": "july-underwriting",
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526312575/d171951dex11.htm",
+    "retrieved_utc": "20261009T224940722917Z",
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224940722917Z-july-underwriting-920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd.html",
+    "sha256": "920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd",
+    "bytes": 158649,
+    "status": "archived"
+  },
+  {
+    "id": "2025-10k",
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm",
+    "retrieved_utc": "20261009T224950280191Z",
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224950280191Z-2025-10k-3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af.html",
+    "sha256": "3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af",
+    "bytes": 2137854,
+    "status": "archived"
+  }
+]

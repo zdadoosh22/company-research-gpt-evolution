@@ -1,0 +1,295 @@
+{
+  "version": "r001",
+  "date": "2026-10-09",
+  "prepared_utc": "2026-10-09T22:50:40.037484+00:00",
+  "status": "bounded_cash_content_claims_foundation_not_valuation_or_investment_approval",
+  "information_cutoff": "2026-10-09; latest reviewed financial period June30,2026; subsequent8KJuly22 plus submissions inventoryJuly30last8K",
+  "sources": [
+    {
+      "id": "q4-2025-letter",
+      "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2025/q4/FINAL-Q4-25-Shareholder-Letter.pdf",
+      "retrieved_utc": "20261009T224845274012Z",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224845274012Z-q4-2025-letter-d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327.pdf",
+      "sha256": "d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327",
+      "bytes": 2046074,
+      "status": "archived"
+    },
+    {
+      "id": "q2-2026-sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm",
+      "retrieved_utc": "20261009T224846955058Z",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224846955058Z-q2-2026-sec-b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98.html",
+      "sha256": "b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98",
+      "bytes": 1815731,
+      "status": "archived"
+    },
+    {
+      "id": "july-issue-sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526312575/d171951d8k.htm",
+      "retrieved_utc": "20261009T224847361078Z",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224847361078Z-july-issue-sec-91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd.html",
+      "sha256": "91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd",
+      "bytes": 30710,
+      "status": "archived"
+    },
+    {
+      "id": "sec-submissions",
+      "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+      "retrieved_utc": "20261009T224940614552Z",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224940614552Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "bytes": 160304,
+      "status": "archived"
+    },
+    {
+      "id": "july-underwriting",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526312575/d171951dex11.htm",
+      "retrieved_utc": "20261009T224940722917Z",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224940722917Z-july-underwriting-920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd.html",
+      "sha256": "920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd",
+      "bytes": 158649,
+      "status": "archived"
+    },
+    {
+      "id": "2025-10k",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm",
+      "retrieved_utc": "20261009T224950280191Z",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-foundation-r001\\nflx-cash-20261009T224950280191Z-2025-10k-3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af.html",
+      "sha256": "3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af",
+      "bytes": 2137854,
+      "status": "archived"
+    },
+    {
+      "id": "q2-letter-existing",
+      "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf",
+      "retrieved_utc": "2026-10-09T12:57:07.505467Z",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125707505467Z-q2-letter-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "bytes": 294574,
+      "status": "original_reused_unchanged"
+    }
+  ],
+  "inputs_usdm_except_claims_and_rates": {
+    "fy2025_content_amort_usdm": "16422.166",
+    "fy2025_content_additions_usdm": "17096.617",
+    "fy2025_content_liability_change_signed_usdm": "-610.838",
+    "h1_2026_content_amort_usdm": "8529.209",
+    "h1_2026_content_additions_usdm": "9774.440",
+    "h1_2026_content_liability_change_signed_usdm": "-136.578",
+    "h1_2025_content_amort_usdm": "7655.186",
+    "h1_2025_content_additions_usdm": "7385.470",
+    "h1_2025_content_liability_change_signed_usdm": "-625.305",
+    "june_content_net_usdm": "33837.573",
+    "dec_content_net_usdm": "32778.392",
+    "june_content_liability_usdm": "5492.122",
+    "dec_content_liability_usdm": "5664.330",
+    "june_content_obligations_usdm": "25106.705",
+    "june_content_obligations_next12m_usdm": "11939.734",
+    "june_content_obligations_after12m_usdm": "13166.971",
+    "h1_cfo_usdm": "7034.017",
+    "h1_capex_usdm": "414.774",
+    "h1_fcf_usdm": "6619.243",
+    "h1_investing_usdm": "-1000.518",
+    "h1_financing_usdm": "-5900.441",
+    "h1_cash_fx_usdm": "-69.466",
+    "cash_restricted_begin_usdm": "9039.194",
+    "cash_restricted_end_usdm": "9102.786",
+    "june_unrestrictedcash_usdm": "9099.232",
+    "dec_unrestrictedcash_usdm": "9033.681",
+    "shortinvest_usdm": "28.678",
+    "h1_termination_gross_receipt_usdm": "2800",
+    "h1_brazil_prior_tax_period_cash_usdm_approx": "729",
+    "h1_terminated_financing_amortisation_expense_usdm_approx": "85",
+    "h1_pretax_usdm": "10615.672",
+    "h1_tax_provision_usdm": "1931.467",
+    "h1_netincome_usdm": "8684.205",
+    "june_debt_carrying_usdm": "14309.306",
+    "june_debt_principal_usdm_approx": "14372",
+    "july_new_issue_principal_usdm": "1000",
+    "july_issue_public_pct": "99.255",
+    "july_new_coupon_pct": "5.250",
+    "old_nov2026_coupon_pct": "4.375"
+  },
+  "claims": {
+    "common_june30_actual_million": "4163.939676",
+    "q2_basic_weighted_average_million": "4189.303",
+    "q2_diluted_weighted_average_million": "4261.300",
+    "h1_diluted_weighted_average_million": "4279.776",
+    "q2_incremental_dilutive_million": "71.997",
+    "q2_excluded_antidilutive_million": "6.794",
+    "options_june30_million": "123.891603",
+    "option_weighted_average_strike_usd": "39.21",
+    "unvested_rsu_psu_million": "2.012512",
+    "h1_cash_sbc_addback_usdm": "271.717",
+    "h1_equity_award_settlement_tax_cash_usdm": "35.861",
+    "h1_buyback_cash_usdm": "5984.991",
+    "h1_repurchase_shares_million": "66.431786",
+    "june_remaining_buyback_authorisation_usdm_approx": "27100"
+  },
+  "formula_strings": {
+    "h1_content_cash": "9774.440-(-136.578)=9911.018",
+    "prior_h1_content_cash": "7385.470-(-625.305)=8010.775",
+    "fy2025_content_cash": "17096.617-(-610.838)=17707.455",
+    "h1_content_cash_minus_amort": "9911.018-8529.209=1381.809",
+    "content_net_rollforward_unexplained": "33837.573-32778.392-9774.440+8529.209=-186.050",
+    "content_liability_stock_flow_residual": "5492.122-5664.330-(-136.578)=-35.630",
+    "unrecognised_content_commitments_derived": "25106.705-5492.122=19614.583",
+    "cash_total_bridge": "7034.017-1000.518-5900.441-69.466=63.592=9102.786-9039.194",
+    "unrestrictedcash_delta": "9099.232-9033.681=65.551",
+    "restrictedcash_delta": "63.592-65.551=-1.959",
+    "fcf_minus_gross_receipt_only": "6619.243-2800=3819.243",
+    "fcf_remove_receipt_and_prior_Brazil_cash": "3819.243+729+T_H1=4548.243+T_H1",
+    "fy_guidance_gross_receipt_only": "~12500-2800=~9700",
+    "h2_reported_fcf_implied": "~12500-6619.243=~5880.757",
+    "fy_amort_guidance_conditional": "16422.166*1.10=~18064.3826",
+    "fy_contentcash_guidance_conditional": "16422.166*1.10*1.1=~19870.82086",
+    "h2_amort_guidance_conditional": "18064.3826-8529.209=~9535.1736",
+    "h2_contentcash_guidance_conditional": "19870.82086-9911.018=~9959.80286",
+    "h2_contentcash_minus_amort_conditional": "9959.80286-9535.1736=~424.62926",
+    "h1_pretax_receipt_exclusion_and_financingexpense_sensitivity": "10615.672-2800+~85=~7900.672",
+    "july_public_gross_proceeds_beforefees": "1000*99.255/100=992.55",
+    "coupon_cost_delta_full_year_after_refinance": "1000*(5.250-4.375)/100=8.75"
+  },
+  "unknowns": [
+    "Receipt-specific income tax cash T_H1/T_FY and provision allocation are not disclosed in reviewed interim sources; total effective rate is not a substitute.",
+    "Brazil729 cash is prior tax periods but not documented as same619 charge, interest difference, complete/final settlement or annual recurrence.",
+    "Content balance-sheet/cashflow residuals require FX/acquisition/other attribution; not plug into sustainable reinvestment.",
+    "Current postJune cash/debt/sharecount unknown; July issue confirmed, oldNov2026 repayment only intended.",
+    "Existing option tranche strikes/terms and PSU performance terms remain required for exact equity claim pricing; WAstrike is insufficient.",
+    "Full-year forecasts are approximate management guidance, not researcher sustainable assumptions."
+  ],
+  "approval": {
+    "company_research": "partial",
+    "numerical_valuation": "withheld",
+    "real_or_paper_trade": "not_approved"
+  },
+  "raw_excerpt_short": [
+    {
+      "source_id": "q2-2026-sec",
+      "location": "MD&A cash flow discussion printedp35",
+      "excerpt": "non-routine payments made in connection with non-income tax assessments"
+    },
+    {
+      "source_id": "q2-2026-sec",
+      "location": "MD&A Interest expense printedp32",
+      "excerpt": "amortization of debt issuance costs"
+    }
+  ],
+  "checks": [
+    {
+      "name": "H1 CFO minus capex",
+      "actual": "6619.243",
+      "expected": "6619.243",
+      "pass": true
+    },
+    {
+      "name": "Cash plus restricted bridge",
+      "actual": "63.592",
+      "expected": "63.592",
+      "pass": true
+    },
+    {
+      "name": "Cash statement balance delta",
+      "actual": "63.592",
+      "expected": "63.592",
+      "pass": true
+    },
+    {
+      "name": "H1 financing components",
+      "actual": "-5900.441",
+      "expected": "-5900.441",
+      "pass": true
+    },
+    {
+      "name": "Investing capex acquisition bridge",
+      "actual": "-1000.518",
+      "expected": "-1000.518",
+      "pass": true
+    },
+    {
+      "name": "Annual licensed produced amortization",
+      "actual": "16422.166",
+      "expected": "16422.166",
+      "pass": true
+    },
+    {
+      "name": "Content commitments maturity",
+      "actual": "25106.705",
+      "expected": "25106.705",
+      "pass": true
+    },
+    {
+      "name": "Content balance asset components",
+      "actual": "33837.573",
+      "expected": "33837.573",
+      "pass": true
+    },
+    {
+      "name": "June net debt defined unrestricted plus STinvest",
+      "actual": "5181.396",
+      "expected": "5181.396",
+      "pass": true
+    },
+    {
+      "name": "Option claims rollforward",
+      "actual": "123.891603",
+      "expected": "123.891603",
+      "pass": true
+    },
+    {
+      "name": "Restricted claims rollforward",
+      "actual": "2.012512",
+      "expected": "2.012512",
+      "pass": true
+    },
+    {
+      "name": "Q2 basic plus dilutive increment",
+      "actual": "4261.300",
+      "expected": "4261.300",
+      "pass": true
+    },
+    {
+      "name": "source hash q4-2025-letter",
+      "actual": "d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327",
+      "expected": "d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327",
+      "pass": true
+    },
+    {
+      "name": "source hash q2-2026-sec",
+      "actual": "b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98",
+      "expected": "b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98",
+      "pass": true
+    },
+    {
+      "name": "source hash july-issue-sec",
+      "actual": "91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd",
+      "expected": "91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd",
+      "pass": true
+    },
+    {
+      "name": "source hash sec-submissions",
+      "actual": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "expected": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "pass": true
+    },
+    {
+      "name": "source hash july-underwriting",
+      "actual": "920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd",
+      "expected": "920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd",
+      "pass": true
+    },
+    {
+      "name": "source hash 2025-10k",
+      "actual": "3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af",
+      "expected": "3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af",
+      "pass": true
+    },
+    {
+      "name": "source hash q2-letter-existing",
+      "actual": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "expected": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "pass": true
+    }
+  ],
+  "checks_status": "all_passed"
+}

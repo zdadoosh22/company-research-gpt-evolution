@@ -1,0 +1,215 @@
+{
+  "schema": "frozen-review-input-v1",
+  "scope": "Original discovery/follow-up plus foundation r001, cash/source notes and adverse interfaces; not valuation or full company approval",
+  "frozen_at": "2026-10-09T22:52:47.855869+00:00",
+  "model_requested": "gpt-6-astra",
+  "reasoning_requested": "high",
+  "backend_identity": "unknown",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "9f5b1809330666ce2f54f981e592698c084120acad1cd20c43952abdf48ba704",
+      "bytes": 6628
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+      "bytes": 59411
+    },
+    {
+      "path": "methodology/current.json",
+      "sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5",
+      "bytes": 358
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.json",
+      "sha256": "3cdb396f41ec75abe7bbc2c2d2aa87c6ba3b9edd83f367d1c196ba55ffec092b",
+      "bytes": 9568
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.md",
+      "sha256": "b0860623b243dfd57aa9015e46715981dc7a74cc021fdf84dfca53607cd4f251",
+      "bytes": 8133
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-foundation-r001.md",
+      "sha256": "552ec0b36c71122115e6ec365a2109368bb157b4c2dfff00fd1a6d29091eb5ef",
+      "bytes": 13261
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-opportunity-followup.json",
+      "sha256": "f1a641675bd727329caf8b478dae18a15e4771656d52e9c678552740c73a0bf9",
+      "bytes": 11710
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-opportunity-followup.md",
+      "sha256": "48a10b31d01c21beb4874b6b2d22114d0d601c2d61c8e260b0a3b8fa02645371",
+      "bytes": 13068
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/20261009T224904026975Z-nflx-tax-demand-disney-q3-2026-567dca2c824be7bc8918688f0904d64e6bbf7c4599d4448388b8fc046faae518.pdf",
+      "sha256": "567dca2c824be7bc8918688f0904d64e6bbf7c4599d4448388b8fc046faae518",
+      "bytes": 7726010
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/20261009T224904026975Z-nflx-tax-demand-disney-q3-2026-selected-pages.txt",
+      "sha256": "db596236ea41a5810e1391c705692f313f3fa142cffbe6bb1cd824a1d382e624",
+      "bytes": 9863
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/20261009T224905090605Z-nflx-tax-demand-nielsen-june-2026-edfcd714d35de703a37aa9ac0508612eeb984b60fa9dbc55d7b0692d942b8309.html",
+      "sha256": "edfcd714d35de703a37aa9ac0508612eeb984b60fa9dbc55d7b0692d942b8309",
+      "bytes": 851227
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/20261009T224907057672Z-nflx-tax-demand-pgfn-2026-1188cd3fccbdcdf53631f8218f9931af7d177106ea2a5acf55d23e188837f6b5.pdf",
+      "sha256": "1188cd3fccbdcdf53631f8218f9931af7d177106ea2a5acf55d23e188837f6b5",
+      "bytes": 2856125
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/20261009T224907057672Z-nflx-tax-demand-pgfn-2026-selected-pages.txt",
+      "sha256": "144abd97a8d9f7d4556a614043e91bd36971d60dfae437ca218b90f26e1f10f9",
+      "bytes": 2843
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/20261009T224915211182Z-nflx-tax-demand-stf-cide-news-0fee8b73d1172d283547a725dad9a8f6c311b95618541898db9030cce1287ed4.html",
+      "sha256": "0fee8b73d1172d283547a725dad9a8f6c311b95618541898db9030cce1287ed4",
+      "bytes": 67787
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/20261009T225107122720Z-nflx-tax-demand-nielsen-july-2026-1beda1a5ad5b75c48a92c9370ad22478df3f74b4365d2891b134dcf0b70d5ca8.html",
+      "sha256": "1beda1a5ad5b75c48a92c9370ad22478df3f74b4365d2891b134dcf0b70d5ca8",
+      "bytes": 849615
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/20261009T225107356239Z-nflx-tax-demand-nielsen-gauge-current-62f7d511ed872c9c84ec59b86f4e0415b7c7186a3ae1bef59568ca51deeacdbd.html",
+      "sha256": "62f7d511ed872c9c84ec59b86f4e0415b7c7186a3ae1bef59568ca51deeacdbd",
+      "bytes": 1449579
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224845274012Z-q4-2025-letter-d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327.pdf",
+      "sha256": "d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327",
+      "bytes": 2046074
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224845274012Z-q4-2025-letter-d0cf5893dde03d467a3481932dd0ed712eb75073cd7d39a989b2772747fab327.pdf.derived.txt",
+      "sha256": "72b7a40233ee705cfbc87f4807d086b7ae450928875a96bb82901cac4d2606e0",
+      "bytes": 65869
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224846955058Z-q2-2026-sec-b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98.html",
+      "sha256": "b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98",
+      "bytes": 1815731
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224846955058Z-q2-2026-sec-b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98.html.derived.txt",
+      "sha256": "adc89b5ba0d5a16144de855b8cfea3e4db54ae93466d8a0b67fa12399993ad77",
+      "bytes": 159601
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224847361078Z-july-issue-sec-91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd.html",
+      "sha256": "91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd",
+      "bytes": 30710
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224847361078Z-july-issue-sec-91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd.html.derived.txt",
+      "sha256": "16f324d9f608a030b3323ec894497fca4f5935cdcfe724f602d4993e84f7503b",
+      "bytes": 5194
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224940614552Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "bytes": 160304
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224940722917Z-july-underwriting-920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd.html",
+      "sha256": "920827ef4397815b8507cb9156b56977aa2a18a5c6294198ab7e48545abe25fd",
+      "bytes": 158649
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224950280191Z-2025-10k-3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af.html",
+      "sha256": "3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af",
+      "bytes": 2137854
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224950280191Z-2025-10k-3120fbd1a823de72e8b3d976a16eefcc7c8a0ee9a7942c9a9cc1c023707ad2af.html.derived.txt",
+      "sha256": "d96924e108c940ecfc4fc84c55c3c8798b088cbe91eeed06b7b1afdf96154a1b",
+      "bytes": 318584
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-source-register.json",
+      "sha256": "684ae737ce9f02c6be44397d1f8cbeaf7339d37858db35dc625655f1fc149e3a",
+      "bytes": 3088
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-tax-demand-fetch-manifest.json",
+      "sha256": "8a81a1d7729685b70ebe82b38b4ae802abe0822c0c4fa0a0b23fb568e9595933",
+      "bytes": 6107
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-tax-demand-q2-authoritative-brazil-cash-derived.txt",
+      "sha256": "1ce73edea3cacf2f4ba3c9f96fbe35eec3a2cd46f5aa2ad1f70e577e402aa438",
+      "bytes": 860
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-tax-demand-q2-existing-filing-mirror-derived-selected-passage.txt",
+      "sha256": "7247ac9719957a9e35059e2e36793f56ccee7b634fd3549ea527c99de0a648f6",
+      "bytes": 649
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-tax-demand-q3-2025-existing-issuer-letter-derived-selected-passage.txt",
+      "sha256": "9fffc1075f4e7667c3bce3c7156316f82f56b85a5d43ba967eb00f6728eeb810",
+      "bytes": 1312
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/20261009T125707505467Z-q2-letter-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "bytes": 294574
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/20261009T125829535587Z-q3-2025-letter-cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031.pdf",
+      "sha256": "cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031",
+      "bytes": 434472
+    },
+    {
+      "path": "validation/netflix-foundation-calculations-r001.json",
+      "sha256": "0e972497168e48fd6d0f9ced7234046729fd6ff79da4060a1c0eba887b0da8a6",
+      "bytes": 6122
+    },
+    {
+      "path": "validation/netflix-foundation-calculations-r001.py",
+      "sha256": "ddf7d2995745fd7b0fa1ff4a3ca0af732265bfc93d171bc55d60eb97dcd56feb",
+      "bytes": 7951
+    },
+    {
+      "path": "validation/netflix-foundation-cash-note-r001.json",
+      "sha256": "774c36ea1243de96c9440a81426d98140d4788bbebcafd0b5c7869f39e335a3c",
+      "bytes": 13290
+    },
+    {
+      "path": "validation/netflix-foundation-cash-note-r001.md",
+      "sha256": "b6082a86ccdfc1202345246e84d1e24df35addd26e99d1fd28a1d9c417e96481",
+      "bytes": 15823
+    },
+    {
+      "path": "validation/netflix-foundation-expectations-r001.md",
+      "sha256": "f293b9d3e658e331bbea789c7c76ec5bf5bd76c6f7ede17fc78214e98a644099",
+      "bytes": 2370
+    },
+    {
+      "path": "validation/netflix-foundation-source-note-r001.json",
+      "sha256": "96da6b4ded51476cadc14f301842754e73b6a5cc2fb227b708ddcde421e0fb25",
+      "bytes": 17437
+    },
+    {
+      "path": "validation/netflix-foundation-source-note-r001.md",
+      "sha256": "b9bf5a030daa6b1339ecd0ed69cc14bd38ce0b28ddd4db3422b6b1731b71f79c",
+      "bytes": 6740
+    },
+    {
+      "path": "workflows/model-review.md",
+      "sha256": "448aa9e8b3f20cc2bb8f41ec6007c9b3fabce9af399a3cc36d7e37b2beb4c11e",
+      "bytes": 1804
+    }
+  ]
+}

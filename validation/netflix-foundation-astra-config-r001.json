@@ -1,0 +1,28 @@
+{
+  "schema": "independent-review-config-v1",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning": "high",
+  "selected_route": "gpt-6-astra",
+  "selection_evidence": "Parent explicitly dispatched this authorised challenge through selected Astra route; reviewer does not infer identity from quality/style.",
+  "backend_identity": "unknown",
+  "backend_independently_attested": false,
+  "reviewer_role": "independent delegated challenger",
+  "reviewer_task": "/root/netflix_foundation_astra_r001",
+  "completed_utc": "2026-10-09T22:59:08.430125+00:00",
+  "scope": "Original discovery/follow-up material foundations plus Netflix foundation r001 frozen41; not reopening earlier closed review or approving company, valuation or entry",
+  "input_manifest_sha256": "21e84f7b6134d77a063f33dc212ca08d8542a6045dfff136962bc7a83995b1d6",
+  "methodology_version": "1.0.0",
+  "methodology_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+  "methods": [
+    "Hash and size checks at start/end",
+    "Read original MD and JSON",
+    "Independently parse raw SEC HTML and issuer PDFs, inspect relevant complete PDF pages and two page renders",
+    "Direct web verification of provider forecast/definitions and Q3 2025 SEC",
+    "55 numerical Fraction checks, one author-calculation replay, one aggregate status assertion",
+    "Adverse and delayed manual response reasoning without invented inputs"
+  ],
+  "self_review_substituted": false,
+  "frozen_inputs_modified": false,
+  "operations_modified": false,
+  "usage_snapshot": "Not independently available to this delegated reviewer; parent handles account-wide workload records."
+}

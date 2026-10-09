@@ -1,0 +1,18 @@
+{
+  "snapshot_created_at": "2026-10-09T23:02:19.227971+00:00",
+  "last_service_tick": "2026-10-09T23:02:19.214233+00:00",
+  "last_source_check": "2026-10-09T17:00:20.548584+00:00",
+  "last_successful_source_check": null,
+  "actionable": false,
+  "funded": true,
+  "cash_gbp": "300",
+  "reserved_gbp": "0",
+  "available_gbp": "300",
+  "telegram_configured": false,
+  "research_jobs": [],
+  "holdings_count": 0,
+  "broker_cash_verified": false,
+  "source_failure_count": 2,
+  "task_state": "Running",
+  "scope": "Read-only limited local status; not broker reconciliation, source completeness or reliability acceptance"
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "astra-supplementary-challenge-v1",
+  "revision": "r002",
+  "completed_utc": "2026-10-09T23:00:15.498613+00:00",
+  "selected_route": "gpt-6-astra",
+  "requested_reasoning": "high",
+  "backend_identity": "unknown",
+  "route_config_reference": {
+    "path": "validation/netflix-foundation-astra-config-r001.json",
+    "sha256": "6595c6d09ce90bc848dd97c99fe2a1520c76987092041074cf39182c29aa7478"
+  },
+  "scope": "Exactly4supplementaryfiles: correctedcalculations andadversesupplement; original41frozenunchanged",
+  "status": "independent_supplementary_review_complete",
+  "disposition": "both_low_defects_resolved_adverse_supplement_accepted_as_bounded_identities",
+  "unresolved_required_corrections": [],
+  "finding_dispositions": [
+    {
+      "id": "NFLX-ASTRA-001",
+      "status": "resolved_in_calculations_r002"
+    },
+    {
+      "id": "NFLX-ASTRA-002",
+      "status": "resolved_in_calculations_r002"
+    }
+  ],
+  "checks": {
+    "count": 8,
+    "all_passed": true,
+    "manifest_path": "validation/netflix-foundation-astra-reviewed-manifest-r002.json",
+    "manifest_sha256": "87135f8259c7833f8171b57ba60d7ad345e730f3d34a122a3d2f04350404c6af"
+  },
+  "report": {
+    "path": "validation/netflix-foundation-astra-challenge-r002.md",
+    "sha256": "2f9b78eb306328eae687b5763509cfec6a21dd4d95a1cc10bc428a59aaa7ea3c"
+  },
+  "inherited_limitations": "Allr001economic/source/currentclaims/expectationslimitsremain; positiveEPS/multipledomain; noforecastprobability/valuation/trade",
+  "acceptance": {
+    "changed_scope_analytical_review_complete": true,
+    "parent_stage_disposition": "separate_pending",
+    "full_company": false,
+    "sustainable_cash": false,
+    "valuation": false,
+    "positive_entry": false,
+    "trade": false
+  }
+}
