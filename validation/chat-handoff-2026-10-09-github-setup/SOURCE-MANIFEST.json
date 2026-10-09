@@ -1,0 +1,209 @@
+{
+  "schema": "bounded-chat-handoff-manifest-v1",
+  "date": "2026-10-09",
+  "prepared_at": "2026-10-09T16:08:59.091932+00:00",
+  "repository_url": "https://github.com/zdadoosh22/company-research-work",
+  "branch": "main",
+  "verified_research_baseline_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+  "publishing_commit": "See separately verified local upload record and starter prompt; not self-embedded",
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "9f5b1809330666ce2f54f981e592698c084120acad1cd20c43952abdf48ba704",
+      "bytes": 6628,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "workflows/chat-handoff.md",
+      "sha256": "f10dfca8759913e61a634fc87f691d276bec656ffb13c1aba26af8a6ff559c8c",
+      "bytes": 5334,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "methodology/current.json",
+      "sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5",
+      "bytes": 358,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "methodology/principles.md",
+      "sha256": "ee75607e99c43172efc73a22877cbf6e7b072d7204b017d4a647a77809c84b07",
+      "bytes": 7459,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+      "bytes": 59411,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "workflows/research.md",
+      "sha256": "6b20763316e6c47b0118f0489a499026e76fed34552b7f7a1905e4caf23e15b3",
+      "bytes": 4029,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "workflows/evidence.md",
+      "sha256": "5933e21ed258ca4a0b9d03d97b15d88e95f00195c3b8ca3082a6fa52c86f4d2b",
+      "bytes": 1849,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "workflows/model-review.md",
+      "sha256": "448aa9e8b3f20cc2bb8f41ec6007c9b3fabce9af399a3cc36d7e37b2beb4c11e",
+      "bytes": 1804,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "validation/acceptance.md",
+      "sha256": "66ca65b41c11e42ed06e8531426c967a4fc0bfebd6bdba3062c449e6656f329f",
+      "bytes": 2038,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "lessons/confirmed.md",
+      "sha256": "1e30d315aed33eb0a945b2c906cd9bdf1403788dc65f97a04189171782c88898",
+      "bytes": 2428,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "monitoring/DECISION-SCOPE.md",
+      "sha256": "b424a556978d65327aa6be45702691c824f894a550a6937e288f8b01031f00b8",
+      "bytes": 4912,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-opportunity-followup.md",
+      "sha256": "48a10b31d01c21beb4874b6b2d22114d0d601c2d61c8e260b0a3b8fa02645371",
+      "bytes": 13068,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "validation/discovery-challenge-2026-10-09.md",
+      "sha256": "1e59a65aedbd7ec092da6b2ade46c6de19d3710f1a42814e6bd6030f132a08be",
+      "bytes": 20267,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "monitoring/decisions/2026-10-09-discovery-review-disposition.md",
+      "sha256": "82b5b56f93dfd40a57d99457c6169e30791b470815565e840dadd01f7fed07cd",
+      "bytes": 3741,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "validation/refinement-report.json",
+      "sha256": "9cc3c9d91f9ca32a637f4307409c0c5eb62324cfdb776b0000df9827918cf246",
+      "bytes": 2443,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "validation/netflix-followup-parent-checks-2026-10-09.json",
+      "sha256": "2eed860a8a1695d6ad858ceb3f5cf53a110198cae8b21f83d036cc6d6f43fe16",
+      "bytes": 4225,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-opportunity-followup.json",
+      "sha256": "f1a641675bd727329caf8b478dae18a15e4771656d52e9c678552740c73a0bf9",
+      "bytes": 11710,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "validation/final-goal-checkpoint-2026-10-09.md",
+      "sha256": "bded51643208307cf70791aedcabebb7c1dda9bf69344426d716b91936ca5c52",
+      "bytes": 8417,
+      "github_excluded": false,
+      "contents_supplied_in_package": true
+    },
+    {
+      "path": "validation/final-goal-checkpoint-2026-10-09.json",
+      "sha256": "80e67657d9d0d263c471c7042913cdc2fe108eecc3148737256fab39824c0dc7",
+      "bytes": 13438,
+      "github_excluded": true,
+      "contents_supplied_in_package": false
+    },
+    {
+      "path": "validation/repository-identity.json",
+      "sha256": "84b24a617cac998547c737dc842de6f07074c3bbf52f49b6865a62f3f59e697f",
+      "bytes": 836,
+      "github_excluded": false,
+      "contents_supplied_in_package": false
+    },
+    {
+      "path": "validation/repository-baseline-verification-2026-10-09.json",
+      "sha256": "6a76587b94b67c716b52999d24292e0612a38aef6fee4f8e5febfff29ba8e063",
+      "bytes": 1438,
+      "github_excluded": false,
+      "contents_supplied_in_package": false
+    }
+  ],
+  "package_files": [
+    {
+      "name": "ACCESS-CHECK.txt",
+      "sha256": "e523e5a3e76f2124577f9bf5d7c09688255717f21378bedb3e82dcfae17109e7",
+      "bytes": 253
+    },
+    {
+      "name": "CHAT-HANDOFF.md",
+      "sha256": "11316066c68a52069f23fd5ec906aced9f20f399969ee8261822cfe47ed83206",
+      "bytes": 19596
+    },
+    {
+      "name": "CHAT-PROJECT-INSTRUCTIONS-REPLACEMENT.txt",
+      "sha256": "b5a039dce84d3ee1e2e547dcb94ce7d8a734a81887cdbe9eb86c511950d2c75f",
+      "bytes": 6865
+    },
+    {
+      "name": "CHECKPOINT-BASELINE.json",
+      "sha256": "75c4dfe7091c2d0779260cbdcf1ae8892b2c60049b540df15c4255ee9e021c31",
+      "bytes": 7693
+    },
+    {
+      "name": "CONNECT-AND-VERIFY.md",
+      "sha256": "56b3d2f705a86b658ea8b45cac7c8c5e4cc55db4196572c2f0134f6b6e1b21cc",
+      "bytes": 4380
+    },
+    {
+      "name": "CURRENT-STATE-SUMMARY.json",
+      "sha256": "dc6e732f2496f989b5904997cd38d86b7b057e174d80f84b4c2fd7cd9796b281",
+      "bytes": 1431
+    },
+    {
+      "name": "REFERENCE-UPDATE.txt",
+      "sha256": "47b237b4afbf8b4c7a7effb0f6314f0b3be9142b393140664b2a74ad6031ddde",
+      "bytes": 99897
+    },
+    {
+      "name": "REVIEW-EVIDENCE.md",
+      "sha256": "731cc7c585902f7f8f5e939d7579693e7842e29bb196790cc20f2383aeb7c0f7",
+      "bytes": 58948
+    }
+  ],
+  "excluded_material": [
+    "credentials",
+    "raw operational state/databases/message identifiers",
+    "broker/private account records",
+    "account quota snapshot",
+    "scratch renders",
+    "full Work conversation"
+  ],
+  "scope": "Specific next research planning/review; no whole-project duplicate, new research stage or repeated completed audit."
+}

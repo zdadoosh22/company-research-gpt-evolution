@@ -1,0 +1,37 @@
+{
+  "verified_at": "2026-10-09T16:02:54.526960+00:00",
+  "repository_url": "https://github.com/zdadoosh22/company-research-work",
+  "private": true,
+  "fork": false,
+  "branch": "main",
+  "baseline_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+  "remote_tree": "a384a01710802d437d1266ce36027c41a4358d37",
+  "remote_files": 395,
+  "all_remote_paths_and_blob_ids_match_local_commit": true,
+  "root_commit_no_imported_parents": true,
+  "critical_download_checks": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "b3c06703373e3660971d32e5c64cfaf4d712c5e4266b70691b6616d8db86c68f",
+      "remote_bytes_match_local": true
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+      "remote_bytes_match_local": true
+    },
+    {
+      "path": "validation/repository-identity.json",
+      "sha256": "84b24a617cac998547c737dc842de6f07074c3bbf52f49b6865a62f3f59e697f",
+      "remote_bytes_match_local": true
+    },
+    {
+      "path": "validation/final-goal-checkpoint-2026-10-09.md",
+      "sha256": "bded51643208307cf70791aedcabebb7c1dda9bf69344426d716b91936ca5c52",
+      "remote_bytes_match_local": true
+    }
+  ],
+  "credentials_and_private_state_excluded": true,
+  "chat_github_access_verified": false,
+  "access_basis": "Local Git Credential Manager and GitHub REST API only; not Chat plugin"
+}

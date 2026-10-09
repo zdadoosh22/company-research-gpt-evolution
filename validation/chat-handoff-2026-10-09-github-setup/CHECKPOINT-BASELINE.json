@@ -1,0 +1,201 @@
+{
+  "schema": "sanitised-goal-retirement-checkpoint-v1",
+  "created_at": "2026-10-09T15:45:40.391855+00:00",
+  "purpose": "Retire outdated goal; save state only; no next stage started. New workflow instructions required before resuming retired research goal.",
+  "engineering_verification": {
+    "at": "2026-10-09T12:48:41.485306+00:00",
+    "tests_passed": 292,
+    "engineering_passed": true,
+    "scope": "Engineering, synthetic fixtures and integrity only; no investment performance or 14-day trial certification",
+    "backup_restore_checks": [
+      {
+        "name": "latest-ledger.sqlite3",
+        "restored_integrity": "ok",
+        "recorded_cash_gbp": "300",
+        "events": 1
+      },
+      {
+        "name": "operations-2026-10-07.sqlite3",
+        "restored_integrity": "ok",
+        "recorded_cash_gbp": "0",
+        "events": 0
+      },
+      {
+        "name": "operations-2026-10-08.sqlite3",
+        "restored_integrity": "ok",
+        "recorded_cash_gbp": "300",
+        "events": 1
+      },
+      {
+        "name": "operations-2026-10-09.sqlite3",
+        "restored_integrity": "ok",
+        "recorded_cash_gbp": "300",
+        "events": 1
+      }
+    ]
+  },
+  "fresh_integrity": {
+    "protected_files_checked": 110,
+    "mismatches": [],
+    "databases": {
+      "state/observation/operations.sqlite3": {
+        "exists": true,
+        "integrity_check": "ok"
+      },
+      "state/scoped-research/queue.sqlite": {
+        "exists": false
+      }
+    }
+  },
+  "interrupted_operations": {
+    "active_subagents_at_check": [],
+    "netflix_independent_followup_review": "Terminated by provider usage limit; no completed challenge artifact; no retry or downgrade started",
+    "expected_review_artifacts": [
+      {
+        "path": "validation/netflix-opportunity-challenge-2026-10-09.md",
+        "exists": false
+      },
+      {
+        "path": "validation/netflix-opportunity-challenge-2026-10-09.json",
+        "exists": false
+      }
+    ],
+    "completed_discovery_review": "Saved and complete; distinct from interrupted follow-up review",
+    "scoped_adapter": "Explicit-run-only; no background worker; current queue counts recorded above"
+  },
+  "existing_background_task": {
+    "name": "CompanyResearch2-Observation",
+    "state_at_check": "Running",
+    "last_started_london": "2026-10-09T13:50:06+01:00",
+    "reported_result": 267009,
+    "next_scheduled_time_london": "2026-10-09T18:00:00+01:00",
+    "action": "Left unchanged; goal retirement does not stop this separately authorised task",
+    "limits": "Observation only; can check configured disclosures/queue draft work under existing configuration. No real recommendations or broker orders."
+  },
+  "bound_artifacts": [
+    {
+      "path": "monitoring/START-HERE.md",
+      "sha256": "ccf57fb657ef11096dc182ab8d85ced2316634b6cd103289cfcf32360ff11b87",
+      "bytes": 12265
+    },
+    {
+      "path": "monitoring/config.json",
+      "sha256": "dc7d6ccf634b7e0408bbf0784cdb6d1cafd1ab85edc4bf4fa688b014bf04fd5c",
+      "bytes": 3627
+    },
+    {
+      "path": "monitoring/DECISION-SCOPE.md",
+      "sha256": "b424a556978d65327aa6be45702691c824f894a550a6937e288f8b01031f00b8",
+      "bytes": 4912
+    },
+    {
+      "path": "monitoring/IMPROVEMENT-ROADMAP.md",
+      "sha256": "b2e03f4d6fc8caa8e93a7f99fb8649f2613471f93343e0e905f55f0aefcf392f",
+      "bytes": 15825
+    },
+    {
+      "path": "monitoring/NEXT-RESEARCH-CYCLE.md",
+      "sha256": "87a46e635153ac988ca0ef87976e8c424bc8fcc86c16e72608468c77e01b54e2",
+      "bytes": 5919
+    },
+    {
+      "path": "monitoring/research-universe-2026-10-09.json",
+      "sha256": "01c01d626202b7bacf741178040c41b0a725798b35b6b384bdb8506491e7c027",
+      "bytes": 5054
+    },
+    {
+      "path": "monitoring/RESEARCH-EVENT-WINDOWS-2026-10-09.md",
+      "sha256": "f70e691770809ddc91610e03a2d745a140a339b765ef0ebc23df0c2d20bf4598",
+      "bytes": 2826
+    },
+    {
+      "path": "validation/refinement-report.json",
+      "sha256": "9cc3c9d91f9ca32a637f4307409c0c5eb62324cfdb776b0000df9827918cf246",
+      "bytes": 2443
+    },
+    {
+      "path": "validation/jpm-astra-review-2026-10-09.md",
+      "sha256": "bd942b6598fdaed76c8e6622ed536dc0ebf7702ee73a14c190376158d7c8f15d",
+      "bytes": 13865
+    },
+    {
+      "path": "monitoring/decisions/2026-10-09-jpm-review-disposition.md",
+      "sha256": "b26835e31bdc290788234ead570cd190974107a7d699f7baf84f78aa1f2ef53e",
+      "bytes": 2303
+    },
+    {
+      "path": "validation/discovery-challenge-2026-10-09.md",
+      "sha256": "1e59a65aedbd7ec092da6b2ade46c6de19d3710f1a42814e6bd6030f132a08be",
+      "bytes": 20267
+    },
+    {
+      "path": "validation/discovery-challenge-2026-10-09.json",
+      "sha256": "5c75bb8535f303c1f22a1a5e26de96788f32fbe79d93ab26d7549aeba7001525",
+      "bytes": 66507
+    },
+    {
+      "path": "monitoring/decisions/2026-10-09-discovery-review-disposition.md",
+      "sha256": "82b5b56f93dfd40a57d99457c6169e30791b470815565e840dadd01f7fed07cd",
+      "bytes": 3741
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-opportunity-followup.md",
+      "sha256": "48a10b31d01c21beb4874b6b2d22114d0d601c2d61c8e260b0a3b8fa02645371",
+      "bytes": 13068
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-opportunity-followup.json",
+      "sha256": "f1a641675bd727329caf8b478dae18a15e4771656d52e9c678552740c73a0bf9",
+      "bytes": 11710
+    },
+    {
+      "path": "validation/netflix-followup-parent-checks-2026-10-09.json",
+      "sha256": "2eed860a8a1695d6ad858ceb3f5cf53a110198cae8b21f83d036cc6d6f43fe16",
+      "bytes": 4225
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-amd-discovery-screen.md",
+      "sha256": "e626e1cac3b3183756fa1130cdda8fc9934730fec2df7017a64508de31fa7698",
+      "bytes": 12494
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-amd-discovery-screen.json",
+      "sha256": "c91e4b682e833da41e3a0349884fa4c725160fab7b16c81a56c2336b75129fe1",
+      "bytes": 22278
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-uber-discovery-screen.md",
+      "sha256": "4f101e6c8a358b475263c96dca75fe3796a50176030e3305ac5f459d7ed21ff3",
+      "bytes": 13403
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-uber-discovery-screen.json",
+      "sha256": "abc660fbf5d66facc5cd928440b40ca89032f4a1b36c4329bec7de5e6d507c9e",
+      "bytes": 19878
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.md",
+      "sha256": "b0860623b243dfd57aa9015e46715981dc7a74cc021fdf84dfca53607cd4f251",
+      "bytes": 8133
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.json",
+      "sha256": "3cdb396f41ec75abe7bbc2c2d2aa87c6ba3b9edd83f367d1c196ba55ffec092b",
+      "bytes": 9568
+    }
+  ],
+  "no_new_stage_started": true,
+  "original_sha256": "80e67657d9d0d263c471c7042913cdc2fe108eecc3148737256fab39824c0dc7",
+  "privacy_projection": "The original is preserved locally and excluded from GitHub. The raw operational_snapshot was removed; supplied summary retains only relevant acceptance facts and no message/update/order identifiers.",
+  "baseline_operational_summary": {
+    "mode": "observation",
+    "actionable": false,
+    "funding_basis": "User-declared isolated GBP300; broker funding independently unverified",
+    "recorded_sleeve_cash_gbp": "300",
+    "recorded_holdings_count": 0,
+    "reserved_gbp": "0",
+    "telegram_configured": false,
+    "automatic_price_acquisition": "disabled",
+    "as_of": "2026-10-09T15:45:40.391855+00:00"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "captured_at": "2026-10-09T16:08:59.091932+00:00",
+  "snapshot_created_at": "2026-10-09T16:08:46.401362+00:00",
+  "mode": "observation",
+  "actionable": false,
+  "last_service_tick": "2026-10-09T16:08:46.390567+00:00",
+  "funding_basis": "User-declared isolated GBP300; broker funding independently unverified",
+  "recorded_sleeve_cash_gbp": "300",
+  "recorded_holdings_count": 0,
+  "reserved_gbp": "0",
+  "research_job_count": 0,
+  "pending_notification_count": 3,
+  "telegram_configured": false,
+  "trial_started_at": "2026-10-07T20:43:26.450543+00:00",
+  "trial_acceptance": "pending; elapsed time does not approve research or recommendations",
+  "source_gaps": [
+    {
+      "source": "unilever-results",
+      "reason": "HTTPError HTTP 403: source retrieval/validation failed"
+    },
+    {
+      "source": "unilever-regulatory",
+      "reason": "HTTPError HTTP 403: source retrieval/validation failed"
+    }
+  ],
+  "automatic_price_acquisition": "disabled",
+  "actual_broker_orders": "not implemented; all manual",
+  "active_goal": "none, verified through goal tool in this setup session",
+  "windows_task": "Running, queried in setup session; existing task unchanged",
+  "scope": "Sanitised dated summary only. Raw operational state, IDs, credentials and databases are excluded. Snapshot/tick freshness does not prove uptime, source completeness, phone delivery or investment readiness."
+}

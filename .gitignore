@@ -35,3 +35,4 @@ cookies.json
 # Rebuildable delivery bundles and local upload-verification reports.
 /validation/chat-handoff-2026-10-09-github-setup/*.zip
 /validation/chat-handoff-2026-10-09-github-setup/UPLOAD-VERIFICATION.json
+/validation/chat-handoff-2026-10-09-github-setup/CHAT-STARTER-MESSAGE.txt

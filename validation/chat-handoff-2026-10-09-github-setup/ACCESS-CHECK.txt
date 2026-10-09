@@ -1,0 +1,5 @@
+Non-sensitive repository access challenge.
+Challenge ID: ff296349-a1d2-45ec-8f64-402952dbdace
+Project: Company research 2
+Purpose: Verify actual Chat GitHub retrieval at the pinned commit.
+This is not a credential, trading instruction or approval.
