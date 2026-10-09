@@ -1,0 +1,1172 @@
+{
+  "kind": "operating",
+  "title": "AppLovin | conditional equity model",
+  "as_of": "2026-10-06",
+  "price_date": "2026-10-05",
+  "currency": "USD",
+  "price": 281.97,
+  "base_revenue": 6829.123999999999,
+  "diluted_shares": 335.98900000000003,
+  "excess_cash": 2053.306,
+  "other_equity_assets": 0,
+  "forecast_dates": [
+    "2027-10-06",
+    "2028-10-06",
+    "2029-10-06",
+    "2030-10-06",
+    "2031-10-06"
+  ],
+  "source_actuals": [
+    {
+      "metric": "Revenue",
+      "period": "2023",
+      "value": 1841.762,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "USD",
+      "source_raw_value": 1841762.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Revenue",
+      "period": "2024",
+      "value": 3224.058,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "USD",
+      "source_raw_value": 3224058.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Revenue",
+      "period": "2025",
+      "value": 5480.717,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "USD",
+      "source_raw_value": 5480717.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "EBIT",
+      "period": "2023",
+      "value": 772.411,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "USD",
+      "source_raw_value": 772411.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "EBIT",
+      "period": "2024",
+      "value": 1910.956,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "USD",
+      "source_raw_value": 1910956.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "EBIT",
+      "period": "2025",
+      "value": 4151.914,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "USD",
+      "source_raw_value": 4151914.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Continuing net income",
+      "period": "2023",
+      "value": 457.826,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "USD",
+      "source_raw_value": 457826.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Continuing net income",
+      "period": "2024",
+      "value": 1589.524,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "USD",
+      "source_raw_value": 1589524.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Continuing net income",
+      "period": "2025",
+      "value": 3433.195,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "USD",
+      "source_raw_value": 3433195.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Diluted weighted shares",
+      "period": "2023",
+      "value": 362.589,
+      "unit": "shares million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "not-applicable",
+      "source_raw_value": 362589.0,
+      "source_raw_unit": "shares thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Diluted weighted shares",
+      "period": "2024",
+      "value": 347.808,
+      "unit": "shares million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "not-applicable",
+      "source_raw_value": 347808.0,
+      "source_raw_unit": "shares thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Diluted weighted shares",
+      "period": "2025",
+      "value": 341.97,
+      "unit": "shares million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K, audited statements of operations p54",
+      "currency": "not-applicable",
+      "source_raw_value": 341970.0,
+      "source_raw_unit": "shares thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Revenue",
+      "period": "2021",
+      "value": 2793.104,
+      "unit": "USD million",
+      "scope": "original total group; includes divested Apps",
+      "status": "verified-reported",
+      "source_id": "a9",
+      "location": "2022 Form 10-K, statements of operations",
+      "currency": "USD",
+      "source_raw_value": 2793104.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Revenue",
+      "period": "2022",
+      "value": 2817.058,
+      "unit": "USD million",
+      "scope": "original total group; includes divested Apps",
+      "status": "verified-reported",
+      "source_id": "a9",
+      "location": "2022 Form 10-K, statements of operations",
+      "currency": "USD",
+      "source_raw_value": 2817058.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "EBIT",
+      "period": "2021",
+      "value": 150.016,
+      "unit": "USD million",
+      "scope": "original total group; includes divested Apps",
+      "status": "verified-reported",
+      "source_id": "a9",
+      "location": "2022 Form 10-K, statements of operations",
+      "currency": "USD",
+      "source_raw_value": 150016.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "EBIT",
+      "period": "2022",
+      "value": -47.791,
+      "unit": "USD million",
+      "scope": "original total group; includes divested Apps",
+      "status": "verified-reported",
+      "source_id": "a9",
+      "location": "2022 Form 10-K, statements of operations",
+      "currency": "USD",
+      "source_raw_value": -47791.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Net income",
+      "period": "2021",
+      "value": 35.338,
+      "unit": "USD million",
+      "scope": "original total group; includes divested Apps",
+      "status": "verified-reported",
+      "source_id": "a9",
+      "location": "2022 Form 10-K, statements of operations",
+      "currency": "USD",
+      "source_raw_value": 35338.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Net income",
+      "period": "2022",
+      "value": -192.947,
+      "unit": "USD million",
+      "scope": "original total group; includes divested Apps",
+      "status": "verified-reported",
+      "source_id": "a9",
+      "location": "2022 Form 10-K, statements of operations",
+      "currency": "USD",
+      "source_raw_value": -192947.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Operating cash flow",
+      "period": "2023",
+      "value": 1061.51,
+      "unit": "USD million",
+      "scope": "total group cash flow; includes Apps before disposal",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K pp38-39 FCF reconciliation",
+      "currency": "USD",
+      "source_raw_value": 1061510.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Capital expenditure",
+      "period": "2023",
+      "value": 4.246,
+      "unit": "USD million",
+      "scope": "total group cash flow; includes Apps before disposal",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K pp38-39 FCF reconciliation",
+      "currency": "USD",
+      "source_raw_value": 4246.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Finance lease principal",
+      "period": "2023",
+      "value": 20.17,
+      "unit": "USD million",
+      "scope": "total group cash flow; includes Apps before disposal",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K pp38-39 FCF reconciliation",
+      "currency": "USD",
+      "source_raw_value": 20170.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Operating cash flow",
+      "period": "2024",
+      "value": 2099.011,
+      "unit": "USD million",
+      "scope": "total group cash flow; includes Apps before disposal",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K pp38-39 FCF reconciliation",
+      "currency": "USD",
+      "source_raw_value": 2099011.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Capital expenditure",
+      "period": "2024",
+      "value": 4.776,
+      "unit": "USD million",
+      "scope": "total group cash flow; includes Apps before disposal",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K pp38-39 FCF reconciliation",
+      "currency": "USD",
+      "source_raw_value": 4776.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Finance lease principal",
+      "period": "2024",
+      "value": 20.875,
+      "unit": "USD million",
+      "scope": "total group cash flow; includes Apps before disposal",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K pp38-39 FCF reconciliation",
+      "currency": "USD",
+      "source_raw_value": 20875.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Operating cash flow",
+      "period": "2025",
+      "value": 3971.094,
+      "unit": "USD million",
+      "scope": "total group cash flow; includes Apps before disposal",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K pp38-39 FCF reconciliation",
+      "currency": "USD",
+      "source_raw_value": 3971094.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Capital expenditure",
+      "period": "2025",
+      "value": 0.473,
+      "unit": "USD million",
+      "scope": "total group cash flow; includes Apps before disposal",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K pp38-39 FCF reconciliation",
+      "currency": "USD",
+      "source_raw_value": 473.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Finance lease principal",
+      "period": "2025",
+      "value": 18.669,
+      "unit": "USD million",
+      "scope": "total group cash flow; includes Apps before disposal",
+      "status": "verified-reported",
+      "source_id": "a1",
+      "location": "2025 Form 10-K pp38-39 FCF reconciliation",
+      "currency": "USD",
+      "source_raw_value": 18669.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Revenue",
+      "period": "2025-H1",
+      "value": 2417.728,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, statements of operations p4",
+      "currency": "USD",
+      "source_raw_value": 2417728.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "EBIT",
+      "period": "2025-H1",
+      "value": 1797.664,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, statements of operations p4",
+      "currency": "USD",
+      "source_raw_value": 1797664.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Continuing net income",
+      "period": "2025-H1",
+      "value": 1495.394,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, statements of operations p4",
+      "currency": "USD",
+      "source_raw_value": 1495394.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Revenue",
+      "period": "2026-H1",
+      "value": 3766.135,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, statements of operations p4",
+      "currency": "USD",
+      "source_raw_value": 3766135.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "EBIT",
+      "period": "2026-H1",
+      "value": 2934.21,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, statements of operations p4",
+      "currency": "USD",
+      "source_raw_value": 2934210.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Continuing net income",
+      "period": "2026-H1",
+      "value": 2472.151,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, statements of operations p4",
+      "currency": "USD",
+      "source_raw_value": 2472151.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Revenue",
+      "period": "2026-Q2",
+      "value": 1923.686,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, statements of operations p4",
+      "currency": "USD",
+      "source_raw_value": 1923686.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "EBIT",
+      "period": "2026-Q2",
+      "value": 1494.277,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, statements of operations p4",
+      "currency": "USD",
+      "source_raw_value": 1494277.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Continuing net income",
+      "period": "2026-Q2",
+      "value": 1266.538,
+      "unit": "USD million",
+      "scope": "continuing",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, statements of operations p4",
+      "currency": "USD",
+      "source_raw_value": 1266538.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Cash",
+      "period": "2026-06-30",
+      "value": 3053.306,
+      "unit": "USD million",
+      "scope": "group; dated snapshot",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, balance sheet p3 / debt note6 / EPS note9 / risk factors",
+      "currency": "USD",
+      "source_raw_value": 3053306.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Debt carrying value",
+      "period": "2026-06-30",
+      "value": 3515.072,
+      "unit": "USD million",
+      "scope": "group; dated snapshot",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, balance sheet p3 / debt note6 / EPS note9 / risk factors",
+      "currency": "USD",
+      "source_raw_value": 3515072.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Rounded senior note principal disclosure",
+      "period": "2026-06-30",
+      "value": 3.6,
+      "unit": "USD billion (rounded)",
+      "scope": "group; dated snapshot",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "10-Q risk factors p53; exact latest detailed schedule USD3550m at December 2025",
+      "currency": "USD",
+      "source_raw_value": 3.6,
+      "source_raw_unit": "USD billion",
+      "conversion_to_working_unit": 1000
+    },
+    {
+      "metric": "Receivables",
+      "period": "2026-06-30",
+      "value": 2171.017,
+      "unit": "USD million",
+      "scope": "group; dated snapshot",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, balance sheet p3 / debt note6 / EPS note9 / risk factors",
+      "currency": "USD",
+      "source_raw_value": 2171017.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Shares outstanding",
+      "period": "2026-06-30",
+      "value": 335.291,
+      "unit": "shares million",
+      "scope": "group; dated snapshot",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, balance sheet p3 / debt note6 / EPS note9 / risk factors",
+      "currency": "not-applicable",
+      "source_raw_value": 335291.0,
+      "source_raw_unit": "shares thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Q2 weighted dilutive awards",
+      "period": "2026-06-30",
+      "value": 1.231,
+      "unit": "shares million",
+      "scope": "group; dated snapshot",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, balance sheet p3 / debt note6 / EPS note9 / risk factors",
+      "currency": "not-applicable",
+      "source_raw_value": 1231.0,
+      "source_raw_unit": "shares thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Anti-dilutive awards excluded",
+      "period": "2026-06-30",
+      "value": 0.107,
+      "unit": "shares million",
+      "scope": "group; dated snapshot",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "2026 Q2 Form 10-Q, balance sheet p3 / debt note6 / EPS note9 / risk factors",
+      "currency": "not-applicable",
+      "source_raw_value": 107.0,
+      "source_raw_unit": "shares thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Dated market close",
+      "period": "2026-10-05",
+      "value": 281.97,
+      "unit": "USD/share",
+      "scope": "selected security",
+      "status": "verified-reported",
+      "source_id": "a6",
+      "location": "historical table row 2026-10-05; Nasdaq APP Class A, close 16:00 EDT",
+      "currency": "USD",
+      "source_raw_value": 281.97,
+      "source_raw_unit": "USD/share",
+      "conversion_to_working_unit": 1
+    },
+    {
+      "metric": "Noncash SBC",
+      "period": "2026-H1",
+      "value": 168.981,
+      "unit": "USD million",
+      "scope": "continuing; no Apps in H1 2026",
+      "status": "verified-reported",
+      "source_id": "a2",
+      "location": "cash flow statement p8",
+      "currency": "USD",
+      "source_raw_value": 168981.0,
+      "source_raw_unit": "USD thousand",
+      "conversion_to_working_unit": 0.001
+    },
+    {
+      "metric": "Shares outstanding",
+      "period": "2026-07-31",
+      "value": 334.651,
+      "source_id": "a2",
+      "location": "10-Q cover: Class A 304.443m plus Class B 30.208m",
+      "unit": "shares million",
+      "scope": "group; dated reported snapshot",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Senior note principal",
+      "period": "2025-12-31",
+      "value": 3550,
+      "source_id": "a1",
+      "location": "2025 10-K note 9 Debt p69: four tranches 1000/1000/1000/550",
+      "unit": "USD million",
+      "scope": "group; dated reported snapshot",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Cash paid for interest",
+      "period": "2026-H1",
+      "value": 99.653,
+      "source_id": "a2",
+      "location": "10-Q supplemental cash-flow disclosure p8",
+      "unit": "USD million",
+      "scope": "group; dated reported snapshot",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "GAAP interest expense",
+      "period": "2026-H1",
+      "value": 102.315,
+      "source_id": "a2",
+      "location": "10-Q statements of operations p4; expense includes debt-cost amortisation",
+      "unit": "USD million",
+      "scope": "group; dated reported snapshot",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Intangible amortisation",
+      "period": "2026-H1",
+      "value": 51.342,
+      "source_id": "a2",
+      "location": "10-Q note 6 intangible assets p15",
+      "unit": "USD million",
+      "scope": "group; dated reported snapshot",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Nonvested RSUs",
+      "period": "2025-12-31",
+      "value": 0.358162,
+      "source_id": "a1",
+      "location": "2025 10-K note 11 equity compensation p71",
+      "unit": "shares million",
+      "scope": "group; dated reported snapshot",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Outstanding options",
+      "period": "2025-12-31",
+      "value": 1.256114,
+      "source_id": "a1",
+      "location": "2025 10-K note 11 stock options p73; weighted strike USD6.10",
+      "unit": "shares million",
+      "scope": "group; dated reported snapshot",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "October 2025 granted contingent PSUs",
+      "period": "2025-12-31",
+      "value": 0.920526,
+      "source_id": "a1",
+      "location": "2025 10-K note 11 PSUs p72; seven-year market-cap conditions",
+      "unit": "shares million",
+      "scope": "group; dated reported snapshot",
+      "status": "verified-reported"
+    }
+  ],
+  "limitations": [
+    "Illustrative arithmetic only: current intrinsic value, a current-price attractiveness judgement and actionable entry levels are withheld. Mature reinvestment, current claims and lease/cash financing reconciliation are not established.",
+    "Ownership proxy = July 31 outstanding 334.651m + June quarterly weighted dilutive/excluded awards 1.338m. Mixed-date EPS awards are not an exact outstanding claim schedule. December option/RSU/PSU quantities are recorded, not added again blindly.",
+    "Acquired amortisation runs off. The 1.4% D&A and 1% capex assumptions are deliberately retained only to expose the original sensitivity, not approved sustainable cash inputs. Forecast margin is after economic SBC; no SBC add-back or second forecast dilution.",
+    "USD204.63m annual financing expense is twice H1 GAAP interest, not verified cash interest. H1 cash paid is USD99.653m. Cash/lease/refinancing schedule remains unvalidated.",
+    "Terminal operating cash grows at g while after-tax financing interest is constant and valued separately. Net borrowing must be zero in this starter pattern; changing debt requires a linked, validated debt/service/claims schedule.",
+    "June cash less USD1bn assumed reserve remains a dated liquidity illustration. Dividends, buybacks and cash yield are zero assumptions; Tripledot excluded value is an assumption, not missing data.",
+    "Focused Astra audit records limitations. This remains a partial research pilot and does not validate the complete operating-company workflow."
+  ],
+  "scenarios": {
+    "Bear": {
+      "cost_of_equity": 0.13,
+      "terminal_growth": 0.02,
+      "growth": [
+        0.1,
+        0.08,
+        0.05,
+        0.04,
+        0.03
+      ],
+      "operating_margin": [
+        0.65,
+        0.63,
+        0.62,
+        0.6,
+        0.6
+      ],
+      "tax_rate": [
+        0.21,
+        0.21,
+        0.21,
+        0.21,
+        0.21
+      ],
+      "da_ratio": [
+        0.014,
+        0.014,
+        0.014,
+        0.014,
+        0.014
+      ],
+      "capex_ratio": [
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "working_capital_ratio": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "interest": [
+        204.63,
+        204.63,
+        204.63,
+        204.63,
+        204.63
+      ],
+      "net_borrowing": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dividend_payout": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "buybacks": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gross_dilution": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repurchase_price": [
+        281.97,
+        281.97,
+        281.97,
+        281.97,
+        281.97
+      ],
+      "cash_yield": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "Base": {
+      "cost_of_equity": 0.11,
+      "terminal_growth": 0.03,
+      "growth": [
+        0.25,
+        0.2,
+        0.15,
+        0.12,
+        0.08
+      ],
+      "operating_margin": [
+        0.77,
+        0.77,
+        0.76,
+        0.76,
+        0.75
+      ],
+      "tax_rate": [
+        0.21,
+        0.21,
+        0.21,
+        0.21,
+        0.21
+      ],
+      "da_ratio": [
+        0.014,
+        0.014,
+        0.014,
+        0.014,
+        0.014
+      ],
+      "capex_ratio": [
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "working_capital_ratio": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "interest": [
+        204.63,
+        204.63,
+        204.63,
+        204.63,
+        204.63
+      ],
+      "net_borrowing": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dividend_payout": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "buybacks": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gross_dilution": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repurchase_price": [
+        281.97,
+        281.97,
+        281.97,
+        281.97,
+        281.97
+      ],
+      "cash_yield": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "Bull": {
+      "cost_of_equity": 0.1,
+      "terminal_growth": 0.035,
+      "growth": [
+        0.35,
+        0.3,
+        0.24,
+        0.18,
+        0.12
+      ],
+      "operating_margin": [
+        0.8,
+        0.81,
+        0.81,
+        0.8,
+        0.8
+      ],
+      "tax_rate": [
+        0.21,
+        0.21,
+        0.21,
+        0.21,
+        0.21
+      ],
+      "da_ratio": [
+        0.014,
+        0.014,
+        0.014,
+        0.014,
+        0.014
+      ],
+      "capex_ratio": [
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "working_capital_ratio": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "interest": [
+        204.63,
+        204.63,
+        204.63,
+        204.63,
+        204.63
+      ],
+      "net_borrowing": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dividend_payout": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "buybacks": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gross_dilution": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repurchase_price": [
+        281.97,
+        281.97,
+        281.97,
+        281.97,
+        281.97
+      ],
+      "cash_yield": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "What-if": {
+      "cost_of_equity": 0.11,
+      "terminal_growth": 0.03,
+      "growth": [
+        0.25,
+        0.2,
+        0.15,
+        0.12,
+        0.08
+      ],
+      "operating_margin": [
+        0.77,
+        0.77,
+        0.76,
+        0.76,
+        0.75
+      ],
+      "tax_rate": [
+        0.21,
+        0.21,
+        0.21,
+        0.21,
+        0.21
+      ],
+      "da_ratio": [
+        0.014,
+        0.014,
+        0.014,
+        0.014,
+        0.014
+      ],
+      "capex_ratio": [
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "working_capital_ratio": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "interest": [
+        204.63,
+        204.63,
+        204.63,
+        204.63,
+        204.63
+      ],
+      "net_borrowing": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dividend_payout": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "buybacks": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gross_dilution": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repurchase_price": [
+        281.97,
+        281.97,
+        281.97,
+        281.97,
+        281.97
+      ],
+      "cash_yield": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "reverse_growth": 0.1911069502234629,
+  "input_bindings": {
+    "base_revenue": [
+      {
+        "metric": "Revenue",
+        "period": "2025",
+        "source_id": "a1",
+        "coefficient": 1
+      },
+      {
+        "metric": "Revenue",
+        "period": "2026-H1",
+        "source_id": "a2",
+        "coefficient": 1
+      },
+      {
+        "metric": "Revenue",
+        "period": "2025-H1",
+        "source_id": "a2",
+        "coefficient": -1
+      }
+    ],
+    "diluted_shares": [
+      {
+        "metric": "Shares outstanding",
+        "period": "2026-07-31",
+        "source_id": "a2",
+        "coefficient": 1
+      },
+      {
+        "metric": "Q2 weighted dilutive awards",
+        "period": "2026-06-30",
+        "source_id": "a2",
+        "coefficient": 1
+      },
+      {
+        "metric": "Anti-dilutive awards excluded",
+        "period": "2026-06-30",
+        "source_id": "a2",
+        "coefficient": 1
+      }
+    ],
+    "cash": {
+      "metric": "Cash",
+      "period": "2026-06-30",
+      "source_id": "a2",
+      "coefficient": 1
+    }
+  },
+  "operating_cash_reserve": 1000
+}

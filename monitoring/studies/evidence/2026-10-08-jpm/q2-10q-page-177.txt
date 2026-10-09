@@ -1,0 +1,88 @@
+Note 21 – Regulatory capital 
+Refer to Note 27 of JPMorganChase’s 2025 Form 10-K 
+for a detailed discussion on regulatory capital.
+The Federal Reserve establishes capital requirements, 
+including well-capitalized standards, for the Firm as a 
+consolidated financial holding company. The OCC 
+establishes similar minimum capital requirements and 
+standards for the Firm’s principal IDI subsidiary, 
+JPMorgan Chase Bank, N.A. 
+Under the risk-based capital and leverage-based 
+guidelines of the Federal Reserve, JPMorgan Chase & 
+Co. is required to maintain minimum ratios for CET1 
+capital, Tier 1 capital, Total capital, Tier 1 leverage and 
+the SLR. Failure to meet these minimum requirements 
+could cause the Federal Reserve to take action. 
+JPMorgan Chase Bank, N.A. is also subject to these 
+capital requirements established by its primary 
+regulators.
+The following table presents the risk-based regulatory 
+capital ratio requirements and well-capitalized ratios 
+to which the Firm and JPMorgan Chase Bank, N.A. 
+were subject as of June 30, 2026 and December 31, 
+2025.
+Standardized 
+capital ratio 
+requirements
+Advanced 
+capital ratio 
+requirements
+Well-
+capitalized 
+ratios
+BHC(a) IDI(b) BHC(a) IDI(b) BHC(c) IDI(d)
+Risk-based capital ratios
+CET1 
+capital  11.5 %  7.0 %  11.5 %  7.0 % NA  6.5 %
+Tier 1 
+capital  13.0  8.5  13.0  8.5  6.0 %  8.0 
+Total 
+capital  15.0  10.5  15.0  10.5  10.0  10.0 
+Note: The table above is as defined by the regulations issued by the 
+Federal Reserve, OCC and FDIC and to which the Firm and JPMorgan 
+Chase Bank, N.A. are subject. 
+(a) Represents the regulatory capital ratio requirements applicable 
+to the Firm. The CET1, Tier 1 and Total capital ratio requirements 
+each include a respective minimum requirement plus a GSIB 
+surcharge of 4.5% as calculated under Method 2; plus a 2.5% 
+SCB for Standardized ratios and a fixed 2.5% capital 
+conservation buffer for Advanced ratios. The countercyclical 
+buffer is currently set to 0% by the federal banking agencies.
+(b) Represents requirements for JPMorgan Chase Bank, N.A. The 
+CET1, Tier 1 and Total capital ratio requirements include a fixed 
+capital conservation buffer requirement of 2.5% that is 
+applicable to JPMorgan Chase Bank, N.A. JPMorgan Chase Bank, 
+N.A. is not subject to the GSIB surcharge.
+(c) Represents requirements for bank holding companies pursuant 
+to regulations issued by the Federal Reserve. 
+(d) Represents requirements for JPMorgan Chase Bank, N.A. 
+pursuant to regulations issued under the FDIC Improvement Act.
+The following table presents the leverage-based 
+regulatory capital ratio requirements and well-
+capitalized ratios to which the Firm and JPMorgan 
+Chase Bank, N.A. were subject as of June 30, 2026 and 
+December 31, 2025.
+Capital ratio 
+requirements(b)
+Well-capitalized 
+ratios
+BHC IDI BHC(c) IDI
+Leverage-based capital ratios
+Tier 1 leverage  4.0 %  4.0 % NA  5.0 %
+SLR(a)  4.3  4.0 NA  4.0 
+Note: The table above is as defined by the regulations issued by the 
+Federal Reserve, OCC and FDIC and to which the Firm and JPMorgan 
+Chase Bank, N.A. are subject.
+(a) The current requirements reflect the eSLR final rule which the 
+Firm early adopted effective January 1, 2026. For the year ended 
+December 31, 2025, the SLR requirements were 5.0% and 6.0% 
+for BHC and JPMorgan Chase Bank, N.A., respectively, with 
+minimum SLR requirement of 3.0% and supplementary leverage 
+buffer requirements of 2.0% and 3.0% for BHC and JPMorgan 
+Chase Bank, N.A., respectively.
+(b) Represents minimum SLR requirement of 3.0%, as well as 
+supplementary leverage buffer requirements of 1.25% and 1.0% 
+for BHC and JPMorgan Chase Bank, N.A., respectively. 
+(c) The Federal Reserve's regulations do not establish well-
+capitalized thresholds for these measures for BHCs.
+177

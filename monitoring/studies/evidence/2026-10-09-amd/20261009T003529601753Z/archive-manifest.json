@@ -1,0 +1,47 @@
+[
+  {
+    "source_id": "q2-call",
+    "url": "https://d1io3yog0oux5.cloudfront.net/_e6fb18640ea7bfff80a48dc92268a25f/amd/db/841/9237/webcast_transcript/AMD2Q26EarningsCallTranscript.pdf",
+    "accessed_at": "2026-10-09T00:35:29.603004+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/q2-call.pdf",
+    "sha256": "271d63d96f015c07c7e1dd76eebeff52f1f2b2a603c2526b28463ee0215553b5",
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/q2-call.txt",
+    "status": 200
+  },
+  {
+    "source_id": "september-8k",
+    "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000182/amd-20260926.htm",
+    "accessed_at": "2026-10-09T00:35:31.375623+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/september-8k.html",
+    "sha256": "4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be",
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/september-8k.txt",
+    "status": 200
+  },
+  {
+    "source_id": "tipranks-estimates",
+    "url": "https://www.tipranks.com/stocks/amd/earnings",
+    "accessed_at": "2026-10-09T00:35:31.552599+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/tipranks-estimates.html",
+    "sha256": "15960d1f3d495805a962604956999141812b1bcc158bb4136d300a873bcd9542",
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/tipranks-estimates.txt",
+    "status": 200
+  },
+  {
+    "source_id": "altindex-estimates",
+    "url": "https://altindex.com/earnings-calendar/amd",
+    "accessed_at": "2026-10-09T00:35:31.840139+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/altindex-estimates.html",
+    "sha256": "584e880584527d80ffdfaee755a2b3c7fc9d6a7b96515c31df64b8d49a659658",
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/altindex-estimates.txt",
+    "status": 200
+  },
+  {
+    "source_id": "ir-calendar",
+    "url": "https://ir.amd.com/news-events/ir-calendar",
+    "accessed_at": "2026-10-09T00:35:32.840216+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/ir-calendar.html",
+    "sha256": "61c490b019a7854ccf6640f8a1143c945b7bd3f1b438cd7f7cc1773790cfb84b",
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/ir-calendar.txt",
+    "status": 200
+  }
+]

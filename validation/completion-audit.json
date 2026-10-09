@@ -1,0 +1,103 @@
+{
+  "scope": "Focused Astra audit; not project-wide implementation acceptance",
+  "achieved": true,
+  "reviewer_evidence": "validation/astra-audit.json",
+  "requirements": {
+    "configured_astra_review": "verified",
+    "material_findings": "all fixed or precisely limit conclusions",
+    "current_artifact_validation": {
+      "APP": {
+        "errors": [],
+        "scope": "workbook and reports",
+        "formula_counts": {
+          "Start": 0,
+          "Actuals": 0,
+          "Assumptions": 74,
+          "Forecast": 135,
+          "Outputs": 32,
+          "Sensitivities": 26,
+          "Sources": 0
+        },
+        "pdf_pages": {
+          "full-report.pdf": 10,
+          "thesis.pdf": 3
+        },
+        "native_excel_verified": false,
+        "context_reload": "files sufficient for dates, method, security, request, gaps and continuation"
+      },
+      "JPM": {
+        "errors": [],
+        "scope": "workbook and reports",
+        "formula_counts": {
+          "Start": 0,
+          "Actuals": 0,
+          "Bank model": 7,
+          "Sources": 0
+        },
+        "pdf_pages": {
+          "pilot.pdf": 3
+        },
+        "native_excel_verified": false,
+        "context_reload": "files sufficient for dates, method, security, request, gaps and continuation"
+      },
+      "ULVR": {
+        "errors": [],
+        "scope": "workbook and reports",
+        "formula_counts": {
+          "Start": 0,
+          "Actuals": 0,
+          "Reconciliation": 8,
+          "Sources": 0
+        },
+        "pdf_pages": {
+          "pilot.pdf": 2
+        },
+        "native_excel_verified": false,
+        "context_reload": "files sufficient for dates, method, security, request, gaps and continuation"
+      }
+    },
+    "unit_tests": 51,
+    "exported_workbook_mutations": {
+      "APP": 104,
+      "JPM": 12,
+      "ULVR": 6
+    },
+    "no_quote_fixture": {
+      "errors": [],
+      "scope": "workbook-only fixture",
+      "formula_counts": {
+        "Start": 0,
+        "Actuals": 0,
+        "Assumptions": 74,
+        "Forecast": 135,
+        "Outputs": 32,
+        "Sensitivities": 26,
+        "Sources": 0
+      },
+      "pdf_pages": {},
+      "native_excel_verified": false,
+      "context_reload": "files sufficient for dates, method, security, request, gaps and continuation"
+    },
+    "source_register_errors": {
+      "APP": [],
+      "JPM": [],
+      "ULVR": []
+    },
+    "preserved_history": {
+      "original_pilots": {
+        "files": 108,
+        "mismatches": []
+      },
+      "inspected_reference": {
+        "files": 10,
+        "mismatches": []
+      }
+    },
+    "approved_method_unchanged": true,
+    "user_copy_hashes": "all10 verified",
+    "native_excel": "not tested; explicitly disclosed",
+    "research_acceptance": "partial; unsupported security conclusions withheld",
+    "continuity": "fresh-context agent reproduced boundaries; precise next actions saved"
+  },
+  "verified": "2026-10-07T13:04:37.690407+00:00"
+}

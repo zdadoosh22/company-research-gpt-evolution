@@ -1,0 +1,33 @@
+[
+  {
+    "id": "u1",
+    "title": "2025 Annual Report and Accounts",
+    "type": "filing",
+    "publication_date": null,
+    "url": "https://www.unilever.com/files/unilever-annual-report-and-accounts-2025.pdf",
+    "read": true,
+    "access_error": "HTTP Error 403: Forbidden",
+    "locations": [
+      "2025 Annual Report printed p128 / PDF p131, consolidated income statement"
+    ],
+    "archived_file": "sources/u1-verified-extract.txt",
+    "sha256": "9687677bb23ccf2322b09588e74021ae1d708a20aeb326457751afe78c23ba45",
+    "preservation": "selected verified numerical extract only",
+    "document_date": "auditor signed 2026-03-04; publication date not independently verified"
+  },
+  {
+    "id": "u2",
+    "title": "Q2/H1 2026 announcement",
+    "type": "management",
+    "publication_date": "2026-07-28",
+    "url": "https://www.unilever.com/files/unilever-q2-2026-results-full-announcement.pdf",
+    "read": true,
+    "access_error": "HTTP Error 403: Forbidden",
+    "locations": [
+      "H1 announcement PDF pp22 and26 (printed pp22 and26)"
+    ],
+    "archived_file": "sources/u2-verified-extract.txt",
+    "sha256": "7d08dfa8723c05b81229dc34e0f58a57bd1c94eb03d6193201fe5316091ccb98",
+    "preservation": "selected verified numerical extract only"
+  }
+]

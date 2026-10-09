@@ -1,0 +1,12 @@
+uber-20260630 (https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm)
+citeturn97view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn93view0","lineno":0}); Total lines: 2854
+--------------------------------------------------------------------------------
+uber-20260630 (https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm)
+citeturn97view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn93view0","lineno":903}); Total lines: 2854
+--------------------------------------------------------------------------------
+uber-20260630 (https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm)
+citeturn97view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn93view0","lineno":1690}); Total lines: 2854
+--------------------------------------------------------------------------------
+uber-20260630 (https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm)
+citeturn97view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn93view0","lineno":840}); Total lines: 2854
+

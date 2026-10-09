@@ -1,0 +1,12 @@
+{
+  "template_only": true,
+  "actionable": false,
+  "status": "unvalidated-draft",
+  "security": {"legal_entity": null, "exchange": null, "ticker": null, "share_class": null, "trading_currency": null, "price_unit": null, "broker_isa_availability_verified": false},
+  "company_judgement": {"run_reference": null, "methodology_hash": null, "actual_review_identity": null, "research_status": null, "read_sources_with_locations": [], "contrary_evidence": [], "unresolved_material_gaps": []},
+  "short_term_case": {"catalyst": null, "event_window": null, "causal_mechanism": null, "expectations_already_priced_in_evidence": [], "adverse_case": null, "holding_deadline": null, "extension_evidence_required": null},
+  "portfolio_decision": {"policy_version": null, "why_prefer_to_cash": null, "proposed_gbp_commitment_including_costs": null, "sleeve_nav_timestamp": null, "available_cash_after_existing_reservations": null, "concentration_and_joint_event_risk": null, "cost_sensitivity": null, "exit_arms_to_compare": ["price-risk", "thesis", "time"]},
+  "execution_draft": {"side": null, "quantity": null, "maximum_buy_price_or_sell_condition": null, "order_type": null, "time_in_force": null, "quoted_price": null, "quote_timestamp": null, "quote_kind": null, "source_delay": null, "cost_and_fx_basis": null, "created_at": null, "expires_at": null, "reassessment_conditions": [], "broker_order_report_required": true},
+  "phone_state": {"alert_id": null, "revision": null, "status_endpoint": null, "confirmation_expires_at": null, "last_successful_monitoring": null, "acknowledgement_is_execution": false},
+  "acceptance": {"operational_gate_passed": false, "analytical_gate_passed": false, "strategy_validation_passed": false, "instruction_enabled": false}
+}

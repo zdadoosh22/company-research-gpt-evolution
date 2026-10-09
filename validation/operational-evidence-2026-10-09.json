@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-10-09T00:28:01.190100+00:00",
+  "trial_started_at": "2026-10-07T20:43:26.450543+00:00",
+  "elapsed_wall_days": 1.155957633761574,
+  "last_recorded_tick": "2026-10-09T00:27:57.904999+00:00",
+  "sources": {
+    "sec-0001751008": {
+      "checks": 3,
+      "successful_checks": 3,
+      "failed_checks": 0,
+      "changes_detected": 0,
+      "first_check": "2026-10-07T22:05:37.457572+00:00",
+      "last_check": "2026-10-08T17:00:06.096616+00:00",
+      "last_success": "2026-10-08T17:00:06.096616+00:00",
+      "largest_gap_between_checks_seconds": 45199.029354
+    },
+    "sec-0000019617": {
+      "checks": 3,
+      "successful_checks": 3,
+      "failed_checks": 0,
+      "changes_detected": 0,
+      "first_check": "2026-10-07T22:05:37.968434+00:00",
+      "last_check": "2026-10-08T17:00:06.701208+00:00",
+      "last_success": "2026-10-08T17:00:06.701208+00:00",
+      "largest_gap_between_checks_seconds": 45199.212312
+    },
+    "sec-0000217410": {
+      "checks": 3,
+      "successful_checks": 3,
+      "failed_checks": 0,
+      "changes_detected": 0,
+      "first_check": "2026-10-07T22:05:40.675005+00:00",
+      "last_check": "2026-10-08T17:00:09.825111+00:00",
+      "last_success": "2026-10-08T17:00:09.825111+00:00",
+      "largest_gap_between_checks_seconds": 45198.348892
+    },
+    "unilever-results": {
+      "checks": 3,
+      "successful_checks": 0,
+      "failed_checks": 3,
+      "changes_detected": 0,
+      "first_check": "2026-10-07T22:05:41.252836+00:00",
+      "last_check": "2026-10-08T17:00:10.191774+00:00",
+      "last_success": null,
+      "largest_gap_between_checks_seconds": 45198.200815
+    },
+    "unilever-regulatory": {
+      "checks": 3,
+      "successful_checks": 0,
+      "failed_checks": 3,
+      "changes_detected": 0,
+      "first_check": "2026-10-07T22:05:41.607425+00:00",
+      "last_check": "2026-10-08T17:00:10.313326+00:00",
+      "last_success": null,
+      "largest_gap_between_checks_seconds": 45198.258695
+    }
+  },
+  "uptime_fraction": null,
+  "uptime_limitation": "The last tick and sparse source checks do not measure continuous uptime. Gaps are observed intervals, not proven outages or complete scheduled-slot coverage.",
+  "phone_delivery_verified": null,
+  "phone_scope": "Not evaluated by this source-history report",
+  "acceptance": "pending-independent-operational-evaluation",
+  "analytical_approval": false,
+  "actionable": false,
+  "scope": "Observed source-check records only. Counts do not establish full-document reading, comprehensive news coverage, fourteen days of successful operation, failure-test acceptance or investment quality."
+}

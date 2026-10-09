@@ -1,0 +1,117 @@
+# Company Research 2 — evaluated Chat / Work operating arrangement
+
+9 October 2026. Status: proposed durable integration; the user's supplied protocol applies to this session. This assessment does not amend authoritative instructions, change methodology, approve research, or authorise development. Project root: `C:/Users/aidan/Documents/Company research 2`.
+
+## A. Objective and outcome
+
+Assess the supplied collaboration protocol against the actual workspace and recommend a usable arrangement. Assessment complete. The protocol is suitable with the refinements below. This is a chat-led hybrid: versioned research instructions, archived evidence and dated reports are supported by local calculation, artifact and lifecycle tools. A separately authorised observation extension adds source monitoring, draft research, paper evaluation and manual records. It is not principally a software product needing more features.
+
+### Verified project baseline
+
+- `AGENTS.md` is the local instruction entry point. `methodology/current.json` identifies approved methodology 1.0.0. Its declared SHA256 matches the file checked in this session: `0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6`.
+- `companies/*/index.json` separates `latest` from `latest_active`. All three inspected indexes have `latest: null`: APP r002, JPM r003 and Unilever r002 remain partial. Their focused arithmetic/audit work must not become approval of valuations or investment conclusions.
+- `validation/astra-audit.json` records the completed focused audit and its analytical limits. Later JPM and discovery challenges are recorded separately in `validation/resume-2026-10-09.md`, with parent dispositions under `monitoring/decisions/`. Repeat review only for materially changed scope, evidence, assumptions or conclusions, or an unmet acceptance condition.
+- The latest inspected Netflix addendum, `monitoring/studies/2026-10-09-netflix-opportunity-followup.md`, is focused-follow-up complete, valuation/positive-entry withheld, awaiting independent review. Its conclusion is newer than the checkpoint's statement that the follow-up is underway. `validation/netflix-followup-parent-checks-2026-10-09.json` contains arithmetic evidence, not independent analytical approval. No completed Netflix independent-review artifact was found in the inspected validation directory.
+- `validation/observation-status.json` records 292 engineering tests and 110 protected files unchanged. These are prior recorded results, not tests rerun in this assessment. It also records an unverified real scoped-adapter invocation, absent phone verification, incomplete operational trial and absent investment approval.
+- The inspected `state/observation/status.json` was stamped 15:03 UTC on 9 October (16:03 London). It records observation mode, `actionable: false`, declared £300 cash, no holdings, broker funding unverified, and two Unilever HTTP403 gaps. Reading that snapshot does not prove present service health or comprehensive source coverage.
+- This folder is inside a Git repository rooted at `C:/Users/aidan`, with no resolving HEAD. Do not invent a project commit/branch baseline or include unrelated home-directory files. Use dated document versions and content hashes until project-specific version control is deliberately established.
+
+### Source-of-truth map
+
+| Responsibility | Existing authority / record |
+|---|---|
+| Instructions and analytical requirements | `AGENTS.md`; `methodology/current.json`; referenced specification; `methodology/principles.md`; applicable workflows |
+| Research version and approval | Company index, selected `run.json`, archived sources, model inputs, review records and publication manifest |
+| General pilot status and continuation | `validation/status.json`; `validation/continuation.md` |
+| Observation/scoped mandate and priorities | `monitoring/DECISION-SCOPE.md`; `monitoring/NEXT-RESEARCH-CYCLE.md`; roadmap; dated studies and dispositions |
+| Observation implementation/checkpoint | `validation/observation-status.json`; latest dated resume record |
+| Operational events and ledger | SQLite records under `state/observation/`; generated status is a dated view; backups are recovery copies |
+
+These records have distinct scopes, rather than one universal status file. When records disagree, inspect the underlying dated artifact and explain the discrepancy; never silently overwrite older records or infer approval from the newest prose.
+
+## Material refinements to the supplied protocol
+
+1. **Route by capabilities and verified access, not product name alone.** Chat may have browsing or execution tools; Work may lack local access in a particular environment. Chat still does most conceptual preparation. Only claim actual file access or executed verification where available.
+2. **Use the five-phase cycle proportionately.** Keep all five phases for substantial, uncertain or consequential work. For a focused question or routine reversible correction, combine stages and use existing acceptance standards. Do not force an extra environment switch solely to fill a phase.
+3. **Preserve required stronger review.** Selective specialist use does not waive `workflows/model-review.md` or `validation/acceptance.md`. Required Astra review remains pending if its route/authority is absent. Chat criticism supplements it. A prior audit covers its actual frozen scope; the earlier discovery review does not approve new Netflix conclusions.
+4. **Separate criticism from demonstrated independence.** Give a critic source passages, inputs, assumptions, calculations and unresolved issues, not just the implementer's conclusions. Record reviewer exposure and conflicts. A different chat or model label alone does not establish independent corroboration. Parent dispositions remain explicit; reproduced arithmetic alone does not establish investment quality.
+5. **Make handoffs reproducible and bounded.** Include artifact version/hash, scope, as-of cutoff, evidence classifications, expected output, acceptance criteria and exact unresolved questions. Freeze material inputs; if they change before execution, inspect the delta and invalidate affected checks. Reuse the existing scoped-package mechanisms where applicable; do not claim the unverified adapter route is operationally proven.
+6. **Correct the blanket usage-window assumption.** Work and Codex share usage. Current official documentation says Pro plans currently have no five-hour limit; limits depend on plan/model/workload and weekly limits may apply. Use available account information, not a universal five-hour rule or API prices as a proxy for included subscription tasks. Do not assume this account's plan, remaining usage or task cost. See [official pricing and usage guidance](https://learn.chatgpt.com/docs/pricing).
+7. **Keep planning approval separate from routine execution.** Existing authorised local work can proceed within its scope. Consequential methodology, paid-service, account-access or external-action decisions retain their applicable approval requirements. An implementation-ready Chat plan is not trading authority. Preserve unattended full-thesis defaults; do not introduce mandatory user checkpoints into every run.
+8. **Treat automated research as constrained Work consumption.** Existing monitoring can generate subscription-funded research drafts independently of this conversation. Preserve its current configuration. Future efficiency decisions should consider job consolidation, relevance, retries and checkpoint reuse, without disabling necessary checks or silently changing model routes. Deterministic scheduling, hashing, accounting and freshness checks remain model-free.
+
+## Refined operating protocol
+
+### Purpose and precedence
+
+Maximise reliable, verified and maintainable project progress per unit of constrained usage. Quality precedes usage savings; speed is secondary. This protocol governs organisation, not new functionality. The current user request controls scope; existing approved methodology and applicable acceptance/review rules remain authoritative. Propose substantive analytical changes through `lessons/proposed.md`, preserving approved version/hash and correction history.
+
+### Responsibilities
+
+**Chat:** define outcomes, evaluate methodology and alternatives, develop causal/valuation frameworks, identify failure modes, prepare acceptance criteria and adversarial cases, critique supplied evidence, and formulate bounded Work assignments. Isolated code and fixtures require reliable interfaces and remain provisional until integrated and executed. Do not invent repository context or fill missing source foundations with plausible assumptions.
+
+**Work:** recover current instructions/checkpoints; inspect the actual affected files; reconcile the prepared plan with reality; perform environment-dependent evidence capture, implementation and computation; test and correct material failures; verify outputs; preserve dated artifacts, review dispositions and continuation. Do not repeat adequate conceptual work unless a concrete gap or contradiction requires it.
+
+**Specialist reviewer:** challenge consequential analytical or architectural weaknesses, with an actual labelled route and reproducible evidence. Keep requested configuration distinct from independently reported backend identity. Preserve the existing Sol High / Standard validation baseline and required Astra route; smaller-model assignments are candidates for verification, not an automatically approved cheaper workflow. Current tools expose Sol, Astra and Luna options, but this assessment changes no setting and establishes no comparative quality result.
+
+### Substantial-task cycle
+
+1. **Work reconnaissance:** inspect only relevant instructions, current artifact/state and dependencies; deliver a factual brief with unresolved questions and acceptance boundaries.
+2. **Chat preparation:** specify outcome, rationale, options, chosen design, constraints, failure modes, tests and missing decisions. Avoid unsupported filenames/interfaces. Keep the specification tied to the inspected baseline.
+3. **Work execution:** check baseline drift, implement the smallest coherent authorised change or research revision, preserve predecessors, execute appropriate checks and correct defects.
+4. **Chat critique:** assess a compact evidence package; challenge causal reasoning, opposing cases, calculation consistency and unmet acceptance conditions. Preserve the separate required specialist review where applicable.
+5. **Work finalisation:** investigate substantive findings, execute necessary follow-up checks and record dispositions. State what is complete, partial, withheld and untested. Update only the appropriate existing checkpoint/index after its gates pass.
+
+Skip unnecessary transfers for routine tasks. Reopen completed review only when a changed dependency or unresolved finding justifies it. Reserve capacity to finish verification; do not start another substantial implementation merely because usage remains.
+
+### When Work is unavailable
+
+Chat continues requirements, critique, documentation, isolated design and test preparation using supplied verified context. Preserve provisional outputs with their baseline and assumptions. Avoid interconnected speculative rewrites. On return, Work integrates worthwhile outputs and verifies them rather than regenerating everything. Neither environment promises continued background work without an actual authorised continuation mechanism. Do not circumvent limits or introduce paid fallback.
+
+### Handoffs and privacy
+
+Use existing dated continuation/resume conventions. Export only relevant evidence excerpts, code interfaces and calculations with provenance; local paths alone cannot give a remote Chat access. Exclude credentials, DPAPI stores and unnecessary broker/account details. Provide source type, publication/access dates, exact locations and raw-versus-derived classification. Repeated reporting of one source is not independent evidence.
+
+Each significant session records baseline/version/hash, changed artifacts, executed checks and observed outcomes, material unresolved issues, next priorities, useful Chat work, Work-only dependencies and research-validation status. Save one checkpoint for the relevant scope and link supporting evidence rather than duplicate its contents across several new status documents.
+
+### Integrity and authority
+
+Preserve prospective-buyer defaults; materiality, sector suitability, current/horizon value distinctions, market-implied expectations, opposing evidence and falsification. Keep reported facts, estimates, assumptions and deterministic calculations distinguishable. Maintain units, security identity, as-of cutoffs, ownership and financing bridges, uncertainty and history. Preserve numerical withholding when foundations are missing.
+
+Keep research, portfolio decisions, risk controls and execution separate. Partial pilots and successful engineering tests confer no entry authority. Existing observation and paper mandates are separate from the general long-term thesis default. No live trades, new brokerage execution connections, paid APIs, subscriptions, destructive operations or other consequential external changes follow from this protocol.
+
+## B. Changes and proposed integration
+
+Only this assessment/proposed protocol file was added. No code, methodology, company run, monitoring configuration, task, ledger or approval state was changed by this assessment.
+
+Recommended integration after the wording is accepted:
+
+1. Store the stable operating rules above in `workflows/chat-work-collaboration.md` with version/date and a link to this dated assessment. Keep dated project status here and in existing checkpoints, not in the standing rules.
+2. Add one short pointer in `AGENTS.md`: “For substantial tasks, apply workflows/chat-work-collaboration.md proportionately. It supplements the approved methodology and existing acceptance/model-review rules; it grants no new implementation, paid-service, account-access or trading authority.”
+3. Add a matching discovery link under README continuity. Retain `methodology/current.json`, existing review procedures and scoped status files without replacement. Do not copy the full protocol into every instruction surface.
+
+No new tracking application, state schema or memory entry is needed. This draft is durable but is not activated as a new project-wide instruction merely by existing in validation.
+
+## C. Verification
+
+Read the local instruction entry point, README, approved method pointer/specification, principles, research/model-review workflows, acceptance rules, confirmed lessons, pilot indexes, audit/status/continuation records, observation instructions/config/roadmap/status, latest resume/next-cycle records and Netflix addendum/parent-check record. Inspected lifecycle publication gates and scoped adapter validation/execution boundaries, plus the test-file inventory. Checked the approved methodology hash and Git root/HEAD availability. Checked official Work/Codex usage guidance.
+
+This was a read-only architectural/status assessment apart from adding this document. No suite was rerun, source financial claims independently re-underwritten, broker/phone verified, service restarted, model review launched or model setting changed. Recorded prior checks remain labelled as recorded evidence.
+
+## D. Outstanding issues
+
+Pilots and broader workflow/model cost-quality acceptance remain open; native Excel behaviour remains unverified. Observation still lacks verified phone delivery, broker reconciliation, executable quote evidence and completed operational acceptance. Unilever coverage remains incomplete. Netflix has new conclusions beyond the completed discovery review and needs its own challenge. A contemporaneous chat may be working on that review; this assessment establishes the saved-file state only and does not duplicate its work.
+
+## E. Recommended next action
+
+**Chat first:** critique the saved Netflix addendum and prepare a bounded foundation specification covering termination-related cash/provision taxes, content spending/amortisation/liabilities, SBC/current claims, financing, matched expectations and durable demand evidence. State which missing disclosures actually block each conclusion and which uncertainty could be materially bounded. Design response-price and adverse-case tests without inventing valuation parameters or an entry hurdle.
+
+**Work next:** recover any already completed/active Netflix review before launching another. Verify/capture the necessary source originals, reproduce material calculations, reconcile the foundations and disposition the actual independent findings. Construct only the supported scoped research revision; keep positive entry withheld until its analytical and operational requirements are met. No adapter smoke job or broad code refactor is needed merely to adopt this arrangement.
+
+**Required Astra:** challenge the new addendum/revision where the review rules require it, preserving its exact scope and configuration limitations. Do not rerun the closed original pilot audit.
+
+APP replacement/full-thesis acceptance remains a separate next task for the general research-workflow lane. Complete the APP finite operating transition, renewal/cash costs, compensation/claims and financing construction before claiming the broader workflow approved. Do not silently merge that project with the shorter-horizon observation priority.
+
+## F. Compact Chat handoff
+
+Company Research 2 is a local hybrid evidence-first workspace, methodology 1.0.0, not an approved investment workflow. APP r002, JPM r003 and Unilever r002 are partial; `latest` is null for all three. Focused original audit, JPM rejection review and discovery challenge are recorded complete within their respective limits. Latest saved Netflix follow-up is complete only as focused research, awaiting independent review; recurring cash, matched expectations and justified capitalization block positive entry. Research priority Netflix → AMD → Uber reflects tractability, not returns. The observation extension remains nonactionable, with declared £300 cash and no recorded holdings; phone, broker, quote and trial evidence are incomplete. 292 tests are a prior recorded engineering result. Prepare one narrow Netflix evidence/acceptance specification from the supplied addendum and source excerpts. Work will capture/reconcile/execute; required Astra review remains separate. Preserve current methodology, withheld conclusions, manual trade authority and all predecessor hashes. No new feature development was requested.

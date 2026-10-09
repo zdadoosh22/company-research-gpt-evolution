@@ -1,0 +1,1145 @@
+{
+  "schema_version": 1,
+  "id": "jpm-astra-review-2026-10-09",
+  "review_date": "2026-10-09",
+  "completed_utc": "2026-10-09T00:31:55.864621+00:00",
+  "evidence_cutoff": "2026-10-08T23:59:59Z",
+  "scope": "Independent analytical challenge of frozen days-to-months pre-event rejection; not full company thesis",
+  "reviewer": {
+    "role": "explicitly selected Astra review route",
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "high",
+    "requested_identity_basis": "parent assignment",
+    "reported_backend_identity": null,
+    "backend_independently_verified": false,
+    "actual_analytical_challenge_performed": true,
+    "route_label_is_not_verified_backend_identity": true,
+    "supplemental_review_is_separate": true
+  },
+  "status": "scoped-rejection-accepted-with-qualifications",
+  "accepted_rejection": true,
+  "positive_entry_accepted": false,
+  "full_thesis_accepted": false,
+  "real_signal": false,
+  "paper_entry_authorized": false,
+  "backend_certification": false,
+  "accepted_scope": [
+    "8 October documented pre-event rejection under the scoped evidence standard",
+    "source facts and arithmetic subject to findings",
+    "withholding numerical price response, entry and return conclusions"
+  ],
+  "rejected_scope": [
+    "known event, mechanical EPS beat or strong business alone as entry evidence",
+    "conditional transmission calculations as downside or fair-value bounds",
+    "cash preference as a forecast of outperformance"
+  ],
+  "withheld_scope": [
+    "full JPM thesis or current valuation",
+    "positive paper/live entry and allocation",
+    "execution instruction or any gate approval",
+    "numerical ceiling, stop, target, quantity, probability or expected return",
+    "independently verified backend-model identity"
+  ],
+  "bound_artifacts": [
+    {
+      "path": "monitoring/studies/2026-10-08-jpm-event-dossier.md",
+      "sha256": "34ffd0c70b11383594b7962b37fe57242d3384b0c76cd6b92d042ca989a4c0fc"
+    },
+    {
+      "path": "monitoring/studies/2026-10-08-jpm-event-dossier.json",
+      "sha256": "01aff6247e21c036ef18ae88dc6cb2a039250c9960307e08700154a434e773b4"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/archive-manifest.json",
+      "sha256": "6c28305c195df9f684d1aeee9595e8c2b7e80cfeeaa820e58817a1b21bf6a6e4"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/build_record.py",
+      "sha256": "6471c6f8d04e6c9502ece3bc27f6ee18125776056761278b0a50e66882fa75f7"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/calculate.py",
+      "sha256": "c32d790315acd4d866e515651f953156d9ba31bd3bf4ef4b8b0fad6096afc09d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/calculation-checks.json",
+      "sha256": "28ce9889e85475a65cc596376ea6e90a4707185b0b23d659d09f612d8a43267c"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/calculations.json",
+      "sha256": "eaab453481c32d73af96720b7cc64d220e17af8a081ed9b592e092125afe72e6"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend-20261008T163737Z.html",
+      "sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend-text.txt",
+      "sha256": "54da2d08bd8dc681f160eb15467d92b5f1581520528517b1a8932db874aff811"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend.html",
+      "sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend.txt",
+      "sha256": "c04e90100200f979b3a5c46d1c3be6c1a56fb221aad4cd14e3db3ce201e9e8ca"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/earningswhispers.html",
+      "sha256": "03b3bec44767094858af5442e6ac2079ce45240d783925cc8eb39877375bf592"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/events.html",
+      "sha256": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/extra-retrieval-register.json",
+      "sha256": "e5e49b75c8b87a847614144165f3780c63fc2a8d12b8ee350689f981fcce4772"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/marketbeat-text.txt",
+      "sha256": "e0e6e3feaf2acd47dffd68055abd35c757487ff9f841200722733cf2621b69ac"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/marketbeat.html",
+      "sha256": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history-20261008T163737Z.html",
+      "sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history-text.txt",
+      "sha256": "6f41315d74ccda999cecff2e29634d552355530f4a71bc04219f584abb24625b"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history.html",
+      "sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history.txt",
+      "sha256": "4ffa941f77284ad25a8e0f4a3be78e5cdb1ade8e0678c37261e18419f1db581e"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-2026-q2-release.htm",
+      "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-2026-q2-supplement.htm",
+      "sha256": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-archive-provenance.json",
+      "sha256": "21b5bf19be6d12f553c8fa165f62d119c1443373202e721d43383e2d446e5181"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-archive-q2-10q.txt",
+      "sha256": "f863f11e1aaae11e6e97ed23479598703b7b81e574f98830adcbd4407b8d1f4f"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-jpm-q2-10q.htm",
+      "sha256": "4ba60f17c069172a3bb4aa681d5f2a7ae3ac49e557f989101b4e3e1cbe4cad38"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-jpm-q2-regulatory-capital.htm",
+      "sha256": "061a2eb7450cdd0b446729050734d61c6f16a3624ef70bf2a7b20b2728f95130"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-manifest-verification.json",
+      "sha256": "97a47ef55beb80d60d76d7a00e5d1702a88a6abcfbf893bc448d6f66a471c274"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-supplement.txt",
+      "sha256": "32afeb153e6a493768dac5cf3a9a5d0b109b7ec99f1ff6e689f16f461406aab9"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-1.txt",
+      "sha256": "5021bb158b2b42221a3021841ef6d21b8090018f230e16f3fea8205b59c1bb8e"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-177.txt",
+      "sha256": "c6c1b0e615e54c8be4dac94d3e058765e13564aaae9617d765209e3ed1097790"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-178.txt",
+      "sha256": "4944442b8446685fe85a61dacc10cbd7d100999a0fbdc0638fdb31f793486850"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-19.txt",
+      "sha256": "91a56674bea5783047f3a5cc6cb1a5e4adb3d2bb1fce5484a52ea57c359de3e3"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-46.png",
+      "sha256": "b3cbbd8e6fdcad990a1d936f9bfb430f953342ac6e100d67c79735fb28a53c57"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-46.txt",
+      "sha256": "27775ff79685a83d1691d5b920d692e0d2cffc039c327f626f02a87910738355"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-49.txt",
+      "sha256": "8d64d61cd88e736d5c8ddeacc5a3962ec6261c9e9a57b5f527ac00b0f7d94beb"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-52.png",
+      "sha256": "d9f463420c6c54016092d15ede4bb3d622e93c5db63104a8f572f7cd6b86f117"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-53.txt",
+      "sha256": "2957e8def60719cad29948fc3ca27723c85c8684d1cf0327be63b3d2b2acf213"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-54.txt",
+      "sha256": "8c35335569bda07354547bcf91ad3858df197d85a8ee2214c7379e1d840940d0"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-55.txt",
+      "sha256": "8721416149312c09aacf791ab27beebaa43473d690b5f4e983fc063849b19890"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-56.txt",
+      "sha256": "4410d0a82ff6f15b67af5415e46f62973c6bfd93d5f345a9eb90b15b0066918f"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q.pdf",
+      "sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-presentation-page-9.png",
+      "sha256": "881850d92705f2f01f443403247eecd0267abf099512c4b78359a3babb258ec1"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-presentation.pdf",
+      "sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-17.png",
+      "sha256": "1aee0325973b71abb2327373f4e80e0d606bd6c6560f82618f8e40bada420c3c"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-17.txt",
+      "sha256": "4ef5f9a987be9b37a88b670d2a2c1f5622ab80a0172c9d12df0c4ee99e0cbe7d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-18.txt",
+      "sha256": "959bdb3388fa83e98deaa0d3f606072f266859e0dab30d78d4bd10acf1828510"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-29.txt",
+      "sha256": "cdb6dbc7d94a687ed6ccf8103c5ab96a49f8e19453fb1607c3e290e8b4495e44"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-3.txt",
+      "sha256": "641d11551dbf12df85c6cd3cfa27cac724f1921a00b533565327349c0fdca898"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-4.txt",
+      "sha256": "a0916b50eda8556d46097a762c1ea29f0fc85797135a99fd2bb88c33830f9c3b"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement.pdf",
+      "sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-transcript.pdf",
+      "sha256": "df9042c4c156aa33eed0cec2f5727598504e88e038be31140d98452dc9054540"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q3-event-text.txt",
+      "sha256": "8d01df81cbc50758b8e76c944cb18d145c60b371bfd2cbb4bba633f321dee5df"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q3-event.html",
+      "sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/retrieval-register.json",
+      "sha256": "3302923a8024a9d4e733f945f6190f2a678bfd4f076fb33b2f3918fd8ea6fca7"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/retrieve.py",
+      "sha256": "4881f5dd4e94bf3cd1e1b0496533011a86c0d840d9424b35b2613b40e262b773"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/sec-submissions.json",
+      "sha256": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/sec-submissions.txt",
+      "sha256": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/september-transcript-text.txt",
+      "sha256": "43ec110095bb69cc40b1c34d1b9b5c9f233e1a31f6526f8eea42cdb4f44de446"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/september-transcript.html",
+      "sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "b3c06703373e3660971d32e5c64cfaf4d712c5e4266b70691b6616d8db86c68f"
+    },
+    {
+      "path": "methodology/current.json",
+      "sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5"
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6"
+    },
+    {
+      "path": "workflows/model-review.md",
+      "sha256": "448aa9e8b3f20cc2bb8f41ec6007c9b3fabce9af399a3cc36d7e37b2beb4c11e"
+    },
+    {
+      "path": "monitoring/DECISION-SCOPE.md",
+      "sha256": "b424a556978d65327aa6be45702691c824f894a550a6937e288f8b01031f00b8"
+    },
+    {
+      "path": "validation/acceptance.md",
+      "sha256": "66ca65b41c11e42ed06e8531426c967a4fc0bfebd6bdba3062c449e6656f329f"
+    },
+    {
+      "path": "validation/jpm-scoped-independent-review-2026-10-09.md",
+      "sha256": "a72af5d17ee18619b2be8e44f81a5ca70285c0e9c90919f22d185e7d66206faf"
+    },
+    {
+      "path": "validation/jpm-scoped-independent-review-2026-10-09.json",
+      "sha256": "13592348515863829dc46ad57b5e6989dafbf11dd28f7f76f58c4f1a8cfd151a"
+    },
+    {
+      "path": "validation/scoped-jobs/jpm-20261008-frozen-astra-review-v1.json",
+      "sha256": "7b85d18ba087cbced45c8d15d2b1b460e9f97076404cc79dde23d46f44b72feb"
+    },
+    {
+      "path": "companies/jpmorgan-chase/index.json",
+      "sha256": "4746d242caf61d931720b555bddff49deca2007c99b19822c99970e37ddaad93"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/run.json",
+      "sha256": "e6b599d3def44253392b2a9ca0016eec62418e05c3fb526f56247ed76d20d6bb"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/model.json",
+      "sha256": "a9922fbfbeda9744bb2ffe6f0891da2b5aa7d35a79f0fd72406fde1eeab278db"
+    }
+  ],
+  "sources_read": [
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q.pdf",
+      "sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7",
+      "locations": [
+        "cover security/share count",
+        "printed19 managed NII/ex-Markets and TCE",
+        "printed46-47 capital metrics/rollforward",
+        "printed52-55 liquidity/funding/deposits",
+        "printed173 Note18 participating claims/EPS",
+        "printed177-178 Note21 requirements and numerator/denominator scopes"
+      ],
+      "read_date": "2026-10-09"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-presentation.pdf",
+      "sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+      "locations": [
+        "printed1 significant items",
+        "printed2 financial results and managed tax",
+        "printed4 Card loans/NCO rates",
+        "printed8 annual guidance"
+      ],
+      "read_date": "2026-10-09"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-transcript.pdf",
+      "sha256": "df9042c4c156aa33eed0cec2f5727598504e88e038be31140d98452dc9054540",
+      "locations": [
+        "printed4 Barnum NII upgrade, exit rate and Markets offsets"
+      ],
+      "read_date": "2026-10-09"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-jpm-q2-regulatory-capital.htm",
+      "sha256": "061a2eb7450cdd0b446729050734d61c6f16a3624ef70bf2a7b20b2728f95130",
+      "locations": [
+        "requirements/June and December tables",
+        "SLR footnotes"
+      ],
+      "read_date": "2026-10-09"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-2026-q2-release.htm",
+      "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757",
+      "locations": [
+        "headline and significant-item reconciliation"
+      ],
+      "read_date": "2026-10-09"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q3-event.html",
+      "sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+      "locations": [
+        "opening release/call schedule"
+      ],
+      "read_date": "2026-10-09"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/september-transcript.html",
+      "sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+      "locations": [
+        "Goldberg guidance question/Petno complete answer",
+        "associated expense qualification",
+        "CIB 16 percent through-cycle returns and credit over-earning"
+      ],
+      "read_date": "2026-10-09"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/earningswhispers.html",
+      "sha256": "03b3bec44767094858af5442e6ac2079ce45240d783925cc8eb39877375bf592",
+      "locations": [
+        "overview and earnings panel"
+      ],
+      "read_date": "2026-10-09"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history-20261008T163737Z.html",
+      "sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+      "locations": [
+        "October7 historical row",
+        "October8 12:35 EDT header"
+      ],
+      "read_date": "2026-10-09"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend-20261008T163737Z.html",
+      "sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+      "locations": [
+        "declaration first substantive paragraph"
+      ],
+      "read_date": "2026-10-09"
+    }
+  ],
+  "pdf_visual_checks": [
+    "q2-10q.pdf printed46 capital",
+    "q2-10q.pdf printed173 EPS",
+    "q2-10q.pdf printed177 requirements",
+    "q2-presentation.pdf printed8 outlook"
+  ],
+  "calculation_checks": [
+    {
+      "metric": "h2_nii_ex_markets_required",
+      "review_value": "49.543",
+      "dossier_value": "49.543",
+      "absolute_difference": "0.000",
+      "pass": true
+    },
+    {
+      "metric": "h2_half_on_half_growth_pct",
+      "review_value": "5.50716613071533530677002363864812488020955300",
+      "dossier_value": "5.507166130715335306770023600",
+      "absolute_difference": "3.864812488020955300E-26",
+      "pass": true
+    },
+    {
+      "metric": "h2_quarterly_average_required",
+      "review_value": "24.7715",
+      "dossier_value": "24.7715",
+      "absolute_difference": "0.0000",
+      "pass": true
+    },
+    {
+      "metric": "h2_quarterly_average_vs_q2_pct",
+      "review_value": "4.62262955610930438822485956835747772099505800",
+      "dossier_value": "4.622629556109304388224859600",
+      "absolute_difference": "3.164252227900494200E-26",
+      "pass": true
+    },
+    {
+      "metric": "incremental_eps_per_1bn_pretax",
+      "review_value": "0.278375770172964145200801722218098136738178309",
+      "dossier_value": "0.2783757701729641452008017222",
+      "absolute_difference": "1.8098136738178309E-29",
+      "pass": true
+    },
+    {
+      "metric": "nii_1_5bn_eps",
+      "review_value": "0.417563655259446217801202583327147205107267464",
+      "dossier_value": "0.4175636552594462178012025833",
+      "absolute_difference": "2.7147205107267464E-29",
+      "pass": true
+    },
+    {
+      "metric": "nii_1_5bn_equal_quarter_allocation_eps",
+      "review_value": "0.104390913814861554450300645831786801276816866",
+      "dossier_value": "0.1043909138148615544503006458",
+      "absolute_difference": "3.1786801276816866E-29",
+      "pass": true
+    },
+    {
+      "metric": "card_3_47_vs_3_20_annual_nco_increment",
+      "review_value": "0.65745",
+      "dossier_value": "0.65745",
+      "absolute_difference": "0.00000",
+      "pass": true
+    },
+    {
+      "metric": "card_increment_annual_eps_drag",
+      "review_value": "0.183018150100215277262267092272288619998515329",
+      "dossier_value": "0.1830181501002152772622670923",
+      "absolute_difference": "2.7711380001484671E-29",
+      "pass": true
+    },
+    {
+      "metric": "combined_nii_reversal_and_card_annual_eps_drag",
+      "review_value": "0.600581805359661495063469675599435825105782793",
+      "dossier_value": "0.6005818053596614950634696756",
+      "absolute_difference": "5.64174894217207E-31",
+      "pass": true
+    },
+    {
+      "metric": "price_to_dated_tbv",
+      "review_value": "2.90763123070136744596382884869872077635641817",
+      "dossier_value": "2.907631230701367445963828849",
+      "absolute_difference": "3.0127922364358183E-28",
+      "pass": true
+    },
+    {
+      "metric": "q2_adjusted_eps_annualized_not_forecast",
+      "review_value": "24.56",
+      "dossier_value": "24.56",
+      "absolute_difference": "0.00",
+      "pass": true
+    },
+    {
+      "metric": "price_to_q2_adjusted_annualized_not_forward_PE",
+      "review_value": "13.4193811074918566775244299674267100977198697",
+      "dossier_value": "13.41938110749185667752442997",
+      "absolute_difference": "2.5732899022801303E-27",
+      "pass": true
+    },
+    {
+      "metric": "transient_1_5bn_aftertax_per_end_period_share",
+      "review_value": "0.423220917374450513238031469048389968032318368",
+      "dossier_value": "0.4232209173744505132380314690",
+      "absolute_difference": "4.8389968032318368E-29",
+      "pass": true
+    },
+    {
+      "metric": "conditional_constant_multiple_nii_increment",
+      "review_value": "5.60344582656385523057493271225411953824320891",
+      "dossier_value": "5.603445826563855230574932712",
+      "absolute_difference": "2.5411953824320891E-28",
+      "pass": true
+    },
+    {
+      "metric": "conditional_constant_multiple_combined_decrement",
+      "review_value": "8.05943613234679297813592572003510013185520736",
+      "dossier_value": "8.059436132346792978135925721",
+      "absolute_difference": "9.6489986814479264E-28",
+      "pass": true
+    },
+    {
+      "metric": "capital_headroom_advanced_total",
+      "review_value": "27.66870",
+      "dossier_value": "27.66870",
+      "absolute_difference": "0.00000",
+      "pass": true
+    },
+    {
+      "metric": "capital_headroom_standardized_CET1",
+      "review_value": "57.389780",
+      "dossier_value": "57.389780",
+      "absolute_difference": "0.000000",
+      "pass": true
+    },
+    {
+      "metric": "advanced_RWA_h1_increase",
+      "review_value": "78.613",
+      "dossier_value": "78.613",
+      "absolute_difference": "0.000",
+      "pass": true
+    },
+    {
+      "metric": "advanced_requirement_if_h1_RWA_increment_repeats",
+      "review_value": "11.79195",
+      "dossier_value": "11.79195",
+      "absolute_difference": "0.00000",
+      "pass": true
+    },
+    {
+      "metric": "uninsured_deposit_ratio_pct",
+      "review_value": "64.2628146073626414120941887459925562884622471",
+      "dossier_value": "64.26281460736264141209418875",
+      "absolute_difference": "4.0074437115377529E-27",
+      "pass": true
+    }
+  ],
+  "additional_adversarial_calculations": {
+    "December_advanced_total_headroom_bn": "22.17465",
+    "June_standardized_total_headroom_bn": "42.85880",
+    "June_standardized_tier1_headroom_bn": "45.50436",
+    "June_SLR_headroom_bn": "74.3320650",
+    "marginal_participating_fraction_historical_only": "0.00455701060104571401160838489950592411378135943",
+    "one_multiple_turn_diagnostic_price_change": "24.56",
+    "one_multiple_turn_pct_of_frozen_price": "7.45190848959281509800351963104557315371078342",
+    "EW_EPS_vs_Q2_adjusted_unreconciled_pct": "-3.25732899022801302931596091205211726384364820",
+    "advanced_total_headroom_H1_change_bn": "5.49405"
+  },
+  "prior_manifest_recheck": [
+    {
+      "file": "q2-10q.pdf",
+      "expected_original_sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7",
+      "actual_sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7",
+      "match": true
+    },
+    {
+      "file": "q2-presentation.pdf",
+      "expected_original_sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+      "actual_sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+      "match": true
+    },
+    {
+      "file": "q3-event.html",
+      "expected_original_sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+      "actual_sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+      "match": true
+    },
+    {
+      "file": "events.html",
+      "expected_original_sha256": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241",
+      "actual_sha256": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241",
+      "match": true
+    },
+    {
+      "file": "marketbeat.html",
+      "expected_original_sha256": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40",
+      "actual_sha256": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40",
+      "match": true
+    },
+    {
+      "file": "q2-supplement.pdf",
+      "expected_original_sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60",
+      "actual_sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60",
+      "match": true
+    },
+    {
+      "file": "september-transcript.html",
+      "expected_original_sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+      "actual_sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+      "match": true
+    },
+    {
+      "file": "dividend.html",
+      "expected_original_sha256": "9c0cc13ed702a2684bcec487f1f07b3d77e4d1fc3620c864a2f09d5aaf631806",
+      "actual_sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+      "match": false
+    },
+    {
+      "file": "price-history.html",
+      "expected_original_sha256": "e88eacbfacaac02b5d8a769c87af1532ea379b88c7edd6cd0422fa5a1dba01c8",
+      "actual_sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+      "match": false
+    }
+  ],
+  "archive_correction": {
+    "overwritten_originals": [
+      "dividend.html",
+      "price-history.html"
+    ],
+    "old_raw_bytes_recovered": false,
+    "old_manifest_preserved": true,
+    "historical_derived_text_not_original": true,
+    "present_dossier_uses_timestamped_duplicates": true
+  },
+  "findings": [
+    {
+      "id": "JAR-01",
+      "severity": "P1",
+      "type": "acknowledged-positive-entry-blocker",
+      "finding": "No verified same-basis expectations mismatch or persistent incremental earnings path.",
+      "disposition": "Withhold positive entry; accept evidential rejection, not negative-return forecast.",
+      "unresolved_material_to_rejection": false,
+      "material_for_future_positive_case": true,
+      "evidence": [
+        "q2-presentation.pdf",
+        "q2-transcript.pdf",
+        "september-transcript.html",
+        "earningswhispers.html"
+      ]
+    },
+    {
+      "id": "JAR-02",
+      "severity": "P1",
+      "type": "acknowledged-price-target-blocker",
+      "finding": "Price/annualized adjusted Q2 earnings supplies the multiple; it is not an independent valuation basis. A one-turn multiple change equals USD24.56/share, larger than either EPS transmission.",
+      "disposition": "Accept algebra only; withhold price-response bounds, stop, ceiling and expected returns.",
+      "unresolved_material_to_rejection": false,
+      "material_for_future_positive_case": true,
+      "evidence": [
+        "q2-10q.pdf",
+        "q2-presentation.pdf",
+        "price-history-20261008T163737Z.html"
+      ]
+    },
+    {
+      "id": "JAR-03",
+      "severity": "P2",
+      "type": "simplified-claims-bridge",
+      "finding": "Note18 allocates USD95m of USD20847m common-equity income to participating securities; marginal EPS conversion omits a variable allocation.",
+      "disposition": "Agree supplemental JIR-01; retain as simplified diagnostic, require justified claims/tax/share bridge before valuation.",
+      "unresolved_material_to_rejection": false,
+      "material_for_future_positive_case": true,
+      "evidence": [
+        "q2-10q.pdf"
+      ]
+    },
+    {
+      "id": "JAR-04",
+      "severity": "P2",
+      "type": "actual-archive-defect",
+      "finding": "Earlier dividend.html and price-history.html raw captures were overwritten; seven prior originals match and two mismatch.",
+      "disposition": "Agree JIR-02; preserve correction/original manifest and bind current dossier to later timestamped duplicates. Missing raw bytes not recovered.",
+      "unresolved_material_to_rejection": false,
+      "material_for_future_positive_case": false,
+      "evidence": [
+        "archive-manifest.json",
+        "prior-manifest-verification.json",
+        "dividend-20261008T163737Z.html",
+        "price-history-20261008T163737Z.html"
+      ]
+    },
+    {
+      "id": "JAR-05",
+      "severity": "P2",
+      "type": "historical-source-gap",
+      "finding": "TipRanks USD5.90 and July23 financing filing lack original local captures in reviewed package. September growth comparator is contextual in third-party management transcript.",
+      "disposition": "Agree JIR-03; exclude unarchived claims from affirmative acceptance. Primary 10-Q cover establishes security independently. Retain transcript attribution and inferential comparator.",
+      "unresolved_material_to_rejection": false,
+      "material_for_future_positive_case": true,
+      "evidence": [
+        "q2-10q.pdf",
+        "september-transcript.html"
+      ]
+    },
+    {
+      "id": "JAR-06",
+      "severity": "P2",
+      "type": "interpretive-qualification",
+      "finding": "External estimates do not prove investors expect strong or weak earnings without a comparator/accounting basis, nor does public guidance establish complete pricing.",
+      "disposition": "Qualify frozen wording: no verified surprise threshold/edge. Agree JIR-04; cash preference is strategy evidence discipline, not outperformance forecast.",
+      "unresolved_material_to_rejection": false,
+      "material_for_future_positive_case": true,
+      "evidence": [
+        "earningswhispers.html",
+        "q2-presentation.pdf"
+      ]
+    },
+    {
+      "id": "JAR-07",
+      "severity": "P2",
+      "type": "capital-interpretation-qualification",
+      "finding": "Fixed-numerator RWA stress omits earnings by design; Advanced headroom actually rose USD5.49405bn in H1. LCR declined and June evidence is stale for October.",
+      "disposition": "Retain conditional stress; do not infer imminent depletion, distributable budget or current survival.",
+      "unresolved_material_to_rejection": false,
+      "material_for_future_positive_case": true,
+      "evidence": [
+        "q2-10q.pdf",
+        "prior-jpm-q2-regulatory-capital.htm"
+      ]
+    }
+  ],
+  "unresolved_material_findings_that_reverse_rejection": [],
+  "remaining_material_positive_case_gaps": [
+    "reconciled as-of expectations and durable incremental NII/expense/credit path",
+    "current ownership and capital-constrained distributions plus October book bridge",
+    "independently justified valuation/multiple and price response",
+    "timestamped executable price/FX/cost evidence and feasible manual delays"
+  ],
+  "supplemental_findings_disposition": {
+    "JIR-01": "agreed; independently read Note18 and recalculated allocation",
+    "JIR-02": "agreed; independently rehashed prior originals",
+    "JIR-03": "agreed; excluded unarchived claims",
+    "JIR-04": "agreed; reinforced by JAR-06 comparator qualification"
+  },
+  "limited_live_crosscheck": {
+    "date": "2026-10-09",
+    "urls": [
+      "https://www.jpmorganchase.com/ir/news/2026/jpmc-to-host-third-quarter-2026-earnings-call",
+      "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/R29.htm"
+    ],
+    "result": "corroborated same historical event/capital facts",
+    "historical_archive_replaced": false,
+    "comprehensive_current_refresh": false,
+    "current_quote_checked": false
+  },
+  "event_timezone_check": {
+    "release": "2026-10-13T12:00:00+01:00",
+    "call": "2026-10-13T13:30:00+01:00"
+  },
+  "preservation": {
+    "files_checked": 59,
+    "all_unchanged": true,
+    "details": [
+      {
+        "path": "monitoring/studies/2026-10-08-jpm-event-dossier.md",
+        "sha256_before": "34ffd0c70b11383594b7962b37fe57242d3384b0c76cd6b92d042ca989a4c0fc",
+        "sha256_after": "34ffd0c70b11383594b7962b37fe57242d3384b0c76cd6b92d042ca989a4c0fc",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/2026-10-08-jpm-event-dossier.json",
+        "sha256_before": "01aff6247e21c036ef18ae88dc6cb2a039250c9960307e08700154a434e773b4",
+        "sha256_after": "01aff6247e21c036ef18ae88dc6cb2a039250c9960307e08700154a434e773b4",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/archive-manifest.json",
+        "sha256_before": "6c28305c195df9f684d1aeee9595e8c2b7e80cfeeaa820e58817a1b21bf6a6e4",
+        "sha256_after": "6c28305c195df9f684d1aeee9595e8c2b7e80cfeeaa820e58817a1b21bf6a6e4",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/build_record.py",
+        "sha256_before": "6471c6f8d04e6c9502ece3bc27f6ee18125776056761278b0a50e66882fa75f7",
+        "sha256_after": "6471c6f8d04e6c9502ece3bc27f6ee18125776056761278b0a50e66882fa75f7",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/calculate.py",
+        "sha256_before": "c32d790315acd4d866e515651f953156d9ba31bd3bf4ef4b8b0fad6096afc09d",
+        "sha256_after": "c32d790315acd4d866e515651f953156d9ba31bd3bf4ef4b8b0fad6096afc09d",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/calculation-checks.json",
+        "sha256_before": "28ce9889e85475a65cc596376ea6e90a4707185b0b23d659d09f612d8a43267c",
+        "sha256_after": "28ce9889e85475a65cc596376ea6e90a4707185b0b23d659d09f612d8a43267c",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/calculations.json",
+        "sha256_before": "eaab453481c32d73af96720b7cc64d220e17af8a081ed9b592e092125afe72e6",
+        "sha256_after": "eaab453481c32d73af96720b7cc64d220e17af8a081ed9b592e092125afe72e6",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend-20261008T163737Z.html",
+        "sha256_before": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+        "sha256_after": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend-text.txt",
+        "sha256_before": "54da2d08bd8dc681f160eb15467d92b5f1581520528517b1a8932db874aff811",
+        "sha256_after": "54da2d08bd8dc681f160eb15467d92b5f1581520528517b1a8932db874aff811",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend.html",
+        "sha256_before": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+        "sha256_after": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend.txt",
+        "sha256_before": "c04e90100200f979b3a5c46d1c3be6c1a56fb221aad4cd14e3db3ce201e9e8ca",
+        "sha256_after": "c04e90100200f979b3a5c46d1c3be6c1a56fb221aad4cd14e3db3ce201e9e8ca",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/earningswhispers.html",
+        "sha256_before": "03b3bec44767094858af5442e6ac2079ce45240d783925cc8eb39877375bf592",
+        "sha256_after": "03b3bec44767094858af5442e6ac2079ce45240d783925cc8eb39877375bf592",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/events.html",
+        "sha256_before": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241",
+        "sha256_after": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/extra-retrieval-register.json",
+        "sha256_before": "e5e49b75c8b87a847614144165f3780c63fc2a8d12b8ee350689f981fcce4772",
+        "sha256_after": "e5e49b75c8b87a847614144165f3780c63fc2a8d12b8ee350689f981fcce4772",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/marketbeat-text.txt",
+        "sha256_before": "e0e6e3feaf2acd47dffd68055abd35c757487ff9f841200722733cf2621b69ac",
+        "sha256_after": "e0e6e3feaf2acd47dffd68055abd35c757487ff9f841200722733cf2621b69ac",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/marketbeat.html",
+        "sha256_before": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40",
+        "sha256_after": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history-20261008T163737Z.html",
+        "sha256_before": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+        "sha256_after": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history-text.txt",
+        "sha256_before": "6f41315d74ccda999cecff2e29634d552355530f4a71bc04219f584abb24625b",
+        "sha256_after": "6f41315d74ccda999cecff2e29634d552355530f4a71bc04219f584abb24625b",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history.html",
+        "sha256_before": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+        "sha256_after": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history.txt",
+        "sha256_before": "4ffa941f77284ad25a8e0f4a3be78e5cdb1ade8e0678c37261e18419f1db581e",
+        "sha256_after": "4ffa941f77284ad25a8e0f4a3be78e5cdb1ade8e0678c37261e18419f1db581e",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-2026-q2-release.htm",
+        "sha256_before": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757",
+        "sha256_after": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-2026-q2-supplement.htm",
+        "sha256_before": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793",
+        "sha256_after": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-archive-provenance.json",
+        "sha256_before": "21b5bf19be6d12f553c8fa165f62d119c1443373202e721d43383e2d446e5181",
+        "sha256_after": "21b5bf19be6d12f553c8fa165f62d119c1443373202e721d43383e2d446e5181",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-archive-q2-10q.txt",
+        "sha256_before": "f863f11e1aaae11e6e97ed23479598703b7b81e574f98830adcbd4407b8d1f4f",
+        "sha256_after": "f863f11e1aaae11e6e97ed23479598703b7b81e574f98830adcbd4407b8d1f4f",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-jpm-q2-10q.htm",
+        "sha256_before": "4ba60f17c069172a3bb4aa681d5f2a7ae3ac49e557f989101b4e3e1cbe4cad38",
+        "sha256_after": "4ba60f17c069172a3bb4aa681d5f2a7ae3ac49e557f989101b4e3e1cbe4cad38",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-jpm-q2-regulatory-capital.htm",
+        "sha256_before": "061a2eb7450cdd0b446729050734d61c6f16a3624ef70bf2a7b20b2728f95130",
+        "sha256_after": "061a2eb7450cdd0b446729050734d61c6f16a3624ef70bf2a7b20b2728f95130",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-manifest-verification.json",
+        "sha256_before": "97a47ef55beb80d60d76d7a00e5d1702a88a6abcfbf893bc448d6f66a471c274",
+        "sha256_after": "97a47ef55beb80d60d76d7a00e5d1702a88a6abcfbf893bc448d6f66a471c274",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-supplement.txt",
+        "sha256_before": "32afeb153e6a493768dac5cf3a9a5d0b109b7ec99f1ff6e689f16f461406aab9",
+        "sha256_after": "32afeb153e6a493768dac5cf3a9a5d0b109b7ec99f1ff6e689f16f461406aab9",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-1.txt",
+        "sha256_before": "5021bb158b2b42221a3021841ef6d21b8090018f230e16f3fea8205b59c1bb8e",
+        "sha256_after": "5021bb158b2b42221a3021841ef6d21b8090018f230e16f3fea8205b59c1bb8e",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-177.txt",
+        "sha256_before": "c6c1b0e615e54c8be4dac94d3e058765e13564aaae9617d765209e3ed1097790",
+        "sha256_after": "c6c1b0e615e54c8be4dac94d3e058765e13564aaae9617d765209e3ed1097790",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-178.txt",
+        "sha256_before": "4944442b8446685fe85a61dacc10cbd7d100999a0fbdc0638fdb31f793486850",
+        "sha256_after": "4944442b8446685fe85a61dacc10cbd7d100999a0fbdc0638fdb31f793486850",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-19.txt",
+        "sha256_before": "91a56674bea5783047f3a5cc6cb1a5e4adb3d2bb1fce5484a52ea57c359de3e3",
+        "sha256_after": "91a56674bea5783047f3a5cc6cb1a5e4adb3d2bb1fce5484a52ea57c359de3e3",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-46.png",
+        "sha256_before": "b3cbbd8e6fdcad990a1d936f9bfb430f953342ac6e100d67c79735fb28a53c57",
+        "sha256_after": "b3cbbd8e6fdcad990a1d936f9bfb430f953342ac6e100d67c79735fb28a53c57",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-46.txt",
+        "sha256_before": "27775ff79685a83d1691d5b920d692e0d2cffc039c327f626f02a87910738355",
+        "sha256_after": "27775ff79685a83d1691d5b920d692e0d2cffc039c327f626f02a87910738355",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-49.txt",
+        "sha256_before": "8d64d61cd88e736d5c8ddeacc5a3962ec6261c9e9a57b5f527ac00b0f7d94beb",
+        "sha256_after": "8d64d61cd88e736d5c8ddeacc5a3962ec6261c9e9a57b5f527ac00b0f7d94beb",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-52.png",
+        "sha256_before": "d9f463420c6c54016092d15ede4bb3d622e93c5db63104a8f572f7cd6b86f117",
+        "sha256_after": "d9f463420c6c54016092d15ede4bb3d622e93c5db63104a8f572f7cd6b86f117",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-53.txt",
+        "sha256_before": "2957e8def60719cad29948fc3ca27723c85c8684d1cf0327be63b3d2b2acf213",
+        "sha256_after": "2957e8def60719cad29948fc3ca27723c85c8684d1cf0327be63b3d2b2acf213",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-54.txt",
+        "sha256_before": "8c35335569bda07354547bcf91ad3858df197d85a8ee2214c7379e1d840940d0",
+        "sha256_after": "8c35335569bda07354547bcf91ad3858df197d85a8ee2214c7379e1d840940d0",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-55.txt",
+        "sha256_before": "8721416149312c09aacf791ab27beebaa43473d690b5f4e983fc063849b19890",
+        "sha256_after": "8721416149312c09aacf791ab27beebaa43473d690b5f4e983fc063849b19890",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-56.txt",
+        "sha256_before": "4410d0a82ff6f15b67af5415e46f62973c6bfd93d5f345a9eb90b15b0066918f",
+        "sha256_after": "4410d0a82ff6f15b67af5415e46f62973c6bfd93d5f345a9eb90b15b0066918f",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q.pdf",
+        "sha256_before": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7",
+        "sha256_after": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-presentation-page-9.png",
+        "sha256_before": "881850d92705f2f01f443403247eecd0267abf099512c4b78359a3babb258ec1",
+        "sha256_after": "881850d92705f2f01f443403247eecd0267abf099512c4b78359a3babb258ec1",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-presentation.pdf",
+        "sha256_before": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+        "sha256_after": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-17.png",
+        "sha256_before": "1aee0325973b71abb2327373f4e80e0d606bd6c6560f82618f8e40bada420c3c",
+        "sha256_after": "1aee0325973b71abb2327373f4e80e0d606bd6c6560f82618f8e40bada420c3c",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-17.txt",
+        "sha256_before": "4ef5f9a987be9b37a88b670d2a2c1f5622ab80a0172c9d12df0c4ee99e0cbe7d",
+        "sha256_after": "4ef5f9a987be9b37a88b670d2a2c1f5622ab80a0172c9d12df0c4ee99e0cbe7d",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-18.txt",
+        "sha256_before": "959bdb3388fa83e98deaa0d3f606072f266859e0dab30d78d4bd10acf1828510",
+        "sha256_after": "959bdb3388fa83e98deaa0d3f606072f266859e0dab30d78d4bd10acf1828510",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-29.txt",
+        "sha256_before": "cdb6dbc7d94a687ed6ccf8103c5ab96a49f8e19453fb1607c3e290e8b4495e44",
+        "sha256_after": "cdb6dbc7d94a687ed6ccf8103c5ab96a49f8e19453fb1607c3e290e8b4495e44",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-3.txt",
+        "sha256_before": "641d11551dbf12df85c6cd3cfa27cac724f1921a00b533565327349c0fdca898",
+        "sha256_after": "641d11551dbf12df85c6cd3cfa27cac724f1921a00b533565327349c0fdca898",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-4.txt",
+        "sha256_before": "a0916b50eda8556d46097a762c1ea29f0fc85797135a99fd2bb88c33830f9c3b",
+        "sha256_after": "a0916b50eda8556d46097a762c1ea29f0fc85797135a99fd2bb88c33830f9c3b",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement.pdf",
+        "sha256_before": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60",
+        "sha256_after": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-transcript.pdf",
+        "sha256_before": "df9042c4c156aa33eed0cec2f5727598504e88e038be31140d98452dc9054540",
+        "sha256_after": "df9042c4c156aa33eed0cec2f5727598504e88e038be31140d98452dc9054540",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q3-event-text.txt",
+        "sha256_before": "8d01df81cbc50758b8e76c944cb18d145c60b371bfd2cbb4bba633f321dee5df",
+        "sha256_after": "8d01df81cbc50758b8e76c944cb18d145c60b371bfd2cbb4bba633f321dee5df",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/q3-event.html",
+        "sha256_before": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+        "sha256_after": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/retrieval-register.json",
+        "sha256_before": "3302923a8024a9d4e733f945f6190f2a678bfd4f076fb33b2f3918fd8ea6fca7",
+        "sha256_after": "3302923a8024a9d4e733f945f6190f2a678bfd4f076fb33b2f3918fd8ea6fca7",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/retrieve.py",
+        "sha256_before": "4881f5dd4e94bf3cd1e1b0496533011a86c0d840d9424b35b2613b40e262b773",
+        "sha256_after": "4881f5dd4e94bf3cd1e1b0496533011a86c0d840d9424b35b2613b40e262b773",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/sec-submissions.json",
+        "sha256_before": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada",
+        "sha256_after": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/sec-submissions.txt",
+        "sha256_before": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada",
+        "sha256_after": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/september-transcript-text.txt",
+        "sha256_before": "43ec110095bb69cc40b1c34d1b9b5c9f233e1a31f6526f8eea42cdb4f44de446",
+        "sha256_after": "43ec110095bb69cc40b1c34d1b9b5c9f233e1a31f6526f8eea42cdb4f44de446",
+        "unchanged": true
+      },
+      {
+        "path": "monitoring/studies/evidence/2026-10-08-jpm/september-transcript.html",
+        "sha256_before": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+        "sha256_after": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+        "unchanged": true
+      }
+    ]
+  },
+  "continuation": "New dated post-event record required for any affirmative opportunity; current quote alone does not repair analytical gaps. Existing company pilot stays partial. No gates or trades approved.",
+  "markdown_report": {
+    "path": "validation/jpm-astra-review-2026-10-09.md",
+    "sha256": "bd942b6598fdaed76c8e6622ed536dc0ebf7702ee73a14c190376158d7c8f15d"
+  }
+}

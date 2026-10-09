@@ -1,0 +1,83 @@
+[
+  {
+    "source_id": "ir-overview",
+    "url": "https://ir.amd.com/",
+    "accessed_at": "2026-10-09T00:34:33.584028+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/ir-overview.html",
+    "sha256": "667dfff9f17cd2aa0605dae1d754c36c09eed7b6634998390d27471f9ecb127d",
+    "status": 200,
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/ir-overview.txt"
+  },
+  {
+    "source_id": "q3-event-notice",
+    "url": "https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results",
+    "accessed_at": "2026-10-09T00:34:34.080234+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q3-event-notice.html",
+    "sha256": "1c34cd99d3fbf0bba0f0a135a04f9fe9c32be3d51a96f751b4674a90d97d25b7",
+    "status": 200,
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q3-event-notice.txt"
+  },
+  {
+    "source_id": "q2-results",
+    "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+    "accessed_at": "2026-10-09T00:34:34.337268+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-results.html",
+    "sha256": "0fcd914306881fdb9e033b50423aed8ac35fbd8f7041e4e4ff71da24b22b8c3a",
+    "status": 200,
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-results.txt"
+  },
+  {
+    "source_id": "q2-10q",
+    "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm",
+    "accessed_at": "2026-10-09T00:34:34.704219+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-10q.html",
+    "sha256": "fa18ad1095a14dc14fe04d3e256143addbb1c8f0573eb6eb8bb6bc6609bfe2bf",
+    "status": 200,
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-10q.txt"
+  },
+  {
+    "source_id": "world-labs",
+    "url": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute",
+    "accessed_at": "2026-10-09T00:34:35.648695+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/world-labs.html",
+    "sha256": "22f7cbf85c100b0b854547969a85899fe184327f369a10a9eddef4b9c5b3e6c8",
+    "status": 200,
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/world-labs.txt"
+  },
+  {
+    "source_id": "meta-partnership",
+    "url": "https://ir.amd.com/news-events/press-releases/detail/1279/amd-and-meta-announce-expanded-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+    "accessed_at": "2026-10-09T00:34:35.877954+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/meta-partnership.html",
+    "sha256": "f7d0c4b26fe386bbb77090f977a9f1295cc2a02c09e4f02e5dd877bddc8973e1",
+    "status": 200,
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/meta-partnership.txt"
+  },
+  {
+    "source_id": "anthropic-partnership",
+    "url": "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus",
+    "accessed_at": "2026-10-09T00:34:36.097627+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/anthropic-partnership.html",
+    "sha256": "c15bf0c701c697e2cb04209cbc22bb1a20748d4d0011c068f9492f31f3481093",
+    "status": 200,
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/anthropic-partnership.txt"
+  },
+  {
+    "source_id": "stock-data",
+    "url": "https://ir.amd.com/stock-data",
+    "accessed_at": "2026-10-09T00:34:36.398947+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/stock-data.html",
+    "sha256": "8ad72f30bf0e634b3702281e6d81bf39a7af5c979f8094d7d64f45fd0219fb49",
+    "status": 200,
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/stock-data.txt"
+  },
+  {
+    "source_id": "filing-index",
+    "url": "https://ir.amd.com/financial-information/sec-filings",
+    "accessed_at": "2026-10-09T00:34:36.667060+00:00",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/filing-index.html",
+    "sha256": "b86dd82182635d751ca3507d0d0fee164cad8e0f7dd9ddd3cac5fdb6b8e64c9c",
+    "status": 200,
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/filing-index.txt"
+  }
+]

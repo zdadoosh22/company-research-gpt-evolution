@@ -1,0 +1,37 @@
+node_modules/
+work/
+__pycache__/
+*.pyc
+companies/*/runs/*/work/
+state/
+
+# Credentials and private operational material stay local, even in a private repo.
+.env
+.env.*
+!.env.example
+*.dpapi
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.pem
+*.key
+*.pfx
+*.p12
+credentials/
+secrets/
+auth.json
+token.json
+cookies.json
+
+# This immutable original embeds an operational snapshot. A labelled sanitised
+# checkpoint is supplied in the dated Chat handoff instead.
+/validation/final-goal-checkpoint-2026-10-09.json
+/validation/usage.json
+
+# Rebuildable delivery bundles and local upload-verification reports.
+/validation/chat-handoff-2026-10-09-github-setup/*.zip
+/validation/chat-handoff-2026-10-09-github-setup/UPLOAD-VERIFICATION.json

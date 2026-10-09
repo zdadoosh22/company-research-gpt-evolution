@@ -1,0 +1,57 @@
+JPMORGAN CHASE & CO.
+COMMERCIAL & INVESTMENT BANK
+FINANCIAL HIGHLIGHTS
+(in millions, except ratio data)
+QUARTERLY TRENDS SIX MONTHS ENDED JUNE 30,
+2Q26 Change 2026 Change
+2Q26 1Q26 4Q25 3Q25 2Q25 1Q26 2Q25 2026 2025 2025
+INCOME STATEMENT
+REVENUE
+Investment banking fees $ 3,277 $ 2,883 $ 2,347 $ 2,627 $ 2,513  14 %  30 % $ 6,160 $ 4,761  29 %
+Principal transactions  8,768  7,897  5,419  7,090  7,109  11  23  16,665  14,717  13 
+Lending- and deposit-related fees  1,487  1,394  1,336  1,315  1,296  7  15  2,881  2,526  14 
+Commissions and other fees  1,748  1,714  1,562  1,493  1,493  2  17  3,462  2,930  18 
+Card income  649  585  627  613  645  11  1  1,234  1,196  3 
+All other income  1,025  917  1,063  660  736  12  39  1,942  1,484  31 
+Noninterest revenue  16,954  15,390  12,354  13,798  13,792  10  23  32,344  27,614  17 
+Net interest income  7,899  7,989  7,021  6,080  5,743  (1)  38  15,888  11,587  37 
+TOTAL NET REVENUE (a)  24,853  23,379  19,375  19,878  19,535  6  27  48,232  39,201  23 
+Provision for credit losses  356  482  405  809  696  (26)  (49)  838  1,401  (40) 
+NONINTEREST EXPENSE
+Compensation expense  5,544  5,740  3,940 (d)  4,662 (d)  4,815 (d)  (3)  15  11,284  9,942 (d)  13 
+Noncompensation expense  5,846  5,396  5,071 (d)  5,060 (d)  4,826 (d)  8  21  11,242  9,541 (d)  18 
+TOTAL NONINTEREST EXPENSE  11,390  11,136  9,011  9,722  9,641  2  18  22,526  19,483  16 
+Income before income tax expense  13,107  11,761  9,959  9,347  9,198  11  42  24,868  18,317  36 
+Income tax expense  3,429  2,717  2,691  2,446  2,548  26  35  6,146  4,725  30 
+NET INCOME $ 9,678 $ 9,044 $ 7,268 $ 6,901 $ 6,650  7  46 $ 18,722 $ 13,592  38 
+FINANCIAL RATIOS
+ROE  22 %  21 %  19 %  18 %  17 %  22 %  18 %
+Overhead ratio  46  48  47  49  49  47  50 
+Compensation expense as percentage of total net revenue  22  25  20 (d)  23 (d)  25 (d)  23  25 (d)
+REVENUE BY BUSINESS
+Investment Banking $ 3,902 $ 3,136 $ 2,552 $ 2,694 $ 2,684  24  45 $ 7,038 $ 4,952  42 
+Payments  5,296  5,123  5,114  4,917  4,735  3  12  10,419  9,300  12 
+Lending  1,964  2,166  1,985  1,872  1,829  (9)  7  4,130  3,744  10 
+Other  —  —  —  —  —  —  —  —  6 NM
+Total Banking & Payments  11,162  10,425  9,651  9,483  9,248  7  21  21,587  18,002  20 
+Fixed Income Markets  6,053  7,078  5,380  5,613  5,690  (14)  6  13,131  11,539  14 
+Equity Markets  6,025  4,481  2,859  3,331  3,246  34  86  10,506  7,060  49 
+Securities Services  1,657  1,499  1,489  1,423  1,418  11  17  3,156  2,687  17 
+Credit Adjustments & Other (b)  (44)  (104)  (4)  28  (67)  58  34  (148)  (87)  (70) 
+Total Markets & Securities Services  13,691  12,954  9,724  10,395  10,287  6  33  26,645  21,199  26 
+TOTAL NET REVENUE $ 24,853 $ 23,379 $ 19,375 $ 19,878 $ 19,535  6  27 $ 48,232 $ 39,201  23 
+Banking & Payments revenue by client coverage segment (c)
+Global Corporate Banking & Global Investment Banking $ 7,797 $ 7,265 $ 6,493 $ 6,544 $ 6,319  7 %  23 % $ 15,062 $ 12,248  23 %
+Commercial Banking  3,365  3,160  3,158  2,939  2,929  6  15  6,525  5,754  13 
+Commercial & Specialized Industries  2,472  2,280  2,245  2,038  2,067  8  20  4,752  4,023  18 
+Commercial Real Estate Banking  893  880  913  901  862  1  4  1,773  1,731  2 
+Total Banking & Payments revenue $ 11,162 $ 10,425 $ 9,651 $ 9,483 $ 9,248  7  21 $ 21,587 $ 18,002  20 
+(a) Included taxable-equivalent adjustments primarily from income tax credits from investments in alternative energy, affordable housing and new markets, income from tax-exempt securities and loans, and the related amortization and other tax benefits of the investments in 
+alternative energy and affordable housing of $621 million, $646 million, $920 million, $644 million and $722 million for the three months ended June 30, 2026, March 31, 2026, December 31, 2025, September 30, 2025 and June 30, 2025, respectively, and $1.3 billion and $1.4 
+billion for the six months ended June 30, 2026 and 2025, respectively.
+(b) Consists primarily of centrally managed credit valuation adjustments (“CVA”), funding valuation adjustments (“FVA”) on derivatives, other valuation adjustments, and certain components of fair value option elected liabilities, which are primarily reported in principal transactions 
+revenue. Results are presented net of associated hedging activities and net of CVA and FVA amounts allocated to Fixed Income Markets and Equity Markets.
+(c) Refer to page 70 of the Firm’s 2025 Form 10-K for a description of each of the client coverage segments.
+(d) In the first quarter of 2026, Risk functions that were previously aligned with the LOBs were centralized into Corporate. As a result, the employees and compensation expense related to those functions are now reflected in Corporate, and a corresponding expense allocation from 
+Corporate is reflected in noncompensation expense of the respective LOBs. These adjustments had no impact on total noninterest expense of the LOBs or Corporate. Prior periods have been revised to conform with the current presentation.
+ Page 16

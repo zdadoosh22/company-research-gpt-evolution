@@ -1,0 +1,110 @@
+{
+  "checked_at": "2026-10-09T13:03:11.502385+00:00",
+  "record": "monitoring\\studies\\2026-10-09-netflix-opportunity-followup.json",
+  "record_sha256": "f1a641675bd727329caf8b478dae18a15e4771656d52e9c678552740c73a0bf9",
+  "calculation_checks": [
+    {
+      "name": "q3_2025_ex_charge_margin_pct",
+      "exact_fraction": "386724700/11510307",
+      "difference": "91723/575515350000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "q3_2026_implied_guided_margin_pct",
+      "exact_fraction": "21340/643",
+      "difference": "7/8037500000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "q3_profit_growth_reported_pct",
+      "exact_fraction": "101975300/3248247",
+      "difference": "511/253769296875000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "q3_profit_growth_ex_full_prior_charge_pct",
+      "exact_fraction": "40075300/3867247",
+      "difference": "87609/3867247000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "h1_cash_content_amortization_ratio",
+      "exact_fraction": "762386/656093",
+      "difference": "35937/656093000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "prior_h1_cash_content_amortization_ratio",
+      "exact_fraction": "8010775/7655186",
+      "difference": "1448333/3827593000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "h1_excess_cash_content_m",
+      "exact_fraction": "1381809/1000",
+      "difference": "0",
+      "passed": true
+    },
+    {
+      "name": "prior_h1_excess_cash_content_m",
+      "exact_fraction": "355589/1000",
+      "difference": "0",
+      "passed": true
+    },
+    {
+      "name": "cash_content_growth_pct",
+      "exact_fraction": "7600972/320431",
+      "difference": "30923/640862000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "amortization_growth_pct",
+      "exact_fraction": "43701150/3827593",
+      "difference": "51721/1913796500000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "provider_fy_operating_margin_pct",
+      "exact_fraction": "6200/197",
+      "difference": "13/3940000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "unreconciled_provider_price_eps_ratio",
+      "exact_fraction": "7157/359",
+      "difference": "3/1121875000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "q3_margin_difference_pp",
+      "exact_fraction": "-3034030720/7401127401",
+      "difference": "263310707/370056370050000000000000000000000000",
+      "passed": true
+    }
+  ],
+  "original_source_hash_checks": [
+    {
+      "source_id": "q2-letter",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125707505467Z-q2-letter-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "expected": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "actual": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "passed": true
+    },
+    {
+      "source_id": "price-crosscheck",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125708661028Z-price-crosscheck-d2e649a123fde352862450bdb199fd1aef82283c3278a88bcf913f1bc0291ead.html",
+      "expected": "d2e649a123fde352862450bdb199fd1aef82283c3278a88bcf913f1bc0291ead",
+      "actual": "d2e649a123fde352862450bdb199fd1aef82283c3278a88bcf913f1bc0291ead",
+      "passed": true
+    },
+    {
+      "source_id": "q3-2025-letter",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125829535587Z-q3-2025-letter-cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031.pdf",
+      "expected": "cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031",
+      "actual": "cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "scope": "Specified arithmetic and byte identity only; no verification of estimate comparability, sustainable forecasts, price validity or investment approval."
+}

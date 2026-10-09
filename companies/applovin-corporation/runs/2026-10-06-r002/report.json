@@ -1,0 +1,487 @@
+{
+  "title": "AppLovin - research pilot",
+  "status": "Astra audit revision | partial research; numerical illustrations only",
+  "standalone": [
+    {
+      "title": "1. Business and judgement",
+      "blocks": [
+        {
+          "text": "AppLovin Corporation, Nasdaq APP Class A, is an advertising infrastructure business following the June 2025 sale of its Apps portfolio. Axon Ads Manager optimizes advertiser spending; MAX auctions publisher inventory; Adjust supplies measurement and Wurl serves connected television. Advertisers buy outcomes and publishers sell audience access. AppLovin earns revenue for connecting these sides. [a1: Business; a2: segment note]"
+        },
+        {
+          "text": "The observed financial economics are strong, but independent advertiser incrementality and persistence remain less firmly established. The selected prior close is $281.97 on 5 October 2026 (16:00 EDT). Astra identified unsupported mature reinvestment and incomplete cash/lease/ownership bridges. A defensible current intrinsic value and price-attractiveness judgement are therefore withheld. Numerical tables are calculation illustrations only. [a6; model.json]"
+        },
+        {
+          "table": [
+            [
+              "Decisive evidence",
+              "Observed result"
+            ],
+            [
+              "Q2 revenue / GAAP EBIT",
+              "$1,923.7m / $1,494.3m"
+            ],
+            [
+              "Q2 growth decomposition",
+              "53% revenue growth; net revenue per install +58%, installations -2%"
+            ],
+            [
+              "H1 cash from operations",
+              "$2,160.4m versus $1,603.9m"
+            ],
+            [
+              "June cash / December note principal",
+              "$3,053.3m / $3,550m (different snapshot dates)"
+            ]
+          ]
+        },
+        {
+          "text": "The five decisive variables are advertiser incrementality and retention; durable access to publisher inventory and platform-compliant data; revenue per installation versus installation volume; operating margin after compensation and infrastructure; and the common ownership claim after capital allocation. Higher auction efficiency can compound these variables, but each is contestable. [a1; a2]"
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "2. Conditional valuation and expectations",
+      "blocks": [
+        {
+          "table": [
+            [
+              "Illustrative case",
+              "Conditional PV*",
+              "2031 illustration*",
+              "Annual return*"
+            ],
+            [
+              "Bear",
+              "$98",
+              "$181",
+              "-8.5%"
+            ],
+            [
+              "Base",
+              "$252",
+              "$425",
+              "8.6%"
+            ],
+            [
+              "Bull",
+              "$448",
+              "$722",
+              "20.7%"
+            ]
+          ]
+        },
+        {
+          "text": "*USD per proxy share: unapproved forecast and ownership arithmetic only. These are not accepted intrinsic values, prospective-return forecasts or market expectations. All columns use the same dated holder receipts; the horizon is 6 October 2031. Numerical conclusions remain withheld until mature cash flow, cash/lease financing and current claims are reconciled. [reviewed-results.json]"
+        },
+        {
+          "text": "Forecast starting revenue is $6,829.1m, calculated from FY2025 + H1 2026 - H1 2025 continuing revenue. Base growth slows from 25% to 8% over five years; EBIT margins after economic compensation end at 75%; tax normalizes to 21%; equity cost is 11% and perpetual growth 3%. Bear growth/margins deteriorate; Bull extends advertiser adoption and monetization with higher sustainable margins. These are analyst assumptions, not management guidance or probabilities."
+        },
+        {
+          "text": "The revised calculation illustrates FCFE after assumed financing expense, retaining undistributed cash and adding it once to horizon equity. Principal is conditionally refinanced. Opening ownership uses July outstanding shares plus a mixed-date EPS award proxy, not a verified current claim count. June cash less an assumed USD1bn operating reserve remains a stale opening approximation; no June-to-October cash or operational roll-forward was completed. [a2; model.json]"
+        },
+        {
+          "text": "Purely illustrative reverse calculation: constant five-year growth of 19.1% matches the dated price with Base margin, interest, reinvestment, cash and proxy ownership fixed. Because those cash and ownership foundations are unvalidated, this is not an accepted market-implied-expectations conclusion or unique market belief."
+        },
+        {
+          "table": [
+            [
+              "Unapproved forecast hurdle",
+              "Arithmetic entry illustration"
+            ],
+            [
+              "8%",
+              "$289"
+            ],
+            [
+              "10%",
+              "$264"
+            ],
+            [
+              "12%",
+              "$241"
+            ],
+            [
+              "15%",
+              "$211"
+            ]
+          ]
+        },
+        {
+          "text": "These show discounting arithmetic for the unvalidated forecast. No actionable entry range or approved prospective-return assessment follows from them. A lower price does not repair missing cash-flow or ownership evidence."
+        }
+      ],
+      "page_break": true
+    },
+    {
+      "title": "3. Objection, uncertainty and learning",
+      "blocks": [
+        {
+          "text": "The strongest opposing case is that recent pricing efficiency is a temporary extraction of advertiser value, rather than lasting incremental sales. Q2 installations fell even as revenue per installation rose sharply. If attribution overstates incremental customer acquisition, advertisers can reduce budgets; if rivals improve targeting, publisher auctions can transfer economics away from AppLovin. Unity reported Q2 Grow revenue up 35%, demonstrating an improving competing advertising business. Its segment definition is not directly comparable to AppLovin net revenue. [a2 MD&A; a10]"
+        },
+        {
+          "text": "Platform dependency is structural. Apple requires permission for cross-company tracking and advertising identifier access. This establishes a constraint, not evidence that AppLovin violated a rule. The issuer discloses securities and derivative litigation and says loss exposure cannot be estimated. Reuters relayed a Bloomberg report of an SEC inquiry in October 2025; the archived article does not establish an adjudicated breach or a current 2026 outcome. [a11; a2 Legal proceedings; a12]"
+        },
+        {
+          "text": "Material uncertainties: no October balance sheet or fully reconciled current claim count; contingent performance awards; independent advertiser cohort/causal lift data; litigation outcome; maturity of non-gaming advertiser expansion; refinancing cost after note maturities; and the eventual use of accumulating cash. Scenario values show these dependencies rather than resolve them. A 5% larger existing ownership claim reduces value by approximately 4.8% only in this zero-buyback illustration. With buybacks, rebuild the full ownership path. Definitive security-specific intrinsic value and an unconditional buy/hold verdict are withheld."
+        },
+        {
+          "text": "Watch reported install volume and net revenue per install together, GAAP margins after compensation, receivables growth and collections, advertiser evidence, rival performance, platform policy changes, share count/award vesting and actual repurchase prices. Requested updates should explain changed evidence and preserve this dated version."
+        },
+        {
+          "heading": "Three questions for independent judgement"
+        },
+        {
+          "text": "1. What evidence would persuade you that better advertising attribution reflects incremental customer profit rather than credit for sales that would happen anyway?"
+        },
+        {
+          "text": "2. When might a repurchase at a high price destroy more per-share value than retaining or distributing the same cash?"
+        },
+        {
+          "text": "3. Which change would most undermine your thesis: falling installation volume, lower margins, or lost platform access - and why?"
+        },
+        {
+          "text": "Core evidence: 2025 10-K [a1], June 2026 10-Q [a2], proxy [a3], issuer results [a4,a5], price record [a6], competitor release [a10], Apple policy [a11]. Exact links and locations appear in the full report and source register."
+        }
+      ],
+      "page_break": true
+    }
+  ],
+  "supporting": [
+    {
+      "title": "Research boundary and security",
+      "blocks": [
+        {
+          "text": "The legal entity is Delaware-incorporated AppLovin Corporation, SEC CIK 1751008. Selected security is Nasdaq-listed Class A common stock, quoted in USD; accounts are US GAAP, fiscal year ends 31 December. Classes A and B participate in economics; voting rights and control differ. The 2026 proxy describes a controlled company under its voting agreement. This research uses a prospective-buyer context, no holder cost basis, and no allocation recommendation. [a1 cover; a3 governance]"
+        },
+        {
+          "text": "Information cutoff is 6 October 2026. Latest reviewed periodic filing is Q2 2026 filed 5 August. The price input deliberately uses the completed 5 October session. SEC inventory was checked for filings through the cutoff; the inventory itself is not proof that every subsequent disclosure is immaterial. October changes to claims, cash or legal status remain a gap. Equity-method Tripledot assets are disclosed but excluded from valuation conservatively rather than substituted at book value. [a7; a2]"
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Business economics and causal driver tree",
+      "blocks": [
+        {
+          "text": "Advertiser budgets flow into an auction; publisher inventory and user context determine reachable opportunities; Axon scores expected outcomes; bids and realized conversion economics determine spend and net revenue. MAX supports access to inventory and competitive auction prices. More useful observations can improve predictions, attract budgets and improve publisher yields. That feedback is a plausible advantage, not a separately audited moat. [a1 Business]"
+        },
+        {
+          "table": [
+            [
+              "Driver",
+              "Causal link",
+              "Evidence / limitation"
+            ],
+            [
+              "Incremental advertiser profit",
+              "Better unit economics supports budget retention and expansion",
+              "Independent causal cohort data unavailable"
+            ],
+            [
+              "Install volume and monetization",
+              "Volume x monetization influences ad revenue",
+              "Q2 volume -2%; monetization +58% [a2]"
+            ],
+            [
+              "Publisher access / auction strength",
+              "More useful supply improves advertiser reach",
+              "Platform and rival dependence [a1,a11]"
+            ],
+            [
+              "Cost and compensation",
+              "Revenue growth with slower cost growth lifts EBIT",
+              "GAAP income statement after SBC [a1,a2]"
+            ],
+            [
+              "Ownership and capital allocation",
+              "Future claims divide equity value",
+              "Dated award proxy; contingent claims unresolved"
+            ]
+          ]
+        },
+        {
+          "text": "Revenue is presented net of amounts payable to publishers when AppLovin acts as agent. Consequently, a high margin on reported revenue is not a margin on total advertiser spending and cannot be compared blindly with a principal retailer or gross-revenue ad business. Advertising fees, measurement subscriptions and connected-TV services are different economic activities despite the current one-segment reporting. [a1 revenue recognition; a2 segment note]"
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Industry, competition and business durability",
+      "blocks": [
+        {
+          "text": "Competition comes from rival mobile ad networks, mediation, measurement platforms and large platform owners. Unity is directly relevant but its Create and Grow segments differ from AppLovin scope. Its Q2 2026 Grow revenue was $389m versus $287m, while the company still reported a GAAP net loss. Competitive momentum therefore matters more than using a peer multiple as a mechanistic valuation input. [a10]"
+        },
+        {
+          "text": "Advertiser budgets can rotate quickly if measured acquisition economics weaken; publishers can participate across networks and auctions. AppLovin gains from scale and prediction quality but relies on operating systems, stores and third-party supply. Non-gaming expansion can enlarge opportunity while increasing measurement, sales-support and compliance burdens. No unsourced addressable-market percentage or precise share forecast is used. Independent advertiser testimonials were not sufficient to quantify durable retention; this limits conviction, especially in the Bull case."
+        },
+        {
+          "text": "The business has low direct physical capex, but cloud commitments, leased equipment, skilled labor, equity compensation and data access are economic costs. Low reported physical investment does not establish an unlimited return on incremental capital. The original model does not reconcile sustained replacement and growth investment. Its retained D&A/capex illustration cannot support a mature cash-flow conclusion. [a1 commitments; a2 cash flows]"
+        },
+        {
+          "text": "The annual filing reports no individual customer at 10% or more of annual revenue in 2023-2025 or year-end receivables in 2024-2025. This limits named-customer concentration but does not remove shared platform or mobile-ad ecosystem concentration. [a1 concentration note]"
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Five-year history and comparability",
+      "blocks": [
+        {
+          "table": [
+            [
+              "USD million",
+              "2021",
+              "2022",
+              "2023",
+              "2024",
+              "2025"
+            ],
+            [
+              "Revenue",
+              2793.104,
+              2817.058,
+              1841.762,
+              3224.058,
+              5480.717
+            ],
+            [
+              "EBIT",
+              150.016,
+              -47.791,
+              772.411,
+              1910.956,
+              4151.914
+            ],
+            [
+              "Scope",
+              "Original total",
+              "Original total",
+              "Restated continuing",
+              "Restated continuing",
+              "Continuing"
+            ]
+          ]
+        },
+        {
+          "text": "2021-2022 are retained as originally reported total-group context from the 2022 10-K, including Apps. They are not a comparable continuation of the post-divestment advertising revenue series. 2023-2025 are re-presented continuing operations in the 2025 10-K. No growth rate bridges these two scopes. The discontinuity is explicit rather than explained away as a business collapse. [a9 statements; a1 p54]"
+        },
+        {
+          "table": [
+            [
+              "USD million",
+              "H1 2025",
+              "H1 2026",
+              "Valid TTM"
+            ],
+            [
+              "Continuing revenue",
+              2417.728,
+              3766.135,
+              6829.124
+            ],
+            [
+              "Continuing EBIT",
+              1797.664,
+              2934.21,
+              5288.46
+            ],
+            [
+              "Continuing net income",
+              1495.394,
+              2472.151,
+              4409.952
+            ]
+          ]
+        },
+        {
+          "text": "TTM = FY2025 + H1 2026 - H1 2025 for compatible cumulative periods and scope. TTM figures are historical aggregates through June, not forecasts for the year ending October. Summing standalone EPS is avoided because weighted ownership changed. Model equity is divided by its stated opening claim proxy rather than a manufactured TTM average share denominator. [a1,a2]"
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Accounting, earnings quality and cash conversion",
+      "blocks": [
+        {
+          "text": "Continuing GAAP EBIT increased from $772.4m in 2023 to $4,151.9m in 2025, while revenue increased from $1,841.8m to $5,480.7m. Compensation and acquired-intangible amortization are already included in GAAP operating expense. H1 2026 noncash SBC in the cash-flow bridge was $169.0m. Economic ownership costs cannot be discarded merely because they are noncash. The model keeps compensation in the margin and does not also add back SBC while assuming unchanged claims. [a1 p54 and compensation note; a2 pp4,8]"
+        },
+        {
+          "text": "FY2025 reported CFO was $3,971.1m and management FCF $3,952.0m, subtracting $0.473m of property purchases and $18.669m of finance-lease principal. H1 2026 management FCF was $2,150.1m. The company explicitly includes continuing and discontinued operations in historical cash-flow measures; a mechanically assembled $4,508.2m TTM management FCF therefore remains mixed in scope and is not the recurring forecast input. [a1 pp38-39; a2 p20]"
+        },
+        {
+          "text": "At June, accounts receivable of $2,171.0m were above December $1,819.4m. Collections timing can separate accounting earnings from cash; the H1 cash-flow statement records a receivables cash outflow. Monitor ageing, allowance policy and changes relative to revenue. H1 tax expense is below the model 21% assumption; a low interim effective tax rate is not automatically sustainable. Other income includes items outside operating EBIT and is excluded from forecast operating growth. [a2 balance sheet, cash flow and tax note]"
+        },
+        {
+          "text": "The annual financial-statement and internal-control opinions are unqualified and signed by Deloitte, not evidence of immunity from future problems. Performance award fair-value measurement was a critical audit matter. Audit assurance and independent proof of advertising incrementality are different questions. [a1 pp50-52]"
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Balance sheet, financing and ownership",
+      "blocks": [
+        {
+          "text": "June cash was USD3053.306m and debt carrying value USD3515.072m. The latest detailed December2025 principal schedule totals USD3550m, not an exact USD3600m inferred from rounded prose. Conditional refinancing of unchanged principal is a model assumption. USD204.63m annual GAAP financing expense is not a verified cash-coupon/lease schedule; lease principal, depreciation and renewal costs need reconciliation before accepting FCFE. Numerical financing conclusions remain withheld. [a1 note9 pp69-70; a2 balance sheet, cash flows and risks]"
+        },
+        {
+          "text": "July 31 outstanding Class A plus Class B shares were 334.651m. Adding June Q2 weighted dilutive awards 1.231m and excluded EPS awards 0.107m produces the mixed-date proxy 335.989m. It is not a reconciled October fully diluted claim. Disclosed historical award quantities and market-cap conditions are recorded in the evidence appendix; the remaining gap is a current roll-forward with exercise proceeds and conditional vesting, not missing award disclosure. [a2 cover and EPS note; a1 note11]"
+        },
+        {
+          "text": "Historical repurchases and withholding for employee taxes are distinguished. H1 repurchases under the program were approximately $1.5bn for 3.275m shares; this is not equivalent to the total share movement from issuance, withholding and retirement. Forecast buybacks are zero in the initial cases because a future execution-price path has not been established. A user can test a specified buyback path; cash falls and ownership falls together. No automatic percentage uplift is added to returns. [a2 equity note; model.json]"
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Governance, incentives and legal uncertainty",
+      "blocks": [
+        {
+          "text": "The proxy says the voting agreement provides control while the board maintains independent committees. Founder influence can support long-term decisions while reducing the power of minority public holders to redirect capital allocation. Incentives tied to market capitalization need analysis of vesting thresholds and how many claims may arise, rather than assuming that rising market value always benefits existing shareholders equally. [a3 governance/compensation]"
+        },
+        {
+          "text": "Securities litigation asserts misleading statements about advertising and financial growth; the company contests the allegations and does not estimate a loss range. The reviewed June filing describes briefing of the motion to dismiss but does not substantiate a final judicial outcome. Reuters reporting in October 2025 relayed an inquiry reported by Bloomberg. This remains attributed reporting, not a finding of misconduct; later procedural outcomes require fresh evidence. The report does not fabricate a legal-loss probability or precision discount. [a2 Legal proceedings; a12]"
+        },
+        {
+          "text": "Class B carries 20 votes per share, compared with one for Class A. The December 2025 voting agreement parties held approximately 67% of aggregate voting power. These are dated disclosed governance facts, not assumptions copied from a summary. [a1 equity and ownership-risk notes]"
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Scenario construction and valuation method",
+      "blocks": [
+        {
+          "table": [
+            [
+              "Driver",
+              "Bear",
+              "Base",
+              "Bull"
+            ],
+            [
+              "Annual growth Y1-Y5",
+              "10,8,5,4,3%",
+              "25,20,15,12,8%",
+              "35,30,24,18,12%"
+            ],
+            [
+              "Final EBIT margin after SBC",
+              "60%",
+              "75%",
+              "80%"
+            ],
+            [
+              "Equity cost / terminal growth",
+              "13% / 2%",
+              "11% / 3%",
+              "10% / 3.5%"
+            ],
+            [
+              "Tax / incremental WC",
+              "21% / 12%",
+              "21% / 12%",
+              "21% / 12%"
+            ]
+          ]
+        },
+        {
+          "text": "Bear represents fading monetization, competition and declining margin; Base means useful optimization persists but growth matures; Bull requires broader sustained advertiser adoption without sacrificing economics. Equity costs are analyst required-return assumptions reflecting different economic risk, not calibrated beta estimates. Sensitivities also hold the operating forecast fixed while varying required return and long-run growth so that changing both in a scenario does not conceal the valuation effect."
+        },
+        {
+          "text": "Annual financing expense of $204.63m is twice H1 GAAP interest, not cash interest or a refinancing promise. H1 cash paid for interest was $99.653m versus GAAP expense $102.315m. Acquired amortisation is finite: the December schedule declines from $89.357m in 2026 to $48.941m in 2030. A growing 1.4%-of-revenue D&A add-back is unsupported. The retained 1% capex and 12% incremental working-capital illustrations do not resolve physical/lease replacement, acquired-amortisation runoff or expensed growth investment. Thus mature cash-flow valuation is withheld pending that schedule. [a1 notes7-9; a2 pp4,8,15]"
+        },
+        {
+          "text": "Terminal operating cash before financing grows at g. Constant after-tax annual financing expense is a separate perpetuity discounted at equity cost; it does not grow with revenue. Accumulated cash is added once. This repairs the original fixed-interest inconsistency but does not establish sustainable reinvestment. Nonzero borrowing is blocked until debt, service and claims are linked. Reported zero cash yield and zero buybacks are illustrative capital-policy assumptions."
+        },
+        {
+          "text": "Current value equals the present value of explicit dividends plus the discounted horizon equity per share. Actual calendar dates use days/365, including leap days. Price appreciation and XIRR total return are shown separately; they coincide here because dividends are zero. In a user case with dividends, XIRR uses dated receipts and terminal proceeds. Repurchases are not a second dividend to the continuing holder. The full present-to-horizon bridge and input-change checks are in the workbook."
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Cross-checks, reverse valuation and conditional entry",
+      "blocks": [
+        {
+          "text": "At the dated price and mixed-date illustrative ownership proxy, market capitalisation is $94.7bn and price/TTM continuing earnings is 21.5x. These are proxy calculations, not verified current fully diluted figures. No independent valuation cross-check has been completed; a multiple of the same earnings used in the forecast is insufficient confirmation. [a6,a1,a2; derived]"
+        },
+        {
+          "text": "Purely illustrative reverse calculation: constant five-year growth of 19.1% matches the dated price with Base margin, interest, reinvestment, cash and proxy ownership fixed. Because those cash and ownership foundations are unvalidated, this is not an accepted market-implied-expectations conclusion or unique market belief."
+        },
+        {
+          "text": "Entry prices discount the identical conditional holder receipts at 8%, 10%, 12% and 15%. They are return-hurdle illustrations rather than additional independent appraisals. Margin of safety requires attention to the weak point in the forecast - advertiser durability, platform access, ownership and financing - as well as price. A scenario has no approved probability merely because it is called Base."
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Adversarial assessment and what would change the judgement",
+      "blocks": [
+        {
+          "text": "The bullish evidence is exceptional GAAP profitability, strong cash generation and recent revenue growth after the Apps sale. The bear argument is strongest where causal advertiser value, lawful data access and replication by competitors are least independently observed. An audit confirms financial statements within its scope; it does not settle attribution economics. A lower multiple after a large price decline would not establish a safe investment if the cash-flow process or ownership claim has weakened."
+        },
+        {
+          "table": [
+            [
+              "Observation",
+              "Why it matters",
+              "Response"
+            ],
+            [
+              "Monetization rises while installs fall",
+              "Could be efficiency, concentration or unsustainable extraction",
+              "Test advertiser cohorts and budgets; do not infer cause from ratio alone"
+            ],
+            [
+              "Receivables outgrow sales / ageing worsens",
+              "Cash conversion and recognition risk",
+              "Reconcile collections and allowances"
+            ],
+            [
+              "Compensation vesting exceeds proxy",
+              "Per-share claim dilution",
+              "Rebuild ownership; preserve old report"
+            ],
+            [
+              "Platform restrictions change",
+              "Loss of reachable/data-enabled inventory",
+              "Refresh official policy and direct issuer response"
+            ],
+            [
+              "Refinancing or buybacks change",
+              "Cash and share-path dependence",
+              "Revise financing and distribution model"
+            ]
+          ]
+        },
+        {
+          "text": "The focused Astra audit has occurred. Corrections and remaining limitations are recorded in the run review. Arithmetic verification does not establish sustainable mature cash flow, independent advertiser economics, a current claims schedule or a complete thesis. The pilot remains partial and the general workflow remains unapproved."
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Evidence gaps, update rules and teaching",
+      "blocks": [
+        {
+          "text": "Known claim quantities were disclosed: December 2025 nonvested RSUs 0.358162m, options 1.256114m at USD6.10 weighted strike, and October-granted PSUs 0.920526m subject to seven-year USD300bn-to-USD1tn market-cap conditions. July 31 outstanding shares total 334.651m. These dates and conditional claims require a roll-forward and exercise/vesting treatment; adding EPS weighted awards is not that reconciliation. [a1 note11 pp71-73; a2 cover]"
+        },
+        {
+          "text": "Terminal continuing equity share of total present value (no dividends): Bear 64.2% / Base 75.2% / Bull 80.8%. This is a high terminal dependence. Sensitivity tests are calculation illustrations, not evidence for the terminal construction."
+        },
+        {
+          "text": "Outstanding gaps are current diluted claims and contingent vesting, independent advertiser retention/incrementality, complete post-August disclosure coverage, current litigation resolution, and refinancing terms beyond the observable note structure. These gaps limit conclusions; they are not filled with zero-valued observations. Zero additional Tripledot value, zero dividends/buybacks and zero treasury yield are explicit modelling choices, distinct from a missing number."
+        },
+        {
+          "text": "An update creates a new dated run, links to its predecessor, refreshes material sources and records changes in evidence, assumptions, values and judgement. It revises the workbook when financial assumptions change; the standalone thesis is reissued if central judgement changes. The current PDF never automatically changes when a workbook is edited. Methodology improvements discovered during this pilot belong in lessons/proposed.md until the user approves a change."
+        },
+        {
+          "text": "The three independent-judgement questions in the opening thesis are intended for a discussion grounded in this company. Follow-up answers should use the archived model and source register; if the answer depends on current events, evidence must be refreshed. No scheduled monitoring, screening or portfolio logic has been created."
+        }
+      ],
+      "page_break": false
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "event",
+    "url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-to-Announce-Third-Quarter-2026-Financial-Results/default.aspx",
+    "retrieved_at": "2026-10-09T00:34:28.039967+00:00",
+    "final_url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-to-Announce-Third-Quarter-2026-Financial-Results/default.aspx",
+    "status": "archived",
+    "sha256": "db6749ba959e641cccf4ba69eb1f1798e3b50756ff6dd51dfc7eb5d1f213d257",
+    "path": "C:\\Users\\aidan\\Documents\\Company research 2\\monitoring\\studies\\evidence\\2026-10-09-netflix\\20261009T003428792509Z-event-db6749ba959e641cccf4ba69eb1f1798e3b50756ff6dd51dfc7eb5d1f213d257.html",
+    "bytes": 47495
+  },
+  {
+    "id": "q2-letter",
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm",
+    "retrieved_at": "2026-10-09T00:34:28.793509+00:00",
+    "status": "unavailable",
+    "error": "HTTPError",
+    "http_status": 403
+  },
+  {
+    "id": "q2-10q",
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm",
+    "retrieved_at": "2026-10-09T00:34:28.976884+00:00",
+    "status": "unavailable",
+    "error": "HTTPError",
+    "http_status": 403
+  },
+  {
+    "id": "q2-10q-mirror",
+    "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001065280/a826cd9b-469f-4c3a-9e92-4bef340713f3.html",
+    "retrieved_at": "2026-10-09T00:34:29.051212+00:00",
+    "final_url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001065280/a826cd9b-469f-4c3a-9e92-4bef340713f3.html",
+    "status": "archived",
+    "sha256": "282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9",
+    "path": "C:\\Users\\aidan\\Documents\\Company research 2\\monitoring\\studies\\evidence\\2026-10-09-netflix\\20261009T003431335392Z-q2-10q-mirror-282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9.html",
+    "bytes": 3195808
+  },
+  {
+    "id": "q2-letter-pdf",
+    "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf",
+    "retrieved_at": "2026-10-09T00:34:31.339681+00:00",
+    "final_url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf",
+    "status": "archived",
+    "sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+    "path": "C:\\Users\\aidan\\Documents\\Company research 2\\monitoring\\studies\\evidence\\2026-10-09-netflix\\20261009T003432308307Z-q2-letter-pdf-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+    "bytes": 294574
+  },
+  {
+    "id": "filings-index",
+    "url": "https://ir.netflix.net/financials/sec-filings/default.aspx",
+    "retrieved_at": "2026-10-09T00:34:32.308307+00:00",
+    "final_url": "https://ir.netflix.net/financials/sec-filings/default.aspx",
+    "status": "archived",
+    "sha256": "8525f85f0a7cd99b8b685f91375752109f69b6cad14a969ad7b46592833396ea",
+    "path": "C:\\Users\\aidan\\Documents\\Company research 2\\monitoring\\studies\\evidence\\2026-10-09-netflix\\20261009T003432526625Z-filings-index-8525f85f0a7cd99b8b685f91375752109f69b6cad14a969ad7b46592833396ea.html",
+    "bytes": 49270
+  }
+]

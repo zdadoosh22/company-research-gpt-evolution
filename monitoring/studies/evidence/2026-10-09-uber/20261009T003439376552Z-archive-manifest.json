@@ -1,0 +1,58 @@
+[
+  {
+    "id": "q2-results",
+    "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx",
+    "accessed_at": "2026-10-09T00:34:37.205476+00:00",
+    "http_status": 200,
+    "final_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx",
+    "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003437205476Z-q2-results-7c191dca64d3010d.html",
+    "sha256": "7c191dca64d3010df2dc2720101ebe707b7776ac387e3d4734a4441864c0a08d",
+    "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003437205476Z-q2-results-7c191dca64d3010d.txt",
+    "text_sha256": "ea4d0b8e79f3c2eafdc69dcf4e1cf4a608099df2f942480f28ea266dcdb176b6"
+  },
+  {
+    "id": "q2-10q",
+    "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm",
+    "accessed_at": "2026-10-09T00:34:38.393369+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "q3-date",
+    "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx",
+    "accessed_at": "2026-10-09T00:34:38.497859+00:00",
+    "http_status": 200,
+    "final_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx",
+    "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438497859Z-q3-date-e914d01799513f4b.html",
+    "sha256": "e914d01799513f4b9ce37ecf631d9c452bdf47bff70a6a7d76fba72ee2920bb2",
+    "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438497859Z-q3-date-e914d01799513f4b.txt",
+    "text_sha256": "2cba0daf1299309eca3191d191420f22bf1930f74f3562cd2345a60d45e2219c"
+  },
+  {
+    "id": "ezcater",
+    "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-to-Acquire-ezCater-as-it-Brings-Catering-to-Uber-Eats/default.aspx",
+    "accessed_at": "2026-10-09T00:34:38.771481+00:00",
+    "http_status": 200,
+    "final_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-to-Acquire-ezCater-as-it-Brings-Catering-to-Uber-Eats/default.aspx",
+    "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438771481Z-ezcater-c65f64af7a6e60df.html",
+    "sha256": "c65f64af7a6e60df68e9ca604b4a3d731f7db0bdd3d67658134d43ca6efe06a9",
+    "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438771481Z-ezcater-c65f64af7a6e60df.txt",
+    "text_sha256": "b36121d91140e74464c3fe1ba494ff9b1cdd53cadcac0ae95cf2d1735279d49a"
+  },
+  {
+    "id": "home",
+    "url": "https://investor.uber.com/home/default.aspx",
+    "accessed_at": "2026-10-09T00:34:38.971689+00:00",
+    "http_status": 200,
+    "final_url": "https://investor.uber.com/home/default.aspx",
+    "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438971689Z-home-0918296271a9db7b.html",
+    "sha256": "0918296271a9db7b715f7cafc688798da473af46df61ea95968565658730a11b",
+    "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438971689Z-home-0918296271a9db7b.txt",
+    "text_sha256": "05357dd2a0fde1da2e68b1a7ad7eb448cdbd69a868e83393f5d758c1ec9213fa"
+  },
+  {
+    "id": "deliveryhero-presentation",
+    "url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278126000382/e26302_ex99-2.htm",
+    "accessed_at": "2026-10-09T00:34:39.205455+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

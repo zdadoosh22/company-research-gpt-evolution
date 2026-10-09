@@ -1,0 +1,23 @@
+{
+  "entity_id": "jpmorgan-chase",
+  "legal_name": "JPMorgan Chase & Co.",
+  "latest": null,
+  "runs": [
+    {
+      "id": "2026-10-06-r001",
+      "mode": "pilot",
+      "status": "awaiting-review"
+    },
+    {
+      "id": "2026-10-06-r002",
+      "mode": "pilot",
+      "status": "partial"
+    },
+    {
+      "id": "2026-10-06-r003",
+      "mode": "pilot",
+      "status": "partial"
+    }
+  ],
+  "latest_active": "2026-10-06-r003"
+}

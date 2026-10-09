@@ -1,0 +1,247 @@
+{
+  "schema": "scoped-opportunity-followup-v1",
+  "id": "2026-10-09-netflix-opportunity-followup",
+  "as_of": "2026-10-09",
+  "created_at": "2026-10-09T13:01:35.983123+00:00",
+  "status": "focused-followup-complete-awaiting-independent-review",
+  "disposition": "retain-research-withhold-economic-entry",
+  "actionable": false,
+  "accepted_entry": false,
+  "full_company_approval": false,
+  "security": {
+    "issuer": "Netflix, Inc.",
+    "exchange": "NASDAQ Global Select Market",
+    "ticker": "NFLX",
+    "class": "common stock",
+    "currency": "USD",
+    "price_unit": "major",
+    "broker_isa_eligibility_verified": false
+  },
+  "methodology": {
+    "version": "1.0.0",
+    "file": "methodology/company-research-v1.0.0.md",
+    "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+    "source_document_sha256": "74613e5230b68128cc314c631335ca2baed9dbe8fcac3ebf46a8c54300d93e8d",
+    "approval": "User authorised implementation of complete project plan",
+    "date": "2026-10-06"
+  },
+  "sources": [
+    {
+      "id": "q2-letter",
+      "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf",
+      "retrieved_at": "2026-10-09T12:57:07.505467+00:00",
+      "status": "archived",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125707505467Z-q2-letter-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "bytes": 294574,
+      "final_url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf",
+      "locations_read": [
+        "pp.1-2 guidance, expense timing",
+        "p.6 FCF/content guide",
+        "pp.9-12 financial statements",
+        "p.14 FX/net debt"
+      ],
+      "classification": "raw-primary-issuer-document"
+    },
+    {
+      "id": "sec-q2",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm",
+      "retrieved_at": "2026-10-09T12:57:08.103915+00:00",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "locations_read": [],
+      "classification": "raw-unavailable-web-reading-separated"
+    },
+    {
+      "id": "july-financing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526312575/d171951d8k.htm",
+      "retrieved_at": "2026-10-09T12:57:08.228683+00:00",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "locations_read": [],
+      "classification": "raw-unavailable-web-reading-separated"
+    },
+    {
+      "id": "price-history",
+      "url": "https://stockanalysis.com/stocks/nflx/history/",
+      "retrieved_at": "2026-10-09T12:57:08.291600+00:00",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "locations_read": [],
+      "classification": "raw-unavailable-web-reading-separated"
+    },
+    {
+      "id": "expectations",
+      "url": "https://stockanalysis.com/stocks/nflx/forecast/",
+      "retrieved_at": "2026-10-09T12:57:08.613468+00:00",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "locations_read": [],
+      "classification": "raw-unavailable-web-reading-separated"
+    },
+    {
+      "id": "price-crosscheck",
+      "url": "https://chartexchange.com/symbol/nasdaq-nflx/historical/",
+      "retrieved_at": "2026-10-09T12:57:08.661028+00:00",
+      "status": "archived",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125708661028Z-price-crosscheck-d2e649a123fde352862450bdb199fd1aef82283c3278a88bcf913f1bc0291ead.html",
+      "sha256": "d2e649a123fde352862450bdb199fd1aef82283c3278a88bcf913f1bc0291ead",
+      "bytes": 378054,
+      "final_url": "https://chartexchange.com/symbol/nasdaq-nflx/historical/",
+      "locations_read": [
+        "Historical Prices row dated 2026-10-08, currency USD; banner disagreement"
+      ],
+      "classification": "raw-secondary-price-display"
+    },
+    {
+      "id": "q3-2025-letter",
+      "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2025/q3/FINAL-Q3-25-Shareholder-Letter.pdf",
+      "retrieved_at": "2026-10-09T12:58:29.535587+00:00",
+      "status": "archived",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125829535587Z-q3-2025-letter-cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031.pdf",
+      "sha256": "cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031",
+      "bytes": 434472,
+      "locations_read": [
+        "pp.1-2 Brazilian tax description and period attribution",
+        "p.11 exact Q3 revenue and operating income"
+      ],
+      "classification": "raw-primary-issuer-document"
+    }
+  ],
+  "web_rendered_extract": {
+    "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\web-rendered-evidence.json",
+    "sha256": "cc4c0029f94f23c1f85cfc357aaaea66aa802f6babd847bf156793820509fb59",
+    "classification": "derived-web-tool-extract-not-original",
+    "locations_read": {
+      "stockanalysis_history": "header dated close, October 8 row and source/split-adjustment footer",
+      "stockanalysis_forecast": "financial forecast table, adjusted EPS footnote, provider/date footer",
+      "july_financing_8k": "Item 8.01 offering and intended use",
+      "june_10q": "Note 6 and MD&A cash-flow discussion"
+    },
+    "original_local_archive_unavailable_for": [
+      "stockanalysis-history",
+      "stockanalysis-forecasts",
+      "july-financing-8k",
+      "june-10q"
+    ],
+    "accepted_positive_entry_foundation": false
+  },
+  "derived_files": [
+    {
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125829535587Z-q3-2025-letter-cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031.pdf.derived.txt",
+      "sha256": "f9dd741f6821945dac4e3da7b2199dd34d99d07a017776f6a23e3843e87ca6c0",
+      "classification": "derived-pdf-text"
+    }
+  ],
+  "calculations": {
+    "q3_2025_revenue_m": "11510.307",
+    "q3_2025_operating_income_m": "3248.247",
+    "brazil_charge_m_approximate": "619",
+    "q3_2026_guided_revenue_m": "12860",
+    "q3_2026_guided_operating_income_m": "4268",
+    "q3_2025_ex_charge_margin_pct": "33.59812210047916185033118578",
+    "q3_2026_implied_guided_margin_pct": "33.18818040435458786936236392",
+    "q3_margin_difference_pp": "-0.4099416961245739809688218600",
+    "q3_profit_growth_reported_pct": "31.39394879761298940628591360",
+    "q3_profit_growth_ex_full_prior_charge_pct": "10.36274641883489727964104700",
+    "h1_cash_content_m": "9911.018",
+    "prior_h1_cash_content_m": "8010.775",
+    "h1_content_amortization_m": "8529.209",
+    "prior_h1_content_amortization_m": "7655.186",
+    "h1_cash_content_amortization_ratio": "1.162009044449491154455237291",
+    "prior_h1_cash_content_amortization_ratio": "1.046450732875726337674878181",
+    "h1_excess_cash_content_m": "1381.809",
+    "prior_h1_excess_cash_content_m": "355.589",
+    "cash_content_growth_pct": "23.72108815938532788650286650",
+    "amortization_growth_pct": "11.41739730425883838746700600",
+    "provider_fy_operating_margin_pct": "31.47208121827411167512690355",
+    "unreconciled_provider_price_eps_ratio": "19.93593314763231197771587744"
+  },
+  "formulas": {
+    "q3_2025_ex_charge_margin": "(3248.247 + approximately 619) / 11510.307 * 100",
+    "q3_growth_adjusted_comparator": "(4268 / (3248.247 + approximately 619) - 1) * 100",
+    "q3_growth_reported_precise": "(4268 / 3248.247 - 1) * 100",
+    "h1_cash_content": "9774.440 + 136.578",
+    "prior_h1_cash_content": "7385.470 + 625.305",
+    "h1_receipt_tax_adjustment_only": "6619.243 - 2800 + T_cash_H1 = 3819.243 + T_cash_H1",
+    "fy_receipt_tax_adjustment_only": "approximately 12500 - 2800 + T_cash_FY = approximately 9700 + T_cash_FY",
+    "h2_content_cash_given_guide": "approximately 1.1 * A_FY - 9911.018",
+    "h2_content_amortization": "A_FY - 8529.209",
+    "h2_cash_content_less_amortization": "approximately 0.1 * A_FY - 1381.809",
+    "conditional_price_required_earnings": "E_required = 71.57 / separately_justified_M",
+    "revision_multiple_response": "relative price support = (E1/E0) * (M1/M0)"
+  },
+  "tax_adjustments": {
+    "receipt_related_h1_cash_taxes": null,
+    "receipt_related_fy_cash_taxes": null,
+    "receipt_related_income_tax_provision": null,
+    "normalized_fcf": null,
+    "brazil_comparator_treatment": "full approximate charge exclusion sensitivity, not permanent normalization; not income tax on termination receipt"
+  },
+  "research_price": {
+    "value_usd": "71.57",
+    "timestamp": "2026-10-08T16:00:00-04:00",
+    "utc_timestamp": "2026-10-08T20:00:00Z",
+    "status": "dated_regular_session_close_reference",
+    "executable": false,
+    "broker_evidence": false,
+    "split_consistency": "Stock Analysis explicitly split-adjusts history; 2025 old EPS/shares not used",
+    "corroboration": "ChartExchange dated row matches; banner 71.59 disagrees; provider independence not verified"
+  },
+  "external_expectations": {
+    "provider": "S&P Global as displayed by Stock Analysis",
+    "display_last_updated": "2026-10-08",
+    "fy2026_revenue_bn": "51.22",
+    "fy2026_operating_income_bn": "16.12",
+    "fy2026_adjusted_eps_display": "3.59",
+    "fy2026_fcf_bn_display": "12.81",
+    "fy2026_analyst_count_display": 47,
+    "fy2027_revenue_bn_top_summary": "56.95",
+    "fy2027_eps_top_summary": "3.81",
+    "q3_comparable_consensus": null,
+    "same_basis_accepted": false,
+    "scope_limit": "Adjusted EPS reconciliation and detailed 2027 forecast unavailable; no reliable surprise hurdle or adopted consensus target"
+  },
+  "valuation": null,
+  "entry_ceiling": null,
+  "return_hurdle": null,
+  "allocation": null,
+  "stop": null,
+  "paper_fills": [],
+  "capital_reserved_gbp": "0",
+  "independent_review": "pending-new-followup-review; earlier discovery review cannot approve new analysis",
+  "provenance": {
+    "author_role": "delegated analyst, inherited parent requested model",
+    "reported_backend_identity": null,
+    "backend_independently_verified": false
+  },
+  "remaining_economic_foundation": [
+    "receipt/tax and content-cash normalization",
+    "current financing/cash/ownership and material source originals",
+    "dated matched expectations",
+    "independently justified recurring earnings/cash and capitalization, adverse paths and delayed-response price test",
+    "targeted competitor/demand and Brazilian tax persistence challenge"
+  ],
+  "predecessors": [
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.md",
+      "sha256": "b0860623b243dfd57aa9015e46715981dc7a74cc021fdf84dfca53607cd4f251"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.json",
+      "sha256": "3cdb396f41ec75abe7bbc2c2d2aa87c6ba3b9edd83f367d1c196ba55ffec092b"
+    },
+    {
+      "path": "validation/discovery-challenge-2026-10-09.md",
+      "sha256": "1e59a65aedbd7ec092da6b2ade46c6de19d3710f1a42814e6bd6030f132a08be"
+    },
+    {
+      "path": "validation/discovery-challenge-2026-10-09.json",
+      "sha256": "5c75bb8535f303c1f22a1a5e26de96788f32fbe79d93ab26d7549aeba7001525"
+    }
+  ],
+  "report_binding": {
+    "path": "monitoring\\studies\\2026-10-09-netflix-opportunity-followup.md",
+    "sha256": "48a10b31d01c21beb4874b6b2d22114d0d601c2d61c8e260b0a3b8fa02645371"
+  }
+}

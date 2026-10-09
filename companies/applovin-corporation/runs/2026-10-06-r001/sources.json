@@ -1,0 +1,178 @@
+[
+  {
+    "id": "a1",
+    "title": "2025 annual filing",
+    "type": "filing",
+    "publication_date": "2026-02-19",
+    "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000010/app-20251231.htm",
+    "read": true,
+    "locations": [
+      "2025 Form 10-K pp38-39 FCF reconciliation",
+      "2025 Form 10-K, audited statements of operations p54",
+      "Business",
+      "audit opinions and critical audit matter pp50-52",
+      "commitments/debt",
+      "revenue recognition",
+      "risk factors"
+    ],
+    "archived_file": "sources/2025-10k.htm",
+    "sha256": "15425f02aa827e7901decca4cb5032d8075bb1c455aab2363481722ec12aac4f"
+  },
+  {
+    "id": "a2",
+    "title": "Q2 2026 quarterly filing",
+    "type": "filing",
+    "publication_date": "2026-08-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000059/app-20260630.htm",
+    "read": true,
+    "locations": [
+      "2026 Q2 Form 10-Q, balance sheet p3 / debt note6 / EPS note9 / risk factors",
+      "2026 Q2 Form 10-Q, statements of operations p4",
+      "Legal proceedings and risks",
+      "MD&A install volume and monetization p24",
+      "cash flow statement p8",
+      "equity/EPS/debt/lease/tax notes"
+    ],
+    "archived_file": "sources/2026-q2-10q.htm",
+    "sha256": "e247d048dc02f5366587dededcb384c7479847302addc03ef0d3dfc3d75e5e65"
+  },
+  {
+    "id": "a3",
+    "title": "2026 proxy statement",
+    "type": "filing",
+    "publication_date": "2026-04-21",
+    "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000028/app-20260420.htm",
+    "read": true,
+    "locations": [
+      "executive compensation",
+      "governance and voting agreement"
+    ],
+    "archived_file": "sources/2026-proxy.htm",
+    "sha256": "dc93c273b178be511bd0d35a884f4bb3939cae7155d1c1a920aa2e82e333cec1"
+  },
+  {
+    "id": "a4",
+    "title": "Q2 2026 results",
+    "type": "management",
+    "publication_date": "2026-08-05",
+    "url": "https://investors.applovin.com/news/news-details/2026/AppLovin-Announces-Second-Quarter-2026-Financial-Results/",
+    "read": true,
+    "locations": [
+      "Q2 headline results and Q3 management guidance"
+    ],
+    "archived_file": "sources/2026-q2-results.html",
+    "sha256": "2544e2614c2538d6f1c1dcdcf676ff6e086a8f0e829b3eff45d978db326dd9a0"
+  },
+  {
+    "id": "a5",
+    "title": "FY2025 results",
+    "type": "management",
+    "publication_date": "2026-02-11",
+    "url": "https://investors.applovin.com/news/news-details/2026/AppLovin-Announces-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx",
+    "read": true,
+    "locations": [
+      "full-year result definitions"
+    ],
+    "archived_file": "sources/2025-results.html",
+    "sha256": "7a1ab9e1fd8953fa1e3d16bd7a45c73281b348ee7457381fb6c3dc358eae247e"
+  },
+  {
+    "id": "a6",
+    "title": "Historical share prices",
+    "type": "secondary",
+    "publication_date": "2026-10-06",
+    "url": "https://chartexchange.com/symbol/nasdaq-app/historical/",
+    "read": true,
+    "locations": [
+      "historical table row 2026-10-05; Nasdaq APP Class A, close 16:00 EDT"
+    ],
+    "archived_file": "sources/price-history.html",
+    "sha256": "c500c4c2bc1db3543b406fe2a2d456286dadb2128cfcf3ce785316d2b11d03b7"
+  },
+  {
+    "id": "a7",
+    "title": "SEC filing inventory",
+    "publisher": "AppLovin / SEC",
+    "type": "filing",
+    "publication_date": "2026-10-06",
+    "url": "https://data.sec.gov/submissions/CIK0001751008.json",
+    "retrieved": "2026-10-06",
+    "archived_file": "sources/submissions.json",
+    "sha256": "622a27d3a1fce9089ddd1fac7012531dcc39b2c177d754e7463227dd4da9ac22",
+    "read": true,
+    "locations": [
+      "recent periodic filing inventory through cutoff"
+    ]
+  },
+  {
+    "id": "a8",
+    "title": "2024 annual filing",
+    "type": "filing",
+    "publication_date": "2025-02-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000018/app-20241231.htm",
+    "read": false,
+    "locations": [],
+    "archived_file": "sources/2024-10k.htm",
+    "sha256": "14717f762ce225c21e83dca28d201e663649f3f867d5a0ab97b8a61f80ec78fb"
+  },
+  {
+    "id": "a9",
+    "title": "2022 annual filing",
+    "publisher": "SEC / issuer / identified publisher",
+    "type": "filing",
+    "publication_date": "2023-02-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100823000006/app-20221231.htm",
+    "retrieved": "2026-10-06T19:20:23.268762+00:00",
+    "archived_file": "sources\\2022-10k.htm",
+    "sha256": "0e62285636e4f85b56dd0483b87ccebdf0ce0de41a3b568d500e24ca70ea8334",
+    "read": true,
+    "locations": [
+      "2022 Form 10-K, statements of operations"
+    ]
+  },
+  {
+    "id": "a10",
+    "title": "Unity Q2 2026 results",
+    "publisher": "SEC / issuer / identified publisher",
+    "type": "competitor-management",
+    "publication_date": "2026-08-06",
+    "url": "https://investors.unity.com/news/news-details/2026/Unity-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+    "retrieved": "2026-10-06T19:20:24.144152+00:00",
+    "archived_file": "sources\\unity-2026-q2.html",
+    "sha256": "c1b7537f7c27c121e0f78f0c7cb981ac8acc70427d4767c3a76dc401b59ec2e5",
+    "read": true,
+    "locations": [
+      "Q2 2026 Grow revenue and GAAP results"
+    ]
+  },
+  {
+    "id": "a11",
+    "title": "Apple tracking privacy requirements",
+    "publisher": "SEC / issuer / identified publisher",
+    "type": "platform-policy",
+    "publication_date": null,
+    "url": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
+    "retrieved": "2026-10-06T19:20:25.253116+00:00",
+    "archived_file": "sources\\apple-privacy.html",
+    "sha256": "4f5107745f261abdf6ec7cf7140e7e479845867713020a1d778db3275950db48",
+    "read": true,
+    "locations": [
+      "Ask permission to track"
+    ]
+  },
+  {
+    "id": "a12",
+    "title": "Reuters report of reported SEC inquiry",
+    "publisher": "SEC / issuer / identified publisher",
+    "type": "secondary",
+    "publication_date": "2025-10-07",
+    "url": "https://www.tradingview.com/news/reuters.com%2C2025%3Anewsml_L3N3VO0ES%3A0-applovin-falls-after-report-of-sec-probe-over-data-collection-practices/",
+    "retrieved": "2026-10-06T19:20:26.173366+00:00",
+    "archived_file": "sources\\reuters-inquiry.html",
+    "sha256": "f7f4e4d693b4d95f22175b0954b2406203e5d65a114c15967c6af8aa08e24e8e",
+    "read": true,
+    "locations": [
+      "Reuters syndicated short article; inquiry attributed to Bloomberg; Tuesday 7 October 2025"
+    ]
+  }
+]

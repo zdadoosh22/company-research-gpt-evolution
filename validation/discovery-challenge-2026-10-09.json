@@ -1,0 +1,1199 @@
+{
+  "schema": "independent-discovery-challenge-v1",
+  "review_id": "discovery-challenge-2026-10-09",
+  "created_at": "2026-10-09T12:55:02.115213+00:00",
+  "as_of": "2026-10-09",
+  "status": "completed-substantive-independent-screen-challenge-with-open-opportunity-foundations",
+  "scope": "Independent analytical challenge of three saved discovery screens; not full thesis, valuation, positive opportunity approval, portfolio decision or execution review",
+  "reviewer_provenance": {
+    "role": "separate review agent /root/discovery_review_resume",
+    "selected_model": "gpt-6-astra",
+    "requested_reasoning_effort": "high",
+    "selection_evidence": "Parent orchestration explicitly confirmed model gpt-6-astra, reasoning_effort high and fork_turns none in task message.",
+    "reported_backend_identity": null,
+    "backend_independently_verified": false,
+    "claim": "Actual separate analytical review performed through selected Astra route; no independently verified backend certificate."
+  },
+  "methodology_version": "1.0.0",
+  "bound_inputs": [
+    {
+      "path": "monitoring/studies/2026-10-09-amd-discovery-screen.md",
+      "sha256": "e626e1cac3b3183756fa1130cdda8fc9934730fec2df7017a64508de31fa7698"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-amd-discovery-screen.json",
+      "sha256": "c91e4b682e833da41e3a0349884fa4c725160fab7b16c81a56c2336b75129fe1"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-uber-discovery-screen.md",
+      "sha256": "4f101e6c8a358b475263c96dca75fe3796a50176030e3305ac5f459d7ed21ff3"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-uber-discovery-screen.json",
+      "sha256": "abc660fbf5d66facc5cd928440b40ca89032f4a1b36c4329bec7de5e6d507c9e"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.md",
+      "sha256": "b0860623b243dfd57aa9015e46715981dc7a74cc021fdf84dfca53607cd4f251"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.json",
+      "sha256": "3cdb396f41ec75abe7bbc2c2d2aa87c6ba3b9edd83f367d1c196ba55ffec092b"
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6"
+    },
+    {
+      "path": "methodology/current.json",
+      "sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5"
+    },
+    {
+      "path": "monitoring/DECISION-SCOPE.md",
+      "sha256": "b424a556978d65327aa6be45702691c824f894a550a6937e288f8b01031f00b8"
+    },
+    {
+      "path": "workflows/model-review.md",
+      "sha256": "448aa9e8b3f20cc2bb8f41ec6007c9b3fabce9af399a3cc36d7e37b2beb4c11e"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "company": "amd",
+      "source_id": "ir-overview",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/ir-overview.html",
+      "expected_sha256": "667dfff9f17cd2aa0605dae1d754c36c09eed7b6634998390d27471f9ecb127d",
+      "actual_sha256": "667dfff9f17cd2aa0605dae1d754c36c09eed7b6634998390d27471f9ecb127d",
+      "matches": true,
+      "url": "https://ir.amd.com/",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "Latest News; latest Q2 results; latest events; market-data delay footer"
+    },
+    {
+      "company": "amd",
+      "source_id": "q3-event-notice",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q3-event-notice.html",
+      "expected_sha256": "1c34cd99d3fbf0bba0f0a135a04f9fe9c32be3d51a96f751b4674a90d97d25b7",
+      "actual_sha256": "1c34cd99d3fbf0bba0f0a135a04f9fe9c32be3d51a96f751b4674a90d97d25b7",
+      "matches": true,
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "Release heading/date and first paragraph; later conference dates"
+    },
+    {
+      "company": "amd",
+      "source_id": "q2-results",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-results.html",
+      "expected_sha256": "0fcd914306881fdb9e033b50423aed8ac35fbd8f7041e4e4ff71da24b22b8c3a",
+      "actual_sha256": "0fcd914306881fdb9e033b50423aed8ac35fbd8f7041e4e4ff71da24b22b8c3a",
+      "matches": true,
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "GAAP/non-GAAP quarterly tables; Current Outlook; reconciliation; segment summary"
+    },
+    {
+      "company": "amd",
+      "source_id": "q2-10q",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-10q.html",
+      "expected_sha256": "fa18ad1095a14dc14fe04d3e256143addbb1c8f0573eb6eb8bb6bc6609bfe2bf",
+      "actual_sha256": "fa18ad1095a14dc14fe04d3e256143addbb1c8f0573eb6eb8bb6bc6609bfe2bf",
+      "matches": true,
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "Cover; pp 3-6 statements/balance sheet/cash flow; Note 9 debt; Note 10 commitments; Note 12 common stock/warrants; pp 28-30 liquidity/controls; risk factors"
+    },
+    {
+      "company": "amd",
+      "source_id": "world-labs",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/world-labs.html",
+      "expected_sha256": "22f7cbf85c100b0b854547969a85899fe184327f369a10a9eddef4b9c5b3e6c8",
+      "actual_sha256": "22f7cbf85c100b0b854547969a85899fe184327f369a10a9eddef4b9c5b3e6c8",
+      "matches": true,
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "Release paragraphs 1-6, transaction price/consideration/expected close"
+    },
+    {
+      "company": "amd",
+      "source_id": "meta-partnership",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/meta-partnership.html",
+      "expected_sha256": "f7d0c4b26fe386bbb77090f977a9f1295cc2a02c09e4f02e5dd877bddc8973e1",
+      "actual_sha256": "f7d0c4b26fe386bbb77090f977a9f1295cc2a02c09e4f02e5dd877bddc8973e1",
+      "matches": true,
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1279/amd-and-meta-announce-expanded-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "Shipment schedule and warrant vesting paragraphs; CFO accretion assertion"
+    },
+    {
+      "company": "amd",
+      "source_id": "anthropic-partnership",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/anthropic-partnership.html",
+      "expected_sha256": "c15bf0c701c697e2cb04209cbc22bb1a20748d4d0011c068f9492f31f3481093",
+      "actual_sha256": "c15bf0c701c697e2cb04209cbc22bb1a20748d4d0011c068f9492f31f3481093",
+      "matches": true,
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "News highlights and first five paragraphs; investment and first-gigawatt timing"
+    },
+    {
+      "company": "amd",
+      "source_id": "stock-data",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/stock-data.html",
+      "expected_sha256": "8ad72f30bf0e634b3702281e6d81bf39a7af5c979f8094d7d64f45fd0219fb49",
+      "actual_sha256": "8ad72f30bf0e634b3702281e6d81bf39a7af5c979f8094d7d64f45fd0219fb49",
+      "matches": true,
+      "url": "https://ir.amd.com/stock-data",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "Main content and QuoteMedia delayed-data footer; no populated quote in archived HTML"
+    },
+    {
+      "company": "amd",
+      "source_id": "filing-index",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/filing-index.html",
+      "expected_sha256": "b86dd82182635d751ca3507d0d0fee164cad8e0f7dd9ddd3cac5fdb6b8e64c9c",
+      "actual_sha256": "b86dd82182635d751ca3507d0d0fee164cad8e0f7dd9ddd3cac5fdb6b8e64c9c",
+      "matches": true,
+      "url": "https://ir.amd.com/financial-information/sec-filings",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "Latest filing rows (28 September 8-K through older forms)"
+    },
+    {
+      "company": "amd",
+      "source_id": "q2-call",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/q2-call.pdf",
+      "expected_sha256": "271d63d96f015c07c7e1dd76eebeff52f1f2b2a603c2526b28463ee0215553b5",
+      "actual_sha256": "271d63d96f015c07c7e1dd76eebeff52f1f2b2a603c2526b28463ee0215553b5",
+      "matches": true,
+      "url": "https://d1io3yog0oux5.cloudfront.net/_e6fb18640ea7bfff80a48dc92268a25f/amd/db/841/9237/webcast_transcript/AMD2Q26EarningsCallTranscript.pdf",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "PDF pp 2-4 server/Helios/public growth baseline; pp 6-7 Q3 guide; pp 8-9 mix; p13 acceleration definition; pp 15-16 supply"
+    },
+    {
+      "company": "amd",
+      "source_id": "september-8k",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/september-8k.html",
+      "expected_sha256": "4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be",
+      "actual_sha256": "4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be",
+      "matches": true,
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000182/amd-20260926.htm",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "Cover and Item 3.02, floating 10-trading-day VWAP share issuance formula"
+    },
+    {
+      "company": "amd",
+      "source_id": "tipranks-estimates",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/tipranks-estimates.html",
+      "expected_sha256": "15960d1f3d495805a962604956999141812b1bcc158bb4136d300a873bcd9542",
+      "actual_sha256": "15960d1f3d495805a962604956999141812b1bcc158bb4136d300a873bcd9542",
+      "matches": true,
+      "url": "https://www.tipranks.com/stocks/amd/earnings",
+      "kind": "external estimate-provider publication",
+      "read_locations_from_original_register": "Earnings Data, Q3 2026 forecast; Earnings History; date caveat and earnings-related price-change table"
+    },
+    {
+      "company": "amd",
+      "source_id": "altindex-estimates",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/altindex-estimates.html",
+      "expected_sha256": "584e880584527d80ffdfaee755a2b3c7fc9d6a7b96515c31df64b8d49a659658",
+      "actual_sha256": "584e880584527d80ffdfaee755a2b3c7fc9d6a7b96515c31df64b8d49a659658",
+      "matches": true,
+      "url": "https://altindex.com/earnings-calendar/amd",
+      "kind": "external estimate-provider publication",
+      "read_locations_from_original_register": "Updated date; EPS estimate; FAQ consensus claim; price without executable timestamp"
+    },
+    {
+      "company": "amd",
+      "source_id": "ir-calendar",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/ir-calendar.html",
+      "expected_sha256": "61c490b019a7854ccf6640f8a1143c945b7bd3f1b438cd7f7cc1773790cfb84b",
+      "actual_sha256": "61c490b019a7854ccf6640f8a1143c945b7bd3f1b438cd7f7cc1773790cfb84b",
+      "matches": true,
+      "url": "https://ir.amd.com/news-events/ir-calendar",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "Upcoming results and past September conference dates; timezone label"
+    },
+    {
+      "company": "amd",
+      "source_id": "september-goldman-page",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-goldman.html",
+      "expected_sha256": "deb4f3688226b416eed8aaedc196fbb710996282d6a8e7afeb985a4b428b64a3",
+      "actual_sha256": "deb4f3688226b416eed8aaedc196fbb710996282d6a8e7afeb985a4b428b64a3",
+      "matches": true,
+      "url": "https://ir.amd.com/news-events/ir-calendar/detail/20260911-goldman-sachs-communacopia-technology-conference",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "Issuer-hosted transcript hyperlink"
+    },
+    {
+      "company": "amd",
+      "source_id": "september-goldman",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-goldman.pdf",
+      "expected_sha256": "15002633cc86e49a1c2d53ac499ab5a5b174204ceae4e4b0dbd01fc30ba0cb8a",
+      "actual_sha256": "15002633cc86e49a1c2d53ac499ab5a5b174204ceae4e4b0dbd01fc30ba0cb8a",
+      "matches": true,
+      "url": "https://d1io3yog0oux5.cloudfront.net/_e6fb18640ea7bfff80a48dc92268a25f/amd/db/817/9241/webcast_transcript/AMD+Goldman+Sachs+Communacopia+and+Technology+%28Sept+11%2C+2026%29.pdf",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "PDF pp 4-6 public 2027 and strategic growth/EPS aspirations; pp 8-9 CPU-content/gigawatt uncertainty; all remaining discussion read"
+    },
+    {
+      "company": "amd",
+      "source_id": "september-citi-page",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-citi.html",
+      "expected_sha256": "4c69c2ad2e01aed51fd18d0e424882756b29d245a7c3a96df5e99a5124c3dc19",
+      "actual_sha256": "4c69c2ad2e01aed51fd18d0e424882756b29d245a7c3a96df5e99a5124c3dc19",
+      "matches": true,
+      "url": "https://ir.amd.com/news-events/ir-calendar/detail/20260908-citis-2026-global-tmt-conference",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "Issuer-hosted transcript hyperlink"
+    },
+    {
+      "company": "amd",
+      "source_id": "september-citi",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-citi.pdf",
+      "expected_sha256": "daa7138bdbc3c76c69e0f9c2f0bc11bb22ba2bfcb4b54c382b7050638e3cb61a",
+      "actual_sha256": "daa7138bdbc3c76c69e0f9c2f0bc11bb22ba2bfcb4b54c382b7050638e3cb61a",
+      "matches": true,
+      "url": "https://d1io3yog0oux5.cloudfront.net/_e6fb18640ea7bfff80a48dc92268a25f/amd/db/817/9240/webcast_transcript/2026-9-8+AMD+Citi+Global+TMT+Conference.pdf",
+      "kind": "issuer primary; management-generated unless reported filing actual",
+      "read_locations_from_original_register": "PDF pp 1-3 ramp/supply; p4 margins/opex; pp 5-7 server TAM/capacity; remaining discussion read"
+    },
+    {
+      "company": "uber",
+      "source_id": "q2-results",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003437205476Z-q2-results-7c191dca64d3010d.html",
+      "expected_sha256": "7c191dca64d3010df2dc2720101ebe707b7776ac387e3d4734a4441864c0a08d",
+      "actual_sha256": "7c191dca64d3010df2dc2720101ebe707b7776ac387e3d4734a4441864c0a08d",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx",
+      "kind": "Issuer unaudited reported financials and interested management guidance",
+      "read_locations_from_original_register": [
+        "Operating and segment tables",
+        "Outlook47-52",
+        "Balance sheet295-410",
+        "Cash-flow statement580-844",
+        "Non-GAAP definitions851-919/reconciliations920-1211"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "q2-results",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003437205476Z-q2-results-7c191dca64d3010d.txt",
+      "expected_sha256": "5cc89f1f3f306381479badb4cbb99311dda427af784cf48a7f0791032d898c78",
+      "actual_sha256": "5cc89f1f3f306381479badb4cbb99311dda427af784cf48a7f0791032d898c78",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx",
+      "kind": "Issuer unaudited reported financials and interested management guidance",
+      "read_locations_from_original_register": [
+        "Operating and segment tables",
+        "Outlook47-52",
+        "Balance sheet295-410",
+        "Cash-flow statement580-844",
+        "Non-GAAP definitions851-919/reconciliations920-1211"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "q3-date",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438497859Z-q3-date-e914d01799513f4b.html",
+      "expected_sha256": "e914d01799513f4b9ce37ecf631d9c452bdf47bff70a6a7d76fba72ee2920bb2",
+      "actual_sha256": "e914d01799513f4b9ce37ecf631d9c452bdf47bff70a6a7d76fba72ee2920bb2",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx",
+      "kind": "Issuer scheduled future event",
+      "read_locations_from_original_register": [
+        "Release29-30"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "q3-date",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438497859Z-q3-date-e914d01799513f4b.txt",
+      "expected_sha256": "1a4b27056d37ba1d242e53c7807c90ea3e3f08e5379799c9cb01d6d844456654",
+      "actual_sha256": "1a4b27056d37ba1d242e53c7807c90ea3e3f08e5379799c9cb01d6d844456654",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx",
+      "kind": "Issuer scheduled future event",
+      "read_locations_from_original_register": [
+        "Release29-30"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "ezcater",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438771481Z-ezcater-c65f64af7a6e60df.html",
+      "expected_sha256": "c65f64af7a6e60df68e9ca604b4a3d731f7db0bdd3d67658134d43ca6efe06a9",
+      "actual_sha256": "c65f64af7a6e60df68e9ca604b4a3d731f7db0bdd3d67658134d43ca6efe06a9",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-to-Acquire-ezCater-as-it-Brings-Catering-to-Uber-Eats/default.aspx",
+      "kind": "Issuer transaction announcement and interested forecast",
+      "read_locations_from_original_register": [
+        "Release31-37, forward-looking statement45"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "ezcater",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438771481Z-ezcater-c65f64af7a6e60df.txt",
+      "expected_sha256": "e26f29554d0f53da21d677b6bdc6daa1d7d7d7320bd160b25fa5fd4af02c6a8a",
+      "actual_sha256": "e26f29554d0f53da21d677b6bdc6daa1d7d7d7320bd160b25fa5fd4af02c6a8a",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-to-Acquire-ezCater-as-it-Brings-Catering-to-Uber-Eats/default.aspx",
+      "kind": "Issuer transaction announcement and interested forecast",
+      "read_locations_from_original_register": [
+        "Release31-37, forward-looking statement45"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "home",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438971689Z-home-0918296271a9db7b.html",
+      "expected_sha256": "0918296271a9db7b715f7cafc688798da473af46df61ea95968565658730a11b",
+      "actual_sha256": "0918296271a9db7b715f7cafc688798da473af46df61ea95968565658730a11b",
+      "matches": true,
+      "url": "https://investor.uber.com/home/default.aspx",
+      "kind": "Dynamic issuer discovery page; incomplete coverage",
+      "read_locations_from_original_register": [
+        "Latest news/events"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "home",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438971689Z-home-0918296271a9db7b.txt",
+      "expected_sha256": "e6cc1dfe6b266e8c64f9582c65f9841d375d2fa5d6f41922372d734b9a8bdd4f",
+      "actual_sha256": "e6cc1dfe6b266e8c64f9582c65f9841d375d2fa5d6f41922372d734b9a8bdd4f",
+      "matches": true,
+      "url": "https://investor.uber.com/home/default.aspx",
+      "kind": "Dynamic issuer discovery page; incomplete coverage",
+      "read_locations_from_original_register": [
+        "Latest news/events"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "deliveryhero-offer",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556205076Z-deliveryhero-offer-1c0a428604d0f3e8.html",
+      "expected_sha256": "1c0a428604d0f3e889109f483cb1ad465c5947648cdebcea9631be916c2061d4",
+      "actual_sha256": "1c0a428604d0f3e889109f483cb1ad465c5947648cdebcea9631be916c2061d4",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Acquisition-Offer-for-Delivery-Hero/default.aspx",
+      "kind": "Issuer transaction announcement and interested forecasts",
+      "read_locations_from_original_register": [
+        "Release29-50; Financing and Capital Allocation; Transaction Details"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "deliveryhero-offer",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556205076Z-deliveryhero-offer-1c0a428604d0f3e8.txt",
+      "expected_sha256": "240dfd8af02b6f469de4472f48d03505e5a519a0aa866c2d13d053726740de93",
+      "actual_sha256": "240dfd8af02b6f469de4472f48d03505e5a519a0aa866c2d13d053726740de93",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Acquisition-Offer-for-Delivery-Hero/default.aspx",
+      "kind": "Issuer transaction announcement and interested forecasts",
+      "read_locations_from_original_register": [
+        "Release29-50; Financing and Capital Allocation; Transaction Details"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "deliveryhero-offerdocument",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556600238Z-deliveryhero-offerdocument-f9e2928e37ffd97b.html",
+      "expected_sha256": "f9e2928e37ffd97b903d67ec38414eaab32977fbb25b01bdcd4de0e5a77c4dd2",
+      "actual_sha256": "f9e2928e37ffd97b903d67ec38414eaab32977fbb25b01bdcd4de0e5a77c4dd2",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Publishes-Offer-Document-for-its-Takeover-Offer-for-Delivery-Hero/default.aspx",
+      "kind": "Issuer offer-publication notice, not full offer document",
+      "read_locations_from_original_register": [
+        "Acceptance period; Transaction Background; expected settlement"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "deliveryhero-offerdocument",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556600238Z-deliveryhero-offerdocument-f9e2928e37ffd97b.txt",
+      "expected_sha256": "56741be084adcc545a4d868c8bfb8ba039ec3ffeb158ebc251ce1804fa304703",
+      "actual_sha256": "56741be084adcc545a4d868c8bfb8ba039ec3ffeb158ebc251ce1804fa304703",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Publishes-Offer-Document-for-its-Takeover-Offer-for-Delivery-Hero/default.aspx",
+      "kind": "Issuer offer-publication notice, not full offer document",
+      "read_locations_from_original_register": [
+        "Acceptance period; Transaction Background; expected settlement"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "events",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557396645Z-events-2cca076de5f5ca2e.html",
+      "expected_sha256": "2cca076de5f5ca2e756934e0b89c0b22c685eba2817cc7f36ecb1b894763ca13",
+      "actual_sha256": "2cca076de5f5ca2e756934e0b89c0b22c685eba2817cc7f36ecb1b894763ca13",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/events-and-presentations/default.aspx",
+      "kind": "Dynamic issuer discovery page; incomplete coverage",
+      "read_locations_from_original_register": [
+        "Event listing"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "events",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557396645Z-events-2cca076de5f5ca2e.txt",
+      "expected_sha256": "c2308dcdc013ae72f65727bb15eab4de2cd9208532ef07c8b0eb6e3878246c8d",
+      "actual_sha256": "c2308dcdc013ae72f65727bb15eab4de2cd9208532ef07c8b0eb6e3878246c8d",
+      "matches": true,
+      "url": "https://investor.uber.com/news-events/events-and-presentations/default.aspx",
+      "kind": "Dynamic issuer discovery page; incomplete coverage",
+      "read_locations_from_original_register": [
+        "Event listing"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "reports",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557949894Z-reports-25ced59ab50ddffa.html",
+      "expected_sha256": "25ced59ab50ddffaf35444020a66fc2662fe9745ad9caeee578fae9f66bc75c3",
+      "actual_sha256": "25ced59ab50ddffaf35444020a66fc2662fe9745ad9caeee578fae9f66bc75c3",
+      "matches": true,
+      "url": "https://investor.uber.com/financials/default.aspx",
+      "kind": "Dynamic issuer discovery page; incomplete coverage",
+      "read_locations_from_original_register": [
+        "Financial reporting landing page"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "reports",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557949894Z-reports-25ced59ab50ddffa.txt",
+      "expected_sha256": "955f490a1848fb1041f50f2ec06156eebef872222eff0d2bc592da9cc64fb9cd",
+      "actual_sha256": "955f490a1848fb1041f50f2ec06156eebef872222eff0d2bc592da9cc64fb9cd",
+      "matches": true,
+      "url": "https://investor.uber.com/financials/default.aspx",
+      "kind": "Dynamic issuer discovery page; incomplete coverage",
+      "read_locations_from_original_register": [
+        "Financial reporting landing page"
+      ]
+    },
+    {
+      "company": "uber",
+      "source_id": "20261009T003718124560Z-ftc-offer-web-extracts-03772ac20cbf6e64",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-ftc-offer-web-extracts-03772ac20cbf6e64.txt",
+      "expected_sha256": "03772ac20cbf6e64cdfe05841d823921a5bcd0eeb6ce96b14459171ce10fb2bf",
+      "actual_sha256": "03772ac20cbf6e64cdfe05841d823921a5bcd0eeb6ce96b14459171ce10fb2bf",
+      "matches": true,
+      "url": null,
+      "kind": "Primary publisher browser-rendered evidence; limited extracted coverage",
+      "read_locations_from_original_register": []
+    },
+    {
+      "company": "uber",
+      "source_id": "20261009T003718124560Z-sec-cover-sbc-controls-c631c56d9fefd3e5",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-sec-cover-sbc-controls-c631c56d9fefd3e5.txt",
+      "expected_sha256": "c631c56d9fefd3e58e4d47e08caa86697b66113914fa737311e126d78fdf4216",
+      "actual_sha256": "c631c56d9fefd3e58e4d47e08caa86697b66113914fa737311e126d78fdf4216",
+      "matches": true,
+      "url": null,
+      "kind": "Primary publisher browser-rendered evidence; limited extracted coverage",
+      "read_locations_from_original_register": []
+    },
+    {
+      "company": "uber",
+      "source_id": "20261009T003718124560Z-sec-open-metadata-610d369b867bbe53",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-sec-open-metadata-610d369b867bbe53.txt",
+      "expected_sha256": "610d369b867bbe5358117749ea31e4d241778cd04040604be4c6b7340697b1af",
+      "actual_sha256": "610d369b867bbe5358117749ea31e4d241778cd04040604be4c6b7340697b1af",
+      "matches": true,
+      "url": null,
+      "kind": "Primary publisher browser-rendered evidence; limited extracted coverage",
+      "read_locations_from_original_register": []
+    },
+    {
+      "company": "uber",
+      "source_id": "20261009T003718124560Z-sec-risk-extracts-91fff3f35e06f7c7",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-sec-risk-extracts-91fff3f35e06f7c7.txt",
+      "expected_sha256": "91fff3f35e06f7c7c553869edcf1987688e0928021f4abec0074c1cf0c1267e7",
+      "actual_sha256": "91fff3f35e06f7c7c553869edcf1987688e0928021f4abec0074c1cf0c1267e7",
+      "matches": true,
+      "url": null,
+      "kind": "Primary publisher browser-rendered evidence; limited extracted coverage",
+      "read_locations_from_original_register": []
+    },
+    {
+      "company": "uber",
+      "source_id": "sec-vat-financing-cfo",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003927488627Z-sec-vat-financing-cfo-fe561066825def23.txt",
+      "expected_sha256": "fe561066825def2309b6e8754efdf091c33eb4abc701a779144a2fce8406d94b",
+      "actual_sha256": "fe561066825def2309b6e8754efdf091c33eb4abc701a779144a2fce8406d94b",
+      "matches": true,
+      "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm",
+      "kind": "Primary publisher browser-rendered evidence; limited extracted coverage",
+      "read_locations_from_original_register": [
+        "10-Q Non-Income Tax Matters lines1185 and1762",
+        "Note3 bridgecommitments line702; MD&A1739",
+        "Cash-flow statement416-451"
+      ]
+    },
+    {
+      "company": "netflix",
+      "source_id": "event",
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003428792509Z-event-db6749ba959e641cccf4ba69eb1f1798e3b50756ff6dd51dfc7eb5d1f213d257.html",
+      "expected_sha256": "db6749ba959e641cccf4ba69eb1f1798e3b50756ff6dd51dfc7eb5d1f213d257",
+      "actual_sha256": "db6749ba959e641cccf4ba69eb1f1798e3b50756ff6dd51dfc7eb5d1f213d257",
+      "matches": true,
+      "url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-to-Announce-Third-Quarter-2026-Financial-Results/default.aspx",
+      "kind": "primary-issuer-document",
+      "read_locations_from_original_register": [
+        "publication date; opening release schedule; interview schedule"
+      ]
+    },
+    {
+      "company": "netflix",
+      "source_id": "q2-10q-mirror",
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003431335392Z-q2-10q-mirror-282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9.html",
+      "expected_sha256": "282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9",
+      "actual_sha256": "282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9",
+      "matches": true,
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001065280/a826cd9b-469f-4c3a-9e92-4bef340713f3.html",
+      "kind": "filing-mirror-not-issuer-link-verified",
+      "read_locations_from_original_register": [
+        "cover",
+        "Note 1 stock split",
+        "Note 6 termination fee",
+        "Note 7 debt/financing",
+        "Note 9 content obligations",
+        "Note 10 equity",
+        "MD&A liquidity and cash flows"
+      ]
+    },
+    {
+      "company": "netflix",
+      "source_id": "q2-letter-pdf",
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003432308307Z-q2-letter-pdf-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "expected_sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "actual_sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "matches": true,
+      "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf",
+      "kind": "primary-issuer-document",
+      "read_locations_from_original_register": [
+        "printed pp.1-2 results and guidance",
+        "p.5 advertising and disclosures",
+        "p.6 cash and capital",
+        "p.9 income, shares and split",
+        "p.10 balance sheet/content obligations",
+        "pp.11-12 cash flow/FCF"
+      ]
+    },
+    {
+      "company": "netflix",
+      "source_id": "filings-index",
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003432526625Z-filings-index-8525f85f0a7cd99b8b685f91375752109f69b6cad14a969ad7b46592833396ea.html",
+      "expected_sha256": "8525f85f0a7cd99b8b685f91375752109f69b6cad14a969ad7b46592833396ea",
+      "actual_sha256": "8525f85f0a7cd99b8b685f91375752109f69b6cad14a969ad7b46592833396ea",
+      "matches": true,
+      "url": "https://ir.netflix.net/financials/sec-filings/default.aspx",
+      "kind": "discovery-shell",
+      "read_locations_from_original_register": [
+        "index shell; missing dynamic filing links"
+      ]
+    },
+    {
+      "company": "netflix",
+      "source_id": "sec-submissions",
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003655151652Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "expected_sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "actual_sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "matches": true,
+      "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+      "kind": "primary-regulatory-metadata-not-document-reading",
+      "read_locations_from_original_register": [
+        "issuer identity and recent 8-K/10-Q discovery records"
+      ]
+    }
+  ],
+  "calculation_checks": [
+    {
+      "company": "amd",
+      "metric": "q3_guidance_eps_bridge",
+      "formula": "((13000*0.56-3650+55)*0.87)/1660",
+      "independently_recalculated": "1.93129518072289156626506024096385542168675",
+      "original": "1.931295180722891566265060240963855421687",
+      "absolute_difference": "2.5E-40",
+      "passes": true
+    },
+    {
+      "company": "amd",
+      "metric": "eps_per_100bp_gross_margin_at_13bn_revenue",
+      "formula": "13000*0.01*0.87/1660",
+      "independently_recalculated": "0.0681325301204819277108433734939759036144578",
+      "original": "0.06813253012048192771084337349397590361446",
+      "absolute_difference": "2.2E-42",
+      "passes": true
+    },
+    {
+      "company": "amd",
+      "metric": "eps_per_300m_revenue_at_56pct_gm_fixed_opex",
+      "formula": "300*0.56*0.87/1660",
+      "independently_recalculated": "0.0880481927710843373493975903614457831325301",
+      "original": "0.08804819277108433734939759036144578313253",
+      "absolute_difference": "1E-43",
+      "passes": true
+    },
+    {
+      "company": "amd",
+      "metric": "eps_per_100m_opex",
+      "formula": "100*0.87/1660; expense increase reduces EPS",
+      "independently_recalculated": "0.0524096385542168674698795180722891566265060",
+      "original": "0.05240963855421686746987951807228915662651",
+      "absolute_difference": "4.0E-42",
+      "passes": true
+    },
+    {
+      "company": "amd",
+      "metric": "h1_cfo_minus_cash_capex_usdm",
+      "formula": "5321-1197",
+      "independently_recalculated": "4124",
+      "original": "4124",
+      "absolute_difference": "0",
+      "passes": true
+    },
+    {
+      "company": "amd",
+      "metric": "h1_cfo_minus_cash_capex_excluding_ap_inflow_sensitivity_usdm",
+      "formula": "5321-1197-2170; not normalized FCF",
+      "independently_recalculated": "1954",
+      "original": "1954",
+      "absolute_difference": "0",
+      "passes": true
+    },
+    {
+      "company": "amd",
+      "metric": "potential_warrant_shares_divided_by_june_actual_shares",
+      "formula": "320/1632; rounded June actual shares",
+      "independently_recalculated": "0.196078431372549019607843137254901960784314",
+      "original": "0.1960784313725490196078431372549019607843",
+      "absolute_difference": "1.4E-41",
+      "passes": true
+    },
+    {
+      "company": "amd",
+      "metric": "existing_owner_fraction_if_both_warrants_fully_exercised_other_changes_ignored",
+      "formula": "1632/(1632+320); conditional ownership stress",
+      "independently_recalculated": "0.836065573770491803278688524590163934426230",
+      "original": "0.8360655737704918032786885245901639344262",
+      "absolute_difference": "3.0E-41",
+      "passes": true
+    },
+    {
+      "company": "amd",
+      "metric": "cash_plus_short_term_investments_usdm",
+      "formula": "5086+8025",
+      "independently_recalculated": "13111",
+      "original": "13111",
+      "absolute_difference": "0",
+      "passes": true
+    },
+    {
+      "company": "amd",
+      "metric": "h1_sbc_pct_revenue",
+      "formula": "990/21789*100",
+      "independently_recalculated": "4.54357703428335398595621643948781495249897",
+      "original": "4.543577034283353985956216439487814952499",
+      "absolute_difference": "3E-41",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "q2_fcf_usdm",
+      "formula": "2862-70",
+      "independently_recalculated": "2792",
+      "original": "2792",
+      "absolute_difference": "0",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "h1_fcf_usdm",
+      "formula": "5213-135",
+      "independently_recalculated": "5078",
+      "original": "5078",
+      "absolute_difference": "0",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "q2_fcf_less_cfo_sbc_addback_sensitivity_usdm",
+      "formula": "2862-70-550",
+      "independently_recalculated": "2242",
+      "original": "2242",
+      "absolute_difference": "0",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "h1_fcf_less_cfo_sbc_addback_sensitivity_usdm",
+      "formula": "5213-135-1023",
+      "independently_recalculated": "4055",
+      "original": "4055",
+      "absolute_difference": "0",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "q2_insurance_accrual_contribution_pct_of_cfo",
+      "formula": "387/2862*100",
+      "independently_recalculated": "13.5220125786163522012578616352201257861635",
+      "original": "13.52201257861635220125786164",
+      "absolute_difference": "4.7798742138365E-27",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "h1_insurance_accrual_contribution_pct_of_cfo",
+      "formula": "830/5213*100",
+      "independently_recalculated": "15.9217341262229042777671206598887396892384",
+      "original": "15.92173412622290427776712066",
+      "absolute_difference": "1.112603107616E-28",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "q2_diluted_weighted_share_change_pct_yoy",
+      "formula": "(2050.225/2125.628-1)*100",
+      "independently_recalculated": "-3.54732813079240582077390775808372866748090",
+      "original": "-3.547328130792405820773907760",
+      "absolute_difference": "1.91627133251910E-27",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "q2_non_gaap_operating_margin_pct_bookings",
+      "formula": "2143/58022*100",
+      "independently_recalculated": "3.69342663127779118265485505497914584123264",
+      "original": "3.693426631277791182654855055",
+      "absolute_difference": "2.085415876736E-29",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "10bp_bookings_margin_sensitivity_usdm_quarter",
+      "formula": "58022*0.001",
+      "independently_recalculated": "58.022",
+      "original": "58.022",
+      "absolute_difference": "0.000",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "june_net_carrying_debt_less_unrestricted_cash_investments_usdm",
+      "formula": "12723-5391",
+      "independently_recalculated": "7332",
+      "original": "7332",
+      "absolute_difference": "0",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "q3_guided_bookings_midpoint_usdm",
+      "formula": "(58250+60250)/2",
+      "independently_recalculated": "59250",
+      "original": "59250",
+      "absolute_difference": "0",
+      "passes": true
+    },
+    {
+      "company": "uber",
+      "metric": "q3_guided_non_gaap_eps_midpoint_usd",
+      "formula": "(0.84+0.88)/2",
+      "independently_recalculated": "0.86",
+      "original": "0.86",
+      "absolute_difference": "0.00",
+      "passes": true
+    },
+    {
+      "company": "netflix",
+      "metric": "h1_fcf_m",
+      "formula": "7034.017-414.774",
+      "independently_recalculated": "6619.243",
+      "original": "6619.243",
+      "absolute_difference": "0.000",
+      "passes": true
+    },
+    {
+      "company": "netflix",
+      "metric": "q2_fcf_m",
+      "formula": "1743.812-218.644",
+      "independently_recalculated": "1525.168",
+      "original": "1525.168",
+      "absolute_difference": "0.000",
+      "passes": true
+    },
+    {
+      "company": "netflix",
+      "metric": "q2_fcf_vs_prior_pct",
+      "formula": "(1525.168/2267.369-1)*100",
+      "independently_recalculated": "-32.7340190326320947318235364424581971439144",
+      "original": "-32.73401903263209473182353644245819714391",
+      "absolute_difference": "4.4E-39",
+      "passes": true
+    },
+    {
+      "company": "netflix",
+      "metric": "q3_guided_opincome_yoy_pct",
+      "formula": "(4268/3248-1)*100; rounded public guide",
+      "independently_recalculated": "31.4039408866995073891625615763546798029560",
+      "original": "31.40394088669950738916256157635467980300",
+      "absolute_difference": "4.40E-38",
+      "passes": true
+    },
+    {
+      "company": "netflix",
+      "metric": "q3_guided_margin_change_pp",
+      "formula": "33.2-28.2",
+      "independently_recalculated": "5.0",
+      "original": "5.0",
+      "absolute_difference": "0.0",
+      "passes": true
+    },
+    {
+      "company": "netflix",
+      "metric": "diluted_weighted_shares_yoy_pct",
+      "formula": "(4261300/4348825-1)*100",
+      "independently_recalculated": "-2.01261260225463199829839094468045966439210",
+      "original": "-2.012612602254631998298390944680459664390",
+      "absolute_difference": "2.10E-39",
+      "passes": true
+    },
+    {
+      "company": "netflix",
+      "metric": "ads_guide_share_of_fy_midpoint_pct",
+      "formula": "3000/51200*100",
+      "independently_recalculated": "5.85937500",
+      "original": "5.85937500",
+      "absolute_difference": "0E-8",
+      "passes": true
+    },
+    {
+      "company": "netflix",
+      "metric": "q4_revenue_m",
+      "fy_revenue_m": "51000",
+      "original": "13330.305",
+      "independently_recalculated": "13330.305",
+      "passes": true,
+      "formula": "FY less H1 less Q3; FY margin held at 31.5%; no forecast assertion"
+    },
+    {
+      "company": "netflix",
+      "metric": "q4_operating_income_m",
+      "fy_revenue_m": "51000",
+      "original": "3647.393",
+      "independently_recalculated": "3647.393",
+      "passes": true,
+      "formula": "FY less H1 less Q3; FY margin held at 31.5%; no forecast assertion"
+    },
+    {
+      "company": "netflix",
+      "metric": "q4_margin_pct",
+      "fy_revenue_m": "51000",
+      "original": "27.36166201748572144448307821914052229113",
+      "independently_recalculated": "27.3616620174857214444830782191405222911254",
+      "passes": true,
+      "formula": "FY less H1 less Q3; FY margin held at 31.5%; no forecast assertion"
+    },
+    {
+      "company": "netflix",
+      "metric": "q4_revenue_m",
+      "fy_revenue_m": "51400",
+      "original": "13730.305",
+      "independently_recalculated": "13730.305",
+      "passes": true,
+      "formula": "FY less H1 less Q3; FY margin held at 31.5%; no forecast assertion"
+    },
+    {
+      "company": "netflix",
+      "metric": "q4_operating_income_m",
+      "fy_revenue_m": "51400",
+      "original": "3773.393",
+      "independently_recalculated": "3773.393",
+      "passes": true,
+      "formula": "FY less H1 less Q3; FY margin held at 31.5%; no forecast assertion"
+    },
+    {
+      "company": "netflix",
+      "metric": "q4_margin_pct",
+      "fy_revenue_m": "51400",
+      "original": "27.48222271828630172454289981176674516699",
+      "independently_recalculated": "27.4822227182863017245428998117667451669865",
+      "passes": true,
+      "formula": "FY less H1 less Q3; FY margin held at 31.5%; no forecast assertion"
+    }
+  ],
+  "additional_diagnostics": {
+    "netflix_h1_cash_content_usdm": "9911.018",
+    "netflix_h1_cash_content_to_amortization": "1.16200904444949115445523729105477424694365",
+    "netflix_prior_h1_cash_content_to_amortization": "1.04645073287572633767487818062160736525540",
+    "netflix_h1_gross_termination_receipt_pct_reported_fcf": "42.3009096357393133927852474973346650062552",
+    "netflix_h1_fcf_minus_gross_receipt_usdm_NOT_normalized": "3819.243",
+    "amd_100bp_gm_loss_revenue_required_to_offset_at_56pct_usdm": "232.142857142857142857142857142857142857143",
+    "uber_h1_fcf_less_sbc_and_insurance_inflow_usdm_NOT_normalized": "3225",
+    "amd_warrant_exercise_proceeds_both_max_usdm": "3.20"
+  },
+  "event_timezone_checks": [
+    {
+      "company": "netflix",
+      "issuer_time": "2026-10-20T13:01:00-07:00",
+      "london": "2026-10-20T21:01:00+01:00",
+      "basis": "release approximately for Netflix; call for AMD/Uber; not exact release promise for AMD/Uber"
+    },
+    {
+      "company": "amd",
+      "issuer_time": "2026-11-03T17:00:00-05:00",
+      "london": "2026-11-03T22:00:00+00:00",
+      "basis": "release approximately for Netflix; call for AMD/Uber; not exact release promise for AMD/Uber"
+    },
+    {
+      "company": "uber",
+      "issuer_time": "2026-11-04T05:00:00-08:00",
+      "london": "2026-11-04T13:00:00+00:00",
+      "basis": "release approximately for Netflix; call for AMD/Uber; not exact release promise for AMD/Uber"
+    }
+  ],
+  "findings": [
+    {
+      "id": "C1",
+      "company": "all",
+      "severity": "high for positive entry",
+      "kind": "scope distinction",
+      "title": "Withholding an entry is supported; economic unattractiveness is unproved",
+      "evidence": [
+        "All three original dispositions; methodology sections B, I and monitoring/DECISION-SCOPE.md"
+      ],
+      "analysis": "No screen establishes a price-linked expectations gap or a residual opportunity after delay. Missing quotes, consensus and execution infrastructure cannot prove overvaluation or that cash will outperform. An earnings date also cannot establish positive expected return.",
+      "proposed_correction": "Retain no-accepted-entry status. Treat rejected as an incomplete entry case, not a sell, universal negative verdict, or reason to stop analytical discovery. Prioritize deeper research independently of execution readiness.",
+      "disposition": "Accepted for limited screening disposition; positive opportunity review remains open"
+    },
+    {
+      "id": "N1",
+      "company": "netflix",
+      "severity": "high for positive entry",
+      "kind": "known gap plus quantified challenge",
+      "title": "Separate termination cash from operating margin and recurring cash",
+      "evidence": [
+        "Q2 issuer PDF pp.6,9,11-12; 10-Q mirror Note 6 (issuer link unproved)"
+      ],
+      "analysis": "The $2.8bn receipt is recorded below operating income. It therefore does not contaminate the H1 operating-income figure used in the Q4 margin bridge. It does materially contaminate net income and FCF: gross receipt is 42.30% of H1 FCF. FCF less gross receipt is $3,819.243m, but this retains related tax cash outflows and is NOT after-tax normalized cash. Content cash payments derived from additions plus the liability reduction are $9,911.018m, or 1.1620x amortization, versus 1.0465x in prior H1. Management guides about 1.1x for the full year. Timing and future spending require a full-year bridge.",
+      "proposed_correction": "Normalize receipt and actual related taxes once; reconcile cash content, amortization and content liabilities. Keep operating-income guidance intact unless a separate operating adjustment is supported; do not subtract the receipt from operating income.",
+      "disposition": "Expanded here; after-tax normalized cash remains unresolved"
+    },
+    {
+      "id": "N2",
+      "company": "netflix",
+      "severity": "medium",
+      "kind": "expectations challenge",
+      "title": "Q4 implied margin is a baseline, not a promised improvement or deterioration",
+      "evidence": [
+        "Q2 issuer PDF pp.1-2,9,14"
+      ],
+      "analysis": "The original Q4 implied revenue, operating-income and margin calculations all reproduce. The ~27.4% Q4 margins already accommodate a fall from Q3 33.2%. Q2 beat partly reflects expense timing; Q3 prior-year comparison and content seasonality must be understood before attributing all ~31.4% guided profit growth to durable pricing/ads economics. Ad revenue guide is ~5.86% of group revenue, not its incremental profit contribution.",
+      "proposed_correction": "Compare Q3 actual plus revised FY/Q4 and 2027 expectations against matched definitions, dated external estimates and eventual price requirements. Quantify ad contribution and retention economics only from supportable inputs.",
+      "disposition": "Original bridge accepted; surprise/persistence unproved"
+    },
+    {
+      "id": "N3",
+      "company": "netflix",
+      "severity": "high for positive entry",
+      "kind": "source and funding limitation",
+      "title": "Preserve filing-mirror and July-financing qualifications and split units",
+      "evidence": [
+        "Q2 issuer PDF pp.9-11,14; original JSON source register; July 22 SEC 8-K Item 8.01 re-opened during review"
+      ],
+      "analysis": "Issuer PDF is archived and hash-matched; filing mirror issuer linkage is still unproved. July filing confirms a $1bn 5.25% 2036 issuance and intended repayment of 2026 notes, not proof that repayment occurred. Reviewer re-read the SEC web document but has not created an original local archive. June cash, carrying debt, principal, future interest and content commitments cannot be merged into one current net-debt figure. Ten-for-one adjusted shares and EPS remain mandatory.",
+      "proposed_correction": "Archive/authenticate material original filings and roll financing forward. Maintain separate cash/debt/content/lease schedules, avoid double deduction of operating content spend, and verify any future price series on the same split basis.",
+      "disposition": "Qualifications retained; no positive-entry source approval"
+    },
+    {
+      "id": "A1",
+      "company": "amd",
+      "severity": "high for positive entry",
+      "kind": "expectations challenge",
+      "title": "The lower provider EPS estimate is not a defensible surprise hurdle",
+      "evidence": [
+        "August 4 issuer call PDF pp.6-7; TipRanks and AltIndex archived estimates; Citi September 8 pp.2-4,6-7; Goldman September 11 pp.4-6,8-9"
+      ],
+      "analysis": "Recomputed guide-implied adjusted EPS $1.931295 is essentially the $1.94 display, not the unresolved-basis $1.35 estimate. September material already communicates a substantial 2027 ramp and lower gross-margin percentage during MI450 ramp. A 100bp margin loss offsets about $232.14m of revenue at 56% gross margin before any extra opex. Unit availability, systems execution, mix and operating leverage must move together.",
+      "proposed_correction": "Use updated comparable estimates and September management baseline. Do not average providers, assume a universal CPU-per-GW multiplier, or equate high revenue growth with an unanticipated per-share gain.",
+      "disposition": "Original bridge accepted; positive surprise case unresolved"
+    },
+    {
+      "id": "A2",
+      "company": "amd",
+      "severity": "high for positive entry",
+      "kind": "material expansion",
+      "title": "Quantify guarantees and leases omitted from the short cash summary",
+      "evidence": [
+        "June 10-Q Note 8 Lease Guarantees; Note 9; Note 10 Commitments; H1 cash-flow statement"
+      ],
+      "analysis": "Original screen flags leases/guarantees but omits their June magnitudes: $4.1bn maximum gross partner-lease guarantees and $4.5bn uncommenced leases expected to begin H2 2026. These differ from the separate subsequent $9.5bn leases starting 2027/28 and $30.276bn unconditional commitments, including $17.386bn remainder-2026. Guarantees may correlate adversely with customer cash collections and investment exposure. Gross maxima are not immediately payable debt. The $2.170bn payables inflow sensitivity does not measure normalized FCF or subtract all other working-capital effects.",
+      "proposed_correction": "Create dated payment, guarantee-trigger and overlap schedules, include capex accrued but unpaid ($421m), and refresh the September $875m note maturity. Challenge customer financing together with demand, not as independent risks.",
+      "disposition": "Expanded here; full holding-window funding bridge remains open"
+    },
+    {
+      "id": "A3",
+      "company": "amd",
+      "severity": "high for positive entry",
+      "kind": "ownership challenge",
+      "title": "Warrant and World Labs dilution must be causally linked to business outcomes",
+      "evidence": [
+        "June 10-Q Note 12 Warrants; September 28 8-K Item 3.02"
+      ],
+      "analysis": "Maximum 320m warrants equal 19.61% of rounded June actual shares; existing holders retain 83.61% after hypothetical full exercise. This is a 16.39% ownership reduction, not 19.61% off every per-share value, and is not current dilution. Maximum exercise brings only $3.2m proceeds. Vesting requires purchase, price/performance and further commercial conditions. World Labs share issue depends on ten-trading-day VWAP ending two trading days before close; add shares and acquired economics together.",
+      "proposed_correction": "Keep EPS weighted shares distinct from valuation-date claims; model milestones, proceeds and purchase/acquisition value consistently. Do not deduct full warrant fair value and also fully dilute for the same claim without a coherent settlement treatment.",
+      "disposition": "Original conditional stress accepted; no complete claim valuation"
+    },
+    {
+      "id": "U1",
+      "company": "uber",
+      "severity": "high for positive entry",
+      "kind": "timing challenge",
+      "title": "Tender acceptance cannot bring forward 2027 acquisition earnings",
+      "evidence": [
+        "July 16 acquisition-offer release; August 27 offer-publication release lines 36,39-44; October 6 ezCater release"
+      ],
+      "analysis": "November 5 acceptance expiry is 24:00 Frankfurt at end of day, with settlement expected H2 2027 subject to conditions. Delivery Hero accretion at close/year three is outside the immediate earnings event. It can affect present financing/risk expectations, but is not November earned profit. The archived notice is not the complete legal offer. ezCater has cash consideration and conditional coming-months timing; its headline bookings do not establish absolute incremental owner profit.",
+      "proposed_correction": "Separate acceptance, regulatory conditions, closing, consolidation and synergies. Build transaction cash/financing schedules before incorporating benefits; preserve no immediate accretion premise.",
+      "disposition": "Original rejection reasoning upheld; transaction economics open"
+    },
+    {
+      "id": "U2",
+      "company": "uber",
+      "severity": "high for positive entry",
+      "kind": "accounting challenge",
+      "title": "Insurance and SBC sensitivities need persistence and scope reconciliation",
+      "evidence": [
+        "Q2 issuer release cash flows and definitions lines 851-919; SEC Note 7 rendered excerpt"
+      ],
+      "analysis": "Q2/H1 FCF, CFO SBC sensitivities and insurance contributions reproduce. Non-GAAP operating income/EPS retain SBC; EBITDA excludes it. $556m/$1,029m expense versus $550m/$1,023m CFO addback versus $549m/$1,022m EBITDA adjustment remains unreconciled. Insurance accrual inflows are timing effects already linked to recognized expense; subtracting all of them permanently could understate a growing steady-state business, while treating them as unrestricted recurring owner cash could overstate it. Combined H1 sensitivity $3,225m is NOT normalized FCF.",
+      "proposed_correction": "Reconcile compensation scopes before the next profit model; model settlement/reserve-development and collateral, not blanket permanent deductions. Treat buybacks and dilution once and connect them to affordability.",
+      "disposition": "Known gap retained; no invented explanation or normalized owner-cash claim"
+    },
+    {
+      "id": "U3",
+      "company": "uber",
+      "severity": "high for positive entry",
+      "kind": "specific omitted roll-forward items",
+      "title": "The Q3 organic bridge must include Careem control and expiring funding availability",
+      "evidence": [
+        "Archived SEC rendered extract sec-vat-financing-cfo: Note 3 lines 708-709; Note 5 lines 788-790; Note 3 Delivery Hero lines 695-696"
+      ],
+      "analysis": "The saved 10-Q excerpt states Careem Technologies control was obtained July 30 and its impact was being evaluated. A Q3 growth comparison therefore needs consolidation/organic separation beyond Delivery Hero and ezCater. The June term-loan facility had $2bn drawn and $1bn unused that expired August 2 if undrawn; that unused amount cannot be carried forward as October liquidity. Existing Delivery Hero influence/equity-method accounting is also different from later control.",
+      "proposed_correction": "Read subsequent acquisition/financing disclosures and September management webcast, reconcile organic growth and funding, and obtain complete primary archives where current packet has only excerpts.",
+      "disposition": "Added precise research requirements; no claim current financing failed"
+    },
+    {
+      "id": "P1",
+      "company": "all",
+      "severity": "medium",
+      "kind": "provenance control",
+      "title": "Hash integrity proves byte identity, not source truth or comprehensive coverage",
+      "evidence": [
+        "All original source registers and archived files; Uber LF/CRLF correction fields"
+      ],
+      "analysis": "All enumerated bound source bytes match their corrected registers. Uber original text manifests have a disclosed newline-hash mismatch; corrected actual-byte hashes were independently checked without rewriting manifests. AMD issuer event pages link the September PDFs. Netflix index shell does not establish mirror linkage. Web-readable extracts are not complete archived originals. No fresh annual/proxy, comprehensive legal clearance or independent competitor underwriting was performed.",
+      "proposed_correction": "Carry precise source class and limitations into the next dossier; read/authenticate missing material sources and targeted contrary primary evidence. Do not treat this analytical review as source completeness or trade approval.",
+      "disposition": "Integrity accepted in enumerated scope; analytical coverage limits retained"
+    }
+  ],
+  "research_priority": [
+    {
+      "rank": 1,
+      "company": "netflix",
+      "decision": "advance to deeper scoped opportunity research now",
+      "reason": "Nearest scheduled report, explicit FY/Q3 baseline and an inspectable Q4 margin/content-cash bridge make the persistence question comparatively testable. This is information-value prioritization, not a priced-return ranking.",
+      "next_work": [
+        "Authenticate/archive material filing originals, including July financing, with precise provenance.",
+        "Reconcile termination receipt and actual related cash taxes; content payment/amortization/liability cycle; sustainable taxes/SBC/claims; financing and discretionary repurchases.",
+        "Obtain comparable dated expectations and split-consistent price context; construct causal business scenarios and test residual value after delayed response.",
+        "Freeze pre-event baseline; analyze Q3 complete disclosure against it and revise or reject on economics."
+      ]
+    },
+    {
+      "rank": 2,
+      "company": "amd",
+      "decision": "retain and deepen focused demand-margin-funding work",
+      "reason": "Large possible persistent earnings revisions are testable against unusually useful September primary guidance, but customer-linked financing, ramp execution and conditional ownership create more interacting assumptions.",
+      "next_work": [
+        "Obtain customer/competitor primary counter-evidence and comparable estimate definitions.",
+        "Build June-to-current cash, maturity, purchase/lease/guarantee/investment schedule with overlap checks.",
+        "Build milestone-linked warrant and variable acquisition share bridge together with acquired/customer economics.",
+        "Compare Q3/Q4 evidence to September ramp/margin baseline; quantify persistent earnings rather than headline capacity."
+      ]
+    },
+    {
+      "rank": 3,
+      "company": "uber",
+      "decision": "retain conditional candidate; resolve scope and financing before a positive dossier",
+      "reason": "Operating improvement is credible, but major transaction value realization is later and the packet misses September commentary, a completed financing roll-forward and Q3 consolidation effects.",
+      "next_work": [
+        "Read September management material and subsequent debt/acquisition documents.",
+        "Separate Careem consolidation, UK accounting changes, organic trips/bookings and unit profit.",
+        "Reconcile SBC scopes, insurance cash/reserves/collateral and current claims.",
+        "Separate tender deadline from closing and synergy schedule; compare current same-basis expectations and price requirements."
+      ]
+    }
+  ],
+  "overall_disposition": "Uphold no accepted entry in all three; prioritize Netflix, then AMD, then Uber for incremental research; no assertion any stock is unattractive at current price.",
+  "completed_substantive_scope": [
+    "Read original screens and registered evidence at cited passages",
+    "Independently recomputed all scalar original calculations and Netflix Q4 endpoints",
+    "Challenged expectation definitions and September/annual baselines",
+    "Challenged recurring cash, working capital, insurance, SBC, ownership and capital commitments",
+    "Examined source provenance and disclosure timing",
+    "Selected a reasoned research sequence and precise next work"
+  ],
+  "remaining_work": "Company-specific requirements listed in priority and open findings; source authentication, normalized economics, dated comparable expectations, business/claim scenarios and price-linked delayed-entry cases remain. Full annual/proxy and full-thesis coverage were outside this screen review. Phone/account/data acceptance is not advanced by this record.",
+  "actionable": false,
+  "accepted_entry": false,
+  "accepted_paper_entry": false,
+  "trade_instruction": false,
+  "capital_commitment_gbp": "0",
+  "phone_account_data_gates_changed": false,
+  "source_integrity_summary": {
+    "checks": 44,
+    "all_match": true,
+    "meaning": "Byte integrity only; source provenance, interpretation and access qualifications remain"
+  },
+  "calculation_summary": {
+    "checks": 35,
+    "all_pass": true,
+    "meaning": "Arithmetic only, not validation of forecasts or attractiveness"
+  },
+  "web_refresh": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526312575/d171951d8k.htm",
+      "location": "Item 8.01",
+      "accessed_on": "2026-10-09",
+      "original_local_archive": null,
+      "accepted_positive_entry_foundation": false
+    },
+    {
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm",
+      "accessed_on": "2026-10-09",
+      "purpose": "Primary filing access refresh; local original used for analysis"
+    },
+    {
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx",
+      "accessed_on": "2026-10-09",
+      "purpose": "Primary release refresh; local original used for analysis"
+    },
+    {
+      "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf",
+      "accessed_on": "2026-10-09",
+      "purpose": "Issuer PDF refresh; archived PDF and pages 1,9,11 visually inspected"
+    }
+  ],
+  "preservation_check": {
+    "all_bound_inputs_unchanged_at_completion": true,
+    "scope": "Six original screens, approved methodology/current metadata, decision-scope and model-review workflow; all registered source hashes rechecked below. Operational databases not touched or audited by reviewer."
+  },
+  "report_binding": {
+    "path": "validation/discovery-challenge-2026-10-09.md",
+    "sha256": "1e59a65aedbd7ec092da6b2ade46c6de19d3710f1a42814e6bd6030f132a08be"
+  }
+}

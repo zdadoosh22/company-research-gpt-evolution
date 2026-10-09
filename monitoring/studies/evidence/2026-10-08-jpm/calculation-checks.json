@@ -1,0 +1,22 @@
+{
+  "nii_h2_required_bn": "49.543",
+  "nii_h2_quarter_average_bn": "24.7715",
+  "nii_q_average_change_vs_q2": "4.622629556109304388224859600",
+  "ib_reference_bn": [
+    "3.02105",
+    "3.12613"
+  ],
+  "markets_reference_bn": [
+    "10.28560",
+    "10.64336"
+  ],
+  "markets_qoq_percent": [
+    "-14.84020533200861069713528730",
+    "-11.87812551746977976486173207"
+  ],
+  "combined_reference_range_width_bn": "0.46284",
+  "price_to_dated_tbv": "2.907631230701367445963828849",
+  "conditional_opening_tce_return_assuming_k10_g4": "0.2144578738420820467578297309",
+  "advanced_total_static_headroom_bn": "27.66870",
+  "flat_fx_style_round_trip_net_fraction": "-0.0029955067398901647528706940"
+}

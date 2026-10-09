@@ -1,0 +1,68 @@
+{
+  "verified_at": "2026-10-09T12:48:41.485306+00:00",
+  "engineering_passed": true,
+  "tests_run": 292,
+  "tests_by_module": {
+    "test_alert_contract": 19,
+    "test_decision_economics": 10,
+    "test_decision_lane": 21,
+    "test_decision_pipeline": 5,
+    "test_decision_readiness": 20,
+    "test_evidence": 8,
+    "test_finance": 32,
+    "test_lifecycle": 11,
+    "test_observation_core": 22,
+    "test_observation_research": 19,
+    "test_observation_service": 33,
+    "test_observation_simulations": 4,
+    "test_observation_transport": 36,
+    "test_observation_trial_report": 2,
+    "test_paper_study": 14,
+    "test_scoped_research_adapter": 16,
+    "test_scoped_research_queue": 12,
+    "test_short_term_illustrations": 8
+  },
+  "failures": 0,
+  "errors": 0,
+  "test_log": "....................................................................................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 292 tests in 7.375s\n\nOK\n",
+  "protected_files_checked": 110,
+  "protected_file_mismatches": [],
+  "live_database_integrity": "ok",
+  "backup_restore_checks": [
+    {
+      "name": "latest-ledger.sqlite3",
+      "restored_integrity": "ok",
+      "recorded_cash_gbp": "300",
+      "events": 1
+    },
+    {
+      "name": "operations-2026-10-07.sqlite3",
+      "restored_integrity": "ok",
+      "recorded_cash_gbp": "0",
+      "events": 0
+    },
+    {
+      "name": "operations-2026-10-08.sqlite3",
+      "restored_integrity": "ok",
+      "recorded_cash_gbp": "300",
+      "events": 1
+    },
+    {
+      "name": "operations-2026-10-09.sqlite3",
+      "restored_integrity": "ok",
+      "recorded_cash_gbp": "300",
+      "events": 1
+    }
+  ],
+  "funding_declared": true,
+  "recorded_cash_gbp": "300",
+  "broker_cash_independently_verified": false,
+  "telegram_credentials_present": false,
+  "real_phone_delivery_verified": false,
+  "synthetic_ledger_operations": 2400,
+  "synthetic_exit_paths": 4,
+  "analytical_approval": false,
+  "real_recommendations_enabled": false,
+  "broker_orders_placed": 0,
+  "scope": "Engineering, synthetic fixtures and integrity only; no investment performance or 14-day trial certification"
+}

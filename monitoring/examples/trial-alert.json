@@ -1,0 +1,12 @@
+{
+  "mode": "observation",
+  "actionable": false,
+  "reason": "Phone delivery and delayed-status workflow test only; no investment instruction.",
+  "research_reference": "validation/status.json",
+  "security": null,
+  "action": "observe",
+  "max_buy_price": null,
+  "quantity": null,
+  "maximum_commitment_gbp": null,
+  "invalidating_conditions": ["This is a test notice and must never be used to trade."]
+}

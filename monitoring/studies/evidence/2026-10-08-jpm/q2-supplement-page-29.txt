@@ -1,0 +1,45 @@
+JPMORGAN CHASE & CO.
+NON-GAAP FINANCIAL MEASURES
+Non-GAAP Financial Measures
+(a) In addition to analyzing the Firm’s results on a reported basis, management reviews Firmwide results, including the overhead ratio, on a “managed” basis; these Firmwide managed basis 
+results are non-GAAP financial measures. The Firm also reviews the results of the LOBs on a managed basis. The Firm’s definition of managed basis starts, in each case, with the 
+reported U.S. GAAP results and includes certain reclassifications to present total net revenue for the Firm as a whole and for each of the reportable business segments and Corporate on 
+an FTE basis. Accordingly, revenue from investments that receive tax credits and tax-exempt securities is presented in the managed results on a basis comparable to taxable investments 
+and securities. These financial measures allow management to assess the comparability of revenue from year-to-year arising from both taxable and tax-exempt sources. The 
+corresponding income tax impact related to tax-exempt items is recorded within income tax expense. These adjustments have no impact on net income as reported by the Firm as a whole 
+or by each of the LOBs and Corporate.
+(b) Pre-provision profit is a non-GAAP financial measure which represents total net revenue less total noninterest expense. The Firm believes that this financial measure is useful in 
+assessing the ability of a lending institution to generate income in excess of its provision for credit losses.
+(c) TCE, ROTCE, and TBVPS are each non-GAAP financial measures. TCE represents the Firm’s common stockholders’ equity (i.e., total stockholders’ equity less preferred stock) less 
+goodwill and identifiable intangible assets (other than MSRs), net of related deferred tax liabilities. ROTCE measures the Firm’s net income applicable to common equity as a percentage of 
+average TCE. TBVPS represents the Firm’s TCE at period-end divided by common shares at period-end. TCE, ROTCE, and TBVPS are utilized by the Firm, as well as investors and 
+analysts, in assessing the Firm’s use of equity.
+(d) In addition to reviewing net interest income (“NII”), net yield, and noninterest revenue (“NIR”) on a managed basis, management also reviews these metrics excluding Markets, which is 
+composed of Fixed Income Markets and Equity Markets, as shown below. Markets revenue consists of principal transactions, fees, commissions and other income, as well as net interest 
+income. These metrics, which exclude Markets, are non-GAAP financial measures. Management reviews these metrics to assess the performance of the Firm’s lending, investing 
+(including asset-liability management) and deposit-raising activities, apart from any volatility associated with Markets activities. In addition, management also assesses Markets business 
+performance on a total revenue basis as offsets may occur across revenue lines. For example, securities that generate net interest income may be risk-managed by derivatives that are 
+reflected at fair value in principal transactions revenue. Management believes these measures provide investors and analysts with alternative measures to analyze the revenue trends of 
+the Firm. For additional information on Markets revenue, refer to pages 73-74 of the Firm’s 2025 Form 10-K.
+QUARTERLY TRENDS SIX MONTHS ENDED JUNE 30,
+2Q26 Change 2026 Change
+(in millions, except rates) 2Q26 1Q26 4Q25 3Q25 2Q25 1Q26 2Q25 2026 2025 2025
+Net interest income - reported $ 25,511 $ 25,366 $ 24,995 $ 23,966 $ 23,209  1 %  10 % $ 50,877 $ 46,482  9 %
+Fully taxable-equivalent adjustments  111  113  113  105  105  (2)  6  224  207  8 
+Net interest income - managed basis $ 25,622 $ 25,479 $ 25,108 $ 24,071 $ 23,314  1  10 $ 51,101 $ 46,689  9 
+Less: Markets net interest income  1,945  2,199  1,251  680  561  (12)  247  4,144  1,346  208 
+Net interest income excluding Markets $ 23,677 $ 23,280 $ 23,857 $ 23,391 $ 22,753  2  4 $ 46,957 $ 45,343  4 
+Average interest-earning assets $ 4,287,954 $ 4,135,737 $ 3,923,824 $ 3,895,764 $ 3,845,982  4  11 $ 4,212,266 $ 3,757,674  12 
+Less: Average Markets interest-earning assets  1,686,445  1,599,089  1,403,245  1,404,633  1,387,584  5  22  1,643,008  1,321,732  24 
+Average interest-earning assets excluding Markets $ 2,601,509 $ 2,536,648 $ 2,520,579 $ 2,491,131 $ 2,458,398  3  6 $ 2,569,258 $ 2,435,942  5 
+Net yield on average interest-earning assets - managed basis (a)  2.40 %  2.50 %  2.54 %  2.45 %  2.43 %  2.45 %  2.51 %
+Net yield on average Markets interest-earning assets  0.46  0.56  0.35  0.19  0.16  0.51  0.21 
+Net yield on average interest-earning assets excluding Markets (a)  3.65  3.72  3.76  3.73  3.71  3.69  3.75 
+Noninterest revenue - reported $ 31,836 $ 24,470 $ 20,803 $ 22,461 $ 21,703  30  47 $ 56,306 $ 43,740  29 
+Fully taxable-equivalent adjustments  564  587  856  588  663  (4)  (15)  1,151  1,265  (9) 
+Noninterest revenue - managed basis $ 32,400 $ 25,057 $ 21,659 $ 23,049 $ 22,366  29  45 $ 57,457 $ 45,005  28 
+Less: Markets noninterest revenue  10,133  9,360  6,988  8,264  8,375  8  21  19,493  17,253  13 
+Noninterest revenue excluding Markets $ 22,267 $ 15,697 $ 14,671 $ 14,785 $ 13,991  42  59 $ 37,964 $ 27,752  37 
+Memo: Markets total net revenue $ 12,078 $ 11,559 $ 8,239 $ 8,944 $ 8,936  4  35 $ 23,637 $ 18,599  27 
+(a) Includes the effect of derivatives that qualify for hedge accounting. Taxable-equivalent amounts are used where applicable. Refer to Note 5 of the Firm’s 2025 Form 10-K for additional information on hedge accounting.
+ Page 28

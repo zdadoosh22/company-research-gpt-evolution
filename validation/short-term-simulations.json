@@ -1,0 +1,309 @@
+{
+  "kind": "synthetic workflow and order-risk illustration; not backtest or expected returns",
+  "generated_paths": true,
+  "stops": "95 trigger / 90 sell limit are test values, not adopted policy",
+  "response_delay": "one observation interval; interval deliberately unspecified",
+  "fee_assumption": "0.15% each side; only FX-style illustrative cost, no taxes/spread beyond supplied quotes",
+  "important_limits": [
+    "No fill guarantee, liquidity queue, partial fill or exact broker trigger simulation",
+    "No dividends, FX path or corporate actions; prices are fictional GBP equivalents",
+    "Open marks exclude future liquidation costs; closed/open outcomes must be distinguished",
+    "These contrasting paths cannot rank strategies or prove profitability"
+  ],
+  "scenarios": [
+    {
+      "name": "temporary dip then recovery",
+      "fictional_quotes": [
+        "100",
+        "91",
+        "107",
+        "112"
+      ],
+      "declared_deterioration_at": null,
+      "outcomes": [
+        {
+          "policy": "stop-market",
+          "status": "closed",
+          "triggered_at": 1,
+          "exit_observation": 1,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0.40888666999500748876684972541188217673489765351972",
+          "cash_gbp": "272.18222666000998502246630054917623564653020469296",
+          "open_marked_value_gbp": "0",
+          "marked_total_gbp": "272.18222666000998502246630054917623564653020469296",
+          "gain_loss_gbp": "-27.81777333999001497753369945082376435346979530704",
+          "future_liquidation_cost_excluded": false,
+          "actionable": false
+        },
+        {
+          "policy": "stop-limit",
+          "status": "closed",
+          "triggered_at": 1,
+          "exit_observation": 1,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0.40888666999500748876684972541188217673489765351972",
+          "cash_gbp": "272.18222666000998502246630054917623564653020469296",
+          "open_marked_value_gbp": "0",
+          "marked_total_gbp": "272.18222666000998502246630054917623564653020469296",
+          "gain_loss_gbp": "-27.81777333999001497753369945082376435346979530704",
+          "future_liquidation_cost_excluded": false,
+          "actionable": false
+        },
+        {
+          "policy": "thesis",
+          "status": "open",
+          "triggered_at": null,
+          "exit_observation": null,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0",
+          "cash_gbp": "0",
+          "open_marked_value_gbp": "335.49675486769845232151772341487768347478781827259",
+          "marked_total_gbp": "335.49675486769845232151772341487768347478781827259",
+          "gain_loss_gbp": "35.49675486769845232151772341487768347478781827259",
+          "future_liquidation_cost_excluded": true,
+          "actionable": false
+        },
+        {
+          "policy": "time",
+          "status": "closed",
+          "triggered_at": null,
+          "exit_observation": 3,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0.50324513230154767848227658512231652521218172740888",
+          "cash_gbp": "334.99350973539690464303544682975536694957563654518",
+          "open_marked_value_gbp": "0",
+          "marked_total_gbp": "334.99350973539690464303544682975536694957563654518",
+          "gain_loss_gbp": "34.99350973539690464303544682975536694957563654518",
+          "future_liquidation_cost_excluded": false,
+          "actionable": false
+        }
+      ]
+    },
+    {
+      "name": "deterioration with delayed manual response",
+      "fictional_quotes": [
+        "100",
+        "98",
+        "90",
+        "80",
+        "85"
+      ],
+      "declared_deterioration_at": 2,
+      "outcomes": [
+        {
+          "policy": "stop-market",
+          "status": "closed",
+          "triggered_at": 2,
+          "exit_observation": 2,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0.40439340988517224163754368447329006490264603095356",
+          "cash_gbp": "269.19121318022965551672491263105341987019470793809",
+          "open_marked_value_gbp": "0",
+          "marked_total_gbp": "269.19121318022965551672491263105341987019470793809",
+          "gain_loss_gbp": "-30.80878681977034448327508736894658012980529206191",
+          "future_liquidation_cost_excluded": false,
+          "actionable": false
+        },
+        {
+          "policy": "stop-limit",
+          "status": "closed",
+          "triggered_at": 2,
+          "exit_observation": 2,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0.40439340988517224163754368447329006490264603095356",
+          "cash_gbp": "269.19121318022965551672491263105341987019470793809",
+          "open_marked_value_gbp": "0",
+          "marked_total_gbp": "269.19121318022965551672491263105341987019470793809",
+          "gain_loss_gbp": "-30.80878681977034448327508736894658012980529206191",
+          "future_liquidation_cost_excluded": false,
+          "actionable": false
+        },
+        {
+          "policy": "thesis",
+          "status": "closed",
+          "triggered_at": null,
+          "exit_observation": 3,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0.35946080878681977034448327508736894658012980529205",
+          "cash_gbp": "239.28107838242636045931103344982526210683974038941",
+          "open_marked_value_gbp": "0",
+          "marked_total_gbp": "239.28107838242636045931103344982526210683974038941",
+          "gain_loss_gbp": "-60.71892161757363954068896655017473789316025961059",
+          "future_liquidation_cost_excluded": false,
+          "actionable": false
+        },
+        {
+          "policy": "time",
+          "status": "closed",
+          "triggered_at": null,
+          "exit_observation": 4,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0.38192710933599600599101347978032950574138791812280",
+          "cash_gbp": "254.23614578132800798801797304043934098851722416375",
+          "open_marked_value_gbp": "0",
+          "marked_total_gbp": "254.23614578132800798801797304043934098851722416375",
+          "gain_loss_gbp": "-45.76385421867199201198202695956065901148277583625",
+          "future_liquidation_cost_excluded": false,
+          "actionable": false
+        }
+      ]
+    },
+    {
+      "name": "gap below both stop and limit",
+      "fictional_quotes": [
+        "100",
+        "70",
+        "65",
+        "75"
+      ],
+      "declared_deterioration_at": 1,
+      "outcomes": [
+        {
+          "policy": "stop-market",
+          "status": "closed",
+          "triggered_at": 1,
+          "exit_observation": 1,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0.31452820768846729905142286570144782825761357963056",
+          "cash_gbp": "209.37094358462306540189715426859710434348477284074",
+          "open_marked_value_gbp": "0",
+          "marked_total_gbp": "209.37094358462306540189715426859710434348477284074",
+          "gain_loss_gbp": "-90.62905641537693459810284573140289565651522715926",
+          "future_liquidation_cost_excluded": false,
+          "actionable": false
+        },
+        {
+          "policy": "stop-limit",
+          "status": "open",
+          "triggered_at": 1,
+          "exit_observation": null,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0",
+          "cash_gbp": "0",
+          "open_marked_value_gbp": "224.66300549176235646530204692960559161258112830754",
+          "marked_total_gbp": "224.66300549176235646530204692960559161258112830754",
+          "gain_loss_gbp": "-75.33699450823764353469795307039440838741887169246",
+          "future_liquidation_cost_excluded": true,
+          "actionable": false
+        },
+        {
+          "policy": "thesis",
+          "status": "closed",
+          "triggered_at": null,
+          "exit_observation": 2,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0.29206190713929106340489266100848726909635546679980",
+          "cash_gbp": "194.41587618572141787319021467798302546180728906640",
+          "open_marked_value_gbp": "0",
+          "marked_total_gbp": "194.41587618572141787319021467798302546180728906640",
+          "gain_loss_gbp": "-105.58412381427858212680978532201697453819271093360",
+          "future_liquidation_cost_excluded": false,
+          "actionable": false
+        },
+        {
+          "policy": "time",
+          "status": "closed",
+          "triggered_at": null,
+          "exit_observation": 3,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0.33699450823764353469795307039440838741887169246131",
+          "cash_gbp": "224.32601098352471293060409385921118322516225661508",
+          "open_marked_value_gbp": "0",
+          "marked_total_gbp": "224.32601098352471293060409385921118322516225661508",
+          "gain_loss_gbp": "-75.67398901647528706939590614078881677483774338492",
+          "future_liquidation_cost_excluded": false,
+          "actionable": false
+        }
+      ]
+    },
+    {
+      "name": "gradual appreciation",
+      "fictional_quotes": [
+        "100",
+        "105",
+        "113",
+        "115"
+      ],
+      "declared_deterioration_at": null,
+      "outcomes": [
+        {
+          "policy": "stop-market",
+          "status": "open",
+          "triggered_at": null,
+          "exit_observation": null,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0",
+          "cash_gbp": "0",
+          "open_marked_value_gbp": "344.48327508736894658012980529206190713929106340489",
+          "marked_total_gbp": "344.48327508736894658012980529206190713929106340489",
+          "gain_loss_gbp": "44.48327508736894658012980529206190713929106340489",
+          "future_liquidation_cost_excluded": true,
+          "actionable": false
+        },
+        {
+          "policy": "stop-limit",
+          "status": "open",
+          "triggered_at": null,
+          "exit_observation": null,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0",
+          "cash_gbp": "0",
+          "open_marked_value_gbp": "344.48327508736894658012980529206190713929106340489",
+          "marked_total_gbp": "344.48327508736894658012980529206190713929106340489",
+          "gain_loss_gbp": "44.48327508736894658012980529206190713929106340489",
+          "future_liquidation_cost_excluded": true,
+          "actionable": false
+        },
+        {
+          "policy": "thesis",
+          "status": "open",
+          "triggered_at": null,
+          "exit_observation": null,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0",
+          "cash_gbp": "0",
+          "open_marked_value_gbp": "344.48327508736894658012980529206190713929106340489",
+          "marked_total_gbp": "344.48327508736894658012980529206190713929106340489",
+          "gain_loss_gbp": "44.48327508736894658012980529206190713929106340489",
+          "future_liquidation_cost_excluded": true,
+          "actionable": false
+        },
+        {
+          "policy": "time",
+          "status": "closed",
+          "triggered_at": null,
+          "exit_observation": 3,
+          "shares": "2.9955067398901647528706939590614078881677483774338",
+          "entry_cost_gbp": "0.44932601098352471293060409385921118322516225662",
+          "exit_cost_gbp": "0.51672491263105341987019470793809286070893659510734",
+          "cash_gbp": "343.96655017473789316025961058412381427858212680978",
+          "open_marked_value_gbp": "0",
+          "marked_total_gbp": "343.96655017473789316025961058412381427858212680978",
+          "gain_loss_gbp": "43.96655017473789316025961058412381427858212680978",
+          "future_liquidation_cost_excluded": false,
+          "actionable": false
+        }
+      ]
+    }
+  ],
+  "flat_price_cash_after_repeated_round_trips_gbp": {
+    "1": "299.10134797803295057413879181228157763354967548677",
+    "5": "295.53357855616153256054656490249767917454114127812",
+    "20": "282.52934736143653184932433534756695866809646737790"
+  }
+}

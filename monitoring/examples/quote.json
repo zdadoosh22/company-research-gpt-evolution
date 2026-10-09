@@ -1,0 +1,11 @@
+{
+  "ticker": "REPLACE-WITH-EXACT-SECURITY-ID",
+  "exchange": "REPLACE-WITH-EXCHANGE",
+  "currency": "GBP",
+  "unit": "major",
+  "price": "1.00",
+  "quote_type": "manual-broker",
+  "source": "Trading 212 order review (manually observed)",
+  "quote_timestamp": "REPLACE-WITH-TIMEZONE-QUALIFIED-TIMESTAMP",
+  "delay_seconds": "0"
+}

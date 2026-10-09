@@ -1,0 +1,266 @@
+uber-20260630 (https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm)
+citeturn111view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn93view0","pattern":"As of June 30, 2026, we have received"}); Total lines: 2854
+L678: 16
+L679: 
+L680: * * *
+L681: 
+L682: Note 3 – Equity Method Investments
+L683: 
+L684: The carrying value of our equity method investments were as follows (in millions):
+L685: 
+L686:  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L687:  |  | As of
+L688:  |  | December 31, 2025  |  | June 30, 2026
+L689: Delivery Hero  |  | $  | —   |  |  | $  | 3,502   |
+L690: Careem Technologies  |  | 171   |  |  | 147   |
+L691: Other  |  | 116   |  |  | 124   |
+L692: Total equity method investments  |  | $  | 287   |  |  | $  | 3,773   |
+L693: 
+L694: Delivery Hero
+L695: In May 2024, we acquired 8.4 million ordinary shares of Delivery Hero SE ("Delivery Hero"), a publicly traded online food delivery platform headquartered in Berlin, Germany. The pre-existing equity interest was accounted for as marketable equity security measured at fair value on a recurring basis. During the three months ended June 30, 2026, we acquired an additional equity interest in Delivery Hero for total cash consideration of $2.3 billion, increasing our total ownership to 24.99%.
+L696: We concluded that we have the ability to exercise significant influence and prospectively transitioned to the equity method of accounting during the period. Immediately prior to this transition, we recognized a gain of $1.1 billion and $1.0 billion during three and six months ended June 30, 2026, respectively, which is included in the other income (expense), net on our condensed consolidated statements of operations. The fair value of Delivery Hero investment is $3.1 billion as of June 30, 2026.
+L708: During the three months ended June 30, 2026, we acquired additional equity interest of Careem Technologies and our equity ownership interest was approximately 45% as of June 30, 2026.
+L709: On July 30, 2026, we obtained a controlling interest of Careem Technologies through purchase of additional equity interest. We are currently evaluating the financial impact of the transaction.
+L710: 
+L711: Note 4 – Goodwill and Intangible Assets
+L712: 
+L713: Goodwill
+L714: 
+L715: The following table presents the changes in the carrying value of goodwill by segment (in millions):
+L716: 
+L717: 17
+L718: 
+L719: * * *
+L720:  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L721:  |  | Mobility  |  | Delivery  |  | Freight  |  | Total Goodwill
+L722: Balance as of December 31, 2025  |  | $  | 2,409   |  |  | $  | 5,080   |  |  | $  | 1,442   |  |  | $  | 8,931   |
+L730: Foreign currency translation and other adjustments  |  | 1   |  |  | —   |  |  | 1   |  |  | 2   |
+L731: Balance as of June 30, 2026  |  | $  | 2,913   |  |  | $  | 5,116   |  |  | $  | 1,443   |  |  | $  | 9,472   |
+L748: Amortization expense for intangible assets subject to amortization was $65 million and $64 million for the three months ended June 30, 2025 and 2026, respectively. Amortization expense for intangible assets subject to amortization was $129 million and $123 million for six months ended June 30, 2025 and 2026, respectively.
+L749: 
+L750: The estimated aggregate future amortization expense for intangible assets subject to amortization as of June 30, 2026 is summarized below (in millions):
+L786: (1) The total fair value of our outstanding debt was $11.1 billion and $12.9 billion as of December 31, 2025 and June 30, 2026, respectively, and was determined based on quoted prices in markets that are not active, which is considered a Level 2 valuation input.
+L787: 
+L788: 2026 Term Loan
+L789: In June 2026, we entered into a Term Loan Credit Agreement providing for an unsecured term loan credit facility with aggregate commitments of up to $3.0 billion. The facility bears interest at Term SOFR plus 0.825% or the applicable base rate, at the Company's election, and permits borrowings through August 2, 2026, after which any undrawn commitments expire. As of June 30, 2026, the Company had borrowed $2.0 billion under the facility and had remaining available commitments of $1.0 billion.
+L790: The proceeds under the term loan facility are for general corporate purposes. The Term Loan Credit Agreement contains customary affirmative and negative covenants and events of default, including restrictions on certain subsidiary indebtedness, liens, mergers and other fundamental changes, and the use of proceeds. We were in compliance with all applicable covenants as of June 30, 2026.
+L793: The entire principal amounts of the Senior Notes are due at the respective maturity dates, and we may redeem the Senior Notes at any time, in whole or in part, at specified redemption prices. The indentures governing the Senior Notes contain customary covenants restricting our and certain of our subsidiaries’ ability to incur debt and incur liens, as well as certain financial covenants specified in the indentures. We were in compliance with all covenants as of June 30, 2026.
+L835: Letters of Credit
+L836: 
+L837: For purposes of securing obligations related to leases, insurance contracts, and other contractual obligations, we also maintain agreements for letters of credit. As of December 31, 2025 and June 30, 2026, we had letters of credit outstanding of $1.9 billion and $2.3 billion, respectively, of which the letters of credit that reduced the available credit under the Credit Agreement were $343 million and $324 million, respectively.
+L838: 
+L839: Commercial Paper
+L840: In June 2025, we established a commercial paper program (the “Program”) under which we may issue unsecured commercial paper notes, not to exceed $2.0 billion outstanding at any time, with maturities of up to 397 days. The commercial paper notes will rank at least pari passu in right of payment with all of our other unsecured and unsubordinated indebtedness except any indebtedness owing to creditors whose claims are mandatorily preferred by laws of general application.
+L841: We intend to use the net proceeds of the Program for general corporate purposes. As of June 30, 2026, we had no commercial paper notes outstanding.
+L842: Note 6 – Supplemental Financial Statement Information
+L843: 
+L844: Accounts Receivable
+L845: 
+L846: The allowance for credit losses on accounts receivable was $91 million and $93 million as of December 31, 2025 and June 30, 2026, respectively.
+L847: 
+L848: Prepaid Expenses and Other Current Assets
+L849: 
+L850: Prepaid expenses and other current assets were as follows (in millions):
+L851:  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L852:  |  | As of
+L853:  |  | December 31, 2025  |  | June 30, 2026
+L854: Prepaid expenses  |  | $  | 408   |  |  | $  | 410   |
+L855: Other current assets  |  | 1,494   |  |  | 1,769   |
+L856: Prepaid expenses and other current assets  |  | $  | 1,902   |  |  | $  | 2,179   |
+L857: 
+L858: Accrued and Other Current Liabilities
+L859: 
+L860: 21
+L861: 
+L862: * * *
+L863: 
+L864: Accrued and other current liabilities were as follows (in millions):
+L865:  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L866:  |  | As of
+L867:  |  | December 31, 2025  |  | June 30, 2026
+L868: Accrued legal, regulatory and non-income taxes  |  | $  | 2,052   |  |  | $  | 1,841   |
+L869: Accrued Drivers and Merchants liability  |  | 1,626   |  |  | 1,773   |
+L870: Accrued compensation and employee benefits  |  | 777   |  |  | 573   |
+L871: Income and other tax liabilities  |  | 1,033   |  |  | 1,042   |
+L872:  |  |  |  |
+L873:  |  |  |  |
+L874: Other  |  | 2,263   |  |  | 2,343   |
+L875: Accrued and other current liabilities  |  | $  | 7,751   |  |  | $  | 7,572   |
+L876: Other Long-Term Liabilities
+L877: 
+L878: Other non-current liabilities were as follows (in millions):
+L879:  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L880:  |  | As of
+L881:  |  | December 31, 2025  |  | June 30, 2026
+L882: Deferred tax liabilities  |  | $  | 31   |  |  | $  | 26   |
+L883: Other  |  | 381   |  |  | 421   |
+L884: Other non-current liabilities  |  | $  | 412   |  |  | $  | 447   |
+L885: 
+L886: Other Income (Expense), Net
+L887: The components of other income (expense), net were as follows (in millions):
+L888:  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L889:  |  | Three Months Ended June 30,  |  | Six Months Ended June 30,  |  |
+L890:  |  | 2025  |  | 2026  |  | 2025  |  | 2026  |  |  |  |
+L891: Foreign currency exchange gains (losses), net  |  | $  | 97   |  |  | $  | 52   |  |  | $  | 147   |  |  | $  | 31   |  |  |  |  |
+L892: Gains (losses) on debt and equity securities, net  |  | (17)  |  |  | 1,612   |  |  | 34   |  |  | 138   |  |  |  |  |
+L893:  |  |  |  |  |  |  |  |  |  |  |  |
+L894: Other, net  |  | (99)  |  |  | (322)  |  |  | (107)  |  |  | (321)  |  |  |  |  |
+L895: Other income (expense), net  |  | $  | (19)  |  |  | $  | 1,342   |  |  | $  | 74   |  |  | $  | (152)  |  |  |  |  |
+L896: Note 7 – Stockholders' Equity
+L897: 
+L898: Stock Option and SAR Activity
+L899: 
+L900: A summary of stock option and SAR activity for the six months ended June 30, 2026 is as follows (in millions, except share amounts which are reflected in thousands, per share amounts, and years):
+L901:  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L902:  |  | SARs Outstanding Number of SARs  |  | Options Outstanding Number of Shares  |  | Weighted-Average Exercise Price Per Share  |  | Weighted-Average Remaining Contractual Life (in years)  |  | Aggregate Intrinsic Value
+L903: As of December 31, 2025  |  | 16   |  |  | 5,868   |  |  | $  | 48.72   |  |  | 4.79  |  | $  | 194   |
+L904: Granted  |  | —   |  |  | 619   |  |  | $  | 75.51   |  |  |  |  |
+L905: Exercised  |  | (6)  |  |  | (169)  |  |  | $  | 34.44   |  |  |  |  |
+L906: Canceled and forfeited  |  | —   |  |  | (219)  |  |  | $  | 59.95   |  |  |  |  |
+L907: As of June 30, 2026  |  | 10   |  |  | 6,099   |  |  | $  | 51.44   |  |  | 4.56  |  | $  | 132   |
+L908: Exercisable as of June 30, 2026  |  | 10   |  |  | 3,557   |  |  | $  | 41.17   |  |  | 3.78  |  | $  | 112   |
+L909: RSU Activity
+L910: 
+L911: The following table summarizes the activity related to our RSUs for the six months ended June 30, 2026 (in thousands, except per share amounts):
+L912: 
+L913: 22
+L914: 
+L915: * * *
+L916:  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L917:  |  | Number of Shares  |  | Weighted-Average
+L918:  Grant-Date Fair
+L919:  Value per Share
+L920: Unvested and outstanding as of December 31, 2025  |  | 57,654   |  |  | $  | 65.69   |
+L921: Granted  |  | 35,921   |  |  | $  | 73.57   |
+L922: Vested  |  | (17,008)  |  |  | $  | 56.31   |
+L923: Canceled and forfeited  |  | (4,763)  |  |  | $  | 68.59   |
+L924: Unvested and outstanding as of June 30, 2026  |  | 71,804   |  |  | $  | 71.66   |
+L925: 
+L926: Stock-Based Compensation Expense
+L927: Stock-based compensation expense is allocated based on the cost center to which the award holder belongs. The following table summarizes total stock-based compensation expense by function (in millions):
+L928:  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L929:  |  | Three Months Ended June 30,  |  | Six Months Ended June 30,
+L930:  |  | 2025  |  | 2026  |  | 2025  |  | 2026
+L931: Operations and support  |  | $  | 59   |  |  | $  | 71   |  |  | $  | 111   |  |  | $  | 131   |
+L932: Sales and marketing  |  | 28   |  |  | 27   |  |  | 52   |  |  | 52   |
+L933: Research and development  |  | 284   |  |  | 336   |  |  | 548   |  |  | 622   |
+L936: As of June 30, 2026, there was $4.9 billion of unamortized compensation costs related to all unvested awards. The unamortized compensation costs are expected to be recognized over a weighted-average period of approximately 2.93 years.
+L937: 
+L938: The income tax benefits recognized in the condensed consolidated statements of operations for stock-based compensation expense were not material during the three and six months ended June 30, 2025 and 2026.
+L939: 
+L940: Share Repurchase Program
+L943: During the three and six months ended June 30, 2025, we repurchased, and subsequently retired, 16.4 million and 42.9 million shares of common stock for $1.4 billion and $3.2 billion, respectively, excluding broker commissions and fees.
+L944: During the three and six months ended June 30, 2026, we repurchased, and subsequently retired, 6.9 million and 46.6 million shares of common stock for $510 million and $3.5 billion, respectively, excluding broker commissions and fees. As of June 30, 2026, we had approximately $15.7 billion available to repurchase shares pursuant to the Share Repurchase Program.
+L945: The Inflation Reduction Act imposed a nondeductible 1% excise tax on the net value of certain stock repurchases. During the three and six months ended June 30, 2025 and 2026, the excise tax on net share repurchases was not material.
+L946: 
+L947: Note 8 – Income Taxes
+L948: We compute our quarterly income tax expense/(benefit) by using a forecasted annual effective tax rate and adjust for any discrete items arising during the quarter. We recorded an income tax expense/(benefit) of $142 million and $(260) million for the three and six months ended June 30, 2025, respectively, and $840 million and $1.0 billion for the three and six months ended June 30, 2026, respectively.
+L949: During the three months ended June 30, 2025, the income tax expense was primarily driven by the tax expense on our earnings. During the six months ended June 30, 2025, the income tax benefit was primarily driven by a stock loss and capitalized research and development expenses, offset by the tax expense on our earnings. During the three and six months ended June 30, 2026, the income tax expense was primarily driven by the tax expense on our earnings and the deferred U.S.
+L1185: As of June 30, 2026, we have received multiple assessments from His Majesty's Revenue & Customs (“HMRC”) disputing our application of VAT Order 1987 for the period of March 2022 to September 2024, totaling approximately $1.8 billion (£1.4 billion) for unpaid VAT. Uber paid the assessments in order to proceed with the appeal process. The payments do not represent our acceptance of the assessments.
+L1209: Total assets included on the condensed consolidated balance sheets for our consolidated VIE, Uber Freight Holding Corporation (“Freight Holding”), as of December 31, 2025 and June 30, 2026 were $3.3 billion and $3.5 billion, respectively. Total liabilities included on the condensed consolidated balance sheets as of December 31, 2025 and June 30, 2026 were $726 million and $939 million, respectively.
+L1210: As of June 30, 2026, we own the majority of the issued and outstanding capital stock of Freight Holding and report a non-controlling interest as further described in Note 13 – Non-Controlling Interests.
+L1211: 
+L1212: Unconsolidated VIEs
+L1215: Our carrying amounts of assets recognized on the condensed consolidated balance sheets and maximum exposure to loss related to unconsolidated VIEs were (in millions):
+L1216: 
+L1217:  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L1218:  |  | As of
+L1219:  |  | December 31, 2025  |  | June 30, 2026
+L1220: Total assets (1)  |  | $  | 1,329   |  |  | $  | 1,491   |
+L1221:  |  |  |  |
+L1222: Maximum exposure to loss (2)  |  | 1,509   |  |  | 1,546   |
+L1223: (1) Total assets includes a term loan to Moove Cars Mobility (“Moove”). As of December 31, 2025 and June 30, 2026, the term loan to Moove was $384 million and $442 million, respectively, and accounted for as a loan receivable, carried at amortized cost recorded within other non-current assets on the condensed consolidated balance sheets.
+L1224: In 2021, we entered into and completed a series of agreements with Moove, including (i) an equity investment, through preferred shares, (ii) a term loan to Moove, and (iii) a commercial partnership agreement. After this series of agreements, Moove is considered a related party. Our carrying amounts of liabilities recognized on the condensed consolidated balance sheets were not material as of December 31, 2025 and June 30, 2026.
+L1225: (2) Our maximum exposure to loss includes the carrying amounts of assets and liabilities recognized on our condensed consolidated balance sheets as well as immaterial financial guarantees.
+L1226: 
+L1227: Note 13 – Non-Controlling Interests
+L1228: 
+L1229: Freight Holding
+L1230: As of both December 31, 2025 and June 30, 2026, we owned 90% of our subsidiary Freight Holding’s capital stock, or 85% and 84%, respectively, on a fully-diluted basis. The minority stockholders of Freight Holding include, among others: (i) holders of Freight Holding’s Series A and A-1 Preferred Stock; and (ii) holders of common equity awards issued under the employee equity incentive plans.
+L1231: 
+L1232: Freight Holding Supplier Financing Program
+L1233: Freight Holding utilizes a third-party financial institution that allows our suppliers to be paid by the third-party financial institution earlier than the due date on the applicable invoice at a discounted price. In general, supplier invoices financed by the third-party financial institution are due for payment by Freight Holding within 30 days.
+L1234: As of December 31, 2025 and June 30, 2026, the liabilities related to the supplier financing program were immaterial and the amounts are included within accounts payable on the condensed consolidated balance sheets.
+L1235: Trendyol GO
+L1236: On June 17, 2025, we closed the acquisition of an 85% controlling stake in Trendyol GO. As of June 30, 2026, our controlling stake in Trendyol GO was 92%. The non-controlling interest in Trendyol GO was classified as redeemable non-controlling interest as it is subject to a put/call agreement that is not solely within our control. The put or call is exercisable in the first quarter of 2031.
+L1237: At each balance sheet date, the carrying value of the redeemable non-controlling interest is adjusted to the estimated redemption value. There were no material adjustments for the three and six months ended June 30, 2026.
+L1238: 31
+L1239: 
+L1240: * * *
+L1241: 
+L1242: Note 14 – Business Combinations
+L1243: 
+L1244: SpotHero
+L1245: 
+L1246: On April 16, 2026, we acquired 100% of the outstanding equity of SpotHero, Inc. (“SpotHero”), a leading digital parking aggregator. The total purchase price was $617 million in cash. The acquisition will bring parking reservation capabilities to the Uber application and enable more travel options and benefits for our consumer base.
+L1726: As of June 30, 2026, $1.9 billion of our $4.9 billion in cash and cash equivalents was held by our foreign subsidiaries. Cash held outside the United States may be repatriated, subject to certain limitations, and would be available to be used to fund our domestic operations. Repatriation of funds may result in immaterial tax liabilities.
+L1727: We believe that our existing cash balance in the United States is sufficient to fund our working capital needs in the United States. We are in compliance with our debt and line of credit covenants as of June 30, 2026, including by meeting our reporting obligations.
+L1745: In June 2026, we entered into a Term Loan Credit Agreement providing for an unsecured term loan credit facility with aggregate commitments of up to $3.0 billion. As of June 30, 2026, the Company had borrowed $2.0 billion under the facility and had remaining available commitments of $1.0 billion. The proceeds under the term loan facility are for general corporate purposes.
+L1751: As of June 30, 2026, we had approximately $15.7 billion available to repurchase shares pursuant to the Share Repurchase Program.
+L1752: 
+L1753: For additional information, see Note 7 – Stockholders' Equity in the notes to the condensed consolidated financial statements included in Part I, Item 1 of this Quarterly Report on Form 10-Q.
+L1754: 
+L1755: Non-Income Tax Matters
+L1756: 
+L1757: 45
+L1758: 
+L1759: * * *
+L1762: As of June 30, 2026, we have received multiple assessments from His Majesty's Revenue & Customs (“HMRC”) disputing our application of VAT Order 1987 for the period of March 2022 to September 2024, totaling approximately $1.8 billion (£1.4 billion) for unpaid VAT. Uber paid the assessments in order to proceed with the appeal process. The payments do not represent our acceptance of the assessments.
+L1794: As of June 30, 2026, our cash, cash equivalents, and marketable debt securities primarily consist of money market funds, cash deposits, U.S. government securities, U.S. government agency securities, investment-grade corporate debt securities, and asset-backed securities. We do not enter into investments for trading or speculative purposes. Investments in fixed rate securities carry a degree of interest rate risk.
+--------------------------------------------------------------------------------
+uber-20260630 (https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm)
+citeturn111view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn93view0","pattern":"bridge credit agreement"}); Total lines: 2854
+L702: We will fund the takeover offer through existing cash on our balance sheet and new debt financing. On July 16, 2026, we executed a bridge credit agreement, which provides for €14.2 billion in aggregate amount of commitments for senior unsecured loans.
+L703: 
+L704: Careem Technologies
+L832: Credit Agreement
+L833: Our Credit Agreement provides for $5.0 billion in aggregate amount of commitments for senior unsecured revolving loans, which will mature on September 26, 2029, unless otherwise extended in accordance with the terms of the Credit Agreement. Proceeds from any borrowings under the Credit Agreement may be used for general corporate purposes. The Credit Agreement is unsecured and is not guaranteed by any of our subsidiaries.
+L834: The Credit Agreement contains customary covenants restricting our and certain of our subsidiaries’ ability to incur debt, incur liens, and undergo certain fundamental changes. The Credit Agreement also contains customary events of default. As of December 31, 2025 and June 30, 2026, there was no balance outstanding on the Credit Agreement, and we were in compliance with all covenants in the Credit Agreement.
+L835: Letters of Credit
+L836: 
+L837: For purposes of securing obligations related to leases, insurance contracts, and other contractual obligations, we also maintain agreements for letters of credit. As of December 31, 2025 and June 30, 2026, we had letters of credit outstanding of $1.9 billion and $2.3 billion, respectively, of which the letters of credit that reduced the available credit under the Credit Agreement were $343 million and $324 million, respectively.
+L838: 
+L839: Commercial Paper
+L1739: We will fund the takeover offer through existing cash on our balance sheet and new debt financing. On July 16, 2026, we executed a bridge credit agreement, which provides for €14.2 billion in aggregate amount of commitments for senior unsecured loans. We expect to enter into term loan facilities that will reduce the commitments under the bridge credit agreement in the third quarter of 2026.
+L1740: 
+L1741: Pending Acquisition of Blacklane
+L1745: In June 2026, we entered into a Term Loan Credit Agreement providing for an unsecured term loan credit facility with aggregate commitments of up to $3.0 billion. As of June 30, 2026, the Company had borrowed $2.0 billion under the facility and had remaining available commitments of $1.0 billion. The proceeds under the term loan facility are for general corporate purposes.
+L1746: In September 2024, we entered into a revolving credit agreement providing for $5.0 billion in aggregate amount of commitments for senior unsecured revolving loans, which will mature on September 26, 2029, unless otherwise extended in accordance with the terms of the credit agreement. We expect to enter into a new revolving facility that will replace our existing revolving credit agreement in the third quarter of 2026.
+L1747: 
+L1748: Share Repurchase Program
+L2386: As of June 30, 2026, we had total outstanding indebtedness of $12.6 billion aggregate principal amount. In addition, up to approximately $128 million of Careem Convertible Notes remain subject to future issuance to Careem stockholders as of June 30, 2026, and in July 2026, we executed a bridge credit agreement, which provides for €14.2 billion in aggregate amount of commitments for senior unsecured loans in connection with our proposed acquisition of Delivery Hero.
+L2814: 10.2  |  | cite26†Bridge Credit Agreement, dated as of July 16, 2026, by and among Uber Technologies, Inc., as borrower, the lenders party thereto and Morgan Stanley Senior Funding, Inc., as administrative agent. |  |  | 8-K  |  | 001-38902  |  | 10.1  |  | July 16, 2026
+--------------------------------------------------------------------------------
+uber-20260630 (https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm)
+citeturn111view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn93view0","pattern":"Cash Flows from Operating Activities"}); Total lines: 2854
+L415:  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L416:  |  | Six Months Ended June 30,
+L417:  |  | 2025  |  | 2026
+L418: Cash flows from operating activities  |  |  |  |
+L419: Net income including non-controlling interests  |  | $  | 3,124   |  |  | $  | 2,698   |
+L420: Adjustments to reconcile net income to net cash provided by operating activities:  |  |  |  |
+L421: Depreciation and amortization  |  | 359   |  |  | 386   |
+L422: Stock-based compensation  |  | 910   |  |  | 1,023   |
+L423: Deferred income taxes  |  | (325)  |  |  | 771   |
+L431: Accounts payable  |  | 131   |  |  | 345   |
+L432: Accrued insurance reserves  |  | 1,487   |  |  | 830   |
+L433: Accrued expenses and other liabilities  |  | 410   |  |  | (94)  |
+L434: Operating lease liabilities  |  | (107)  |  |  | (97)  |
+L435: Net cash provided by operating activities  |  | 4,888   |  |  | 5,213   |
+L436: Cash flows from investing activities  |  |  |  |
+L437: Purchases of property and equipment  |  | (163)  |  |  | (135)  |
+L438: Purchases of non-marketable equity securities  |  | (191)  |  |  | (507)  |
+L446: Cash flows from financing activities  |  |  |  |
+L447: Proceeds from term loan, notes, and credit facility, net of issuance costs  |  | 1,127   |  |  | 3,997   |
+L448: Principal repayment on term loan, notes, and credit facility  |  | —   |  |  | (2,000)  |
+L449: Principal payments on finance leases  |  | (75)  |  |  | (82)  |
+L450: Proceeds from the issuance of common stock under the Employee Stock Purchase Plan  |  | 120   |  |  | 136   |
+L451: Repurchases of common stock  |  | (3,148)  |  |  | (3,529)  |
+L1683: 43
+L1684: 
+L1685: * * *
+L1686: 
+L1687: Free Cash Flow
+L1688: 
+L1689: We define free cash flow as net cash flows from operating activities less capital expenditures. The following table presents a reconciliation of free cash flow to the most directly comparable GAAP financial measure for each of the periods indicated:
+

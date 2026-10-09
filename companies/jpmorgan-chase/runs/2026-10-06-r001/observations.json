@@ -1,0 +1,58 @@
+[
+  {
+    "metric": "Tangible book per share",
+    "period": "2026-Q2",
+    "value": 113.35,
+    "unit": "USD/share",
+    "scope": "tangible common equity",
+    "status": "verified-reported",
+    "source_id": "j2",
+    "location": "financial highlights p2; reconciliation p10",
+    "currency": "USD",
+    "source_raw_value": 113.35,
+    "source_raw_unit": "USD/share",
+    "conversion_to_working_unit": 1
+  },
+  {
+    "metric": "Q2 ROTCE reported",
+    "period": "2026-Q2",
+    "value": 0.29,
+    "unit": "ratio",
+    "scope": "annualised quarterly, not sustainable",
+    "status": "verified-reported",
+    "source_id": "j1",
+    "location": "headline / significant items note2d",
+    "currency": "not-applicable",
+    "source_raw_value": 28.999999999999996,
+    "source_raw_unit": "percent",
+    "conversion_to_working_unit": 0.01
+  },
+  {
+    "metric": "CET1 standardized estimated",
+    "period": "2026-Q2",
+    "value": 0.141,
+    "unit": "ratio",
+    "scope": "regulatory capital",
+    "status": "verified-reported",
+    "source_id": "j2",
+    "location": "capital p9",
+    "currency": "not-applicable",
+    "source_raw_value": 14.099999999999998,
+    "source_raw_unit": "percent",
+    "conversion_to_working_unit": 0.01
+  },
+  {
+    "metric": "Cash dividend declared",
+    "period": "2026-Q2",
+    "value": 1.5,
+    "unit": "USD/share",
+    "scope": "quarterly distribution",
+    "status": "verified-reported",
+    "source_id": "j2",
+    "location": "financial highlights p2",
+    "currency": "USD",
+    "source_raw_value": 1.5,
+    "source_raw_unit": "USD/share",
+    "conversion_to_working_unit": 1
+  }
+]

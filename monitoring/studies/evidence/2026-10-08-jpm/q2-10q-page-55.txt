@@ -1,0 +1,98 @@
+• an increase in CCB driven by growth in new accounts, 
+largely offset by continued customer spending, and 
+• a decrease in AWM driven by seasonal tax outflows 
+and continued migration into other investment 
+products, predominantly offset by growth in both 
+new accounts and balances in existing accounts, 
+including the impact of higher-yielding product 
+offerings.
+Refer to the Firm’s Consolidated Balance Sheets 
+Analysis and the Business Segment & Corporate 
+Results on pages 15-16 and pages 20-42, respectively, 
+for further information on deposit and liability balance 
+trends. Refer to Note 3 for further information on 
+structured notes.
+Certain deposits are covered by insurance protection 
+that provides additional funding stability and results in 
+a benefit to the LCR. Deposit insurance protection may 
+be available to depositors in the countries in which the 
+deposits are placed. For example, the FDIC provides 
+deposit insurance protection for deposits placed in a 
+U.S. depository institution. At June 30, 2026 and 
+December 31, 2025, Firmwide estimated uninsured 
+deposits were $1,743.9 billion and $1,558.6 billion, 
+respectively, primarily reflecting wholesale operating 
+deposits. Refer to pages 103–104 of JPMorganChase's 
+2025 Form 10-K for additional information on the Firm's 
+total uninsured deposits. 
+The table below presents an estimate of uninsured U.S. 
+and non-U.S. time deposits, and their remaining 
+maturities. The Firm’s estimates of its uninsured U.S. 
+time deposits are based on data that the Firm 
+calculates periodically under applicable FDIC 
+regulations. For purposes of this presentation, all non-
+U.S. time deposits are deemed to be uninsured. 
+(in millions)
+June 30, 2026 December 31, 2025
+U.S. Non-U.S. U.S. Non-U.S.
+Three months or less $ 119,947 $ 80,098 $ 123,236 $ 71,477 
+Over three months 
+but within 6 months  26,048  8,015  14,381  14,184 
+Over six months but 
+within 12 months  6,344  1,551  4,004  1,256 
+Over 12 months  596  2,264  664  2,382 
+Total $ 152,935 $ 91,928 $ 142,285 $ 89,299 
+The table below shows the deposit and loan balances, 
+deposits as a percentage of total liabilities, and the 
+loans-to-deposits ratios, as of June 30, 2026 and 
+December 31, 2025.
+(in billions, except ratios)
+June 30, 
+2026
+December 31, 
+2025
+Deposits $ 2,713.7 $ 2,559.3 
+Deposits as a % of total liabilities  58 %  63 %
+Loans $ 1,542.5 $ 1,493.4 
+Loans-to-deposits ratio  57 %  58 %
+The following table provides a summary of the average balances and average interest rates of JPMorganChase’s 
+deposits for the three and six months ended June 30, 2026 and 2025. 
+(in millions)
+Average balances Average interest rates
+Three months ended Six months ended Three months ended Six months ended
+June 30, 
+2026
+June 30, 
+2025
+June 30, 
+2026
+June 30, 
+2025
+June 30, 
+2026
+June 30, 
+2025
+June 30, 
+2026
+June 30, 
+2025
+U.S. offices
+Noninterest-bearing $ 597,106 $ 572,715 $ 585,522 $ 565,592 NA NA NA NA
+Interest-bearing
+Demand(a)  342,568  321,907  341,155  312,801  2.69 %  3.01 %  2.70 %  3.37 %
+Savings(b)  922,308  867,850  917,905  861,699  1.28  1.52  1.27  1.37 
+Time  238,185  224,048  234,891  224,848  3.53  3.97  3.63  4.03 
+Total interest-bearing deposits  1,503,061  1,413,805  1,493,951  1,399,348  1.97  2.25  1.96  2.24 
+Total deposits in U.S. offices  2,100,167  1,986,520  2,079,473  1,964,940  1.40  1.60  1.41  1.59 
+Non-U.S. offices
+Noninterest-bearing  40,711  30,062  39,108  29,548 NA NA NA NA
+Interest-bearing
+Demand  446,602  391,621  432,590  379,059  2.17  2.37  2.12  2.46 
+Time  98,098  96,911  93,289  94,370  4.21  4.73  4.23  4.86 
+Total interest-bearing deposits  544,700  488,532  525,879  473,429  2.53  2.85  2.50  2.92 
+Total deposits in non-U.S. offices  585,411  518,594  564,987  502,977  2.37  2.69  2.32  2.76 
+Total deposits $ 2,685,578 $ 2,505,114 $ 2,644,460 $ 2,467,917  1.60 %  1.85 %  1.61 %  1.84 %
+(a) Includes Negotiable Order of Withdrawal accounts, and certain trust accounts.
+(b) Includes Money Market Deposit Accounts.
+Refer to Note 15 for additional information on deposits.
+55

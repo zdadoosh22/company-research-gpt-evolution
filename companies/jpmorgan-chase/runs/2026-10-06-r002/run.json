@@ -1,0 +1,98 @@
+{
+  "id": "2026-10-06-r002",
+  "legal_name": "JPMorgan Chase & Co.",
+  "ticker": "JPM",
+  "as_of": "2026-10-06",
+  "mode": "pilot",
+  "predecessor": "2026-10-06-r001",
+  "methodology_version": "1.0.0",
+  "methodology_file": "methodology/company-research-v1.0.0.md",
+  "methodology_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+  "status": "partial",
+  "request": {
+    "purpose": "Focused Astra audit revision of original implementation pilot; unchanged historical research cutoff",
+    "mode": "focused sector/evidence pilot",
+    "investor_context": "prospective buyer",
+    "cost_basis": null,
+    "portfolio_weight": null
+  },
+  "security": {
+    "legal_entity": "JPMorgan Chase & Co.",
+    "selected_security": "JPMorgan common equity; focused book-value pilot, not price-specific",
+    "trading_currency": "USD",
+    "reporting_currency": "USD",
+    "fiscal_year_end": "December 31",
+    "latest_reviewed_period": "2026-06-30"
+  },
+  "evidence_gaps": [
+    "Focused sector pilot, not a JPM thesis or recommendation.",
+    "TBV at June 30, not October. ROTCE is assumed long-run normalized and uses the tangible denominator.",
+    "Regulatory binding constraints require multiple capital and leverage ratios. Standardized CET1 alone is not distributable excess capital.",
+    "No verified dated security quote or capital-constrained distribution forecast: shareholder-return and entry-price conclusions withheld.",
+    "Justified P/TBV formula assumes prospective return on opening tangible common equity; issuer reported ROTCE uses average TCE. This steady-state assumption is not a validated forecast transition or current valuation."
+  ],
+  "assumptions": [
+    "Focused sector pilot, not a JPM thesis or recommendation.",
+    "TBV at June 30, not October. ROTCE is assumed long-run normalized and uses the tangible denominator.",
+    "Regulatory binding constraints require multiple capital and leverage ratios. Standardized CET1 alone is not distributable excess capital.",
+    "No verified dated security quote or capital-constrained distribution forecast: shareholder-return and entry-price conclusions withheld.",
+    "Justified P/TBV formula assumes prospective return on opening tangible common equity; issuer reported ROTCE uses average TCE. This steady-state assumption is not a validated forecast transition or current valuation."
+  ],
+  "review_findings": [
+    {
+      "id": "F03",
+      "severity": "P1",
+      "finding": "Blank and domain guards did not protect all dependent outputs.",
+      "disposition": "fixed",
+      "resolution": "Guard selected inputs, dates, sensitivities and terminal cash; bank selectors and supporting outputs; scope-compatible Unilever TTM and margins. 122 mutation checks recorded.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "F07",
+      "severity": "P2",
+      "finding": "Ownership sensitivity and bank capital comparison exceeded their scope.",
+      "disposition": "fixed",
+      "resolution": "Restrict 5% ownership scaling to zero fixed-cash buybacks; attribute Advanced versus Standardized total-capital comparison precisely.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "R03",
+      "severity": "P2",
+      "finding": "Invalid JPM selector could error or truncate fractional values.",
+      "disposition": "fixed",
+      "resolution": "Require a numeric integer in 1..4 before CHOOSE; blank, zero, negative, 5, fractional and text cases withheld.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "C02",
+      "severity": "P2",
+      "finding": "Bank helper bypassed finite/non-boolean numeric validation.",
+      "disposition": "fixed",
+      "resolution": "Validate all bank numeric inputs; NaN, infinity, boolean and invalid domains rejected.",
+      "resolved": true,
+      "material": true
+    }
+  ],
+  "checks": {
+    "arithmetic": true,
+    "source_traceability": true,
+    "visual_review": true,
+    "workbook_recalculation": true,
+    "export_roundtrip": true,
+    "native_excel": false,
+    "stronger_review": true
+  },
+  "continuation": "For bank return conclusions, construct and validate a finite capital-constrained equity/distribution path; current focused pilot is illustrative. Focused audit is complete.",
+  "model_identity": "Current chat model configuration not independently verified; do not claim these pilots ran on 6.1 Sol High.",
+  "stronger_review": "completed-with-limitations",
+  "stronger_review_required": true,
+  "audit_completed": "2026-10-07",
+  "conclusion_limits": [
+    "Reported average ROTCE is not automatically a long-run return on opening tangible equity.",
+    "No capital-constrained forward distribution path verified; steady-state values are illustrative.",
+    "No accepted price-dependent return or entry conclusion."
+  ]
+}

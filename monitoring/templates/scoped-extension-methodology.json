@@ -1,0 +1,26 @@
+{
+  "artifact_id": "short-horizon-research-addendum",
+  "version": "1",
+  "kind": "extension-methodology",
+  "base_methodology_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+  "status": "design-requires-scoped-review",
+  "document": "monitoring/DECISION-SCOPE.md",
+  "required_coverage": [
+    "security_identity", "event_window", "financial_resilience", "business_drivers",
+    "ownership_financing_claims", "source_facts", "model_assumptions",
+    "material_limitations", "contrary_evidence"
+  ],
+  "review_requirements": [
+    "Read dated primary evidence and record locations, hash identity and source classification",
+    "Challenge accounting, event-to-expectations-to-price mechanism and adverse response cases independently",
+    "Resolve material decision-affecting findings before accepting affected conclusions",
+    "Record requested and reported model identity without inventing backend confirmation",
+    "Bind acceptance to exact dossier, portfolio decision, instruction and portfolio state",
+    "Label scope distinctly from a complete long-term thesis"
+  ],
+  "exclusions": [
+    "Partial pilot relabelling", "Profitability certificates", "Automatic execution",
+    "Assumed API entitlements", "Invented missing observations"
+  ],
+  "actionable": false
+}

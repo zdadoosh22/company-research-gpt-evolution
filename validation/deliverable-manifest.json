@@ -1,0 +1,62 @@
+[
+  {
+    "review_copy": "C:\\Users\\aidan\\Documents\\Codex\\2026-10-06\\read-only-our-most-recent-chat\\outputs\\Company-research-2-audit.md",
+    "canonical": "C:\\Users\\aidan\\Documents\\Company research 2\\validation\\audit-report.md",
+    "sha256": "a80a28b60680d08b41f215ccee70c9045b1b0f8f30c5f901837eb6994618114a",
+    "status": "focused audit complete; analytical scope limited"
+  },
+  {
+    "review_copy": "C:\\Users\\aidan\\Documents\\Codex\\2026-10-06\\read-only-our-most-recent-chat\\outputs\\Company-research-2-workspace-guide.md",
+    "canonical": "C:\\Users\\aidan\\Documents\\Company research 2\\README.md",
+    "sha256": "1fdeb7b49c0f7771ddc8352181d01788487798990f9aeeb124f4868240249ac5",
+    "status": "focused audit complete; analytical scope limited"
+  },
+  {
+    "review_copy": "C:\\Users\\aidan\\Documents\\Codex\\2026-10-06\\read-only-our-most-recent-chat\\outputs\\Company-research-2-APP-full-report.pdf",
+    "canonical": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\applovin-corporation\\runs\\2026-10-06-r002\\outputs\\full-report.pdf",
+    "sha256": "9bee9d61fcf371971ec6e8887c685aefecc6cfc9ce6ed938e96a1894a4592d54",
+    "status": "focused audit complete; analytical scope limited"
+  },
+  {
+    "review_copy": "C:\\Users\\aidan\\Documents\\Codex\\2026-10-06\\read-only-our-most-recent-chat\\outputs\\Company-research-2-APP-thesis.pdf",
+    "canonical": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\applovin-corporation\\runs\\2026-10-06-r002\\outputs\\thesis.pdf",
+    "sha256": "916edf0d1b47df572a3cbe330d459fcb7a170eb460a8fe2f5ebc72ed0fb9110f",
+    "status": "focused audit complete; analytical scope limited"
+  },
+  {
+    "review_copy": "C:\\Users\\aidan\\Documents\\Codex\\2026-10-06\\read-only-our-most-recent-chat\\outputs\\Company-research-2-APP-valuation.xlsx",
+    "canonical": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\applovin-corporation\\runs\\2026-10-06-r002\\outputs\\valuation.xlsx",
+    "sha256": "63b629c4a0d4d4c85b9cd1d5151e67b0d82fc8674f9591bf4847d3a672da2921",
+    "status": "focused audit complete; analytical scope limited"
+  },
+  {
+    "review_copy": "C:\\Users\\aidan\\Documents\\Codex\\2026-10-06\\read-only-our-most-recent-chat\\outputs\\Company-research-2-JPM-pilot.pdf",
+    "canonical": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\jpmorgan-chase\\runs\\2026-10-06-r003\\outputs\\pilot.pdf",
+    "sha256": "aa885e812820cd84c70a23ae9cfeddf5d3fef6ac6fb99f6514734d32ea9db486",
+    "status": "partial focused bank extension; independently checked"
+  },
+  {
+    "review_copy": "C:\\Users\\aidan\\Documents\\Codex\\2026-10-06\\read-only-our-most-recent-chat\\outputs\\Company-research-2-JPM-valuation.xlsx",
+    "canonical": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\jpmorgan-chase\\runs\\2026-10-06-r003\\outputs\\valuation.xlsx",
+    "sha256": "147ba5fb2192bd40920281c92f7bc64d56cf5a9474a07b01cc7143c55a87d8ea",
+    "status": "partial focused bank extension; independently checked"
+  },
+  {
+    "review_copy": "C:\\Users\\aidan\\Documents\\Codex\\2026-10-06\\read-only-our-most-recent-chat\\outputs\\Company-research-2-ULVR-pilot.pdf",
+    "canonical": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\unilever-plc\\runs\\2026-10-06-r002\\outputs\\pilot.pdf",
+    "sha256": "579bf605b99c166fee1c40e1992823f2cfa3bb4d6c593080b8a6af61df0f063b",
+    "status": "focused audit complete; analytical scope limited"
+  },
+  {
+    "review_copy": "C:\\Users\\aidan\\Documents\\Codex\\2026-10-06\\read-only-our-most-recent-chat\\outputs\\Company-research-2-ULVR-valuation.xlsx",
+    "canonical": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\unilever-plc\\runs\\2026-10-06-r002\\outputs\\valuation.xlsx",
+    "sha256": "d9cdb13241a61ccfeaa3e9caf3fa4cbf331aa759a0824f1a9626bc3ba6903808",
+    "status": "focused audit complete; analytical scope limited"
+  },
+  {
+    "review_copy": "C:\\Users\\aidan\\Documents\\Codex\\2026-10-06\\read-only-our-most-recent-chat\\outputs\\Company-research-2-continuation.md",
+    "canonical": "C:\\Users\\aidan\\Documents\\Company research 2\\validation\\continuation.md",
+    "sha256": "80716f4e274cf5cabc82ce3e3ee33d92ddb3264461865428348459e8c5078a88",
+    "status": "precise continuation after completed focused audit"
+  }
+]

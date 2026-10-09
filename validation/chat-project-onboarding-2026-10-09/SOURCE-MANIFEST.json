@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-09",
+  "purpose": "Dated Chat onboarding reference copies; no live-state or analytical approval",
+  "sources": [
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "validation\\status.json",
+      "sha256": "c4c0c34f4deff103ac473445af1871eb5c917328eca90950f9b5d4d382e6d683"
+    },
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "validation\\continuation.md",
+      "sha256": "adf2427b7d6653a01c0eb36b7092c48aa73cc6b465050f638678f63a6b7023cc"
+    },
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "validation\\astra-audit.json",
+      "sha256": "ecbd4b28750ac09244c8b87d33b91c01f30d920f69d575fe4a8123a085403897"
+    },
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "validation\\observation-status.json",
+      "sha256": "c0bdc60487e43a2f4cf10f0a481b60f6737441685c859ec80ac74e2a2bafa7e1"
+    },
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "validation\\resume-2026-10-09.md",
+      "sha256": "87474df65f825f2c0dfb55efa04f74c2eb604a8b191af9eee0121765a47c455a"
+    },
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "monitoring\\decisions\\2026-10-09-jpm-review-disposition.md",
+      "sha256": "b26835e31bdc290788234ead570cd190974107a7d699f7baf84f78aa1f2ef53e"
+    },
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "monitoring\\decisions\\2026-10-09-discovery-review-disposition.md",
+      "sha256": "82b5b56f93dfd40a57d99457c6169e30791b470815565e840dadd01f7fed07cd"
+    },
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "monitoring\\studies\\2026-10-09-amd-discovery-screen.md",
+      "sha256": "e626e1cac3b3183756fa1130cdda8fc9934730fec2df7017a64508de31fa7698"
+    },
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "monitoring\\studies\\2026-10-09-uber-discovery-screen.md",
+      "sha256": "4f101e6c8a358b475263c96dca75fe3796a50176030e3305ac5f459d7ed21ff3"
+    },
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "monitoring\\studies\\2026-10-09-netflix-discovery-screen.md",
+      "sha256": "b0860623b243dfd57aa9015e46715981dc7a74cc021fdf84dfca53607cd4f251"
+    },
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "monitoring\\studies\\2026-10-09-netflix-opportunity-followup.md",
+      "sha256": "48a10b31d01c21beb4874b6b2d22114d0d601c2d61c8e260b0a3b8fa02645371"
+    },
+    {
+      "bundle": "PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "source": "validation\\netflix-followup-parent-checks-2026-10-09.json",
+      "sha256": "2eed860a8a1695d6ad858ceb3f5cf53a110198cae8b21f83d036cc6d6f43fe16"
+    },
+    {
+      "bundle": "APPROVED-RESEARCH-REFERENCE.txt",
+      "source": "AGENTS.md",
+      "sha256": "b3c06703373e3660971d32e5c64cfaf4d712c5e4266b70691b6616d8db86c68f"
+    },
+    {
+      "bundle": "APPROVED-RESEARCH-REFERENCE.txt",
+      "source": "methodology\\current.json",
+      "sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5"
+    },
+    {
+      "bundle": "APPROVED-RESEARCH-REFERENCE.txt",
+      "source": "methodology\\principles.md",
+      "sha256": "ee75607e99c43172efc73a22877cbf6e7b072d7204b017d4a647a77809c84b07"
+    },
+    {
+      "bundle": "APPROVED-RESEARCH-REFERENCE.txt",
+      "source": "methodology\\company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6"
+    },
+    {
+      "bundle": "APPROVED-RESEARCH-REFERENCE.txt",
+      "source": "workflows\\research.md",
+      "sha256": "6b20763316e6c47b0118f0489a499026e76fed34552b7f7a1905e4caf23e15b3"
+    },
+    {
+      "bundle": "APPROVED-RESEARCH-REFERENCE.txt",
+      "source": "workflows\\evidence.md",
+      "sha256": "5933e21ed258ca4a0b9d03d97b15d88e95f00195c3b8ca3082a6fa52c86f4d2b"
+    },
+    {
+      "bundle": "APPROVED-RESEARCH-REFERENCE.txt",
+      "source": "workflows\\model-review.md",
+      "sha256": "448aa9e8b3f20cc2bb8f41ec6007c9b3fabce9af399a3cc36d7e37b2beb4c11e"
+    },
+    {
+      "bundle": "APPROVED-RESEARCH-REFERENCE.txt",
+      "source": "validation\\acceptance.md",
+      "sha256": "66ca65b41c11e42ed06e8531426c967a4fc0bfebd6bdba3062c449e6656f329f"
+    },
+    {
+      "bundle": "APPROVED-RESEARCH-REFERENCE.txt",
+      "source": "lessons\\confirmed.md",
+      "sha256": "1e30d315aed33eb0a945b2c906cd9bdf1403788dc65f97a04189171782c88898"
+    },
+    {
+      "bundle": "APPROVED-RESEARCH-REFERENCE.txt",
+      "source": "monitoring\\DECISION-SCOPE.md",
+      "sha256": "b424a556978d65327aa6be45702691c824f894a550a6937e288f8b01031f00b8"
+    },
+    {
+      "bundle": "APPROVED-RESEARCH-REFERENCE.txt",
+      "source": "monitoring\\NEXT-RESEARCH-CYCLE.md",
+      "sha256": "87a46e635153ac988ca0ef87976e8c424bc8fcc86c16e72608468c77e01b54e2"
+    },
+    {
+      "bundle": "WORKFLOW-AND-OVERVIEW.txt",
+      "source": "validation\\chat-work-protocol-assessment-2026-10-09.md",
+      "sha256": "c90732bc5c0f903743d165b769ffb9176b7d5cff7e14be6fb521166a1e453fec"
+    },
+    {
+      "bundle": "WORKFLOW-AND-OVERVIEW.txt",
+      "source": "README.md",
+      "sha256": "80482830262b07ac754e62d9e1a6fe4f645d64f5aa6ea56e3579a862eda64434"
+    }
+  ]
+}

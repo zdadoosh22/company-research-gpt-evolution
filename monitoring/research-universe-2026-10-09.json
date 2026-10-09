@@ -1,0 +1,103 @@
+{
+  "created_at": "2026-10-09T12:49:43.325473+00:00",
+  "scope": "Small exploratory disclosure/research cohort, not a screened global universe, selection, allocation or performance claim",
+  "inclusion_basis": "Ordinary US listings with identifiable free primary evidence; different economic questions and scheduled disclosures. Exact ISA/order eligibility remains unverified. Selection is a transparent administrative research choice, not an empirically optimal universe.",
+  "shared_risks": [
+    "US market and USD exposure",
+    "growth valuation/multiple sensitivity",
+    "earnings-event gaps",
+    "manual delayed response",
+    "technology/consumer/macro demand interactions"
+  ],
+  "capital_committed_gbp": "0",
+  "actionable": false,
+  "existing_pilots": "APP/JPM/Unilever remain separate validation subjects; their partial statuses unchanged",
+  "candidates": [
+    {
+      "configuration": {
+        "company": "advanced-micro-devices",
+        "ticker": "AMD",
+        "cik": "0000002488",
+        "expected_name": "ADVANCED MICRO DEVICES INC",
+        "role": "discovery-only; not selected investment",
+        "research_context_paths": [
+          "monitoring/studies/2026-10-09-amd-discovery-screen.json",
+          "monitoring/studies/2026-10-09-amd-discovery-screen.md"
+        ]
+      },
+      "research_inclusion_reason": "AI accelerator/CPU economics, capacity commitments and contingent claims",
+      "screen_bindings": [
+        {
+          "path": "monitoring/studies/2026-10-09-amd-discovery-screen.json",
+          "sha256": "c91e4b682e833da41e3a0349884fa4c725160fab7b16c81a56c2336b75129fe1"
+        },
+        {
+          "path": "monitoring/studies/2026-10-09-amd-discovery-screen.md",
+          "sha256": "e626e1cac3b3183756fa1130cdda8fc9934730fec2df7017a64508de31fa7698"
+        }
+      ],
+      "identity_evidence": {
+        "path": "monitoring/studies/evidence/discovery-universe-2026-10-09/20261009T004020455975Z-AMD-9789d97cfb1b41fb58cc5fcebd13cfced084409dc3bbcfb6ca1382304f092493.json",
+        "sha256": "9789d97cfb1b41fb58cc5fcebd13cfced084409dc3bbcfb6ca1382304f092493"
+      }
+    },
+    {
+      "configuration": {
+        "company": "uber-technologies",
+        "ticker": "UBER",
+        "cik": "0001543151",
+        "expected_name": "Uber Technologies, Inc",
+        "role": "discovery-only; not selected investment",
+        "research_context_paths": [
+          "monitoring/studies/2026-10-09-uber-discovery-screen.json",
+          "monitoring/studies/2026-10-09-uber-discovery-screen.md"
+        ]
+      },
+      "research_inclusion_reason": "Platform operating leverage, insurance cash timing and acquisition funding",
+      "screen_bindings": [
+        {
+          "path": "monitoring/studies/2026-10-09-uber-discovery-screen.json",
+          "sha256": "abc660fbf5d66facc5cd928440b40ca89032f4a1b36c4329bec7de5e6d507c9e"
+        },
+        {
+          "path": "monitoring/studies/2026-10-09-uber-discovery-screen.md",
+          "sha256": "4f101e6c8a358b475263c96dca75fe3796a50176030e3305ac5f459d7ed21ff3"
+        }
+      ],
+      "identity_evidence": {
+        "path": "monitoring/studies/evidence/discovery-universe-2026-10-09/20261009T004020693876Z-UBER-c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643.json",
+        "sha256": "c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643"
+      }
+    },
+    {
+      "configuration": {
+        "company": "netflix-inc",
+        "ticker": "NFLX",
+        "cik": "0001065280",
+        "expected_name": "NETFLIX INC",
+        "role": "discovery-only; not selected investment",
+        "research_context_paths": [
+          "monitoring/studies/2026-10-09-netflix-discovery-screen.json",
+          "monitoring/studies/2026-10-09-netflix-discovery-screen.md"
+        ]
+      },
+      "research_inclusion_reason": "Subscription/advertising monetization, content cash cycle and one-off normalization",
+      "screen_bindings": [
+        {
+          "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.json",
+          "sha256": "3cdb396f41ec75abe7bbc2c2d2aa87c6ba3b9edd83f367d1c196ba55ffec092b"
+        },
+        {
+          "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.md",
+          "sha256": "b0860623b243dfd57aa9015e46715981dc7a74cc021fdf84dfca53607cd4f251"
+        }
+      ],
+      "identity_evidence": {
+        "path": "monitoring/studies/evidence/discovery-universe-2026-10-09/20261009T004021003036Z-NFLX-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+        "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d"
+      }
+    }
+  ],
+  "discovery_limit": "SEC metadata discovers accessions only, not comprehensive issuer/news coverage or materiality. Source checking does not itself read every filing. Initial baselines are not new events.",
+  "review_status": "Independent discovery challenge pending; new analytical revisions remain separate records"
+}

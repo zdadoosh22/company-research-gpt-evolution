@@ -1,0 +1,193 @@
+{
+  "name": "bank-finite-equity-path-neutral-repurchase-price",
+  "research_cutoff": "2026-10-06",
+  "classification": "entirely illustrative controlled fixture; no JPM forecast inputs",
+  "units": {
+    "equity_earnings_distributions": "USD million",
+    "shares": "million",
+    "per_share": "USD"
+  },
+  "inputs": {
+    "valuation_date": "2026-10-06",
+    "opening_TCE": 1000,
+    "opening_shares": 10,
+    "assumed_entry_price": 200,
+    "cost_of_equity": 0.1,
+    "periods": [
+      {
+        "payment_date": "2027-10-06",
+        "earnings_rate_on_opening_TCE": 0.14,
+        "required_TCE_growth": 0.06,
+        "dividend_fraction_of_opening_TCE": 0.04
+      },
+      {
+        "payment_date": "2028-10-06",
+        "earnings_rate_on_opening_TCE": 0.16,
+        "required_TCE_growth": 0.05,
+        "dividend_fraction_of_opening_TCE": 0.05
+      },
+      {
+        "payment_date": "2029-10-06",
+        "earnings_rate_on_opening_TCE": 0.18,
+        "required_TCE_growth": 0.04,
+        "dividend_fraction_of_opening_TCE": 0.06
+      },
+      {
+        "payment_date": "2030-10-06",
+        "earnings_rate_on_opening_TCE": 0.18,
+        "required_TCE_growth": 0.04,
+        "dividend_fraction_of_opening_TCE": 0.06
+      },
+      {
+        "payment_date": "2031-10-06",
+        "earnings_rate_on_opening_TCE": 0.18,
+        "required_TCE_growth": 0.04,
+        "dividend_fraction_of_opening_TCE": 0.06
+      }
+    ],
+    "terminal_return_on_opening_TCE": 0.18,
+    "terminal_TCE_growth": 0.04,
+    "day_count": "ACT/365",
+    "distribution_order": "earnings/retention then dividend to beginning shares, then buyback at fair ex-dividend price",
+    "buyback_price_rule": "Q_t=(post_distribution_company_value_t + buyback_dollars_t)/beginning_shares_t",
+    "other_equity_changes": 0,
+    "issuance": 0,
+    "preferred_claims": 0,
+    "SBC": 0,
+    "regulatory_floor_status": "illustrative required TCE path, not actual JPM regulatory capital"
+  },
+  "expected": {
+    "rows": [
+      {
+        "date": "2027-10-06",
+        "r": 0.14,
+        "g": 0.06,
+        "B": 1000.0,
+        "E": 140.0,
+        "retain": 60.0,
+        "D": 40.0,
+        "R": 40.0,
+        "close": 1060.0,
+        "post_value": 2466.265006378204,
+        "Sbegin": 10.0,
+        "DPS": 4.0,
+        "buyprice": 250.62650063782039,
+        "repurchased": 0.15960004188784443,
+        "Send": 9.840399958112156,
+        "TBVPS": 107.71919886509949
+      },
+      {
+        "date": "2028-10-06",
+        "r": 0.16,
+        "g": 0.05,
+        "B": 1060.0,
+        "E": 169.6,
+        "retain": 53.0,
+        "D": 53.0,
+        "R": 63.599999999999994,
+        "close": 1113.0,
+        "post_value": 2596.999999999999,
+        "Sbegin": 9.840399958112156,
+        "DPS": 5.385959943254974,
+        "buyprice": 270.3751891513996,
+        "repurchased": 0.2352286842576612,
+        "Send": 9.605171273854495,
+        "TBVPS": 115.87508106488559
+      },
+      {
+        "date": "2029-10-06",
+        "r": 0.18,
+        "g": 0.04,
+        "B": 1113.0,
+        "E": 200.34,
+        "retain": 44.52,
+        "D": 66.78,
+        "R": 89.03999999999999,
+        "close": 1157.52,
+        "post_value": 2700.879999999999,
+        "Sbegin": 9.605171273854495,
+        "DPS": 6.952504863893136,
+        "buyprice": 290.4602032026465,
+        "repurchased": 0.306548019378335,
+        "Send": 9.29862325447616,
+        "TBVPS": 124.48294422970565
+      },
+      {
+        "date": "2030-10-06",
+        "r": 0.18,
+        "g": 0.04,
+        "B": 1157.52,
+        "E": 208.3536,
+        "retain": 46.3008,
+        "D": 69.4512,
+        "R": 92.60159999999999,
+        "close": 1203.8208,
+        "post_value": 2808.9151999999995,
+        "Sbegin": 9.29862325447616,
+        "DPS": 7.46897665378234,
+        "buyprice": 312.0372468691288,
+        "repurchased": 0.29676457195136685,
+        "Send": 9.001858682524793,
+        "TBVPS": 133.7302486581981
+      },
+      {
+        "date": "2031-10-06",
+        "r": 0.18,
+        "g": 0.04,
+        "B": 1203.8208,
+        "E": 216.68774399999998,
+        "retain": 48.152832,
+        "D": 72.229248,
+        "R": 96.305664,
+        "close": 1251.973632,
+        "post_value": 2921.2718079999995,
+        "Sbegin": 9.001858682524793,
+        "DPS": 8.023814919491885,
+        "buyprice": 335.2171566365498,
+        "repurchased": 0.2872933622082381,
+        "Send": 8.714565320316554,
+        "TBVPS": 143.6644957013785
+      }
+    ],
+    "years": [
+      1.0,
+      2.0027397260273974,
+      3.0027397260273974,
+      4.002739726027397,
+      5.002739726027397
+    ],
+    "TV": 2921.2718079999995,
+    "PV": 2314.7863694347307,
+    "PVPS": 231.47863694347308,
+    "TVPS": 335.2171566365499,
+    "holder_cashflows": [
+      4.0,
+      5.385959943254974,
+      6.952504863893136,
+      7.46897665378234,
+      343.24097155604176
+    ],
+    "xirr_at_PV": 0.09999999999999998,
+    "xirr_at_200": 0.13396102384469388,
+    "NPVresidual": -1.7053025658242404e-13
+  },
+  "tolerances": {
+    "equity_rollforward_absolute_millions": 1e-09,
+    "share_PV_reconciliation_absolute_dollars": 1e-09,
+    "xirr_absolute": 1e-10
+  },
+  "formulas": {
+    "earnings": "r_t * B_begin",
+    "retained": "g_t * B_begin",
+    "dividends": "d_t * B_begin",
+    "buybacks": "earnings-retained-dividends",
+    "closing_TCE": "B_begin+earnings-dividends-buybacks",
+    "terminal_value": "B_5*(r_terminal-g_terminal)/(k-g_terminal)",
+    "backward_value": "E_(t-1)=(D_t+R_t+E_t)/(1+k)^delta_years_t",
+    "shares_bought": "R_t / Q_t",
+    "closing_shares": "S_begin-shares_bought",
+    "dividend_per_share": "D_t / S_begin",
+    "terminal_value_per_share": "terminal_value / S_5",
+    "xirr": "-entry_price + sum(holder_cashflow_t/(1+x)^ACT365_t)=0"
+  }
+}

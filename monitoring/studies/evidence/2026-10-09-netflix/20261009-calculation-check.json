@@ -1,0 +1,23 @@
+{
+  "h1_fcf_m": "6619.243",
+  "q2_fcf_m": "1525.168",
+  "q2_fcf_vs_prior_pct": "-32.73401903263209473182353644245819714391",
+  "q3_guided_opincome_yoy_pct": "31.40394088669950738916256157635467980300",
+  "q3_guided_margin_change_pp": "5.0",
+  "diluted_weighted_shares_yoy_pct": "-2.012612602254631998298390944680459664390",
+  "ads_guide_share_of_fy_midpoint_pct": "5.85937500",
+  "q4_implied_given_july_guidance": [
+    {
+      "fy_revenue_m": "51000",
+      "q4_revenue_m": "13330.305",
+      "q4_operating_income_m": "3647.393",
+      "q4_margin_pct": "27.36166201748572144448307821914052229113"
+    },
+    {
+      "fy_revenue_m": "51400",
+      "q4_revenue_m": "13730.305",
+      "q4_operating_income_m": "3773.393",
+      "q4_margin_pct": "27.48222271828630172454289981176674516699"
+    }
+  ]
+}

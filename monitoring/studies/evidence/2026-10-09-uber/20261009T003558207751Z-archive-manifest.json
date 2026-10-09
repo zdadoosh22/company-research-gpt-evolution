@@ -1,0 +1,52 @@
+[
+  {
+    "id": "deliveryhero-offer",
+    "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Acquisition-Offer-for-Delivery-Hero/default.aspx",
+    "accessed_at": "2026-10-09T00:35:56.205076+00:00",
+    "http_status": 200,
+    "final_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Acquisition-Offer-for-Delivery-Hero/default.aspx",
+    "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556205076Z-deliveryhero-offer-1c0a428604d0f3e8.html",
+    "sha256": "1c0a428604d0f3e889109f483cb1ad465c5947648cdebcea9631be916c2061d4",
+    "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556205076Z-deliveryhero-offer-1c0a428604d0f3e8.txt",
+    "text_sha256": "ec3cee3f264d1761a18d4d477d744d195099410e8693f73203895cbd70a7c7bd"
+  },
+  {
+    "id": "deliveryhero-offerdocument",
+    "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Publishes-Offer-Document-for-its-Takeover-Offer-for-Delivery-Hero/default.aspx",
+    "accessed_at": "2026-10-09T00:35:56.600238+00:00",
+    "http_status": 200,
+    "final_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Publishes-Offer-Document-for-its-Takeover-Offer-for-Delivery-Hero/default.aspx",
+    "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556600238Z-deliveryhero-offerdocument-f9e2928e37ffd97b.html",
+    "sha256": "f9e2928e37ffd97b903d67ec38414eaab32977fbb25b01bdcd4de0e5a77c4dd2",
+    "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556600238Z-deliveryhero-offerdocument-f9e2928e37ffd97b.txt",
+    "text_sha256": "a6a1744ed574fbf1156cebbbf562f697cb2bd05d294a784c1bbd8cda294cb142"
+  },
+  {
+    "id": "ftc-uber-case",
+    "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2423092-uber-ftc-v",
+    "accessed_at": "2026-10-09T00:35:56.895276+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "events",
+    "url": "https://investor.uber.com/news-events/events-and-presentations/default.aspx",
+    "accessed_at": "2026-10-09T00:35:57.396645+00:00",
+    "http_status": 200,
+    "final_url": "https://investor.uber.com/news-events/default.aspx#event",
+    "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557396645Z-events-2cca076de5f5ca2e.html",
+    "sha256": "2cca076de5f5ca2e756934e0b89c0b22c685eba2817cc7f36ecb1b894763ca13",
+    "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557396645Z-events-2cca076de5f5ca2e.txt",
+    "text_sha256": "1493d9f0b5f49fbde70df69e4bde2c67fe1f5d52600e6d025184aabd5c30e1ec"
+  },
+  {
+    "id": "reports",
+    "url": "https://investor.uber.com/financials/default.aspx",
+    "accessed_at": "2026-10-09T00:35:57.949894+00:00",
+    "http_status": 200,
+    "final_url": "https://investor.uber.com/financials/default.aspx",
+    "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557949894Z-reports-25ced59ab50ddffa.html",
+    "sha256": "25ced59ab50ddffaf35444020a66fc2662fe9745ad9caeee578fae9f66bc75c3",
+    "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557949894Z-reports-25ced59ab50ddffa.txt",
+    "text_sha256": "78a29bbf03f1a0b9cd32fa5df7b2b14a726fa385ebddacb462940710cd5dcde5"
+  }
+]

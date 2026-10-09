@@ -1,0 +1,17 @@
+{
+  "original_pilots": {
+    "checked": 108,
+    "mismatches": []
+  },
+  "inspected_reference_files": {
+    "checked": 10,
+    "mismatches": []
+  },
+  "methodology_unchanged": true,
+  "source_register_errors": {
+    "APP": [],
+    "JPM": [],
+    "ULVR": []
+  },
+  "checked_at": "2026-10-06T23:30:56.158616+00:00"
+}

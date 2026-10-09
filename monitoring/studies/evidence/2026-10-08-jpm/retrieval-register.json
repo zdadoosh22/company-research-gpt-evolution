@@ -1,0 +1,102 @@
+[
+  {
+    "id": "event",
+    "url": "https://jpmorganchaseco.gcs-web.com/news-releases/news-release-details/jpmorganchase-host-third-quarter-2026-earnings-call/",
+    "retrieved_utc": "2026-10-08T16:37:36.074716+00:00",
+    "status": "failed",
+    "error": "The read operation timed out",
+    "http_status": null
+  },
+  {
+    "id": "q2-10q",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/jpm-20260630.htm",
+    "retrieved_utc": "2026-10-08T16:37:36.075724+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden",
+    "http_status": 403
+  },
+  {
+    "id": "capital-note21",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/R29.htm",
+    "retrieved_utc": "2026-10-08T16:37:36.078165+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden",
+    "http_status": 403
+  },
+  {
+    "id": "q2-release",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfexhibit991narrative.htm",
+    "retrieved_utc": "2026-10-08T16:37:36.078165+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden",
+    "http_status": 403
+  },
+  {
+    "id": "q2-supplement",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfex992supplement.htm",
+    "retrieved_utc": "2026-10-08T16:37:36.332394+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden",
+    "http_status": 403
+  },
+  {
+    "id": "q2-presentation",
+    "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/9e8f3cef-bd2a-4140-b50f-83c4fba3f23c.pdf",
+    "retrieved_utc": "2026-10-08T16:37:36.406963+00:00",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "final_url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/9e8f3cef-bd2a-4140-b50f-83c4fba3f23c.pdf",
+    "status": "archived",
+    "file": "q2-presentation.pdf",
+    "sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+    "bytes": 368921
+  },
+  {
+    "id": "q2-transcript",
+    "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/2Q26-earnings-transcript.pdf",
+    "retrieved_utc": "2026-10-08T16:37:36.439388+00:00",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "final_url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/2Q26-earnings-transcript.pdf",
+    "status": "archived",
+    "file": "q2-transcript.pdf",
+    "sha256": "df9042c4c156aa33eed0cec2f5727598504e88e038be31140d98452dc9054540",
+    "bytes": 286751
+  },
+  {
+    "id": "dividend",
+    "url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-declares-increased-common-stock-dividend-9-15",
+    "retrieved_utc": "2026-10-08T16:37:36.749477+00:00",
+    "http_status": 200,
+    "content_type": "text/html;charset=utf-8",
+    "final_url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-declares-increased-common-stock-dividend-9-15",
+    "status": "archived",
+    "file": "dividend.html",
+    "sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+    "bytes": 101695
+  },
+  {
+    "id": "price-history",
+    "url": "https://stockanalysis.com/stocks/jpm/history/",
+    "retrieved_utc": "2026-10-08T16:37:36.861889+00:00",
+    "http_status": 200,
+    "content_type": "text/html",
+    "final_url": "https://stockanalysis.com/stocks/jpm/history/",
+    "status": "archived",
+    "file": "price-history.html",
+    "sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+    "bytes": 111931
+  },
+  {
+    "id": "sec-submissions",
+    "url": "https://data.sec.gov/submissions/CIK0000019617.json",
+    "retrieved_utc": "2026-10-08T16:37:36.956335+00:00",
+    "http_status": 200,
+    "content_type": "application/json",
+    "final_url": "https://data.sec.gov/submissions/CIK0000019617.json",
+    "status": "archived",
+    "file": "sec-submissions.json",
+    "sha256": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada",
+    "bytes": 4641180
+  }
+]

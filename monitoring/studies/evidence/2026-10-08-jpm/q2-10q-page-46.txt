@@ -1,0 +1,48 @@
+Selected capital and RWA data
+The following tables present the Firm’s risk-based capital metrics under both the Standardized and Advanced 
+approaches and leverage-based capital metrics. Refer to Capital Risk Management on pages 89–99 of 
+JPMorganChase’s 2025 Form 10-K for a further discussion of these capital metrics. Refer to Note 21 for JPMorgan 
+Chase Bank, N.A.’s risk-based and leverage-based capital metrics. 
+Standardized Advanced
+(in millions, except ratios)
+June 30, 
+2026
+December 31, 
+2025
+Capital ratio 
+requirements(a)
+June 30, 
+2026
+December 31, 
+2025
+Capital ratio 
+requirements(a)
+Risk-based capital metrics:
+CET1 capital $ 302,619 $ 288,469 $ 302,619 $ 288,469 
+Tier 1 capital  322,720  307,630  322,720  307,630 
+Total capital  362,723  343,843  346,248  328,962 (b)
+Risk-weighted assets  2,132,428  1,981,692  2,123,862  2,045,249 (b)
+CET1 capital ratio  14.2 %  14.6 %  11.5 %  14.2 %  14.1 %  11.5 %
+Tier 1 capital ratio  15.1  15.5  13.0  15.2  15.0  13.0 
+Total capital ratio  17.0  17.4  15.0  16.3  16.1  15.0 
+(a) Represents minimum requirements and regulatory buffers applicable to the Firm. Refer to Note 21 for additional information.
+(b) Includes the impacts of certain assets associated with First Republic to which the Standardized approach has been applied as permitted by 
+the transition provisions in the U.S. capital rules. Refer to page 94 and Note 34 of JPMorganChase’s 2025 Form 10-K for additional information 
+on the First Republic acquisition.
+Three months ended
+(in millions, except ratios) June 30, 2026 December 31, 2025
+Capital ratio 
+requirements(b)
+Leverage-based capital metrics:
+Adjusted average assets(a) $ 4,921,814 $ 4,472,394 
+Tier 1 leverage ratio  6.6 %  6.9 %  4.0 %
+Total leverage exposure $ 5,844,422 $ 5,302,001 
+SLR  5.5 %  5.8 %  4.3 %
+(a) Adjusted average assets, for purposes of calculating the leverage ratios, includes quarterly average assets adjusted for on-balance sheet 
+assets that are subject to deduction from Tier 1 capital, predominantly goodwill (inclusive of estimated equity method goodwill) and other 
+intangible assets.
+(b) Represents minimum requirements and regulatory buffers applicable to the Firm for the quarter ended June 30, 2026. The current 
+requirement reflects the eSLR final rule which the Firm early adopted effective January 1, 2026. For the year ended December 31, 2025, the 
+SLR requirement was 5.0%. Refer to Key Regulatory Developments on pages 44-45 and Note 21 for additional information related to the eSLR 
+final rule.
+46

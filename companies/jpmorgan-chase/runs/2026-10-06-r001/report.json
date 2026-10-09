@@ -1,0 +1,60 @@
+{
+  "title": "JPMorgan - bank accounting pilot",
+  "status": "Focused validation | not a full thesis",
+  "sections": [
+    {
+      "title": "Bank-specific substitution",
+      "blocks": [
+        {
+          "text": "A bank uses deposits and funding as part of its operating franchise. Customer-deposit inflows are not an operating-company owner free cash flow, and cash/debt adjustments from industrial-company enterprise value cannot be applied without regard to regulatory capital. Use equity earnings, tangible/common book and capital constraints."
+        },
+        {
+          "text": "The Q2 2026 supplement reports tangible book per share of $113.35; TBV excludes specified intangible claims and uses the tangible common-equity denominator. Use ROTCE with tangible book; do not mix ROE on total common equity with a tangible denominator. Reported quarterly ROTCE was 29%, but the release includes $4.6bn of Visa gains and $1bn of other investment gains; excluding significant items reduced net income from $21.2bn to $16.9bn. A quarterly annualisation is not a sustainable return. [j1 note2d; j2 pp2,10]"
+        },
+        {
+          "table": [
+            [
+              "Illustrative long-run case",
+              "ROTCE / ke / g",
+              "Conditional value"
+            ],
+            [
+              "Bear",
+              "14% / 11% / 3%",
+              "$155.86"
+            ],
+            [
+              "Base",
+              "18% / 10% / 4%",
+              "$264.48"
+            ],
+            [
+              "Bull",
+              "22% / 9% / 4%",
+              "$408.06"
+            ]
+          ]
+        },
+        {
+          "text": "Value = TBV per share x (sustainable ROTCE - growth) / (equity cost - growth). Reinvestment fraction is growth / ROTCE. The arithmetic reproduces an equity residual-return / steady-state dividend relationship; it does not establish that regulators permit those distributions. These are analyst assumptions and dated June book inputs, not an October fair-value recommendation."
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Capital and return constraints",
+      "blocks": [
+        {
+          "text": "Standardized estimated CET1 was 14.1%, down from 15.1% a year earlier. The supplement explicitly says the Advanced total-capital ratio was more binding at June 2026. Capital adequacy therefore cannot be represented solely by a percentage buffer in standardized CET1. Distribution analysis also needs the applicable requirements, risk-weighted-asset growth, leverage constraints, stress buffers and management policy. [j2 capital p9]"
+        },
+        {
+          "text": "The Q2 declared dividend was $1.50 per share. Multiplying it by four is a run-rate observation, not a verified five-year cash-flow schedule. No current security quote, distribution forecast or dated bank-return model is approved in this focused pilot; price-specific prospective returns and entry prices are withheld. Generic dated-dividend/ownership arithmetic is separately tested with controlled fixtures."
+        },
+        {
+          "text": "The workbook retains the reported TBV and exposes the What-if sustainable ROTCE, equity cost and growth assumptions. The Base arithmetic is $264.48; changing the What-if ROTCE from 18% to 19% raises it to $283.37. Those results validate formula behaviour, not investment merit. Stronger sector review remains pending."
+        }
+      ],
+      "page_break": false
+    }
+  ]
+}

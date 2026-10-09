@@ -1,0 +1,142 @@
+{
+  "kind": "bank",
+  "title": "JPMorgan | bank substitution pilot",
+  "as_of": "2026-10-06",
+  "currency": "USD",
+  "tbv": 113.35,
+  "price": null,
+  "source_actuals": [
+    {
+      "metric": "Tangible book per share",
+      "period": "2026-Q2",
+      "value": 113.35,
+      "unit": "USD/share",
+      "scope": "tangible common equity",
+      "status": "verified-reported",
+      "source_id": "j2",
+      "location": "financial highlights p2; reconciliation p10",
+      "currency": "USD",
+      "source_raw_value": 113.35,
+      "source_raw_unit": "USD/share",
+      "conversion_to_working_unit": 1
+    },
+    {
+      "metric": "Q2 ROTCE reported",
+      "period": "2026-Q2",
+      "value": 0.29,
+      "unit": "ratio",
+      "scope": "annualised quarterly, not sustainable",
+      "status": "verified-reported",
+      "source_id": "j1",
+      "location": "headline / significant items note2d",
+      "currency": "not-applicable",
+      "source_raw_value": 28.999999999999996,
+      "source_raw_unit": "percent",
+      "conversion_to_working_unit": 0.01
+    },
+    {
+      "metric": "CET1 standardized estimated",
+      "period": "2026-Q2",
+      "value": 0.141,
+      "unit": "ratio",
+      "scope": "regulatory capital",
+      "status": "verified-reported",
+      "source_id": "j2",
+      "location": "capital p9",
+      "currency": "not-applicable",
+      "source_raw_value": 14.099999999999998,
+      "source_raw_unit": "percent",
+      "conversion_to_working_unit": 0.01
+    },
+    {
+      "metric": "Cash dividend declared",
+      "period": "2026-Q2",
+      "value": 1.5,
+      "unit": "USD/share",
+      "scope": "quarterly distribution",
+      "status": "verified-reported",
+      "source_id": "j2",
+      "location": "financial highlights p2",
+      "currency": "USD",
+      "source_raw_value": 1.5,
+      "source_raw_unit": "USD/share",
+      "conversion_to_working_unit": 1
+    },
+    {
+      "metric": "CET1 standardized finalized",
+      "period": "2026-Q2",
+      "value": 0.142,
+      "unit": "ratio",
+      "scope": "regulatory capital; finalized",
+      "source_id": "j3",
+      "location": "Capital risk management pp44,46; Note21 pp177-178",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Common dividend newly declared",
+      "period": "2026-09-15",
+      "value": 1.65,
+      "unit": "USD/share",
+      "scope": "payable October31, record October6; buyer eligibility depends on ex-date",
+      "source_id": "j5",
+      "location": "Issuer declaration",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Advanced total capital",
+      "period": "2026-Q2",
+      "value": 346248,
+      "unit": "USD million",
+      "scope": "regulatory numerator; finalized",
+      "source_id": "j4",
+      "location": "Note21 finalized table",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Advanced RWA",
+      "period": "2026-Q2",
+      "value": 2123862,
+      "unit": "USD million",
+      "scope": "Advanced approach denominator; finalized",
+      "source_id": "j4",
+      "location": "Note21 finalized table",
+      "status": "verified-reported"
+    }
+  ],
+  "forecast_dates": [
+    "2027-10-06",
+    "2028-10-06",
+    "2029-10-06",
+    "2030-10-06",
+    "2031-10-06"
+  ],
+  "cases": {
+    "Bear": {
+      "roe": 0.14,
+      "k": 0.11,
+      "g": 0.03
+    },
+    "Base": {
+      "roe": 0.18,
+      "k": 0.1,
+      "g": 0.04
+    },
+    "Bull": {
+      "roe": 0.22,
+      "k": 0.09,
+      "g": 0.04
+    },
+    "What-if": {
+      "roe": 0.18,
+      "k": 0.1,
+      "g": 0.04
+    }
+  },
+  "limitations": [
+    "Focused sector pilot, not a JPM thesis or recommendation.",
+    "TBV at June 30, not October. ROTCE is assumed long-run normalized and uses the tangible denominator.",
+    "Regulatory binding constraints require multiple capital and leverage ratios. Standardized CET1 alone is not distributable excess capital.",
+    "No verified dated security quote or capital-constrained distribution forecast: shareholder-return and entry-price conclusions withheld.",
+    "Justified P/TBV formula assumes prospective return on opening tangible common equity; issuer reported ROTCE uses average TCE. This steady-state assumption is not a validated forecast transition or current valuation."
+  ]
+}

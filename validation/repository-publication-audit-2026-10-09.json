@@ -1,0 +1,2386 @@
+{
+  "checked_at": "2026-10-09T16:02:01.174611+00:00",
+  "git_root": "C:\\Users\\aidan\\Documents\\Company research 2",
+  "initial_parent_project_tracked_files": 0,
+  "new_standalone_history": true,
+  "staged_files": 394,
+  "total_staged_bytes": 92407943,
+  "protected_files_verified": 110,
+  "protected_mismatches": [],
+  "forbidden_paths": [],
+  "credential_pattern_hits": [],
+  "limitations": "Pattern checks and path exclusions are publication controls, not an exhaustive security or investment audit. No credential files read.",
+  "excluded": [
+    "state/",
+    "work/",
+    "credentials and key/database files",
+    "validation/final-goal-checkpoint-2026-10-09.json (embedded operational snapshot)",
+    "validation/usage.json (account-level quota snapshot)"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 179,
+      "git_blob": "b4c81e639fee99dcc48abdbdcbfd3918a12a86e8",
+      "sha256": "416d33254f1569b8bda4565b529ec983be6662c4c0904cf438dd1abb4e0d36f2"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 760,
+      "git_blob": "34333f866afb75538dd280989eedda5ab4e400f9",
+      "sha256": "fa96010b7e3e87fb1d233ee199be7c36a973e6b055dd423b1e6e17b12d1bc8da"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 5637,
+      "git_blob": "5a335e37269ee892daa62a9dde285ce06dcb46dc",
+      "sha256": "b3c06703373e3660971d32e5c64cfaf4d712c5e4266b70691b6616d8db86c68f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3839,
+      "git_blob": "3a4f799bac1c512e7b82bf7966d7611e0bae6c07",
+      "sha256": "80482830262b07ac754e62d9e1a6fe4f645d64f5aa6ea56e3579a862eda64434"
+    },
+    {
+      "path": "REPOSITORY.md",
+      "bytes": 1814,
+      "git_blob": "65770c9bd2609a8dce3deb8524bb1d6a6c64bf6b",
+      "sha256": "af6e4d2c1cb399b5a8cd9d2d881aefa7fed754844cd6fd762f92465cf974e8e2"
+    },
+    {
+      "path": "companies/applovin-corporation/index.json",
+      "bytes": 364,
+      "git_blob": "784d424dc70154a7d8b49a0bbee0446cfc6d450c",
+      "sha256": "4ce0d5041796e0bf37175b0e8fbbd647c86e3692829743b69396abe74ffee87d"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/model.json",
+      "bytes": 29196,
+      "git_blob": "454847b9dfdae210a647dc9907ab8e16b36d87f0",
+      "sha256": "3da48d79e0fd6c32539466e3fb315fc291e85c8c5105c66112740d41b461f911"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/observations.json",
+      "bytes": 19650,
+      "git_blob": "77857058e5bd0bdaa838563e2203380bda9c87ed",
+      "sha256": "11cb0596b0a8a9c4b7b746c7f189d2e7ba72f2b6de1c5b56e6c17564b38514b3"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/outputs/full-report.pdf",
+      "bytes": 44521,
+      "git_blob": "7c774a74c12cdd2eb0c29943e2e2d20b50fe9ba5",
+      "sha256": "e3d20c7dd10a8ca75a9e6da2f9f10995da327c5bf87ebc0432dd31766122c670"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/outputs/thesis.pdf",
+      "bytes": 13772,
+      "git_blob": "0ac752da1e82f3c6a2db7ec6f8bb7fff37e9a62a",
+      "sha256": "4c745f0ca21140af77b9c3f2373020be16a55599e9daa3f2c050362c2b725c38"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/outputs/valuation.xlsx",
+      "bytes": 34698,
+      "git_blob": "dd6ac654302449ebbac9da34a07046c7b08cf80c",
+      "sha256": "a28816349e335ed699189f70578ce68bf8302826fa182ff63f9d7c48447da895"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/outputs/valuation.xlsx.inspect.ndjson",
+      "bytes": 511325,
+      "git_blob": "18955e5cdc1f95094b49bd7320f06dfa9c79a5d8",
+      "sha256": "34c208b9cca4b46312e441bfeeec11ab02465fcd15e2578528261318cc5d6959"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/report.json",
+      "bytes": 31237,
+      "git_blob": "afab2d042f93537b6642785b81c796e03983ed28",
+      "sha256": "c2233ec6f596fc83305592eae6e3370f348f33d58a178d7adf377984c0d2411e"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/reviewed-results.json",
+      "bytes": 14509,
+      "git_blob": "ca563c4f0468d2eecf2f94e963ed02873003dc07",
+      "sha256": "fef24511cc05ddc5dec28f68eab8db11561e393a17711992e4b0cafe98d2d504"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/run.json",
+      "bytes": 3350,
+      "git_blob": "8011b8547c3746da3dc0394efaa5917464dd0399",
+      "sha256": "95f17251eff459554c7d5c3d4875145364e9b10f6ed04f9c9ba540ab953d0f89"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources.json",
+      "bytes": 6654,
+      "git_blob": "09f0555592968bcad6519ec046a88007c4cc694e",
+      "sha256": "5e25e3591e8cae8b0ec54891a865e54d2e47916a161ffed41d1bba8d25704b83"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/2022-10k.htm",
+      "bytes": 3338285,
+      "git_blob": "86a065cdb8f6ddf379a15ef78efc11e6e14b59e8",
+      "sha256": "0e62285636e4f85b56dd0483b87ccebdf0ce0de41a3b568d500e24ca70ea8334"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/2024-10k.htm",
+      "bytes": 2315372,
+      "git_blob": "5c3c10f5e2d0c1c2acc0991df853a152575030e9",
+      "sha256": "14717f762ce225c21e83dca28d201e663649f3f867d5a0ab97b8a61f80ec78fb"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/2025-10k.htm",
+      "bytes": 2009847,
+      "git_blob": "be566a0081387918e2ba1968e4bb47475f12fabc",
+      "sha256": "15425f02aa827e7901decca4cb5032d8075bb1c455aab2363481722ec12aac4f"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/2025-results.html",
+      "bytes": 300342,
+      "git_blob": "a5e5601c97fa5cb8e8d2af3b4ea38f27c76a4d4c",
+      "sha256": "7a1ab9e1fd8953fa1e3d16bd7a45c73281b348ee7457381fb6c3dc358eae247e"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/2026-proxy.htm",
+      "bytes": 1074869,
+      "git_blob": "e1b6ee1be63fd9d7ea75f65c8db9590c911fc707",
+      "sha256": "dc93c273b178be511bd0d35a884f4bb3939cae7155d1c1a920aa2e82e333cec1"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/2026-q2-10q.htm",
+      "bytes": 1334927,
+      "git_blob": "5e98cdff06bee15ab65f4d2f3b5ac03c1a270666",
+      "sha256": "e247d048dc02f5366587dededcb384c7479847302addc03ef0d3dfc3d75e5e65"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/2026-q2-results.html",
+      "bytes": 314608,
+      "git_blob": "d04733100fdfd3c7f26aad793a9dc264edac7e39",
+      "sha256": "2544e2614c2538d6f1c1dcdcf676ff6e086a8f0e829b3eff45d978db326dd9a0"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/apple-privacy.html",
+      "bytes": 131760,
+      "git_blob": "d320cb98b35c2a2438debd6eba3061a15550fa45",
+      "sha256": "4f5107745f261abdf6ec7cf7140e7e479845867713020a1d778db3275950db48"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/price-history.html",
+      "bytes": 336670,
+      "git_blob": "15044411be91d759365177e8c9f17f1509423b3e",
+      "sha256": "c500c4c2bc1db3543b406fe2a2d456286dadb2128cfcf3ce785316d2b11d03b7"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/reuters-inquiry.html",
+      "bytes": 211510,
+      "git_blob": "5b0e315ad74f4713f91d3f45ba55af04b5489335",
+      "sha256": "f7f4e4d693b4d95f22175b0954b2406203e5d65a114c15967c6af8aa08e24e8e"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/submissions.json",
+      "bytes": 130473,
+      "git_blob": "fefee652f49cce9a43c28f286c901781df3ba176",
+      "sha256": "622a27d3a1fce9089ddd1fac7012531dcc39b2c177d754e7463227dd4da9ac22"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r001/sources/unity-2026-q2.html",
+      "bytes": 398142,
+      "git_blob": "3a43dd434448e99127ad8d964c25c911f982abc1",
+      "sha256": "c1b7537f7c27c121e0f78f0c7cb981ac8acc70427d4767c3a76dc401b59ec2e5"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/model.json",
+      "bytes": 32596,
+      "git_blob": "6428725647f0473edf586b777efe6129e4b9f02f",
+      "sha256": "9ad5ea14b1ce3cbb4e5437f32fb134bcd14e1b52578a96028e736472d50e8e77"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/observations.json",
+      "bytes": 22183,
+      "git_blob": "c5c00da19d2978aaed2ba454c82d31f8076e5869",
+      "sha256": "854583ab8f4a2124a64886d223e979d791527bec35dede2e6ce42bf0dae7f456"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/outputs/full-report.pdf",
+      "bytes": 46642,
+      "git_blob": "ab5802a5f58446d06e0eb4272804a88c49a5d06a",
+      "sha256": "9bee9d61fcf371971ec6e8887c685aefecc6cfc9ce6ed938e96a1894a4592d54"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/outputs/thesis.pdf",
+      "bytes": 13689,
+      "git_blob": "c5ebde32e0d19e78cc70e512a52e5c0d28c21b57",
+      "sha256": "916edf0d1b47df572a3cbe330d459fcb7a170eb460a8fe2f5ebc72ed0fb9110f"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/outputs/valuation.xlsx",
+      "bytes": 36639,
+      "git_blob": "5638a1f2e1404cecfa153ec1e3185b8961044a82",
+      "sha256": "63b629c4a0d4d4c85b9cd1d5151e67b0d82fc8674f9591bf4847d3a672da2921"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/outputs/valuation.xlsx.inspect.ndjson",
+      "bytes": 549329,
+      "git_blob": "c7329ebadd674c0cfb08458e6ecc16986cacfb24",
+      "sha256": "3f6eeeb68d8e1482dd2a791044bdb343bf8ab0548e6e0a637d5433c0a56131d8"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/report.json",
+      "bytes": 31635,
+      "git_blob": "ce906bc6010d1273e2255bec791336a7b61344f9",
+      "sha256": "f75d8a70cf1b312ccec5398e0a79dc3d308ef269e89e27f03dc06420ce0af378"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/reviewed-results.json",
+      "bytes": 15534,
+      "git_blob": "cb27b1cb647eb02d8d6736d7ef1908db3f1faee4",
+      "sha256": "0bde28dbfc27cf8747287b69f3259e9ca7726f0e6ce416241b5081d041d286bc"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/run.json",
+      "bytes": 10055,
+      "git_blob": "70af1ec32b78ae54d0ae1ebc65b591700aaad9c0",
+      "sha256": "bc975e059b9ae03af97577347bd2be769a215feeee5ce7491fad327a07ffb3a7"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources.json",
+      "bytes": 7248,
+      "git_blob": "9219129c1868472e138d0e04d3336a45b2781efe",
+      "sha256": "7f70fefc5364deaa006353594f5c603931092a7d463ef2e9f97b367df68a32c8"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/2022-10k.htm",
+      "bytes": 3338285,
+      "git_blob": "86a065cdb8f6ddf379a15ef78efc11e6e14b59e8",
+      "sha256": "0e62285636e4f85b56dd0483b87ccebdf0ce0de41a3b568d500e24ca70ea8334"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/2024-10k.htm",
+      "bytes": 2315372,
+      "git_blob": "5c3c10f5e2d0c1c2acc0991df853a152575030e9",
+      "sha256": "14717f762ce225c21e83dca28d201e663649f3f867d5a0ab97b8a61f80ec78fb"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/2025-10k.htm",
+      "bytes": 2009847,
+      "git_blob": "be566a0081387918e2ba1968e4bb47475f12fabc",
+      "sha256": "15425f02aa827e7901decca4cb5032d8075bb1c455aab2363481722ec12aac4f"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/2025-results.html",
+      "bytes": 300342,
+      "git_blob": "a5e5601c97fa5cb8e8d2af3b4ea38f27c76a4d4c",
+      "sha256": "7a1ab9e1fd8953fa1e3d16bd7a45c73281b348ee7457381fb6c3dc358eae247e"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/2026-proxy.htm",
+      "bytes": 1074869,
+      "git_blob": "e1b6ee1be63fd9d7ea75f65c8db9590c911fc707",
+      "sha256": "dc93c273b178be511bd0d35a884f4bb3939cae7155d1c1a920aa2e82e333cec1"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/2026-q2-10q.htm",
+      "bytes": 1334927,
+      "git_blob": "5e98cdff06bee15ab65f4d2f3b5ac03c1a270666",
+      "sha256": "e247d048dc02f5366587dededcb384c7479847302addc03ef0d3dfc3d75e5e65"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/2026-q2-results.html",
+      "bytes": 314608,
+      "git_blob": "d04733100fdfd3c7f26aad793a9dc264edac7e39",
+      "sha256": "2544e2614c2538d6f1c1dcdcf676ff6e086a8f0e829b3eff45d978db326dd9a0"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/apple-privacy.html",
+      "bytes": 131760,
+      "git_blob": "d320cb98b35c2a2438debd6eba3061a15550fa45",
+      "sha256": "4f5107745f261abdf6ec7cf7140e7e479845867713020a1d778db3275950db48"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/price-history.html",
+      "bytes": 336670,
+      "git_blob": "15044411be91d759365177e8c9f17f1509423b3e",
+      "sha256": "c500c4c2bc1db3543b406fe2a2d456286dadb2128cfcf3ce785316d2b11d03b7"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/reuters-inquiry.html",
+      "bytes": 211510,
+      "git_blob": "5b0e315ad74f4713f91d3f45ba55af04b5489335",
+      "sha256": "f7f4e4d693b4d95f22175b0954b2406203e5d65a114c15967c6af8aa08e24e8e"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/submissions.json",
+      "bytes": 130473,
+      "git_blob": "fefee652f49cce9a43c28f286c901781df3ba176",
+      "sha256": "622a27d3a1fce9089ddd1fac7012531dcc39b2c177d754e7463227dd4da9ac22"
+    },
+    {
+      "path": "companies/applovin-corporation/runs/2026-10-06-r002/sources/unity-2026-q2.html",
+      "bytes": 398142,
+      "git_blob": "3a43dd434448e99127ad8d964c25c911f982abc1",
+      "sha256": "c1b7537f7c27c121e0f78f0c7cb981ac8acc70427d4767c3a76dc401b59ec2e5"
+    },
+    {
+      "path": "companies/jpmorgan-chase/index.json",
+      "bytes": 458,
+      "git_blob": "af680acbca4dac98889e4901abf383b01a2b2b19",
+      "sha256": "4746d242caf61d931720b555bddff49deca2007c99b19822c99970e37ddaad93"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r001/model.json",
+      "bytes": 2909,
+      "git_blob": "8e4b78221340c2ecc7f7379f4339402ab9f8062b",
+      "sha256": "c3a5ecaac1e28aaac1db0efc0c71007473aba0ec4b0878d9b91401d82f768fc8"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r001/observations.json",
+      "bytes": 1671,
+      "git_blob": "677ab3707405d26ad112666bcf9226551cd9629e",
+      "sha256": "b03e7c8a4bf24d2edacf34e85abe73a4a555ab421bdc773c0607f4dfc1ba4109"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r001/outputs/pilot.pdf",
+      "bytes": 6210,
+      "git_blob": "d080f3f54ddf09641161b5c95fa076b27d144d2f",
+      "sha256": "62d87a33da75e35b3c83cd995388c1e441e16fbca91f99fe8c8cccab9ba705c0"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r001/outputs/valuation.xlsx",
+      "bytes": 16583,
+      "git_blob": "60deac62cc75cf16fc97910b80680936db7504ee",
+      "sha256": "7c7f0e2d29209e8b315415a0793d848b9f76f14ad6e5f18c64515c3ebd9686a4"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r001/outputs/valuation.xlsx.inspect.ndjson",
+      "bytes": 49354,
+      "git_blob": "76c757ad7c3f2a2d0702084934d1c973ae98d384",
+      "sha256": "dfb64b737301f8e56eba3efa9358a79fcc0d1a2f9520f8db3a153ff1c929c1d6"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r001/report.json",
+      "bytes": 3557,
+      "git_blob": "87cb654c7b4cacb9da7d1917be808da1dbed45fb",
+      "sha256": "164d1b4108975a91fde5365e7b02eaf0d1a6e4ac286c9503bdccefcb398a0d2b"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r001/reviewed-results.json",
+      "bytes": 118,
+      "git_blob": "2a6fe7d3f2ca8612c3850e3c11b2b7358ced2d61",
+      "sha256": "790467836d0db8d88e7c25284220e85c7850da317a1b877f48d0e2c9a154c188"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r001/run.json",
+      "bytes": 2650,
+      "git_blob": "4245ab80f80c0d57419ed6b66915b9fe5ca0eb2a",
+      "sha256": "1f5dadc53842a412ddd0c1b6b162ca132fbb22d441b1c21742a7c93ba214304c"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r001/sources.json",
+      "bytes": 1013,
+      "git_blob": "1da0497e79d076449a5096912e858e7603767eac",
+      "sha256": "e03dabceceb03f3db3a6d76cb5e03ed9160c5e94ce522912a4c7917ec7eced0d"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r001/sources/2026-q2-release.htm",
+      "bytes": 207607,
+      "git_blob": "be345c07c1e0c6bd2ff0d9f13750ead02345b850",
+      "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r001/sources/2026-q2-supplement.htm",
+      "bytes": 3387802,
+      "git_blob": "3ea998f3bcd9024e38e7461a7074a79fbc339254",
+      "sha256": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r002/model.json",
+      "bytes": 3133,
+      "git_blob": "8ad77ed7caf19d904ce9c51afcba9bede0e1d23a",
+      "sha256": "8658a50772fdb261b32ead2e6e61dc9af3fbd542ea1ef70a866bed5d6210aace"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r002/observations.json",
+      "bytes": 1671,
+      "git_blob": "677ab3707405d26ad112666bcf9226551cd9629e",
+      "sha256": "b03e7c8a4bf24d2edacf34e85abe73a4a555ab421bdc773c0607f4dfc1ba4109"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r002/outputs/pilot.pdf",
+      "bytes": 6355,
+      "git_blob": "d78267f8a071f5b6b9fae824a90c52a2d5d5e2e3",
+      "sha256": "e28d6e0a6624d418d8e860b4ea1b361512ffb5ae3f08aab18269c6d14cc6e161"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r002/outputs/valuation.xlsx",
+      "bytes": 16882,
+      "git_blob": "84ea57b8465310d12f443e1ab4a77b03dff0693b",
+      "sha256": "a06119c6522d1b2c0825a040e11f868ead6531a285fcee0233bf63c1a0af959c"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r002/outputs/valuation.xlsx.inspect.ndjson",
+      "bytes": 50392,
+      "git_blob": "2b9aa4c48d3c16e0cd20e07901f612422b988031",
+      "sha256": "9cf359a614c818d31f075a3bc384b425722564e502aeb255befb8842ee00410b"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r002/report.json",
+      "bytes": 3876,
+      "git_blob": "8691c38face4be7579b7897102bad871cf977fc6",
+      "sha256": "c708f84e64861e023b2fe4d5720855c9eb4154327bf752132daf8f849d8cdd40"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r002/reviewed-results.json",
+      "bytes": 118,
+      "git_blob": "2a6fe7d3f2ca8612c3850e3c11b2b7358ced2d61",
+      "sha256": "790467836d0db8d88e7c25284220e85c7850da317a1b877f48d0e2c9a154c188"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r002/run.json",
+      "bytes": 4945,
+      "git_blob": "50045a98b6b34749f9c7fe6188188eb29d19c97f",
+      "sha256": "5e6d98d641593dd5d4eb908d36c0ebada2ecf06ad1a56ce55005d1a40e436a7d"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r002/sources.json",
+      "bytes": 1013,
+      "git_blob": "1da0497e79d076449a5096912e858e7603767eac",
+      "sha256": "e03dabceceb03f3db3a6d76cb5e03ed9160c5e94ce522912a4c7917ec7eced0d"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r002/sources/2026-q2-release.htm",
+      "bytes": 207607,
+      "git_blob": "be345c07c1e0c6bd2ff0d9f13750ead02345b850",
+      "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r002/sources/2026-q2-supplement.htm",
+      "bytes": 3387802,
+      "git_blob": "3ea998f3bcd9024e38e7461a7074a79fbc339254",
+      "sha256": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/controlled-capital-fixture.json",
+      "bytes": 5931,
+      "git_blob": "99eb436cd5cca4eb3ea4f33859ee11b8f3ee8fef",
+      "sha256": "ba05a82d6b8fe671106d34f7e51373765cc7fa2d2282c1803f64029fa77e3cd3"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/model.json",
+      "bytes": 4396,
+      "git_blob": "1866fe5d47cc74ed7c6e968113d9e82f49ca5cb1",
+      "sha256": "a9922fbfbeda9744bb2ffe6f0891da2b5aa7d35a79f0fd72406fde1eeab278db"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/observations.json",
+      "bytes": 2854,
+      "git_blob": "11858b716edf2e54c26374fef910b0f9236b8faa",
+      "sha256": "6276218dafe2a969dfbee2a37f6f39296175712186abcdc60e10c7b922437175"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/outputs/capital-review.md",
+      "bytes": 17940,
+      "git_blob": "b5df7a44dfea4769e436bb0704baa85b58b6817b",
+      "sha256": "22005b7aa364efa1de1382003846b331fc925d8196087abc19e4848673f518a5"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/outputs/pilot.pdf",
+      "bytes": 11958,
+      "git_blob": "ef3014cd096123e8b4252ab7810cfe159584e2ba",
+      "sha256": "aa885e812820cd84c70a23ae9cfeddf5d3fef6ac6fb99f6514734d32ea9db486"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/outputs/valuation.xlsx",
+      "bytes": 17576,
+      "git_blob": "630b25c67757117e5d86186b2a2f208468b00464",
+      "sha256": "147ba5fb2192bd40920281c92f7bc64d56cf5a9474a07b01cc7143c55a87d8ea"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/outputs/valuation.xlsx.inspect.ndjson",
+      "bytes": 72785,
+      "git_blob": "35b53a796a5da71a47ba0b65c2eae333a8e01e46",
+      "sha256": "9b4ac01da1da9e481947f68b2cb66365119548427e905b177ed3bbaad1ec4179"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/report.json",
+      "bytes": 7734,
+      "git_blob": "bea475656291a8a1b1086d49a037781469d04efc",
+      "sha256": "9361aae59eaff944d8f1e44d12652166eba35172a7bc20d6ca94e66049bd7161"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/reviewed-results.json",
+      "bytes": 118,
+      "git_blob": "2a6fe7d3f2ca8612c3850e3c11b2b7358ced2d61",
+      "sha256": "790467836d0db8d88e7c25284220e85c7850da317a1b877f48d0e2c9a154c188"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/run.json",
+      "bytes": 5351,
+      "git_blob": "163afe30d528f38751af62103f891f89d93e8f9f",
+      "sha256": "e6b599d3def44253392b2a9ca0016eec62418e05c3fb526f56247ed76d20d6bb"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/sources.json",
+      "bytes": 3291,
+      "git_blob": "a41bb177b0267641a689fc07d42fefa5a8f0d8c4",
+      "sha256": "4260ab98654dcf3321c59a564c94df7cf61b03c02823cd4795a27124dfd91d66"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/sources/2026-q2-release.htm",
+      "bytes": 207607,
+      "git_blob": "be345c07c1e0c6bd2ff0d9f13750ead02345b850",
+      "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/sources/2026-q2-supplement.htm",
+      "bytes": 3387802,
+      "git_blob": "3ea998f3bcd9024e38e7461a7074a79fbc339254",
+      "sha256": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/sources/jpm-june-capital-authorization.htm",
+      "bytes": 105163,
+      "git_blob": "70ecb25b6a882d264c054f2ef5111847607448dd",
+      "sha256": "8df213193b146f0c31171b1581e55cfdcb1f2bc1ed54d85b81356d8dc5383902"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/sources/jpm-q2-10q.htm",
+      "bytes": 11513982,
+      "git_blob": "fe82401f6db4082b1da0ec12e9868be0d0dba92d",
+      "sha256": "4ba60f17c069172a3bb4aa681d5f2a7ae3ac49e557f989101b4e3e1cbe4cad38"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/sources/jpm-q2-regulatory-capital.htm",
+      "bytes": 102382,
+      "git_blob": "3087366bea4c25bcdce55c54639c696d70d10366",
+      "sha256": "061a2eb7450cdd0b446729050734d61c6f16a3624ef70bf2a7b20b2728f95130"
+    },
+    {
+      "path": "companies/jpmorgan-chase/runs/2026-10-06-r003/sources/jpm-september-dividend.htm",
+      "bytes": 101694,
+      "git_blob": "2e93052b07240d561a4c0727ca839898c66e062a",
+      "sha256": "76d2a59427262b1ed1f15da31201e0be63e354060fe6b739871de78e134ffc2e"
+    },
+    {
+      "path": "companies/unilever-plc/index.json",
+      "bytes": 350,
+      "git_blob": "dfd5a15b4d66b828af77df84634676108bc3c90e",
+      "sha256": "b8f0f1fcbc58df8d93733838b24c934442d337b0421135dbdebdffd3bb4ee2f1"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r001/model.json",
+      "bytes": 6532,
+      "git_blob": "6d494cdc3228112214717e678451047b272b5ea3",
+      "sha256": "d04a33d0e8304982aa28c05d37d1a7ad62bb72102bc6ae378f0572d0552137c5"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r001/observations.json",
+      "bytes": 5485,
+      "git_blob": "850506f4195ee67a2604d85c52283a34ce66fc05",
+      "sha256": "b93f87866d2d5ddaf89a455669c897343ea98bd9894244c7b897e727855116e6"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r001/outputs/pilot.pdf",
+      "bytes": 6393,
+      "git_blob": "0891a11ccaab0ce67d029c7a135e74dbe2e33105",
+      "sha256": "66d1870b4c09186599f700306d0dfde526629b0441a8dafeac661a47974c76c8"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r001/outputs/valuation.xlsx",
+      "bytes": 16581,
+      "git_blob": "8fc8cf254ae6b1cf0ff37faf2bb87667df14cb82",
+      "sha256": "056d5ae655afed1307cf5e019947857dfe226103bcfb11755e71d836e6f24719"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r001/outputs/valuation.xlsx.inspect.ndjson",
+      "bytes": 66601,
+      "git_blob": "dd69a4c00c92e6b0b31bdbf470d98cce595d9e7e",
+      "sha256": "8800d0473c70fd6589ee052375c8ee2dfbf55185ae2b9a178dde83f8a68ca916"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r001/report.json",
+      "bytes": 3087,
+      "git_blob": "2a6d7d56ca7674234b30139a0d4cc3dd35926e36",
+      "sha256": "db5e62c881057143bf6e968c8732f0f451f016eedf274af0f8909f6d02aef53d"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r001/run.json",
+      "bytes": 2804,
+      "git_blob": "9bf87be40f4978120831eff16b975777bba89b9c",
+      "sha256": "e88a1130f1e2dd64eb2153c87fcf7978a3f3a10403de2fa3af1923791d2eb007"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r001/sources.json",
+      "bytes": 1297,
+      "git_blob": "cc91dc65727624e4feb4d824d3fa789f18a89ac2",
+      "sha256": "e5fb1ccd3004ec47032f78512cd1f5ffdd466c05c960fbe38342571a19589ded"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r001/sources/u1-verified-extract.txt",
+      "bytes": 1155,
+      "git_blob": "cd150b49c8f8a6e55b722b4e7486fe02b227b3ec",
+      "sha256": "9687677bb23ccf2322b09588e74021ae1d708a20aeb326457751afe78c23ba45"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r001/sources/u2-verified-extract.txt",
+      "bytes": 888,
+      "git_blob": "a7a1955e3065da7392f19aaf17c320640e9a342e",
+      "sha256": "7d08dfa8723c05b81229dc34e0f58a57bd1c94eb03d6193201fe5316091ccb98"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r002/model.json",
+      "bytes": 6947,
+      "git_blob": "0c1d0691fb6a124dfccc081d6d38e17838017af9",
+      "sha256": "3e35bca01fa96e9179181700bd787467cd4b727f773fb4666b0bda1f89de4f03"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r002/observations.json",
+      "bytes": 5890,
+      "git_blob": "10a29f3288e4871216dbde8d6826cb40aff77346",
+      "sha256": "d2069611de573fda565fe3dd2698d14a818df37459e1dca80f9436cd9321e5b4"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r002/outputs/pilot.pdf",
+      "bytes": 6393,
+      "git_blob": "09cb64cafc75d6d280814e1771e961954da998e7",
+      "sha256": "579bf605b99c166fee1c40e1992823f2cfa3bb4d6c593080b8a6af61df0f063b"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r002/outputs/valuation.xlsx",
+      "bytes": 16678,
+      "git_blob": "7504cbea8b9679a6b92a475e9ce69d1678cfe52f",
+      "sha256": "d9cdb13241a61ccfeaa3e9caf3fa4cbf331aa759a0824f1a9626bc3ba6903808"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r002/outputs/valuation.xlsx.inspect.ndjson",
+      "bytes": 66912,
+      "git_blob": "1092447d03a4b5a680e05470557442c064b6f8e5",
+      "sha256": "78c9447e7eb5bbcdf6f71b798b43afc75a6d7263e0ede55ad2b7e1f5016b5184"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r002/report.json",
+      "bytes": 3087,
+      "git_blob": "2a6d7d56ca7674234b30139a0d4cc3dd35926e36",
+      "sha256": "db5e62c881057143bf6e968c8732f0f451f016eedf274af0f8909f6d02aef53d"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r002/run.json",
+      "bytes": 3465,
+      "git_blob": "dac5efcd740ab42847fd753a9aa68f11bfe5c330",
+      "sha256": "38b5c9912e1776b226c9c1a5f3385a5f75ce7aae2d426572ee05b906e6df7a4d"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r002/sources.json",
+      "bytes": 1297,
+      "git_blob": "cc91dc65727624e4feb4d824d3fa789f18a89ac2",
+      "sha256": "e5fb1ccd3004ec47032f78512cd1f5ffdd466c05c960fbe38342571a19589ded"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r002/sources/u1-verified-extract.txt",
+      "bytes": 1155,
+      "git_blob": "cd150b49c8f8a6e55b722b4e7486fe02b227b3ec",
+      "sha256": "9687677bb23ccf2322b09588e74021ae1d708a20aeb326457751afe78c23ba45"
+    },
+    {
+      "path": "companies/unilever-plc/runs/2026-10-06-r002/sources/u2-verified-extract.txt",
+      "bytes": 888,
+      "git_blob": "a7a1955e3065da7392f19aaf17c320640e9a342e",
+      "sha256": "7d08dfa8723c05b81229dc34e0f58a57bd1c94eb03d6193201fe5316091ccb98"
+    },
+    {
+      "path": "lessons/confirmed.md",
+      "bytes": 2428,
+      "git_blob": "e27b41f2c0f0ab6330824de757fe34bbd60ca7bd",
+      "sha256": "1e30d315aed33eb0a945b2c906cd9bdf1403788dc65f97a04189171782c88898"
+    },
+    {
+      "path": "lessons/proposed.md",
+      "bytes": 1853,
+      "git_blob": "7e91f084cabe2a8ebd911ea987558dbc231910cb",
+      "sha256": "1183089a21d4c9989a5c33ecf01d943e37284e52c792e4d3446fcf641d364bfd"
+    },
+    {
+      "path": "methodology/CHANGELOG.md",
+      "bytes": 547,
+      "git_blob": "38c014680b31b9e831e1b6250db12645fe50355b",
+      "sha256": "9851c011a448f124530b10ac4f43569eb855546712845a69afdf6d68b58df9ae"
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "bytes": 59411,
+      "git_blob": "48b28ef0564d958132813141a026503cbdc1a14b",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6"
+    },
+    {
+      "path": "methodology/current.json",
+      "bytes": 358,
+      "git_blob": "52c0dcd42a52cbdea4f4fae98151d5ea87cfb36c",
+      "sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5"
+    },
+    {
+      "path": "methodology/principles.md",
+      "bytes": 7459,
+      "git_blob": "2265071db01f533cbab2f894ba9ea1616fd6868d",
+      "sha256": "ee75607e99c43172efc73a22877cbf6e7b072d7204b017d4a647a77809c84b07"
+    },
+    {
+      "path": "monitoring/DECISION-SCOPE.md",
+      "bytes": 4912,
+      "git_blob": "2a05c4603998bb3a507f6d65663bafcd2efebea7",
+      "sha256": "b424a556978d65327aa6be45702691c824f894a550a6937e288f8b01031f00b8"
+    },
+    {
+      "path": "monitoring/IMPROVEMENT-ROADMAP.md",
+      "bytes": 15825,
+      "git_blob": "d20ccf27e6893a88d972aa17ee2038ed617745be",
+      "sha256": "b2e03f4d6fc8caa8e93a7f99fb8649f2613471f93343e0e905f55f0aefcf392f"
+    },
+    {
+      "path": "monitoring/MARKET-DATA-OPTIONS.md",
+      "bytes": 3314,
+      "git_blob": "109aed0673cc3e49846bd447cedfaf07e7290346",
+      "sha256": "b3d78dde20b3606669870f897c52679be97e500ec2d3190d48fb3e70f39384bb"
+    },
+    {
+      "path": "monitoring/NEXT-RESEARCH-CYCLE.md",
+      "bytes": 5919,
+      "git_blob": "7f021c0782a04adc166223c9a3171b9d2e212e7b",
+      "sha256": "87a46e635153ac988ca0ef87976e8c424bc8fcc86c16e72608468c77e01b54e2"
+    },
+    {
+      "path": "monitoring/PAPER-EVALUATION.md",
+      "bytes": 2741,
+      "git_blob": "02a8cc30d2fa2244e6ca9f42dd54a168117ace91",
+      "sha256": "1704d6e35b6e4f45131eae0df3799a9012b1a50e76c04c7f04b70ea071df6116"
+    },
+    {
+      "path": "monitoring/RESEARCH-EVENT-WINDOWS-2026-10-09.md",
+      "bytes": 2826,
+      "git_blob": "96b64e4ef49d3b48d92806de5a3eca97e355d0db",
+      "sha256": "f70e691770809ddc91610e03a2d745a140a339b765ef0ebc23df0c2d20bf4598"
+    },
+    {
+      "path": "monitoring/START-HERE.md",
+      "bytes": 12265,
+      "git_blob": "5a2c331cd07aeb229bf2e09b2433a30cb7546cf0",
+      "sha256": "ccf57fb657ef11096dc182ab8d85ced2316634b6cd103289cfcf32360ff11b87"
+    },
+    {
+      "path": "monitoring/SUFFICIENCY-REVIEW.md",
+      "bytes": 5386,
+      "git_blob": "328015dddbb22b33b94ce765412ce6d3299c7da0",
+      "sha256": "ab44e8b183252bb8908365731818b6ce54c8fdbf4bdf87107964eae3e5a1a79a"
+    },
+    {
+      "path": "monitoring/config.json",
+      "bytes": 3627,
+      "git_blob": "edabf1253a835676d02baa3fa4020df5ef4ba70f",
+      "sha256": "dc7d6ccf634b7e0408bbf0784cdb6d1cafd1ab85edc4bf4fa688b014bf04fd5c"
+    },
+    {
+      "path": "monitoring/decisions/2026-10-09-discovery-review-disposition.md",
+      "bytes": 3741,
+      "git_blob": "ef3ec8e9d190ea51a37575310a950932c0d32294",
+      "sha256": "82b5b56f93dfd40a57d99457c6169e30791b470815565e840dadd01f7fed07cd"
+    },
+    {
+      "path": "monitoring/decisions/2026-10-09-jpm-pre-event-rejection.json",
+      "bytes": 2315,
+      "git_blob": "ba8d514f1261a6f51be3e43dbdee0c53b05858dd",
+      "sha256": "abfeb4c176ccb89bfa58143ecd54d2e9fe23a36f3e1f927303995bde8105188f"
+    },
+    {
+      "path": "monitoring/decisions/2026-10-09-jpm-review-disposition.md",
+      "bytes": 2303,
+      "git_blob": "ea1251d9bc47b9ca799d8d50beb9e4733a76e144",
+      "sha256": "b26835e31bdc290788234ead570cd190974107a7d699f7baf84f78aa1f2ef53e"
+    },
+    {
+      "path": "monitoring/examples/quote.json",
+      "bytes": 330,
+      "git_blob": "73f0e82dc89425ef0067dfee38ccb40365d84946",
+      "sha256": "706504474b4700f1c2ffc0faf83e7fb956552632719b3dd379d9bc0feb99f04b"
+    },
+    {
+      "path": "monitoring/examples/trial-alert.json",
+      "bytes": 408,
+      "git_blob": "528d749877cfb58544e7ae2368884a2a67af5045",
+      "sha256": "f2b62df52e724d788702fae155a6a3ef1b971d1396b00106fc7b97521de22cae"
+    },
+    {
+      "path": "monitoring/research-universe-2026-10-09.json",
+      "bytes": 5054,
+      "git_blob": "b9ed396a0071896562dace73b9c6815519a8cabd",
+      "sha256": "01c01d626202b7bacf741178040c41b0a725798b35b6b384bdb8506491e7c027"
+    },
+    {
+      "path": "monitoring/studies/2026-10-07-unilever-short-horizon-screen.md",
+      "bytes": 6515,
+      "git_blob": "cfd4955dbb646db9312206a314434d5be42dbe47",
+      "sha256": "a2032062514d421acf35fc4cb678545ea1dc43105a699690e8180c30841006ef"
+    },
+    {
+      "path": "monitoring/studies/2026-10-07-unilever-short-horizon-source-register.json",
+      "bytes": 4465,
+      "git_blob": "e4dbb16dcc950d0ffa44b4b7d15ecdb995bc42a1",
+      "sha256": "885ac2753f529ab2733b0a2cfe4410a0769705eafd4d105ad0fa3b80e7a04768"
+    },
+    {
+      "path": "monitoring/studies/2026-10-08-jpm-event-dossier.json",
+      "bytes": 39906,
+      "git_blob": "916f0bceb3967ee7826613e62002e7b0107c850a",
+      "sha256": "01aff6247e21c036ef18ae88dc6cb2a039250c9960307e08700154a434e773b4"
+    },
+    {
+      "path": "monitoring/studies/2026-10-08-jpm-event-dossier.md",
+      "bytes": 21420,
+      "git_blob": "0c301769c2a62d6557e638caf0e293418ecd9cf2",
+      "sha256": "34ffd0c70b11383594b7962b37fe57242d3384b0c76cd6b92d042ca989a4c0fc"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-amd-discovery-screen.json",
+      "bytes": 22278,
+      "git_blob": "dbc646f4cf51722ff59d54045051686ded6a437d",
+      "sha256": "c91e4b682e833da41e3a0349884fa4c725160fab7b16c81a56c2336b75129fe1"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-amd-discovery-screen.md",
+      "bytes": 12494,
+      "git_blob": "2f01b7297cf0de0c3fa81f8f697bf4a1c652dc14",
+      "sha256": "e626e1cac3b3183756fa1130cdda8fc9934730fec2df7017a64508de31fa7698"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.json",
+      "bytes": 9568,
+      "git_blob": "c0be0cf3965f5cafa8b62a729345bace51047506",
+      "sha256": "3cdb396f41ec75abe7bbc2c2d2aa87c6ba3b9edd83f367d1c196ba55ffec092b"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.md",
+      "bytes": 8133,
+      "git_blob": "f1bd966c6490439023ab380a7c821ed4f175add0",
+      "sha256": "b0860623b243dfd57aa9015e46715981dc7a74cc021fdf84dfca53607cd4f251"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-opportunity-followup.json",
+      "bytes": 11710,
+      "git_blob": "1b81e01ec363af3cee96edf16da2469761b0ee0c",
+      "sha256": "f1a641675bd727329caf8b478dae18a15e4771656d52e9c678552740c73a0bf9"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-netflix-opportunity-followup.md",
+      "bytes": 13068,
+      "git_blob": "c1905839378dce91f43bed373e7b73d68abb50d4",
+      "sha256": "48a10b31d01c21beb4874b6b2d22114d0d601c2d61c8e260b0a3b8fa02645371"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-uber-discovery-screen.json",
+      "bytes": 19878,
+      "git_blob": "348fb93e581d950314b3f56914e951616a035be8",
+      "sha256": "abc660fbf5d66facc5cd928440b40ca89032f4a1b36c4329bec7de5e6d507c9e"
+    },
+    {
+      "path": "monitoring/studies/2026-10-09-uber-discovery-screen.md",
+      "bytes": 13403,
+      "git_blob": "bf4f44031a140b9161b4f409d952d8af54701db5",
+      "sha256": "4f101e6c8a358b475263c96dca75fe3796a50176030e3305ac5f459d7ed21ff3"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/archive-manifest.json",
+      "bytes": 4751,
+      "git_blob": "1a1efbbc2b8d4018b00936afc987f741552fd84a",
+      "sha256": "6c28305c195df9f684d1aeee9595e8c2b7e80cfeeaa820e58817a1b21bf6a6e4"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/build_record.py",
+      "bytes": 16275,
+      "git_blob": "81cd52d4d9daadfc5447cb629f94c4c7220d1bf7",
+      "sha256": "6471c6f8d04e6c9502ece3bc27f6ee18125776056761278b0a50e66882fa75f7"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/calculate.py",
+      "bytes": 2170,
+      "git_blob": "1373ae170b0f3432da0e525d303e5ceddf970b50",
+      "sha256": "c32d790315acd4d866e515651f953156d9ba31bd3bf4ef4b8b0fad6096afc09d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/calculation-checks.json",
+      "bytes": 714,
+      "git_blob": "787c3a2a5c25ff13c3d26fd14a7499f74251eb4b",
+      "sha256": "28ce9889e85475a65cc596376ea6e90a4707185b0b23d659d09f612d8a43267c"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/calculations.json",
+      "bytes": 1616,
+      "git_blob": "235f91775afd6ecb23a18c20f41cd1006425ed6a",
+      "sha256": "eaab453481c32d73af96720b7cc64d220e17af8a081ed9b592e092125afe72e6"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend-20261008T163737Z.html",
+      "bytes": 101695,
+      "git_blob": "8c63384c4a3b72e6e06a4b4330a1d756743f7b5b",
+      "sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend-text.txt",
+      "bytes": 5571,
+      "git_blob": "687f8fe260ee606bd0b9bd1f5b05fdee2a531b7c",
+      "sha256": "54da2d08bd8dc681f160eb15467d92b5f1581520528517b1a8932db874aff811"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend.html",
+      "bytes": 101695,
+      "git_blob": "8c63384c4a3b72e6e06a4b4330a1d756743f7b5b",
+      "sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend.txt",
+      "bytes": 5431,
+      "git_blob": "4bfc20f4ce86f21d8ebbd8bc4d5819a18e52efe3",
+      "sha256": "c04e90100200f979b3a5c46d1c3be6c1a56fb221aad4cd14e3db3ce201e9e8ca"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/earningswhispers.html",
+      "bytes": 157550,
+      "git_blob": "c79d337936832c29d6eaa2c9ec962c079c4d8b7c",
+      "sha256": "03b3bec44767094858af5442e6ac2079ce45240d783925cc8eb39877375bf592"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/events.html",
+      "bytes": 113108,
+      "git_blob": "86d7892b4490978bcbe8f5929453587566c464b2",
+      "sha256": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/extra-retrieval-register.json",
+      "bytes": 600,
+      "git_blob": "9c2d004a2ff67c3801e6f84996ab072b878bd345",
+      "sha256": "e5e49b75c8b87a847614144165f3780c63fc2a8d12b8ee350689f981fcce4772"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/marketbeat-text.txt",
+      "bytes": 17968,
+      "git_blob": "4f344f0cc33fe7b292df59a322224553f93bd405",
+      "sha256": "e0e6e3feaf2acd47dffd68055abd35c757487ff9f841200722733cf2621b69ac"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/marketbeat.html",
+      "bytes": 202517,
+      "git_blob": "383b1f1576e890c97ef35a42747239535bf50950",
+      "sha256": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history-20261008T163737Z.html",
+      "bytes": 111931,
+      "git_blob": "48582137299599424a5b38afdef5e74b234b7794",
+      "sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history-text.txt",
+      "bytes": 6744,
+      "git_blob": "0d89a5e1be09175751e1e2bb0c80d1becc970b7f",
+      "sha256": "6f41315d74ccda999cecff2e29634d552355530f4a71bc04219f584abb24625b"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history.html",
+      "bytes": 111931,
+      "git_blob": "48582137299599424a5b38afdef5e74b234b7794",
+      "sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history.txt",
+      "bytes": 6172,
+      "git_blob": "17eead90ff784948268d40ec05c59759a5e2429e",
+      "sha256": "4ffa941f77284ad25a8e0f4a3be78e5cdb1ade8e0678c37261e18419f1db581e"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-2026-q2-release.htm",
+      "bytes": 207607,
+      "git_blob": "be345c07c1e0c6bd2ff0d9f13750ead02345b850",
+      "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-2026-q2-supplement.htm",
+      "bytes": 3387802,
+      "git_blob": "3ea998f3bcd9024e38e7461a7074a79fbc339254",
+      "sha256": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-archive-provenance.json",
+      "bytes": 2264,
+      "git_blob": "06e635de745b633ddd3eee1258a5883959897274",
+      "sha256": "21b5bf19be6d12f553c8fa165f62d119c1443373202e721d43383e2d446e5181"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-archive-q2-10q.txt",
+      "bytes": 850419,
+      "git_blob": "7b6e9ecc7ae52f6fffc0568d2601a86699eab66a",
+      "sha256": "f863f11e1aaae11e6e97ed23479598703b7b81e574f98830adcbd4407b8d1f4f"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-jpm-q2-10q.htm",
+      "bytes": 11513982,
+      "git_blob": "fe82401f6db4082b1da0ec12e9868be0d0dba92d",
+      "sha256": "4ba60f17c069172a3bb4aa681d5f2a7ae3ac49e557f989101b4e3e1cbe4cad38"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-jpm-q2-regulatory-capital.htm",
+      "bytes": 102382,
+      "git_blob": "3087366bea4c25bcdce55c54639c696d70d10366",
+      "sha256": "061a2eb7450cdd0b446729050734d61c6f16a3624ef70bf2a7b20b2728f95130"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-manifest-verification.json",
+      "bytes": 3389,
+      "git_blob": "ec3af8c7aed19bc23c1d8bf5ded092ed3b1ebdd6",
+      "sha256": "97a47ef55beb80d60d76d7a00e5d1702a88a6abcfbf893bc448d6f66a471c274"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-supplement.txt",
+      "bytes": 89080,
+      "git_blob": "24f46175e928d33f62198a6294d2533cbb2dc254",
+      "sha256": "32afeb153e6a493768dac5cf3a9a5d0b109b7ec99f1ff6e689f16f461406aab9"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-1.txt",
+      "bytes": 3915,
+      "git_blob": "725eed7c2693beb8ef7898f75f0ffa4f4077dec8",
+      "sha256": "5021bb158b2b42221a3021841ef6d21b8090018f230e16f3fea8205b59c1bb8e"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-177.txt",
+      "bytes": 3887,
+      "git_blob": "373dd3a6fbef1d5129db939080fb1bff418514b3",
+      "sha256": "c6c1b0e615e54c8be4dac94d3e058765e13564aaae9617d765209e3ed1097790"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-178.txt",
+      "bytes": 2515,
+      "git_blob": "7022734d9caedac2523a34c7cb04209fe076654c",
+      "sha256": "4944442b8446685fe85a61dacc10cbd7d100999a0fbdc0638fdb31f793486850"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-19.txt",
+      "bytes": 3014,
+      "git_blob": "967663421afad6e82ec50362ade0af7e1534af95",
+      "sha256": "91a56674bea5783047f3a5cc6cb1a5e4adb3d2bb1fce5484a52ea57c359de3e3"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-46.png",
+      "bytes": 92731,
+      "git_blob": "0cade92466568278f1eca36000bd3486489cc4fe",
+      "sha256": "b3cbbd8e6fdcad990a1d936f9bfb430f953342ac6e100d67c79735fb28a53c57"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-46.txt",
+      "bytes": 2591,
+      "git_blob": "7183c554d384c7657f094052557a8dc3550e82c9",
+      "sha256": "27775ff79685a83d1691d5b920d692e0d2cffc039c327f626f02a87910738355"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-49.txt",
+      "bytes": 3544,
+      "git_blob": "5ada688b23db5fc6bd9bcb923deb0c66478e5837",
+      "sha256": "8d64d61cd88e736d5c8ddeacc5a3962ec6261c9e9a57b5f527ac00b0f7d94beb"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-52.png",
+      "bytes": 175294,
+      "git_blob": "46841e5028aa692bddb6a623582f831119c12219",
+      "sha256": "d9f463420c6c54016092d15ede4bb3d622e93c5db63104a8f572f7cd6b86f117"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-53.txt",
+      "bytes": 3336,
+      "git_blob": "274885c30353d02590fc7a2d277e5175f2fba49b",
+      "sha256": "2957e8def60719cad29948fc3ca27723c85c8684d1cf0327be63b3d2b2acf213"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-54.txt",
+      "bytes": 4497,
+      "git_blob": "df38a061a295640bd4d1d302ec87c7e8e88a4644",
+      "sha256": "8c35335569bda07354547bcf91ad3858df197d85a8ee2214c7379e1d840940d0"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-55.txt",
+      "bytes": 4186,
+      "git_blob": "621f8a577b68b1b49f43fa9b09706edddcffffb4",
+      "sha256": "8721416149312c09aacf791ab27beebaa43473d690b5f4e983fc063849b19890"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q-page-56.txt",
+      "bytes": 4844,
+      "git_blob": "a488233ab802d3e819681170999496cf7b8e8f7b",
+      "sha256": "4410d0a82ff6f15b67af5415e46f62973c6bfd93d5f345a9eb90b15b0066918f"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q.pdf",
+      "bytes": 2542038,
+      "git_blob": "324687793447f5faa342903b941dcf28a2de6e34",
+      "sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-presentation-page-9.png",
+      "bytes": 48459,
+      "git_blob": "72dc5e2f4ffe269f3fc20bb79b4e9792ea479762",
+      "sha256": "881850d92705f2f01f443403247eecd0267abf099512c4b78359a3babb258ec1"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-presentation.pdf",
+      "bytes": 368921,
+      "git_blob": "f01200d875f0a4c892df607176df4c1cee09e5c8",
+      "sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-17.png",
+      "bytes": 125558,
+      "git_blob": "4042014b6b586a087482de437b7b00135614b36b",
+      "sha256": "1aee0325973b71abb2327373f4e80e0d606bd6c6560f82618f8e40bada420c3c"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-17.txt",
+      "bytes": 5103,
+      "git_blob": "05bd89c7e7d9979494f0927f50a2e9ca97ca5c26",
+      "sha256": "4ef5f9a987be9b37a88b670d2a2c1f5622ab80a0172c9d12df0c4ee99e0cbe7d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-18.txt",
+      "bytes": 3396,
+      "git_blob": "b4c1d82ea219fb38a6886fdd0d091506983916e2",
+      "sha256": "959bdb3388fa83e98deaa0d3f606072f266859e0dab30d78d4bd10acf1828510"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-29.txt",
+      "bytes": 5623,
+      "git_blob": "e2e4c3abc4e56a32f4bfaee309e6979328c2a0ed",
+      "sha256": "cdb6dbc7d94a687ed6ccf8103c5ab96a49f8e19453fb1607c3e290e8b4495e44"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-3.txt",
+      "bytes": 4999,
+      "git_blob": "32ea2bb6c214860fb0d8a0768be78fc5c5bae3a3",
+      "sha256": "641d11551dbf12df85c6cd3cfa27cac724f1921a00b533565327349c0fdca898"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement-page-4.txt",
+      "bytes": 3708,
+      "git_blob": "ca77ab025bcf12a52445924eeeeaf2f362bfa7e2",
+      "sha256": "a0916b50eda8556d46097a762c1ea29f0fc85797135a99fd2bb88c33830f9c3b"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement.pdf",
+      "bytes": 537273,
+      "git_blob": "1496b8f1503790a461d7981a09b3031900cd7279",
+      "sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-transcript.pdf",
+      "bytes": 286751,
+      "git_blob": "679eec53755861a713c14c5c98bb9eddbab56069",
+      "sha256": "df9042c4c156aa33eed0cec2f5727598504e88e038be31140d98452dc9054540"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q3-event-text.txt",
+      "bytes": 6761,
+      "git_blob": "a944bc1b6d841ff58d1dce856475aaca63baeac9",
+      "sha256": "8d01df81cbc50758b8e76c944cb18d145c60b371bfd2cbb4bba633f321dee5df"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q3-event.html",
+      "bytes": 103219,
+      "git_blob": "3d2847d8b26585bdcee7ab04f2e8dcb00304f4e2",
+      "sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/retrieval-register.json",
+      "bytes": 4359,
+      "git_blob": "42ecd952b705b6c26f3314959b3a075eb3f9a909",
+      "sha256": "3302923a8024a9d4e733f945f6190f2a678bfd4f076fb33b2f3918fd8ea6fca7"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/retrieve.py",
+      "bytes": 2892,
+      "git_blob": "1dbd3d75e6cc837d7bea91d204503735f843da33",
+      "sha256": "4881f5dd4e94bf3cd1e1b0496533011a86c0d840d9424b35b2613b40e262b773"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/sec-submissions.json",
+      "bytes": 4641180,
+      "git_blob": "20bf64cd41a5793fb5dfb053c105ac7e317ab934",
+      "sha256": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/sec-submissions.txt",
+      "bytes": 4641180,
+      "git_blob": "20bf64cd41a5793fb5dfb053c105ac7e317ab934",
+      "sha256": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/september-transcript-text.txt",
+      "bytes": 45971,
+      "git_blob": "391630b9979684ecaa0e33ab9de1c626d4bf1422",
+      "sha256": "43ec110095bb69cc40b1c34d1b9b5c9f233e1a31f6526f8eea42cdb4f44de446"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/september-transcript.html",
+      "bytes": 281488,
+      "git_blob": "b642cc44f6ba2c090bd2e56112e0737714860d93",
+      "sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/anthropic-partnership.html",
+      "bytes": 41041,
+      "git_blob": "2ea1edf8d1dd8f4697e0ae3ce70d4457cc230621",
+      "sha256": "c15bf0c701c697e2cb04209cbc22bb1a20748d4d0011c068f9492f31f3481093"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/anthropic-partnership.txt",
+      "bytes": 10781,
+      "git_blob": "dc2546497f797ce28e87ecd2ae13272fbbc08c6f",
+      "sha256": "615064b8a0237daae8e9135c8f58c3f95b8bfce819d0a8d227c54c9d3d733c89"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/archive-manifest.json",
+      "bytes": 4697,
+      "git_blob": "360416764cb120456b4b9de2eeb538faf7cb0571",
+      "sha256": "722ffe0cc1136305f647452bace5dffa6b5a0ffe74d618e5cb84f3e513bb42d8"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/filing-index.html",
+      "bytes": 108370,
+      "git_blob": "42dba6e64e48069896ce9483cffe225325332987",
+      "sha256": "b86dd82182635d751ca3507d0d0fee164cad8e0f7dd9ddd3cac5fdb6b8e64c9c"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/filing-index.txt",
+      "bytes": 8546,
+      "git_blob": "db9d4366caea6e8e7a2431444ceafc8a782cd56c",
+      "sha256": "6348140901b500a72208760515394c7d7236f068fc8365e05da856d704c16676"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/ir-overview.html",
+      "bytes": 57921,
+      "git_blob": "321e43acdcd788ac9aa6cc4f427f15e45d1cdeb1",
+      "sha256": "667dfff9f17cd2aa0605dae1d754c36c09eed7b6634998390d27471f9ecb127d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/ir-overview.txt",
+      "bytes": 6711,
+      "git_blob": "9ccee256545ad5eed0929f080684fef50ab256f4",
+      "sha256": "e1d731740c463d4c79ece638bed8b79989fea5b5a3a154a016d99f4ea54065ad"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/meta-partnership.html",
+      "bytes": 45468,
+      "git_blob": "398bdfaba270b98822648eee8db1b020895c3fba",
+      "sha256": "f7d0c4b26fe386bbb77090f977a9f1295cc2a02c09e4f02e5dd877bddc8973e1"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/meta-partnership.txt",
+      "bytes": 13963,
+      "git_blob": "9f378158a73bae0c906c5375b96cf56931362dc2",
+      "sha256": "ed286cb61c102f0bfd5622f643ea2c6f74546772c6e694443eb2984e4e4856f5"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-10q.html",
+      "bytes": 1379417,
+      "git_blob": "48ad1a8fd21670c16cc8ec7a3fdcd5e76c738748",
+      "sha256": "fa18ad1095a14dc14fe04d3e256143addbb1c8f0573eb6eb8bb6bc6609bfe2bf"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-10q.txt",
+      "bytes": 277380,
+      "git_blob": "12cfc74fb2111d0bdcb84272299196b409852ad8",
+      "sha256": "b3fcdbb68c5c88caeccfb7f16dbb7e4361a062780bb36b53764acc43e1d857fe"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-results.html",
+      "bytes": 453196,
+      "git_blob": "0082304556cfc924847b118fc1d6c9d16ab1e197",
+      "sha256": "0fcd914306881fdb9e033b50423aed8ac35fbd8f7041e4e4ff71da24b22b8c3a"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-results.txt",
+      "bytes": 43448,
+      "git_blob": "f6a0f3c5cb49516a85d7c2ddfd9628d45f38ad0f",
+      "sha256": "1d13b4e92b6cd7971816515d745dcdf4ff0b7f51b3c70cdc3d2083c1c74fd2b5"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q3-event-notice.html",
+      "bytes": 32855,
+      "git_blob": "7ea36fd71db2b4e774a6a0a6ab6ae030f15d1300",
+      "sha256": "1c34cd99d3fbf0bba0f0a135a04f9fe9c32be3d51a96f751b4674a90d97d25b7"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q3-event-notice.txt",
+      "bytes": 3154,
+      "git_blob": "127fd7b6b544540975206234c666fed77d2fbcd4",
+      "sha256": "8d68bf1eb8efc5e6bdabcb31f5d7289759cea775175abe15622481be14172fbb"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/stock-data.html",
+      "bytes": 64833,
+      "git_blob": "05f16697d6eec7d6532d3f0cbf337bb47283d020",
+      "sha256": "8ad72f30bf0e634b3702281e6d81bf39a7af5c979f8094d7d64f45fd0219fb49"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/stock-data.txt",
+      "bytes": 1539,
+      "git_blob": "75b678ba0d0f507996772dbd9d0f1e91d869d53e",
+      "sha256": "aad5ca8ae19ca9d690b3d1a9aa8e1380a5c19d9ceb58aa245f92599904a92bd0"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/world-labs.html",
+      "bytes": 39219,
+      "git_blob": "bde842516d3475c00f067d968b81ceda2741ec9e",
+      "sha256": "22f7cbf85c100b0b854547969a85899fe184327f369a10a9eddef4b9c5b3e6c8"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/world-labs.txt",
+      "bytes": 9372,
+      "git_blob": "48232a7cddfcf89aeb46e428e468eb7cc48ffbd7",
+      "sha256": "db099960b835c9b7572e2de35108f62a5949aa0919be28017bb0dc0d11498f59"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/altindex-estimates.html",
+      "bytes": 62200,
+      "git_blob": "e9b802a3b69c7ba64a4c8917e93c14a43672978d",
+      "sha256": "584e880584527d80ffdfaee755a2b3c7fc9d6a7b96515c31df64b8d49a659658"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/altindex-estimates.txt",
+      "bytes": 6336,
+      "git_blob": "588ac6bc972d3be10793772cd8e83e554551bee2",
+      "sha256": "0fa919628c5771b1632370841130b26e8b333954cda9b1195b3821fa9c838c93"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/archive-manifest.json",
+      "bytes": 2515,
+      "git_blob": "64f49136e6d46b3afaaafed383de879e04a48dbc",
+      "sha256": "f9937c0839b38847f701fd24e7ab2713d478d690348b53a787c4efc705b2c70a"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/ir-calendar.html",
+      "bytes": 35351,
+      "git_blob": "386d02537b894aed2ea585f39d63847fcb557509",
+      "sha256": "61c490b019a7854ccf6640f8a1143c945b7bd3f1b438cd7f7cc1773790cfb84b"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/ir-calendar.txt",
+      "bytes": 2202,
+      "git_blob": "1c323479e13fadcf2f3cf911c8730f900ffc3087",
+      "sha256": "0ebb7159850edd0933ea0ceb73a8490384db3e2b183f8fae871f3d1c916ae762"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/q2-call.pdf",
+      "bytes": 248150,
+      "git_blob": "7aaecc85b359975d4bb6f9dd5ed93e6583b32cac",
+      "sha256": "271d63d96f015c07c7e1dd76eebeff52f1f2b2a603c2526b28463ee0215553b5"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/q2-call.txt",
+      "bytes": 62849,
+      "git_blob": "84e28179bcaa8bd9a9bc21b83ca3cb0828761af9",
+      "sha256": "82ebeea182523eb976fb625c1bb3360c4e19ea150f966824199872fd62adb574"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/september-8k.html",
+      "bytes": 33609,
+      "git_blob": "bc9e8e92144d3248604ea1ab2ec3ff55e890f67c",
+      "sha256": "4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/september-8k.txt",
+      "bytes": 4620,
+      "git_blob": "b2bdf31005222aad610af831871c6c7fd3f2eab2",
+      "sha256": "d9634c5c7a4b18398c965719e7a90e74799548d77539d489c20190fb441949d5"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/tipranks-estimates.html",
+      "bytes": 197383,
+      "git_blob": "c0b1844454b68447d02cb25ba7019f7aa01a9a43",
+      "sha256": "15960d1f3d495805a962604956999141812b1bcc158bb4136d300a873bcd9542"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/tipranks-estimates.txt",
+      "bytes": 13589,
+      "git_blob": "1a3a3ba6904b05c90c45ded926c7062b4a9df565",
+      "sha256": "1f220396730e0e69d9663339df4bfc7748c38a5e04ed01a01baea5432b5dddeb"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/archive-manifest.json",
+      "bytes": 1980,
+      "git_blob": "7ea5d84a8e1c24feafd1a8f82430024b247a6f67",
+      "sha256": "2cbbfca79b88846b5b5b2324658104953a6de9c7301957ab4001f4d656471eee"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-citi.html",
+      "bytes": 29399,
+      "git_blob": "63645f363fb875a71265119eeac29d25089a7987",
+      "sha256": "4c69c2ad2e01aed51fd18d0e424882756b29d245a7c3a96df5e99a5124c3dc19"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-citi.pdf",
+      "bytes": 146048,
+      "git_blob": "29ed5208f5a2352aa381732d88599291dc9430c9",
+      "sha256": "daa7138bdbc3c76c69e0f9c2f0bc11bb22ba2bfcb4b54c382b7050638e3cb61a"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-citi.txt",
+      "bytes": 33161,
+      "git_blob": "89c98657a77fc4d701d3b136722b6c123ec3e535",
+      "sha256": "cb726297e6a46e3067afa4c2d57ff8d323ca5a71eec0ef3fce8854a85dbdb70f"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-goldman.html",
+      "bytes": 29510,
+      "git_blob": "f5c5efd639681c9968b3f08aa1acae0745befc02",
+      "sha256": "deb4f3688226b416eed8aaedc196fbb710996282d6a8e7afeb985a4b428b64a3"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-goldman.pdf",
+      "bytes": 191242,
+      "git_blob": "a4211ceb0294e6bd7b919dc3d7ffcfc6611cff8c",
+      "sha256": "15002633cc86e49a1c2d53ac499ab5a5b174204ceae4e4b0dbd01fc30ba0cb8a"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-goldman.txt",
+      "bytes": 37051,
+      "git_blob": "0576f0f7029439d887f2537d52964bd9d627b9a8",
+      "sha256": "b54dad9d40b26e1e2979f51eda5e488a10c7b56e091cfe4b9e1eecbd0b089b6d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-amd/screen-integrity-check.json",
+      "bytes": 612,
+      "git_blob": "351fbb87d6312b4484ac3fb51200c2be9014ca83",
+      "sha256": "1fa1045852a6c4ae1619b8c7c192f90e48d2b7d42f5ca30bd21b549f32306175"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/20261009T125707505467Z-q2-letter-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "bytes": 294574,
+      "git_blob": "f1a4e0e555696c8515ee6f190ff5ea8b895beea7",
+      "sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/20261009T125708661028Z-price-crosscheck-d2e649a123fde352862450bdb199fd1aef82283c3278a88bcf913f1bc0291ead.html",
+      "bytes": 378054,
+      "git_blob": "14547e79a6a13dde78a174910fd95e3463a77928",
+      "sha256": "d2e649a123fde352862450bdb199fd1aef82283c3278a88bcf913f1bc0291ead"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/20261009T125829535587Z-q3-2025-letter-cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031.pdf",
+      "bytes": 434472,
+      "git_blob": "239978364519900dc3d5cb51352b4f67894fc8a6",
+      "sha256": "cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/20261009T125829535587Z-q3-2025-letter-cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031.pdf.derived.txt",
+      "bytes": 50094,
+      "git_blob": "18c4381430f4c5fa33559c4c440e1b8b63c5f7c4",
+      "sha256": "f9dd741f6821945dac4e3da7b2199dd34d99d07a017776f6a23e3843e87ca6c0"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/retrieval-register.json",
+      "bytes": 2743,
+      "git_blob": "02ec0faa26fca86ae8319c6bef5aa8c9995f0242",
+      "sha256": "749c54744614ab91194dd5c5e880a0db090627421fa6e774caa9ff10062b4f39"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-opportunity-followup/web-rendered-evidence.json",
+      "bytes": 31595,
+      "git_blob": "0b6fce2f3bed27a0e4c6aa42b7f3cabd7f59a70a",
+      "sha256": "cc4c0029f94f23c1f85cfc357aaaea66aa802f6babd847bf156793820509fb59"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009-calculation-check.json",
+      "bytes": 820,
+      "git_blob": "c138d34f696837874fdb483675f4bb7981ad520c",
+      "sha256": "c7dff72dae5d03d3332045863fa3837c7660311dc262f6bef1fbe67a3bc33bae"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003428792509Z-event-db6749ba959e641cccf4ba69eb1f1798e3b50756ff6dd51dfc7eb5d1f213d257.html",
+      "bytes": 47495,
+      "git_blob": "8b772b12574b67737979c9a5bbdf466674ccb2d8",
+      "sha256": "db6749ba959e641cccf4ba69eb1f1798e3b50756ff6dd51dfc7eb5d1f213d257"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003428792509Z-event-db6749ba959e641cccf4ba69eb1f1798e3b50756ff6dd51dfc7eb5d1f213d257.html.derived.txt",
+      "bytes": 2937,
+      "git_blob": "ba0d1094db9bce2bc11bc3215b44e0799292dd87",
+      "sha256": "06e6e16c1795789a9914ffff7db7c51422583576ad2cb8bed0a10caf7a22540f"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003431335392Z-q2-10q-mirror-282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9.html",
+      "bytes": 3195808,
+      "git_blob": "4c6aa5ea3e5ae0ccc2afc5dff1a4916a4c09ba50",
+      "sha256": "282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003431335392Z-q2-10q-mirror-282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9.html.derived.txt",
+      "bytes": 888649,
+      "git_blob": "28008f9b75015e60d4789b4c054d8311f8d730c6",
+      "sha256": "9483f4bd3997b7b64db4e3f08723d8e89d5442cda44917073efbd319f9baae00"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003432308307Z-q2-letter-pdf-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "bytes": 294574,
+      "git_blob": "f1a4e0e555696c8515ee6f190ff5ea8b895beea7",
+      "sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003432308307Z-q2-letter-pdf-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf.derived.txt",
+      "bytes": 51121,
+      "git_blob": "7649bc6e93e6103a3ff1bc967efb12385dd4a7f3",
+      "sha256": "546b1b4ed1ddd80635793693219ebe04bb186d088989b15d4d291eb9beed8723"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003432526625Z-filings-index-8525f85f0a7cd99b8b685f91375752109f69b6cad14a969ad7b46592833396ea.html",
+      "bytes": 49270,
+      "git_blob": "d204cb115fa1650c2206b080796c230cc34329f8",
+      "sha256": "8525f85f0a7cd99b8b685f91375752109f69b6cad14a969ad7b46592833396ea"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003432526625Z-filings-index-8525f85f0a7cd99b8b685f91375752109f69b6cad14a969ad7b46592833396ea.html.derived.txt",
+      "bytes": 1666,
+      "git_blob": "09243f911bdae84f763c686f573ce82b7ded88a9",
+      "sha256": "16f966ef8ac2573aed0731b17bf5690ecbfe79442ba7cb64b7d8b47bba6cc784"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003432526625Z-retrieval-register.json",
+      "bytes": 3297,
+      "git_blob": "eed9340c09045f5c67bd0637ee61c0be4f346121",
+      "sha256": "cb653d53609e4668c87fa8e0130f918918277bd556a149d54a44a7a22bcbb861"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003655151652Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "bytes": 160304,
+      "git_blob": "dbf6b22611b258bf8561d6864bdd4d5e0b739dfc",
+      "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003655159747Z-submissions-register.json",
+      "bytes": 1063,
+      "git_blob": "cc4a38c8be91ff798de8bf3b63d6cc08e874613b",
+      "sha256": "6709af5f1580b963b5cdc8f531cab06417de054c699031bc187ac4103c9b60d5"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003437205476Z-q2-results-7c191dca64d3010d.html",
+      "bytes": 449815,
+      "git_blob": "fd7de6b5f7e2826cfaac352da3d4039b169f5d4c",
+      "sha256": "7c191dca64d3010df2dc2720101ebe707b7776ac387e3d4734a4441864c0a08d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003437205476Z-q2-results-7c191dca64d3010d.txt",
+      "bytes": 45917,
+      "git_blob": "7d2879bdf43b2912a4d4da1bc6ac5f740ea99015",
+      "sha256": "5cc89f1f3f306381479badb4cbb99311dda427af784cf48a7f0791032d898c78"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438497859Z-q3-date-e914d01799513f4b.html",
+      "bytes": 64465,
+      "git_blob": "5f500683f764ad7df4f151a7488fd7a07b5e7f32",
+      "sha256": "e914d01799513f4b9ce37ecf631d9c452bdf47bff70a6a7d76fba72ee2920bb2"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438497859Z-q3-date-e914d01799513f4b.txt",
+      "bytes": 4234,
+      "git_blob": "f5388493d170152ebdcda6d1ca423921aec19f99",
+      "sha256": "1a4b27056d37ba1d242e53c7807c90ea3e3f08e5379799c9cb01d6d844456654"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438771481Z-ezcater-c65f64af7a6e60df.html",
+      "bytes": 75493,
+      "git_blob": "d7a17112bdaa273782f49dc9fae84eac90f2cca2",
+      "sha256": "c65f64af7a6e60df68e9ca604b4a3d731f7db0bdd3d67658134d43ca6efe06a9"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438771481Z-ezcater-c65f64af7a6e60df.txt",
+      "bytes": 9810,
+      "git_blob": "bbe0e10a97722950f8f8739adf39e21de7dcf473",
+      "sha256": "e26f29554d0f53da21d677b6bdc6daa1d7d7d7320bd160b25fa5fd4af02c6a8a"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438971689Z-home-0918296271a9db7b.html",
+      "bytes": 74560,
+      "git_blob": "ddf4e0a6c9fc22c97334a08925caaa981223c7da",
+      "sha256": "0918296271a9db7b715f7cafc688798da473af46df61ea95968565658730a11b"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438971689Z-home-0918296271a9db7b.txt",
+      "bytes": 3310,
+      "git_blob": "7acca8971912cbe598305524102455e0194ca478",
+      "sha256": "e6cc1dfe6b266e8c64f9582c65f9841d375d2fa5d6f41922372d734b9a8bdd4f"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003439376552Z-archive-manifest.json",
+      "bytes": 3612,
+      "git_blob": "1c870a3e5bf66adaf74bcadd6ae9a14935089ebc",
+      "sha256": "9a9be4b8c9a9c6e4e5aac7fc6f07904b8ab112af5b596ff4a3b8fa4b4f3237ae"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556205076Z-deliveryhero-offer-1c0a428604d0f3e8.html",
+      "bytes": 96942,
+      "git_blob": "94364901c14f5c0d495007e6f4914d9175c7dee5",
+      "sha256": "1c0a428604d0f3e889109f483cb1ad465c5947648cdebcea9631be916c2061d4"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556205076Z-deliveryhero-offer-1c0a428604d0f3e8.txt",
+      "bytes": 25857,
+      "git_blob": "21bbaa2b47314b94ee28d48ba6c87d86165885e4",
+      "sha256": "240dfd8af02b6f469de4472f48d03505e5a519a0aa866c2d13d053726740de93"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556600238Z-deliveryhero-offerdocument-f9e2928e37ffd97b.html",
+      "bytes": 79790,
+      "git_blob": "eb3ebf9533d1f53fc29f2e7bc3c6aeb561738abc",
+      "sha256": "f9e2928e37ffd97b903d67ec38414eaab32977fbb25b01bdcd4de0e5a77c4dd2"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556600238Z-deliveryhero-offerdocument-f9e2928e37ffd97b.txt",
+      "bytes": 18473,
+      "git_blob": "6ba09f6792f2250677ff28f6c63170496c1387b4",
+      "sha256": "56741be084adcc545a4d868c8bfb8ba039ec3ffeb158ebc251ce1804fa304703"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557396645Z-events-2cca076de5f5ca2e.html",
+      "bytes": 66333,
+      "git_blob": "03c0775d77f321dfc21e44d33e79afe1f9620c8a",
+      "sha256": "2cca076de5f5ca2e756934e0b89c0b22c685eba2817cc7f36ecb1b894763ca13"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557396645Z-events-2cca076de5f5ca2e.txt",
+      "bytes": 2237,
+      "git_blob": "5adca1b3b9bfcc0b058bc6f8ef22a621c5a47dd5",
+      "sha256": "c2308dcdc013ae72f65727bb15eab4de2cd9208532ef07c8b0eb6e3878246c8d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557949894Z-reports-25ced59ab50ddffa.html",
+      "bytes": 63157,
+      "git_blob": "c02f224bd00d6fe35346170bdd47f438a0ec3c75",
+      "sha256": "25ced59ab50ddffaf35444020a66fc2662fe9745ad9caeee578fae9f66bc75c3"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557949894Z-reports-25ced59ab50ddffa.txt",
+      "bytes": 2510,
+      "git_blob": "073c6fbd065122fd29da91b0be0dfb208d7afec4",
+      "sha256": "955f490a1848fb1041f50f2ec06156eebef872222eff0d2bc592da9cc64fb9cd"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003558207751Z-archive-manifest.json",
+      "bytes": 3329,
+      "git_blob": "3cebc0886bb104b38b511c2cd1875cda2860bab4",
+      "sha256": "485880675c7278d708d54d1a94a12c352e08cf936ac11a510edb6d77d77b19cc"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-ftc-offer-web-extracts-03772ac20cbf6e64.txt",
+      "bytes": 21038,
+      "git_blob": "74f5e8dbb6373452e2aa2eb9112b529f529e40ac",
+      "sha256": "03772ac20cbf6e64cdfe05841d823921a5bcd0eeb6ce96b14459171ce10fb2bf"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-sec-cover-sbc-controls-c631c56d9fefd3e5.txt",
+      "bytes": 29505,
+      "git_blob": "a047c3ab5caccf0a3f276c3cd596f4af1761ecaf",
+      "sha256": "c631c56d9fefd3e58e4d47e08caa86697b66113914fa737311e126d78fdf4216"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-sec-open-metadata-610d369b867bbe53.txt",
+      "bytes": 1255,
+      "git_blob": "c73e59b1036cc1efe829225cec8887fa0258e2a4",
+      "sha256": "610d369b867bbe5358117749ea31e4d241778cd04040604be4c6b7340697b1af"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-sec-risk-extracts-91fff3f35e06f7c7.txt",
+      "bytes": 40145,
+      "git_blob": "dedb7869863cb926d66691c3abc9e48782266e1f",
+      "sha256": "91fff3f35e06f7c7c553869edcf1987688e0928021f4abec0074c1cf0c1267e7"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003927488627Z-sec-vat-financing-cfo-fe561066825def23.txt",
+      "bytes": 27536,
+      "git_blob": "42f98e7263eb146d03a5000baa78b8821a86c230",
+      "sha256": "fe561066825def2309b6e8754efdf091c33eb4abc701a779144a2fce8406d94b"
+    },
+    {
+      "path": "monitoring/studies/evidence/discovery-universe-2026-10-09/20261009T004020455975Z-AMD-9789d97cfb1b41fb58cc5fcebd13cfced084409dc3bbcfb6ca1382304f092493.json",
+      "bytes": 162206,
+      "git_blob": "5aa76f9e8b0a0c5eb0030b6df8d55ae3fe81c85b",
+      "sha256": "9789d97cfb1b41fb58cc5fcebd13cfced084409dc3bbcfb6ca1382304f092493"
+    },
+    {
+      "path": "monitoring/studies/evidence/discovery-universe-2026-10-09/20261009T004020693876Z-UBER-c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643.json",
+      "bytes": 163842,
+      "git_blob": "158cb2bad4b2d02367bd0a9a72c3cc4e103a70b1",
+      "sha256": "c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643"
+    },
+    {
+      "path": "monitoring/studies/evidence/discovery-universe-2026-10-09/20261009T004021003036Z-NFLX-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "bytes": 160304,
+      "git_blob": "dbf6b22611b258bf8561d6864bdd4d5e0b739dfc",
+      "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d"
+    },
+    {
+      "path": "monitoring/studies/evidence/discovery-universe-2026-10-09/identity-register.json",
+      "bytes": 1986,
+      "git_blob": "5a18dc206acc077ef8a8b437dfbc9ceee18cfc38",
+      "sha256": "a0654df5912023a4da6d486ac741f9e696ef58931026151742232fbbec86fbbc"
+    },
+    {
+      "path": "monitoring/templates/decision-dossier.json",
+      "bytes": 1755,
+      "git_blob": "e6de2d998484489360e16a5ba48e8dbedff50854",
+      "sha256": "ec6efd698b054fddbbe812257419ed0d3609267f246f5ba985c5a4b1e837468f"
+    },
+    {
+      "path": "monitoring/templates/manual-fx-quote.json",
+      "bytes": 214,
+      "git_blob": "2d45cdcda51bb4e1ef2987ee0d29747df4b63aa3",
+      "sha256": "4e89ac4ad97079def2328bd52da731c69a25b5d193babb74bdaa6b8c2c056d3e"
+    },
+    {
+      "path": "monitoring/templates/scoped-extension-methodology.json",
+      "bytes": 1302,
+      "git_blob": "f832383df310a7eaa36b5421a18f371486520bb1",
+      "sha256": "76bb2cbbd0fcedb8c290dd6a731428e1565925d5fe35085399c218651153efc6"
+    },
+    {
+      "path": "templates/comparison.md",
+      "bytes": 320,
+      "git_blob": "e629f34cd9e9f01b6b43635f485953335c42679a",
+      "sha256": "2397b120dfd33a7722472f11c2ab4fb658d21ceebdb5408ce626f67f530e960f"
+    },
+    {
+      "path": "templates/focused-question.md",
+      "bytes": 199,
+      "git_blob": "27436646b733e84da25f664afed4e03ef5adc44a",
+      "sha256": "2c1b2e4457d34a0a5a51d1f2fbe32ddb9f253e56b139ccda7a2528316a7c64ed"
+    },
+    {
+      "path": "templates/full-thesis.md",
+      "bytes": 551,
+      "git_blob": "9a154caca37dd17a4e5f9d35904bb2063f994dec",
+      "sha256": "ed63f3c183b563809c6d5a152b169c2057ba4e0a92ffe33c3e6c0656be5c9ca2"
+    },
+    {
+      "path": "templates/model-inputs.md",
+      "bytes": 2576,
+      "git_blob": "e1765bf5f3cf9188c27d465937d53ea4258ecd13",
+      "sha256": "7d0214c08a17fc352a3fd5c405f7447a42877e7051f8feff20d231eb9236a70a"
+    },
+    {
+      "path": "templates/report-spec.md",
+      "bytes": 1833,
+      "git_blob": "f35b89b441081febd22c08271b5a0aaedf76fb63",
+      "sha256": "68a33715355ccaaac6c144081e6e0e56083aad38ab5487c967c2281d51275dc7"
+    },
+    {
+      "path": "templates/update.md",
+      "bytes": 350,
+      "git_blob": "54ec064258cd8bf0e717d0daeedf531ab0228df8",
+      "sha256": "11a6494d49dec07dd11d7f4414204af9d8b396ae3c7cd3ca073a2a92d69572ee"
+    },
+    {
+      "path": "tools/alert_contract.py",
+      "bytes": 20858,
+      "git_blob": "eb50038227fd5c83ff814c929c639ff930162c55",
+      "sha256": "f526959f958e328627d44b9906adb19523615b771459bc1a5b66590602302605"
+    },
+    {
+      "path": "tools/audit_workbooks.mjs",
+      "bytes": 6539,
+      "git_blob": "243210f1f205d1e7188e7a9d9fae22132e86bf67",
+      "sha256": "487c871f6e85f4f2cb1f1bf754ebd0e7bf075da36f63becf5f9645c68e2ef854"
+    },
+    {
+      "path": "tools/decision_economics.py",
+      "bytes": 9585,
+      "git_blob": "2f8ecf3f2449c590f5c77157e14d24ae8e01555f",
+      "sha256": "6ad6260e86ab383ddcefc95bc8877844b1609c6efa62d02e494a7fc6bf34a54d"
+    },
+    {
+      "path": "tools/decision_lane.py",
+      "bytes": 38865,
+      "git_blob": "543835beef2779cea43d2bd5c3543277920f04bb",
+      "sha256": "a8e5a4712f27d7738bb79bdf2d06d87183edd98225eb0fe9800ede2d02cb4e67"
+    },
+    {
+      "path": "tools/decision_pipeline.py",
+      "bytes": 4477,
+      "git_blob": "5e23bb9eb58b96f7283a249befcc1838004e7cac",
+      "sha256": "6856371307155306cdabe2bb2a3e54656a3d1046660e1dfc42f1a271b25c0e52"
+    },
+    {
+      "path": "tools/decision_readiness.py",
+      "bytes": 19361,
+      "git_blob": "0acff11b105661b77f1786542f4835be5e739561",
+      "sha256": "22411a59ca0774eadd002ddbdab793d4f1f62c7723b594b915dce5139c05217b"
+    },
+    {
+      "path": "tools/evidence.py",
+      "bytes": 1335,
+      "git_blob": "e60eed1827b0313caeae69bc717f3aafbd3f199d",
+      "sha256": "ce3309d40ae2cdc8694fa1ef3b356df654400c5cb4504ac8992eb44a7de58df8"
+    },
+    {
+      "path": "tools/extract.py",
+      "bytes": 2511,
+      "git_blob": "de561736b0b4f426552565c8b7d0167c4f7ef7c8",
+      "sha256": "96038a8f27b7fc3c758fa310565df1592ac352362db6b06c070dd2a22c99d436"
+    },
+    {
+      "path": "tools/finance.py",
+      "bytes": 11089,
+      "git_blob": "18757bedf2310164d9c98a9dfb280def16cd0cc5",
+      "sha256": "25d9e871265546f1f19a9562f27bb22e43d9e1641c267d09b944182fed6352c0"
+    },
+    {
+      "path": "tools/observation.ps1",
+      "bytes": 392,
+      "git_blob": "9953b0c1f1d1b0ddd0d0c418900132d4728bfc8b",
+      "sha256": "cadfb76e782091193082e1133c8139751565b30e751150fff6a395b739c711ef"
+    },
+    {
+      "path": "tools/observation.py",
+      "bytes": 30687,
+      "git_blob": "930ec66b08aab8f116cfc3a581d6ecc347a01dfb",
+      "sha256": "828149e0cfd292a7b9cef56eb06909cb81f6900466cf8f5ea42465a17004de0c"
+    },
+    {
+      "path": "tools/observation_core.py",
+      "bytes": 30716,
+      "git_blob": "b00e941c331f33b2d028546481770f1e7c4721cd",
+      "sha256": "88046015bf641ef24ab022889a02d98dad4737d00d0a1c0a9a8539fb8a9e9bb2"
+    },
+    {
+      "path": "tools/observation_monitor.py",
+      "bytes": 12178,
+      "git_blob": "1cbd7495babead6d1bd683878cef7a8d4276e628",
+      "sha256": "450a4d492071e02fd81f4eb85638bfd040b2fcbd613909cf3135705e8737afb0"
+    },
+    {
+      "path": "tools/observation_research.py",
+      "bytes": 17537,
+      "git_blob": "a5b2761c5d8e51d01f7c340df8ca778e0635e777",
+      "sha256": "d7565ea1fcaf531171282256337aceb5a193b9db28b087a1e0468a0afe2d8233"
+    },
+    {
+      "path": "tools/observation_transport.py",
+      "bytes": 19745,
+      "git_blob": "38f41cdeda2099bb6ad282f7cb09204b85a7831b",
+      "sha256": "3d0303230c29b72eca7867e87556d7358af22f660a716195822b4d327a0dd338"
+    },
+    {
+      "path": "tools/observation_trial_report.py",
+      "bytes": 3741,
+      "git_blob": "a38d83ceb937ee621db2a8e2570f11385beb6cc9",
+      "sha256": "5763e62dd08484dd4370ea9e4243400c26effb42e8f8dfa72b85b40d9cb048c0"
+    },
+    {
+      "path": "tools/paper.py",
+      "bytes": 1746,
+      "git_blob": "679cdcbdc43a0f8dbac3d4b111abf877e1ca8572",
+      "sha256": "c5530d5da119971c72a2fea2bdd9a4b9eef75f26ce35002a5b1a5ad0c8de51fa"
+    },
+    {
+      "path": "tools/paper_study.py",
+      "bytes": 23018,
+      "git_blob": "b95e754e5b114e44959c71b26ccf25935e1582e1",
+      "sha256": "c2ea94806d632e53f1813ec0fe2deaac1d17aa5e8d3bbf1393126b548c3e4fa0"
+    },
+    {
+      "path": "tools/register-observation-task.ps1",
+      "bytes": 2387,
+      "git_blob": "bf5e5706892cd03df321e83dc6668bab4bdd1204",
+      "sha256": "c713c27530e27d77c04e0db9c352591ea8dffa979616480b60a7918a83e48684"
+    },
+    {
+      "path": "tools/reports.py",
+      "bytes": 5058,
+      "git_blob": "247ce2cca6d9b7b0951fd2edad8d1b2be166006b",
+      "sha256": "cdf7b7659039861cfc3895c49b4994eb2fc09cf32c5f6476c64aa1e4e39e9559"
+    },
+    {
+      "path": "tools/research.py",
+      "bytes": 9460,
+      "git_blob": "62120eb6a729152c1c80d23c95cafc8c45427276",
+      "sha256": "c0838546dc407813deb1d0e94f53354ad76133ba925f537a136be29317d2bce3"
+    },
+    {
+      "path": "tools/run.ps1",
+      "bytes": 430,
+      "git_blob": "fcc6be895a5e9e95440a6f5035aea69917900538",
+      "sha256": "2509b2c2c661ec56fc8e77e02505a21011d5e92e3529d35e7ddb0b65c66380b5"
+    },
+    {
+      "path": "tools/scoped_research_adapter.py",
+      "bytes": 22754,
+      "git_blob": "305615ca344fda63183feaf663002e70bd235b2f",
+      "sha256": "e92bef391d6f1ce3c62c39dbcb07bdc5f042ba6c438091977d28d603a20270ed"
+    },
+    {
+      "path": "tools/scoped_research_queue.py",
+      "bytes": 12333,
+      "git_blob": "6ef0904809bd36a33f5f57b5b74f02179708d1fc",
+      "sha256": "bb95aa769550c0fd22299e3989b0d69525bb8180baca52e3ca019240ce997fd3"
+    },
+    {
+      "path": "tools/simulate_short_term.py",
+      "bytes": 5792,
+      "git_blob": "2210cdbb660f400981283c0c7e5edcebe1a0d071",
+      "sha256": "d2b364b039723d7bee54e270e9687fb5373018fb555bdcf2ae7cd5da00a1c704"
+    },
+    {
+      "path": "tools/validate_artifacts.py",
+      "bytes": 4373,
+      "git_blob": "d62dce8abaf7902865a3e0808a63c31a2fa703f6",
+      "sha256": "7f15af00cc5ee10dfc72a5cf48100e4b77237f61ffc7dec9a45be532c271518d"
+    },
+    {
+      "path": "tools/verify_observation.py",
+      "bytes": 3836,
+      "git_blob": "0944f0a5ef0d32d76f6e996033baaf0cf4cdf1e4",
+      "sha256": "4b47e60911d84d0fc21abee694978a27054f526ae8498ca17f9a83f92f23b3e3"
+    },
+    {
+      "path": "tools/workbooks.mjs",
+      "bytes": 24498,
+      "git_blob": "cfaabd0ed2bd84038ad6ab064f6097282134535e",
+      "sha256": "76f1252bdb91a6cd2ec05e4bffe4fd69325230e2176f54a870d834ab7b3899c2"
+    },
+    {
+      "path": "validation/acceptance.md",
+      "bytes": 2038,
+      "git_blob": "7d6eb3dbc4899dd2da66acbde05b4b03b2883579",
+      "sha256": "66ca65b41c11e42ed06e8531426c967a4fc0bfebd6bdba3062c449e6656f329f"
+    },
+    {
+      "path": "validation/astra-audit.json",
+      "bytes": 7243,
+      "git_blob": "e6b8cfe3131b942bb0eeef5543fb65081e8a9517",
+      "sha256": "ecbd4b28750ac09244c8b87d33b91c01f30d920f69d575fe4a8123a085403897"
+    },
+    {
+      "path": "validation/astra-extension-review-2026-10-08.md",
+      "bytes": 23861,
+      "git_blob": "553213179110292448ff03c6d19e48eac7da2e7f",
+      "sha256": "a202c695377d429c357eb301d00ed59674cbff826c13d0f92752cedae87d838a"
+    },
+    {
+      "path": "validation/audit-integrity.json",
+      "bytes": 332,
+      "git_blob": "26c56610d935e130c1c00be7cbad1ea174513bbc",
+      "sha256": "7ca520ce36c808840bb78227cf0714551178727e434832a49625f06a501f6c15"
+    },
+    {
+      "path": "validation/audit-original-hashes.json",
+      "bytes": 16363,
+      "git_blob": "927caf52ac5672a01eaf84dea5364b69759e1bcd",
+      "sha256": "3d0738c864aacc3642ec33e7e0d97b98b6e3436b6ba3059c3e09e3c5f7cf19d7"
+    },
+    {
+      "path": "validation/audit-report.md",
+      "bytes": 5971,
+      "git_blob": "7a0333316afa087cbded555638d5438cdae2c956",
+      "sha256": "a80a28b60680d08b41f215ccee70c9045b1b0f8f30c5f901837eb6994618114a"
+    },
+    {
+      "path": "validation/chat-project-onboarding-2026-10-09/APPROVED-RESEARCH-REFERENCE.txt",
+      "bytes": 97983,
+      "git_blob": "f4077effde0543a5012fc001daf1f644d7125d95",
+      "sha256": "43512aaa6382215606c5c2fc343198e61217eeb46a1960f25a9f375334676cf2"
+    },
+    {
+      "path": "validation/chat-project-onboarding-2026-10-09/CHAT-HANDOFF-REQUEST.txt",
+      "bytes": 1742,
+      "git_blob": "e4219db4dd8a72f189bfcab5dfc07e282093300e",
+      "sha256": "d62fae3d9aa18f92e60ea12a328f1c14c3c69182e6e7300aaa448043d05a8e08"
+    },
+    {
+      "path": "validation/chat-project-onboarding-2026-10-09/PROJECT-INSTRUCTIONS.txt",
+      "bytes": 5803,
+      "git_blob": "3e590c0b5de63d71d824939f60bad4ad7020d3ff",
+      "sha256": "e6498fe5f8bacf3958b022874775cdd759738b9bfaff96059ebff8efca9880e8"
+    },
+    {
+      "path": "validation/chat-project-onboarding-2026-10-09/PROJECT-STATE-SNAPSHOT-2026-10-09.txt",
+      "bytes": 85143,
+      "git_blob": "2f12837583d18fd81e34d22a90ddcc7df1767a4a",
+      "sha256": "f362257d0da63dc97702bfbd2e380d4b40bd397132b8bdd87b351f05fd67d21f"
+    },
+    {
+      "path": "validation/chat-project-onboarding-2026-10-09/SOURCE-MANIFEST.json",
+      "bytes": 5405,
+      "git_blob": "f328d1eb4775724c5b629f2431c2a13412d803a2",
+      "sha256": "b1bd80e738d54cf1c8e83e86a9cce234b4d41181ed380990c7a449222007e5c1"
+    },
+    {
+      "path": "validation/chat-project-onboarding-2026-10-09/START-HERE.txt",
+      "bytes": 2717,
+      "git_blob": "39659e0d790eb670e4a913a0e3bca7516f41691e",
+      "sha256": "841fe8efff54f94ba35b0a6555b2cdea0ca8ed3a8b482633ed029057fb499b49"
+    },
+    {
+      "path": "validation/chat-project-onboarding-2026-10-09/WORKFLOW-AND-OVERVIEW.txt",
+      "bytes": 23038,
+      "git_blob": "15643c913d04cffa5b40c23d1fc3a7507d01ef74",
+      "sha256": "db08c7ad21f19f03546cdffbac6fd3293a7bf4717c78a2f741d5ad35d3183fe6"
+    },
+    {
+      "path": "validation/chat-work-protocol-assessment-2026-10-09.md",
+      "bytes": 18640,
+      "git_blob": "c18f0f4e6c42a834035288ddd030e578ade5250b",
+      "sha256": "c90732bc5c0f903743d165b769ffb9176b7d5cff7e14be6fb521166a1e453fec"
+    },
+    {
+      "path": "validation/completion-audit.json",
+      "bytes": 3066,
+      "git_blob": "12a269cb72c8a1a34eb6e64b8ce1fa8dd7870a49",
+      "sha256": "0615c1fd5a74fa7ed811a77cb12c70059b479ea65a0d98fa70cf31fae17cf873"
+    },
+    {
+      "path": "validation/config-history/20261009T124943326479Z-pre-discovery-config.json",
+      "bytes": 2216,
+      "git_blob": "786bca5c6f3cce0ac409bf2d73aa47945acfe02b",
+      "sha256": "553fbe1d7b58ad54d2fc073dbe8dc1bee52c646e18e33a343c1f546a559ada2d"
+    },
+    {
+      "path": "validation/continuation.md",
+      "bytes": 3003,
+      "git_blob": "bebc6115151d447c8b1fa42a58e1204677be1252",
+      "sha256": "adf2427b7d6653a01c0eb36b7092c48aa73cc6b465050f638678f63a6b7023cc"
+    },
+    {
+      "path": "validation/decision-integration-audit-2026-10-08.md",
+      "bytes": 8242,
+      "git_blob": "4547bd67c7beecadfe207caa1fea388024b2d048",
+      "sha256": "4c89437d78d0a1ae1dcc5b7a14485251946550ed79f9e89b692c3a6b494a5bea"
+    },
+    {
+      "path": "validation/deliverable-manifest.json",
+      "bytes": 4378,
+      "git_blob": "d8c6ef5fe40c28f81c91ea0d3971e32100b89100",
+      "sha256": "5176acc7fb2ae318f7d67a4be5692135bdfa928d0d877bbfcd2a08dde9914efe"
+    },
+    {
+      "path": "validation/discovery-challenge-2026-10-09.json",
+      "bytes": 66507,
+      "git_blob": "3316fc6723448e5886e068e494a6227e245ba1f5",
+      "sha256": "5c75bb8535f303c1f22a1a5e26de96788f32fbe79d93ab26d7549aeba7001525"
+    },
+    {
+      "path": "validation/discovery-challenge-2026-10-09.md",
+      "bytes": 20267,
+      "git_blob": "f69a60b600a4d0321828564c21951c06c430a000",
+      "sha256": "1e59a65aedbd7ec092da6b2ade46c6de19d3710f1a42814e6bd6030f132a08be"
+    },
+    {
+      "path": "validation/final-goal-checkpoint-2026-10-09.md",
+      "bytes": 8417,
+      "git_blob": "d439064a252354c134e314f916b755dbfb015fbd",
+      "sha256": "bded51643208307cf70791aedcabebb7c1dda9bf69344426d716b91936ca5c52"
+    },
+    {
+      "path": "validation/final-test-results.json",
+      "bytes": 216,
+      "git_blob": "584ac76c57413c4f655c7044d470514474af6baf",
+      "sha256": "c100f598603055af78ac5200fbcfb9c10e919867511de74c33c6e5eacfedf0d2"
+    },
+    {
+      "path": "validation/foundation-reviews/app-claims-review.md",
+      "bytes": 20511,
+      "git_blob": "65758aa4b0387278a5e784b5d9064985e4330c8e",
+      "sha256": "3a56e539947229f5b94e27b740d3ec89dd53904304088714ee1f3c2d70fddaf4"
+    },
+    {
+      "path": "validation/foundation-reviews/app-followup-astra.md",
+      "bytes": 4388,
+      "git_blob": "2491d2ff81c31ef4ed8b22a40c60ccf4d1c6155c",
+      "sha256": "fdb6f93af05f513217b4c8c39fa3892a6bfa54da65a76d7f5482b28c3b88ef9a"
+    },
+    {
+      "path": "validation/foundation-reviews/app-reinvestment-review.md",
+      "bytes": 20592,
+      "git_blob": "5665a7e477ab2e09b00c7e15c067b4d11ef3d765",
+      "sha256": "79d11de2c690f6b30ed1b9c5a83c7821ab00d9bebde567ee03ec0018d73a13d4"
+    },
+    {
+      "path": "validation/foundation-reviews/jpm-capital-review.md",
+      "bytes": 17940,
+      "git_blob": "b5df7a44dfea4769e436bb0704baa85b58b6817b",
+      "sha256": "22005b7aa364efa1de1382003846b331fc925d8196087abc19e4848673f518a5"
+    },
+    {
+      "path": "validation/foundation-reviews/sol-baseline-validation.md",
+      "bytes": 15263,
+      "git_blob": "0b429e4ad07a729845d63b734676a5f5378f57d3",
+      "sha256": "05129992c688b05fe387d8def2c8ec01e98bc627985c953d8a99ccb2450d5d15"
+    },
+    {
+      "path": "validation/implementation.md",
+      "bytes": 5210,
+      "git_blob": "24c6461afc073568e8fd89dcfdbeb9eac59c58f7",
+      "sha256": "36a556df5d560e40e062f52f2f3d25f2b0a6f6c04e298f634db845990415780c"
+    },
+    {
+      "path": "validation/jpm-astra-review-2026-10-09.json",
+      "bytes": 51962,
+      "git_blob": "d74d808777c806e16f07c03526a1d695123c969e",
+      "sha256": "3b1b82f8fdadc0a2d8de840f45a45a978221d8ddd4612397c2a9fdcab05c5ab4"
+    },
+    {
+      "path": "validation/jpm-astra-review-2026-10-09.md",
+      "bytes": 13865,
+      "git_blob": "a8222ba8140ee8a18fc45ffbc2b5ba7400b0d193",
+      "sha256": "bd942b6598fdaed76c8e6622ed536dc0ebf7702ee73a14c190376158d7c8f15d"
+    },
+    {
+      "path": "validation/jpm-scoped-independent-review-2026-10-09.json",
+      "bytes": 13875,
+      "git_blob": "ea0e2457db435e11091088b3a93fd894cbf26265",
+      "sha256": "13592348515863829dc46ad57b5e6989dafbf11dd28f7f76f58c4f1a8cfd151a"
+    },
+    {
+      "path": "validation/jpm-scoped-independent-review-2026-10-09.md",
+      "bytes": 8894,
+      "git_blob": "f32aefd6b8fdd384f8e070565c12f6835da4707b",
+      "sha256": "a72af5d17ee18619b2be8e44f81a5ca70285c0e9c90919f22d185e7d66206faf"
+    },
+    {
+      "path": "validation/netflix-followup-parent-checks-2026-10-09.json",
+      "bytes": 4225,
+      "git_blob": "c216f0d4cb1b807cf5d9ee5206e8ff8921439d4c",
+      "sha256": "2eed860a8a1695d6ad858ceb3f5cf53a110198cae8b21f83d036cc6d6f43fe16"
+    },
+    {
+      "path": "validation/observation-report.md",
+      "bytes": 3483,
+      "git_blob": "60ee257c5c00614e0be10ac05a7cb58b456b5678",
+      "sha256": "542d229aad8c738543ef7003a1dd9cb67b44b3fe5003811813ccb6af91d48001"
+    },
+    {
+      "path": "validation/observation-status.json",
+      "bytes": 5785,
+      "git_blob": "bebacb3636e8e50b78679680eb1d5df96969f35f",
+      "sha256": "be27138480a8173a86ddf85e1b22413891040723789ef5a7e871b5387a972640"
+    },
+    {
+      "path": "validation/operational-evidence-2026-10-09.json",
+      "bytes": 2701,
+      "git_blob": "2b8134bb469c65839efda44ad85136fcb59a98f4",
+      "sha256": "c5321ec32a6d6b13ac1c67e4ab905a169f20d1aad4b768b91e2be68932552124"
+    },
+    {
+      "path": "validation/pilot-findings.md",
+      "bytes": 2898,
+      "git_blob": "d8d2af8f453102b7079dc62a44799e51f9cce2f1",
+      "sha256": "8b6d3071528ab293415aa6b84454789d043747ee2c5a1ce075916f4d4c08836d"
+    },
+    {
+      "path": "validation/reference-hashes.json",
+      "bytes": 1616,
+      "git_blob": "ef0975952dd1e4c92d8cbea2dc23462cf66931b2",
+      "sha256": "e6b4acf8f1474c0ab61acc32b7c2d0db5f4758ce025722b30554ffa0b93aedb8"
+    },
+    {
+      "path": "validation/reference-integrity.json",
+      "bytes": 173,
+      "git_blob": "5e8296a44b38a067b20e2d2967747bbf4905487b",
+      "sha256": "477c11ced18ed842cbb7ee20ab8d00246015661bd1fa23bc5d6fc9153cad0ef6"
+    },
+    {
+      "path": "validation/refinement-report.json",
+      "bytes": 2443,
+      "git_blob": "ca89462164f4891aa1cad0cd1216848ce0d54077",
+      "sha256": "9cc3c9d91f9ca32a637f4307409c0c5eb62324cfdb776b0000df9827918cf246"
+    },
+    {
+      "path": "validation/refinement-report.md",
+      "bytes": 6820,
+      "git_blob": "ef7255ca0aa4571de1439d96316bc8eeed3f2770",
+      "sha256": "715f9128327fbb5739cb70642b7e5ac52ec85e41da190a4da29f9e78ec8d0924"
+    },
+    {
+      "path": "validation/repository-identity.json",
+      "bytes": 836,
+      "git_blob": "03e1adf417883f6c6e6dd090533c7427e5559f22",
+      "sha256": "84b24a617cac998547c737dc842de6f07074c3bbf52f49b6865a62f3f59e697f"
+    },
+    {
+      "path": "validation/resume-2026-10-08.md",
+      "bytes": 1958,
+      "git_blob": "17cb02caa820ea1e0c446dd4a65d7a556e09861b",
+      "sha256": "56559d4e822bc97a1c9f9d94878cff9004abe0bb0ae69b06b87ebbba3ccc3384"
+    },
+    {
+      "path": "validation/resume-2026-10-09.md",
+      "bytes": 6197,
+      "git_blob": "ee308f1798955a880e3f26760bc0e5be517d19e4",
+      "sha256": "fc1f45def2dde0bd8e108365bf4924140c8ed730ef8114bc3d9282082fb0e317"
+    },
+    {
+      "path": "validation/reuse-assessment.md",
+      "bytes": 2709,
+      "git_blob": "0e808b4c2977c9dd43725aa2590961b425d59e76",
+      "sha256": "84d6e212b00c401ff51637c189523c3b418aba976d5e7da5b7a9b6dbbefb8e98"
+    },
+    {
+      "path": "validation/scoped-adapter-setup-2026-10-08.md",
+      "bytes": 10093,
+      "git_blob": "0dce16b361835957ed0ab2b69b7caa5e696996a7",
+      "sha256": "397dfde6fe3101b38e39a8d265898a9633d69fbbf4713420b458f55cf4f266cb"
+    },
+    {
+      "path": "validation/scoped-jobs/jpm-20261008-frozen-astra-review-v1.json",
+      "bytes": 7247,
+      "git_blob": "30bbee70db527daf5729f478d81eb94c97eaf496",
+      "sha256": "7b85d18ba087cbced45c8d15d2b1b460e9f97076404cc79dde23d46f44b72feb"
+    },
+    {
+      "path": "validation/scoped-jobs/jpm-20261008-frozen-astra-review-v2.json",
+      "bytes": 7247,
+      "git_blob": "2405821bfdc99c9c281c46b3f723e3f15437914f",
+      "sha256": "aadf7e96bfe6c1ef35fba25100877996bb4f06e86326a36d2bad7762da9f52d5"
+    },
+    {
+      "path": "validation/short-term-simulations.json",
+      "bytes": 14035,
+      "git_blob": "be4da7781bf45362e9f5b706778626672671dc86",
+      "sha256": "f97514e5a8d7b77649173afdb56b709c824f301654b3f7932bf43aa088f2464d"
+    },
+    {
+      "path": "validation/status.json",
+      "bytes": 2439,
+      "git_blob": "3bf2af4ba756fe2fc32f8a73885b83c7b16603b0",
+      "sha256": "c4c0c34f4deff103ac473445af1871eb5c917328eca90950f9b5d4d382e6d683"
+    },
+    {
+      "path": "validation/stronger-review-request.md",
+      "bytes": 1753,
+      "git_blob": "004bbd7e4597013c0ef3e203c5aa0ca4f541974f",
+      "sha256": "1ef2f1f419810d32dd03831a49499a8e172ea64e37804d9b56f4dc2717da6d2d"
+    },
+    {
+      "path": "validation/tests/test_alert_contract.py",
+      "bytes": 13001,
+      "git_blob": "c91feb15d4bf891aa87aa835a7571b15c6c2760a",
+      "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+    },
+    {
+      "path": "validation/tests/test_decision_economics.py",
+      "bytes": 5766,
+      "git_blob": "53edb344788dcb9f359e0fd94381b79c8150b41d",
+      "sha256": "fbe8f9a882abe9845c08b0a9eb4acc6d03be8bf3d57969d804d5ffe0aa3d6235"
+    },
+    {
+      "path": "validation/tests/test_decision_lane.py",
+      "bytes": 21505,
+      "git_blob": "ec37755f78b853dc981c23db7928eb70c2df565b",
+      "sha256": "3f7282263e261a3e81c04e83ec6289fe129c1ced5b2b2e7ff0e477442b8039fc"
+    },
+    {
+      "path": "validation/tests/test_decision_pipeline.py",
+      "bytes": 7762,
+      "git_blob": "d19e6d63f14551920e173257f6ee7c98f00b5933",
+      "sha256": "4906ebc8ab1208a275f54629e6baa16ec158a6ad440df1d2914b85b802f92e67"
+    },
+    {
+      "path": "validation/tests/test_decision_readiness.py",
+      "bytes": 18441,
+      "git_blob": "da30660ba0400b1df11a9173ea581947dc2c1974",
+      "sha256": "afbad56de6d59ed7527b524f62cbd21bcf2f884ccad77f28eaa31a7e75290fb9"
+    },
+    {
+      "path": "validation/tests/test_evidence.py",
+      "bytes": 1665,
+      "git_blob": "ea9a916f6246292d7af0c54bdfd24752267ffcc8",
+      "sha256": "a0d76ed790dc7724a6c02c1a61380baa4b0c8bcac0b3c9544fc7213edec5cc83"
+    },
+    {
+      "path": "validation/tests/test_finance.py",
+      "bytes": 8023,
+      "git_blob": "f4b373577391ee96505cff730057053bdd4c23e4",
+      "sha256": "5837c2411ccbb498602abc5f9f090b7e387bb5aa0932526662c66135b065f301"
+    },
+    {
+      "path": "validation/tests/test_lifecycle.py",
+      "bytes": 4089,
+      "git_blob": "f68eaf4be870518ea949b41a3ae39e9160579722",
+      "sha256": "ebefed77fbdb96182aa0f418b3362deb50f03be91f5e1cb831c9e40037cdd9f8"
+    },
+    {
+      "path": "validation/tests/test_observation_core.py",
+      "bytes": 17430,
+      "git_blob": "6cea0964d8d31400b47f8838fc5ea26e8f7810cd",
+      "sha256": "50b06483d5e8055cf3aab1cdc79ceb507b0a034991c51ea9b8659f7f3fd75f87"
+    },
+    {
+      "path": "validation/tests/test_observation_research.py",
+      "bytes": 10699,
+      "git_blob": "5942ba7aa03295843ee1b703f7260a1f07b0c88c",
+      "sha256": "6ba87afd402050fc33562f41120fea87e414784f4ec352308f0c406e7e4996cc"
+    },
+    {
+      "path": "validation/tests/test_observation_service.py",
+      "bytes": 23407,
+      "git_blob": "715c58fe9fe0b1e6991ddcbf275dd28eb0b51e56",
+      "sha256": "959a8eae0418df9e5988abd1ed49eab9024d8a67a4f0e53107df23c476ff0ab1"
+    },
+    {
+      "path": "validation/tests/test_observation_simulations.py",
+      "bytes": 9682,
+      "git_blob": "d89dd2c0f4eaf661b669780b17b9681bd133e9e2",
+      "sha256": "48735c31068e7e7a773208722d5b76885df5cf15b785a23d9c6903fbd23498c5"
+    },
+    {
+      "path": "validation/tests/test_observation_transport.py",
+      "bytes": 22631,
+      "git_blob": "659b8eb8b6f5b2be106773c9b5325664e6bba78c",
+      "sha256": "5bd6ed4e4cc28b6ab0ce2604d25e24a1e1afea6fedb356cc572f1e16283361e4"
+    },
+    {
+      "path": "validation/tests/test_observation_trial_report.py",
+      "bytes": 1985,
+      "git_blob": "05105682103b1227be47bf097139ee5664599ca6",
+      "sha256": "a6e9d848edf45b0fe3a43b6168de88d8b763f08010bcb181e997d651c2031464"
+    },
+    {
+      "path": "validation/tests/test_paper_study.py",
+      "bytes": 11267,
+      "git_blob": "38b8311bf9588423ecf1d60f92b083824677d57f",
+      "sha256": "6a8f0819bb5da7cdf465f4337b7aa6e1da63a3c421d0d63d2b43345ed6a1e5b3"
+    },
+    {
+      "path": "validation/tests/test_scoped_research_adapter.py",
+      "bytes": 12000,
+      "git_blob": "d55330faf4f45f27f3be3eda226ef7d5995e6aec",
+      "sha256": "997638db96802aca34688e1bacaba25c6d6296eae280aebc68cb0af412b94264"
+    },
+    {
+      "path": "validation/tests/test_scoped_research_queue.py",
+      "bytes": 6873,
+      "git_blob": "218f488f6e149a1ae09dcd94a7328e16227c605b",
+      "sha256": "ba0402905f66ed55e742964a1f5c859c9cfd4dd956266805fd8b6fce7e79b933"
+    },
+    {
+      "path": "validation/tests/test_short_term_illustrations.py",
+      "bytes": 2673,
+      "git_blob": "9bb994a32e3770a298e38562a45fe8923239f444",
+      "sha256": "060356b8638e26748ed3724ee3a4037fc2658d0fba1049aad6c47582400d0360"
+    },
+    {
+      "path": "workflows/evidence.md",
+      "bytes": 1849,
+      "git_blob": "ef1775f783c26068c2dd1de4464958bd7d23f46e",
+      "sha256": "5933e21ed258ca4a0b9d03d97b15d88e95f00195c3b8ca3082a6fa52c86f4d2b"
+    },
+    {
+      "path": "workflows/model-review.md",
+      "bytes": 1804,
+      "git_blob": "2ac81d6ae32da9ff59e8cf0e262d0ec3724f57da",
+      "sha256": "448aa9e8b3f20cc2bb8f41ec6007c9b3fabce9af399a3cc36d7e37b2beb4c11e"
+    },
+    {
+      "path": "workflows/research.md",
+      "bytes": 4029,
+      "git_blob": "c558d870f48ac2e80c3ea0f524b82751d9ebf83a",
+      "sha256": "6b20763316e6c47b0118f0489a499026e76fed34552b7f7a1905e4caf23e15b3"
+    }
+  ]
+}

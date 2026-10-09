@@ -1,0 +1,8 @@
+{
+  "currency": "USD",
+  "gbp_per_unit": "0.80",
+  "quote_timestamp": "2020-01-01T12:00:00Z",
+  "delay_seconds": "0",
+  "source": "EXAMPLE ONLY: replace with actual dated source",
+  "quote_type": "manual-broker"
+}

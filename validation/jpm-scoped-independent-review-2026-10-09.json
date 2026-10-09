@@ -1,0 +1,327 @@
+{
+  "schema": "supplemental-scoped-independent-review-v1",
+  "review_date": "2026-10-09",
+  "evidence_as_of": "2026-10-08",
+  "decision": "accept-rejection-analysis-only",
+  "trading_approved": false,
+  "paper_entry_approved": false,
+  "stronger_model_review_completed": false,
+  "reviewer": {
+    "role": "independent delegated checking agent",
+    "requested_model": "inherited parent configuration; not independently identified",
+    "reported_backend_identity": null,
+    "astra_challenge": false
+  },
+  "checked_artifacts": [
+    {
+      "path": "monitoring/studies/2026-10-08-jpm-event-dossier.md",
+      "sha256": "34ffd0c70b11383594b7962b37fe57242d3384b0c76cd6b92d042ca989a4c0fc"
+    },
+    {
+      "path": "monitoring/studies/2026-10-08-jpm-event-dossier.json",
+      "sha256": "01aff6247e21c036ef18ae88dc6cb2a039250c9960307e08700154a434e773b4"
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6"
+    },
+    {
+      "path": "monitoring/DECISION-SCOPE.md",
+      "sha256": "1b8c55eb9c6865bcf152718d3a29ccf72e6fc099229cfe1af493752abd2a9262"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-10q.pdf",
+      "sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-presentation.pdf",
+      "sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-transcript.pdf",
+      "sha256": "df9042c4c156aa33eed0cec2f5727598504e88e038be31140d98452dc9054540"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-supplement.pdf",
+      "sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-jpm-q2-10q.htm",
+      "sha256": "4ba60f17c069172a3bb4aa681d5f2a7ae3ac49e557f989101b4e3e1cbe4cad38"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-jpm-q2-regulatory-capital.htm",
+      "sha256": "061a2eb7450cdd0b446729050734d61c6f16a3624ef70bf2a7b20b2728f95130"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-2026-q2-release.htm",
+      "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q3-event.html",
+      "sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/september-transcript.html",
+      "sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history-20261008T163737Z.html",
+      "sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend-20261008T163737Z.html",
+      "sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/earningswhispers.html",
+      "sha256": "03b3bec44767094858af5442e6ac2079ce45240d783925cc8eb39877375bf592"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/sec-submissions.json",
+      "sha256": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/archive-manifest.json",
+      "sha256": "6c28305c195df9f684d1aeee9595e8c2b7e80cfeeaa820e58817a1b21bf6a6e4"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-manifest-verification.json",
+      "sha256": "97a47ef55beb80d60d76d7a00e5d1702a88a6abcfbf893bc448d6f66a471c274"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/retrieval-register.json",
+      "sha256": "3302923a8024a9d4e733f945f6190f2a678bfd4f076fb33b2f3918fd8ea6fca7"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-archive-provenance.json",
+      "sha256": "21b5bf19be6d12f553c8fa165f62d119c1443373202e721d43383e2d446e5181"
+    }
+  ],
+  "arithmetic": {
+    "advanced_total_headroom_bn": "27.66870",
+    "standardized_CET1_headroom_bn": "57.389780",
+    "advanced_H1_RWA_increase_bn": "78.613",
+    "capital_for_same_RWA_growth_bn": "11.79195",
+    "H2_NII_required_bn": "49.543",
+    "H2_NII_quarter_average_bn": "24.7715",
+    "H2_vs_H1_pct": "5.507166130715335306770023638648124880200",
+    "H2_quarter_average_vs_Q2_pct": "4.622629556109304388224859568357477721000",
+    "price_to_dated_TBV": "2.907631230701367445963828848698720776356",
+    "annualized_adjusted_Q2_EPS": "24.56",
+    "diagnostic_multiple": "13.41938110749185667752442996742671009772",
+    "one_bn_pretax_EPS_simplified": "0.2783757701729641452008017222180981367382",
+    "NII_annual_EPS_simplified": "0.4175636552594462178012025833271472051073",
+    "card_annual_NCO_increment_bn": "0.65745",
+    "card_annual_EPS_simplified": "0.1830181501002152772622670922722886199985",
+    "one_off_per_period_end_common_share": "0.4232209173744505132380314690483899680323",
+    "combined_adverse_annual_EPS": "-0.6005818053596614950634696755994358251058",
+    "conditional_price_uplift": "5.603445826563855230574932712254119538244",
+    "conditional_price_downside": "-8.059436132346792978135925720035100131856",
+    "estimated_participating_allocation_fraction_Q2": "0.004557010601045714011608384899505924113781",
+    "SLR_exact_requirement_pct": "4.25",
+    "release_London": "2026-10-13T12:00:00+01:00",
+    "call_London": "2026-10-13T13:30:00+01:00"
+  },
+  "prior_manifest_recheck": [
+    {
+      "file": "q2-10q.pdf",
+      "expected_original_sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7",
+      "actual_sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7",
+      "original_matches": true,
+      "matches_correction_record": true
+    },
+    {
+      "file": "q2-presentation.pdf",
+      "expected_original_sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+      "actual_sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+      "original_matches": true,
+      "matches_correction_record": true
+    },
+    {
+      "file": "q3-event.html",
+      "expected_original_sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+      "actual_sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+      "original_matches": true,
+      "matches_correction_record": true
+    },
+    {
+      "file": "events.html",
+      "expected_original_sha256": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241",
+      "actual_sha256": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241",
+      "original_matches": true,
+      "matches_correction_record": true
+    },
+    {
+      "file": "marketbeat.html",
+      "expected_original_sha256": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40",
+      "actual_sha256": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40",
+      "original_matches": true,
+      "matches_correction_record": true
+    },
+    {
+      "file": "q2-supplement.pdf",
+      "expected_original_sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60",
+      "actual_sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60",
+      "original_matches": true,
+      "matches_correction_record": true
+    },
+    {
+      "file": "september-transcript.html",
+      "expected_original_sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+      "actual_sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+      "original_matches": true,
+      "matches_correction_record": true
+    },
+    {
+      "file": "dividend.html",
+      "expected_original_sha256": "9c0cc13ed702a2684bcec487f1f07b3d77e4d1fc3620c864a2f09d5aaf631806",
+      "actual_sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+      "original_matches": false,
+      "matches_correction_record": true
+    },
+    {
+      "file": "price-history.html",
+      "expected_original_sha256": "e88eacbfacaac02b5d8a769c87af1532ea379b88c7edd6cd0422fa5a1dba01c8",
+      "actual_sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+      "original_matches": false,
+      "matches_correction_record": true
+    }
+  ],
+  "checks": {
+    "primary_passages_read": true,
+    "fresh_PDF_text_extraction": true,
+    "independent_decimal_arithmetic": true,
+    "timezone_conversion": true,
+    "archive_correction_preserved": true,
+    "full_company_thesis_reviewed": false,
+    "all_external_web_only_assertions_reverified": false,
+    "current_october9_market_data_checked": false
+  },
+  "accepted_scope": [
+    "dated event schedule and source-based financial diagnostics with stated limitations",
+    "withholding a pre-event entry because no verified expectations/persistence/valuation edge is established",
+    "no numerical price-response range, buy ceiling, stop, quantity or expected return"
+  ],
+  "withheld_scope": [
+    "complete company thesis or current valuation",
+    "proof JPM is overpriced or will underperform cash",
+    "accepted paper/live entry or executable instruction",
+    "Astra model-review acceptance",
+    "phone, account, price-data and strategy gates"
+  ],
+  "findings": [
+    {
+      "id": "JIR-01",
+      "severity": "P2",
+      "scope": "earnings-sensitivity precision",
+      "finding": "Q2 EPS note allocates $95m of $20,847m common-equity net income to participating securities; simplified marginal after-tax profit / diluted shares holds this allocation fixed implicitly. It is not a fully reconciled forecast EPS bridge.",
+      "material_to_rejection": false,
+      "disposition": "accepted only as explicitly simplified diagnostic; any accepted valuation must model or justify participating claims"
+    },
+    {
+      "id": "JIR-02",
+      "severity": "P2",
+      "scope": "archive integrity",
+      "finding": "Two older raw snapshots were overwritten before this review. Seven other recorded prior originals match; new timestamped price/dividend bytes and correction record match. Missing older bytes cannot be restored by a new hash.",
+      "material_to_rejection": false,
+      "disposition": "history preserved; accept later captures only for this dossier; immutable naming required for future ingestion"
+    },
+    {
+      "id": "JIR-03",
+      "severity": "P2",
+      "scope": "unarchived supporting assertions",
+      "finding": "TipRanks EPS5.90 and July23 financing8K facts have no local original snapshot in the dossier package. This review cannot independently attest to their exact original web content.",
+      "material_to_rejection": false,
+      "disposition": "excluded from affirmative acceptance; primary SEC identity/financials and archived EarningsWhispers suffice for the limited rejection"
+    },
+    {
+      "id": "JIR-04",
+      "severity": "P2",
+      "scope": "interpretation",
+      "finding": "Public guidance is not proof every expectation is fully reflected in price, and missing evidence of an edge is not evidence of negative expected return.",
+      "material_to_rejection": false,
+      "disposition": "accept cash as the strategy decision for this unqualified candidate, not as a forecast of relative performance"
+    }
+  ],
+  "unresolved_material_findings_for_rejection": [],
+  "source_read_locations": {
+    "q2-10q.pdf": [
+      "printed19 NII and TCE",
+      "printed46 capital",
+      "printed52 LCR",
+      "printed54-55 deposits",
+      "printed173 participating securities/EPS",
+      "printed177 capital requirement footnotes"
+    ],
+    "q2-presentation.pdf": [
+      "printed1 significant items",
+      "printed2 managed tax",
+      "printed4 card KPIs",
+      "printed8 outlook"
+    ],
+    "q2-transcript.pdf": [
+      "printed4 Barnum NII upgrade and Markets offsets"
+    ],
+    "prior-jpm-q2-regulatory-capital.htm": [
+      "requirements and both period capital tables, leverage footnotes"
+    ],
+    "prior-2026-q2-release.htm": [
+      "headline, significant items and firmwide results"
+    ],
+    "q3-event.html": [
+      "opening release/call schedule"
+    ],
+    "september-transcript.html": [
+      "Goldberg guidance question and Petno answer"
+    ],
+    "earningswhispers.html": [
+      "overview and earnings panel"
+    ],
+    "price-history-20261008T163737Z.html": [
+      "October7 close, October8 intraday timestamp"
+    ],
+    "dividend-20261008T163737Z.html": [
+      "declaration record/payable dates"
+    ],
+    "sec-submissions.json": [
+      "issuer ticker/exchange/domicile and August6 10-Q accession"
+    ]
+  },
+  "fresh_source_token_checks": [
+    {
+      "file": "q2-10q.pdf",
+      "printed_page": 19,
+      "numeric_tokens_verified": [
+        "23,677",
+        "46,957",
+        "113.35"
+      ]
+    },
+    {
+      "file": "q2-10q.pdf",
+      "printed_page": 46,
+      "numeric_tokens_verified": [
+        "302,619",
+        "2,132,428",
+        "2,123,862",
+        "346,248"
+      ]
+    },
+    {
+      "file": "q2-10q.pdf",
+      "printed_page": 54,
+      "numeric_tokens_verified": [
+        "2,713,700"
+      ]
+    },
+    {
+      "file": "q2-10q.pdf",
+      "printed_page": 55,
+      "numeric_tokens_verified": [
+        "1,743.9"
+      ]
+    }
+  ],
+  "checked_artifacts_unchanged_at_review_end": true
+}

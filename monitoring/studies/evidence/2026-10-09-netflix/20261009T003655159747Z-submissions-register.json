@@ -1,0 +1,30 @@
+{
+  "id": "sec-submissions",
+  "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+  "retrieved_at": "2026-10-09T00:36:54.559519+00:00",
+  "status": "archived",
+  "path": "C:\\Users\\aidan\\Documents\\Company research 2\\monitoring\\studies\\evidence\\2026-10-09-netflix\\20261009T003655151652Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+  "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+  "name": "NETFLIX INC",
+  "cik": "0001065280",
+  "discovery_records": [
+    {
+      "filingDate": "2026-07-30",
+      "form": "8-K",
+      "accessionNumber": "0001065280-26-000214",
+      "primaryDocument": "nflx-20260726.htm"
+    },
+    {
+      "filingDate": "2026-07-22",
+      "form": "8-K",
+      "accessionNumber": "0001193125-26-312575",
+      "primaryDocument": "d171951d8k.htm"
+    },
+    {
+      "filingDate": "2026-07-17",
+      "form": "10-Q",
+      "accessionNumber": "0001065280-26-000212",
+      "primaryDocument": "nflx-20260630.htm"
+    }
+  ]
+}

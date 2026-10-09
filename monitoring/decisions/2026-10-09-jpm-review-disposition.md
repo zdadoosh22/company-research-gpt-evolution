@@ -1,0 +1,11 @@
+# JPM rejection: review disposition
+
+9 October 2026. The frozen 8 October dossier and original dated rejection remain unchanged. The supplemental independent check and separately selected Astra analytical challenge support declining a pre-event entry. This acceptance is confined to a rejection analysis. It grants no positive-entry, price-target, company-publication, portfolio or execution authority.
+
+Review bindings: `validation/jpm-astra-review-2026-10-09.md`, SHA256 `bd942b6598fdaed76c8e6622ed536dc0ebf7702ee73a14c190376158d7c8f15d`; adjacent JSON, SHA256 `3b1b82f8fdadc0a2d8de840f45a45a978221d8ddd4612397c2a9fdcab05c5ab4`. The requested review route was gpt-6-astra/high; runtime backend identity remains unreported and independently unverified.
+
+Adopt two explicit interpretive corrections without rewriting the historical dossier. External EPS labels cannot establish that market participants do or do not expect 'weak earnings' without a defined accounting/period baseline. Withdraw that affirmative inference; the acceptable conclusion is that no reconciled expectations mismatch was established. The fixed-capital RWA stress is a conditional sensitivity, not evidence that actual headroom was depleting: Advanced total-capital headroom increased by $5.49405bn over the reported first half. Retain the dated constraints and stress while reflecting that favourable contrary evidence.
+
+Retain the remaining qualifications: marginal EPS conversion simplifies participating-security allocation; diagnostic multiples and stale tangible book do not establish price-response endpoints; the two overwritten old snapshots cannot be recovered by changing hashes; unarchived TipRanks/July financing assertions are excluded from affirmative independent acceptance. Neither a strong franchise nor this rejection predicts relative performance against cash.
+
+The positive-entry blockers remain unresolved: reconciled expectations, persistent incremental earnings, capital/distribution economics, independently justified valuation and delayed-action feasibility. No commitment, entry ceiling, stop, shares or fill is created. Reconsideration requires new dated evidence and a new decision, rather than automatic promotion of this rejection after a price move. Preserve it in prospective outcome evaluation.

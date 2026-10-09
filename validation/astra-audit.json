@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-07",
+  "research_cutoff": "2026-10-06",
+  "status": "complete-with-explicit-analytical-limits",
+  "scope": "Focused arithmetic, claims, sector-substitution and evidence-to-conclusion audit of the three original pilots and r002 corrections.",
+  "reviewer": {
+    "agent": "astra_audit",
+    "configured_model": "gpt-6-astra",
+    "reasoning": "high",
+    "read_only": true,
+    "identity_limit": "Configuration known; no backend model-identity attestation available."
+  },
+  "additional_review": {
+    "agent": "calculation_review",
+    "configured_model": "inherited parent configuration; not independently identified",
+    "read_only": true
+  },
+  "review_boundary": "Astra independently reproduced four APP cases and inspected final residual corrections/test records. Parent executed final mutations and visual checks. Astra did not rerun final mutation tests or test native Excel.",
+  "findings": [
+    {
+      "id": "F01",
+      "severity": "P1",
+      "finding": "Borrowing created cash without linked debt service and claims.",
+      "disposition": "fixed",
+      "resolution": "Reject every nonzero borrowing input until a separately validated financing schedule exists.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "F02",
+      "severity": "P2",
+      "finding": "Growing total terminal FCFE conflicted with constant financing interest.",
+      "disposition": "fixed",
+      "resolution": "Value growing pre-interest operating equity cash and constant after-tax interest separately.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "F03",
+      "severity": "P1",
+      "finding": "Blank and domain guards did not protect all dependent outputs.",
+      "disposition": "fixed",
+      "resolution": "Guard selected inputs, dates, sensitivities and terminal cash; bank selectors and supporting outputs; scope-compatible Unilever TTM and margins. 122 mutation checks recorded.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "F04",
+      "severity": "P2",
+      "finding": "Rounded USD3.6bn debt was treated as exact USD3600m principal.",
+      "disposition": "fixed",
+      "resolution": "Record December 2025 detailed USD3550m note principal and distinguish dates, carrying values and cash interest.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "F05",
+      "severity": "P2",
+      "finding": "Known ownership evidence omitted from uncertainty assessment.",
+      "disposition": "fixed-with-analytical-limit",
+      "resolution": "Record July outstanding shares and December disclosed awards. Mixed-date EPS proxy explicitly remains unapproved as a current claim count.",
+      "resolved": true,
+      "limits_conclusion": true,
+      "material": true
+    },
+    {
+      "id": "F06",
+      "severity": "P2",
+      "finding": "Terminal-value dependence omitted.",
+      "disposition": "fixed",
+      "resolution": "Disclose approximately 64.2%, 75.2%, 80.8% bear/base/bull terminal dependence.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "F07",
+      "severity": "P2",
+      "finding": "Ownership sensitivity and bank capital comparison exceeded their scope.",
+      "disposition": "fixed",
+      "resolution": "Restrict 5% ownership scaling to zero fixed-cash buybacks; attribute Advanced versus Standardized total-capital comparison precisely.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "R01",
+      "severity": "P2",
+      "finding": "Residual stale APP share/debt prose.",
+      "disposition": "fixed",
+      "resolution": "335.989m is explicitly July outstanding plus June EPS awards; December note principal is separately dated.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "R02",
+      "severity": "P1",
+      "finding": "Sensitivity cells lacked positive terminal-FCFE checks at each growth setting.",
+      "disposition": "fixed",
+      "resolution": "Each grid cell validates its own terminal cash, rate domains and active inputs; targeted negative-terminal fixture passes.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "R03",
+      "severity": "P2",
+      "finding": "Invalid JPM selector could error or truncate fractional values.",
+      "disposition": "fixed",
+      "resolution": "Require a numeric integer in 1..4 before CHOOSE; blank, zero, negative, 5, fractional and text cases withheld.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "C01",
+      "severity": "P2",
+      "finding": "Missing quote broke workbook case and artifact validation.",
+      "disposition": "fixed",
+      "resolution": "Support WITHHELD price-dependent returns while retaining conditional valuation arithmetic. Actual no-quote export/import fixture validated.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "C02",
+      "severity": "P2",
+      "finding": "Bank helper bypassed finite/non-boolean numeric validation.",
+      "disposition": "fixed",
+      "resolution": "Validate all bank numeric inputs; NaN, infinity, boolean and invalid domains rejected.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "C03",
+      "severity": "P2",
+      "finding": "XIRR fixed lower bound could report an incorrect near-total-loss return.",
+      "disposition": "fixed",
+      "resolution": "Solve in log(1+r), validate bracketing and residual; extreme-loss and unrepresentable-loss tests added.",
+      "resolved": true,
+      "material": true
+    }
+  ],
+  "analytical_limits": {
+    "APP": [
+      "Mature reinvestment and margin persistence unsupported.",
+      "Lease/cash-interest financing and current ownership claim reconciliation incomplete.",
+      "June-to-October cash/operating bridge and independent valuation corroboration incomplete.",
+      "Intrinsic value, investment judgement, accepted prospective returns and actionable entries withheld; displayed numbers are conditional arithmetic illustrations."
+    ],
+    "JPM": [
+      "Reported average ROTCE is not automatically a long-run return on opening tangible equity.",
+      "No capital-constrained forward distribution path verified; steady-state values are illustrative.",
+      "No accepted price-dependent return or entry conclusion."
+    ],
+    "ULVR": [
+      "Focused IFRS/scope/currency validation only, not a full company thesis.",
+      "Price and FX absent; security valuation and prospective returns withheld."
+    ]
+  },
+  "workflow_approved": false,
+  "native_excel_verified": false,
+  "per_stage_cost": "Unavailable; account snapshots are shared and not precise task costs.",
+  "followup_review": "validation/foundation-reviews/app-followup-astra.md",
+  "followup_disposition": "Conditional valuation can use materially bounded dated snapshots; corrected r002 is still illustrative. Broader operating WC needs financing-accrual correction before reuse. New replacement model not part of this completed focused audit.",
+  "completion_verified": "2026-10-07T13:04:37.675179+00:00"
+}

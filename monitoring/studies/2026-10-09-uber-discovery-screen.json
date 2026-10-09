@@ -1,0 +1,336 @@
+{
+  "record_id": "uber-discovery-2026-10-09",
+  "as_of": "2026-10-09",
+  "created_at": "2026-10-09T00:37:33.004826+00:00",
+  "scope": "New scoped days-to-months candidate-discovery screen; not full long-term thesis, portfolio decision or execution instruction",
+  "status": "screen-complete-entry-withheld-awaiting-independent-review",
+  "disposition": "reject-current-pre-event-entry; retain conditional post-disclosure research candidate",
+  "security": {
+    "legal_entity": "Uber Technologies, Inc.",
+    "ticker": "UBER",
+    "exchange": "New York Stock Exchange",
+    "class": "Common Stock, par value USD0.00001 per share",
+    "trading_currency": "USD",
+    "price_unit": "major_currency_unit",
+    "identity_source": "SEC Q2 2026 10-Q cover, rendered lines53-57",
+    "isa_eligibility": "unverified",
+    "broker_fractional_order_eligibility": "unverified"
+  },
+  "model_provenance": {
+    "requested": "No explicit override in delegation; inherited parent model and effort",
+    "actual_backend_identity": "Not independently reported by available tools",
+    "review": "Own analytical screening only; no actual independent Astra acceptance in this record"
+  },
+  "methodology": {
+    "base_path": "methodology/company-research-v1.0.0.md",
+    "base_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+    "scoped_path": "monitoring/DECISION-SCOPE.md",
+    "scoped_sha256": "b424a556978d65327aa6be45702691c824f894a550a6937e288f8b01031f00b8"
+  },
+  "catalysts": [
+    {
+      "event": "Q3 2026 results conference call",
+      "time": "2026-11-04T13:00:00Z",
+      "classification": "issuer announced scheduled event, not guarantee of exact release-material publication time",
+      "source_id": "q3-date",
+      "location": "numbered archived text29-30"
+    },
+    {
+      "event": "Delivery Hero tender acceptance deadline",
+      "date": "2026-11-05 Frankfurt local midnight, as announced27Aug",
+      "classification": "announced condition/deadline, not acquisition closing",
+      "source_id": "deliveryhero-offerdocument",
+      "location": "Acceptance period paragraph; expected settlement H2 2027"
+    }
+  ],
+  "source_register": [
+    {
+      "id": "q2-results",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx",
+      "accessed_at": "2026-10-09T00:34:37.205476+00:00",
+      "http_status": 200,
+      "final_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003437205476Z-q2-results-7c191dca64d3010d.html",
+      "sha256": "7c191dca64d3010df2dc2720101ebe707b7776ac387e3d4734a4441864c0a08d",
+      "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003437205476Z-q2-results-7c191dca64d3010d.txt",
+      "text_sha256": "5cc89f1f3f306381479badb4cbb99311dda427af784cf48a7f0791032d898c78",
+      "original_manifest_text_hash_lf_normalized": "ea4d0b8e79f3c2eafdc69dcf4e1cf4a608099df2f942480f28ea266dcdb176b6",
+      "text_hash_correction": "Initial manifest hashed LF text before Windows CRLF write; original manifest retained, this register hashes actual archived bytes.",
+      "published_at": "2026-08-05",
+      "classification": "Issuer unaudited reported financials and interested management guidance",
+      "period": "Q2/H1 ended2026-06-30",
+      "read_locations": [
+        "Operating and segment tables",
+        "Outlook47-52",
+        "Balance sheet295-410",
+        "Cash-flow statement580-844",
+        "Non-GAAP definitions851-919/reconciliations920-1211"
+      ]
+    },
+    {
+      "id": "q2-10q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm",
+      "accessed_at": "2026-10-09T00:34:38.393369+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "q3-date",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx",
+      "accessed_at": "2026-10-09T00:34:38.497859+00:00",
+      "http_status": 200,
+      "final_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438497859Z-q3-date-e914d01799513f4b.html",
+      "sha256": "e914d01799513f4b9ce37ecf631d9c452bdf47bff70a6a7d76fba72ee2920bb2",
+      "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438497859Z-q3-date-e914d01799513f4b.txt",
+      "text_sha256": "1a4b27056d37ba1d242e53c7807c90ea3e3f08e5379799c9cb01d6d844456654",
+      "original_manifest_text_hash_lf_normalized": "2cba0daf1299309eca3191d191420f22bf1930f74f3562cd2345a60d45e2219c",
+      "text_hash_correction": "Initial manifest hashed LF text before Windows CRLF write; original manifest retained, this register hashes actual archived bytes.",
+      "published_at": "2026-10-05",
+      "classification": "Issuer scheduled future event",
+      "period": "Q3 ended2026-09-30",
+      "read_locations": [
+        "Release29-30"
+      ]
+    },
+    {
+      "id": "ezcater",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-to-Acquire-ezCater-as-it-Brings-Catering-to-Uber-Eats/default.aspx",
+      "accessed_at": "2026-10-09T00:34:38.771481+00:00",
+      "http_status": 200,
+      "final_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-to-Acquire-ezCater-as-it-Brings-Catering-to-Uber-Eats/default.aspx",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438771481Z-ezcater-c65f64af7a6e60df.html",
+      "sha256": "c65f64af7a6e60df68e9ca604b4a3d731f7db0bdd3d67658134d43ca6efe06a9",
+      "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438771481Z-ezcater-c65f64af7a6e60df.txt",
+      "text_sha256": "e26f29554d0f53da21d677b6bdc6daa1d7d7d7320bd160b25fa5fd4af02c6a8a",
+      "original_manifest_text_hash_lf_normalized": "b36121d91140e74464c3fe1ba494ff9b1cdd53cadcac0ae95cf2d1735279d49a",
+      "text_hash_correction": "Initial manifest hashed LF text before Windows CRLF write; original manifest retained, this register hashes actual archived bytes.",
+      "published_at": "2026-10-06",
+      "classification": "Issuer transaction announcement and interested forecast",
+      "period": "Proposed transaction",
+      "read_locations": [
+        "Release31-37, forward-looking statement45"
+      ]
+    },
+    {
+      "id": "home",
+      "url": "https://investor.uber.com/home/default.aspx",
+      "accessed_at": "2026-10-09T00:34:38.971689+00:00",
+      "http_status": 200,
+      "final_url": "https://investor.uber.com/home/default.aspx",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438971689Z-home-0918296271a9db7b.html",
+      "sha256": "0918296271a9db7b715f7cafc688798da473af46df61ea95968565658730a11b",
+      "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003438971689Z-home-0918296271a9db7b.txt",
+      "text_sha256": "e6cc1dfe6b266e8c64f9582c65f9841d375d2fa5d6f41922372d734b9a8bdd4f",
+      "original_manifest_text_hash_lf_normalized": "05357dd2a0fde1da2e68b1a7ad7eb448cdbd69a868e83393f5d758c1ec9213fa",
+      "text_hash_correction": "Initial manifest hashed LF text before Windows CRLF write; original manifest retained, this register hashes actual archived bytes.",
+      "published_at": null,
+      "classification": "Dynamic issuer discovery page; incomplete coverage",
+      "period": "accessdate snapshot",
+      "read_locations": [
+        "Latest news/events"
+      ]
+    },
+    {
+      "id": "deliveryhero-presentation",
+      "url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278126000382/e26302_ex99-2.htm",
+      "accessed_at": "2026-10-09T00:34:39.205455+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "deliveryhero-offer",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Acquisition-Offer-for-Delivery-Hero/default.aspx",
+      "accessed_at": "2026-10-09T00:35:56.205076+00:00",
+      "http_status": 200,
+      "final_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Acquisition-Offer-for-Delivery-Hero/default.aspx",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556205076Z-deliveryhero-offer-1c0a428604d0f3e8.html",
+      "sha256": "1c0a428604d0f3e889109f483cb1ad465c5947648cdebcea9631be916c2061d4",
+      "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556205076Z-deliveryhero-offer-1c0a428604d0f3e8.txt",
+      "text_sha256": "240dfd8af02b6f469de4472f48d03505e5a519a0aa866c2d13d053726740de93",
+      "original_manifest_text_hash_lf_normalized": "ec3cee3f264d1761a18d4d477d744d195099410e8693f73203895cbd70a7c7bd",
+      "text_hash_correction": "Initial manifest hashed LF text before Windows CRLF write; original manifest retained, this register hashes actual archived bytes.",
+      "published_at": "2026-07-16",
+      "classification": "Issuer transaction announcement and interested forecasts",
+      "period": "Proposed transaction",
+      "read_locations": [
+        "Release29-50; Financing and Capital Allocation; Transaction Details"
+      ]
+    },
+    {
+      "id": "deliveryhero-offerdocument",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Publishes-Offer-Document-for-its-Takeover-Offer-for-Delivery-Hero/default.aspx",
+      "accessed_at": "2026-10-09T00:35:56.600238+00:00",
+      "http_status": 200,
+      "final_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Publishes-Offer-Document-for-its-Takeover-Offer-for-Delivery-Hero/default.aspx",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556600238Z-deliveryhero-offerdocument-f9e2928e37ffd97b.html",
+      "sha256": "f9e2928e37ffd97b903d67ec38414eaab32977fbb25b01bdcd4de0e5a77c4dd2",
+      "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003556600238Z-deliveryhero-offerdocument-f9e2928e37ffd97b.txt",
+      "text_sha256": "56741be084adcc545a4d868c8bfb8ba039ec3ffeb158ebc251ce1804fa304703",
+      "original_manifest_text_hash_lf_normalized": "a6a1744ed574fbf1156cebbbf562f697cb2bd05d294a784c1bbd8cda294cb142",
+      "text_hash_correction": "Initial manifest hashed LF text before Windows CRLF write; original manifest retained, this register hashes actual archived bytes.",
+      "published_at": "2026-08-27",
+      "classification": "Issuer offer-publication notice, not full offer document",
+      "period": "Proposed transaction",
+      "read_locations": [
+        "Acceptance period; Transaction Background; expected settlement"
+      ]
+    },
+    {
+      "id": "ftc-uber-case",
+      "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2423092-uber-ftc-v",
+      "accessed_at": "2026-10-09T00:35:56.895276+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "classification": "Primary publisher browser-rendered evidence; limited extracted coverage"
+    },
+    {
+      "id": "events",
+      "url": "https://investor.uber.com/news-events/events-and-presentations/default.aspx",
+      "accessed_at": "2026-10-09T00:35:57.396645+00:00",
+      "http_status": 200,
+      "final_url": "https://investor.uber.com/news-events/default.aspx#event",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557396645Z-events-2cca076de5f5ca2e.html",
+      "sha256": "2cca076de5f5ca2e756934e0b89c0b22c685eba2817cc7f36ecb1b894763ca13",
+      "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557396645Z-events-2cca076de5f5ca2e.txt",
+      "text_sha256": "c2308dcdc013ae72f65727bb15eab4de2cd9208532ef07c8b0eb6e3878246c8d",
+      "original_manifest_text_hash_lf_normalized": "1493d9f0b5f49fbde70df69e4bde2c67fe1f5d52600e6d025184aabd5c30e1ec",
+      "text_hash_correction": "Initial manifest hashed LF text before Windows CRLF write; original manifest retained, this register hashes actual archived bytes.",
+      "published_at": null,
+      "classification": "Dynamic issuer discovery page; incomplete coverage",
+      "period": "accessdate snapshot",
+      "read_locations": [
+        "Event listing"
+      ]
+    },
+    {
+      "id": "reports",
+      "url": "https://investor.uber.com/financials/default.aspx",
+      "accessed_at": "2026-10-09T00:35:57.949894+00:00",
+      "http_status": 200,
+      "final_url": "https://investor.uber.com/financials/default.aspx",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557949894Z-reports-25ced59ab50ddffa.html",
+      "sha256": "25ced59ab50ddffaf35444020a66fc2662fe9745ad9caeee578fae9f66bc75c3",
+      "text_path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003557949894Z-reports-25ced59ab50ddffa.txt",
+      "text_sha256": "955f490a1848fb1041f50f2ec06156eebef872222eff0d2bc592da9cc64fb9cd",
+      "original_manifest_text_hash_lf_normalized": "78a29bbf03f1a0b9cd32fa5df7b2b14a726fa385ebddacb462940710cd5dcde5",
+      "text_hash_correction": "Initial manifest hashed LF text before Windows CRLF write; original manifest retained, this register hashes actual archived bytes.",
+      "published_at": null,
+      "classification": "Dynamic issuer discovery page; incomplete coverage",
+      "period": "accessdate snapshot",
+      "read_locations": [
+        "Financial reporting landing page"
+      ]
+    },
+    {
+      "id": "20261009T003718124560Z-ftc-offer-web-extracts-03772ac20cbf6e64",
+      "archive_kind": "Web tool rendered excerpts and metadata; not original or complete filing",
+      "source_access_date": "2026-10-09",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-ftc-offer-web-extracts-03772ac20cbf6e64.txt",
+      "sha256": "03772ac20cbf6e64cdfe05841d823921a5bcd0eeb6ce96b14459171ce10fb2bf",
+      "classification": "Primary publisher browser-rendered evidence; limited extracted coverage"
+    },
+    {
+      "id": "20261009T003718124560Z-sec-cover-sbc-controls-c631c56d9fefd3e5",
+      "archive_kind": "Web tool rendered excerpts and metadata; not original or complete filing",
+      "source_access_date": "2026-10-09",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-sec-cover-sbc-controls-c631c56d9fefd3e5.txt",
+      "sha256": "c631c56d9fefd3e58e4d47e08caa86697b66113914fa737311e126d78fdf4216",
+      "classification": "Primary publisher browser-rendered evidence; limited extracted coverage"
+    },
+    {
+      "id": "20261009T003718124560Z-sec-open-metadata-610d369b867bbe53",
+      "archive_kind": "Web tool rendered excerpts and metadata; not original or complete filing",
+      "source_access_date": "2026-10-09",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-sec-open-metadata-610d369b867bbe53.txt",
+      "sha256": "610d369b867bbe5358117749ea31e4d241778cd04040604be4c6b7340697b1af",
+      "classification": "Primary publisher browser-rendered evidence; limited extracted coverage"
+    },
+    {
+      "id": "20261009T003718124560Z-sec-risk-extracts-91fff3f35e06f7c7",
+      "archive_kind": "Web tool rendered excerpts and metadata; not original or complete filing",
+      "source_access_date": "2026-10-09",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003718124560Z-sec-risk-extracts-91fff3f35e06f7c7.txt",
+      "sha256": "91fff3f35e06f7c7c553869edcf1987688e0928021f4abec0074c1cf0c1267e7",
+      "classification": "Primary publisher browser-rendered evidence; limited extracted coverage"
+    },
+    {
+      "id": "sec-vat-financing-cfo",
+      "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm",
+      "archive_kind": "Browser-rendered SEC excerpts, not complete original filing",
+      "path": "monitoring/studies/evidence/2026-10-09-uber/20261009T003927488627Z-sec-vat-financing-cfo-fe561066825def23.txt",
+      "sha256": "fe561066825def2309b6e8754efdf091c33eb4abc701a779144a2fce8406d94b",
+      "archive_created_at": "2026-10-09T00:39:27.488627+00:00",
+      "source_access_date": "2026-10-09",
+      "read_locations": [
+        "10-Q Non-Income Tax Matters lines1185 and1762",
+        "Note3 bridgecommitments line702; MD&A1739",
+        "Cash-flow statement416-451"
+      ],
+      "classification": "Primary publisher browser-rendered evidence; limited extracted coverage"
+    }
+  ],
+  "calculations": {
+    "q2_fcf_usdm": "2792",
+    "h1_fcf_usdm": "5078",
+    "q2_fcf_less_cfo_sbc_addback_sensitivity_usdm": "2242",
+    "h1_fcf_less_cfo_sbc_addback_sensitivity_usdm": "4055",
+    "q2_insurance_accrual_contribution_pct_of_cfo": "13.52201257861635220125786164",
+    "h1_insurance_accrual_contribution_pct_of_cfo": "15.92173412622290427776712066",
+    "q2_diluted_weighted_share_change_pct_yoy": "-3.547328130792405820773907760",
+    "q2_non_gaap_operating_margin_pct_bookings": "3.693426631277791182654855055",
+    "10bp_bookings_margin_sensitivity_usdm_quarter": "58.022",
+    "june_net_carrying_debt_less_unrestricted_cash_investments_usdm": "7332",
+    "q3_guided_bookings_midpoint_usdm": "59250",
+    "q3_guided_non_gaap_eps_midpoint_usd": "0.86"
+  },
+  "guidance": {
+    "source_id": "q2-results",
+    "publication": "2026-08-05",
+    "classification": "management-guided, not consensus",
+    "q3_bookings_usdm": [
+      "58250",
+      "60250"
+    ],
+    "q3_non_gaap_eps_usd": [
+      "0.84",
+      "0.88"
+    ],
+    "q3_adjusted_ebitda_usdm": [
+      "2860",
+      "2960"
+    ]
+  },
+  "valuation": {
+    "executable_price": null,
+    "dated_market_price": null,
+    "market_implied_expectations": null,
+    "verified_external_consensus": null,
+    "max_buy_price_usd": null,
+    "return_range": null,
+    "quantity": null,
+    "stop_price": null,
+    "reason": "No supported market expectations/valuation bridge, current execution price or delay-compatible mispricing; numerical economics diagnostic only"
+  },
+  "material_limits": [
+    "Raw local SEC download403; only specific browser-rendered filing excerpts archived, not complete original filing",
+    "FTC rawdownload404; rendered regulator case page available; case status last updated4May2026 is not complete current court-docket verification",
+    "Latest annual auditor/governance and full debt/awards claims schedule not independently reviewed for full valuation",
+    "Q2 filing SBC note556/1029 differs from release cash-flow addback550/1023 and EBITDA exclusion549/1022; retain definitions separately pending reconciliation",
+    "No current quote, broker ISA eligibility, external consensus basis, full Sept management webcast transcript or exhaustive subsequent SEC filing review",
+    "Acquisition financing commitments and expected savings are not drawn cash/deleveraging or immediate realized earnings; no consolidation of Delivery Hero before control"
+  ],
+  "actionable": false,
+  "portfolio_allocation_approved": false,
+  "trade_instruction": false,
+  "continuation": [
+    "Independently challenge sources and disposition; do not promote rejection into entry authority",
+    "Review post-Q2 financing and September management webcast; inspect source accounting/SBC differences",
+    "Revisit after actual Q3 release only if organic volume/unit-profitability, financing and valuation evidence demonstrate remaining advantage at fresh executable quote after delay",
+    "Require separately reviewed portfolio/execution evidence before any recommendation"
+  ],
+  "checks": {
+    "archived_byte_hashes": "verified",
+    "arithmetic": "exact decimal checks; not forecast validation",
+    "md_json_disposition": "both current entry withheld",
+    "actionable": false,
+    "independent_review": "pending"
+  }
+}

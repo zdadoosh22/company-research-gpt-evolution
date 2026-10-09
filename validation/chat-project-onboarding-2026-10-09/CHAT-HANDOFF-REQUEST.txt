@@ -1,0 +1,9 @@
+My ordinary Chat companion now lives in a separate ChatGPT project called Company Research 2 - Planning and Review. It cannot automatically read this Windows project or your conversation.
+
+At the next sensible checkpoint where substantial Chat planning or criticism would be useful, prepare a self-contained handoff package. Finish a coherent implementation/verification step before transferring; do not interrupt it simply to produce a handoff.
+
+Include the task/question for Chat, dated baseline and relevant versions/hashes, actual completed work, verification evidence, unresolved defects/uncertainty, current research/approval status and exact next decisions. Explicitly identify older status or instructions superseded. Include relevant changed documents, source excerpts, calculations, outputs or code interfaces; Windows paths alone are insufficient. Keep the package bounded to the task and exclude credentials/unnecessary private account details.
+
+Save it in the existing dated checkpoint/handoff conventions, preserving authoritative originals. Tell me exactly which files to upload and give me a short message to send Chat. If approved standing instructions/methodology changed, include replacement reference text as part of this same package. Don't duplicate the whole project or automatically rerun completed audits.
+
+Chat will recommend a normal message or /goal for the next Work assignment. Check that recommendation against actual project state. Goal endpoints should be concrete and verified; a completed stage may end with a prepared handoff rather than an open-ended project-wide objective. This request alone does not pause or replace an active goal; recover its actual status and follow the user's explicit directions.

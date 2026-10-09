@@ -1,0 +1,32 @@
+[
+  {
+    "source_id": "september-goldman-page",
+    "url": "https://ir.amd.com/news-events/ir-calendar/detail/20260911-goldman-sachs-communacopia-technology-conference",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-goldman.html",
+    "sha256": "deb4f3688226b416eed8aaedc196fbb710996282d6a8e7afeb985a4b428b64a3",
+    "accessed_at": "2026-10-09T00:36:22.339919+00:00"
+  },
+  {
+    "source_id": "september-goldman",
+    "url": "https://d1io3yog0oux5.cloudfront.net/_e6fb18640ea7bfff80a48dc92268a25f/amd/db/817/9241/webcast_transcript/AMD+Goldman+Sachs+Communacopia+and+Technology+%28Sept+11%2C+2026%29.pdf",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-goldman.pdf",
+    "sha256": "15002633cc86e49a1c2d53ac499ab5a5b174204ceae4e4b0dbd01fc30ba0cb8a",
+    "accessed_at": "2026-10-09T00:36:22.343134+00:00",
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-goldman.txt"
+  },
+  {
+    "source_id": "september-citi-page",
+    "url": "https://ir.amd.com/news-events/ir-calendar/detail/20260908-citis-2026-global-tmt-conference",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-citi.html",
+    "sha256": "4c69c2ad2e01aed51fd18d0e424882756b29d245a7c3a96df5e99a5124c3dc19",
+    "accessed_at": "2026-10-09T00:36:23.725201+00:00"
+  },
+  {
+    "source_id": "september-citi",
+    "url": "https://d1io3yog0oux5.cloudfront.net/_e6fb18640ea7bfff80a48dc92268a25f/amd/db/817/9240/webcast_transcript/2026-9-8+AMD+Citi+Global+TMT+Conference.pdf",
+    "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-citi.pdf",
+    "sha256": "daa7138bdbc3c76c69e0f9c2f0bc11bb22ba2bfcb4b54c382b7050638e3cb61a",
+    "accessed_at": "2026-10-09T00:36:23.727200+00:00",
+    "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-citi.txt"
+  }
+]

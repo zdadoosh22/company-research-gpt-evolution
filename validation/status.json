@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-07",
+  "implementation": "workspace and supporting tools implemented; pilot packages produced",
+  "workflow_ready": false,
+  "approval_status": "Focused Astra audit complete; complete operating-company pilot and cost/quality workflow validation remain open.",
+  "unit_checks_passed": 51,
+  "pilot_exports": {
+    "APP": {
+      "run": "companies\\applovin-corporation\\runs\\2026-10-06-r002",
+      "status": "partial",
+      "standalone_pages": 3,
+      "full_report_pages": 10,
+      "audit": "complete-with-limitations"
+    },
+    "JPM": {
+      "run": "companies\\jpmorgan-chase\\runs\\2026-10-06-r003",
+      "status": "partial",
+      "scope": "finalized capital/dividend evidence; finite controlled distribution/ownership path",
+      "audit": "complete-with-limitations",
+      "pages": 3
+    },
+    "Unilever": {
+      "run": "companies\\unilever-plc\\runs\\2026-10-06-r002",
+      "status": "partial",
+      "scope": "focused IFRS, scope and currency evidence",
+      "audit": "complete-with-limitations"
+    }
+  },
+  "export_reimport_recalculation": "passed for all three workbooks",
+  "native_excel_verified": false,
+  "context_reconstruction": "Fresh agent without chat history successfully loaded r002 scopes and continuation; not a separate UI chat or blinded model comparison.",
+  "app_project_registration": "user must open the folder as a local project; no supported registration tool",
+  "stronger_review": "completed-with-explicit-analytical-limits",
+  "model_cost_quality_validation": "Configured 6.1 Sol High post-correction check passed selected arithmetic/context tests; insufficient to approve cheapest workflow or exact cost comparison.",
+  "reference_repository": "unchanged; inspected hashes verified",
+  "historical_conversation_copied": false,
+  "paid_services_or_background_automations_created": false,
+  "export_validation": "all exported formulas/cached outputs and PDF opening/link checks passed",
+  "audit_record": "validation/astra-audit.json",
+  "workbook_mutation_checks_passed": 122,
+  "no_quote_fixture": "export/import and missing-return validation passed",
+  "foundation_reviews": "validation/foundation-reviews",
+  "focused_audit_goal": "complete; verification in validation/completion-audit.json",
+  "remaining_work": "Company-specific APP replacement and broader research workflow acceptance; see validation/continuation.md."
+}

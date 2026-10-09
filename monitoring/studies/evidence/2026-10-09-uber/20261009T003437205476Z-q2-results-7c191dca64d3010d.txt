@@ -1,0 +1,1278 @@
+00001 Uber Technologies, Inc.  - Uber Announces Results for Second Quarter 2026
+00002 Skip to main content
+00003 Skip to main content
+00004 Financials
+00005 News and events
+00006 Governance
+00007 FAQ and resources
+00008 Search
+00009 Close search
+00010 News release details
+00011 Financials
+00012 Reports and Presentations
+00013 SEC filings
+00014 News and events
+00015 News
+00016 Events and presentations
+00017 Governance
+00018 Leadership
+00019 Board of Directors
+00020 Committee Composition
+00021 Annual Meeting of Stockholders
+00022 Governance Documents
+00023 FAQ and resources
+00024 Back to News and events
+00025 Uber Announces Results for Second Quarter 2026
+00026 August 05, 2026
+00027 Download this Press Release
+00028 PDF Format (opens in new window)
+00029 Gross Bookings grew 22% year-over-year on a constant currency basis; Trips grew 18% year-over-year
+00030 GAAP Income from operations of $1.9 billion; Non-GAAP Operating Income of $2.1 billion, up 40% year-over-year
+00031 GAAP Diluted EPS of $1.17; Non-GAAP EPS of $0.81, up 35% year-over-year
+00032 SAN FRANCISCO--(BUSINESS WIRE)--
+00033 Uber Technologies, Inc. (NYSE: UBER) today announced financial results for the quarter ended June 30, 2026.
+00034 “Uber’s platform advantage continues to compound: record consumers and engagement, and profitable growth across our business,” said Dara Khosrowshahi, CEO. “In fact, we’ve added more first-time users over the past twelve months than in any period over the past five years. We’re investing from a position of strength, as we accelerate our cross-platform strategy at a global scale and build the world’s largest platform for autonomous vehicles.”
+00035 “We continue to convert strong top-line growth into faster earnings and significant cash generation,” said Balaji Krishnamurthy, CFO. “Gross Bookings grew 22%, Non-GAAP EPS grew 35%, and trailing twelve-month free cash flow exceeded $10 billion for the first time in Uber’s history—giving us the flexibility to both invest for the future and pursue strategic opportunities, while continuing to reduce our share count.”
+00036 Financial and Operational Highlights for Second Quarter 2026
+00037 Trips during the quarter grew 18% year-over-year (“YoY”) to 3.9 billion, driven by Monthly Active Platform Consumers (“MAPCs") growth of 16% YoY and monthly Trips per MAPC growth of 2% YoY.
+00038 Gross Bookings grew 24% YoY to $58.0 billion, and 22% on a constant currency basis.
+00039 Revenue grew 12% YoY to $14.2 billion, or 11% on a constant currency basis. Business model changes negatively impacted total revenue YoY growth by 8 percentage points on a reported and constant currency basis.
+00040 GAAP Income from operations grew 30% YoY to $1.9 billion.
+00041 GAAP Net income attributable to Uber Technologies, Inc. was $2.4 billion, which includes a $1.6 billion net benefit (pre-tax) from revaluations of Uber’s equity investments. GAAP Diluted earnings per share (“EPS”) was $1.17.
+00042 Adjusted EBITDA grew 33% YoY to $2.8 billion. Adjusted EBITDA margin as a percentage of Gross Bookings was 4.9%, up from 4.5% in Q2 2025.
+00043 Non-GAAP Operating Income grew 40% YoY to $2.1 billion. Non-GAAP Operating Income as a percentage of Gross Bookings was 3.7%, up from 3.3% in Q2 2025.
+00044 Non-GAAP Net Income grew 29% YoY to $1.7 billion and Non-GAAP EPS grew 35% YoY to $0.81.
+00045 Net cash provided by operating activities was $2.9 billion and free cash flow, defined as net cash flows from operating activities less capital expenditures, was $2.8 billion.
+00046 Unrestricted cash, cash equivalents, and short-term investments were $5.4 billion at the end of the second quarter.
+00047 Outlook for Q3 2026
+00048 For Q3 2026, we anticipate:
+00049 Gross Bookings of $58.25 billion to $60.25 billion, representing growth of 18% to 22% YoY on a constant-currency basis.
+00050 Our outlook assumes a roughly 1 percentage-point currency headwind to total reported YoY growth.
+00051 Non-GAAP EPS of $0.84 to $0.88, representing growth of 28% to 35% YoY.
+00052 Our outlook translates to Adjusted EBITDA of $2.86 billion to $2.96 billion.
+00053 Financial and Operational Highlights for Second Quarter 2026
+00054 Three Months Ended June 30,
+00055 (In millions, except percentages and per share amounts)
+00056 2025
+00057 2026
+00058 % Change
+00059 % Change
+00060 (Constant Currency(1))
+00061 Monthly Active Platform Consumers (“MAPCs”)
+00062 180
+00063 208
+00064 16
+00065 %
+00066 Trips
+00067 3,268
+00068 3,867
+00069 18
+00070 %
+00071 Gross Bookings
+00072 $
+00073 46,756
+00074 $
+00075 58,022
+00076 24
+00077 %
+00078 22
+00079 %
+00080 Revenue
+00081 $
+00082 12,651
+00083 $
+00084 14,191
+00085 12
+00086 %
+00087 11
+00088 %
+00089 GAAP Income from operations
+00090 $
+00091 1,450
+00092 $
+00093 1,890
+00094 30
+00095 %
+00096 GAAP Net income attributable to Uber Technologies, Inc.(2)
+00097 $
+00098 1,355
+00099 $
+00100 2,394
+00101 77
+00102 %
+00103 GAAP Diluted EPS
+00104 $
+00105 0.63
+00106 $
+00107 1.17
+00108 85
+00109 %
+00110 Adjusted EBITDA(1)
+00111 $
+00112 2,119
+00113 $
+00114 2,819
+00115 33
+00116 %
+00117 Non-GAAP Operating Income(1)
+00118 $
+00119 1,534
+00120 $
+00121 2,143
+00122 40
+00123 %
+00124 Non-GAAP Net Income(1)
+00125 $
+00126 1,280
+00127 $
+00128 1,652
+00129 29
+00130 %
+00131 Non-GAAP EPS(1)
+00132 $
+00133 0.60
+00134 $
+00135 0.81
+00136 35
+00137 %
+00138 Net cash provided by operating activities
+00139 $
+00140 2,564
+00141 $
+00142 2,862
+00143 12
+00144 %
+00145 Free cash flow(1)
+00146 $
+00147 2,475
+00148 $
+00149 2,792
+00150 13
+00151 %
+00152 (1)
+00153 See “Definitions of Non-GAAP Measures” and “Reconciliations of Non-GAAP Measures” sections herein for an explanation and reconciliations of non-GAAP measures used throughout this release.
+00154 (2)
+00155 Q2 2025 net income includes a $17 million net headwind (pre-tax) from revaluations of Uber’s equity investments. Q2 2026 net income includes a $1.6 billion net benefit (pre-tax) from revaluations of Uber’s equity investments.
+00156 Results by Offering and Segment
+00157 Gross Bookings
+00158 Three Months Ended June 30,
+00159 (In millions, except percentages)
+00160 2025
+00161 2026
+00162 % Change
+00163 % Change
+00164 (Constant Currency)
+00165 Gross Bookings:
+00166 Mobility
+00167 $
+00168 23,762
+00169 $
+00170 28,988
+00171 22
+00172 %
+00173 20
+00174 %
+00175 Delivery
+00176 21,734
+00177 27,463
+00178 26
+00179 %
+00180 25
+00181 %
+00182 Freight
+00183 1,260
+00184 1,571
+00185 25
+00186 %
+00187 25
+00188 %
+00189 Total
+00190 $
+00191 46,756
+00192 $
+00193 58,022
+00194 24
+00195 %
+00196 22
+00197 %
+00198 Revenue
+00199 Three Months Ended June 30,
+00200 (In millions, except percentages)
+00201 2025
+00202 2026
+00203 % Change
+00204 % Change
+00205 (Constant Currency)
+00206 Revenue:
+00207 Mobility
+00208 $
+00209 7,288
+00210 $
+00211 7,363
+00212 1
+00213 %
+00214 0
+00215 %
+00216 Delivery
+00217 4,102
+00218 5,245
+00219 28
+00220 %
+00221 26
+00222 %
+00223 Freight
+00224 1,261
+00225 1,583
+00226 26
+00227 %
+00228 25
+00229 %
+00230 Total
+00231 $
+00232 12,651
+00233 $
+00234 14,191
+00235 12
+00236 %
+00237 11
+00238 %
+00239 Non-GAAP Operating Income and Segment Operating Income (Loss)
+00240 Three Months Ended June 30,
+00241 (In millions, except percentages)
+00242 2025
+00243 2026
+00244 % Change
+00245 Segment Operating Income (Loss):
+00246 Mobility
+00247 $
+00248 1,729
+00249 $
+00250 2,215
+00251 28
+00252 %
+00253 Delivery
+00254 766
+00255 1,055
+00256 38
+00257 %
+00258 Freight
+00259 (26
+00260 )
+00261 (24
+00262 )
+00263 8
+00264 %
+00265 Corporate G&A and Platform R&D(1)
+00266 (935
+00267 )
+00268 (1,103
+00269 )
+00270 (18
+00271 )%
+00272 Non-GAAP Operating Income (2)
+00273 $
+00274 1,534
+00275 $
+00276 2,143
+00277 40
+00278 %
+00279 (1)
+00280 Includes costs that are not directly attributable to our reportable segments. Corporate G&A also includes certain shared costs such as finance, accounting, tax, human resources, information technology and legal costs. Platform R&D also includes mapping and payment technologies and support and development of the internal technology infrastructure. Our allocation methodology is periodically evaluated and may change.
+00281 (2)
+00282 “Non-GAAP Operating Income” is a non-GAAP measure as defined by the SEC. See “Definitions of Non-GAAP Measures” and “Reconciliations of Non-GAAP Measures” sections herein for an explanation and reconciliations of non-GAAP measures used throughout this release.
+00283 Webcast and conference call information
+00284 A live audio webcast of our second quarter ended June 30, 2026 earnings release call will be available at https://investor.uber.com/, along with the earnings press release and slide presentation. The call begins on August 5, 2026 at 5:00 AM (PT) / 8:00 AM (ET). This press release, including the reconciliations of certain non-GAAP measures to their nearest comparable GAAP measures, is also available on that site.
+00285 We also provide announcements regarding our financial performance and other matters, including SEC filings, investor events, press and earnings releases, on our investor relations website (https://investor.uber.com/), and our blogs (https://uber.com/blog) and X accounts (@uber and @dkhos), as a means of disclosing material information and complying with our disclosure obligations under Regulation FD.
+00286 About Uber
+00287 Uber’s mission is to create opportunity through movement. We started in 2010 to solve a simple problem: how do you get access to a ride at the touch of a button? More than 79 billion trips later, we're building products to get people closer to where they want to be. By changing how people, food, and things move through cities, Uber is a platform that opens up the world to new possibilities.
+00288 Forward-Looking Statements
+00289 This press release contains forward-looking statements regarding our future business expectations which involve risks and uncertainties. Actual results may differ materially from the results predicted, and reported results should not be considered as an indication of future performance. Forward-looking statements include all statements that are not historical facts and can be identified by terms such as “anticipate,” “believe,” “contemplate,” “continue,” “could,” “estimate,” “expect,” “hope,” “intend,” “may,” “might,” “objective,” “ongoing,” “plan,” “potential,” “predict,” “project,” “should,” “target,” “will,” or “would” or similar expressions and the negatives of those terms. Forward-looking statements involve known and unknown risks, uncertainties and other factors that may cause our actual results, performance or achievements to be materially different from any future results, performance or achievements expressed or implied by the forward-looking statements. These risks, uncertainties and other factors relate to, among others: competition, managing our growth and corporate culture, financial performance, investments in new products or offerings, our ability to attract drivers, consumers and other partners to our platform, our brand and reputation and other legal and regulatory developments, particularly with respect to our relationships with drivers and couriers and the impact of the global economy, including rising inflation and interest rates. For additional information on other potential risks and uncertainties that could cause actual results to differ from the results predicted, please see our annual report on Form 10-K for the year ended December 31, 2025 and subsequent quarterly reports and other filings filed with the Securities and Exchange Commission from time to time. All information provided in this release and in the attachments is as of the date of this press release and any forward-looking statements contained herein are based on assumptions that we believe to be reasonable as of this date. Undue reliance should not be placed on the forward-looking statements in this press release, which are based on information available to us on the date hereof. We undertake no duty to update this information unless required by law.
+00290 Non-GAAP Financial Measures
+00291 To supplement our financial information, which is prepared and presented in accordance with generally accepted accounting principles in the United States of America (“GAAP”), we use the following non-GAAP financial measures: Adjusted EBITDA; Non-GAAP Operating Income; Non-GAAP Net Income; Non-GAAP EPS; Free cash flow; as well as, revenue growth rates in constant currency. The presentation of this financial information is not intended to be considered in isolation or as a substitute for, or superior to, the financial information prepared and presented in accordance with GAAP. We use these non-GAAP financial measures for financial and operational decision-making and as a means to evaluate period-to-period comparisons. We believe that these non-GAAP financial measures provide meaningful supplemental information regarding our performance by excluding certain items that may not be indicative of our recurring core business operating results.
+00292 We believe that both management and investors benefit from referring to these non-GAAP financial measures in assessing our performance and when planning, forecasting, and analyzing future periods. These non-GAAP financial measures also facilitate management’s internal comparisons to our historical performance. We believe these non-GAAP financial measures are useful to investors both because (1) they allow for greater transparency with respect to key metrics used by management in its financial and operational decision-making and (2) they are used by our institutional investors and the analyst community to help them analyze the health of our business.
+00293 There are a number of limitations related to the use of non-GAAP financial measures. In light of these limitations, we provide specific information regarding the GAAP amounts excluded from these non-GAAP financial measures and evaluating these non-GAAP financial measures together with their relevant financial measures in accordance with GAAP.
+00294 For more information on these non-GAAP financial measures, please see the sections titled “Definitions of Non-GAAP Measures” and “Reconciliations of Non-GAAP Measures” included at the end of this release. In regards to forward looking non-GAAP guidance, we are not able to reconcile the forward-looking Non-GAAP EPS and Adjusted EBITDA measures to the closest corresponding GAAP measures without unreasonable efforts because we are unable to predict the ultimate outcome of certain significant items. These items include, but are not limited to, significant legal settlements, unrealized gains and losses on equity investments, tax and regulatory reserve changes, restructuring costs and acquisition and financing related impacts.
+00295 UBER TECHNOLOGIES, INC.
+00296 CONDENSED CONSOLIDATED BALANCE SHEETS
+00297 (In millions)
+00298 (Unaudited)
+00299 As of December 31, 2025
+00300 As of June 30, 2026
+00301 Assets
+00302 Cash and cash equivalents
+00303 $
+00304 7,105
+00305 $
+00306 4,870
+00307 Short-term investments
+00308 528
+00309 521
+00310 Restricted cash and cash equivalents
+00311 631
+00312 661
+00313 Accounts receivable, net
+00314 3,827
+00315 4,298
+00316 Prepaid expenses and other current assets
+00317 1,902
+00318 2,179
+00319 Total current assets
+00320 13,993
+00321 12,529
+00322 Restricted cash and cash equivalents
+00323 1,911
+00324 1,646
+00325 Restricted investments
+00326 8,874
+00327 9,486
+00328 Investments
+00329 9,178
+00330 8,759
+00331 Equity method investments
+00332 287
+00333 3,773
+00334 Property and equipment, net
+00335 1,897
+00336 1,809
+00337 Operating lease right-of-use assets
+00338 1,114
+00339 1,558
+00340 Intangible assets, net
+00341 1,048
+00342 1,132
+00343 Goodwill
+00344 8,931
+00345 9,472
+00346 Deferred tax assets
+00347 10,951
+00348 10,162
+00349 Other non-current assets
+00350 3,618
+00351 5,475
+00352 Total assets
+00353 $
+00354 61,802
+00355 $
+00356 65,801
+00357 Liabilities, redeemable non-controlling interests and equity
+00358 Accounts payable
+00359 $
+00360 1,013
+00361 $
+00362 1,366
+00363 Short-term insurance reserves
+00364 3,387
+00365 3,758
+00366 Operating lease liabilities, current
+00367 169
+00368 178
+00369 Short-term debt
+00370 —
+00371 1,997
+00372 Accrued and other current liabilities
+00373 7,751
+00374 7,572
+00375 Total current liabilities
+00376 12,320
+00377 14,871
+00378 Long-term insurance reserves
+00379 9,076
+00380 9,528
+00381 Long-term debt, net of current portion
+00382 10,521
+00383 10,726
+00384 Operating lease liabilities, non-current
+00385 1,390
+00386 1,830
+00387 Other non-current liabilities
+00388 412
+00389 447
+00390 Total liabilities
+00391 33,719
+00392 37,402
+00393 Redeemable non-controlling interests
+00394 165
+00395 180
+00396 Equity
+00397 Common stock
+00398 —
+00399 —
+00400 Additional paid-in capital
+00401 38,101
+00402 35,698
+00403 Accumulated other comprehensive loss
+00404 (432
+00405 )
+00406 (432
+00407 )
+00408 Accumulated deficit
+00409 (10,628
+00410 )
+00411 (7,950
+00412 )
+00413 Total Uber Technologies, Inc. stockholders' equity
+00414 27,041
+00415 27,316
+00416 Non-redeemable non-controlling interests
+00417 877
+00418 903
+00419 Total equity
+00420 27,918
+00421 28,219
+00422 Total liabilities, redeemable non-controlling interests and equity
+00423 $
+00424 61,802
+00425 $
+00426 65,801
+00427 UBER TECHNOLOGIES, INC.
+00428 CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS
+00429 (In millions, except share amounts which are reflected in thousands, and per share amounts)
+00430 (Unaudited)
+00431 Three Months Ended June 30,
+00432 Six Months Ended June 30,
+00433 2025
+00434 2026
+00435 2025
+00436 2026
+00437 Revenue
+00438 $
+00439 12,651
+00440 $
+00441 14,191
+00442 $
+00443 24,184
+00444 $
+00445 27,394
+00446 Costs and expenses
+00447 Cost of revenue, exclusive of depreciation and amortization shown separately below
+00448 7,611
+00449 7,815
+00450 14,548
+00451 15,073
+00452 Operations and support
+00453 696
+00454 805
+00455 1,364
+00456 1,568
+00457 Sales and marketing
+00458 1,210
+00459 1,515
+00460 2,267
+00461 2,841
+00462 Research and development
+00463 840
+00464 1,043
+00465 1,655
+00466 1,994
+00467 General and administrative
+00468 669
+00469 935
+00470 1,326
+00471 1,733
+00472 Depreciation and amortization
+00473 175
+00474 188
+00475 346
+00476 372
+00477 Total costs and expenses
+00478 11,201
+00479 12,301
+00480 21,506
+00481 23,581
+00482 Income from operations
+00483 1,450
+00484 1,890
+00485 2,678
+00486 3,813
+00487 Interest expense
+00488 (108
+00489 )
+00490 (127
+00491 )
+00492 (213
+00493 )
+00494 (235
+00495 )
+00496 Interest income
+00497 181
+00498 172
+00499 350
+00500 347
+00501 Other income (expense), net
+00502 (19
+00503 )
+00504 1,342
+00505 74
+00506 (152
+00507 )
+00508 Income before income taxes and loss from equity method investments
+00509 1,504
+00510 3,277
+00511 2,889
+00512 3,773
+00513 Provision for (benefit from) income taxes
+00514 142
+00515 840
+00516 (260
+00517 )
+00518 1,034
+00519 Loss from equity method investments
+00520 (12
+00521 )
+00522 (21
+00523 )
+00524 (25
+00525 )
+00526 (41
+00527 )
+00528 Net income including non-controlling interests
+00529 1,350
+00530 2,416
+00531 3,124
+00532 2,698
+00533 Less: net income (loss) attributable to non-controlling interests, net of tax
+00534 (5
+00535 )
+00536 22
+00537 (7
+00538 )
+00539 41
+00540 Net income attributable to Uber Technologies, Inc.
+00541 $
+00542 1,355
+00543 $
+00544 2,394
+00545 $
+00546 3,131
+00547 $
+00548 2,657
+00549 Net income per share attributable to Uber Technologies, Inc. common stockholders:
+00550 Basic
+00551 $
+00552 0.65
+00553 $
+00554 1.18
+00555 $
+00556 1.50
+00557 $
+00558 1.30
+00559 Diluted
+00560 $
+00561 0.63
+00562 $
+00563 1.17
+00564 $
+00565 1.46
+00566 $
+00567 1.29
+00568 Weighted-average shares used to compute net income per share attributable to common stockholders:
+00569 Basic
+00570 2,091,106
+00571 2,036,458
+00572 2,091,781
+00573 2,044,279
+00574 Diluted
+00575 2,125,628
+00576 2,050,225
+00577 2,124,181
+00578 2,060,763
+00579 UBER TECHNOLOGIES, INC.
+00580 CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS
+00581 (In millions)
+00582 (Unaudited)
+00583 Three Months Ended June 30,
+00584 Six Months Ended June 30,
+00585 2025
+00586 2026
+00587 2025
+00588 2026
+00589 Cash flows from operating activities
+00590 Net income including non-controlling interests
+00591 $
+00592 1,350
+00593 $
+00594 2,416
+00595 $
+00596 3,124
+00597 $
+00598 2,698
+00599 Adjustments to reconcile net income to net cash provided by operating activities:
+00600 Depreciation and amortization
+00601 181
+00602 195
+00603 359
+00604 386
+00605 Stock-based compensation
+00606 475
+00607 550
+00608 910
+00609 1,023
+00610 Deferred income taxes
+00611 87
+00612 665
+00613 (325
+00614 )
+00615 771
+00616 (Gains) losses on debt and equity securities, net
+00617 17
+00618 (1,612
+00619 )
+00620 (34
+00621 )
+00622 (138
+00623 )
+00624 (Gains) losses on foreign currency transactions, net
+00625 (101
+00626 )
+00627 (58
+00628 )
+00629 (152
+00630 )
+00631 (53
+00632 )
+00633 Other
+00634 106
+00635 296
+00636 79
+00637 316
+00638 Change in assets and liabilities, net of impact of business acquisitions and disposals:
+00639 Accounts receivable
+00640 (212
+00641 )
+00642 (425
+00643 )
+00644 (335
+00645 )
+00646 (499
+00647 )
+00648 Prepaid expenses and other assets
+00649 (251
+00650 )
+00651 (163
+00652 )
+00653 (748
+00654 )
+00655 (375
+00656 )
+00657 Operating lease right-of-use assets
+00658 46
+00659 38
+00660 89
+00661 100
+00662 Accounts payable
+00663 125
+00664 161
+00665 131
+00666 345
+00667 Accrued insurance reserves
+00668 812
+00669 387
+00670 1,487
+00671 830
+00672 Accrued expenses and other liabilities
+00673 (20
+00674 )
+00675 447
+00676 410
+00677 (94
+00678 )
+00679 Operating lease liabilities
+00680 (51
+00681 )
+00682 (35
+00683 )
+00684 (107
+00685 )
+00686 (97
+00687 )
+00688 Net cash provided by operating activities
+00689 2,564
+00690 2,862
+00691 4,888
+00692 5,213
+00693 Cash flows from investing activities
+00694 Purchases of property and equipment
+00695 (89
+00696 )
+00697 (70
+00698 )
+00699 (163
+00700 )
+00701 (135
+00702 )
+00703 Purchases of non-marketable equity securities
+00704 (12
+00705 )
+00706 (175
+00707 )
+00708 (191
+00709 )
+00710 (507
+00711 )
+00712 Purchases of marketable securities
+00713 (5,095
+00714 )
+00715 (10,887
+00716 )
+00717 (7,635
+00718 )
+00719 (17,646
+00720 )
+00721 Purchases of notes receivable
+00722 —
+00723 (111
+00724 )
+00725 —
+00726 (298
+00727 )
+00728 Proceeds from maturities and sales of marketable securities
+00729 4,636
+00730 8,119
+00731 7,033
+00732 14,665
+00733 Acquisition of businesses, net of cash acquired
+00734 (804
+00735 )
+00736 (647
+00737 )
+00738 (804
+00739 )
+00740 (653
+00741 )
+00742 Purchase of total return swaps
+00743 —
+00744 (1,640
+00745 )
+00746 —
+00747 (1,640
+00748 )
+00749 Other investing activities
+00750 (97
+00751 )
+00752 22
+00753 (243
+00754 )
+00755 52
+00756 Net cash used in investing activities
+00757 (1,461
+00758 )
+00759 (5,389
+00760 )
+00761 (2,003
+00762 )
+00763 (6,162
+00764 )
+00765 Cash flows from financing activities
+00766 Proceeds from term loan, notes, and credit facility, net of issuance costs
+00767 1,127
+00768 3,997
+00769 1,127
+00770 3,997
+00771 Principal repayment on term loan, notes, and credit facility
+00772 —
+00773 (2,000
+00774 )
+00775 —
+00776 (2,000
+00777 )
+00778 Principal payments on finance leases
+00779 (28
+00780 )
+00781 (42
+00782 )
+00783 (75
+00784 )
+00785 (82
+00786 )
+00787 Proceeds from the issuance of common stock under the Employee Stock Purchase Plan
+00788 120
+00789 136
+00790 120
+00791 136
+00792 Repurchases of common stock
+00793 (1,363
+00794 )
+00795 (518
+00796 )
+00797 (3,148
+00798 )
+00799 (3,529
+00800 )
+00801 Other financing activities
+00802 (51
+00803 )
+00804 (33
+00805 )
+00806 (81
+00807 )
+00808 (73
+00809 )
+00810 Net cash provided by (used in) financing activities
+00811 (195
+00812 )
+00813 1,540
+00814 (2,057
+00815 )
+00816 (1,551
+00817 )
+00818 Effect of exchange rate changes on cash and cash equivalents, and restricted cash and cash equivalents
+00819 159
+00820 54
+00821 229
+00822 30
+00823 Net increase (decrease) in cash and cash equivalents, and restricted cash and cash equivalents
+00824 1,067
+00825 (933
+00826 )
+00827 1,057
+00828 (2,470
+00829 )
+00830 Cash and cash equivalents, and restricted cash and cash equivalents
+00831 Beginning of period
+00832 8,600
+00833 8,110
+00834 8,610
+00835 9,647
+00836 End of period
+00837 $
+00838 9,667
+00839 $
+00840 7,177
+00841 $
+00842 9,667
+00843 $
+00844 7,177
+00845 Key Terms for Our Key Metrics
+00846 Driver(s). The term Driver collectively refers to independent providers of ride or delivery services who use our platform to provide Mobility or Delivery services, or both.
+00847 Gross Bookings. We define Gross Bookings as the total dollar value, including any applicable taxes, tolls, and fees, of: Mobility rides, Delivery orders (in each case without any adjustment for consumer discounts and refunds, Driver and Merchant earnings, and Driver incentives) and Freight revenue. Gross Bookings do not include tips earned by Drivers. Gross Bookings are an indication of the scale of our current platform, which ultimately impacts revenue.
+00848 Monthly Active Platform Consumers (“MAPCs”). We define MAPCs as the number of unique consumers who completed a Mobility ride or received a Delivery order on our platform at least once in a given month, averaged over each month in the quarter. While a unique consumer can use multiple product offerings on our platform in a given month, that unique consumer is counted as only one MAPC.
+00849 Segment Operating Income (Loss). We define each segment’s Operating Income (Loss) as segment revenue less direct costs and expenses of that segment as well as any applicable exclusions from Non-GAAP Operating Income.
+00850 Trips. We define Trips as the number of completed consumer Mobility rides and Delivery orders in a given period. For example, an UberX Share ride with three paying consumers represents three unique Trips, whereas an UberX ride with three passengers represents one Trip. We believe that Trips are a useful metric to measure the scale and usage of our platform.
+00851 Definitions of Non-GAAP Measures
+00852 We collect and analyze operating and financial data to evaluate the health of our business and assess our performance. In addition to revenue, net income (loss), income (loss) from operations, and other results under GAAP, we use: Non-GAAP Operating Income; Non-GAAP Net Income; Non-GAAP EPS; Free cash flow; as well as, revenue growth rates in constant currency, which are described below, to evaluate our business. Adjusted EBITDA is no longer a key measure used by management; we include a disclosure on Adjusted EBITDA to assist during the transition to our new non-GAAP measures. We have included these non-GAAP financial measures because they are key measures used by our management to evaluate our operating performance, generate future operating plans, and make strategic decisions. Accordingly, we believe that these non-GAAP financial measures provide useful information to investors and others in understanding and evaluating our operating results in the same manner as our management team and board of directors. In addition, they provide useful measures for period-to-period comparisons of our business, as they remove the effect of certain non-cash expenses, certain variable charges and other gains, losses, benefits, or charges that are unpredictable, in both magnitude and timing, and items not indicative of our ongoing operating performance. Our calculation of these non-GAAP financial measures may differ from similarly-titled non-GAAP measures, if any, reported by our peer companies. These non-GAAP financial measures should not be considered in isolation from, or as substitutes for, financial information prepared in accordance with GAAP.
+00853 Non-GAAP Operating Income
+00854 We define Non-GAAP Operating Income as income from operations, excluding (i) amortization of acquired intangible assets, (ii) certain legal, non-income tax, and regulatory reserve changes and settlements, (iii) goodwill and asset impairments/loss on sale of assets, (iv) acquisition, financing and divestitures related expenses, (v) restructuring and related charges, and (vi) other items not indicative of our ongoing operating performance.
+00855 Amortization of acquired intangible assets. Management views amortization of acquired intangible assets as items arising from pre-acquisition activities determined at the time of an acquisition. While these intangible assets are continually evaluated for impairment, amortization of acquired intangible assets is a static expense, which is not typically affected by operations during any particular period and is not reflective of ongoing operating performance. Although we exclude the amortization of acquired intangibles, management believes that it is important for investors to understand that such intangible assets were recorded as part of purchase accounting and contribute to revenue generation.
+00856 Legal, non-income tax, and regulatory reserve changes and settlements. Legal, non-income tax, and regulatory reserve changes and settlements are primarily related to certain significant legal proceedings or governmental investigations related to worker classification definitions, or tax agencies challenging our non-income tax positions. These matters have limited precedent, cover extended historical periods and are unpredictable in both magnitude and timing, therefore are distinct from normal, recurring legal, non-income tax and regulatory matters and related expenses incurred in our ongoing operating performance.
+00857 Non-GAAP Net Income
+00858 Our Non-GAAP Net Income excludes the adjustments that are excluded from Non-GAAP Operating Income, as well as certain components below income from operations, such as certain items that are not indicative of our recurring core business operating results and certain income tax effects.
+00859 Other income (expense), net. Primarily includes items not indicative of our ongoing operating performance. From time to time, we may exclude other gains, losses, benefits, or charges that are unpredictable, in both magnitude and timing, and items not indicative of our ongoing operating performance. These items include, but are not limited to: foreign currency exchange gain (losses), net, and unrealized (gain) loss on debt and equity securities, net.
+00860 Income tax effects. Primarily include the income tax effects of the adjustments excluded from Non-GAAP Net Income and exclude other income tax benefits or expenses that are unpredictable, in both magnitude and timing, and not indicative of the tax associated with our ongoing operating performance.
+00861 Three Months Ended June 30,
+00862 Six Months Ended June 30,
+00863 2025
+00864 2026
+00865 2025
+00866 2026
+00867 GAAP effective tax rate
+00868 9
+00869 %
+00870 26
+00871 %
+00872 (9
+00873 )%
+00874 27
+00875 %
+00876 Total adjustments to GAAP provision for income taxes
+00877 12
+00878 %
+00879 (2
+00880 )%
+00881 31
+00882 %
+00883 (3
+00884 )%
+00885 Non-GAAP effective tax rate
+00886 21
+00887 %
+00888 24
+00889 %
+00890 22
+00891 %
+00892 24
+00893 %
+00894 Adjustment to redeemable non-controlling interests.  Primarily reflects changes in the carrying value of redeemable non-controlling interests that are subject to put or call arrangements not solely within our control, which are remeasured to their estimated redemption value on a quarterly basis. These adjustments are non-cash in nature and are not indicative of our ongoing operating performance.
+00895 Non-GAAP EPS
+00896 We define Non-GAAP EPS as Non-GAAP Net Income attributable to common stockholders divided by Non-GAAP weighted-average shares outstanding. Adjustments to GAAP diluted weighted-average shares outstanding are for any potentially dilutive outstanding securities in periods where Non-GAAP Net Income is positive, but GAAP Net income was in a loss position.
+00897 Limitations of Non-GAAP Operating Income, Non-GAAP Net Income and Non-GAAP EPS and Non-GAAP Operating Income, Non-GAAP Net Income and Non-GAAP EPS Reconciliations
+00898 These non-GAAP financial measures have limitations as financial measures, should be considered as supplemental in nature, and are not meant as a substitute for the related financial information prepared in accordance with GAAP. These limitations include the following:
+00899 These non-GAAP financial measures exclude certain recurring, non-cash charges, such as amortization of acquired intangible assets, and although these are non-cash charges, the assets being amortized may have to be replaced in the future, and Non-GAAP Operating Income and Non-GAAP Net Income do not reflect all cash capital expenditure requirements for such replacements or for new capital expenditure requirements;
+00900 These non-GAAP financial measures exclude certain restructuring and related charges, part of which may be settled in cash;
+00901 These non-GAAP financial measures exclude certain legal, non-income tax, and regulatory reserve changes and settlements that may reduce cash available to us;
+00902 These non-GAAP financial measures exclude other items not indicative of our ongoing operating performance; and
+00903 These non-GAAP financial measures do not reflect the components of other income (expense), net, which primarily includes: foreign currency exchange gains (losses), net; and unrealized gain (loss) on debt and equity securities, net.
+00904 Adjusted EBITDA
+00905 We define Adjusted EBITDA as net income (loss), excluding (i) income (loss) from discontinued operations, net of income taxes, (ii) net income (loss) attributable to non-controlling interests, net of tax, (iii) provision for (benefit from) income taxes, (iv) income (loss) from equity method investments, (v) interest expense, (vi) interest income, (vii) other income (expense), net, (viii) depreciation and amortization, (ix) stock-based compensation expense, (x) certain legal, non-income tax, and regulatory reserve changes and settlements, (xi) goodwill and asset impairments/loss on sale of assets, (xii) acquisition, financing and divestitures related expenses, (xiii) restructuring and related charges and (xiv) other items not indicative of our ongoing operating performance.
+00906 Legal, non-income tax, and regulatory reserve changes and settlements. Legal, non-income tax, and regulatory reserve changes and settlements are primarily related to certain significant legal proceedings or governmental investigations related to worker classification definitions, or tax agencies challenging our non-income tax positions. These matters have limited precedent, cover extended historical periods and are unpredictable in both magnitude and timing, therefore are distinct from normal, recurring legal, non-income tax and regulatory matters and related expenses incurred in our ongoing operating performance.
+00907 Limitations of Adjusted EBITDA and Adjusted EBITDA Reconciliation
+00908 Adjusted EBITDA has limitations as a financial measure, should be considered as supplemental in nature, and is not meant as a substitute for the related financial information prepared in accordance with GAAP. These limitations include the following:
+00909 Adjusted EBITDA excludes certain recurring, non-cash charges, such as depreciation of property and equipment and amortization of intangible assets, and although these are non-cash charges, the assets being depreciated and amortized may have to be replaced in the future, and Adjusted EBITDA does not reflect all cash capital expenditure requirements for such replacements or for new capital expenditure requirements;
+00910 Adjusted EBITDA excludes stock-based compensation expense, which has been, and will continue to be for the foreseeable future, a significant recurring expense in our business and an important part of our compensation strategy;
+00911 Adjusted EBITDA excludes certain restructuring and related charges, part of which may be settled in cash;
+00912 Adjusted EBITDA excludes other items not indicative of our ongoing operating performance;
+00913 Adjusted EBITDA does not reflect period to period changes in taxes, income tax expense or the cash necessary to pay income taxes;
+00914 Adjusted EBITDA does not reflect the components of other income (expense), net, which primarily includes: foreign currency exchange gains (losses), net; and unrealized gain (loss) on debt and equity securities, net; and
+00915 Adjusted EBITDA excludes certain legal, non-income tax, and regulatory reserve changes and settlements that may reduce cash available to us.
+00916 Constant Currency
+00917 We compare the percent change in our current period results from the corresponding prior period using constant currency disclosure. We present constant currency growth rate information to provide a framework for assessing how our underlying revenue performed excluding the effect of foreign currency rate fluctuations. We calculate constant currency by translating our current period financial results using the corresponding prior period’s monthly exchange rates for our transacted currencies other than the U.S. dollar.
+00918 Free Cash Flow
+00919 We define free cash flow as net cash flows from operating activities less capital expenditures.
+00920 Reconciliations of Non-GAAP Measures
+00921 Non-GAAP Operating Income, Non-GAAP Net Income and Non-GAAP EPS
+00922 The following tables present reconciliations of GAAP and Non-GAAP Operating Income, GAAP and Non-GAAP Net Income and GAAP and Non-GAAP EPS:
+00923 Three Months Ended June 30,
+00924 Six Months Ended June 30,
+00925 (In millions, except share amounts which are reflected in thousands, and per share amounts)
+00926 2025
+00927 2026
+00928 2025
+00929 2026
+00930 GAAP Income from operations
+00931 $
+00932 1,450
+00933 $
+00934 1,890
+00935 $
+00936 2,678
+00937 $
+00938 3,813
+00939 Add (deduct):
+00940 Amortization of acquired intangible assets
+00941 65
+00942 61
+00943 129
+00944 120
+00945 Legal, non-income tax, and regulatory reserve changes and settlements
+00946 —
+00947 141
+00948 28
+00949 12
+00950 Goodwill and asset impairments/loss on sale of assets
+00951 —
+00952 4
+00953 —
+00954 4
+00955 Acquisition, financing and divestitures related expenses
+00956 19
+00957 31
+00958 22
+00959 56
+00960 Loss on lease arrangement, net
+00961 —
+00962 —
+00963 2
+00964 5
+00965 Restructuring and related charges
+00966 —
+00967 16
+00968 1
+00969 16
+00970 Total adjustments excluded from Non-GAAP Operating Income
+00971 84
+00972 253
+00973 182
+00974 213
+00975 Non-GAAP Operating Income
+00976 $
+00977 1,534
+00978 $
+00979 2,143
+00980 $
+00981 2,860
+00982 $
+00983 4,026
+00984 GAAP Net income attributable to Uber Technologies, Inc.
+00985 1,355
+00986 2,394
+00987 3,131
+00988 2,657
+00989 Adjustments excluded from Non-GAAP Operating Income (see above)
+00990 84
+00991 253
+00992 182
+00993 213
+00994 Other (income) expense, net
+00995 19
+00996 (1,342
+00997 )
+00998 (74
+00999 )
+01000 152
+01001 Income tax effects(1)
+01002 (190
+01003 )
+01004 315
+01005 (912
+01006 )
+01007 61
+01008 Loss from equity method investments
+01009 12
+01010 21
+01011 25
+01012 41
+01013 Adjustment to redeemable non-controlling interests
+01014 —
+01015 11
+01016 —
+01017 21
+01018 Non-GAAP Net Income
+01019 1,280
+01020 1,652
+01021 2,352
+01022 3,145
+01023 Assumed net loss attributable to Freight Holding contingently issuable shares
+01024 (14
+01025 )
+01026 —
+01027 (27
+01028 )
+01029 —
+01030 Non-GAAP Net Income attributable to common stockholders
+01031 $
+01032 1,266
+01033 $
+01034 1,652
+01035 $
+01036 2,325
+01037 $
+01038 3,145
+01039 Diluted weighted-average shares outstanding
+01040 2,125,628
+01041 2,050,225
+01042 2,124,181
+01043 2,060,763
+01044 GAAP Diluted EPS(2)
+01045 $
+01046 0.63
+01047 $
+01048 1.17
+01049 $
+01050 1.46
+01051 $
+01052 1.29
+01053 Non-GAAP EPS(2)
+01054 $
+01055 0.60
+01056 $
+01057 0.81
+01058 $
+01059 1.09
+01060 $
+01061 1.53
+01062 (1)
+01063 Income tax effects include the impact of a stock loss and capitalized research and development expenses through Q2 2025 and the deferred U.S. tax impact related to our equity securities through Q2 2026.
+01064 (2)
+01065 Per share amounts are calculated using unrounded numbers and therefore may not recalculate.
+01066 Adjusted EBITDA
+01067 The following table presents reconciliations of Adjusted EBITDA to the most directly comparable GAAP financial measure for each of the periods indicated:
+01068 Three Months Ended June 30,
+01069 Six Months Ended June 30,
+01070 (In millions)
+01071 2025
+01072 2026
+01073 2025
+01074 2026
+01075 Adjusted EBITDA reconciliation:
+01076 Net income attributable to Uber Technologies, Inc.
+01077 $
+01078 1,355
+01079 $
+01080 2,394
+01081 $
+01082 3,131
+01083 $
+01084 2,657
+01085 Add (deduct):
+01086 Net income (loss) attributable to non-controlling interests, net of tax
+01087 (5
+01088 )
+01089 22
+01090 (7
+01091 )
+01092 41
+01093 Loss from equity method investments
+01094 12
+01095 21
+01096 25
+01097 41
+01098 Provision for (benefit from) income taxes
+01099 142
+01100 840
+01101 (260
+01102 )
+01103 1,034
+01104 Other (income) expense, net
+01105 19
+01106 (1,342
+01107 )
+01108 (74
+01109 )
+01110 152
+01111 Interest expense
+01112 108
+01113 127
+01114 213
+01115 235
+01116 Interest income
+01117 (181
+01118 )
+01119 (172
+01120 )
+01121 (350
+01122 )
+01123 (347
+01124 )
+01125 Income from operations
+01126 1,450
+01127 1,890
+01128 2,678
+01129 3,813
+01130 Add (deduct):
+01131 Depreciation and amortization
+01132 175
+01133 188
+01134 346
+01135 372
+01136 Stock-based compensation expense
+01137 475
+01138 549
+01139 910
+01140 1,022
+01141 Legal, non-income tax, and regulatory reserve changes and settlements
+01142 —
+01143 141
+01144 28
+01145 12
+01146 Goodwill and asset impairments/loss on sale of assets, net
+01147 —
+01148 4
+01149 —
+01150 4
+01151 Acquisition, financing and divestitures related expenses
+01152 19
+01153 31
+01154 22
+01155 56
+01156 Loss on lease arrangement, net
+01157 —
+01158 —
+01159 2
+01160 5
+01161 Restructuring and related charges
+01162 —
+01163 16
+01164 1
+01165 16
+01166 Adjusted EBITDA
+01167 $
+01168 2,119
+01169 $
+01170 2,819
+01171 $
+01172 3,987
+01173 $
+01174 5,300
+01175 Free Cash Flow
+01176 The following tables present reconciliations of free cash flow to the most directly comparable GAAP financial measure for each of the periods indicated:
+01177 Three Months Ended June 30,
+01178 Six Months Ended June 30,
+01179 (In millions)
+01180 2025
+01181 2026
+01182 2025
+01183 2026
+01184 Free cash flow reconciliation:
+01185 Net cash provided by operating activities
+01186 $
+01187 2,564
+01188 $
+01189 2,862
+01190 $
+01191 4,888
+01192 $
+01193 5,213
+01194 Purchases of property and equipment
+01195 (89
+01196 )
+01197 (70
+01198 )
+01199 (163
+01200 )
+01201 (135
+01202 )
+01203 Free cash flow
+01204 $
+01205 2,475
+01206 $
+01207 2,792
+01208 $
+01209 4,725
+01210 $
+01211 5,078
+01212 Investors and analysts: [email protected]
+01213 Media: [email protected]
+01214 Source: Uber Technologies, Inc.
+01215 Company's logo
+01216 8769 x 5338
+01217 jpg
+01218 724 KB
+01219 Download:
+01220 Download original
+01221 jpg
+01222 724 KB
+01223 8769 x 5338
+01224 Download thumbnail
+01225 png
+01226 3 KB
+01227 200 x 122
+01228 Download lowres
+01229 png
+01230 7 KB
+01231 480 x 292
+01232 Download square
+01233 png
+01234 4 KB
+01235 250 x 250
+01236 Categories:
+01237 Press Releases
+01238 View all news
+01239 Sign up for email alerts
+01240 To opt in to receive investor email alerts, please enter your email address in the field below and select at least one alert option. After submitting your request, you’ll receive an activation email at the requested email address. You must click the activation link in order to complete your subscription. You can sign up for additional alert options at any time.
+01241 You can unsubscribe to any of the investor alerts you are subscribed to by visiting the Unsubscribe section below. If you experience any issues with this process, please contact us for further assistance.
+01242 By providing your email address below, you are giving consent to Uber Technologies Inc. to send you the requested investor email alert updates.
+01243 * Required
+01244 Email Address
+01245 *
+01246 Mailing Lists
+01247 *
+01248 Press Releases
+01249 Events
+01250 Presentations
+01251 SEC Filings
+01252 Unsubscribe
+01253 Email Alert Sign Up Confirmation
+01254 Help Center
+01255 [email protected]
+01256 About us
+01257 Newsroom
+01258 Global citizenship
+01259 Safety
+01260 Blog
+01261 Careers
+01262 Gift cards
+01263 Products
+01264 Ride
+01265 Drive
+01266 Eat
+01267 Uber for Business
+01268 Uber Freight
+01269 Uber Health
+01270 Privacy
+01271 Accessibility
+01272 Terms
+01273 Facebook (Opens in new window)
+01274 Twitter (Opens in new window)
+01275 Youtube (Opens in new window)
+01276 Linkedin (Opens in new window)
+01277 Instagram (Opens in new window)
+01278 ©  Uber Technologies, Inc.

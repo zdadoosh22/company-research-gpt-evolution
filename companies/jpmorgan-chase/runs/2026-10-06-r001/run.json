@@ -1,0 +1,53 @@
+{
+  "id": "2026-10-06-r001",
+  "legal_name": "JPMorgan Chase & Co.",
+  "ticker": "JPM",
+  "as_of": "2026-10-06",
+  "mode": "pilot",
+  "predecessor": null,
+  "methodology_version": "1.0.0",
+  "methodology_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+  "status": "awaiting-review",
+  "request": {
+    "purpose": "Authorised implementation validation",
+    "mode": "focused sector/evidence pilot",
+    "investor_context": "prospective buyer",
+    "cost_basis": null,
+    "portfolio_weight": null
+  },
+  "security": {
+    "legal_entity": "JPMorgan Chase & Co.",
+    "selected_security": "JPMorgan common equity; focused book-value pilot, not price-specific",
+    "trading_currency": "USD",
+    "reporting_currency": "USD",
+    "fiscal_year_end": "December 31",
+    "latest_reviewed_period": "2026-06-30"
+  },
+  "evidence_gaps": [
+    "Focused sector pilot, not a JPM thesis or recommendation.",
+    "TBV at June 30, not October. ROTCE is assumed long-run normalized and uses the tangible denominator.",
+    "Regulatory binding constraints require multiple capital and leverage ratios. Standardized CET1 alone is not distributable excess capital.",
+    "No verified dated security quote or capital-constrained distribution forecast: shareholder-return and entry-price conclusions withheld."
+  ],
+  "assumptions": [
+    "Focused sector pilot, not a JPM thesis or recommendation.",
+    "TBV at June 30, not October. ROTCE is assumed long-run normalized and uses the tangible denominator.",
+    "Regulatory binding constraints require multiple capital and leverage ratios. Standardized CET1 alone is not distributable excess capital.",
+    "No verified dated security quote or capital-constrained distribution forecast: shareholder-return and entry-price conclusions withheld."
+  ],
+  "review_findings": [],
+  "checks": {
+    "arithmetic": true,
+    "source_traceability": true,
+    "visual_review": true,
+    "workbook_recalculation": true,
+    "export_roundtrip": true,
+    "native_excel": false,
+    "stronger_review": false
+  },
+  "continuation": "Perform the focused Astra audit in validation/stronger-review-request.md after explicit delegation authorisation, resolve material findings and re-export/recheck affected artifacts. Do not publish this run or approve the workflow while review is pending.",
+  "model_identity": "Current chat model configuration not independently verified; do not claim these pilots ran on 6.1 Sol High.",
+  "stronger_review": "pending",
+  "stronger_review_required": true,
+  "methodology_file": "methodology/company-research-v1.0.0.md"
+}

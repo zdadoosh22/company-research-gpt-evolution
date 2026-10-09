@@ -1,0 +1,191 @@
+uber-20260630 (https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm)
+citeturn103view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn93view0","pattern":"Title of each class"}); Total lines: 2854
+L45: (Address of principal executive offices, including zip code)
+L46: 
+L47: (415) 612-8582
+L48: 
+L49: (Registrant’s telephone number, including area code)
+L50: 
+L51: ____________________________________________________________________________
+L52: 
+L53: Securities registered pursuant to Section 12(b) of the Act:
+L54: 
+L55:  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L56: Title of each class  |  | Trading Symbol(s)  |  | Name of each exchange on which registered
+L57: Common Stock, par value $0.00001 per share  |  | UBER  |  | New York Stock Exchange
+--------------------------------------------------------------------------------
+uber-20260630 (https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm)
+citeturn103view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn93view0","pattern":"Common Stock, par value"}); Total lines: 2854
+L45: (Address of principal executive offices, including zip code)
+L46: 
+L47: (415) 612-8582
+L48: 
+L49: (Registrant’s telephone number, including area code)
+L50: 
+L51: ____________________________________________________________________________
+L52: 
+L53: Securities registered pursuant to Section 12(b) of the Act:
+L54: 
+L55:  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L56: Title of each class  |  | Trading Symbol(s)  |  | Name of each exchange on which registered
+L57: Common Stock, par value $0.00001 per share  |  | UBER  |  | New York Stock Exchange
+L66: Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act). Yes ☐ No  ☒
+L67: 
+L68: The number of shares of the registrant's common stock outstanding as of July 31, 2026 was 2,042,560,121.
+L69: 
+L70: * * *
+L71: 
+L72: UBER TECHNOLOGIES, INC.
+L73: 
+L74: TABLE OF CONTENTS
+L209: Equity  |  |  |  |
+L210: Common stock, $0.00001 par value, 5,000,000 shares authorized for both periods, 2,067,905 and 2,039,994 shares issued and outstanding, respectively  |  | —   |  |  | —   |
+L211: Additional paid-in capital  |  | 38,101   |  |  | 35,698   |
+L212: Accumulated other comprehensive loss  |  | (432)  |  |  | (432)  |
+L213: Accumulated deficit  |  | (10,628)  |  |  | (7,950)  |
+L214: Total Uber Technologies, Inc. stockholders' equity  |  | 27,041   |  |  | 27,316   |
+L303: Issuance of common stock for settlement of RSUs  |  | —   |  |  |  | 10,293   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |
+L304: Shares withheld related to net share settlement  |  | —   |  |  |  | (460)  |  |  | —   |  |  | (33)  |  |  | —   |  |  | —   |  |  | —   |  |  | (33)  |
+L305: Repurchase of common stock  |  | —   |  |  |  | (26,587)  |  |  | —   |  |  | (1,800)  |  |  | —   |  |  | —   |  |  | —   |  |  | (1,800)  |
+L313: Stock-based compensation  |  | —   |  |  |  | —   |  |  | —   |  |  | 489   |  |  | —   |  |  | —   |  |  | —   |  |  | 489   |
+L314: Issuance of common stock for settlement of RSUs  |  | —   |  |  |  | 8,809   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |
+L315: Issuance of common stock under the Employee Stock Purchase Plan  |  | —   |  |  |  | 2,151   |  |  | —   |  |  | 119   |  |  | —   |  |  | —   |  |  | —   |  |  | 119   |
+L316: Shares withheld related to net share settlement  |  | —   |  |  |  | (58)  |  |  | —   |  |  | (5)  |  |  | —   |  |  | —   |  |  | —   |  |  | (5)  |
+L317: Repurchase of common stock  |  | —   |  |  |  | (16,360)  |  |  | —   |  |  | (1,377)  |  |  | —   |  |  | —   |  |  | —   |  |  | (1,377)  |
+L318: Re-measurement of non-controlling interests  |  | 14   |  |  |  | —   |  |  | —   |  |  | (14)  |  |  | —   |  |  | —   |  |  | —   |  |  | (14)  |
+L353:  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L354:  |  | Redeemable Non-Controlling Interests  |  |  | Common Stock  |  | Additional Paid-In Capital  |  | Accumulated Other Comprehensive Income (Loss)  |  | Accumulated Deficit  |  | Non-Redeemable Non-Controlling Interests  |  | Total Equity  |  |  |  |  |  |  |
+L358: Stock-based compensation  |  | —   |  |  |  | —   |  |  | —   |  |  | 484   |  |  | —   |  |  | —   |  |  | —   |  |  | 484   |  |  |  |  |  |  |  |
+L359: Issuance of common stock for settlement of RSUs  |  | —   |  |  |  | 8,721   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |  |  |  |  |  |  |  |
+L360: Shares withheld related to net share settlement  |  | —   |  |  |  | (525)  |  |  | —   |  |  | (39)  |  |  | —   |  |  | —   |  |  | —   |  |  | (39)  |  |  |  |  |  |  |  |
+L361: Repurchase of common stock  |  | —   |  |  |  | (39,740)  |  |  | —   |  |  | (3,010)  |  |  | —   |  |  | —   |  |  | —   |  |  | (3,010)  |  |  |  |  |  |  |  |
+L362: Re-measurement of non-controlling interests  |  | 10   |  |  |  | —   |  |  | —   |  |  | (10)  |  |  | —   |  |  | —   |  |  | —   |  |  | (10)  |  |  |  |  |  |  |  |
+L363:  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L364:  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L374: Issuance of common stock for settlement of RSUs  |  | —   |  |  |  | 8,257   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |  |  | —   |  |  |  |  |  |  |  |
+L375: Issuance of common stock under the Employee Stock Purchase Plan  |  | —   |  |  |  | 2,158   |  |  | —   |  |  | 136   |  |  | —   |  |  | —   |  |  | —   |  |  | 136   |  |  |  |  |  |  |  |
+L376: Shares withheld related to net share settlement  |  | —   |  |  |  | (69)  |  |  | —   |  |  | (5)  |  |  | —   |  |  | —   |  |  | —   |  |  | (5)  |  |  |  |  |  |  |  |
+L377: Repurchase of common stock  |  | —   |  |  |  | (6,885)  |  |  | —   |  |  | (517)  |  |  | —   |  |  | —   |  |  | —   |  |  | (517)  |  |  |  |  |  |  |  |
+L378: Re-measurement of non-controlling interests  |  | 11   |  |  |  | —   |  |  | —   |  |  | (11)  |  |  | —   |  |  | —   |  |  | —   |  |  | (11)  |  |  |  |  |  |  |  |
+L797: Holders of the 2028 Convertible Notes may convert their notes at their option at any time prior to the close of business on the business day immediately preceding September 1, 2028 only under the following circumstances: (i) during any calendar quarter (and only during such calendar quarter), if the last reported sale price of our common stock for at least 20 trading days (whether or not consecutive) during the period of 30 consecutive trading days ending on, and including, the last trading day of the immediately preceding calendar quarter, is greater than or equal to 130% of the conversion price on each applicable trading day; (ii) during the five business day period after any ten consecutive trading day period (the “2028 Convertible Notes measurement period”) in which the trading price (as defined in the indenture governing the 2028 Convertible Notes) per $1,000 principal amount of notes for each trading
+L801: day of the 2028 Convertible Notes measurement period was less than 98% of the product of the last reported sale price of our common stock and the conversion rate on each such trading day; (iii) if we call such notes for redemption, at any time prior to the close of business on the scheduled trading day immediately preceding the applicable redemption date; or (iv) upon the occurrence of specified corporate events.
+L804: The initial conversion rate is 13.7848 shares of the common stock per $1,000 principal amount of notes, equivalent to an initial conversion price of approximately $72.54 per share of the common stock. The conversion rate will be subject to adjustment in some events but will not be adjusted for any accrued and unpaid interest.
+L805: Upon conversion of the 2028 Convertible Notes, we must pay cash up to the aggregate principal amount of the notes to be converted and pay or deliver as the case may be, cash, shares of our common stock, or a combination of cash and shares of our common stock, at our election in respect of the remainder, if any, of our conversion obligation in excess of the aggregate principal amount of the notes being converted.
+L806: We may not redeem the notes prior to December 5, 2026.
+L807: We may redeem for cash all or any portion of the notes, at our option, on or after December 5, 2026, if the last reported sale price of our common stock has been at least 130% of the conversion price then in effect for at least 20 trading days (whether or not consecutive) during any 30 consecutive trading day period (including the last trading day of such period) ending on, and including, the trading day immediately preceding the date on which we provide notice of redemption at a redemption price equal to 100% of the principal amount of the notes to be redeemed, plus accrued and unpaid interest, if any, to, but excluding, the redemption date.
+L816: Initially, each unit of reference property is comprised of one share of Aurora Class A common stock.
+L817: The initial exchange rate is 117.6471 shares of the Aurora Class A common stock per $1,000 principal amount of notes, equivalent to an initial conversion price of approximately $8.50 per share of the Aurora Class A common stock. The exchange rate will be subject to adjustment in some events.
+L941: In July 2025, our board of directors authorized an additional $20.0 billion for the repurchase of common stock (“Share Repurchase Program”). The timing, manner, price and amount of any repurchases are determined by the discretion of management, depending on market conditions and other factors. Repurchases may be made through open market purchases and accelerated share repurchases. The exact number of shares to be repurchased by us, if any, is not guaranteed.
+L943: During the three and six months ended June 30, 2025, we repurchased, and subsequently retired, 16.4 million and 42.9 million shares of common stock for $1.4 billion and $3.2 billion, respectively, excluding broker commissions and fees.
+L944: During the three and six months ended June 30, 2026, we repurchased, and subsequently retired, 6.9 million and 46.6 million shares of common stock for $510 million and $3.5 billion, respectively, excluding broker commissions and fees. As of June 30, 2026, we had approximately $15.7 billion available to repurchase shares pursuant to the Share Repurchase Program.
+L964: Basic net income per share is computed by dividing net income by the weighted-average number of common shares outstanding for the periods presented. Diluted net income per share is computed by giving effect to all potential weighted average dilutive common stock. For diluted net income per share, the dilutive effect of outstanding awards is reflected by application of the treasury stock method and convertible securities by application of the if-converted method, as applicable.
+L974: Net income (loss) attributable to non-controlling interests, net of tax  |  | (5)  |  |  | 22   |  |  | (7)  |  |  | 41   |
+L975:           Net income attributable to common stockholders  |  | $  | 1,355   |  |  | $  | 2,394   |  |  | $  | 3,131   |  |  | $  | 2,657   |
+L976: Denominator  |  |  |  |  |  |  |  |
+L977: Basic weighted-average common stock outstanding  |  | 2,091,106   |  |  | 2,036,458   |  |  | 2,091,781   |  |  | 2,044,279   |
+L989:      Dilutive effect of Freight Holding contingently issuable shares  |  | 701   |  |  | 12   |  |  | 827   |  |  | 10   |
+L990:      Dilutive effect of Convertible Notes  |  | 3,081   |  |  | 254   |  |  | 1,540   |  |  | 810   |
+L991:      Dilutive effect of other contingently issuable shares  |  | 2,321   |  |  | 2,321   |  |  | 2,321   |  |  | 2,321   |
+L992:      Diluted weighted-average common stock outstanding  |  | 2,125,628   |  |  | 2,050,225   |  |  | 2,124,181   |  |  | 2,060,763   |
+L995: During the three and six months ended June 30, 2025, approximately 5 million shares of common stock underlying equity awards were excluded from the computation of diluted net income per share during the periods presented because their effect would have been antidilutive.
+L996: During the three and six months ended June 30, 2026, approximately 61 million and 15 million, respectively, shares of common stock underlying equity awards were excluded from the computation of diluted net income per share during the periods presented because their effect would have been antidilutive.
+L2727: Delaware law and provisions in our amended and restated certificate of incorporation and amended and restated bylaws could make a merger, tender offer, or proxy contest difficult, thereby depressing the trading price of our common stock.
+L2728: Our amended and restated certificate of incorporation and amended and restated bylaws contain provisions that could depress the trading price of our common stock by acting to discourage, delay, or prevent a change of control of our company or changes in our management that the stockholders of our company may deem advantageous. These provisions include the following:
+L2735: •our board of directors is able to issue, without stockholder approval, shares of undesignated preferred stock, which makes it possible for our board of directors to issue preferred stock with voting or other rights or preferences that could impede the success of any attempt to acquire us.
+L2736: Any provision of our amended and restated certificate of incorporation, amended and restated bylaws, or Delaware law that has the effect of delaying or deterring a change in control could limit the opportunity for our stockholders to receive a premium for their shares of our common stock, and could also affect the price that some investors are willing to pay for our common stock.
+L2737: In addition, under our existing debt instruments, we, and certain of our subsidiaries, are subject to certain limitations on our business and operations, including limitations on certain consolidations, mergers, and sales of assets. For information regarding these and other provisions, see the risk factor titled “—We have incurred a significant amount of debt and may in the future incur additional indebtedness.
+L2738: Our payment obligations under such indebtedness may limit the funds available to us, and the terms of our debt agreements may restrict our flexibility in operating our business.”
+L2739: Sales, directly or indirectly, of shares of our common stock by existing stockholders could cause our stock price to decline.
+L2740: Sales, directly or indirectly, of a substantial number of shares of our common stock, or the public perception that these sales might occur, could depress the market price of our common stock and could impair our ability to raise capital through the sale of additional equity securities. We may issue our shares of common stock or securities convertible or exchangeable into or exercisable for our common stock from time to time in connection with a financing, acquisition, investments or otherwise.
+L2741: Such issuances, including the issuance of additional shares of our common stock upon exercise of equity awards or conversion of our convertible notes, could result in substantial dilution to our existing stockholders and cause the trading price of our common stock to decline.
+L2742: We do not intend to pay cash dividends for the foreseeable future.
+L2743: We have never declared or paid cash dividends on our capital stock. We currently intend to retain any future earnings to finance the operation and expansion of our business, and we do not expect to declare or pay any cash dividends in the foreseeable future. In addition, certain of our existing debt instruments include restrictions on our ability to pay cash dividends. As a result, you may only receive a return on your investment in our common stock if the market price of our common stock increases.
+L2744: Our amended and restated certificate of incorporation provides that the Court of Chancery of the State of Delaware and, to the extent enforceable, the federal district courts of the United States of America are the exclusive forums for substantially all disputes between us and our stockholders, which could limit our stockholders’ ability to obtain a favorable judicial forum for disputes with us or our directors, officers, or employees.
+L2745: Our amended and restated certificate of incorporation provides that the Court of Chancery of the State of Delaware is the exclusive forum for the following types of actions or proceedings under Delaware statutory or common law:
+L2746: 
+L2747: 83
+L2748: 
+L2749: * * *
+L2750: 
+L2751: •any derivative action or proceeding brought on our behalf;
+L2752: 
+L2753: •any action asserting a breach of fiduciary duty;
+L2766: If we are unable to maintain effective internal control over financial reporting in the future, investors may lose confidence in the accuracy and completeness of our financial reports, and the market price of our common stock may be harmed.
+L2767: As a result of being a public company, we are obligated to develop and maintain proper and effective internal controls over financial reporting, and any failure to maintain the adequacy of these internal controls may adversely affect investor confidence in our company and, as a result, the value of our common stock.
+L2773: If we are unable to conclude that our internal control over financial reporting is effective, or if we or our independent registered public accounting firm determines we have a material weakness in our internal control over financial reporting, we could lose investor confidence in the accuracy and completeness of our financial reports, the market price of our common stock could decline, and we could be subject to sanctions or investigations by the stock exchange on which our securities are listed, the SEC or other regulatory authorities.
+--------------------------------------------------------------------------------
+uber-20260630 (https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm)
+citeturn103view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn93view0","pattern":"stock-based compensation expense by function"}); Total lines: 2854
+L916:  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L917:  |  | Number of Shares  |  | Weighted-Average
+L918:  Grant-Date Fair
+L919:  Value per Share
+L920: Unvested and outstanding as of December 31, 2025  |  | 57,654   |  |  | $  | 65.69   |
+L921: Granted  |  | 35,921   |  |  | $  | 73.57   |
+L922: Vested  |  | (17,008)  |  |  | $  | 56.31   |
+L923: Canceled and forfeited  |  | (4,763)  |  |  | $  | 68.59   |
+L924: Unvested and outstanding as of June 30, 2026  |  | 71,804   |  |  | $  | 71.66   |
+L925: 
+L926: Stock-Based Compensation Expense
+L927: Stock-based compensation expense is allocated based on the cost center to which the award holder belongs. The following table summarizes total stock-based compensation expense by function (in millions):
+L928:  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+L929:  |  | Three Months Ended June 30,  |  | Six Months Ended June 30,
+L930:  |  | 2025  |  | 2026  |  | 2025  |  | 2026
+L931: Operations and support  |  | $  | 59   |  |  | $  | 71   |  |  | $  | 111   |  |  | $  | 131   |
+L932: Sales and marketing  |  | 28   |  |  | 27   |  |  | 52   |  |  | 52   |
+L933: Research and development  |  | 284   |  |  | 336   |  |  | 548   |  |  | 622   |
+L934: General and administrative  |  | 104   |  |  | 122   |  |  | 199   |  |  | 224   |
+L935: Total  |  | $  | 475   |  |  | $  | 556   |  |  | $  | 910   |  |  | $  | 1,029   |
+L936: As of June 30, 2026, there was $4.9 billion of unamortized compensation costs related to all unvested awards. The unamortized compensation costs are expected to be recognized over a weighted-average period of approximately 2.93 years.
+L937: 
+L938: The income tax benefits recognized in the condensed consolidated statements of operations for stock-based compensation expense were not material during the three and six months ended June 30, 2025 and 2026.
+L939: 
+L940: Share Repurchase Program
+L1341: Sales and marketing expenses primarily consist of advertising costs, product marketing costs, consumer discounts, promotions, credits and refunds provided to end-users who are not customers, compensation costs, including stock-based compensation to sales and marketing employees, contractor and professional service costs, and the allocation of certain corporate costs. We expense advertising and other promotional expenditures as incurred.
+L1345: Research and development expenses primarily consist of compensation costs, including stock-based compensation, for employees in engineering, design and product development. Expenses also include ongoing improvements to, and maintenance of, existing products and services, contractor and professional service costs, and allocation of certain corporate costs. We expense substantially all research and development expenses as incurred.
+L1349: General and administrative expenses primarily consist of compensation costs, including stock-based compensation, for executive management and administrative employees, including finance and accounting, human resources, policy and communications, legal, and certain impairment charges, contractor and professional service costs, as well as allocation of certain corporate costs, occupancy, and general corporate insurance costs.
+L1479: Operations and support expenses increased $204 million or 15% in the six months ended June 30, 2026, primarily attributable to a $163 million increase in employee compensation costs including stock-based compensation, and a $22 million increase in contractor and professional service costs.
+L1480: 
+L1481: Sales and Marketing
+L1493: Sales and marketing expenses increased $574 million or 25% in the six months ended June 30, 2026, primarily attributable to a $248 million increase in consumer discounts, promotions, credits and refunds, a $231 million increase in indirect advertising and marketing, and a $103 million increase in employee compensation costs including stock-based compensation.
+L1494: 
+L1495: Research and Development
+L1502: Research and development expenses increased $203 million or 24% in the three months ended June 30, 2026, primarily attributable to a $189 million increase in employee compensation costs including stock-based compensation.
+L1503: 
+L1504: Research and development expenses increased $339 million or 20% in the six months ended June 30, 2026, primarily attributable to a $320 million increase in employee compensation costs including stock-based compensation.
+L1505: 
+L1506: General and Administrative
+L1513: General and administrative expenses increased $266 million or 40% in the three months ended June 30, 2026, primarily attributable to a $138 million increase in legal-related accruals and expenses, a $66 million increase in employee compensation costs including stock-based compensation and a $53 million increase in contractor and professional service costs.
+L1514: General and administrative expenses increased $407 million or 31% in the six months ended June 30, 2026, primarily attributable to a $148 million increase in legal-related accruals and expenses, a $111 million increase in employee compensation costs including stock-based compensation, a $92 million increase in contractor and professional service costs, and a $33 million increase in general insurance expense.
+L1515: 
+L1516: Depreciation and Amortization
+L1628: Mobility Segment Operating Income increased primarily attributable to an increase in Mobility Gross Bookings and a $1.4 billion decrease in Driver payments and incentives, partially offset by a $212 million increase in indirect advertising and marketing, a $175 million increase in employee compensation costs including stock-based compensation and a $141 million increase in network costs.
+L1629: 
+L1630: Delivery Segment
+L1638: Delivery Segment Operating Income increased primarily attributable to an increase in Delivery revenue, partially offset by a $545 million increase in Courier payments and incentives, a $123 million increase in employee compensation costs including stock-based compensation, and a $65 million increase in credit card processing costs as a result of increased Gross Bookings.
+L1642: Delivery Segment Operating Income increased primarily attributable to an increase in Delivery revenue, partially offset by a $1.2 billion increase in Courier payments and incentives, a $257 million increase in employee compensation costs including stock-based compensation, and a $130 million increase in credit card processing costs as a result of increased Gross Bookings.
+L1643: 
+L1644: Freight Segment
+L1709: Net cash provided by operating activities was $5.2 billion for the six months ended June 30, 2026, primarily consisting of $2.7 billion of net income including non-controlling interests, adjusted for certain non-cash items, which primarily includes: $1.0 billion of stock-based compensation expense; $771 million of deferred income taxes, $386 million of depreciation and amortization expense; $138 million in gains on debt and equity securities, net; as well as a $210 million increase in cash from working capital.
+L1711: Net cash provided by operating activities was $4.9 billion for the six months ended June 30, 2025, primarily consisting of $3.1 billion of net income including non-controlling interests, adjusted for certain non-cash items, which primarily includes: $910 million of stock-based compensation expense; $359 million of depreciation and amortization expense; $325 million of deferred income taxes; $34 million in unrealized gains on debt and equity securities, net, as well as a $927 million increase in cash from working capital.
+--------------------------------------------------------------------------------
+uber-20260630 (https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm)
+citeturn103view3 [wordlim: 200] Crawled: today; Content type: text/html; Source: find({"ref_id":"turn93view0","pattern":"Disclosure Controls"}); Total lines: 2854
+L1806: ITEM 4. CONTROLS AND PROCEDURES
+L1807: 
+L1808: Evaluation of Disclosure Controls and Procedures
+L1809: We maintain disclosure controls and procedures that are designed to provide reasonable assurance that information required to be disclosed in reports that we file or submit under the Securities Exchange Act of 1934, as amended (the “Exchange Act”) is recorded, processed, summarized and reported within the time periods specified in the Securities and Exchange Commission’s rules and forms and that such information is accumulated and communicated to our management, including our Chief Executive Officer and Chief Financial Officer, as appropriate, to allow for timely decisions regarding required disclosure.
+L1810: As required by Rule 13a-15(b) under the Exchange Act, our management, including our Chief Executive Officer and Chief Financial Officer, evaluated the effectiveness of our disclosure controls and procedures as of the end of the period covered by this Quarterly Report on Form 10-Q.
+L1811: Based upon that evaluation, our Chief Executive Officer and Chief Financial Officer concluded that, as of the end of the period covered by this Quarterly Report on Form 10-Q, our disclosure controls and procedures are effective at a reasonable assurance level.
+L1812: 47
+L1813: 
+L1814: * * *
+L1815: 
+L1816: Changes in Internal Control over Financial Reporting
+L1817: 
+L1818: There were no changes to our internal control over financial reporting that occurred during the quarter ended June 30, 2026 that have materially affected, or are reasonably likely to materially affect, our internal control over financial reporting.
+L1819: 
+L1820: Inherent Limitations on Effectiveness of Controls
+L1821: Our management, including our Chief Executive Officer and Chief Financial Officer, believes that our disclosure controls and procedures and internal control over financial reporting are designed to provide reasonable assurance of achieving their objectives and are effective at the reasonable assurance level. However, our management does not expect that our disclosure controls and procedures or our internal control over financial reporting will prevent or detect all error and fraud.
+L1822: Any control system, no matter how well designed and operated, is based upon certain assumptions and can provide only reasonable, not absolute, assurance that its objectives will be met. Further, no evaluation of controls can provide absolute assurance that misstatements due to error or fraud will not occur or that all control issues and instances of fraud, if any, within our company have been detected.
+

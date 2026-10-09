@@ -1,0 +1,18 @@
+{
+  "entity_id": "unilever-plc",
+  "legal_name": "Unilever PLC",
+  "latest": null,
+  "runs": [
+    {
+      "id": "2026-10-06-r001",
+      "mode": "pilot",
+      "status": "awaiting-review"
+    },
+    {
+      "id": "2026-10-06-r002",
+      "mode": "pilot",
+      "status": "partial"
+    }
+  ],
+  "latest_active": "2026-10-06-r002"
+}

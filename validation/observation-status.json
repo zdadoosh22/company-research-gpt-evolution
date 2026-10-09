@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-09",
+  "implementation": "local observation foundation implemented and Windows task started",
+  "mode": "observation-only",
+  "real_recommendations_enabled": false,
+  "broker_execution_implemented": false,
+  "funding_confirmed": true,
+  "funding_basis": "User declared the isolated £300 allocation; no transfer or independent broker-cash verification",
+  "planned_capital_gbp": "300",
+  "engineering_tests_passed": 292,
+  "engineering_tests_scope": "Latest completed verification on 9 October: 292 tests; 110 protected files unchanged and live/restored database integrity checked. Includes discovery-study context containment, corruption-safe source archiving, paper decisions, scoped queue recovery and operational evidence reporting. Engineering evidence only; no investment-quality or elapsed-trial approval.",
+  "refinement_record": "validation/refinement-report.json and validation/refinement-report.md",
+  "mandate": "Aggressive shorter-term growth over days to a few months; no intraday requirement; compare explicit loss controls and thesis-based exits",
+  "numerical_portfolio_policy": "Initial paper design: three GBP100 per-idea ceilings, one new unreported instruction; compare two/four tranche variants. Explicit experimental choice in DECISION-SCOPE.md, not empirically optimal and not activated for real trades. Stop rules remain opportunity-specific and require reviewed supplied evidence.",
+  "subscription_smoke": {
+    "authentication": "ChatGPT subscription verified by actual CLI run",
+    "model_requested": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "speed": "standard",
+    "result": "needs-review draft; no analytical approval",
+    "actual_model_identity": "not reported in CLI events; requested configuration supplied to CLI, backend identity not independently verified",
+    "run_id": "20261007T203702Z-217aebb99f16",
+    "scope": "workspace status flag only; not a company research validation"
+  },
+  "windows_task": {
+    "name": "CompanyResearch2-Observation",
+    "registered": true,
+    "started_and_tick_verified": true,
+    "stop_remove_reregister_restart_tested": true,
+    "requires": "awake computer, signed-in Windows user and online services for remote work",
+    "power_settings_changed": false
+  },
+  "primary_sources": {
+    "SEC_APP": "live baseline retrieved and issuer checked",
+    "SEC_JPM": "live baseline retrieved and issuer checked",
+    "SEC_Unilever": "live baseline retrieved and issuer checked",
+    "Unilever_results_page": "HTTP 403; monitored coverage gap",
+    "Unilever_regulatory_page": "HTTP 403; monitored coverage gap",
+    "coverage": "configured sources only, not comprehensive news or UK announcement coverage",
+    "SEC_AMD": "Live issuer-checked baseline retrieved 9 October; discovery only",
+    "SEC_UBER": "Live issuer-checked baseline retrieved 9 October; discovery only",
+    "SEC_NFLX": "Live issuer-checked baseline retrieved 9 October; discovery only"
+  },
+  "phone": {
+    "transport": "Telegram private bot implemented; simulated transport and Windows DPAPI tested",
+    "credentials_configured": false,
+    "real_messages_sent": false,
+    "iPhone_verified": false
+  },
+  "remaining_gates": [
+    "validated portfolio policy; broker cash/holdings reconciliation before real trade instructions",
+    "company research acceptance and actual required stronger-model review",
+    "Telegram credentials and real iPhone delivery/acknowledgement test",
+    "at least 14 days of observed operation plus failure tests",
+    "verified unattended quote acquisition before independent price-opportunity detection",
+    "Gemini exact subscription and quality validation before assigning work"
+  ],
+  "integrity": "110 pre-existing company/methodology files unchanged; existing pilot statuses preserved",
+  "paid_model_api_fallback": false,
+  "background_mechanism": "explicitly user-authorised Windows Task Scheduler service",
+  "continuation": "Previous goal retired by the user on 9 October. Read validation/final-goal-checkpoint-2026-10-09.md/.json; await new workflow instructions before starting another research stage. Existing Windows observation task remains running and unchanged.",
+  "sufficiency_assessment": "monitoring/SUFFICIENCY-REVIEW.md; sufficient for controlled observation, insufficient for real instructions",
+  "first_short_horizon_screen": "monitoring/studies/2026-10-07-unilever-short-horizon-screen.md; dated event identified, investment opportunity withheld",
+  "source_history": "Per-source baseline/change/unchanged/failure counts and timings recorded from 7 October 2026 22:05 UTC; prior checks not reconstructed",
+  "scoped_model_queue": "Implemented as explicit-run-only, separate database; no background scoped worker. CLI subscription login/options verified; real adapter model-route execution not yet verified. Current frozen JPM package v2 is validated, not queued or run.",
+  "operational_evidence": "validation/operational-evidence-2026-10-09.json; actual check counts and gaps, uptime/acceptance not inferred",
+  "first_scoped_decision": "JPM pre-event entry rejected; independently checked and actual selected Astra analytical challenge completed for rejection scope only. Parent dispositions saved; positive entry/targets withheld. Backend identity unreported.",
+  "discovery_review": "Completed discovery screening challenge and parent dispositions saved. Netflix opportunity follow-up saved; its separate Astra review terminated at usage limit with no completed challenge files. No positive entry approved.",
+  "discovery_cohort": "monitoring/research-universe-2026-10-09.json; fresh AMD/UBER/NFLX issuer-checked SEC baselines, no historical jobs or investment selections"
+}

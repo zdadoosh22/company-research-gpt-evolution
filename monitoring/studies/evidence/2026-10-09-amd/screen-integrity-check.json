@@ -1,0 +1,14 @@
+{
+  "study_id": "2026-10-09-amd-discovery-screen",
+  "checked_at": "2026-10-09T00:39:08.504407+00:00",
+  "sources_verified": 18,
+  "original_methodology_hash_unchanged": true,
+  "independent_fraction_arithmetic_eps": "64119/33200",
+  "independent_review": false,
+  "analytical_approval": false,
+  "actionable": false,
+  "files": {
+    "monitoring\\studies\\2026-10-09-amd-discovery-screen.json": "c91e4b682e833da41e3a0349884fa4c725160fab7b16c81a56c2336b75129fe1",
+    "monitoring\\studies\\2026-10-09-amd-discovery-screen.md": "e626e1cac3b3183756fa1130cdda8fc9934730fec2df7017a64508de31fa7698"
+  }
+}

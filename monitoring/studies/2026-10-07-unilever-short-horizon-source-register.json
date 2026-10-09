@@ -1,0 +1,96 @@
+{
+  "study": "unilever-q3-2026-preliminary-screen",
+  "as_of": "2026-10-07",
+  "accessed_at": "2026-10-07T22:04:41Z",
+  "status": "preliminary-withheld",
+  "analytical_approval": false,
+  "scope": "Read selected relevant passages, not complete company research or all pages of the annual/interim report",
+  "sources": [
+    {
+      "id": "S1",
+      "uri": "https://www.unilever.com/investors/results-events/",
+      "publisher": "Unilever PLC",
+      "publication_date": null,
+      "location": "Q3 2026 Trading Statement section: event date, webcast time and linked pre-close document",
+      "read": true,
+      "access_method": "web-research-tool",
+      "local_retrieval_verified": false
+    },
+    {
+      "id": "S2",
+      "uri": "https://www.unilever.com/files/unilever-pre-close-aide-memoire-q3-2026.pdf",
+      "publisher": "Unilever PLC",
+      "publication_date": "2026-10-05",
+      "location": "Printed pages 1-4: opening scope, Outlook, Business Groups comparator table, Geographical areas and Additional disclosures; text extracted from all five pages",
+      "read": true,
+      "access_method": "web-research-tool PDF extraction; screenshots requested for pages 1-2 but returned reference metadata, so visual inspection is not certified",
+      "local_archive_preserved": false,
+      "classification": "issuer historical reminders and management guidance, not independent consensus"
+    },
+    {
+      "id": "S3",
+      "uri": "https://www.unilever.com/files/unilever-q2-2026-results-full-announcement.pdf",
+      "publisher": "Unilever PLC",
+      "publication_date": "2026-07-28",
+      "location": "Printed pages 1-2: Key Highlights, Key Figures, Outlook and First Half Review/Growth",
+      "read": true,
+      "access_method": "web-research-tool PDF extraction; complete 34-page report not certified read",
+      "local_archive_preserved": false
+    },
+    {
+      "id": "S4",
+      "uri": "https://www.sec.gov/Archives/edgar/data/217410/000021741026000057/ul-20260630.htm",
+      "publisher": "Unilever PLC; hosted by SEC",
+      "publication_date": "2026-07-28",
+      "location": "Printed pages 3-4: Outlook, First Half Review, Foods and geographical commentary; printed page 8: Latin America/Brazil tax-reform inventory commentary",
+      "read": true,
+      "access_method": "web-research-tool HTML text",
+      "local_retrieval_verified": false
+    },
+    {
+      "id": "S5",
+      "uri": "companies/unilever-plc/runs/2026-10-06-r002/run.json",
+      "location": "status, security, evidence_gaps, continuation and conclusion_limits",
+      "read": true,
+      "access_method": "local file",
+      "classification": "existing partial pilot; not approved valuation"
+    },
+    {
+      "id": "S6",
+      "uri": "state/observation/status.json",
+      "location": "source_failures entries unilever-results and unilever-regulatory, last_seen 2026-10-07T21:56:21Z",
+      "read": true,
+      "access_method": "local file",
+      "classification": "recorded local HTTP403 failures; no new local HTTP request performed for this screen"
+    },
+    {
+      "id": "S7",
+      "uri": "https://www.unilever.com/investors/results-events/results-events-webcasts/latest-results/",
+      "publisher": "Unilever PLC",
+      "publication_date": null,
+      "location": "Q2 and Half-Year 2026 Results section: 28 July date and Full Announcement link",
+      "read": true,
+      "access_method": "web-research-tool",
+      "local_retrieval_verified": false
+    }
+  ],
+  "unverified": [
+    "current quote",
+    "broker security availability",
+    "market consensus",
+    "priced expectations",
+    "FX bridge",
+    "valuation or entry ceiling",
+    "independent unattended Unilever-page retrieval",
+    "full company analytical acceptance"
+  ],
+  "portfolio_or_trade_instruction": null,
+  "parent_cross_check": {
+    "identity": "parent implementation analyst; not an Astra analytical review",
+    "scope": "Official event date/webcast passage, pre-close opening guidance and Foods transaction reminder; SEC HTML group H1/Q2 growth and margin tables cross-checked against reported screen figures",
+    "uri": "https://www.sec.gov/Archives/edgar/data/217410/000021741026000057/ul-20260630.htm",
+    "location": "First Half Key Highlights; Key Figures; First Half Review Growth; Business Group performance",
+    "read": true,
+    "analytical_approval": false
+  }
+}

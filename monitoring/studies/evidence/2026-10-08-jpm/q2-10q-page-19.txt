@@ -1,0 +1,47 @@
+The following table provides information on net interest income, net yield, and noninterest revenue excluding 
+Markets.
+(in millions, except rates)
+Three months ended June 30, Six months ended June 30,
+2026 2025 Change 2026 2025 Change
+Net interest income – reported(a) $ 25,511 $ 23,209  10 % $ 50,877 $ 46,482  9 %
+Fully taxable-equivalent adjustments  111  105  6  224  207  8 
+Net interest income – managed basis $ 25,622 $ 23,314  10 $ 51,101 $ 46,689  9 
+Less: Markets net interest income(b)  1,945  561  247  4,144  1,346 208
+Net interest income excluding Markets $ 23,677 $ 22,753  4 $ 46,957 $ 45,343  4 
+Average interest-earning assets(a) $ 4,287,954 $ 3,845,982  11 $ 4,212,266 $ 3,757,674  12 
+Less: Average Markets interest-earning assets(b)  1,686,445  1,387,584  22  1,643,008  1,321,732  24 
+Average interest-earning assets excluding Markets $ 2,601,509 $ 2,458,398  6 $ 2,569,258 $ 2,435,942  5 
+Net yield on average interest-earning assets – managed 
+basis  2.40 %  2.43 %  2.45 %  2.51 %
+Net yield on average Markets interest-earning assets(b)  0.46  0.16  0.51  0.21 
+Net yield on average interest-earning assets excluding 
+Markets  3.65 %  3.71 %  3.69 %  3.75 %
+Noninterest revenue – reported $ 31,836 $ 21,703  47 $ 56,306 $ 43,740  29 
+Fully taxable-equivalent adjustments  564  663  (15)  1,151  1,265  (9) 
+Noninterest revenue – managed basis $ 32,400 $ 22,366  45 $ 57,457 $ 45,005  28 
+Less: Markets noninterest revenue(b)  10,133  8,375  21  19,493  17,253  13 
+Noninterest revenue excluding Markets $ 22,267 $ 13,991  59 $ 37,964 $ 27,752  37 
+Memo: Total Markets net revenue(b) $ 12,078 $ 8,936  35 % $ 23,637 $ 18,599  27 %
+(a) Includes the effect of derivatives that qualify for hedge accounting. Taxable-equivalent amounts are used where applicable. Refer to Note 5 of 
+the Firm’s 2025 Form 10-K for additional information on hedge accounting.
+(b) Refer to page 33 for further information on Markets.
+The following summary table provides a reconciliation from the Firm’s common stockholders’ equity to TCE.
+Period-end Average
+(in millions, except per share and ratio 
+data)
+Jun 30,
+2026
+Dec 31,
+2025
+Three months ended June 30, Six months ended June 30,
+2026 2025 2026 2025
+Common stockholders’ equity $ 353,558 $ 342,393 $ 343,146 $ 329,797 $ 342,104 $ 327,086 
+Less: Goodwill  52,711  52,731  52,740  52,692  52,739  52,637 
+Less: Other intangible assets  2,437  2,560  2,463  2,741  2,490  2,785 
+Add: Certain deferred tax liabilities(a)  2,904  2,916  2,909  2,926  2,912  2,932 
+Tangible common equity $ 301,314 $ 290,018 $ 290,852 $ 277,290 $ 289,787 $ 274,596 
+Return on tangible common equity NA NA  29 %  21 %  26 %  21 %
+Tangible book value per share $ 113.35 $ 107.56 NA NA NA NA
+(a) Represents deferred tax liabilities related to tax-deductible goodwill and to identifiable intangibles created in nontaxable transactions, which 
+are netted against goodwill and other intangibles when calculating TCE.
+19

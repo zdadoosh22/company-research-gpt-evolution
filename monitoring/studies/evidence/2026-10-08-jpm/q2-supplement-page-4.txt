@@ -1,0 +1,51 @@
+                                                                                                                                                                    
+ 
+JPMORGAN CHASE & CO.
+CONSOLIDATED FINANCIAL HIGHLIGHTS, CONTINUED
+(in millions, except ratios, employee data and where otherwise noted)
+QUARTERLY TRENDS SIX MONTHS ENDED JUNE 30,
+2Q26 Change 2026 Change
+2Q26 1Q26 4Q25 3Q25 2Q25 1Q26 2Q25 2026 2025 2025
+SELECTED BALANCE SHEET DATA (period-end)
+Total assets $ 5,015,069 $ 4,900,475 $ 4,424,900 $ 4,560,205 $ 4,552,482  2 %  10 % $ 5,015,069 $ 4,552,482  10 %
+Loans:
+Consumer, excluding credit card loans  391,743  391,660  402,258  393,084  394,040  —  (1)  391,743  394,040  (1) 
+Credit card loans  249,876  239,123  247,797  235,475  232,943  4  7  249,876  232,943  7 
+Wholesale loans  900,843  872,737  843,374  806,687  785,009  3  15  900,843  785,009  15 
+Total loans  1,542,462  1,503,520  1,493,429  1,435,246  1,411,992  3  9  1,542,462  1,411,992  9 
+Deposits:
+U.S. offices:
+Noninterest-bearing  625,874  595,424  583,342  589,105  591,177  5  6  625,874  591,177  6 
+Interest-bearing  1,500,791  1,508,682  1,452,729  1,433,404  1,441,905  (1)  4  1,500,791  1,441,905  4 
+Non-U.S. offices:
+Noninterest-bearing  42,044  43,775  37,057  34,255  29,976  (4)  40  42,044  29,976  40 
+Interest-bearing  544,991  527,639  486,192  491,712  499,322  3  9  544,991  499,322  9 
+Total deposits  2,713,700  2,675,520  2,559,320  2,548,476  2,562,380  1  6  2,713,700  2,562,380  6 
+Long-term debt  460,523  448,764  435,206  427,203  419,802  3  10  460,523  419,802  10 
+Common stockholders’ equity  353,558  343,993  342,393  340,167  336,879  3  5  353,558  336,879  5 
+Total stockholders’ equity  374,598  364,038  362,438  360,212  356,924  3  5  374,598  356,924  5 
+Loans-to-deposits ratio  57 %  56 %  58 %  56 %  55 %  57 %  55 %
+Employees  320,560  320,079  318,512  318,153  317,160  —  1  320,560  317,160  1 
+95% CONFIDENCE LEVEL - TOTAL VaR
+Average VaR $ 49 $ 37 $ 35 $ 33 $ 42  32  17 
+Earnings-at-Risk (in billions) (a)
+Parallel shift:
++100 bps shift in rates $ 1.8 (c) $ 1.9 $ 2.1 $ 1.8 $ 1.8  (3)  2 
+-100 bps shift in rates  (2.4) (c)  (2.2)  (2.4)  (2.2)  (2.0)  (10)  (21) 
+LINE OF BUSINESS (“LOB”) & CORPORATE NET REVENUE (b)
+Consumer & Community Banking $ 20,272 $ 19,568 $ 19,396 $ 19,473 $ 18,847  4  8 $ 39,840 $ 37,160  7 
+Commercial & Investment Bank  24,853  23,379  19,375  19,878  19,535  6  27  48,232  39,201  23 
+Asset & Wealth Management  6,851  6,374  6,516  6,066  5,760  7  19  13,225  11,491  15 
+Corporate  6,046  1,215  1,480  1,703  1,538  398  293  7,261  3,842  89 
+TOTAL NET REVENUE $ 58,022 $ 50,536 $ 46,767 $ 47,120 $ 45,680  15  27 $ 108,558 $ 91,694  18 
+LOB & CORPORATE NET INCOME
+Consumer & Community Banking $ 5,311 $ 4,976 $ 3,642 $ 5,009 $ 5,169  7  3 $ 10,287 $ 9,594  7 
+Commercial & Investment Bank  9,678  9,044  7,268  6,901  6,650  7  46  18,722  13,592  38 
+Asset & Wealth Management  1,957  1,775  1,808  1,658  1,473  10  33  3,732  3,056  22 
+Corporate  4,209  699  307  825  1,695 NM  148  4,908  3,388  45 
+NET INCOME $ 21,155 $ 16,494 $ 13,025 $ 14,393 $ 14,987  28  41 $ 37,649 $ 29,630  27 
+(a) Earnings-at-risk estimates the Firm’s interest rate exposure for a given interest rate scenario. The Firm’s actual net interest income results may differ compared to the instantaneous rate changes modelled in the earnings-at-risk estimates. Refer to pages 140-141 of the Firm’s 
+2025 Form 10-K for additional information.
+(b) Refer to Reconciliation from Reported to Managed Basis on page 7 for a further discussion of managed basis.
+(c) Estimated.
+ Page 3

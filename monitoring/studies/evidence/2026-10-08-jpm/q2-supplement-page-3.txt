@@ -1,0 +1,54 @@
+JPMORGAN CHASE & CO.
+CONSOLIDATED FINANCIAL HIGHLIGHTS
+(in millions, except per share and ratio data)
+QUARTERLY TRENDS SIX MONTHS ENDED JUNE 30,
+2Q26 Change 2026 Change
+SELECTED INCOME STATEMENT DATA 2Q26 1Q26 4Q25 3Q25 2Q25 1Q26 2Q25 2026 2025 2025
+Reported Basis
+Total net revenue $ 57,347 (e) $ 49,836 $ 45,798 $ 46,427 $ 44,912  15 %  28 % $ 107,183 (e) $ 90,222  19 %
+Total noninterest expense  27,316  26,850  23,983  24,281  23,779  2  15  54,166  47,376  14 
+Pre-provision profit (a)  30,031  22,986  21,815  22,146  21,133  31  42  53,017  42,846  24 
+Provision for credit losses  2,515  2,507  4,655 (g)  3,403  2,849  —  (12)  5,022  6,154  (18) 
+NET INCOME  21,155  16,494  13,025  14,393  14,987  28  41  37,649  29,630  27 
+Managed Basis (b)
+Total net revenue  58,022 (e)  50,536  46,767  47,120  45,680  15  27  108,558 (e)  91,694  18 
+Total noninterest expense  27,316  26,850  23,983  24,281  23,779  2  15  54,166  47,376  14 
+Pre-provision profit (a)  30,706  23,686  22,784  22,839  21,901  30  40  54,392  44,318  23 
+Provision for credit losses  2,515  2,507  4,655 (g)  3,403  2,849  —  (12)  5,022  6,154  (18) 
+NET INCOME  21,155  16,494  13,025  14,393  14,987  28  41  37,649  29,630  27 
+EARNINGS PER SHARE DATA 
+Net income:          Basic $ 7.71 $ 5.95 $ 4.64 $ 5.08 $ 5.25  30  47 $ 13.65 $ 10.32  32 
+Diluted  7.70  5.94  4.63  5.07  5.24  30  47  13.63  10.31  32 
+Average shares:   Basic  2,689.9  2,716.2  2,735.3  2,762.4  2,788.7  (1)  (4)  2,703.1  2,804.0  (4) 
+Diluted  2,694.2  2,720.2  2,740.5  2,767.6  2,793.7  (1)  (4)  2,707.2  2,809.0  (4) 
+MARKET AND PER COMMON SHARE DATA 
+Market capitalization $ 870,104 $ 788,205 $ 868,793 $ 858,683 $ 797,181  10  9 $ 870,104 $ 797,181  9 
+Common shares at period-end  2,658.2  2,679.5  2,696.2  2,722.2  2,749.7  (1)  (3)  2,658.2  2,749.7  (3) 
+Book value per share $ 133.01 $ 128.38 $ 126.99 $ 124.96 $ 122.51  4  9 $ 133.01 $ 122.51  9 
+Tangible book value per share (“TBVPS”) (a)  113.35  108.87  107.56  105.70  103.40  4  10  113.35  103.40  10 
+Cash dividends declared per share  1.50  1.50  1.50  1.50  1.40  —  7  3.00  2.80  7 
+FINANCIAL RATIOS (c)
+Return on common equity (“ROE”)  24 %  19 %  15 %  17 %  18 %  22 %  18 %
+Return on tangible common equity (“ROTCE”) (a)  29  23  18  20  21  26  21 
+Return on assets  1.70  1.41  1.14  1.26  1.35  1.56  1.38 
+CAPITAL RATIOS
+Common equity Tier 1 (“CET1”) capital ratio - Standardized (d)  14.1 % (f)  14.3 %  14.6 %  14.8 %  15.1 %  14.1 % (f)  15.1 %
+Tier 1 capital ratio - Standardized (d)  15.1 (f)  15.2  15.5  15.8  16.1  15.1 (f)  16.1 
+Total capital ratio - Standardized (d)  16.9 (f)  17.2  17.4  17.7  17.8  16.9 (f)  17.8 
+Tier 1 leverage ratio  6.6 (f)  6.6  6.9  6.9  6.9  6.6 (f)  6.9 
+Supplementary leverage ratio (“SLR”)  5.5 (f)  5.6  5.8  5.8  5.9  5.5 (f)  5.9 
+ 
+On January 7, 2026, JPMorganChase announced that Chase will become the new issuer of Apple Card. The Firm entered into a forward purchase commitment on December 30, 2025 to acquire the Apple credit card portfolio (the “Apple Card transaction”), with an expected closing 
+date approximately 24 months thereafter. Refer to Notes 4, 13, 27 and 28 of the Firm’s 2025 Form 10-K for additional information.
+(a) Pre-provision profit, TBVPS and ROTCE are each non-GAAP financial measures. Tangible common equity (“TCE”) is also a non-GAAP financial measure; refer to page 10 for a reconciliation of common stockholders’ equity to TCE. Refer to page 28 for a further discussion of 
+these measures. 
+(b) Refer to Reconciliation from Reported to Managed Basis on page 7 for a further discussion of managed basis.
+(c) Ratios are based upon annualized amounts.
+(d) At June 30, 2026, the Advanced total capital ratio was more binding on the Firm than the Standardized total capital ratio. At each of March 31, 2026 and December 31, 2025, the Advanced risk-based ratios were more binding on the Firm than the Standardized risk-based ratios. 
+Refer to page 9 for further information on the Firm’s capital metrics.
+(e) Included a $4.6 billion net gain in Corporate related to Visa Class C common stock held at fair value and received by the Firm in an exchange offer following the acceptance by Visa Inc. on May 11, 2026 of the Firm’s tender of its 18.6 million shares of Visa Class B-2 common 
+stock. Also included $1.0 billion of gains, which represented a measurement alternative markup on an equity investment and initial gains on transition from measurement alternative to recurring fair value on certain other equity investments, in Corporate and CIB. Refer to page 8 
+and Note 2 of JPMorganChase’s Quarterly Report on Form 10-Q for the quarter ended March 31, 2026 for further information on the Visa exchange offer.
+(f) Estimated.
+(g) Included $2.2 billion associated with the Apple Card transaction. Refer to Note 13 of the Firm’s 2025 Form 10-K for additional information.
+ Page 2

@@ -1,0 +1,82 @@
+The following table summarizes short-term and long-term funding, excluding deposits, as of June 30, 2026 and 
+December 31, 2025, and average balances for the three and six months ended June 30, 2026 and 2025, respectively. 
+Refer to the Consolidated Balance Sheets Analysis on pages 15-16 and Note 10 for additional information.
+Sources of funds (excluding deposits)
+June 30, 
+2026
+December 31, 
+2025
+Average
+Three months ended 
+June 30,
+Six months ended 
+June 30,
+(in millions) 2026 2025 2026 2025
+Commercial paper $ 12,972 $ 12,111 $ 10,254 $ 12,178 $ 10,255 $ 12,676 
+Other borrowed funds  16,980  15,031  17,824  13,102  18,005  13,739 
+Federal funds purchased  214  199  1,174  1,412  1,222  1,557 
+Total short-term unsecured funding $ 30,166 $ 27,341 $ 29,252 $ 26,692 $ 29,482 $ 27,972 
+Securities sold under agreements to repurchase(a) $ 692,117 $ 433,161 $ 709,696 $ 547,874 $ 676,586 $ 502,416 
+Securities loaned(a)  12,587  9,036  14,934  8,757  14,190  7,907 
+Other borrowed funds  42,478  37,634  40,774  40,707  41,279  36,858 
+Obligations of Firm-administered multi-seller conduits(b)  17,863  18,174  17,487  17,352  17,510  17,195 
+Total short-term secured funding $ 765,045 $ 498,005 $ 782,891 $ 614,690 $ 749,565 $ 564,376 
+Senior notes $ 211,997 $ 210,571 $ 212,723 $ 209,685 $ 213,204 $ 208,912 
+Subordinated debt  22,860  20,101  22,936  16,270  22,479  16,192 
+Structured notes(c)  152,533  130,621  149,991  108,992  143,548  105,168 
+Total long-term unsecured funding $ 387,390 $ 361,293 $ 385,650 $ 334,947 $ 379,231 $ 330,272 
+Credit card securitization(b) $ 7,075 $ 5,884 $ 6,312 $ 5,365 $ 6,099 $ 5,345 
+FHLB advances  17,553  18,159  17,731  23,155  18,409  24,927 
+Purchase Money Note(d)  49,551  49,435  49,512  49,283  49,484  49,255 
+Other long-term secured funding(e)  6,029  6,319  6,080  6,331  6,245  5,491 
+Total long-term secured funding $ 80,208 $ 79,797 $ 79,635 $ 84,134 $ 80,237 $ 85,018 
+Preferred stock(f) $ 21,040 $ 20,045 $ 21,196 $ 20,045 $ 20,624 $ 20,029 
+Common stockholders’ equity(f) $ 353,558 $ 342,393 $ 343,146 $ 329,797 $ 342,104 $ 327,086 
+(a) Primarily consists of short-term securities loaned or sold under agreements to repurchase.
+(b) Included in beneficial interests issued by consolidated variable interest entities on the Firm’s Consolidated balance sheets.
+(c) Includes certain TLAC-eligible long-term unsecured debt issued by the Parent Company.
+(d) Reflects the Purchase Money Note associated with the First Republic acquisition. Refer to Note 34 of JPMorganChase’s 2025 Form 10-K for 
+additional information.
+(e) Includes long-term structured notes that are secured.
+(f) Refer to Capital Risk Management on pages 44-51 and Consolidated statements of changes in stockholders’ equity on page 96 of this Form 
+10-Q, and Note 21 and Note 22 of JPMorganChase’s 2025 Form 10-K for additional information on preferred stock and common stockholders’ 
+equity.
+Short-term funding
+The Firm’s primary source of short-term secured 
+funding is securities sold under agreements to 
+repurchase. These instruments are secured 
+predominantly by high-quality securities collateral, 
+including government-issued debt and U.S. GSE and 
+government agency MBS. Securities sold under 
+agreements to repurchase increased at June 30, 2026, 
+compared with December 31, 2025, driven by Markets, 
+reflecting higher client-driven market-making activities 
+and higher secured financing of trading assets, as well 
+as when compared with seasonally lower levels at year-
+end.
+The increases in secured other borrowed funds at 
+June 30, 2026 from December 31, 2025, and for the 
+average six months ended June 30, 2026, compared to 
+the prior year, were primarily due to higher financing 
+requirements in Markets.
+The balances associated with securities loaned or sold 
+under agreements to repurchase fluctuate over time 
+due to investment and financing activities of clients, the 
+Firm’s demand for financing, the ongoing management 
+of the mix of the Firm’s liabilities, including with respect 
+to liquidity and capital considerations, as well as other 
+market and portfolio factors. 
+The Firm’s primary sources of short-term unsecured 
+funding consist of issuances of wholesale commercial 
+paper and other borrowed funds. 
+The decrease in commercial paper for the average 
+three and six months ended June 30, 2026, compared 
+to the prior year, was primarily driven by strategic 
+short-term liquidity management.
+The increase in unsecured other borrowed funds for 
+the average three and six months ended June 30, 2026, 
+compared to the prior year, was primarily driven by net 
+issuances of structured notes in Markets due to client 
+demand and an increase in the fair value of such 
+instruments.
+56

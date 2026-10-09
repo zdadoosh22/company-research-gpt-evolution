@@ -1,0 +1,221 @@
+{
+  "schema": "focused-discovery-screen-v1",
+  "id": "2026-10-09-netflix-discovery-screen",
+  "created_at": "2026-10-09T00:38:36.647699+00:00",
+  "as_of": "2026-10-09",
+  "status": "discovery-complete-awaiting-review",
+  "disposition": "retain-for-focused-research-no-accepted-entry",
+  "scope": "Scoped discovery; not full company thesis or price-opportunity conclusion",
+  "security": {
+    "issuer": "Netflix, Inc.",
+    "exchange": "NASDAQ Global Select Market",
+    "ticker": "NFLX",
+    "class": "common stock",
+    "currency": "USD",
+    "price_unit": "major",
+    "broker_isa_eligibility_verified": false
+  },
+  "event": {
+    "source_id": "event",
+    "release": "2026-10-20T13:01:00-07:00",
+    "interview": "2026-10-20T13:45:00-07:00",
+    "london_release": "2026-10-20T21:01:00+01:00",
+    "london_interview": "2026-10-20T21:45:00+01:00",
+    "approximate_release": true
+  },
+  "methodology": {
+    "version": "1.0.0",
+    "file": "methodology/company-research-v1.0.0.md",
+    "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+    "source_document_sha256": "74613e5230b68128cc314c631335ca2baed9dbe8fcac3ebf46a8c54300d93e8d",
+    "approval": "User authorised implementation of complete project plan",
+    "date": "2026-10-06"
+  },
+  "sources": [
+    {
+      "id": "event",
+      "url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-to-Announce-Third-Quarter-2026-Financial-Results/default.aspx",
+      "retrieved_at": "2026-10-09T00:34:28.039967+00:00",
+      "final_url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-to-Announce-Third-Quarter-2026-Financial-Results/default.aspx",
+      "status": "archived",
+      "sha256": "db6749ba959e641cccf4ba69eb1f1798e3b50756ff6dd51dfc7eb5d1f213d257",
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003428792509Z-event-db6749ba959e641cccf4ba69eb1f1798e3b50756ff6dd51dfc7eb5d1f213d257.html",
+      "bytes": 47495,
+      "locations_read": [
+        "publication date; opening release schedule; interview schedule"
+      ],
+      "classification": "primary-issuer-document"
+    },
+    {
+      "id": "q2-letter",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000211/ex991_q226.htm",
+      "retrieved_at": "2026-10-09T00:34:28.793509+00:00",
+      "status": "unavailable",
+      "error": "HTTPError",
+      "http_status": 403
+    },
+    {
+      "id": "q2-10q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm",
+      "retrieved_at": "2026-10-09T00:34:28.976884+00:00",
+      "status": "unavailable",
+      "error": "HTTPError",
+      "http_status": 403
+    },
+    {
+      "id": "q2-10q-mirror",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001065280/a826cd9b-469f-4c3a-9e92-4bef340713f3.html",
+      "retrieved_at": "2026-10-09T00:34:29.051212+00:00",
+      "final_url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001065280/a826cd9b-469f-4c3a-9e92-4bef340713f3.html",
+      "status": "archived",
+      "sha256": "282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9",
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003431335392Z-q2-10q-mirror-282bc9a5e1a3daf76b331f35c0c63c6a7986804dd8d8c7133d007d8d1b40dde9.html",
+      "bytes": 3195808,
+      "locations_read": [
+        "cover",
+        "Note 1 stock split",
+        "Note 6 termination fee",
+        "Note 7 debt/financing",
+        "Note 9 content obligations",
+        "Note 10 equity",
+        "MD&A liquidity and cash flows"
+      ],
+      "classification": "filing-mirror-not-issuer-link-verified"
+    },
+    {
+      "id": "q2-letter-pdf",
+      "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf",
+      "retrieved_at": "2026-10-09T00:34:31.339681+00:00",
+      "final_url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf",
+      "status": "archived",
+      "sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003432308307Z-q2-letter-pdf-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "bytes": 294574,
+      "locations_read": [
+        "printed pp.1-2 results and guidance",
+        "p.5 advertising and disclosures",
+        "p.6 cash and capital",
+        "p.9 income, shares and split",
+        "p.10 balance sheet/content obligations",
+        "pp.11-12 cash flow/FCF"
+      ],
+      "classification": "primary-issuer-document"
+    },
+    {
+      "id": "filings-index",
+      "url": "https://ir.netflix.net/financials/sec-filings/default.aspx",
+      "retrieved_at": "2026-10-09T00:34:32.308307+00:00",
+      "final_url": "https://ir.netflix.net/financials/sec-filings/default.aspx",
+      "status": "archived",
+      "sha256": "8525f85f0a7cd99b8b685f91375752109f69b6cad14a969ad7b46592833396ea",
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003432526625Z-filings-index-8525f85f0a7cd99b8b685f91375752109f69b6cad14a969ad7b46592833396ea.html",
+      "bytes": 49270,
+      "locations_read": [
+        "index shell; missing dynamic filing links"
+      ],
+      "classification": "discovery-shell"
+    },
+    {
+      "id": "sec-submissions",
+      "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+      "retrieved_at": "2026-10-09T00:36:54.559519+00:00",
+      "status": "archived",
+      "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009T003655151652Z-sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "name": "NETFLIX INC",
+      "cik": "0001065280",
+      "discovery_records": [
+        {
+          "filingDate": "2026-07-30",
+          "form": "8-K",
+          "accessionNumber": "0001065280-26-000214",
+          "primaryDocument": "nflx-20260726.htm"
+        },
+        {
+          "filingDate": "2026-07-22",
+          "form": "8-K",
+          "accessionNumber": "0001193125-26-312575",
+          "primaryDocument": "d171951d8k.htm"
+        },
+        {
+          "filingDate": "2026-07-17",
+          "form": "10-Q",
+          "accessionNumber": "0001065280-26-000212",
+          "primaryDocument": "nflx-20260630.htm"
+        }
+      ],
+      "locations_read": [
+        "issuer identity and recent 8-K/10-Q discovery records"
+      ],
+      "classification": "primary-regulatory-metadata-not-document-reading"
+    }
+  ],
+  "web_only_sources": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526312575/d171951d8k.htm",
+      "location": "Item 8.01",
+      "accessed_on": "2026-10-09",
+      "original_local_archive": null,
+      "accepted_positive_entry_foundation": false
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000214/nflx-20260726.htm",
+      "location": "Item 5.02",
+      "accessed_on": "2026-10-09",
+      "original_local_archive": null,
+      "accepted_positive_entry_foundation": false
+    }
+  ],
+  "calculations": {
+    "h1_fcf_m": "6619.243",
+    "q2_fcf_m": "1525.168",
+    "q2_fcf_vs_prior_pct": "-32.73401903263209473182353644245819714391",
+    "q3_guided_opincome_yoy_pct": "31.40394088669950738916256157635467980300",
+    "q3_guided_margin_change_pp": "5.0",
+    "diluted_weighted_shares_yoy_pct": "-2.012612602254631998298390944680459664390",
+    "ads_guide_share_of_fy_midpoint_pct": "5.85937500",
+    "q4_implied_given_july_guidance": [
+      {
+        "fy_revenue_m": "51000",
+        "q4_revenue_m": "13330.305",
+        "q4_operating_income_m": "3647.393",
+        "q4_margin_pct": "27.36166201748572144448307821914052229113"
+      },
+      {
+        "fy_revenue_m": "51400",
+        "q4_revenue_m": "13730.305",
+        "q4_operating_income_m": "3773.393",
+        "q4_margin_pct": "27.48222271828630172454289981176674516699"
+      }
+    ]
+  },
+  "calculation_binding": {
+    "path": "monitoring/studies/evidence/2026-10-09-netflix/20261009-calculation-check.json",
+    "sha256": "c7dff72dae5d03d3332045863fa3837c7660311dc262f6bef1fbe67a3bc33bae"
+  },
+  "report_binding": {
+    "path": "monitoring/studies/2026-10-09-netflix-discovery-screen.md",
+    "sha256": "b0860623b243dfd57aa9015e46715981dc7a74cc021fdf84dfca53607cd4f251"
+  },
+  "price": null,
+  "same_basis_expectations": null,
+  "valuation": null,
+  "entry_ceiling": null,
+  "capital_reserved_gbp": "0",
+  "accepted_entry": false,
+  "actionable": false,
+  "independent_review": "pending",
+  "provenance": {
+    "author_role": "parent analysis; requested model inherited",
+    "reported_backend_identity": null,
+    "backend_independently_verified": false
+  },
+  "limitations": [
+    "Current quote and same-basis expectations absent; no mispricing conclusion",
+    "One-off cash receipt/tax timing and content cash cycle need normalization",
+    "Two post-quarter 8-Ks read through web but original local archives absent",
+    "Filing mirror issuer link not established; key passages cross-checked against SEC web and issuer PDF",
+    "No fresh annual audit/proxy or comprehensive litigation/news clearance",
+    "No phone/account/data/operational gate approval"
+  ]
+}

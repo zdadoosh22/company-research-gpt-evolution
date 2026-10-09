@@ -1,0 +1,565 @@
+1: SEC Filings :: Advanced Micro Devices, Inc. (AMD)
+2: Skip to main content
+3: Skip to section navigation
+4: Skip to footer
+5: Investor Relations
+6: IR Overview
+7: News & Events
+8: Press Releases
+9: IR Calendar
+10: Financial Analyst Day
+11: Annual Meeting of Stockholders
+12: Stock Data
+13: Stock Data
+14: Price History
+15: Stock Split History
+16: Analyst Coverage
+17: Transfer Agent
+18: Financial Information
+19: Financial Results
+20: SEC Filings
+21: Governance
+22: Board of Directors
+23: Leadership
+24: Board Committees
+25: Governance Documents
+26: Corporate Responsibility
+27: Contacts & FAQ
+28: Contacts
+29: Email Alerts
+30: FAQ
+31: SEC Filings
+32: Financial Information
+33: Financial Information
+34: Financial Results
+35: SEC Filings
+36: Filing Type
+37: View All
+38: 10-K
+39: 10-K/A
+40: 10-K405
+41: 10-K405/A
+42: 10-Q
+43: 10-Q/A
+44: 13F-HR
+45: 144
+46: 15-12G
+47: 15-15D
+48: 25
+49: 3
+50: 3/A
+51: 305B2
+52: 4
+53: 4/A
+54: 424B2
+55: 424B3
+56: 424B5
+57: 425
+58: 5
+59: 5/A
+60: 8-A12B
+61: 8-K
+62: 8-K/A
+63: ARS
+64: AW
+65: CERTNAS
+66: CORRESP
+67: CT ORDER
+68: DEF 14A
+69: DEFA14A
+70: DEFM14A
+71: DEFR14A
+72: EFFECT
+73: FWP
+74: IRANNOTICE
+75: NO ACT
+76: POS AM
+77: POS EX
+78: PRE 14A
+79: PRER14A
+80: S-3
+81: S-3/A
+82: S-3ASR
+83: S-4
+84: S-4/A
+85: S-4MEF
+86: S-8
+87: S-8 POS
+88: SC 13D
+89: SC 13D/A
+90: SC 13G
+91: SC 13G/A
+92: SC TO-C
+93: SC TO-I
+94: SC TO-I/A
+95: SC TO-T
+96: SCHEDULE 13G
+97: SCHEDULE 13G/A
+98: SD
+99: SEC STAFF LETTER
+100: UPLOAD
+101: Year
+102: View All
+103: 2026
+104: 2025
+105: 2024
+106: 2023
+107: 2022
+108: 2021
+109: 2020
+110: 2019
+111: 2018
+112: 2017
+113: 2016
+114: 2015
+115: 2014
+116: 2013
+117: 2012
+118: 2011
+119: 2010
+120: 2009
+121: 2008
+122: 2007
+123: 2006
+124: 2005
+125: 2004
+126: 2003
+127: 2002
+128: 2001
+129: 2000
+130: 1999
+131: 1998
+132: 1997
+133: 1996
+134: 1995
+135: 1994
+136: SEC Filings
+137: Date
+138: Form
+139: Description
+140: XBRL
+141: Pages
+142: 09/28/26
+143: 8-K
+144: Form 8-K: Current report
+145: 3
+146: 09/17/26
+147: 4
+148: Form 4: Statement of changes in beneficial ownership of securities
+149: 2
+150: 09/15/26
+151: 144
+152: Form 144: Report of proposed sale of securities
+153: 2
+154: 09/14/26
+155: 4
+156: Form 4: Statement of changes in beneficial ownership of securities
+157: 3
+158: 09/10/26
+159: 144
+160: Form 144: Report of proposed sale of securities
+161: 2
+162: 09/10/26
+163: 144
+164: Form 144: Report of proposed sale of securities
+165: 2
+166: 08/27/26
+167: 4
+168: Form 4: Statement of changes in beneficial ownership of securities
+169: 2
+170: 08/26/26
+171: 4
+172: Form 4: Statement of changes in beneficial ownership of securities
+173: 2
+174: 08/25/26
+175: 144
+176: Form 144: Report of proposed sale of securities
+177: 2
+178: 08/25/26
+179: 144
+180: Form 144: Report of proposed sale of securities
+181: 2
+182: rss_feed
+183: Filing RSS
+184: Page
+185: 1
+186: Page
+187: 2
+188: Page
+189: 3
+190: Page
+191: 4
+192: Page
+193: 5
+194: Page
+195: 6
+196: Page
+197: 7
+198: Page
+199: 8
+200: Page
+201: 9
+202: Page
+203: 10
+204: …
+205: Page
+206: 333
+207: Next Page
+208: arrow_forward
+209: Select a page
+210: Page 1
+211: Page 2
+212: Page 3
+213: Page 4
+214: Page 5
+215: Page 6
+216: Page 7
+217: Page 8
+218: Page 9
+219: Page 10
+220: Page 11
+221: Page 12
+222: Page 13
+223: Page 14
+224: Page 15
+225: Page 16
+226: Page 17
+227: Page 18
+228: Page 19
+229: Page 20
+230: Page 21
+231: Page 22
+232: Page 23
+233: Page 24
+234: Page 25
+235: Page 26
+236: Page 27
+237: Page 28
+238: Page 29
+239: Page 30
+240: Page 31
+241: Page 32
+242: Page 33
+243: Page 34
+244: Page 35
+245: Page 36
+246: Page 37
+247: Page 38
+248: Page 39
+249: Page 40
+250: Page 41
+251: Page 42
+252: Page 43
+253: Page 44
+254: Page 45
+255: Page 46
+256: Page 47
+257: Page 48
+258: Page 49
+259: Page 50
+260: Page 51
+261: Page 52
+262: Page 53
+263: Page 54
+264: Page 55
+265: Page 56
+266: Page 57
+267: Page 58
+268: Page 59
+269: Page 60
+270: Page 61
+271: Page 62
+272: Page 63
+273: Page 64
+274: Page 65
+275: Page 66
+276: Page 67
+277: Page 68
+278: Page 69
+279: Page 70
+280: Page 71
+281: Page 72
+282: Page 73
+283: Page 74
+284: Page 75
+285: Page 76
+286: Page 77
+287: Page 78
+288: Page 79
+289: Page 80
+290: Page 81
+291: Page 82
+292: Page 83
+293: Page 84
+294: Page 85
+295: Page 86
+296: Page 87
+297: Page 88
+298: Page 89
+299: Page 90
+300: Page 91
+301: Page 92
+302: Page 93
+303: Page 94
+304: Page 95
+305: Page 96
+306: Page 97
+307: Page 98
+308: Page 99
+309: Page 100
+310: Page 101
+311: Page 102
+312: Page 103
+313: Page 104
+314: Page 105
+315: Page 106
+316: Page 107
+317: Page 108
+318: Page 109
+319: Page 110
+320: Page 111
+321: Page 112
+322: Page 113
+323: Page 114
+324: Page 115
+325: Page 116
+326: Page 117
+327: Page 118
+328: Page 119
+329: Page 120
+330: Page 121
+331: Page 122
+332: Page 123
+333: Page 124
+334: Page 125
+335: Page 126
+336: Page 127
+337: Page 128
+338: Page 129
+339: Page 130
+340: Page 131
+341: Page 132
+342: Page 133
+343: Page 134
+344: Page 135
+345: Page 136
+346: Page 137
+347: Page 138
+348: Page 139
+349: Page 140
+350: Page 141
+351: Page 142
+352: Page 143
+353: Page 144
+354: Page 145
+355: Page 146
+356: Page 147
+357: Page 148
+358: Page 149
+359: Page 150
+360: Page 151
+361: Page 152
+362: Page 153
+363: Page 154
+364: Page 155
+365: Page 156
+366: Page 157
+367: Page 158
+368: Page 159
+369: Page 160
+370: Page 161
+371: Page 162
+372: Page 163
+373: Page 164
+374: Page 165
+375: Page 166
+376: Page 167
+377: Page 168
+378: Page 169
+379: Page 170
+380: Page 171
+381: Page 172
+382: Page 173
+383: Page 174
+384: Page 175
+385: Page 176
+386: Page 177
+387: Page 178
+388: Page 179
+389: Page 180
+390: Page 181
+391: Page 182
+392: Page 183
+393: Page 184
+394: Page 185
+395: Page 186
+396: Page 187
+397: Page 188
+398: Page 189
+399: Page 190
+400: Page 191
+401: Page 192
+402: Page 193
+403: Page 194
+404: Page 195
+405: Page 196
+406: Page 197
+407: Page 198
+408: Page 199
+409: Page 200
+410: Page 201
+411: Page 202
+412: Page 203
+413: Page 204
+414: Page 205
+415: Page 206
+416: Page 207
+417: Page 208
+418: Page 209
+419: Page 210
+420: Page 211
+421: Page 212
+422: Page 213
+423: Page 214
+424: Page 215
+425: Page 216
+426: Page 217
+427: Page 218
+428: Page 219
+429: Page 220
+430: Page 221
+431: Page 222
+432: Page 223
+433: Page 224
+434: Page 225
+435: Page 226
+436: Page 227
+437: Page 228
+438: Page 229
+439: Page 230
+440: Page 231
+441: Page 232
+442: Page 233
+443: Page 234
+444: Page 235
+445: Page 236
+446: Page 237
+447: Page 238
+448: Page 239
+449: Page 240
+450: Page 241
+451: Page 242
+452: Page 243
+453: Page 244
+454: Page 245
+455: Page 246
+456: Page 247
+457: Page 248
+458: Page 249
+459: Page 250
+460: Page 251
+461: Page 252
+462: Page 253
+463: Page 254
+464: Page 255
+465: Page 256
+466: Page 257
+467: Page 258
+468: Page 259
+469: Page 260
+470: Page 261
+471: Page 262
+472: Page 263
+473: Page 264
+474: Page 265
+475: Page 266
+476: Page 267
+477: Page 268
+478: Page 269
+479: Page 270
+480: Page 271
+481: Page 272
+482: Page 273
+483: Page 274
+484: Page 275
+485: Page 276
+486: Page 277
+487: Page 278
+488: Page 279
+489: Page 280
+490: Page 281
+491: Page 282
+492: Page 283
+493: Page 284
+494: Page 285
+495: Page 286
+496: Page 287
+497: Page 288
+498: Page 289
+499: Page 290
+500: Page 291
+501: Page 292
+502: Page 293
+503: Page 294
+504: Page 295
+505: Page 296
+506: Page 297
+507: Page 298
+508: Page 299
+509: Page 300
+510: Page 301
+511: Page 302
+512: Page 303
+513: Page 304
+514: Page 305
+515: Page 306
+516: Page 307
+517: Page 308
+518: Page 309
+519: Page 310
+520: Page 311
+521: Page 312
+522: Page 313
+523: Page 314
+524: Page 315
+525: Page 316
+526: Page 317
+527: Page 318
+528: Page 319
+529: Page 320
+530: Page 321
+531: Page 322
+532: Page 323
+533: Page 324
+534: Page 325
+535: Page 326
+536: Page 327
+537: Page 328
+538: Page 329
+539: Page 330
+540: Page 331
+541: Page 332
+542: Page 333
+543: Investor Relations
+544: AMD
+545: AI
+546: Server
+547: Ryzen
+548: Radeon
+549: Embedded
+550: Gaming
+551: AMD
+552: Developers
+553: Gaming
+554: Terms and Conditions
+555: Privacy
+556: Trademarks
+557: Supply Chain Transparency
+558: Fair & Open Competition
+559: UK Tax Strategy
+560: Accessibility Statement
+561: Cookies Policy
+562: Cookies Settings
+563: ©
+564: 2026
+565: Advanced Micro Devices, Inc.

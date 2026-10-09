@@ -1,0 +1,102 @@
+[
+  {
+    "file": "q2-10q.pdf",
+    "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/corp-q2-2026.pdf",
+    "accessed_at": "2026-10-08T11:03:30.710211+00:00",
+    "status": "archived",
+    "content_type": "application/pdf",
+    "final_url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/corp-q2-2026.pdf",
+    "bytes": 2542038,
+    "sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7"
+  },
+  {
+    "file": "q2-presentation.pdf",
+    "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/9e8f3cef-bd2a-4140-b50f-83c4fba3f23c.pdf",
+    "accessed_at": "2026-10-08T11:03:30.711217+00:00",
+    "status": "archived",
+    "content_type": "application/pdf",
+    "final_url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/9e8f3cef-bd2a-4140-b50f-83c4fba3f23c.pdf",
+    "bytes": 368921,
+    "sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257"
+  },
+  {
+    "file": "q3-event.html",
+    "url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-to-host-third-quarter-2026-earnings-call",
+    "accessed_at": "2026-10-08T11:03:30.713369+00:00",
+    "status": "archived",
+    "content_type": "text/html;charset=utf-8",
+    "final_url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-to-host-third-quarter-2026-earnings-call",
+    "bytes": 103219,
+    "sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9"
+  },
+  {
+    "file": "q2-release.html",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfexhibit991narrative.htm",
+    "accessed_at": "2026-10-08T11:03:30.713369+00:00",
+    "status": "failed",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "events.html",
+    "url": "https://www.jpmorganchase.com/ir/events",
+    "accessed_at": "2026-10-08T11:03:30.727727+00:00",
+    "status": "archived",
+    "content_type": "text/html;charset=utf-8",
+    "final_url": "https://www.jpmorganchase.com/ir/events",
+    "bytes": 113108,
+    "sha256": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241"
+  },
+  {
+    "file": "marketbeat.html",
+    "url": "https://www.marketbeat.com/stocks/NYSE/JPM/earnings/",
+    "accessed_at": "2026-10-08T11:03:30.792662+00:00",
+    "status": "archived",
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://www.marketbeat.com/stocks/NYSE/JPM/earnings/",
+    "bytes": 202517,
+    "sha256": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40"
+  },
+  {
+    "file": "q2-supplement.pdf",
+    "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/c9c097af-34e9-4aae-92d2-909a2ab7c083.pdf",
+    "accessed_at": "2026-10-08T11:05:00.035450+00:00",
+    "status": "archived",
+    "bytes": 537273,
+    "sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60",
+    "content_type": "application/pdf"
+  },
+  {
+    "file": "september-transcript.html",
+    "url": "https://stockanalysis.com/stocks/jpm/transcripts/737244-barclays-24th-annual-global-financial-services-conference/",
+    "accessed_at": "2026-10-08T11:05:00.037450+00:00",
+    "status": "archived",
+    "bytes": 281488,
+    "sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+    "content_type": "text/html"
+  },
+  {
+    "file": "reuters-september.html",
+    "url": "https://www.investing.com/news/stock-market-news/jpmorgan-expects-investment-banking-trading-to-shine-in-third-quarter-4902609",
+    "accessed_at": "2026-10-08T11:05:00.039450+00:00",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "dividend.html",
+    "url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-declares-increased-common-stock-dividend-9-15",
+    "accessed_at": "2026-10-08T11:07:34.249913+00:00",
+    "status": "archived",
+    "bytes": 101693,
+    "sha256": "9c0cc13ed702a2684bcec487f1f07b3d77e4d1fc3620c864a2f09d5aaf631806",
+    "content_type": "text/html;charset=utf-8"
+  },
+  {
+    "file": "price-history.html",
+    "url": "https://stockanalysis.com/stocks/jpm/history/",
+    "accessed_at": "2026-10-08T11:07:35.025095+00:00",
+    "status": "archived",
+    "bytes": 112922,
+    "sha256": "e88eacbfacaac02b5d8a769c87af1532ea379b88c7edd6cd0422fa5a1dba01c8",
+    "content_type": "text/html"
+  }
+]

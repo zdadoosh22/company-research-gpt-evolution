@@ -1,0 +1,57 @@
+{
+  "id": "2026-10-06-r001",
+  "legal_name": "AppLovin Corporation",
+  "ticker": "APP",
+  "as_of": "2026-10-06",
+  "mode": "full",
+  "predecessor": null,
+  "methodology_version": "1.0.0",
+  "methodology_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+  "status": "awaiting-review",
+  "request": {
+    "purpose": "Authorised implementation validation",
+    "mode": "full thesis pilot",
+    "investor_context": "prospective buyer",
+    "cost_basis": null,
+    "portfolio_weight": null
+  },
+  "security": {
+    "legal_entity": "AppLovin Corporation",
+    "selected_security": "Nasdaq APP Class A common stock",
+    "trading_currency": "USD",
+    "reporting_currency": "USD",
+    "fiscal_year_end": "December 31",
+    "latest_reviewed_period": "2026-06-30"
+  },
+  "evidence_gaps": [
+    "Ownership proxy = June 30 outstanding + Q2 weighted dilutive awards + excluded awards; not a verified October fully diluted claim count. Values are conditional illustrations.",
+    "Opening cash is June 30 cash less an assumed USD1bn operating reserve. No October balance sheet exists.",
+    "Future SBC is treated as a cash-equivalent economic expense in EBIT. No second add-back or automatic dilution; outstanding performance awards remain a sensitivity.",
+    "Debt is assumed refinanced at constant USD204.63m annual interest and unchanged principal, not paid down and deducted again. Refinancing is a consequential assumption.",
+    "Tripledot equity asset excluded conservatively; zero is an explicit valuation assumption, not missing source data.",
+    "No investment verdict is approved until targeted stronger review."
+  ],
+  "assumptions": [
+    "Ownership proxy = June 30 outstanding + Q2 weighted dilutive awards + excluded awards; not a verified October fully diluted claim count. Values are conditional illustrations.",
+    "Opening cash is June 30 cash less an assumed USD1bn operating reserve. No October balance sheet exists.",
+    "Future SBC is treated as a cash-equivalent economic expense in EBIT. No second add-back or automatic dilution; outstanding performance awards remain a sensitivity.",
+    "Debt is assumed refinanced at constant USD204.63m annual interest and unchanged principal, not paid down and deducted again. Refinancing is a consequential assumption.",
+    "Tripledot equity asset excluded conservatively; zero is an explicit valuation assumption, not missing source data.",
+    "No investment verdict is approved until targeted stronger review."
+  ],
+  "review_findings": [],
+  "checks": {
+    "arithmetic": true,
+    "source_traceability": true,
+    "visual_review": true,
+    "workbook_recalculation": true,
+    "export_roundtrip": true,
+    "native_excel": false,
+    "stronger_review": false
+  },
+  "continuation": "Perform the focused Astra audit in validation/stronger-review-request.md after explicit delegation authorisation, resolve material findings and re-export/recheck affected artifacts. Do not publish this run or approve the workflow while review is pending.",
+  "model_identity": "Current chat model configuration not independently verified; do not claim these pilots ran on 6.1 Sol High.",
+  "stronger_review": "pending",
+  "stronger_review_required": true,
+  "methodology_file": "methodology/company-research-v1.0.0.md"
+}

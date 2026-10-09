@@ -1,0 +1,42 @@
+[
+  {
+    "id": "j1",
+    "copied_from": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\jpmorgan-chase\\runs\\2026-10-06-r003\\sources\\2026-q2-release.htm",
+    "file": "prior-2026-q2-release.htm",
+    "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757",
+    "matched_prior_register": true,
+    "read_date": "2026-10-08",
+    "provenance": "existing archived original; fresh local HTTP retrieval failed 403",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfexhibit991narrative.htm"
+  },
+  {
+    "id": "j2",
+    "copied_from": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\jpmorgan-chase\\runs\\2026-10-06-r003\\sources\\2026-q2-supplement.htm",
+    "file": "prior-2026-q2-supplement.htm",
+    "sha256": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793",
+    "matched_prior_register": true,
+    "read_date": "2026-10-08",
+    "provenance": "existing archived original; fresh local HTTP retrieval failed 403",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfex992supplement.htm"
+  },
+  {
+    "id": "j3",
+    "copied_from": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\jpmorgan-chase\\runs\\2026-10-06-r003\\sources\\jpm-q2-10q.htm",
+    "file": "prior-jpm-q2-10q.htm",
+    "sha256": "4ba60f17c069172a3bb4aa681d5f2a7ae3ac49e557f989101b4e3e1cbe4cad38",
+    "matched_prior_register": true,
+    "read_date": "2026-10-08",
+    "provenance": "existing archived original; fresh local HTTP retrieval failed 403",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/jpm-20260630.htm"
+  },
+  {
+    "id": "j4",
+    "copied_from": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\jpmorgan-chase\\runs\\2026-10-06-r003\\sources\\jpm-q2-regulatory-capital.htm",
+    "file": "prior-jpm-q2-regulatory-capital.htm",
+    "sha256": "061a2eb7450cdd0b446729050734d61c6f16a3624ef70bf2a7b20b2728f95130",
+    "matched_prior_register": true,
+    "read_date": "2026-10-08",
+    "provenance": "existing archived original; fresh local HTTP retrieval failed 403",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/R29.htm"
+  }
+]

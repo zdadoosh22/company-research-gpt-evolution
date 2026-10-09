@@ -1,0 +1,362 @@
+{
+  "format_version": 1,
+  "study_id": "2026-10-09-amd-discovery-screen",
+  "as_of": "2026-10-09",
+  "created_at": "2026-10-09T00:37:43.438858+00:00",
+  "scope": "new focused candidate-discovery screen; days-to-few-months manual holding horizon; no full thesis or trading authority",
+  "status": "screen-complete-entry-withheld-awaiting-independent-review",
+  "disposition": "reject current pre-event entry; retain research candidate for materially changed economics/expectations after new evidence",
+  "analytical_approval": false,
+  "actionable": false,
+  "accepted_paper_entry": false,
+  "model": {
+    "selection": "inherited parent agent model; no separate model override requested to this child",
+    "reported_backend_identity": null,
+    "independent_review_performed": false
+  },
+  "methodology": {
+    "base_path": "methodology/company-research-v1.0.0.md",
+    "base_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+    "addendum_path": "monitoring/DECISION-SCOPE.md",
+    "addendum_sha256": "b424a556978d65327aa6be45702691c824f894a550a6937e288f8b01031f00b8"
+  },
+  "security": {
+    "legal_entity": "Advanced Micro Devices, Inc.",
+    "domicile": "Delaware, United States",
+    "listing": "The Nasdaq Global Select Market",
+    "ticker": "AMD",
+    "class": "Common Stock, USD 0.01 par value per share",
+    "currency": "USD",
+    "unit": "USD per common share",
+    "adr": false,
+    "issuer_cik": "0000002488",
+    "isa_eligibility": "unverified",
+    "broker_instrument_and_fractional_support": "unverified",
+    "current_executable_quote": null
+  },
+  "catalyst": {
+    "type": "fiscal Q3 2026 results and subsequent Q4/2027 outlook",
+    "official_notice_date": "2026-10-06",
+    "release_date": "2026-11-03",
+    "release_time": "after market close; precise minute not promised",
+    "call_time_et": "2026-11-03T17:00:00-05:00",
+    "call_time_london": "2026-11-03T22:00:00+00:00",
+    "calendar_conflict": "IR calendar labels 2pm PDT; release states 5pm ET/2pm PT. Use civil timezone conversion, not literal erroneous PDT label.",
+    "other_event": "World Labs expected close by end 2026, conditional; no exact close date"
+  },
+  "expectations": {
+    "company_guide": {
+      "period": "Q3 2026",
+      "revenue_usdm_mid": "13000",
+      "revenue_usdm_plus_minus": "300",
+      "non_gaap_gross_margin": "0.56",
+      "non_gaap_opex_usdm": "3650",
+      "non_gaap_other_income_usdm": "55",
+      "non_gaap_tax_rate": "0.13",
+      "diluted_shares_m": "1660",
+      "classification": "management guidance, August 4 call and release; September margin/ramp commentary separately assessed"
+    },
+    "external": [
+      {
+        "provider": "TipRanks",
+        "period": "Q3 2026",
+        "eps": "1.94",
+        "definition": "provider consensus label; historical Q2 matches adjusted EPS; future exact basis and constituent cutoff not established"
+      },
+      {
+        "provider": "AltIndex",
+        "page_updated": "2026-10-08",
+        "eps": "1.35",
+        "definition": "provider analyst consensus label; GAAP/adjusted methodology and contributor cutoff unknown"
+      }
+    ],
+    "consensus_used_for_trade": false,
+    "reason": "provider disagreement and missing basis/cutoff; public guide bridge already near larger estimate"
+  },
+  "calculations": {
+    "q3_guidance_eps_bridge": "1.931295180722891566265060240963855421687",
+    "eps_per_100bp_gross_margin_at_13bn_revenue": "0.06813253012048192771084337349397590361446",
+    "eps_per_300m_revenue_at_56pct_gm_fixed_opex": "0.08804819277108433734939759036144578313253",
+    "eps_per_100m_opex": "0.05240963855421686746987951807228915662651",
+    "h1_cfo_minus_cash_capex_usdm": "4124",
+    "h1_cfo_minus_cash_capex_excluding_ap_inflow_sensitivity_usdm": "1954",
+    "potential_warrant_shares_divided_by_june_actual_shares": "0.1960784313725490196078431372549019607843",
+    "existing_owner_fraction_if_both_warrants_fully_exercised_other_changes_ignored": "0.8360655737704918032786885245901639344262",
+    "cash_plus_short_term_investments_usdm": "13111",
+    "h1_sbc_pct_revenue": "4.543577034283353985956216439487814952499"
+  },
+  "calculation_limits": "EPS bridges use constant guide inputs, not incremental profit forecasts, annualization, price targets or probabilities. CFO sensitivity is not normalized FCF. Warrant stress is conditional maximum, not present diluted EPS denominator.",
+  "price_ceiling": null,
+  "target_price": null,
+  "quantity": null,
+  "portfolio_amount": null,
+  "numerical_stop": null,
+  "probability": null,
+  "expected_return": null,
+  "financial_resilience": "June liquidity and cash generation support ability to execute through a short window, but June balance is stale; 2026 debt maturity and large supplier/customer/lease commitments require updated roll-forward. No claim current free cash is 13.111bn.",
+  "rejection_reasons": [
+    "Known dated result is not mispricing; guide EPS bridge approximately 1.93 versus provider 1.94.",
+    "September management already disclosed large 2027 growth and slightly lower margin during MI450 ramp.",
+    "No current executable quote, verified valuation/ownership bridge, or defensible residual edge after delayed reading.",
+    "Conditional warrants, floating acquisition share issuance and strategic investment/leases affect per-share economics."
+  ],
+  "delay_assessment": {
+    "hours": "First repricing can occur after-hours before a verified executable refresh; headline beat alone insufficient.",
+    "one_to_three_days": "Possible later reassessment of persistent margin/volume/cash revisions, only at refreshed price and complete guidance; no claim drift advantage exists.",
+    "correct_but_late": "Good fundamentals can already be fully reflected after gap; cancel thesis price case rather than chase."
+  },
+  "coverage": {
+    "security_claims": "covered with conditional/dynamic ownership limits",
+    "financial_resilience": "covered through June actuals; current roll-forward gap",
+    "business_drivers": "covered scoped demand/margin/capacity/mix",
+    "management_guidance": "August and September primary transcripts read",
+    "capital_allocation": "covered supplier/prepayment/investment/warrant/acquisition mechanics",
+    "valuation_expectations": "guide EPS bridge and conflicting external snapshots; numerical equity valuation withheld",
+    "competition": "issuer discussion only; independent competitor/customer counter-evidence not yet underwritten",
+    "annual_auditor_proxy": "not reviewed in this scoped screen; full thesis not claimed",
+    "phone_account_prices": "unverified"
+  },
+  "next_evidence": [
+    "Read Q3 complete results, Q4 guidance and transcript, comparing September baseline.",
+    "Refresh executable bid/ask, FX/costs and exact ISA instrument before any decision.",
+    "Reconcile September 2026 debt maturity, actual liquid balances, supplier commitments and customer-investment cash flows.",
+    "Model incremental volume/mix/margin, capex and dilution with contrary customer/competitor primary evidence.",
+    "Obtain contemporaneous comparable estimate definitions/cutoffs and residual price requirements; if unavailable retain rejection."
+  ],
+  "sources": [
+    {
+      "source_id": "ir-overview",
+      "url": "https://ir.amd.com/",
+      "accessed_at": "2026-10-09T00:34:33.584028+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/ir-overview.html",
+      "sha256": "667dfff9f17cd2aa0605dae1d754c36c09eed7b6634998390d27471f9ecb127d",
+      "status": 200,
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/ir-overview.txt",
+      "publication_date": null,
+      "read_locations": "Latest News; latest Q2 results; latest events; market-data delay footer",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "q3-event-notice",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results",
+      "accessed_at": "2026-10-09T00:34:34.080234+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q3-event-notice.html",
+      "sha256": "1c34cd99d3fbf0bba0f0a135a04f9fe9c32be3d51a96f751b4674a90d97d25b7",
+      "status": 200,
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q3-event-notice.txt",
+      "publication_date": "2026-10-06",
+      "read_locations": "Release heading/date and first paragraph; later conference dates",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "q2-results",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+      "accessed_at": "2026-10-09T00:34:34.337268+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-results.html",
+      "sha256": "0fcd914306881fdb9e033b50423aed8ac35fbd8f7041e4e4ff71da24b22b8c3a",
+      "status": 200,
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-results.txt",
+      "publication_date": "2026-08-04",
+      "read_locations": "GAAP/non-GAAP quarterly tables; Current Outlook; reconciliation; segment summary",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "q2-10q",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm",
+      "accessed_at": "2026-10-09T00:34:34.704219+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-10q.html",
+      "sha256": "fa18ad1095a14dc14fe04d3e256143addbb1c8f0573eb6eb8bb6bc6609bfe2bf",
+      "status": 200,
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-10q.txt",
+      "publication_date": "2026-08-05",
+      "read_locations": "Cover; pp 3-6 statements/balance sheet/cash flow; Note 9 debt; Note 10 commitments; Note 12 common stock/warrants; pp 28-30 liquidity/controls; risk factors",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "world-labs",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute",
+      "accessed_at": "2026-10-09T00:34:35.648695+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/world-labs.html",
+      "sha256": "22f7cbf85c100b0b854547969a85899fe184327f369a10a9eddef4b9c5b3e6c8",
+      "status": 200,
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/world-labs.txt",
+      "publication_date": "2026-09-28",
+      "read_locations": "Release paragraphs 1-6, transaction price/consideration/expected close",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "meta-partnership",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1279/amd-and-meta-announce-expanded-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+      "accessed_at": "2026-10-09T00:34:35.877954+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/meta-partnership.html",
+      "sha256": "f7d0c4b26fe386bbb77090f977a9f1295cc2a02c09e4f02e5dd877bddc8973e1",
+      "status": 200,
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/meta-partnership.txt",
+      "publication_date": "2026-02-24",
+      "read_locations": "Shipment schedule and warrant vesting paragraphs; CFO accretion assertion",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "anthropic-partnership",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus",
+      "accessed_at": "2026-10-09T00:34:36.097627+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/anthropic-partnership.html",
+      "sha256": "c15bf0c701c697e2cb04209cbc22bb1a20748d4d0011c068f9492f31f3481093",
+      "status": 200,
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/anthropic-partnership.txt",
+      "publication_date": "2026-07-22",
+      "read_locations": "News highlights and first five paragraphs; investment and first-gigawatt timing",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "stock-data",
+      "url": "https://ir.amd.com/stock-data",
+      "accessed_at": "2026-10-09T00:34:36.398947+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/stock-data.html",
+      "sha256": "8ad72f30bf0e634b3702281e6d81bf39a7af5c979f8094d7d64f45fd0219fb49",
+      "status": 200,
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/stock-data.txt",
+      "publication_date": null,
+      "read_locations": "Main content and QuoteMedia delayed-data footer; no populated quote in archived HTML",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "filing-index",
+      "url": "https://ir.amd.com/financial-information/sec-filings",
+      "accessed_at": "2026-10-09T00:34:36.667060+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/filing-index.html",
+      "sha256": "b86dd82182635d751ca3507d0d0fee164cad8e0f7dd9ddd3cac5fdb6b8e64c9c",
+      "status": 200,
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/filing-index.txt",
+      "publication_date": null,
+      "read_locations": "Latest filing rows (28 September 8-K through older forms)",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "q2-call",
+      "url": "https://d1io3yog0oux5.cloudfront.net/_e6fb18640ea7bfff80a48dc92268a25f/amd/db/841/9237/webcast_transcript/AMD2Q26EarningsCallTranscript.pdf",
+      "accessed_at": "2026-10-09T00:35:29.603004+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/q2-call.pdf",
+      "sha256": "271d63d96f015c07c7e1dd76eebeff52f1f2b2a603c2526b28463ee0215553b5",
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/q2-call.txt",
+      "status": 200,
+      "publication_date": "2026-08-04",
+      "read_locations": "PDF pp 2-4 server/Helios/public growth baseline; pp 6-7 Q3 guide; pp 8-9 mix; p13 acceleration definition; pp 15-16 supply",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "september-8k",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000182/amd-20260926.htm",
+      "accessed_at": "2026-10-09T00:35:31.375623+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/september-8k.html",
+      "sha256": "4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be",
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/september-8k.txt",
+      "status": 200,
+      "publication_date": "2026-09-28",
+      "read_locations": "Cover and Item 3.02, floating 10-trading-day VWAP share issuance formula",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "tipranks-estimates",
+      "url": "https://www.tipranks.com/stocks/amd/earnings",
+      "accessed_at": "2026-10-09T00:35:31.552599+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/tipranks-estimates.html",
+      "sha256": "15960d1f3d495805a962604956999141812b1bcc158bb4136d300a873bcd9542",
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/tipranks-estimates.txt",
+      "status": 200,
+      "publication_date": null,
+      "read_locations": "Earnings Data, Q3 2026 forecast; Earnings History; date caveat and earnings-related price-change table",
+      "classification": "external estimate-provider publication",
+      "archived_original": true
+    },
+    {
+      "source_id": "altindex-estimates",
+      "url": "https://altindex.com/earnings-calendar/amd",
+      "accessed_at": "2026-10-09T00:35:31.840139+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/altindex-estimates.html",
+      "sha256": "584e880584527d80ffdfaee755a2b3c7fc9d6a7b96515c31df64b8d49a659658",
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/altindex-estimates.txt",
+      "status": 200,
+      "publication_date": "page states updated 2026-10-08",
+      "read_locations": "Updated date; EPS estimate; FAQ consensus claim; price without executable timestamp",
+      "classification": "external estimate-provider publication",
+      "archived_original": true
+    },
+    {
+      "source_id": "ir-calendar",
+      "url": "https://ir.amd.com/news-events/ir-calendar",
+      "accessed_at": "2026-10-09T00:35:32.840216+00:00",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/ir-calendar.html",
+      "sha256": "61c490b019a7854ccf6640f8a1143c945b7bd3f1b438cd7f7cc1773790cfb84b",
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003529601753Z/ir-calendar.txt",
+      "status": 200,
+      "publication_date": null,
+      "read_locations": "Upcoming results and past September conference dates; timezone label",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "september-goldman-page",
+      "url": "https://ir.amd.com/news-events/ir-calendar/detail/20260911-goldman-sachs-communacopia-technology-conference",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-goldman.html",
+      "sha256": "deb4f3688226b416eed8aaedc196fbb710996282d6a8e7afeb985a4b428b64a3",
+      "accessed_at": "2026-10-09T00:36:22.339919+00:00",
+      "publication_date": null,
+      "read_locations": "Issuer-hosted transcript hyperlink",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "september-goldman",
+      "url": "https://d1io3yog0oux5.cloudfront.net/_e6fb18640ea7bfff80a48dc92268a25f/amd/db/817/9241/webcast_transcript/AMD+Goldman+Sachs+Communacopia+and+Technology+%28Sept+11%2C+2026%29.pdf",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-goldman.pdf",
+      "sha256": "15002633cc86e49a1c2d53ac499ab5a5b174204ceae4e4b0dbd01fc30ba0cb8a",
+      "accessed_at": "2026-10-09T00:36:22.343134+00:00",
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-goldman.txt",
+      "publication_date": "2026-09-11",
+      "read_locations": "PDF pp 4-6 public 2027 and strategic growth/EPS aspirations; pp 8-9 CPU-content/gigawatt uncertainty; all remaining discussion read",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "september-citi-page",
+      "url": "https://ir.amd.com/news-events/ir-calendar/detail/20260908-citis-2026-global-tmt-conference",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-citi.html",
+      "sha256": "4c69c2ad2e01aed51fd18d0e424882756b29d245a7c3a96df5e99a5124c3dc19",
+      "accessed_at": "2026-10-09T00:36:23.725201+00:00",
+      "publication_date": null,
+      "read_locations": "Issuer-hosted transcript hyperlink",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    },
+    {
+      "source_id": "september-citi",
+      "url": "https://d1io3yog0oux5.cloudfront.net/_e6fb18640ea7bfff80a48dc92268a25f/amd/db/817/9240/webcast_transcript/2026-9-8+AMD+Citi+Global+TMT+Conference.pdf",
+      "path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-citi.pdf",
+      "sha256": "daa7138bdbc3c76c69e0f9c2f0bc11bb22ba2bfcb4b54c382b7050638e3cb61a",
+      "accessed_at": "2026-10-09T00:36:23.727200+00:00",
+      "derived_text": "monitoring/studies/evidence/2026-10-09-amd/20261009T003622108395Z/september-citi.txt",
+      "publication_date": "2026-09-08",
+      "read_locations": "PDF pp 1-3 ramp/supply; p4 margins/opex; pp 5-7 server TAM/capacity; remaining discussion read",
+      "classification": "issuer primary; management-generated unless reported filing actual",
+      "archived_original": true
+    }
+  ],
+  "archive_notes": [
+    "New timestamped folders only; originals preserved; raw SHA-256 rechecked.",
+    "Initial downloader failed because requests was not installed; retried using built-in urllib without installation.",
+    "Web tool encoded plus signs in September transcript URLs and returned 403; issuer hyperlink URLs fetched successfully locally without changing bytes or bypassing authentication.",
+    "No prior company run or approved methodology was changed."
+  ]
+}

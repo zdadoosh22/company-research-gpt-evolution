@@ -1,0 +1,69 @@
+{
+  "checked_on": "2026-10-08",
+  "records": [
+    {
+      "file": "q2-10q.pdf",
+      "expected_sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7",
+      "actual_sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7",
+      "match": true,
+      "original_capture_utc": "2026-10-08T11:03:30.710211+00:00"
+    },
+    {
+      "file": "q2-presentation.pdf",
+      "expected_sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+      "actual_sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+      "match": true,
+      "original_capture_utc": "2026-10-08T11:03:30.711217+00:00"
+    },
+    {
+      "file": "q3-event.html",
+      "expected_sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+      "actual_sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+      "match": true,
+      "original_capture_utc": "2026-10-08T11:03:30.713369+00:00"
+    },
+    {
+      "file": "events.html",
+      "expected_sha256": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241",
+      "actual_sha256": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241",
+      "match": true,
+      "original_capture_utc": "2026-10-08T11:03:30.727727+00:00"
+    },
+    {
+      "file": "marketbeat.html",
+      "expected_sha256": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40",
+      "actual_sha256": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40",
+      "match": true,
+      "original_capture_utc": "2026-10-08T11:03:30.792662+00:00"
+    },
+    {
+      "file": "q2-supplement.pdf",
+      "expected_sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60",
+      "actual_sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60",
+      "match": true,
+      "original_capture_utc": "2026-10-08T11:05:00.035450+00:00"
+    },
+    {
+      "file": "september-transcript.html",
+      "expected_sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+      "actual_sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+      "match": true,
+      "original_capture_utc": "2026-10-08T11:05:00.037450+00:00"
+    },
+    {
+      "file": "dividend.html",
+      "expected_sha256": "9c0cc13ed702a2684bcec487f1f07b3d77e4d1fc3620c864a2f09d5aaf631806",
+      "actual_sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+      "match": false,
+      "original_capture_utc": "2026-10-08T11:07:34.249913+00:00"
+    },
+    {
+      "file": "price-history.html",
+      "expected_sha256": "e88eacbfacaac02b5d8a769c87af1532ea379b88c7edd6cd0422fa5a1dba01c8",
+      "actual_sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+      "match": false,
+      "original_capture_utc": "2026-10-08T11:07:35.025095+00:00"
+    }
+  ],
+  "collision_note": "Current author reused price-history.html and dividend.html for later successful captures before noticing pre-existing originals. Their old raw bytes are not verified recoverable. Earlier extracted text and historical manifest remain; use retrieval-register.json for present hashes and timestamped duplicates for new snapshot. Other matched files remain valid originals; no silent success claim."
+}

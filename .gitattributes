@@ -1,0 +1,6 @@
+# Preserve the actual bytes of archived evidence and publication hash bindings.
+# Do not rewrite LF/CRLF on check-in or check-out.
+* -text
+*.pdf binary
+*.xlsx binary
+*.png binary

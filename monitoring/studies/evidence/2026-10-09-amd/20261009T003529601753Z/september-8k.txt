@@ -1,0 +1,83 @@
+1: September 28, 2026 - 8-K: Current report | Advanced Micro Devices, Inc. (AMD)
+2: September 28, 2026 >
+                                                                Form 8-K >
+                                                                Advanced Micro Devices, Inc.
+3: Document Links
+4: Form: 8-K
+5: Current report
+6: September 28, 2026
+7: Complete Filing PDF
+8: »
+9: Includes filing and all documents
+10: 8-K: Current report
+11: Published on September 28, 2026
+12: 0000002488
+13: false
+14: 0000002488
+15: 2026-09-26
+16: 2026-09-26
+17: UNITED STATES
+18: SECURITIES AND EXCHANGE COMMISSION
+19: Washington, D.C. 20549
+20: FORM
+21: 8-K
+22: CURRENT REPORT
+23: Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934
+24: September 26, 2026
+25: Date of Report (Date of earliest event reported)
+26: ADVANCED MICRO DEVICES, INC.
+27: (Exact name of registrant as specified in its charter)
+28: Delaware
+29: 001-07882
+30: 94-1692300
+31: (State or Other Jurisdiction of
+32: Incorporation)
+33: (Commission
+34: File Number)
+35: (IRS Employer
+36: Identification Number)
+37: 2485 Augustine Drive
+38: Santa Clara
+39: ,
+40: California
+41: 95054
+42: (Address of principal executive offices) (Zip Code)
+43: (
+44: 408
+45: )
+46: 749-4000
+47: (Registrant’s telephone number, including area code)
+48: N/A
+49: (Former Name or Former Address, if Changed Since Last Report)
+50: Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions:
+51: ☐
+52: Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)
+53: ☐
+54: Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)
+55: ☐
+56: Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b))
+57: ☐
+58: Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))
+59: Securities registered pursuant to Section 12(b) of the Act:
+60: Title of each class
+61: Trading Symbol(s)
+62: Name of each exchange on which registered
+63: Common Stock, $0.01 par value
+64: AMD
+65: The Nasdaq Global Select Market
+66: Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (§240.12b-2 of this chapter). Emerging growth company
+67: ☐
+68: If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+69: Item 3.02 Unregistered Sales of Equity Securities
+70: On September 26, 2026, Advanced Micro Devices, Inc. (the “Company”) entered into an Agreement and Plan of Merger (the “Merger Agreement”) to acquire all of the equity interests in World Labs Technologies, Inc. (“World Labs”) (the “Acquisition”) for a total purchase price of approximately $8.2 billion to be paid in shares of the Company’s common stock, par value $0.01 per share (“Common Stock”), to stockholders of World Labs, subject to customary adjustments.  At this time, the number of shares to be issued in connection with the Acquisition is not known and will be calculated based on the daily volume-weighted average price of a share of Common Stock on the Nasdaq Global Select Market over the ten (10) consecutive trading-day period ending on and including the second trading day immediately preceding the closing date of the Acquisition.
+71: The Company intends to issue the shares of Common Stock in reliance upon the exemptions from registration afforded by Section 4(a)(2) of the Securities Act of 1933, as amended (the “Securities Act”), and/or Rule 506 of Regulation D promulgated under the Securities Act. The issuance is not being conducted in connection with a public offering, and no public solicitation or advertisement will be made or relied upon in connection with the issuance of the shares.
+72: SIGNATURES
+73: Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.
+74: Date: September 28, 2026
+75: ADVANCED MICRO DEVICES, INC.
+76: By:
+77: /s/ Ava Hahn
+78: Name:
+79: Ava Hahn
+80: Title:
+81: Senior Vice President, General Counsel and Corporate Secretary

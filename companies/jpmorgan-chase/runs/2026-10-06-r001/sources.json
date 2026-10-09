@@ -1,0 +1,30 @@
+[
+  {
+    "id": "j1",
+    "title": "Q2 2026 earnings release",
+    "type": "filing",
+    "publication_date": "2026-07-14",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfexhibit991narrative.htm",
+    "read": true,
+    "locations": [
+      "headline / significant items note2d"
+    ],
+    "archived_file": "sources/2026-q2-release.htm",
+    "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757"
+  },
+  {
+    "id": "j2",
+    "title": "Q2 2026 financial supplement",
+    "type": "filing",
+    "publication_date": "2026-07-14",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfex992supplement.htm",
+    "read": true,
+    "locations": [
+      "capital p9",
+      "financial highlights p2",
+      "financial highlights p2; reconciliation p10"
+    ],
+    "archived_file": "sources/2026-q2-supplement.htm",
+    "sha256": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793"
+  }
+]

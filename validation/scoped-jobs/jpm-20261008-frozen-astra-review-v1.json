@@ -1,0 +1,185 @@
+{
+  "job_id": "jpm-20261008-frozen-astra-review-v1",
+  "role": "review",
+  "as_of": "2026-10-08T23:59:59Z",
+  "scope": {
+    "required_categories": [
+      "security-and-claims",
+      "financial-resilience-and-capital",
+      "event-and-as-of-chronology",
+      "management-guidance-versus-expectations-and-missing-undated-archives",
+      "calculation-bridge-dividends-dilution-and-tax",
+      "price-response-persistence-and-multiple-assumptions",
+      "contrary-evidence-cash-preference-and-rejection",
+      "source-integrity-failed-retrievals-and-archive-collisions"
+    ]
+  },
+  "methodology": {
+    "base": {
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+      "path": "methodology/company-research-v1.0.0.md"
+    },
+    "scoped": {
+      "sha256": "1b8c55eb9c6865bcf152718d3a29ccf72e6fc099229cfe1af493752abd2a9262",
+      "path": "monitoring/DECISION-SCOPE.md"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "q2-10q",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-jpm-q2-10q.htm",
+      "sha256": "4ba60f17c069172a3bb4aa681d5f2a7ae3ac49e557f989101b4e3e1cbe4cad38",
+      "published_at": "2026-08-06",
+      "accessed_at": "2026-10-08",
+      "read_locations": [
+        "cover/common shares",
+        "pp.6-9 overview/outlook/results",
+        "pp.18-19 managed reconciliation/NII",
+        "pp.44-47 capital and regulatory developments",
+        "pp.50-55 TLAC/liquidity/funding",
+        "pp.75-77 credit allowances",
+        "pp.83-84 interest-rate sensitivity",
+        "p.93 income statement and diluted shares",
+        "Note 18 p.173 EPS",
+        "Note 21 pp.177-178 capital"
+      ]
+    },
+    {
+      "source_id": "capital-note21",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-jpm-q2-regulatory-capital.htm",
+      "sha256": "061a2eb7450cdd0b446729050734d61c6f16a3624ef70bf2a7b20b2728f95130",
+      "published_at": "2026-08-06",
+      "accessed_at": "2026-10-08",
+      "read_locations": [
+        "requirements tables",
+        "June capital metrics",
+        "leverage table and footnotes"
+      ]
+    },
+    {
+      "source_id": "q2-release",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-2026-q2-release.htm",
+      "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757",
+      "published_at": "2026-07-14",
+      "accessed_at": "2026-10-08",
+      "read_locations": [
+        "pp.1-2 headline, significant items, firmwide results",
+        "note 2d gain adjustment"
+      ]
+    },
+    {
+      "source_id": "q2-supplement",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/prior-2026-q2-supplement.htm",
+      "sha256": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793",
+      "published_at": "2026-07-14",
+      "accessed_at": "2026-10-08",
+      "read_locations": [
+        "p.2 financial highlights",
+        "p.10 TCE reconciliation",
+        "p.28 NII ex-Markets"
+      ]
+    },
+    {
+      "source_id": "q2-presentation",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-presentation.pdf",
+      "sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+      "published_at": "2026-07-14",
+      "accessed_at": "2026-10-08T17:37:36.406963+01:00",
+      "read_locations": [
+        "slide 2 managed tax rate",
+        "slide 4 Card balances/NCO",
+        "slide 5 CIB revenue/costs",
+        "slide 8 outlook",
+        "slide 9 non-GAAP definitions"
+      ]
+    },
+    {
+      "source_id": "q2-transcript",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q2-transcript.pdf",
+      "sha256": "df9042c4c156aa33eed0cec2f5727598504e88e038be31140d98452dc9054540",
+      "published_at": "2026-07-14",
+      "accessed_at": "2026-10-08T17:37:36.439388+01:00",
+      "read_locations": [
+        "printed pp.1-2 opening/outlook",
+        "printed p.4 Barnum NII guidance upgrade and Markets offsets",
+        "printed p.6 expense/investment commentary"
+      ]
+    },
+    {
+      "source_id": "dividend",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/dividend.html",
+      "sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+      "published_at": "2026-09-15",
+      "accessed_at": "2026-10-08T17:37:36.749477+01:00",
+      "read_locations": [
+        "first substantive paragraph"
+      ]
+    },
+    {
+      "source_id": "september-commentary",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/september-transcript.html",
+      "sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+      "published_at": "2026-09-15",
+      "accessed_at": "2026-10-08T12:05:00.03745+01:00",
+      "read_locations": [
+        "Goldberg quarter-to-date trading/IB-fee question and Petno answer; archived text lines 197-221",
+        "deposit competition discussion",
+        "CIB through-cycle return discussion"
+      ]
+    },
+    {
+      "source_id": "event-issuer-domain",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/q3-event.html",
+      "sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+      "published_at": "2026-09-17",
+      "accessed_at": "2026-10-08T12:03:30.713369+01:00",
+      "read_locations": [
+        "opening release/call paragraph"
+      ]
+    },
+    {
+      "source_id": "price-history",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/price-history.html",
+      "sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+      "published_at": null,
+      "date_status": "publication-date-unknown-snapshot",
+      "captured_at": "2026-10-08T17:37:36.861889+01:00",
+      "accessed_at": "2026-10-08T17:37:36.861889+01:00",
+      "read_locations": [
+        "7 October row",
+        "8 October intraday snapshot",
+        "page attribution S&P Global Market Intelligence"
+      ]
+    },
+    {
+      "source_id": "earningswhispers",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/earningswhispers.html",
+      "sha256": "03b3bec44767094858af5442e6ac2079ce45240d783925cc8eb39877375bf592",
+      "published_at": null,
+      "date_status": "publication-date-unknown-snapshot",
+      "captured_at": "2026-10-08T17:41:19.546109+01:00",
+      "accessed_at": "2026-10-08T17:41:19.546109+01:00",
+      "read_locations": [
+        "overview paragraph",
+        "earnings panel"
+      ]
+    },
+    {
+      "source_id": "sec-submissions",
+      "path": "monitoring/studies/evidence/2026-10-08-jpm/sec-submissions.json",
+      "sha256": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada",
+      "published_at": null,
+      "date_status": "publication-date-unknown-snapshot",
+      "captured_at": "2026-10-08T17:37:36.956335+01:00",
+      "accessed_at": "2026-10-08T17:37:36.956335+01:00",
+      "read_locations": [
+        "issuer identity and tickers/exchanges",
+        "recent forms 8-K and 10-Q since July"
+      ]
+    }
+  ],
+  "target": {
+    "sha256": "01aff6247e21c036ef18ae88dc6cb2a039250c9960307e08700154a434e773b4",
+    "path": "monitoring/studies/2026-10-08-jpm-event-dossier.json"
+  }
+}

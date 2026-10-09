@@ -1,0 +1,998 @@
+{
+  "schema_version": "scoped-event-dossier-v1",
+  "id": "2026-10-08-jpm-event-dossier",
+  "as_of": "2026-10-08",
+  "created_utc": "2026-10-08T16:51:13.411973+00:00",
+  "scope": "days-to-months event study; completed rejection analysis, not full thesis",
+  "status": "scoped-analysis-complete-awaiting-independent-review",
+  "opportunity_decision": "rejected-pre-event-entry",
+  "decision_rationale": "Improving NII is already embedded in management guidance. No verified same-basis expectations mismatch or justified persistence/multiple response establishes preference over cash. Quote/account completion alone cannot cure this analytical rejection.",
+  "selected_investment": false,
+  "accepted_entry": false,
+  "real_signal": false,
+  "paper_entry_authorized": false,
+  "security": {
+    "issuer": "JPMorgan Chase & Co.",
+    "cik": "0000019617",
+    "exchange": "NYSE",
+    "ticker": "JPM",
+    "class": "common stock",
+    "security_id": "NYSE:JPM",
+    "domicile": "United States / Delaware",
+    "trading_currency": "USD",
+    "reporting_currency": "USD",
+    "price_unit": "USD per share",
+    "fiscal_year_end": "12-31",
+    "broker_security_verified": false
+  },
+  "methodology": {
+    "version": "1.0.0",
+    "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+    "scope_addendum": "monitoring/DECISION-SCOPE.md",
+    "unchanged": true
+  },
+  "existing_company_run": {
+    "latest": null,
+    "latest_active": "2026-10-06-r003",
+    "status": "partial",
+    "promoted": false
+  },
+  "model_provenance": {
+    "requested_by_parent": "gpt-6-astra",
+    "reasoning_requested": "high",
+    "reported_backend_identity": null,
+    "backend_independently_verified": false,
+    "author_role": "delegated research agent",
+    "independent_review_status": "pending-parent-review",
+    "note": "Requested configuration is not independent verification of actual backend identity."
+  },
+  "event": {
+    "date": "2026-10-13",
+    "release_time": "approximately 07:00 America/New_York / 12:00 Europe/London",
+    "call_time": "08:30 America/New_York / 13:30 Europe/London",
+    "source_id": "event",
+    "analytical_window_end": "2026-10-16",
+    "record_expires_for_pre_event_use": "2026-10-13T11:00:00Z or earlier material contradiction",
+    "delay_policy": "No automatic carry-forward; verify issuer reschedule and rewrite rationale"
+  },
+  "price": {
+    "value": "329.58",
+    "currency": "USD",
+    "type": "previous-session close, nonexecutable",
+    "date": "2026-10-07",
+    "source_id": "price-history",
+    "bid": null,
+    "ask": null,
+    "broker_quote": false,
+    "secondary_intraday_observation": {
+      "price": "327.46",
+      "timestamp": "2026-10-08T12:35:00-04:00",
+      "archived": true,
+      "used_in_calculations": false
+    }
+  },
+  "external_expectations": [
+    {
+      "provider": "Earnings Whispers",
+      "eps": "5.94",
+      "whisper_eps": "6.10",
+      "revenue_usd_bn": "51.85",
+      "period": "2026-Q3",
+      "observed_on": "2026-10-08",
+      "estimate_cutoff": null,
+      "GAAP_adjustment_basis": null,
+      "contributor_count": null,
+      "verified_same_basis_consensus": false
+    },
+    {
+      "provider": "TipRanks",
+      "eps": "5.90",
+      "period": "2026-Q3",
+      "observed_on": "2026-10-08",
+      "estimate_cutoff": null,
+      "GAAP_adjustment_basis": null,
+      "contributor_count": null,
+      "verified_same_basis_consensus": false
+    }
+  ],
+  "later_management_commentary": {
+    "source_id": "september-commentary",
+    "date": "2026-09-15",
+    "content": "Mid-to-high-teens year-on-year IB fees and Markets revenue growth; seasonal sequential Markets decline; activity-driven expense offsets",
+    "status": "management outlook relayed by third-party transcript, not independently transcribed primary audio",
+    "effect": "July alone is not a complete event baseline; strength has already been publicly discussed; numerical FY NII guidance not replaced by this passage"
+  },
+  "observations": [
+    {
+      "metric": "CET1 capital",
+      "value": "302.619",
+      "unit": "USD bn",
+      "period": "2026-06-30",
+      "source_id": "capital-note21",
+      "location": "requirements / June metrics tables",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Standardized RWA",
+      "value": "2132.428",
+      "unit": "USD bn",
+      "period": "2026-06-30",
+      "source_id": "capital-note21",
+      "location": "requirements / June metrics tables",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Advanced RWA",
+      "value": "2123.862",
+      "unit": "USD bn",
+      "period": "2026-06-30",
+      "source_id": "capital-note21",
+      "location": "requirements / June metrics tables",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Advanced total capital",
+      "value": "346.248",
+      "unit": "USD bn",
+      "period": "2026-06-30",
+      "source_id": "capital-note21",
+      "location": "requirements / June metrics tables",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Standardized CET1 ratio",
+      "value": "14.2",
+      "unit": "percent",
+      "period": "2026-06-30",
+      "source_id": "capital-note21",
+      "location": "requirements / June metrics tables",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Advanced total-capital requirement",
+      "value": "15",
+      "unit": "percent",
+      "period": "2026-06-30",
+      "source_id": "capital-note21",
+      "location": "requirements / June metrics tables",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Standardized CET1 requirement",
+      "value": "11.5",
+      "unit": "percent",
+      "period": "2026-06-30",
+      "source_id": "capital-note21",
+      "location": "requirements / June metrics tables",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "SLR actual",
+      "value": "5.5",
+      "unit": "percent",
+      "period": "2026-06-30",
+      "source_id": "capital-note21",
+      "location": "requirements / June metrics tables",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "SLR requirement",
+      "value": "4.25",
+      "unit": "percent",
+      "period": "2026-06-30",
+      "source_id": "capital-note21",
+      "location": "requirements / June metrics tables",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "NII ex-Markets",
+      "value": "46.957",
+      "unit": "USD bn",
+      "period": "2026-H1",
+      "source_id": "q2-10q",
+      "location": "p.19",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "NII ex-Markets",
+      "value": "23.677",
+      "unit": "USD bn",
+      "period": "2026-Q2",
+      "source_id": "q2-10q",
+      "location": "p.19",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Diluted weighted-average shares",
+      "value": "2.6942",
+      "unit": "billion shares",
+      "period": "2026-Q2",
+      "source_id": "q2-10q",
+      "location": "p.93 / Note18 p.173",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Period-end common shares",
+      "value": "2.658186195",
+      "unit": "billion shares",
+      "period": "2026-06-30",
+      "source_id": "q2-10q",
+      "location": "cover",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Advanced RWA at opening",
+      "value": "2045.249",
+      "unit": "USD bn",
+      "period": "2025-12-31",
+      "source_id": "q2-10q",
+      "location": "p.46",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Firm average LCR",
+      "value": "110",
+      "unit": "percent",
+      "period": "2026-Q2",
+      "source_id": "q2-10q",
+      "location": "p.52",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Firm minimum LCR",
+      "value": "100",
+      "unit": "percent",
+      "period": "2026-Q2",
+      "source_id": "q2-10q",
+      "location": "p.52",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "HQLA average",
+      "value": "975.412",
+      "unit": "USD bn",
+      "period": "2026-Q2",
+      "source_id": "q2-10q",
+      "location": "p.52",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Stress net outflows average",
+      "value": "885.521",
+      "unit": "USD bn",
+      "period": "2026-Q2",
+      "source_id": "q2-10q",
+      "location": "p.52",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Total deposits",
+      "value": "2713.7",
+      "unit": "USD bn",
+      "period": "2026-06-30",
+      "source_id": "q2-10q",
+      "location": "p.54",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Estimated uninsured deposits",
+      "value": "1743.9",
+      "unit": "USD bn",
+      "period": "2026-06-30",
+      "source_id": "q2-10q",
+      "location": "p.55",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Card Services average loans",
+      "value": "243.5",
+      "unit": "USD bn",
+      "period": "2026-Q2",
+      "source_id": "q2-presentation",
+      "location": "slide4",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Card Services NCO rate",
+      "value": "3.34",
+      "unit": "percent annualized",
+      "period": "2026-Q2",
+      "source_id": "q2-presentation",
+      "location": "slide4",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Q1 Card Services NCO rate",
+      "value": "3.47",
+      "unit": "percent annualized",
+      "period": "2026-Q1",
+      "source_id": "q2-presentation",
+      "location": "slide4 comparator",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Managed tax rate",
+      "value": "25",
+      "unit": "percent",
+      "period": "2026-Q2",
+      "source_id": "q2-presentation",
+      "location": "slide2",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "FY total NII",
+      "value": "105.5",
+      "unit": "USD bn",
+      "period": "2026-FY",
+      "source_id": "q2-presentation",
+      "location": "slide8",
+      "status": "management-guided"
+    },
+    {
+      "metric": "FY NII excluding Markets",
+      "value": "96.5",
+      "unit": "USD bn",
+      "period": "2026-FY",
+      "source_id": "q2-presentation",
+      "location": "slide8",
+      "status": "management-guided"
+    },
+    {
+      "metric": "FY adjusted expense",
+      "value": "107.5",
+      "unit": "USD bn",
+      "period": "2026-FY",
+      "source_id": "q2-presentation",
+      "location": "slide8",
+      "status": "management-guided"
+    },
+    {
+      "metric": "FY Card Services NCO rate",
+      "value": "3.2",
+      "unit": "percent",
+      "period": "2026-FY",
+      "source_id": "q2-presentation",
+      "location": "slide8",
+      "status": "management-guided"
+    },
+    {
+      "metric": "Diluted EPS",
+      "value": "7.70",
+      "unit": "USD/share",
+      "period": "2026-Q2",
+      "source_id": "q2-release",
+      "location": "headline / p.2",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "EPS excluding significant items",
+      "value": "6.14",
+      "unit": "USD/share",
+      "period": "2026-Q2",
+      "source_id": "q2-release",
+      "location": "headline / note2d",
+      "status": "issuer-adjusted-reported"
+    },
+    {
+      "metric": "Tangible book per common share",
+      "value": "113.35",
+      "unit": "USD/share",
+      "period": "2026-06-30",
+      "source_id": "q2-supplement",
+      "location": "pp.2,10",
+      "status": "issuer-non-GAAP-reported"
+    },
+    {
+      "metric": "Credit provision",
+      "value": "2.515",
+      "unit": "USD bn",
+      "period": "2026-Q2",
+      "source_id": "q2-release",
+      "location": "p.2",
+      "status": "verified-reported"
+    },
+    {
+      "metric": "Prior-close indicative price",
+      "value": "329.58",
+      "unit": "USD/share",
+      "period": "2026-10-07 close",
+      "source_id": "price-history",
+      "location": "7 October historical row",
+      "status": "secondary-observed-nonexecutable"
+    }
+  ],
+  "calculations": {
+    "units": "USD billions unless per-share, ratio or stated otherwise; shares in billions",
+    "h2_nii_ex_markets_required": "49.543",
+    "h2_half_on_half_growth_pct": "5.507166130715335306770023600",
+    "h2_quarterly_average_required": "24.7715",
+    "h2_quarterly_average_vs_q2_pct": "4.622629556109304388224859600",
+    "incremental_eps_per_1bn_pretax": "0.2783757701729641452008017222",
+    "nii_1_5bn_eps": "0.4175636552594462178012025833",
+    "nii_1_5bn_equal_quarter_allocation_eps": "0.1043909138148615544503006458",
+    "card_3_47_vs_3_20_annual_nco_increment": "0.65745",
+    "card_increment_annual_eps_drag": "0.1830181501002152772622670923",
+    "combined_nii_reversal_and_card_annual_eps_drag": "0.6005818053596614950634696756",
+    "price_to_dated_tbv": "2.907631230701367445963828849",
+    "q2_adjusted_eps_annualized_not_forecast": "24.56",
+    "price_to_q2_adjusted_annualized_not_forward_PE": "13.41938110749185667752442997",
+    "transient_1_5bn_aftertax_per_end_period_share": "0.4232209173744505132380314690",
+    "conditional_constant_multiple_nii_increment": "5.603445826563855230574932712",
+    "conditional_constant_multiple_combined_decrement": "8.059436132346792978135925721",
+    "capital_headroom_advanced_total": "27.66870",
+    "capital_headroom_standardized_CET1": "57.389780",
+    "advanced_RWA_h1_increase": "78.613",
+    "advanced_requirement_if_h1_RWA_increment_repeats": "11.79195",
+    "uninsured_deposit_ratio_pct": "64.26281460736264141209418875",
+    "repricing_multiple_r_open_as_function": "r_open = g + 2.907631230701367445963828849 * (k - g); algebra only, June TBV and October price"
+  },
+  "assumptions": [
+    {
+      "name": "marginal_tax",
+      "value": "0.25",
+      "basis": "illustrative marginal rate informed by Q2 managed tax rate; not a statutory or forward effective-tax forecast"
+    },
+    {
+      "name": "marginal_EPS_shares",
+      "value": "2.6942 billion",
+      "basis": "fixed Q2 diluted weighted-average count, not current ownership"
+    },
+    {
+      "name": "price_transmission_multiple",
+      "value": "13.4193811074918567",
+      "basis": "previous close divided by Q2 adjusted EPS annualized; mathematical constant-multiple sensitivity only, not selected fair multiple"
+    },
+    {
+      "name": "NII_increment",
+      "value": "1.5 USD bn",
+      "basis": "size of July ex-Markets guidance revision; prospective repetition/reversal is conditional, not forecast"
+    },
+    {
+      "name": "card_stress",
+      "value": "3.47% versus 3.20%",
+      "basis": "Q1 observed annualized loss rate versus FY guide, applied conditionally for a year to fixed Q2 balances; no double counting of provision"
+    }
+  ],
+  "price_response": {
+    "accepted_range": null,
+    "intrinsic_value": null,
+    "entry_ceiling": null,
+    "loss_trigger": null,
+    "profit_target": null,
+    "probabilities": null,
+    "conditional_constant_multiple_changes_usd": [
+      "5.6034458266",
+      "-8.0594361323"
+    ],
+    "not_price_targets": true,
+    "withholding_reason": "No supported recurring earnings path, forward valuation multiple or estimate reconciliation. Conditional mechanical increments do not form credible range endpoints."
+  },
+  "cases": [
+    {
+      "name": "favourable-fundamental-revision",
+      "mechanism": "incremental repeatable ex-Markets NII after credit and expense response",
+      "decision": "new review required; no assumed recognition or multiple"
+    },
+    {
+      "name": "no-repricing",
+      "mechanism": "results meet expectations or offsetting costs consume gains",
+      "decision": "no evidenced advantage over cash"
+    },
+    {
+      "name": "adverse-surprise",
+      "mechanism": "NII reversal plus credit normalization/reserve build and potentially lower multiple",
+      "decision": "no numerical downside floor established"
+    },
+    {
+      "name": "gap-or-halt",
+      "mechanism": "pre-session disclosure/limited execution means previous marks and stop prices do not guarantee fills",
+      "decision": "entry rejected; no synthetic execution"
+    },
+    {
+      "name": "delay",
+      "mechanism": "one-hour, four-hour or next-day response can miss repricing",
+      "decision": "fresh bid/ask and new remaining-value analysis required"
+    },
+    {
+      "name": "catalyst-delay",
+      "mechanism": "scheduled result absent",
+      "decision": "expire and verify reschedule; no automatic extension"
+    },
+    {
+      "name": "correct-but-late",
+      "mechanism": "business earnings improve while valuation stays suppressed beyond the event window",
+      "decision": "separate reviewed months-long thesis required"
+    }
+  ],
+  "financial_resilience_judgement": "June capital/liquidity and July financing show resources and access; no immediate distress evidence in reviewed period. Dated snapshots cannot guarantee October solvency or common-equity prices.",
+  "review_conditions": [
+    "reconcile forward expectations and demonstrate an incremental repeatable earnings path",
+    "refresh Q3 capital/liquidity/ownership and period-consistent price",
+    "derive defensible outcome values and cost-adjusted entry ceiling independently of observed price",
+    "demonstrate tolerable manual-response delays and freeze specific exits before any accepted comparison"
+  ],
+  "limitations": [
+    "No full 2025 annual/auditor/proxy refresh",
+    "Limited subsequent-event discovery, not comprehensive news coverage",
+    "SEC full-filing local HTTP403; prior original archive hashes verified",
+    "No current executable bid/ask or GBP FX/cost evidence",
+    "No validated forward capital/distribution model or October book bridge",
+    "External estimate accounting definitions and update timestamps missing",
+    "No independent market-implied earnings forecast",
+    "No account access, paid API or real signal used"
+  ],
+  "sources": [
+    {
+      "id": "event",
+      "title": "Issuer third-quarter earnings call notice",
+      "classification": "issuer-primary",
+      "publication_date": "2026-09-17",
+      "reporting_period": null,
+      "url": "https://jpmorganchaseco.gcs-web.com/news-releases/news-release-details/jpmorganchase-host-third-quarter-2026-earnings-call/",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "opening paragraph / web lines 94-101"
+      ],
+      "access": "web full notice read; local timeout; no original local archive",
+      "retrieval": {
+        "id": "event",
+        "url": "https://jpmorganchaseco.gcs-web.com/news-releases/news-release-details/jpmorganchase-host-third-quarter-2026-earnings-call/",
+        "retrieved_utc": "2026-10-08T16:37:36.074716+00:00",
+        "status": "failed",
+        "error": "The read operation timed out",
+        "http_status": null
+      }
+    },
+    {
+      "id": "q2-10q",
+      "title": "Finalized Q2 Form 10-Q",
+      "classification": "issuer-primary",
+      "publication_date": "2026-08-06",
+      "reporting_period": "2026-06-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/jpm-20260630.htm",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "cover/common shares",
+        "pp.6-9 overview/outlook/results",
+        "pp.18-19 managed reconciliation/NII",
+        "pp.44-47 capital and regulatory developments",
+        "pp.50-55 TLAC/liquidity/funding",
+        "pp.75-77 credit allowances",
+        "pp.83-84 interest-rate sensitivity",
+        "p.93 income statement and diluted shares",
+        "Note 18 p.173 EPS",
+        "Note 21 pp.177-178 capital"
+      ],
+      "access": "existing hash-verified original read locally; fresh local SEC HTTP403; web full document size limit",
+      "archive": {
+        "id": "j3",
+        "copied_from": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\jpmorgan-chase\\runs\\2026-10-06-r003\\sources\\jpm-q2-10q.htm",
+        "file": "prior-jpm-q2-10q.htm",
+        "sha256": "4ba60f17c069172a3bb4aa681d5f2a7ae3ac49e557f989101b4e3e1cbe4cad38",
+        "matched_prior_register": true,
+        "read_date": "2026-10-08",
+        "provenance": "existing archived original; fresh local HTTP retrieval failed 403",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/jpm-20260630.htm"
+      }
+    },
+    {
+      "id": "capital-note21",
+      "title": "Q2 Form 10-Q Note 21 extract",
+      "classification": "issuer-primary",
+      "publication_date": "2026-08-06",
+      "reporting_period": "2026-06-30",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/R29.htm",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "requirements tables",
+        "June capital metrics",
+        "leverage table and footnotes"
+      ],
+      "access": "web read plus hash-verified prior original; fresh local HTTP403",
+      "archive": {
+        "id": "j4",
+        "copied_from": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\jpmorgan-chase\\runs\\2026-10-06-r003\\sources\\jpm-q2-regulatory-capital.htm",
+        "file": "prior-jpm-q2-regulatory-capital.htm",
+        "sha256": "061a2eb7450cdd0b446729050734d61c6f16a3624ef70bf2a7b20b2728f95130",
+        "matched_prior_register": true,
+        "read_date": "2026-10-08",
+        "provenance": "existing archived original; fresh local HTTP retrieval failed 403",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/R29.htm"
+      }
+    },
+    {
+      "id": "q2-release",
+      "title": "Q2 earnings release",
+      "classification": "issuer-primary",
+      "publication_date": "2026-07-14",
+      "reporting_period": "2026-Q2",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfexhibit991narrative.htm",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "pp.1-2 headline, significant items, firmwide results",
+        "note 2d gain adjustment"
+      ],
+      "access": "web read plus hash-verified prior original; fresh local HTTP403",
+      "archive": {
+        "id": "j1",
+        "copied_from": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\jpmorgan-chase\\runs\\2026-10-06-r003\\sources\\2026-q2-release.htm",
+        "file": "prior-2026-q2-release.htm",
+        "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757",
+        "matched_prior_register": true,
+        "read_date": "2026-10-08",
+        "provenance": "existing archived original; fresh local HTTP retrieval failed 403",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfexhibit991narrative.htm"
+      }
+    },
+    {
+      "id": "q2-supplement",
+      "title": "Q2 financial supplement",
+      "classification": "issuer-primary",
+      "publication_date": "2026-07-14",
+      "reporting_period": "2026-Q2",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfex992supplement.htm",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "p.2 financial highlights",
+        "p.10 TCE reconciliation",
+        "p.28 NII ex-Markets"
+      ],
+      "access": "prior original preserved; supporting read; preliminary capital not used",
+      "archive": {
+        "id": "j2",
+        "copied_from": "C:\\Users\\aidan\\Documents\\Company research 2\\companies\\jpmorgan-chase\\runs\\2026-10-06-r003\\sources\\2026-q2-supplement.htm",
+        "file": "prior-2026-q2-supplement.htm",
+        "sha256": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793",
+        "matched_prior_register": true,
+        "read_date": "2026-10-08",
+        "provenance": "existing archived original; fresh local HTTP retrieval failed 403",
+        "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfex992supplement.htm"
+      }
+    },
+    {
+      "id": "q2-presentation",
+      "title": "Q2 earnings presentation",
+      "classification": "issuer-management",
+      "publication_date": "2026-07-14",
+      "reporting_period": "2026-Q2",
+      "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/9e8f3cef-bd2a-4140-b50f-83c4fba3f23c.pdf",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "slide 2 managed tax rate",
+        "slide 4 Card balances/NCO",
+        "slide 5 CIB revenue/costs",
+        "slide 8 outlook",
+        "slide 9 non-GAAP definitions"
+      ],
+      "access": "web text read; original PDF locally archived; no claim of comprehensive visual PDF review",
+      "retrieval": {
+        "id": "q2-presentation",
+        "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/9e8f3cef-bd2a-4140-b50f-83c4fba3f23c.pdf",
+        "retrieved_utc": "2026-10-08T16:37:36.406963+00:00",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "final_url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/9e8f3cef-bd2a-4140-b50f-83c4fba3f23c.pdf",
+        "status": "archived",
+        "file": "q2-presentation.pdf",
+        "sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+        "bytes": 368921
+      }
+    },
+    {
+      "id": "q2-transcript",
+      "title": "Q2 earnings call transcript",
+      "classification": "issuer-management",
+      "publication_date": "2026-07-14",
+      "reporting_period": "2026-Q2",
+      "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/2Q26-earnings-transcript.pdf",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "printed pp.1-2 opening/outlook",
+        "printed p.4 Barnum NII guidance upgrade and Markets offsets",
+        "printed p.6 expense/investment commentary"
+      ],
+      "access": "web text read; original PDF locally archived",
+      "retrieval": {
+        "id": "q2-transcript",
+        "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/2Q26-earnings-transcript.pdf",
+        "retrieved_utc": "2026-10-08T16:37:36.439388+00:00",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "final_url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2026/2nd-quarter/2Q26-earnings-transcript.pdf",
+        "status": "archived",
+        "file": "q2-transcript.pdf",
+        "sha256": "df9042c4c156aa33eed0cec2f5727598504e88e038be31140d98452dc9054540",
+        "bytes": 286751
+      }
+    },
+    {
+      "id": "dividend",
+      "title": "Increased common stock dividend declaration",
+      "classification": "issuer-primary",
+      "publication_date": "2026-09-15",
+      "reporting_period": null,
+      "url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-declares-increased-common-stock-dividend-9-15",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "first substantive paragraph"
+      ],
+      "access": "web read and original locally archived",
+      "retrieval": {
+        "id": "dividend",
+        "url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-declares-increased-common-stock-dividend-9-15",
+        "retrieved_utc": "2026-10-08T16:37:36.749477+00:00",
+        "http_status": 200,
+        "content_type": "text/html;charset=utf-8",
+        "final_url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-declares-increased-common-stock-dividend-9-15",
+        "status": "archived",
+        "file": "dividend.html",
+        "sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+        "bytes": 101695
+      }
+    },
+    {
+      "id": "price-history",
+      "title": "JPM stock-price history",
+      "classification": "secondary-market-data",
+      "publication_date": null,
+      "reporting_period": "2026-10-07 close",
+      "url": "https://stockanalysis.com/stocks/jpm/history/",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "7 October row",
+        "8 October intraday snapshot",
+        "page attribution S&P Global Market Intelligence"
+      ],
+      "access": "web read and original locally archived",
+      "retrieval": {
+        "id": "price-history",
+        "url": "https://stockanalysis.com/stocks/jpm/history/",
+        "retrieved_utc": "2026-10-08T16:37:36.861889+00:00",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://stockanalysis.com/stocks/jpm/history/",
+        "status": "archived",
+        "file": "price-history.html",
+        "sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+        "bytes": 111931
+      }
+    },
+    {
+      "id": "earningswhispers",
+      "title": "JPM upcoming earnings expectations",
+      "classification": "external-estimate-provider",
+      "publication_date": null,
+      "reporting_period": "2026-Q3",
+      "url": "https://www.earningswhispers.com/stocks/JPM",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "overview paragraph",
+        "earnings panel"
+      ],
+      "access": "web read and original locally archived; estimate cutoff/definitions insufficient",
+      "retrieval": {
+        "id": "earningswhispers",
+        "url": "https://www.earningswhispers.com/stocks/JPM",
+        "retrieved_utc": "2026-10-08T16:41:19.546109+00:00",
+        "status": "archived",
+        "http_status": 200,
+        "file": "earningswhispers.html",
+        "sha256": "03b3bec44767094858af5442e6ac2079ce45240d783925cc8eb39877375bf592",
+        "bytes": 157550
+      }
+    },
+    {
+      "id": "tipranks",
+      "title": "JPM earnings data",
+      "classification": "external-estimate-provider",
+      "publication_date": null,
+      "reporting_period": "2026-Q3",
+      "url": "https://www.tipranks.com/stocks/jpm/earnings",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "Earnings Data",
+        "earnings history Q3 forecast row"
+      ],
+      "access": "web read; local HTTP403; opened EPS 5.90 supersedes search snippet",
+      "retrieval": {
+        "id": "tipranks",
+        "url": "https://www.tipranks.com/stocks/jpm/earnings",
+        "retrieved_utc": "2026-10-08T16:41:21.491918+00:00",
+        "status": "failed",
+        "http_status": 403,
+        "error": "HTTP Error 403: Forbidden"
+      }
+    },
+    {
+      "id": "sec-submissions",
+      "title": "SEC issuer submissions metadata",
+      "classification": "regulator-discovery",
+      "publication_date": null,
+      "reporting_period": null,
+      "url": "https://data.sec.gov/submissions/CIK0000019617.json",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "issuer identity and tickers/exchanges",
+        "recent forms 8-K and 10-Q since July"
+      ],
+      "access": "locally archived JSON read; limited discovery, not full news coverage",
+      "retrieval": {
+        "id": "sec-submissions",
+        "url": "https://data.sec.gov/submissions/CIK0000019617.json",
+        "retrieved_utc": "2026-10-08T16:37:36.956335+00:00",
+        "http_status": 200,
+        "content_type": "application/json",
+        "final_url": "https://data.sec.gov/submissions/CIK0000019617.json",
+        "status": "archived",
+        "file": "sec-submissions.json",
+        "sha256": "b9497b97a039d2046c097d552149997607e78fc96509c0ee05198d2e7dca4ada",
+        "bytes": 4641180
+      }
+    },
+    {
+      "id": "july-financing",
+      "title": "July 23 financing 8-K",
+      "classification": "issuer-primary",
+      "publication_date": "2026-07-23",
+      "reporting_period": null,
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000119312526314128/d103985d8k.htm",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "cover common security listing",
+        "Item 8.01 note offerings"
+      ],
+      "access": "web full filing read; no local archive"
+    },
+    {
+      "id": "september-commentary",
+      "title": "Petno Barclays conference transcript via Quartr / Stock Analysis",
+      "classification": "management-commentary-via-secondary-transcript",
+      "publication_date": "2026-09-15",
+      "reporting_period": "2026-Q3 outlook",
+      "url": "https://stockanalysis.com/stocks/jpm/transcripts/737244-barclays-24th-annual-global-financial-services-conference/",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "Goldberg quarter-to-date trading/IB-fee question and Petno answer; archived text lines 197-221",
+        "deposit competition discussion",
+        "CIB through-cycle return discussion"
+      ],
+      "access": "hash-matched earlier original and refreshed web text read; issuer audio not independently transcribed",
+      "archive": {
+        "file": "september-transcript.html",
+        "url": "https://stockanalysis.com/stocks/jpm/transcripts/737244-barclays-24th-annual-global-financial-services-conference/",
+        "accessed_at": "2026-10-08T11:05:00.037450+00:00",
+        "status": "archived",
+        "bytes": 281488,
+        "sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+        "content_type": "text/html"
+      }
+    },
+    {
+      "id": "event-issuer-domain",
+      "title": "Third-quarter earnings notice on issuer domain",
+      "classification": "issuer-primary",
+      "publication_date": "2026-09-17",
+      "reporting_period": null,
+      "url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-to-host-third-quarter-2026-earnings-call",
+      "read": true,
+      "read_on": "2026-10-08",
+      "locations_read": [
+        "opening release/call paragraph"
+      ],
+      "access": "web page read; earlier original verified against its hash",
+      "archive": {
+        "file": "q3-event.html",
+        "url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-to-host-third-quarter-2026-earnings-call",
+        "accessed_at": "2026-10-08T11:03:30.713369+00:00",
+        "status": "archived",
+        "content_type": "text/html;charset=utf-8",
+        "final_url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-to-host-third-quarter-2026-earnings-call",
+        "bytes": 103219,
+        "sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9"
+      }
+    }
+  ],
+  "archive_registers": [
+    "evidence/2026-10-08-jpm/retrieval-register.json",
+    "evidence/2026-10-08-jpm/prior-archive-provenance.json",
+    "evidence/2026-10-08-jpm/extra-retrieval-register.json"
+  ],
+  "earlier_archive_integrity": {
+    "checked_on": "2026-10-08",
+    "records": [
+      {
+        "file": "q2-10q.pdf",
+        "expected_sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7",
+        "actual_sha256": "6d5657cc44b553a2784691d6382eff51ad4b164b232bf0660ec47f061b9a44b7",
+        "match": true,
+        "original_capture_utc": "2026-10-08T11:03:30.710211+00:00"
+      },
+      {
+        "file": "q2-presentation.pdf",
+        "expected_sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+        "actual_sha256": "0aa34b47e7b4cedd830816750fc94210be47e42793a71e12efdeedababe1d257",
+        "match": true,
+        "original_capture_utc": "2026-10-08T11:03:30.711217+00:00"
+      },
+      {
+        "file": "q3-event.html",
+        "expected_sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+        "actual_sha256": "fc4a9fcec078a35876aa3e624fff747d8fd17cf45f70478d5577fca7466f0aa9",
+        "match": true,
+        "original_capture_utc": "2026-10-08T11:03:30.713369+00:00"
+      },
+      {
+        "file": "events.html",
+        "expected_sha256": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241",
+        "actual_sha256": "bea7548c80abfea2cafe6f86acff903b4928c1f3cc323029bd70a99336a66241",
+        "match": true,
+        "original_capture_utc": "2026-10-08T11:03:30.727727+00:00"
+      },
+      {
+        "file": "marketbeat.html",
+        "expected_sha256": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40",
+        "actual_sha256": "6254f80c250dd14ff4096ed1cf6c87ca6c1cf4db35132022f61886e27b7dca40",
+        "match": true,
+        "original_capture_utc": "2026-10-08T11:03:30.792662+00:00"
+      },
+      {
+        "file": "q2-supplement.pdf",
+        "expected_sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60",
+        "actual_sha256": "1cfded5212f39427c0341a9687e523fb9ae2b38cf8a86a2dfc6162a45528ea60",
+        "match": true,
+        "original_capture_utc": "2026-10-08T11:05:00.035450+00:00"
+      },
+      {
+        "file": "september-transcript.html",
+        "expected_sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+        "actual_sha256": "4903f741140ed15d93d7968759e155dbc5ec89bcd51ac14c83e6cb811f0d75a9",
+        "match": true,
+        "original_capture_utc": "2026-10-08T11:05:00.037450+00:00"
+      },
+      {
+        "file": "dividend.html",
+        "expected_sha256": "9c0cc13ed702a2684bcec487f1f07b3d77e4d1fc3620c864a2f09d5aaf631806",
+        "actual_sha256": "4a4ef4217af0877085a93e48442d67a65a73a8e5d4494c851d75cbde0c6a612c",
+        "match": false,
+        "original_capture_utc": "2026-10-08T11:07:34.249913+00:00"
+      },
+      {
+        "file": "price-history.html",
+        "expected_sha256": "e88eacbfacaac02b5d8a769c87af1532ea379b88c7edd6cd0422fa5a1dba01c8",
+        "actual_sha256": "6a3f81ea1cae844a02ceb1feb1c23d92017bc03ae8b9a1e6f91ccbbdd88be511",
+        "match": false,
+        "original_capture_utc": "2026-10-08T11:07:35.025095+00:00"
+      }
+    ],
+    "collision_note": "Current author reused price-history.html and dividend.html for later successful captures before noticing pre-existing originals. Their old raw bytes are not verified recoverable. Earlier extracted text and historical manifest remain; use retrieval-register.json for present hashes and timestamped duplicates for new snapshot. Other matched files remain valid originals; no silent success claim."
+  },
+  "new_snapshot_duplicates": [
+    "evidence/2026-10-08-jpm/price-history-20261008T163737Z.html",
+    "evidence/2026-10-08-jpm/dividend-20261008T163737Z.html"
+  ],
+  "self_review": {
+    "arithmetic": "Decimal calculations and dimensional checks completed; independent analytical review still pending",
+    "issues_resolved": [
+      "replaced preliminary 14.1% capital with finalized 14.2%",
+      "separated one-off book increment and recurring EPS effect",
+      "did not count Markets NII without offsets",
+      "did not credit new buyer with record-date-past dividend",
+      "rejected treating constant-multiple sensitivity as a target range"
+    ],
+    "not_certification": true
+  }
+}

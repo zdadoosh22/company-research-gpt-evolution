@@ -1,0 +1,732 @@
+COMPANY RESEARCH 2 - CHAT ONBOARDING COPY. Captured 9 October 2026. Local authoritative originals remain in Windows. This is not automatic synchronisation or a new approval.
+STATUS RECONCILIATION: The general pilot status is dated 7 October. The observation status/resume are dated 9 October and record 292 engineering checks, not checks rerun for this kit. The latest saved Netflix follow-up says focused work complete, independent review pending, valuation/positive entry withheld; that supersedes earlier wording saying it is underway. No later completed Netflix independent review was found in the inspected validation directory. No approved pilot, live recommendation, verified broker funding or phone delivery is established. This kit does not recover the full Work transcript or establish a currently active task.
+
+===== BEGIN SOURCE: validation\status.json | SHA256: c4c0c34f4deff103ac473445af1871eb5c917328eca90950f9b5d4d382e6d683 =====
+{
+  "date": "2026-10-07",
+  "implementation": "workspace and supporting tools implemented; pilot packages produced",
+  "workflow_ready": false,
+  "approval_status": "Focused Astra audit complete; complete operating-company pilot and cost/quality workflow validation remain open.",
+  "unit_checks_passed": 51,
+  "pilot_exports": {
+    "APP": {
+      "run": "companies\\applovin-corporation\\runs\\2026-10-06-r002",
+      "status": "partial",
+      "standalone_pages": 3,
+      "full_report_pages": 10,
+      "audit": "complete-with-limitations"
+    },
+    "JPM": {
+      "run": "companies\\jpmorgan-chase\\runs\\2026-10-06-r003",
+      "status": "partial",
+      "scope": "finalized capital/dividend evidence; finite controlled distribution/ownership path",
+      "audit": "complete-with-limitations",
+      "pages": 3
+    },
+    "Unilever": {
+      "run": "companies\\unilever-plc\\runs\\2026-10-06-r002",
+      "status": "partial",
+      "scope": "focused IFRS, scope and currency evidence",
+      "audit": "complete-with-limitations"
+    }
+  },
+  "export_reimport_recalculation": "passed for all three workbooks",
+  "native_excel_verified": false,
+  "context_reconstruction": "Fresh agent without chat history successfully loaded r002 scopes and continuation; not a separate UI chat or blinded model comparison.",
+  "app_project_registration": "user must open the folder as a local project; no supported registration tool",
+  "stronger_review": "completed-with-explicit-analytical-limits",
+  "model_cost_quality_validation": "Configured 6.1 Sol High post-correction check passed selected arithmetic/context tests; insufficient to approve cheapest workflow or exact cost comparison.",
+  "reference_repository": "unchanged; inspected hashes verified",
+  "historical_conversation_copied": false,
+  "paid_services_or_background_automations_created": false,
+  "export_validation": "all exported formulas/cached outputs and PDF opening/link checks passed",
+  "audit_record": "validation/astra-audit.json",
+  "workbook_mutation_checks_passed": 122,
+  "no_quote_fixture": "export/import and missing-return validation passed",
+  "foundation_reviews": "validation/foundation-reviews",
+  "focused_audit_goal": "complete; verification in validation/completion-audit.json",
+  "remaining_work": "Company-specific APP replacement and broader research workflow acceptance; see validation/continuation.md."
+}
+
+===== END SOURCE: validation\status.json =====
+
+
+===== BEGIN SOURCE: validation\continuation.md | SHA256: adf2427b7d6653a01c0eb36b7092c48aa73cc6b465050f638678f63a6b7023cc =====
+# Company research 2 — next session
+
+The focused Astra audit is complete. Corrections and explicit analytical limits are durable in validation/astra-audit.json and audit-report.md. Original r001 files and inspected reference files remain unchanged. Approved methodology remains1.0.0. Do not rerun work/audit_correct.py or work/extend_bank_pilot.py blindly; they create/rewrite revisions.
+
+Latest active APP and Unilever remain r002 (partial); JPM is r003 (partial). Load company indexes and run records first. Do not publish these as approved security valuations.
+
+Further research completed: APP coupons, financing, leases and disclosed award schedules; APP reinvestment/capitalisation/cloud/R&D/WC; JPM finalized capital and September dividend. Notes are in validation/foundation-reviews. Parent independently recomputed JPM controlled finite-path fixture; real JPM regulatory distribution forecast remains unvalidated.
+
+Sol High configured fresh-context check reproduced selected APP/JPM/Unilever arithmetic and reconstructed continuation. This is post-correction validation exposed to mandatory lessons, not a blinded comparison or cheapest-model certification. Native Excel remains untested.
+
+Next substantive work: construct a company-specific APP finite operating transition and renewal/cash-cost treatment, using finite acquired amortisation, correctly classified operating WC and economic compensation. Astra's bounded follow-up challenges universal withholding: exact daily cash/shares are not always essential if latest-disclosed snapshots and uncertainty are explicit and materially bounded. Remove financing accruals from broader WC if lease debt/service is separately included; narrow AR-minus-AP avoids that contamination. The final Astra follow-up is preserved in validation/foundation-reviews/app-followup-astra.md; use its corrected minimum construction when beginning the replacement. Keep the five-year shareholder horizon separate from a longer business forecast/transition. Quantify financing, existing claims and future compensation without double counting. Build a new research revision rather than altering closed audit artifacts.
+
+Read validation/status.json for remaining acceptance requirements. Complete operating-company thesis, real bank capital/ownership forecast, full global thesis and prospective model cost/quality comparison are still open. At completion of this research audit, no scheduled continuation, paid service or background automation had been created.
+
+Later on 7 October 2026, the user-authorised observation extension added a Windows scheduled monitoring service and isolated manual £300 ledger. This does not complete the research pilots or approve trade instructions. The current mandate is aggressive days-to-months growth, separate from the user's personal long-term holdings. Load monitoring/START-HERE.md, IMPROVEMENT-ROADMAP.md and validation/observation-status.json for that extension. No paid service or trading API was added.
+
+===== END SOURCE: validation\continuation.md =====
+
+
+===== BEGIN SOURCE: validation\astra-audit.json | SHA256: ecbd4b28750ac09244c8b87d33b91c01f30d920f69d575fe4a8123a085403897 =====
+{
+  "date": "2026-10-07",
+  "research_cutoff": "2026-10-06",
+  "status": "complete-with-explicit-analytical-limits",
+  "scope": "Focused arithmetic, claims, sector-substitution and evidence-to-conclusion audit of the three original pilots and r002 corrections.",
+  "reviewer": {
+    "agent": "astra_audit",
+    "configured_model": "gpt-6-astra",
+    "reasoning": "high",
+    "read_only": true,
+    "identity_limit": "Configuration known; no backend model-identity attestation available."
+  },
+  "additional_review": {
+    "agent": "calculation_review",
+    "configured_model": "inherited parent configuration; not independently identified",
+    "read_only": true
+  },
+  "review_boundary": "Astra independently reproduced four APP cases and inspected final residual corrections/test records. Parent executed final mutations and visual checks. Astra did not rerun final mutation tests or test native Excel.",
+  "findings": [
+    {
+      "id": "F01",
+      "severity": "P1",
+      "finding": "Borrowing created cash without linked debt service and claims.",
+      "disposition": "fixed",
+      "resolution": "Reject every nonzero borrowing input until a separately validated financing schedule exists.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "F02",
+      "severity": "P2",
+      "finding": "Growing total terminal FCFE conflicted with constant financing interest.",
+      "disposition": "fixed",
+      "resolution": "Value growing pre-interest operating equity cash and constant after-tax interest separately.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "F03",
+      "severity": "P1",
+      "finding": "Blank and domain guards did not protect all dependent outputs.",
+      "disposition": "fixed",
+      "resolution": "Guard selected inputs, dates, sensitivities and terminal cash; bank selectors and supporting outputs; scope-compatible Unilever TTM and margins. 122 mutation checks recorded.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "F04",
+      "severity": "P2",
+      "finding": "Rounded USD3.6bn debt was treated as exact USD3600m principal.",
+      "disposition": "fixed",
+      "resolution": "Record December 2025 detailed USD3550m note principal and distinguish dates, carrying values and cash interest.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "F05",
+      "severity": "P2",
+      "finding": "Known ownership evidence omitted from uncertainty assessment.",
+      "disposition": "fixed-with-analytical-limit",
+      "resolution": "Record July outstanding shares and December disclosed awards. Mixed-date EPS proxy explicitly remains unapproved as a current claim count.",
+      "resolved": true,
+      "limits_conclusion": true,
+      "material": true
+    },
+    {
+      "id": "F06",
+      "severity": "P2",
+      "finding": "Terminal-value dependence omitted.",
+      "disposition": "fixed",
+      "resolution": "Disclose approximately 64.2%, 75.2%, 80.8% bear/base/bull terminal dependence.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "F07",
+      "severity": "P2",
+      "finding": "Ownership sensitivity and bank capital comparison exceeded their scope.",
+      "disposition": "fixed",
+      "resolution": "Restrict 5% ownership scaling to zero fixed-cash buybacks; attribute Advanced versus Standardized total-capital comparison precisely.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "R01",
+      "severity": "P2",
+      "finding": "Residual stale APP share/debt prose.",
+      "disposition": "fixed",
+      "resolution": "335.989m is explicitly July outstanding plus June EPS awards; December note principal is separately dated.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "R02",
+      "severity": "P1",
+      "finding": "Sensitivity cells lacked positive terminal-FCFE checks at each growth setting.",
+      "disposition": "fixed",
+      "resolution": "Each grid cell validates its own terminal cash, rate domains and active inputs; targeted negative-terminal fixture passes.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "R03",
+      "severity": "P2",
+      "finding": "Invalid JPM selector could error or truncate fractional values.",
+      "disposition": "fixed",
+      "resolution": "Require a numeric integer in 1..4 before CHOOSE; blank, zero, negative, 5, fractional and text cases withheld.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "C01",
+      "severity": "P2",
+      "finding": "Missing quote broke workbook case and artifact validation.",
+      "disposition": "fixed",
+      "resolution": "Support WITHHELD price-dependent returns while retaining conditional valuation arithmetic. Actual no-quote export/import fixture validated.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "C02",
+      "severity": "P2",
+      "finding": "Bank helper bypassed finite/non-boolean numeric validation.",
+      "disposition": "fixed",
+      "resolution": "Validate all bank numeric inputs; NaN, infinity, boolean and invalid domains rejected.",
+      "resolved": true,
+      "material": true
+    },
+    {
+      "id": "C03",
+      "severity": "P2",
+      "finding": "XIRR fixed lower bound could report an incorrect near-total-loss return.",
+      "disposition": "fixed",
+      "resolution": "Solve in log(1+r), validate bracketing and residual; extreme-loss and unrepresentable-loss tests added.",
+      "resolved": true,
+      "material": true
+    }
+  ],
+  "analytical_limits": {
+    "APP": [
+      "Mature reinvestment and margin persistence unsupported.",
+      "Lease/cash-interest financing and current ownership claim reconciliation incomplete.",
+      "June-to-October cash/operating bridge and independent valuation corroboration incomplete.",
+      "Intrinsic value, investment judgement, accepted prospective returns and actionable entries withheld; displayed numbers are conditional arithmetic illustrations."
+    ],
+    "JPM": [
+      "Reported average ROTCE is not automatically a long-run return on opening tangible equity.",
+      "No capital-constrained forward distribution path verified; steady-state values are illustrative.",
+      "No accepted price-dependent return or entry conclusion."
+    ],
+    "ULVR": [
+      "Focused IFRS/scope/currency validation only, not a full company thesis.",
+      "Price and FX absent; security valuation and prospective returns withheld."
+    ]
+  },
+  "workflow_approved": false,
+  "native_excel_verified": false,
+  "per_stage_cost": "Unavailable; account snapshots are shared and not precise task costs.",
+  "followup_review": "validation/foundation-reviews/app-followup-astra.md",
+  "followup_disposition": "Conditional valuation can use materially bounded dated snapshots; corrected r002 is still illustrative. Broader operating WC needs financing-accrual correction before reuse. New replacement model not part of this completed focused audit.",
+  "completion_verified": "2026-10-07T13:04:37.675179+00:00"
+}
+
+===== END SOURCE: validation\astra-audit.json =====
+
+
+===== BEGIN SOURCE: validation\observation-status.json | SHA256: c0bdc60487e43a2f4cf10f0a481b60f6737441685c859ec80ac74e2a2bafa7e1 =====
+{
+  "date": "2026-10-09",
+  "implementation": "local observation foundation implemented and Windows task started",
+  "mode": "observation-only",
+  "real_recommendations_enabled": false,
+  "broker_execution_implemented": false,
+  "funding_confirmed": true,
+  "funding_basis": "User declared the isolated £300 allocation; no transfer or independent broker-cash verification",
+  "planned_capital_gbp": "300",
+  "engineering_tests_passed": 292,
+  "engineering_tests_scope": "Latest completed verification on 9 October: 292 tests; 110 protected files unchanged and live/restored database integrity checked. Includes discovery-study context containment, corruption-safe source archiving, paper decisions, scoped queue recovery and operational evidence reporting. Engineering evidence only; no investment-quality or elapsed-trial approval.",
+  "refinement_record": "validation/refinement-report.json and validation/refinement-report.md",
+  "mandate": "Aggressive shorter-term growth over days to a few months; no intraday requirement; compare explicit loss controls and thesis-based exits",
+  "numerical_portfolio_policy": "Initial paper design: three GBP100 per-idea ceilings, one new unreported instruction; compare two/four tranche variants. Explicit experimental choice in DECISION-SCOPE.md, not empirically optimal and not activated for real trades. Stop rules remain opportunity-specific and require reviewed supplied evidence.",
+  "subscription_smoke": {
+    "authentication": "ChatGPT subscription verified by actual CLI run",
+    "model_requested": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "speed": "standard",
+    "result": "needs-review draft; no analytical approval",
+    "actual_model_identity": "not reported in CLI events; requested configuration supplied to CLI, backend identity not independently verified",
+    "run_id": "20261007T203702Z-217aebb99f16",
+    "scope": "workspace status flag only; not a company research validation"
+  },
+  "windows_task": {
+    "name": "CompanyResearch2-Observation",
+    "registered": true,
+    "started_and_tick_verified": true,
+    "stop_remove_reregister_restart_tested": true,
+    "requires": "awake computer, signed-in Windows user and online services for remote work",
+    "power_settings_changed": false
+  },
+  "primary_sources": {
+    "SEC_APP": "live baseline retrieved and issuer checked",
+    "SEC_JPM": "live baseline retrieved and issuer checked",
+    "SEC_Unilever": "live baseline retrieved and issuer checked",
+    "Unilever_results_page": "HTTP 403; monitored coverage gap",
+    "Unilever_regulatory_page": "HTTP 403; monitored coverage gap",
+    "coverage": "configured sources only, not comprehensive news or UK announcement coverage",
+    "SEC_AMD": "Live issuer-checked baseline retrieved 9 October; discovery only",
+    "SEC_UBER": "Live issuer-checked baseline retrieved 9 October; discovery only",
+    "SEC_NFLX": "Live issuer-checked baseline retrieved 9 October; discovery only"
+  },
+  "phone": {
+    "transport": "Telegram private bot implemented; simulated transport and Windows DPAPI tested",
+    "credentials_configured": false,
+    "real_messages_sent": false,
+    "iPhone_verified": false
+  },
+  "remaining_gates": [
+    "validated portfolio policy; broker cash/holdings reconciliation before real trade instructions",
+    "company research acceptance and actual required stronger-model review",
+    "Telegram credentials and real iPhone delivery/acknowledgement test",
+    "at least 14 days of observed operation plus failure tests",
+    "verified unattended quote acquisition before independent price-opportunity detection",
+    "Gemini exact subscription and quality validation before assigning work"
+  ],
+  "integrity": "110 pre-existing company/methodology files unchanged; existing pilot statuses preserved",
+  "paid_model_api_fallback": false,
+  "background_mechanism": "explicitly user-authorised Windows Task Scheduler service",
+  "continuation": "Read validation/resume-2026-10-09.md, monitoring/NEXT-RESEARCH-CYCLE.md and live state/observation/status.json. Preserve dated rejected candidates, resolve analytical findings and complete specific phone/account/data/trial evidence. No repeated permission or satisfaction question is needed.",
+  "sufficiency_assessment": "monitoring/SUFFICIENCY-REVIEW.md; sufficient for controlled observation, insufficient for real instructions",
+  "first_short_horizon_screen": "monitoring/studies/2026-10-07-unilever-short-horizon-screen.md; dated event identified, investment opportunity withheld",
+  "source_history": "Per-source baseline/change/unchanged/failure counts and timings recorded from 7 October 2026 22:05 UTC; prior checks not reconstructed",
+  "scoped_model_queue": "Implemented as explicit-run-only, separate database; no background scoped worker. CLI subscription login/options verified; real adapter model-route execution not yet verified. Current frozen JPM package v2 is validated, not queued or run.",
+  "operational_evidence": "validation/operational-evidence-2026-10-09.json; actual check counts and gaps, uptime/acceptance not inferred",
+  "first_scoped_decision": "JPM pre-event entry rejected; independently checked and actual selected Astra analytical challenge completed for rejection scope only. Parent dispositions saved; positive entry/targets withheld. Backend identity unreported.",
+  "discovery_review": "Completed separate explicitly selected Astra High screening challenge: 35 reproduced calculations and 44 source/derived hashes. Parent dispositions saved. Research priority Netflix then AMD then Uber for tractability, not return ranking; no accepted entry. Netflix opportunity follow-up and separate challenge underway.",
+  "discovery_cohort": "monitoring/research-universe-2026-10-09.json; fresh AMD/UBER/NFLX issuer-checked SEC baselines, no historical jobs or investment selections"
+}
+
+===== END SOURCE: validation\observation-status.json =====
+
+
+===== BEGIN SOURCE: validation\resume-2026-10-09.md | SHA256: 87474df65f825f2c0dfb55efa04f74c2eb604a8b191af9eee0121765a47c455a =====
+# Resume checkpoint — 9 October 2026
+
+Usage resumed. The Windows task was queried and is Running; its live snapshot showed a recent tick, declared £300 cash, no holdings, no pending research jobs and no Telegram configuration. Broker cash remains independently unverified. SEC sources have successful unchanged checks; the two Unilever pages still have HTTP403 coverage failures. A complete-source success timestamp remains absent because that field requires every configured source to succeed in the same pass.
+
+The saved checkpoint passed 273 tests, including the fifteen scoped research adapter tests. One further service test now checks that partial source success remains visible independently of complete-pass failure. The status now records per-source last attempt, success and failure with the aggregate field's meaning explicit. This is reporting clarity, not repaired Unilever coverage.
+
+The original JPM scoped dossier remains immutable and rejects pre-event entry. A dated prospective candidate disposition was saved under monitoring/decisions; it binds the dossier's actual bytes and preserves the rejected idea before the event. It contains no entry price, stop, quantity, commitment or invented execution. A passive comparator and complete opportunity-specific exit arms must be selected before any accepted-entry experiment. A rejection does not require fabricated fills or a placeholder investment benchmark.
+
+Active work at this checkpoint: independently challenge the archived JPM evidence and arithmetic; finish scoped adapter queue/recovery integration and setup documentation. The independent inherited-model review is supplemental and must not be labelled Astra. A separately selected actual Astra review remains required by workflows/model-review.md. Frozen model jobs never constitute approval merely because their output validates against a schema.
+
+Integration update: 289 tests now pass, all 110 protected files remain unchanged, and live/restored database integrity passes. The running Windows task was stopped and restarted to load the source-status reporting change; a fresh tick and the new per-source fields were verified. The operational evidence report and NEXT-RESEARCH-CYCLE.md are saved. The scoped queue is explicit-run-only and isolated; no model job has been enqueued/run through it. The original v1 JPM package became stale when the parent updated DECISION-SCOPE's implementation paragraph; its hash rejection was observed and preserved. Newly frozen v2 validates all 15 bound files. The supplemental JPM review is saved and supports the rejection with four P2 qualifications; actual selected Astra review is separate.
+
+Continue from current files rather than repeating completed architecture work. Verify all tests after pending edits, preserve protected research hashes, and restart the already-authorised Windows task only as needed to load changed service code. No phone connection, paid fallback, broker access or live recommendation is authorised by a passing test. Existing implementation authority persists; do not ask another satisfaction question.
+
+Final analytical update: the actual selected Astra challenge is saved as validation/jpm-astra-review-2026-10-09.md/.json. It accepts rejection scope only, with backend identity unreported. Parent dispositions under monitoring/decisions explicitly withdraw the undefined weak-earnings inference and distinguish conditional RWA stress from actual improved headroom. All 21 independent arithmetic checks passed; positive-entry economics and operational gates remain withheld. The monitor archive writer additionally saves new content atomically and rejects a corrupted existing hash-named archive without overwriting it. Latest full verification passed 290 tests; 110 protected files and live/restored database integrity remain sound. Next priority is evidence-led candidate discovery and a defensible real opportunity, rather than repeated architecture polishing.
+
+Midday resume: saved AMD, Uber and Netflix discovery screens were verified before restarting work. The interrupted discovery review had no surviving agent or completed review file; a fresh explicitly selected Astra High review was started, with backend identity still independently unknown. Full verification now passes 292 tests, including explicit discovery-study context and path containment checks. The six-source research cohort is frozen in monitoring/research-universe-2026-10-09.json, with screen hashes and independently fetched SEC identities. The prior config is preserved under validation/config-history. AMD, Uber and Netflix filing feeds obtained fresh baselines at approximately 12:50 UTC; zero historical filing changes or model jobs were generated. The authorised Windows task was stopped for the baseline pass and restarted successfully to load the saved code and config. Two Unilever web-source HTTP403 gaps persist. No candidate approval, model fallback, broker connection or real recommendation was introduced.
+
+Discovery review completed: validation/discovery-challenge-2026-10-09.md/.json contains eleven analytical findings, 35 reproduced calculations and 44 matching source/derived hashes. Parent accepted the limited findings in monitoring/decisions/2026-10-09-discovery-review-disposition.md. Netflix is first for research tractability/information value, then AMD and Uber; this is not a priced-return ranking. A Netflix opportunity follow-up is underway to deepen sustainable economics, opposing evidence and expectations/price requirements. RESEARCH-EVENT-WINDOWS-2026-10-09.md records known windows and the coverage lag of the existing cadence without promising immediate detection or adding jobs.
+
+===== END SOURCE: validation\resume-2026-10-09.md =====
+
+
+===== BEGIN SOURCE: monitoring\decisions\2026-10-09-jpm-review-disposition.md | SHA256: b26835e31bdc290788234ead570cd190974107a7d699f7baf84f78aa1f2ef53e =====
+# JPM rejection: review disposition
+
+9 October 2026. The frozen 8 October dossier and original dated rejection remain unchanged. The supplemental independent check and separately selected Astra analytical challenge support declining a pre-event entry. This acceptance is confined to a rejection analysis. It grants no positive-entry, price-target, company-publication, portfolio or execution authority.
+
+Review bindings: `validation/jpm-astra-review-2026-10-09.md`, SHA256 `bd942b6598fdaed76c8e6622ed536dc0ebf7702ee73a14c190376158d7c8f15d`; adjacent JSON, SHA256 `3b1b82f8fdadc0a2d8de840f45a45a978221d8ddd4612397c2a9fdcab05c5ab4`. The requested review route was gpt-6-astra/high; runtime backend identity remains unreported and independently unverified.
+
+Adopt two explicit interpretive corrections without rewriting the historical dossier. External EPS labels cannot establish that market participants do or do not expect 'weak earnings' without a defined accounting/period baseline. Withdraw that affirmative inference; the acceptable conclusion is that no reconciled expectations mismatch was established. The fixed-capital RWA stress is a conditional sensitivity, not evidence that actual headroom was depleting: Advanced total-capital headroom increased by $5.49405bn over the reported first half. Retain the dated constraints and stress while reflecting that favourable contrary evidence.
+
+Retain the remaining qualifications: marginal EPS conversion simplifies participating-security allocation; diagnostic multiples and stale tangible book do not establish price-response endpoints; the two overwritten old snapshots cannot be recovered by changing hashes; unarchived TipRanks/July financing assertions are excluded from affirmative independent acceptance. Neither a strong franchise nor this rejection predicts relative performance against cash.
+
+The positive-entry blockers remain unresolved: reconciled expectations, persistent incremental earnings, capital/distribution economics, independently justified valuation and delayed-action feasibility. No commitment, entry ceiling, stop, shares or fill is created. Reconsideration requires new dated evidence and a new decision, rather than automatic promotion of this rejection after a price move. Preserve it in prospective outcome evaluation.
+
+===== END SOURCE: monitoring\decisions\2026-10-09-jpm-review-disposition.md =====
+
+
+===== BEGIN SOURCE: monitoring\decisions\2026-10-09-discovery-review-disposition.md | SHA256: 82b5b56f93dfd40a57d99457c6169e30791b470815565e840dadd01f7fed07cd =====
+# Parent disposition of discovery challenge
+
+9 October 2026. Read alongside `validation/discovery-challenge-2026-10-09.md` and its JSON. This is a research continuation decision, not a portfolio decision, investment approval or execution instruction. Historical discovery screens remain unchanged.
+
+The independent review was explicitly routed to Astra High in a separate context; backend identity was not independently exposed. Its 35 reproduced numerical checks and 44 registered byte hashes support the specified calculations and provenance only. They do not establish source completeness, forecast accuracy or expected returns.
+
+## Accepted findings
+
+Accept C1: no accepted entry is currently supported. The AMD/Uber pre-event rejection wording concerns an incomplete entry case; it does not establish universal economic unattractiveness. Missing executable prices and account/phone readiness are operational limitations, not proofs of overvaluation or superior cash returns.
+
+Accept N1–N3: Netflix's termination receipt must be separated from recurring cash and below-operating-income earnings, with related tax cash treatment unresolved. Do not deduct it from operating income or call gross subtraction an after-tax normalization. Preserve the existing Q4 guidance bridge as a baseline, with seasonality and expense timing unresolved. Authenticate financing sources and roll debt, cash, content obligations and split-adjusted claims forward separately.
+
+Accept A1–A3: AMD's incompatible estimate definitions cannot create a surprise hurdle. Expand the holding-window funding schedule to include the reviewed guarantees, uncommenced leases, accrued unpaid capital expenditure and matured-note status, testing overlaps rather than mechanically summing maxima into debt. Link customer demand/financing, conditional warrants and acquisition shares to the same business outcomes. Conditional ownership reduction is distinct from percentage shares issued and current diluted EPS.
+
+Accept U1–U3: Uber's tender deadline is distinct from acquisition closing and later synergies. Reconcile compensation scopes and insurance cash timing before claiming normalized owner cash. Add Careem consolidation and expired unused funding availability to the organic-growth/liquidity roll-forward; neither finding alone establishes financial deterioration.
+
+Accept P1: corrected actual-byte hashes and original manifests remain preserved. A hash match does not authenticate an unverified mirror or turn rendered excerpts into complete primary filings. Material source gaps stay explicit in later work.
+
+## Next work and opposing case
+
+Prioritize Netflix for a focused opportunity follow-up, then AMD, then Uber. This ordering reflects proximity, testability and research tractability; it is not a quantitative return ranking. AMD's larger possible earnings revision and richer September management evidence are the strongest competing reason to change the ordering. Do not infer that Netflix is the better investment without price-linked economic analysis.
+
+The Netflix follow-up must build sustainable cash/earnings and ownership scenarios, assess what is already expected, and distinguish a genuine residual opportunity from a correct business thesis that reprices before the user can act. Maintain adverse, no-repricing and delayed-response cases. Unavailable current evidence withholds the affected valuation rather than inviting an invented buy ceiling.
+
+No target, quantity, stop, commitment, accepted paper entry or capital reservation is created. The discovery-only monitor remains enabled for all three candidates. Broker orders remain manual; operational readiness and portfolio acceptance remain separate from this analytical continuation.
+
+===== END SOURCE: monitoring\decisions\2026-10-09-discovery-review-disposition.md =====
+
+
+===== BEGIN SOURCE: monitoring\studies\2026-10-09-amd-discovery-screen.md | SHA256: e626e1cac3b3183756fa1130cdda8fc9934730fec2df7017a64508de31fa7698 =====
+# AMD: new short-horizon discovery screen
+
+As of 9 October 2026, approximately 00:34-00:37 UTC source collection. **Current pre-event entry rejected; retain as a research candidate.** This is a completed discovery screen awaiting independent challenge, not a complete company thesis, approved valuation, accepted paper entry or instruction. No price ceiling, target, return probability, quantity or allocation is established. The linked JSON contains calculations, classifications, exact source paths and raw SHA-256 hashes.
+
+The analyst is a child agent using the inherited parent model. Its exact backend model identity is not independently exposed; no separate higher-model review is claimed. The approved general methodology remains unchanged, hash `0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6`. This work uses the separately labelled short-horizon extension in DECISION-SCOPE.md. No existing company files were modified.
+
+## Why investigate, and why withhold entry
+
+AMD has a real, dated disclosure capable of changing the earnings outlook: fiscal Q3 results on **3 November after market close**, followed by the **5pm ET conference call**. The issuer's 6 October notice verifies this. On that date the call is **22:00 London / 22:00 UTC**. The IR calendar labels the event “2pm PDT”, inconsistent with November civil time and the explicit 5pm ET/2pm PT notice; do not turn that label into a one-hour scheduling error. The precise results-release minute is not promised. [Official notice](https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results).
+
+The opportunity question is whether new evidence will support *more durable per-share earnings than already anticipated*, at a price still offering a residual opportunity after hours or days of response delay. Knowing the release date, identifying strong demand or predicting a beat of an inconsistent website estimate does not answer that question. The public guide already implies about $1.93 adjusted quarterly EPS, almost identical to one current provider's $1.94 display. September commentary also already communicated a large 2027 ramp and near-term margin dilution. No demonstrated expectations mismatch remains after those baselines are respected.
+
+## Entity and ownership claims
+
+Advanced Micro Devices, Inc., Delaware, United States; **AMD common stock, $0.01 par value, The Nasdaq Global Select Market**, USD per share. This is the US ordinary/common equity, not an ADR. Verified from the Q2 10-Q cover and 28 September 8-K cover. Trading 212 Stocks ISA instrument availability, fractional support and execution preview are unverified. No price was taken from an unpopulated stock-data HTML shell; its footer says market data is generally delayed 15 minutes. No executable bid/ask or current valuation-price judgement is available.
+
+Ownership cannot be represented just by reported EPS shares. Q2 diluted weighted-average shares were 1,659m; June actual shares were 1,632m. OpenAI and Meta each hold conditional warrants for up to 160m shares at $0.01; none had vested or become exercisable at June end. Full exercise of both, ignoring all other changes, adds 19.61% of June actual shares and leaves existing holders with 83.61% of the enlarged total. That is a conditional stress, not today's dilution or an earnings denominator. It accompanies commercial milestones and possible value creation; neither ignore it nor assume the downside happens independently of the growth conditions.
+
+World Labs is another ownership variable: the 28 September announcement describes an approximately $8.2bn all-stock acquisition expected to close by year-end, subject to conditions. **Item 3.02 of the contemporaneous 8-K** says the issued share number is not yet known and depends on the ten-trading-day VWAP ending two trading days before closing. A falling share price can therefore increase shares issued for the stated consideration. No invented present share count or fixed close date is used. [Filed terms](https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000182/amd-20260926.htm).
+
+## Financial resilience and cash demands
+
+The following are **reported June 27 / six-month actuals in USD millions**, not October cash balances: cash 5,086; short-term investments 8,025; current assets 31,522; current liabilities 12,081; debt principal 3,250. Continuing CFO 5,321 minus cash equipment purchases 1,197 equals **4,124**. However, CFO benefited from a 2,170 accounts-payable inflow while receivables, inventories and prepayments absorbed cash. Removing that payable inflow alone gives 1,954, a sensitivity rather than normalized cash flow. H1 SBC 990 was 4.54% of revenue and economically matters despite the CFO add-back.
+
+These balances and generation argue against an obvious immediate financing emergency, but do not prove spare cash or a completed short-window funding bridge. At June end, unconditional commitments were approximately $30.3bn, including $17.4bn for the remainder of 2026. There were separate leases and guarantees, with subsequent conditional investment commitments up to $5bn and $9.5bn of future long-term lease payments starting 2027/28. These are different timing/contingency categories; do not sum them all as immediately payable debt or double-count amounts later recognized. The $875m 2026 note maturity described in the June filing is now a past-due-date **roll-forward question**, not automatically a current liability or a verified repayment.
+
+The Anthropic partnership includes up to $5bn of strategic investment and deployment of its first gigawatt beginning H1 2027. Deployment capacity is neither recognized revenue nor a verified incremental profit amount. Trace investment funding, customer financing and cash collections separately. World Labs all-stock consideration limits immediate purchase cash use but does not make the acquisition free to shareholders. June disclosure controls were assessed effective by management; the annual auditor/proxy and a full cash/claims roll-forward were not reviewed in this screen. [Q2 filing, statements, Notes 9/10/12 and liquidity discussion](https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm).
+
+## Demand, margin and persistence
+
+The favourable case is economically credible: EPYC CPU demand, Instinct accelerator deployments, broader customer adoption and embedded recovery can expand gross-profit dollars faster than operating costs. Q2 reported Data Center revenue was $6.7bn, up 107%; client grew while gaming contracted. Q2 GAAP EPS $1.38 and non-GAAP $1.66 are incompatible profit definitions, not interchangeable valuation inputs. Prior-year export-control inventory charges inflated growth comparisons; investment gains also affected GAAP income.
+
+The **8 September issuer-hosted Citi transcript, pp 2-4 and 6-7**, updates the mechanism. Management described Q3 as the beginning of MI450 production shipments, a significant Q4 step-up and another in Q1 2027. Rack integration requires more than GPUs: memory, packaging, substrates, small components, software and manufacturing readiness constrain deliverable systems. CFO commentary explicitly indicated slightly lower gross margin than the Q3 56% guide during the Q4/2027 ramp, alongside higher gross-profit dollars and expected operating leverage. CPU/embedded mix may offset part of accelerator dilution. This is a management outlook, not an independently verified outcome.
+
+The **11 September Goldman transcript, pp 4-6 and 8-9**, reiterated much more than doubling Data Center in 2027 and ambitious strategic earnings aspirations. It also warned that CPU revenue per gigawatt depends on workload; no universal multiplier is defensible. September expectations must be the baseline when evaluating November news. “AI demand remains strong” or “2027 will grow rapidly” may merely confirm existing statements. The opposing case is constrained shipments, lower mix margins, customer/concentration financing risk, share issuance and commitments absorbing cash while investors already anticipate exceptional growth. Full independent customer/competitor testing remains outstanding; repeated issuer announcements do not establish independent corroboration.
+
+## Inspectable expectations bridge
+
+The 4 August issuer call (PDF pp 6-7) guided Q3 revenue $13bn +/- $300m, non-GAAP gross margin 56%, opex $3.65bn, other income $55m, tax 13%, diluted shares 1.66bn. On those constant inputs:
+
+`((13,000 x 0.56 - 3,650 + 55) x (1 - 0.13)) / 1,660 = $1.9313 EPS`.
+
+This is a reconstruction of management inputs, not company-issued EPS guidance or a forecast of a surprise. Holding the other inputs fixed, 100bp of gross margin changes EPS by about $0.0681; $300m revenue at 56% margin by $0.0880; $100m opex by $0.0524. Revenue and margin are linked in reality; these sensitivities are not independent scenario endpoints. They show why a revenue beat can be offset by mix or expense. No annualization, valuation multiple or price-target conversion is made.
+
+At collection, **TipRanks** labelled Q3 forecast EPS $1.94; its historical Q2 actual matches adjusted EPS, but the future basis, participant set and contributor cutoff were not established. **AltIndex**, page updated 8 October, labelled $1.35 analyst consensus, without resolving GAAP/adjusted basis or contributor cutoff. Preserve the disagreement; do not average or choose the lower hurdle to manufacture upside. A purported beat of $1.35 would not prove a surprise against $1.94 or the guide bridge. Neither estimate is used for a trade. [TipRanks original estimate publication](https://www.tipranks.com/stocks/amd/earnings), [AltIndex original estimate publication](https://altindex.com/earnings-calendar/amd).
+
+## Delayed response and reassessment
+
+An hours-delayed alert may arrive after after-hours repricing, spread widening or a gap; a buy limit might never fill. One-to-three-day delay could still permit analysis of a persistent 2027 cash/profit revision, but no evidence here establishes an exploitable drift effect. Good fundamentals at a fully repriced quote can be a correct-but-late non-entry. A disappointing release can temporarily reverse before a thesis exit is noticed; an overnight gap can outrun a stop, and a stop-limit can leave shares unsold. Price-loss and thesis/time alternatives therefore require a separate, opportunity-specific frozen case before any accepted entry. No arbitrary percentage is supplied.
+
+Reopen only if new complete results/guidance demonstrate a material *incremental* change to volumes, mix margins, cash/commitments or per-share ownership that can be compared with contemporaneous expectations and a refreshed executable price. Check no-repricing and adverse scenarios, funding/capacity failure, catalyst delay, and the possibility that the stock has already fully reflected the improvement. A portfolio decision must then separately reconcile sleeve cash/exposure/costs, with phone/data/trial acceptance and manual execution envelopes. This screen authorizes none of those stages.
+
+## Evidence and continuation
+
+Eighteen archived source records are in the JSON. Each records URL, publication date where known, access timestamp, raw SHA-256, relative archive path, derived text where applicable, read locations and classification. Originals were collected in three new timestamped folders under `monitoring/studies/evidence/2026-10-09-amd/`; none were overwritten. Filing actuals, interested management guidance, external provider estimates and analyst calculations are separated. HTML-derived text line numbering is local to each snapshot; PDF references use one-based PDF pages. September PDFs are linked directly by AMD's event pages, not third-party transcript copies. The web reader's encoded-plus URLs failed with HTTP403; the original issuer hyperlinks downloaded successfully locally. No authentication or paid fallback was used.
+
+Next work: independent challenge of this rejection and arithmetic; Q3/Q4 complete source refresh; actual debt/cash/commitment and dilution roll-forward; customer/competitor counter-evidence; comparable dated expectations; current executable price/FX and ISA security verification. If those inputs still fail to establish a delayed-entry advantage, retain cash and the rejected-candidate record. Missing annual/full-valuation work is disclosed rather than silently promoted into a complete thesis.
+
+===== END SOURCE: monitoring\studies\2026-10-09-amd-discovery-screen.md =====
+
+
+===== BEGIN SOURCE: monitoring\studies\2026-10-09-uber-discovery-screen.md | SHA256: 4f101e6c8a358b475263c96dca75fe3796a50176030e3305ac5f459d7ed21ff3 =====
+# Uber: new short-horizon discovery screen
+
+As of 9 October 2026, using sources accessed approximately 00:34–00:38 UTC. **Current pre-event entry withheld; retain as a conditional post-disclosure research candidate.** This is a scoped screen for days to a few months, awaiting independent challenge. It is not a complete long-term thesis, an accepted paper entry, portfolio allocation or trading instruction. No price ceiling, quantity, stop, target or expected return is supported here.
+
+Uber has improving operating economics, but a favourable operating story is already public. The evidence reviewed does not establish that its growth is underestimated at the current price, that acquisition economics will become cash for shareholders within this window, or that a remaining opportunity would survive hours or days of manual-response delay. Cash remains the comparison. Rejection reflects an insufficient entry case, not a finding that the business is unattractive at every price.
+
+## Identity, scope and provenance
+
+Uber Technologies, Inc., **NYSE: UBER, Common Stock, par value USD0.00001 per share**, verified against the Q2 2026 10-Q cover, browser-rendered lines 53–57. This ordinary common equity is the subject; it is not Delivery Hero equity, a derivative, CFD or foreign depositary line. Reporting and intended trading currency USD, major-dollar price units. Actual Trading 212 ISA availability, fractional/order eligibility, broker costs and executable bid/ask remain unverified. No current or historical share price is adopted, so current market capitalisation, multiples and market-implied earnings are withheld.
+
+The base methodology SHA is recorded in the companion JSON alongside the separately authorised DECISION-SCOPE addendum. No Uber company run/index was found locally. Existing pilots and the base methodology were not changed. Requested model: inherited parent configuration, no explicit override in this delegation. Actual backend identity was not independently reported. This is the delegated analyst's screening judgement, not an independent Astra review.
+
+Latest financial evidence read: issuer Q2 release dated 5 August, June 30 balance sheet/cash flows and specific Q2 SEC 10-Q excerpts. Latest material transaction release read: 6 October ezCater. The 2025 annual auditor opinion, full governance package, complete award/claim schedule and exhaustive intervening SEC filing history have not been reviewed. These limitations prohibit a complete valuation certificate; they do not prevent a clearly limited rejection.
+
+## Events and what they could actually change
+
+| Public evidence | Classification and causal relevance |
+|---|---|
+| Q3 results call 4 November, 05:00 Pacific / 08:00 Eastern, equivalent to 13:00 London that day | Official 5 October issuer notice, archived numbered text 29–30. This is a call time; exact materials-release time is not separately promised. Earnings may reveal organic demand, monetisation, insurance cost and acquisition financing. A known date itself creates no advantage. |
+| Delivery Hero tender acceptance deadline 5 November, Frankfurt local midnight | Official 27 August offer-publication release, Acceptance Period and Transaction Background paragraphs. Settlement remains expected H2 2027; regulatory and other conditions remain. Tender acceptance is not immediate consolidation, earned synergies, free financing or closing. |
+| ezCater agreement announced 6 October; $2.3bn cash transaction, expected to close in coming months subject to conditions | Issuer release, numbered text 31–37. It expands workplace catering. Claimed non-GAAP profitability/margin accretion and over $2.5bn TTM bookings are management-source statements. No disclosed absolute incremental profit or integrated funding bridge supports a near-term EPS uplift forecast. |
+
+July's Delivery Hero announcement already describes expected EPS accretion at close and high-single-digit accretion by year three. These are management forecasts, not November 2026 earnings. The source distinguishes $14.8bn full-company equity value from $13.7bn adjusted for earlier stake purchases; neither figure is adopted as a present incremental cash payment. SSW's separate conditional purchase of businesses in 14 markets is not treated as certain cash in Uber's bank account. The offer document's approval is not approval of every merger-control condition. Sources: archived July release lines 29–50 and Financing/Transaction Details paragraphs; August release Transaction Background and settlement paragraphs. Full legal offer document not read.
+
+## Business economics and expectations already public
+
+Uber matches mobility riders and drivers, delivery consumers/merchants/couriers, and freight participants. More users and use frequency raise trips; bookings translate into net revenue after varying payments, incentives and principal-versus-agent accounting; unit costs, insurance, marketing, staff and platform investment determine profit. Bookings are not revenue. Q2's UK business-model change reduces reported revenue growth without the same change in underlying economics, so simple revenue/bookings 'take-rate deterioration' would be misleading.
+
+Issuer Q2 operating highlights and segment tables disclose bookings $58.022bn, GAAP operating income $1.890bn and non-GAAP operating income $2.143bn. Delivery and mobility contribute profit while freight remains a small loss and central costs consume part of segment profits. Growth, engagement and leverage are favourable evidence; they do not independently prove customer switching costs or lasting market power. Paid incentives, driver availability, competing apps and autonomous fleets can alter profit per trip. No independent market-share or AV unit-economics forecast is adopted.
+
+The verified public Q3 baseline is **management guidance**, not analyst consensus: bookings $58.25–60.25bn, non-GAAP EPS $0.84–0.88, EBITDA $2.86–2.96bn (5 August release, Outlook lines 47–52). Midpoints $59.25bn and $0.86 are arithmetic, not my forecasts. Official IR, Q2 and event sources searched did not provide a current provider-defined consensus distribution. Search-result claims about other EPS figures were not accepted without date, sample, GAAP/non-GAAP definition and price context. September's Goldman conference is listed on IR, but its full management webcast/transcript was not reviewed. Accordingly this screen cannot assert that August guidance remains the market's latest expectation or that a particular 'beat' would surprise investors.
+
+The interesting conditional question is whether **organic profit per booking and cash available after claims/financing** can improve more persistently than reflected in price. At Q2 volume, a purely assumed ten-basis-point change in non-GAAP operating margin/bookings equals $58.022m quarterly operating income. That is a transparent sensitivity: no probability, persistence, tax rate, future share denominator or valuation multiple is supplied, so it is not converted into an EPS target or stock-price range. The same change can be adverse. A fresh price alone cannot fill the missing expectation and valuation foundations.
+
+## Cash quality, dilution and resilience
+
+The cash-flow statement reconciles Q2 CFO $2.862bn less $70m capital expenditure to FCF $2.792bn; H1 $5.213bn less $135m gives $5.078bn. These are reported operating-cash-minus-capex measures, **not automatically distributable owner cash**. The release's cash-flow SBC addback is $550m Q2 / $1.023bn H1. Subtracting exactly those addbacks as an explicitly crude economic sensitivity gives $2.242bn / $4.055bn; it does not model awards or future dilution, and must not be combined with another deduction for the same future compensation. Source: archived release lines 580–701 and FCF reconciliation 1175–1211.
+
+Important accounting gap: the 10-Q SBC expense note shows $556m/$1.029bn, whereas the release cash-flow addback is $550m/$1.023bn and its EBITDA reconciliation excludes $549m/$1.022bn. Definitions and scopes are preserved separately; the $6m/$1m differences have **not been reconciled**. No convenient explanation is invented. Non-GAAP operating income and non-GAAP EPS retain SBC under the issuer's stated definitions; EBITDA excludes it. It would be wrong to label all adjusted profit 'before SBC'. Archived release Definitions lines 851–910 and reconciliations; SEC browser Note7 lines 926–938.
+
+Accrued insurance liabilities contribute $387m of Q2 CFO and $830m of H1 CFO, approximately 13.5% and 15.9% respectively. This is payment timing, not proof of manipulation or an automatic permanent deduction. Claims ultimately require settlement; reserve development/collateral can change usable liquidity. Insurance liabilities and restricted investments must not be treated as shareholder surplus. Historical diluted weighted shares fall about 3.55% YoY in Q2 (2,125.628m to 2,050.225m), which supports real net per-share improvement despite awards, but does not prove every buyback created value. A historical weighted denominator is not a current fully diluted claim count.
+
+June unrestricted cash/short-term investments total $5.391bn versus carrying debt $12.723bn, a descriptive $7.332bn gap before leases and other claims. It is not a covenant ratio or solvency conclusion. Positive operating cash flow supports holding-window resilience, but pending acquisitions, insurance collateral, legal/tax exposures and refinancing prohibit calling all that liquidity spare. The Q2 filing describes a €14.2bn July bridge commitment for Delivery Hero; a commitment is not money already borrowed. Subsequent financing changes need fresh filing review. The $2.3bn ezCater agreement makes a full forward funding bridge more relevant. No purchase-price commitments are blindly deducted together as if they all settle today.
+
+## Contrary evidence, legal risks and delayed response
+
+GAAP Q2 net income includes $1.6bn pre-tax investment revaluation benefit, so extrapolating $1.17 GAAP EPS as recurring earnings would overstate the operating signal (Q2 release Financial Highlights). Investments also expose equity to reversals. Some legal and transaction costs are excluded from non-GAAP profit despite possible cash consequences. SEC Non-Income Tax Matters describes disputed UK VAT assessments paid while appealing; this is neither a final HMRC victory nor immediately available refund cash. The tax dispute, driver classification and insurance claims can change required cash and unit economics independently of bookings growth.
+
+Independent primary challenge: the FTC case page lists Uber One billing/cancellation allegations, docket 3:25-cv-03477, and a second amended complaint dated 4 May 2026; it labels the case pending. Those are allegations, not established wrongdoing. The page's update date is not verification of every current court-docket event, and no legal outcome probability or loss amount is assigned. Regulator webpage was browser-readable but local download404; rendered excerpt retained. This is case-status evidence, not legal advice.
+
+Hours-to-days delay changes the opportunity: an earnings surprise can reprice before the user reads a notice; a favourable but temporary equity mark may be reversed; slow underlying improvement may require years; clear results can still be followed by multiple compression. Overnight gaps/halts may bypass stop prices, while stop-limits can remain unfilled. A tender deadline or acquisition headline might produce no repricing because already expected; approval delay, expensive financing or integration cost can offset growth. There is no basis for selecting an arbitrary stop or assuming the initial reaction persists for days.
+
+**Reassessment condition:** after the actual Q3 materials, reconcile organic demand versus acquired growth, unit profitability versus insurance/incentives, updated funding and share claims, and management outlook against dated comparable external estimates and the then-executable price. Build adverse, no-repricing, catalyst-delay and correct-but-late cases before defining a ceiling or exit rule. Only evidence of remaining value after the delay and costs could justify promotion to an opportunity dossier; another good quarter alone is insufficient. No alert is issued and no accepted entry/fill is invented.
+
+## Evidence integrity and next handoff
+
+Companion JSON contains all source URLs, acquisition/access dates where known, actual archived byte hashes, classifications, calculations and limits. Original issuer HTML and separately numbered text are stored under `evidence/2026-10-09-uber`. Local SEC original retrieval403 and FTC404 remain visible. Browser-rendered SEC/FTC excerpts are labelled extracts, never claimed to be complete original filings. Dynamic IR home/events pages establish discovery context, not comprehensive monitored coverage.
+
+The first archive manifests mistakenly hashed LF text before Windows wrote CRLF text files. Original manifests remain unchanged. The companion register records the LF-normalized hash, corrected actual-byte hash and precise correction; all source HTML hashes and the corrected text hashes were verified. No historical source was silently overwritten. Calculations use exact decimal inputs and are inspectable in the JSON. Independent challenge is still required; source integrity checks do not approve the investment case.
+
+===== END SOURCE: monitoring\studies\2026-10-09-uber-discovery-screen.md =====
+
+
+===== BEGIN SOURCE: monitoring\studies\2026-10-09-netflix-discovery-screen.md | SHA256: b0860623b243dfd57aa9015e46715981dc7a74cc021fdf84dfca53607cd4f251 =====
+# Netflix: focused candidate discovery
+
+As of 9 October 2026. **Retain for focused research; no accepted entry.** This is a discovery screen, not a full thesis, numerical valuation, portfolio decision or trading instruction. A known earnings event is insufficient. The unresolved question is whether pricing/advertising improve repeatable owner earnings beyond expectations, at a price that remains attractive after a delayed manual response.
+
+## Identity, event and evidence boundary
+
+Netflix, Inc., Delaware, NASDAQ Global Select common stock, ticker NFLX, USD reporting/trading, December year-end. The June 10-Q cover identifies the security. Its Note 1 and the issuer letter's p.9 footnote state that historical per-share amounts have been adjusted for the November 2025 ten-for-one split. No old pre-split price may be mixed with these EPS figures. ISA availability, actual broker security and order eligibility remain unverified.
+
+The issuer's [14 September notice](https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-to-Announce-Third-Quarter-2026-Financial-Results/default.aspx), opening and interview paragraphs, schedules release on 20 October at approximately 13:01 Pacific and interview at 13:45. Timezone conversion gives **21:01 and 21:45 London** on that date. Publication is after the regular US session. Neither a pre-event stop nor a next-day manual response bounds the overnight gap. This timing is not an entry trigger.
+
+Read: [Q2 issuer PDF](https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf), printed pp.1-2,5-6,9-12; June [10-Q](https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm), cover, Notes 1,6,7,9-10 and MD&A liquidity/cash flow. The locally captured filing mirror contains the same key passages checked against SEC web access, but its issuer linkage was not established from the JavaScript filing-index shell. Treat it as a filing mirror with that limitation, not a newly verified issuer-hosted original. Direct local SEC document requests failed while SEC metadata and web reading worked. The issuer PDF and event notice were archived successfully using unique timestamp/hash filenames. Adjacent JSON records hashes, classifications and locations; extracted text and PNGs are derived evidence, not replacement originals.
+
+## Economic test, rather than an earnings-date trade
+
+The favourable mechanism is membership retention/growth plus pricing and advertising monetization, with content amortization growing more slowly than revenue. Important counterweights are customer churn, low-cost trial economics, advertising delivery costs, competition for viewing time and upfront content cash requirements. More viewing or AI usage does not directly establish incremental free cash flow. Management's expected advertising growth and pricing success remain guidance/claims; they are not independently verified Q3 results.
+
+The July baseline already guides Q3 revenue of $12.860bn, operating income $4.268bn and margin 33.2%. That is approximately **31.4% operating-income growth and five percentage points of margin improvement** versus the disclosed prior-year quarter. Simply delivering those strong growth figures would fulfil public guidance, not establish a surprise. No same-basis, timestamped external consensus or current market-implied earnings bridge was verified here. Conversely, absence of that evidence does not prove the stock is fully priced or that cash will outperform.
+
+An inspectable guidance bridge reveals a useful future question. From reported H1 revenue $24.809695bn and operating income $8.149607bn, July's $51.0-51.4bn FY revenue and 31.5% margin, together with Q3 guidance, imply **Q4 revenue $13.330305-13.730305bn and operating income $3.647393-3.773393bn**. Pairing the endpoints gives Q4 margins about **27.36-27.48%**. This is conditional arithmetic using rounded guidance, not our forecast. A sequential margin fall from Q3 would not itself disprove the annual plan; the public guide already accommodates it. A durable upward revision must be distinguished from expense timing and content-seasonality reversals.
+
+The advertising guide of approximately $3bn is only **5.86% of the FY revenue midpoint**. A growth headline cannot be capitalized as if all group earnings doubled. Incremental ad contribution, subscription cannibalization, content rights and operating expenses need a causal bridge; no numerical incremental margin or persistent growth probability is invented here.
+
+## Cash, claims and adverse case
+
+Issuer cash-flow tables reconcile H1 CFO $7.034017bn less cash capex $0.414774bn to FCF $6.619243bn. Q2 FCF is $1.525168bn, down approximately 32.73% year on year. The 10-Q identifies a **$2.8bn nonrecurring termination receipt** in Q1 income; Q2 cash taxes were partly related to it. Do not annualize Q1 earnings or treat the full-year FCF guide as wholly recurring. An exact after-tax normalization is withheld because receipt/tax timing and other drivers need a proper bridge. Content production payments precede amortization; cash content additions and liabilities must be reconciled rather than adding back amortization while ignoring replacement spend.
+
+June cash was $9.099232bn; debt carrying amounts total $14.309306bn, distinct from face debt and future interest. Disclosed content obligations total $25.106705bn, with $11.939734bn due within a year; these operating commitments must not be double-counted mechanically as generic debt or ignored. The cash snapshot is not freely distributable surplus. The undrawn $3bn revolver and $3bn commercial-paper program are not two automatically additive cash balances or evidence of October availability.
+
+Subsequent SEC metadata identified two July 8-Ks, both read on SEC's web route. The [22 July financing filing](https://www.sec.gov/Archives/edgar/data/1065280/000119312526312575/d171951d8k.htm), Item 8.01, reports a $1bn 5.25% note issuance intended partly to repay 2026 notes. This updates June's refinancing intention: it does not establish that the old debt was already repaid or provide a reconciled October cash balance. The [30 July filing](https://www.sec.gov/Archives/edgar/data/1065280/000106528026000214/nflx-20260726.htm), Item 5.02, reports a director departure without a stated disagreement. Original local captures of these two filings remain unavailable; their web-read assertions are separately qualified and are not accepted positive-entry foundations. Discovery of these forms is not comprehensive news, governance or litigation clearance.
+
+Buybacks reduced diluted weighted-average shares by about 2.01% year on year, supporting EPS, but repurchase capacity is discretionary and buying shares is a use of cash. Equity compensation and continuing awards still require an ownership bridge. A lower share count does not independently establish repurchases were value-creating or that future dilution vanishes.
+
+## Disposition and next evidence
+
+There is a concrete research question, not an established trade. Advance only with current comparable expectations, normalized earnings/content-cash economics, dilution and a separately justified valuation. Obtain current listing-matched price context before judging mispricing; obtain executable bid/ask, FX and broker costs before any instruction. The issuer quote page did not supply usable timestamped prices in the accessed text. No ceiling, expected return, stop, quantity or capital commitment is supplied.
+
+For delayed action, prefer a post-disclosure review if a durable earnings change remains inadequately reflected, rather than trying to buy the first headline. Compare no repricing, temporary expense timing, weaker demand, content-spend acceleration, currency changes, multiple compression and a correct-but-late result. Reassess if guidance, financing or material business evidence changes. Missing price/expectations capability is a research limitation, not evidence that Netflix is unattractive. A separate review must challenge this screen before it informs any positive opportunity dossier.
+
+===== END SOURCE: monitoring\studies\2026-10-09-netflix-discovery-screen.md =====
+
+
+===== BEGIN SOURCE: monitoring\studies\2026-10-09-netflix-opportunity-followup.md | SHA256: 48a10b31d01c21beb4874b6b2d22114d0d601c2d61c8e260b0a3b8fa02645371 =====
+# Netflix: economic opportunity follow-up
+
+9 October 2026. **Focused follow-up complete; valuation and positive entry withheld; awaiting independent review.** Netflix remains worth investigating, but the strongest evidence added here weakens the idea that Q3's headline margin gain itself represents a new persistent earnings improvement. A dated research price is now available. The remaining economic foundation is a reconciled recurring cash/ownership forecast and evidence that it exceeds comparable expectations sufficiently to survive the eventual response price. This is separate from broker readiness and is not a completed company thesis, portfolio allocation or trading instruction.
+
+This addendum preserves the original discovery screen and the independent discovery challenge. Latest financial period reviewed: June 2026; targeted comparative period: Q3 2025. No full annual/proxy or comprehensive legal/competitor review is claimed. USD amounts below are millions unless stated; NFLX common stock on NASDAQ Global Select, ten-for-one split basis for present per-share figures. The 2025 source's old EPS/share figures are not used.
+
+## The favourable mechanism and strongest opposition
+
+The prospective economic case is that price increases retain members, advertisements add contribution rather than merely replacing subscription receipts, and these receipts grow faster than recurring content and other costs. An October disclosure could make a larger future cash stream more credible. A durable change can matter after hours or days of manual delay if its value exceeds the price available then. A release date, rising viewing time or better reported EPS alone supplies none of that inequality.
+
+The strongest opposing case is that the apparent inflection is already in guidance and partly a comparison effect, while the cash cost of content is rising faster than its amortized expense. A business can achieve reported profit growth and still fail to produce unexpectedly higher recurring distributable cash. The following new comparator test makes this objection concrete.
+
+## Q3's five-point margin gain largely laps a prior operating tax charge
+
+The issuer's [Q3 2025 letter](https://s22.q4cdn.com/959853165/files/doc_financials/2025/q3/FINAL-Q3-25-Shareholder-Letter.pdf), pp.1-2 and 11, reports Q3 operating income $3,248.247m and revenue $11,510.307m. It explains an **approximately $619m Brazilian non-income tax expense**, covering 2022 through Q3 2025, booked in cost of revenue; about 20% related to 2025. This is an operating expense, distinct from income tax on the 2026 termination receipt. The [2025 10-Q](https://www.sec.gov/Archives/edgar/data/1065280/000106528025000406/nflx-20250930.htm), Note 8 and MD&A cost of revenue, corroborates it through web reading.
+
+Removing that entire approximate charge solely as a comparator sensitivity gives ($3,248.247m + $619m) / $11,510.307m = **33.598%** Q3 2025 margin. July's Q3 2026 guide is $4,268m operating profit on $12,860m revenue, or **33.188%** from rounded inputs (issuer displays 33.2%). Thus the guide is about **0.410 percentage points lower** than the adjusted comparator, and operating-profit growth is **10.363%**, versus **31.394%** against precise reported 2025 profit. The original screen's 31.404% uses rounded $3,248m; both are valid reported-basis arithmetic, neither proves persistent underlying acceleration.
+
+This sensitivity does not declare Brazilian tax costs permanently absent, rewrite GAAP, erase potential deposits or settle the dispute. Management's expectation of little future effect is an interested claim. Because part of the charge relates to the current year, removing all $619m is deliberately an upper adjustment, not our normalized operating forecast. It nevertheless defeats attributing the entire five-point comparison to new pricing/advertising efficiency.
+
+The existing FY guide also already implies Q4 margin approximately 27.36%-27.48%. Q2's small margin beat reflects expense timing. The decisive October evidence is therefore the joint change in Q3 actuals, FY/Q4 and the supportable future run rate, after separating Brazil, content timing, FX and operating costs. Sources: [Q2 2026 issuer letter](https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf), pp.1-2,9,14; prior discovery screen's reproducible Q4 bridge.
+
+## Cash normalization is a bridge with missing taxes, not a subtraction verdict
+
+H1 reported FCF $6,619.243m includes the $2,800m termination cash receipt; it is below operating income and must not be removed from operating margin. Let T_cash be **actual H1 cash income taxes attributable to that receipt**. Removing only the receipt and its related tax cash would yield $3,819.243m + T_cash. T_cash is undisclosed/unquantified in the reviewed sources; the $3,819.243m subtraction retains those tax outflows and is not after-tax normalized FCF. Similarly the ~$12,500m FY FCF guide minus $2,800m is $9,700m + unknown related FY cash taxes before other recurring adjustments. Neither formula is a recurring cash forecast. Net-income normalization needs the receipt's associated income-tax provision, distinct from cash taxes; the H1 effective tax rate cannot be substituted mechanically. Sources: Q2 letter pp.6,9,11-12; [June 10-Q](https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm), Note 6 and MD&A cash flows.
+
+Content payments inferred from cash-flow additions and liability movement are $9,774.440m + $136.578m = **$9,911.018m**, compared with $7,385.470m + $625.305m = **$8,010.775m** in H1 2025. Those amounts are 1.1620x and 1.0465x content amortization. Cash payments grew **23.72%**, amortization **11.42%**; payments exceeded amortization by $1,381.809m versus $355.589m. This is a material cash timing/reinvestment burden, not proof of worse economics: title delivery, release timing and liability settlements can shift between halves. Q2 letter p.11 supplies all inputs.
+
+Management's ~1.1x FY cash-content/amortization guide imposes a useful test. If A is full-year amortization, H2 cash content must be approximately 1.1A - $9,911.018m, while H2 amortization is A - $8,529.209m; H2 excess cash spend is therefore approximately 0.1A - $1,381.809m. Do not annualize H1's ratio or capitalize the amortization addback without replacement spending. A justified annual A and spending/liability schedule are still needed.
+
+H1 SBC's $271.717m cash-flow addback is not costless owner income. Address it through a consistent claims/dilution schedule or cash-equivalent cost treatment, once. H1 buybacks $5,984.991m use cash; acquisition spending $585.744m is outside the issuer CFO-minus-capex FCF definition. These are explicit capital uses, not automatically permanent recurring deductions. Existing obligations and discretionary repurchases must fit funding before claiming distributable surplus. June cash and debt remain dated; the [July 22 8-K](https://www.sec.gov/Archives/edgar/data/1065280/000119312526312575/d171951d8k.htm), Item 8.01, confirms $1bn 5.25% 2036 notes and intended refinancing, not completed repayment or October net debt. Raw SEC downloads again failed; financing remains web-only and cannot become an accepted archived positive-entry foundation.
+
+## Available expectations and dated price context
+
+[Stock Analysis history](https://stockanalysis.com/stocks/nflx/history/) displays **$71.57 at 8 October 2026 16:00 EDT (20:00 UTC)** and states historical prices are split-adjusted. Its dated row and [ChartExchange's dated historical row](https://chartexchange.com/symbol/nasdaq-nflx/historical/) agree on $71.57. ChartExchange's banner displays $71.59; we preserve the disagreement and use the dated row only. These are research references, not current executable prices, broker evidence or independently generated feeds. Stock Analysis attributes historical data to S&P Global; no independence is inferred from two displays. Broker bid/ask, eligibility, FX and costs remain separate unknowns.
+
+[Stock Analysis forecasts](https://stockanalysis.com/stocks/nflx/forecast/), financial forecast table and source footer dated 8 October, displays 2026 revenue $51.22bn, operating income $16.12bn, adjusted EPS $3.59 and FCF $12.81bn, with 47 analysts shown for FY2026. EPS is explicitly non-GAAP adjusted; treatment of termination, financing costs and taxes is not reconciled. The top summary displays 2027 revenue $56.95bn and EPS $3.81, but the detailed 2027 table is gated. No verified Q3 comparable consensus is established. These are provider-displayed external estimates, not our forecasts, confirmed matched GAAP consensus or independent analytical approval. The $16.12bn/$51.22bn operating margin is **31.472%**, almost exactly the issuer's 31.5% FY baseline. This available expectation evidence gives no basis to count delivery of the July plan as unanticipated. Aggregate price targets supply no economic entry case and are not adopted.
+
+The provider's advertised approximately 19.94x multiple is $71.57/$3.59, but its adjusted EPS basis is unresolved. A seemingly modest multiple cannot establish value when recurring cash conversion, claim count and adjusted earnings scope are unverified. We do not mix June weighted-average shares with October price to assert current market capitalization or net debt. Stock Analysis raw requests returned 403; its accessed web-rendered passages are preserved separately as derived extracts. The raw ChartExchange page is archived.
+
+## Conditional valuation and response-price requirements
+
+For a coherent equity earnings method, let E be supportable forward earnings per split-adjusted share after sustainable taxes and ownership effects, and M a separately justified capitalization multiple. Value = M x E. At the dated $71.57 reference, the required E is $71.57/M; this algebra identifies the question without choosing a return hurdle or reverse-fitting M. Operating cash valuation instead requires cash content, cash taxes, capex, working capital, SBC/claims and the debt/interest bridge. No numerical M, discount rate, terminal growth, scenario probabilities or target is invented.
+
+A durable revision must survive the response-price test. If earnings rise from E0 to E1 and the multiple changes from M0 to M1, price support changes in proportion to (E1/E0) x (M1/M0); even correct earnings improvement can be offset by multiple compression. A temporary quarter's cost deferral changes the timing of earnings, not necessarily the recurring E. For a modest days-to-months window, expected revised cash flows can change current value immediately, but a five-year end value cannot be relabelled a near-term target.
+
+| Outcome | Evidence needed and economic implication |
+|---|---|
+| Persistent improvement | Pricing/ad contribution survives retention and spend tests; forward earnings/cash genuinely exceed a matched baseline; residual value at delayed price remains unproved here. |
+| No repricing | Guidance delivered and already anticipated; operating growth alone gives no reason to prefer entry over cash. |
+| Adverse surprise | Weaker demand, retention or ads; higher cash content/tax costs or margin reversal reduce E; falling M can compound it. |
+| Correct but late | A valid durable improvement is reflected before manual response; a new price must be re-underwritten. |
+| Gap, halt or event delay | After-close disclosure, unavailable executable price or shifted event prevents assumed entry/exit timing; no stop bounds an overnight gap. |
+
+## Narrow remaining foundation
+
+Freeze the July guide and the dated provider disclosures as limited baseline evidence; do not freeze an unreconciled EPS number as the surprise hurdle. Resolve (1) termination-related actual cash/provision taxes and content full-year spending/amortization/liabilities, (2) current claims and June-to-current financing/cash, with authenticated material originals, and (3) a comparable dated future expectations bridge. Construct and justify sustainable earnings/cash and valuation parameters independently of $71.57, then test their value against the eventual response price and the strongest adverse path. Targeted independent demand/competitor and Brazilian tax-risk evidence remains part of the persistence challenge.
+
+No economic advantage over cash has been established. This is an incomplete economic entry case, not a finding that Netflix is overpriced or that cash will outperform. The price gap alone is no longer the reason for withholding; recurring cash, comparable expectations and defensible capitalization remain the narrow blockers. Entry ceiling, stop, quantity, allocation, paper fills and return estimate remain absent. A subsequent independent review must challenge this addendum; the earlier discovery review does not approve new conclusions.
+
+Evidence retrieval, raw/derived classifications, precise locations, calculations and immutable predecessor hashes are in the adjacent JSON and new timestamped evidence directory. Original screen/evidence files were not rewritten.
+
+===== END SOURCE: monitoring\studies\2026-10-09-netflix-opportunity-followup.md =====
+
+
+===== BEGIN SOURCE: validation\netflix-followup-parent-checks-2026-10-09.json | SHA256: 2eed860a8a1695d6ad858ceb3f5cf53a110198cae8b21f83d036cc6d6f43fe16 =====
+{
+  "checked_at": "2026-10-09T13:03:11.502385+00:00",
+  "record": "monitoring\\studies\\2026-10-09-netflix-opportunity-followup.json",
+  "record_sha256": "f1a641675bd727329caf8b478dae18a15e4771656d52e9c678552740c73a0bf9",
+  "calculation_checks": [
+    {
+      "name": "q3_2025_ex_charge_margin_pct",
+      "exact_fraction": "386724700/11510307",
+      "difference": "91723/575515350000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "q3_2026_implied_guided_margin_pct",
+      "exact_fraction": "21340/643",
+      "difference": "7/8037500000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "q3_profit_growth_reported_pct",
+      "exact_fraction": "101975300/3248247",
+      "difference": "511/253769296875000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "q3_profit_growth_ex_full_prior_charge_pct",
+      "exact_fraction": "40075300/3867247",
+      "difference": "87609/3867247000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "h1_cash_content_amortization_ratio",
+      "exact_fraction": "762386/656093",
+      "difference": "35937/656093000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "prior_h1_cash_content_amortization_ratio",
+      "exact_fraction": "8010775/7655186",
+      "difference": "1448333/3827593000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "h1_excess_cash_content_m",
+      "exact_fraction": "1381809/1000",
+      "difference": "0",
+      "passed": true
+    },
+    {
+      "name": "prior_h1_excess_cash_content_m",
+      "exact_fraction": "355589/1000",
+      "difference": "0",
+      "passed": true
+    },
+    {
+      "name": "cash_content_growth_pct",
+      "exact_fraction": "7600972/320431",
+      "difference": "30923/640862000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "amortization_growth_pct",
+      "exact_fraction": "43701150/3827593",
+      "difference": "51721/1913796500000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "provider_fy_operating_margin_pct",
+      "exact_fraction": "6200/197",
+      "difference": "13/3940000000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "unreconciled_provider_price_eps_ratio",
+      "exact_fraction": "7157/359",
+      "difference": "3/1121875000000000000000000000",
+      "passed": true
+    },
+    {
+      "name": "q3_margin_difference_pp",
+      "exact_fraction": "-3034030720/7401127401",
+      "difference": "263310707/370056370050000000000000000000000000",
+      "passed": true
+    }
+  ],
+  "original_source_hash_checks": [
+    {
+      "source_id": "q2-letter",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125707505467Z-q2-letter-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "expected": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "actual": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "passed": true
+    },
+    {
+      "source_id": "price-crosscheck",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125708661028Z-price-crosscheck-d2e649a123fde352862450bdb199fd1aef82283c3278a88bcf913f1bc0291ead.html",
+      "expected": "d2e649a123fde352862450bdb199fd1aef82283c3278a88bcf913f1bc0291ead",
+      "actual": "d2e649a123fde352862450bdb199fd1aef82283c3278a88bcf913f1bc0291ead",
+      "passed": true
+    },
+    {
+      "source_id": "q3-2025-letter",
+      "path": "monitoring\\studies\\evidence\\2026-10-09-netflix-opportunity-followup\\20261009T125829535587Z-q3-2025-letter-cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031.pdf",
+      "expected": "cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031",
+      "actual": "cd3b30d71c10fab1920ddbf3acf12625f522ea5b728c2111fb657a00dcb12031",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "scope": "Specified arithmetic and byte identity only; no verification of estimate comparability, sustainable forecasts, price validity or investment approval."
+}
+
+===== END SOURCE: validation\netflix-followup-parent-checks-2026-10-09.json =====

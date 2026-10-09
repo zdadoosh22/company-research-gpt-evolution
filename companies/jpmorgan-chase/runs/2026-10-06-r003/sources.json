@@ -1,0 +1,90 @@
+[
+  {
+    "id": "j1",
+    "title": "Q2 2026 earnings release",
+    "type": "filing",
+    "publication_date": "2026-07-14",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfexhibit991narrative.htm",
+    "read": true,
+    "locations": [
+      "headline / significant items note2d"
+    ],
+    "archived_file": "sources/2026-q2-release.htm",
+    "sha256": "636f8a8a668fe181975ad881b12d0a8fada575551ec290cc31f867222db8f757"
+  },
+  {
+    "id": "j2",
+    "title": "Q2 2026 financial supplement",
+    "type": "filing",
+    "publication_date": "2026-07-14",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026048078/a2q26erfex992supplement.htm",
+    "read": true,
+    "locations": [
+      "capital p9",
+      "financial highlights p2",
+      "financial highlights p2; reconciliation p10"
+    ],
+    "archived_file": "sources/2026-q2-supplement.htm",
+    "sha256": "1f83150a6c6a6bdd1b8192e726bbc667f98f593acb40944306265d382d460793"
+  },
+  {
+    "id": "j3",
+    "title": "Finalized Q2 2026 Form 10-Q",
+    "publisher": "JPMorgan Chase / SEC",
+    "type": "issuer-primary",
+    "publication_date": "2026-08-06",
+    "reporting_period": "2026-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/jpm-20260630.htm",
+    "archived_file": "sources\\jpm-q2-10q.htm",
+    "sha256": "4ba60f17c069172a3bb4aa681d5f2a7ae3ac49e557f989101b4e3e1cbe4cad38",
+    "read": true,
+    "locations": [
+      "Capital Risk Management pp44,46-47,49; Note21 pp177-178"
+    ]
+  },
+  {
+    "id": "j4",
+    "title": "Form 10-Q Note21 regulatory capital",
+    "publisher": "JPMorgan Chase / SEC",
+    "type": "issuer-primary",
+    "publication_date": "2026-08-06",
+    "reporting_period": "2026-06-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/R29.htm",
+    "archived_file": "sources\\jpm-q2-regulatory-capital.htm",
+    "sha256": "061a2eb7450cdd0b446729050734d61c6f16a3624ef70bf2a7b20b2728f95130",
+    "read": true,
+    "locations": [
+      "Note21 regulatory capital extract"
+    ]
+  },
+  {
+    "id": "j5",
+    "title": "September common dividend declaration",
+    "publisher": "JPMorgan Chase / SEC",
+    "type": "issuer-primary",
+    "publication_date": "2026-09-15",
+    "reporting_period": null,
+    "url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-declares-increased-common-stock-dividend-9-15",
+    "archived_file": "sources\\jpm-september-dividend.htm",
+    "sha256": "76d2a59427262b1ed1f15da31201e0be63e354060fe6b739871de78e134ffc2e",
+    "read": true,
+    "locations": [
+      "Issuer declaration"
+    ]
+  },
+  {
+    "id": "j6",
+    "title": "June dividend intention and buyback authorization",
+    "publisher": "JPMorgan Chase / SEC",
+    "type": "issuer-primary",
+    "publication_date": "2026-06-24",
+    "reporting_period": null,
+    "url": "https://www.jpmorganchase.com/ir/news/2026/jpmc-dividend-increase-common-share-repurchase",
+    "archived_file": "sources\\jpm-june-capital-authorization.htm",
+    "sha256": "8df213193b146f0c31171b1581e55cfdcb1f2bc1ed54d85b81356d8dc5383902",
+    "read": true,
+    "locations": [
+      "Issuer dividend intention and repurchase authorization"
+    ]
+  }
+]

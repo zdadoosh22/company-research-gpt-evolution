@@ -1,0 +1,132 @@
+{
+  "title": "JPMorgan - bank accounting pilot",
+  "status": "Focused evidence update | partial bank valuation; controlled arithmetic",
+  "sections": [
+    {
+      "title": "Bank-specific substitution",
+      "blocks": [
+        {
+          "text": "A bank uses deposits and funding as part of its operating franchise. Customer-deposit inflows are not an operating-company owner free cash flow, and cash/debt adjustments from industrial-company enterprise value cannot be applied without regard to regulatory capital. Use equity earnings, tangible/common book and capital constraints."
+        },
+        {
+          "text": "The Q2 2026 supplement reports tangible book per share of $113.35; TBV excludes specified intangible claims and uses the tangible common-equity denominator. Use ROTCE with tangible book; do not mix ROE on total common equity with a tangible denominator. Reported quarterly ROTCE was 29%, but the release includes $4.6bn of Visa gains and $1bn of other investment gains; excluding significant items reduced net income from $21.2bn to $16.9bn. A quarterly annualisation is not a sustainable return. [j1 note2d; j2 pp2,10]"
+        },
+        {
+          "table": [
+            [
+              "Illustrative long-run case",
+              "ROTCE / ke / g",
+              "Conditional value"
+            ],
+            [
+              "Bear",
+              "14% / 11% / 3%",
+              "$155.86"
+            ],
+            [
+              "Base",
+              "18% / 10% / 4%",
+              "$264.48"
+            ],
+            [
+              "Bull",
+              "22% / 9% / 4%",
+              "$408.06"
+            ]
+          ]
+        },
+        {
+          "text": "Value = TBV per share x (sustainable ROTCE - growth) / (equity cost - growth). Reinvestment fraction is growth / ROTCE. The arithmetic reproduces an equity residual-return / steady-state dividend relationship; it does not establish that regulators permit those distributions. These are analyst assumptions and dated June book inputs, not an October fair-value recommendation. The algebra assumes prospective return on opening TCE. Reported quarterly ROTCE uses average TCE; it is not transplanted into this model."
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Capital and return constraints",
+      "blocks": [
+        {
+          "text": "Standardized estimated CET1 was 14.1%, down from 15.1% a year earlier. The supplement says the Advanced total-capital ratio was more binding than the Standardized total-capital ratio at June 2026. It does not rank that comparison against every CET1 or leverage requirement. Capital adequacy therefore cannot be represented solely by a percentage buffer in standardized CET1. Distribution analysis also needs the applicable requirements, risk-weighted-asset growth, leverage constraints, stress buffers and management policy. [j2 capital p9]"
+        },
+        {
+          "text": "The Q2 declared dividend was $1.50 per share. Multiplying it by four is a run-rate observation, not a verified five-year cash-flow schedule. No current security quote, distribution forecast or dated bank-return model is approved in this focused pilot; price-specific prospective returns and entry prices are withheld. Generic dated-dividend/ownership arithmetic is separately tested with controlled fixtures."
+        },
+        {
+          "text": "The workbook retains the reported TBV and exposes the What-if sustainable ROTCE, equity cost and growth assumptions. The Base arithmetic is $264.48; changing the What-if ROTCE from 18% to 19% raises it to $283.37. Those results validate formula behaviour, not investment merit. Focused Astra review is complete, with capital-constrained returns and a complete bank valuation still withheld."
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Finalized capital and within-cutoff updates",
+      "page_break": true,
+      "blocks": [
+        {
+          "text": "The August6 Form10-Q supersedes preliminary capital estimates: standardized CET1 is14.2%, versus July14.1%. Preserve each observation separately. Advanced total capital is the most binding disclosed BaselIII risk-based constraint, which does not rank every liquidity, subsidiary or management constraint. [j3 pp44,46; j4 Note21]"
+        },
+        {
+          "text": "Advanced total capital USD346248m less15% of Advanced RWA USD2123862m gives USD27668.7m static headroom. This is a fixed-denominator diagnostic, not freely distributable cash; do not sum overlapping headroom or equate tangible equity with CET1. [j4]"
+        },
+        {
+          "text": "September15 declared USD1.65/share payableOctober31, recordOctober6. The prior USD1.50 remains Q2 history. Annualising toUSD6.60 is a run-rate assumption, not five years of contracted receipts. Establish ex-dividend eligibility before attributing the payment to a new buyer. The USD50bn authorization is permission to repurchase, not completed spending. [j5; j6]"
+        }
+      ]
+    },
+    {
+      "title": "Finite capital and ownership arithmetic",
+      "blocks": [
+        {
+          "text": "This entire example is hypothetical, not a JPM forecast. Opening tangible equity USD1000m and10m shares; returns on opening equity14%,16%,18%,18%,18%; required equity growth6%,5%,4%,4%,4%; dividends4%,5%,6%,6%,6% of opening equity; residual earnings repurchase shares. Equity retention is an illustrative constraint, not a JPM regulatory capital calculation."
+        },
+        {
+          "table": [
+            [
+              "Year",
+              "Earnings / retention",
+              "Dividends / buybacks",
+              "Closing equity"
+            ],
+            [
+              "1",
+              "140.000 / 60.000",
+              "40.000 / 40.000",
+              "1060.000"
+            ],
+            [
+              "2",
+              "169.600 / 53.000",
+              "53.000 / 63.600",
+              "1113.000"
+            ],
+            [
+              "3",
+              "200.340 / 44.520",
+              "66.780 / 89.040",
+              "1157.520"
+            ],
+            [
+              "4",
+              "208.354 / 46.301",
+              "69.451 / 92.602",
+              "1203.821"
+            ],
+            [
+              "5",
+              "216.688 / 48.153",
+              "72.229 / 96.306",
+              "1251.974"
+            ]
+          ]
+        },
+        {
+          "text": "Each row reconciles opening equity + earnings - dividends - buybacks. At terminal return18%, growth4% and equity cost10%, continuing company equity is USD2921.272m. Assumed fair ex-dividend repurchases leave 8.714565m shares. Current PV is USD231.4786/original share and conditional horizon value USD335.2172/continuing share."
+        },
+        {
+          "text": "A continuing holder receives dividends and terminal proceeds, with no extra buyback yield. Their dated receipts reproduce current PV and give10% XIRR at PV; an assumedUSD200 entry gives13.3961%. Fair-value repurchases are a controlled neutral-price assumption, not a forecast or market-price calibration. The full machine-readable fixture and independent checks are archived with this run."
+        },
+        {
+          "text": "A real JPM model still needs finite common earnings, preferred costs, OCI, TCE and separate regulatory capital/RWA/exposure paths, buffers and management targets, dividend timing, buyback prices and ownership changes. Those foundations remain unvalidated; actual-company return and entry conclusions stay withheld."
+        }
+      ]
+    }
+  ]
+}

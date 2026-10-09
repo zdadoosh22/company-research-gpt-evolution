@@ -1,0 +1,28 @@
+SETUP
+
+1. Create a ChatGPT project called Company Research 2 - Planning and Review. Use ordinary Chat there.
+2. Paste PROJECT-INSTRUCTIONS.txt into the project's instructions field.
+3. Upload these three files to the project's Sources:
+   WORKFLOW-AND-OVERVIEW.txt
+   APPROVED-RESEARCH-REFERENCE.txt
+   PROJECT-STATE-SNAPSHOT-2026-10-09.txt
+4. Move your existing ordinary Company research chat into the project if that option is available, or begin a new ordinary Chat there.
+5. Send the starter message below.
+
+STARTER MESSAGE
+
+Read the project instructions and the three uploaded onboarding files. This is the ordinary Chat planning and critical-review companion to my separate local Company Research 2 Work project. Treat the Windows files as authoritative and these uploads as dated copies; do not assume access to the Work conversation or local files.
+
+Explain briefly the current project state, your role, how handoffs will work and when you will recommend /goal. Identify any important missing context, but do not begin feature development or a new research run. Some uploaded records describe earlier stages; use the snapshot's status notes to distinguish historical checkpoints from newer artifacts.
+
+FUTURE UPDATES
+
+Normally transfer one Work handoff PACKAGE: the handoff plus whatever changed instructions, evidence excerpts, calculations or output files are needed for the next Chat task. A self-contained handoff can be a single file. An evidence review may need multiple attachments. The user should not have to discover which files to supply.
+
+Add the new handoff as a project source or attach it to the active chat. Tell Chat its date/version and what it supersedes. Replace stale standing reference copies when Work explicitly reports approved changes. Historical evidence can remain if clearly labelled. Do not upload credentials or unrelated private account records.
+
+Give Work CHAT-HANDOFF-REQUEST.txt to establish package preparation at sensible checkpoints. This file is a message for the user to send; creating this kit has not delivered it to another chat, activated new local project instructions or changed a running goal.
+
+SCOPE OF THIS KIT
+
+This is onboarding, not an exhaustive source/code mirror or an independent validation of financial claims. The reference bundle includes the approved full methodology and core operating rules. The state bundle includes existing saved checkpoints/reviews and selected scoped studies. Underlying company PDF/workbook/filing archives and the Work chat's full transcript are not included. Request specific originals/excerpts for material analytical review. No software tests or live phone/broker/service verification were performed to create this kit.

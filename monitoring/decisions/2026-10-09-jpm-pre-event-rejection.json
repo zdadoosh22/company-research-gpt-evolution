@@ -1,0 +1,32 @@
+{
+  "schema": "prospective-candidate-disposition-v1",
+  "id": "2026-10-09-jpm-pre-event-rejection",
+  "recorded_on": "2026-10-09",
+  "evidence_as_of": "2026-10-08",
+  "security": "NYSE:JPM",
+  "scope": "Pre-Q3-release entry only; not a current full-company valuation or a permanent prohibition",
+  "disposition": "rejected",
+  "reason": "A known earnings event and improving guided income do not establish a same-basis expectations mismatch, persistent incremental earnings or a defensible entry ceiling. Manual delayed action can miss repricing and cannot bound an overnight gap.",
+  "dossier": [
+    {"path": "monitoring/studies/2026-10-08-jpm-event-dossier.md", "sha256": "34ffd0c70b11383594b7962b37fe57242d3384b0c76cd6b92d042ca989a4c0fc"},
+    {"path": "monitoring/studies/2026-10-08-jpm-event-dossier.json", "sha256": "01aff6247e21c036ef18ae88dc6cb2a039250c9960307e08700154a434e773b4"}
+  ],
+  "independent_review": "Pending; subsequent findings are separate dated records and do not rewrite this disposition",
+  "capital_reserved_gbp": "0",
+  "accepted_entry_quantity": null,
+  "maximum_buy_price": null,
+  "price_loss_threshold": null,
+  "execution_instruction": null,
+  "actionable": false,
+  "broker_order": false,
+  "reopen_only_with": [
+    "New reconciled forward income, expense and credit evidence versus adequately defined expectations",
+    "Financial resilience, capital and ownership updated consistently for the prospective holding window",
+    "Separately supported value/price response and fresh executable price, FX and costs",
+    "An opportunity that still exists after hours or days of human response delay"
+  ],
+  "prospective_window": {"event_date": "2026-10-13", "comparison_end": "2026-10-16", "automatic_extension": false},
+  "evaluation": "Retain this rejected candidate when reviewing the event outcome. A later rise would not retrospectively create an executable, evidenced entry. A later fall would not prove all rejection reasoning correct.",
+  "paper_cohort": "No accepted-entry cohort opened: investable passive benchmark and complete paired exit rules are not selected. No dummy benchmark, quote or fill supplied to satisfy a schema.",
+  "portfolio_boundary": "User-owned isolated sleeve; no unrelated ISA holdings, extra contributions, broker connection or order automation"
+}

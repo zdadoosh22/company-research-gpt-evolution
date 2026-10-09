@@ -1,0 +1,36 @@
+{
+  "title": "Unilever - global reporting pilot",
+  "status": "Focused evidence validation | no security valuation",
+  "sections": [
+    {
+      "title": "Scope, periods and evidence",
+      "blocks": [
+        {
+          "text": "Unilever PLC reports in euro and has a December fiscal year. The annual report re-presents 2023 and 2024 continuing results following the Ice Cream demerger. Continuing turnover was EUR51,680m in 2023, EUR52,479m in 2024 and EUR50,503m in 2025. H1 2026 turnover was EUR25,623m versus re-presented EUR25,506m. Thus compatible TTM turnover is EUR50,620m. [u1 printed p128 / PDF131; u2 PDF22]"
+        },
+        {
+          "text": "H1 IFRS operating profit was EUR4,885m, giving a 19.1% reported operating margin. Underlying measures, currency-neutral growth and reported turnover must remain separately labelled. H1 continuing CFO was EUR2,577m versus EUR2,019m; total CFO also contains discontinued cash flow. Working-capital movements include transitional service arrangements with the separated Ice Cream company, so apparent receivable/payable changes need that footnote before economic interpretation. [u2 PDF22,26]"
+        },
+        {
+          "text": "The annual accounts use IFRS; the interim is prepared under IAS34 and receives a review rather than a full audit. A restricted source downloader returned HTTP403 for both originals, while the browsing tool could read the documents. Selected verified numerical extracts, original links and exact page locations are preserved; this does not claim that the complete PDF was locally archived."
+        }
+      ],
+      "page_break": false
+    },
+    {
+      "title": "Currency, security and ownership safeguards",
+      "blocks": [
+        {
+          "text": "A London ordinary-share quote in GBp must first be divided by 100 to obtain GBP. Converting a dated GBP share value to euro requires an explicitly dated EUR-per-GBP spot. For example, the controlled test uses 4,500 GBp and 1.20 EUR per GBP to obtain EUR54; neither number is a market observation or forecast. The delivered input cells are blank and show MISSING. Price-specific value/return conclusions are withheld."
+        },
+        {
+          "text": "The annual report describes a share consolidation after the Ice Cream demerger in December 2025 and adjusts earlier EPS denominators retrospectively. Do not combine old unadjusted per-share series with the current security. A demerger distribution is also a shareholder cash/security receipt in a historical-return calculation, not disappearing value. [u1 share/EPS notes; u2 PDF29]"
+        },
+        {
+          "text": "The workbook demonstrates a scope-compatible cumulative-period TTM bridge, preserves EUR actuals, and refuses to turn missing GBp price or FX into zero. Global coverage can use issuer/IFRS evidence without depending on US GAAP taxonomy extraction. This is a focused validation, not a full Unilever thesis or a claim that every reporting regime is now covered."
+        }
+      ],
+      "page_break": false
+    }
+  ]
+}

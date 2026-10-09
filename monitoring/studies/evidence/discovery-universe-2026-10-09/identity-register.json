@@ -1,0 +1,50 @@
+[
+  {
+    "ticker": "AMD",
+    "cik": "0000002488",
+    "name": "ADVANCED MICRO DEVICES INC",
+    "tickers": [
+      "AMD"
+    ],
+    "exchanges": [
+      "Nasdaq"
+    ],
+    "url": "https://data.sec.gov/submissions/CIK0000002488.json",
+    "retrieved_at": "2026-10-09T00:40:20.456975+00:00",
+    "path": "monitoring/studies/evidence/discovery-universe-2026-10-09/20261009T004020455975Z-AMD-9789d97cfb1b41fb58cc5fcebd13cfced084409dc3bbcfb6ca1382304f092493.json",
+    "sha256": "9789d97cfb1b41fb58cc5fcebd13cfced084409dc3bbcfb6ca1382304f092493",
+    "scope": "Primary metadata identity and discovery only; no approval or complete document reading"
+  },
+  {
+    "ticker": "UBER",
+    "cik": "0001543151",
+    "name": "Uber Technologies, Inc",
+    "tickers": [
+      "UBER"
+    ],
+    "exchanges": [
+      "NYSE"
+    ],
+    "url": "https://data.sec.gov/submissions/CIK0001543151.json",
+    "retrieved_at": "2026-10-09T00:40:20.693876+00:00",
+    "path": "monitoring/studies/evidence/discovery-universe-2026-10-09/20261009T004020693876Z-UBER-c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643.json",
+    "sha256": "c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643",
+    "scope": "Primary metadata identity and discovery only; no approval or complete document reading"
+  },
+  {
+    "ticker": "NFLX",
+    "cik": "0001065280",
+    "name": "NETFLIX INC",
+    "tickers": [
+      "NFLX"
+    ],
+    "exchanges": [
+      "Nasdaq"
+    ],
+    "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+    "retrieved_at": "2026-10-09T00:40:21.004040+00:00",
+    "path": "monitoring/studies/evidence/discovery-universe-2026-10-09/20261009T004021003036Z-NFLX-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+    "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+    "scope": "Primary metadata identity and discovery only; no approval or complete document reading"
+  }
+]

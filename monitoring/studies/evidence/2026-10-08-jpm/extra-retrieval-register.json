@@ -1,0 +1,20 @@
+[
+  {
+    "id": "earningswhispers",
+    "url": "https://www.earningswhispers.com/stocks/JPM",
+    "retrieved_utc": "2026-10-08T16:41:19.546109+00:00",
+    "status": "archived",
+    "http_status": 200,
+    "file": "earningswhispers.html",
+    "sha256": "03b3bec44767094858af5442e6ac2079ce45240d783925cc8eb39877375bf592",
+    "bytes": 157550
+  },
+  {
+    "id": "tipranks",
+    "url": "https://www.tipranks.com/stocks/jpm/earnings",
+    "retrieved_utc": "2026-10-08T16:41:21.491918+00:00",
+    "status": "failed",
+    "http_status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  }
+]
