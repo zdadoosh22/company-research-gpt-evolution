@@ -1,0 +1,4 @@
+Repository: zdadoosh22/company-research-work
+Checkpoint: Netflix expectations gate, 10 October 2026
+Challenge ID: 105ffb99-9f0d-41e3-bcba-7c8c3f53c7e0
+Return only after actual GitHub retrieval at the supplied publishing commit.

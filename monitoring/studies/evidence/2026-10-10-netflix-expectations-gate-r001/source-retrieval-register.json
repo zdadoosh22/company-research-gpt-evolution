@@ -1,0 +1,123 @@
+{
+  "retrieved_at_utc": "2026-10-10T15:12:06.062642+00:00",
+  "records": [
+    {
+      "id": "event",
+      "url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-to-Announce-Third-Quarter-2026-Financial-Results/default.aspx",
+      "retrieved_at_utc": "2026-10-10T15:12:01.645418+00:00",
+      "route": "direct unauthenticated urllib HTTPS; separate from web-tool reading",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "last_modified": null,
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/event-a137e37983536b7de079d1d6b3b306938120c1c007f20c0eed156a5c8184da0b.html",
+      "sha256": "a137e37983536b7de079d1d6b3b306938120c1c007f20c0eed156a5c8184da0b",
+      "bytes": 47495,
+      "direct_archive": true
+    },
+    {
+      "id": "split",
+      "url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2025/Netflix-Announces-Ten-For-One-Stock-Split/default.aspx",
+      "retrieved_at_utc": "2026-10-10T15:12:01.647753+00:00",
+      "route": "direct unauthenticated urllib HTTPS; separate from web-tool reading",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "last_modified": null,
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/split-2592b2dd24afe0aa8dd6cc5075b1fb22bfe6d51e24622bc462c5427d39e5f1ef.html",
+      "sha256": "2592b2dd24afe0aa8dd6cc5075b1fb22bfe6d51e24622bc462c5427d39e5f1ef",
+      "bytes": 48539,
+      "direct_archive": true
+    },
+    {
+      "id": "july-letter",
+      "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2026/q2/FINAL-Q2-26-Shareholder-Letter.pdf",
+      "retrieved_at_utc": "2026-10-10T15:12:01.648755+00:00",
+      "route": "direct unauthenticated urllib HTTPS; separate from web-tool reading",
+      "status": 200,
+      "content_type": "application/pdf",
+      "last_modified": "Thu, 16 Jul 2026 20:01:42 GMT",
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/july-letter-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241",
+      "bytes": 294574,
+      "direct_archive": true
+    },
+    {
+      "id": "annual-estimates",
+      "url": "https://stockanalysis.com/stocks/nflx/forecast/",
+      "retrieved_at_utc": "2026-10-10T15:12:01.649808+00:00",
+      "route": "direct unauthenticated urllib HTTPS; separate from web-tool reading",
+      "status": 200,
+      "content_type": "text/html",
+      "last_modified": null,
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/annual-estimates-b88e5e2a1c35d71a426999978fe4dc1386725d5abb856a67781fad7ea2be5d08.html",
+      "sha256": "b88e5e2a1c35d71a426999978fe4dc1386725d5abb856a67781fad7ea2be5d08",
+      "bytes": 173035,
+      "direct_archive": true
+    },
+    {
+      "id": "quarterly-estimates",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-10-20-netflix-inc-stock/",
+      "retrieved_at_utc": "2026-10-10T15:12:02.675973+00:00",
+      "route": "direct unauthenticated urllib HTTPS; separate from web-tool reading",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "last_modified": null,
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/quarterly-estimates-30c2a1424e488037f9fde33dbe8bf33fb2e6155f19a29d77c4621071e66d0166.html",
+      "sha256": "30c2a1424e488037f9fde33dbe8bf33fb2e6155f19a29d77c4621071e66d0166",
+      "bytes": 200438,
+      "direct_archive": true
+    },
+    {
+      "id": "yahoo-analysis",
+      "url": "https://finance.yahoo.com/quote/NFLX/analysis/",
+      "retrieved_at_utc": "2026-10-10T15:12:02.691312+00:00",
+      "route": "direct unauthenticated urllib HTTPS; separate from web-tool reading",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "last_modified": null,
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/yahoo-analysis-d5e41eae4036899d0070103d39fb0497258b11300675a3c806239c08e3290123.html",
+      "sha256": "d5e41eae4036899d0070103d39fb0497258b11300675a3c806239c08e3290123",
+      "bytes": 1217523,
+      "direct_archive": true
+    },
+    {
+      "id": "nasdaq-history",
+      "url": "https://www.nasdaq.com/market-activity/stocks/nflx/historical",
+      "retrieved_at_utc": "2026-10-10T15:12:02.692325+00:00",
+      "route": "direct unauthenticated urllib HTTPS; separate from web-tool reading",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/nasdaq-history-d08e14bc4dabb75ddd5b96e206db6a7d221c187e1a6b4309ac5f0b9afe6d7860.html",
+      "sha256": "d08e14bc4dabb75ddd5b96e206db6a7d221c187e1a6b4309ac5f0b9afe6d7860",
+      "bytes": 179416,
+      "direct_archive": true
+    },
+    {
+      "id": "nasdaq-schedule",
+      "url": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+      "retrieved_at_utc": "2026-10-10T15:12:02.725932+00:00",
+      "route": "direct unauthenticated urllib HTTPS; separate from web-tool reading",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/nasdaq-schedule-5db302caabdd40d566135a21e90be744181a0a28196cc3390889691ba2d4c2d2.html",
+      "sha256": "5db302caabdd40d566135a21e90be744181a0a28196cc3390889691ba2d4c2d2",
+      "bytes": 174159,
+      "direct_archive": true
+    },
+    {
+      "id": "sec-submissions",
+      "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+      "retrieved_at_utc": "2026-10-10T15:12:03.181434+00:00",
+      "route": "direct unauthenticated urllib HTTPS; separate from web-tool reading",
+      "status": 200,
+      "content_type": "application/json",
+      "last_modified": null,
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "bytes": 160304,
+      "direct_archive": true
+    }
+  ],
+  "note": "HTTP success alone does not establish substantive readable data or historical availability. Web-tool read projections are separately labelled."
+}

@@ -1,0 +1,120 @@
+{
+  "schema": "bounded-inspection-state-v1",
+  "saved_at_utc": "2026-10-10T15:18:48.531347+00:00",
+  "baseline": "c6e31aa9591f81c1b0d4fa620543045173716713",
+  "no_newer_tracked_work_at_entry": true,
+  "initial_tree_clean": true,
+  "actual_goal_lookup": null,
+  "new_goal_created": false,
+  "netflix_company_index_exists": false,
+  "scheduled_task_observed": "CompanyResearch2-Observation: Running; liveness only",
+  "monitor_changed": false,
+  "account_records_read": false,
+  "inspected_files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "9f5b1809330666ce2f54f981e592698c084120acad1cd20c43952abdf48ba704",
+      "bytes": 6628
+    },
+    {
+      "path": "README.md",
+      "sha256": "80482830262b07ac754e62d9e1a6fe4f645d64f5aa6ea56e3579a862eda64434",
+      "bytes": 3839
+    },
+    {
+      "path": "lessons/confirmed.md",
+      "sha256": "1e30d315aed33eb0a945b2c906cd9bdf1403788dc65f97a04189171782c88898",
+      "bytes": 2428
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+      "bytes": 59411
+    },
+    {
+      "path": "methodology/current.json",
+      "sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5",
+      "bytes": 358
+    },
+    {
+      "path": "methodology/principles.md",
+      "sha256": "ee75607e99c43172efc73a22877cbf6e7b072d7204b017d4a647a77809c84b07",
+      "bytes": 7459
+    },
+    {
+      "path": "monitoring/IMPROVEMENT-ROADMAP.md",
+      "sha256": "b2e03f4d6fc8caa8e93a7f99fb8649f2613471f93343e0e905f55f0aefcf392f",
+      "bytes": 15825
+    },
+    {
+      "path": "monitoring/START-HERE.md",
+      "sha256": "ccf57fb657ef11096dc182ab8d85ced2316634b6cd103289cfcf32360ff11b87",
+      "bytes": 12265
+    },
+    {
+      "path": "monitoring/config.json",
+      "sha256": "dc7d6ccf634b7e0408bbf0784cdb6d1cafd1ab85edc4bf4fa688b014bf04fd5c",
+      "bytes": 3627
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-feasibility-disposition-r001.json",
+      "sha256": "5ec4139b2742887ba4df1b247efc058bbe1730b7e492a1fee013ba856b9e71bd",
+      "bytes": 2945
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-feasibility-disposition-r001.md",
+      "sha256": "121db4d846d3054fe0e63e4927208fe332abfc1ac2175fba73c306e310517192",
+      "bytes": 7016
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-foundation-disposition-r001.md",
+      "sha256": "9d80977ce8824d9788052c198696d86322c4890b53abaefa16b9f11be07dbb4e",
+      "bytes": 6170
+    },
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+      "sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+      "bytes": 19765
+    },
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-framework-r002.md",
+      "sha256": "d87aafe9e180f1a0cd436ddcba350b1548903bdbff49acdd08bc017d259b31c4",
+      "bytes": 15553
+    },
+    {
+      "path": "validation/acceptance.md",
+      "sha256": "66ca65b41c11e42ed06e8531426c967a4fc0bfebd6bdba3062c449e6656f329f",
+      "bytes": 2038
+    },
+    {
+      "path": "validation/chat-handoff-2026-10-10-netflix-feasibility-r001/CHAT-HANDOFF.md",
+      "sha256": "77115e21088d6f2eccad7683edd015795c3d10ab4614d48af600740052daf904",
+      "bytes": 12146
+    },
+    {
+      "path": "validation/netflix-framework-astra-challenge-r002.md",
+      "sha256": "1c5df5a6f41aa7a8ca899da695bf44bda8e8c0df2dc54135f221937adf5d8c73",
+      "bytes": 13359
+    },
+    {
+      "path": "validation/netflix-framework-clarifications-r003.md",
+      "sha256": "11b1aea5a4db44fee2c82efe1584904b95b105ff2d8530bd5796c2816eeb49b2",
+      "bytes": 1381
+    },
+    {
+      "path": "validation/observation-status.json",
+      "sha256": "be27138480a8173a86ddf85e1b22413891040723789ef5a7e871b5387a972640",
+      "bytes": 5785
+    },
+    {
+      "path": "workflows/chat-handoff.md",
+      "sha256": "f10dfca8759913e61a634fc87f691d276bec656ffb13c1aba26af8a6ff559c8c",
+      "bytes": 5334
+    },
+    {
+      "path": "workflows/research.md",
+      "sha256": "6b20763316e6c47b0118f0489a499026e76fed34552b7f7a1905e4caf23e15b3",
+      "bytes": 4029
+    }
+  ]
+}
