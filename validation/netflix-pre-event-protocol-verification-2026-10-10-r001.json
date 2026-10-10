@@ -1,0 +1,211 @@
+{
+  "schema": "netflix-protocol-author-checks-v1",
+  "verified_at_utc": "2026-10-10T17:02:28.777349+00:00",
+  "checks": [
+    {
+      "name": "All predecessor bytes preserved",
+      "passed": true,
+      "evidence": 534
+    },
+    {
+      "name": "Ten captured source hashes match local bytes",
+      "passed": true,
+      "evidence": [
+        "robots",
+        "terms",
+        "data-sources",
+        "nflx-history",
+        "spy-history",
+        "xlc-history",
+        "annual-forecast",
+        "yahoo-analysis",
+        "event",
+        "sec-submissions"
+      ]
+    },
+    {
+      "name": "Management source identity and guidance provenance",
+      "passed": true,
+      "evidence": {
+        "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/july-letter-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+        "sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241"
+      }
+    },
+    {
+      "name": "Issuer cash definition and unit conversion",
+      "passed": true,
+      "evidence": "CFO less property/equipment; source thousands converted USDm; not FCFE"
+    },
+    {
+      "name": "Guidance arithmetic uses compatible units",
+      "passed": true,
+      "evidence": "Derived FY OI 16,065\u201316,191; Q3 rounded margin 33.2%"
+    },
+    {
+      "name": "Fresh Yahoo tables bound exactly",
+      "passed": true,
+      "evidence": {
+        "actual_estimate_update_time": null
+      }
+    },
+    {
+      "name": "Yahoo GAAP actually selected; Normalized not assumed",
+      "passed": true,
+      "evidence": "Publisher control only; no analyst reconciliation"
+    },
+    {
+      "name": "Annual estimates actual date and adjusted EPS qualification",
+      "passed": true,
+      "evidence": "Financial date differs from price and retrieval dates"
+    },
+    {
+      "name": "Explicit AI exception and actual robot paths",
+      "passed": true,
+      "evidence": [
+        "https://stockanalysis.com/robots.txt",
+        "https://stockanalysis.com/terms-of-use/",
+        "https://stockanalysis.com/data-sources/",
+        "https://stockanalysis.com/stocks/nflx/history/",
+        "https://stockanalysis.com/etf/spy/history/",
+        "https://stockanalysis.com/etf/xlc/history/",
+        "https://stockanalysis.com/stocks/nflx/forecast/"
+      ]
+    },
+    {
+      "name": "nflx-history displayed OHLC and split statement",
+      "passed": true,
+      "evidence": {
+        "row": [
+          "Oct 9, 2026",
+          "70.51",
+          "72.10",
+          "70.19",
+          "70.30",
+          "70.30",
+          "-1.77%",
+          "29,124,319"
+        ],
+        "scope": "source sample only; no returns"
+      }
+    },
+    {
+      "name": "spy-history displayed OHLC and split statement",
+      "passed": true,
+      "evidence": {
+        "row": [
+          "Oct 9, 2026",
+          "776.24",
+          "779.40",
+          "775.23",
+          "778.57",
+          "778.57",
+          "0.60%",
+          "22,760,961"
+        ],
+        "scope": "source sample only; no returns"
+      }
+    },
+    {
+      "name": "xlc-history displayed OHLC and split statement",
+      "passed": true,
+      "evidence": {
+        "row": [
+          "Oct 9, 2026",
+          "111.31",
+          "111.60",
+          "110.34",
+          "110.38",
+          "110.38",
+          "-1.51%",
+          "5,995,326"
+        ],
+        "scope": "source sample only; no returns"
+      }
+    },
+    {
+      "name": "Data publisher timestamp/official-close claims present",
+      "passed": true,
+      "evidence": "Publisher definitions do not independently certify any individual close"
+    },
+    {
+      "name": "Event still prospective and original schedule present",
+      "passed": true,
+      "evidence": {
+        "scheduled_release_utc": "2026-10-20T20:01:00+00:00"
+      }
+    },
+    {
+      "name": "All new retrievals precede freeze and release",
+      "passed": true,
+      "evidence": "2026-10-10T16:56:13.589579+00:00"
+    },
+    {
+      "name": "Official calendar confirms no scheduled closures in observation envelope",
+      "passed": true,
+      "evidence": {
+        "url": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule",
+        "sha256": "5db302caabdd40d566135a21e90be744181a0a28196cc3390889691ba2d4c2d2",
+        "last_pre_window_holiday": "2026-09-07",
+        "next_holiday": "2026-11-26"
+      }
+    },
+    {
+      "name": "Daily windows session counts and named zones",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "reference",
+          "scheduled_session_date": "2026-10-20",
+          "research_close_eastern": "2026-10-20T16:00:00-04:00",
+          "utc": "2026-10-20T20:00:00+00:00",
+          "london": "2026-10-20T21:00:00+01:00",
+          "price_value": null
+        },
+        {
+          "label": "D1",
+          "scheduled_session_date": "2026-10-21",
+          "research_close_eastern": "2026-10-21T16:00:00-04:00",
+          "utc": "2026-10-21T20:00:00+00:00",
+          "london": "2026-10-21T21:00:00+01:00",
+          "price_value": null
+        },
+        {
+          "label": "D2",
+          "scheduled_session_date": "2026-10-22",
+          "research_close_eastern": "2026-10-22T16:00:00-04:00",
+          "utc": "2026-10-22T20:00:00+00:00",
+          "london": "2026-10-22T21:00:00+01:00",
+          "price_value": null
+        },
+        {
+          "label": "D5",
+          "scheduled_session_date": "2026-10-27",
+          "research_close_eastern": "2026-10-27T16:00:00-04:00",
+          "utc": "2026-10-27T20:00:00+00:00",
+          "london": "2026-10-27T20:00:00+00:00",
+          "price_value": null
+        },
+        {
+          "label": "D20",
+          "scheduled_session_date": "2026-11-17",
+          "research_close_eastern": "2026-11-17T16:00:00-05:00",
+          "utc": "2026-11-17T21:00:00+00:00",
+          "london": "2026-11-17T21:00:00+00:00",
+          "price_value": null
+        }
+      ]
+    },
+    {
+      "name": "No future observations in frozen windows",
+      "passed": true,
+      "evidence": "No C0/D1/D2/D5/D20 event prices, returns or fills"
+    },
+    {
+      "name": "Operational boundary unchanged",
+      "passed": true,
+      "evidence": "Config preserved by all-predecessor hash check; no phone/broker/monitor change"
+    }
+  ],
+  "passed": true,
+  "scope": "Source binding, definitions, calendar/time arithmetic and predecessor preservation only. Not independent Astra review, model replay, engineering acceptance, event investigation or investment performance."
+}

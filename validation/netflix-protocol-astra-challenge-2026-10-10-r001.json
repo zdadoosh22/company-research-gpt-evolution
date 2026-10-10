@@ -1,0 +1,266 @@
+{
+  "schema": "independent-pre-event-protocol-challenge-v1",
+  "reviewed_at_utc": "2026-10-10T17:05:17.146749+00:00",
+  "date_london": "2026-10-10",
+  "reviewer_task": "/root/netflix_protocol_astra_r001",
+  "model_route": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "high",
+    "dispatch_tool": "collaboration.spawn_agent",
+    "fork_turns": "none",
+    "dispatch_confirmation": "Root reports actual call model=gpt-6-astra, reasoning_effort=high; returned task_name /root/netflix_protocol_astra_r001. Independently delegated review performed through that requested route.",
+    "reported_backend_model": null,
+    "reported_actual_reasoning_effort": null,
+    "reported_service_tier": null,
+    "limit": "No backend identity/settings exposed independently to this reviewer; requested route is not a claim of independently verified backend configuration."
+  },
+  "scope": "Only new pre-event protocol, source freeze, daily source semantics/rights, hypothesis/time boundaries, manual delays/confounds and current-value boundary. No repeated closed financial foundation/framework audit.",
+  "reviewed_inputs": [
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-pre-event-protocol-r001.md",
+      "sha256": "1a130711a2b971c448eaeab5dd27472820471f3275e756792a9c1e5fa1f65ebf"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-r001.json",
+      "sha256": "9d2ea88cc2ea978d053346752f6f711d2d8f0150819522718ef85bc2dec56eec"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/source-retrieval-register.json",
+      "sha256": "bd1af15a9e12b8641e849875ab85ef968596148dc160d4810d599baf905fb48a"
+    },
+    {
+      "path": "validation/netflix-protocol-baseline-2026-10-10-r001.json",
+      "sha256": "6339a7555b8dc404e08dcd9dfd0450490c06401f0ca73f2aaca4dcd708b0e546"
+    }
+  ],
+  "context_inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "9f5b1809330666ce2f54f981e592698c084120acad1cd20c43952abdf48ba704"
+    },
+    {
+      "path": "workflows/model-review.md",
+      "sha256": "448aa9e8b3f20cc2bb8f41ec6007c9b3fabce9af399a3cc36d7e37b2beb4c11e"
+    },
+    {
+      "path": "methodology/current.json",
+      "sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5"
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6"
+    },
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-framework-r002.md",
+      "sha256": "d87aafe9e180f1a0cd436ddcba350b1548903bdbff49acdd08bc017d259b31c4"
+    },
+    {
+      "path": "validation/netflix-framework-clarifications-r003.md",
+      "sha256": "11b1aea5a4db44fee2c82efe1584904b95b105ff2d8530bd5796c2816eeb49b2"
+    },
+    {
+      "path": "validation/netflix-framework-astra-challenge-r002.json",
+      "sha256": "e0b88266c98a568386e554f7e7642226d0df873bdb7f6ef4151970aef0ec7547"
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-feasibility-disposition-r001.json",
+      "sha256": "5ec4139b2742887ba4df1b247efc058bbe1730b7e492a1fee013ba856b9e71bd"
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-expectations-gate-r001.md",
+      "sha256": "977ce217c1c5281e9ac859d5b2353ee67930d315ff04a96c7fb41707b2eb6f6d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/july-letter.derived.txt",
+      "sha256": "693049eda47048d86f169a8a168d1afdb83be608e1f13c7349ac918611551488"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-expectations-gate-r001/july-letter-8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241.pdf",
+      "sha256": "8441bb4517a6c37a25495bbf189a8d3f6ca1958b4764bb64bdf646e29b9e9241"
+    }
+  ],
+  "objective_input": {
+    "path": "C:\\Users\\aidan\\.codex\\attachments\\f5ffc2c0-1c26-4a3d-8376-306c643917c1\\goal-objective.md",
+    "sha256": "9ccf7b14eb7314b338c4d61a8cee95f9e0e7024aeef2ae3164a6327df2d81f3e"
+  },
+  "findings": [
+    {
+      "id": "NFLX-PROTOCOL-ASTRA-001",
+      "severity": "medium",
+      "priority": "P2",
+      "type": "verified_source_semantics_defect",
+      "location": "frozen-reference-r001.json price_feasibility_samples.quote_panel_timestamp and data_definition; protocol Practical source feasibility",
+      "finding": "The frozen NFLX and SPY timestamp snippets join a regular-session timestamp to the following after-hours price, while XLC loses an available timestamp. The history tables explicitly identify S&P Global Market Intelligence and daily after-close updates; the general Nasdaq UTP 15-minute quote description does not establish the history tables are that feed or available 15 minutes after close.",
+      "evidence": [
+        "NFLX raw header: regular close 70.30 at October 9 16:00 EDT; separately after-hours 70.32 at 19:59 EDT. Daily Close is 70.30.",
+        "SPY raw header: regular close 778.57 at October 9 16:00; separately after-hours 778.59 at 19:51 EDT. Daily Close is 778.57.",
+        "XLC raw header: 110.38, October 9 16:00 EDT, market closed. Daily Close is 110.38.",
+        "All three history footers identify S&P Global and daily after-close updates. General data-sources page separately discusses CBOE real-time quotes and delayed consolidated Nasdaq UTP open/close."
+      ],
+      "proposed_correction": "In a preserved-input amendment, record each regular close value, timestamp/time-zone basis and separate after-hours value/time where supplied. Mark no observed regular-close disagreement in these samples. Attribute historical rows to their explicit S&P footer and keep general quote-feed information separate. Retain historical session dates and actual retrieval/first-observed availability; make no 15-minute historical-row publication guarantee. Explicitly reject a future same-session same-basis conflict pending resolution rather than treating after-hours as conflicting close.",
+      "outcome": "required_correction_open",
+      "economic_inputs_changed": false
+    },
+    {
+      "id": "NFLX-PROTOCOL-ASTRA-002",
+      "severity": "medium",
+      "priority": "P2",
+      "type": "verified_protocol_temporal_omission",
+      "location": "protocol One falsifiable primary economic hypothesis; Daily-resolution response design",
+      "finding": "The economic forecast horizon FY2027-2029 is specified, but H has no fixed adjudication date or eligible-evidence cutoff. D20 is called the primary price persistence/reversal endpoint only. Recording availability timestamps without defining the information set eligible to decide H leaves an investigator free to use later favourable disclosures to settle the original Q3 hypothesis or move its assessment date.",
+      "evidence": [
+        "H requires forward source support and permits the interview to change classification, but specifies neither a final economic classification time nor frozen intermediate classification records.",
+        "D1/D2/D5 mark information sets and D20 is a price endpoint; no instruction excludes information first available after a chosen economic cutoff from the primary H adjudication."
+      ],
+      "proposed_correction": "Predeclare the primary H adjudication cutoff and the allowed source/availability boundary. One adequate design is primary H as of D1 close using release/interview and genuinely available follow-on evidence, with separately labelled D2/D5/D20 updates; another is explicitly designate D20 final H with frozen prior classifications. Choose before the event, preserve unresolved at the cutoff when evidence is insufficient, and exclude later evidence from retroactively changing the primary label. Any later economic change must distinguish Q3 evidence from intervening new developments. No numerical model update is required.",
+      "outcome": "required_correction_open",
+      "economic_inputs_changed": false
+    },
+    {
+      "id": "NFLX-PROTOCOL-ASTRA-003",
+      "severity": "medium",
+      "priority": "P2",
+      "type": "verified_cash_definition_and_funding_omission",
+      "location": "protocol causal interface and Supported conditionally criterion; accepted framework r002 Cash bridge, commitments and funding",
+      "finding": "The displayed interface ends after recurring acquisition cash and deducts interest but no principal or refinancing/funding requirement, yet calls itself the accepted reference interface for owner cash. The accepted r002 cash-franchise framework deducts scheduled principal and tests an explicit opening-liquidity condition. The broad reference to financing offsets and a later current-value bridge does not expressly require that funding reconciliation before classifying a durable per-claim owner-cash improvement.",
+      "evidence": [
+        "Protocol formula: recurring OI through acquisition cash, including cash interest, but omitting scheduled principal/net financing and liquidity reconciliation.",
+        "Accepted r002 specifies 2027-2029 principal payments, no assumed refinancing or new borrowing to fund distributions, and the conditional opening reserve. Those are unchanged baseline constraints, not newly proposed economic assumptions.",
+        "A positive recurring pre-principal cash direction can coexist with a larger debt-service need or failed funding condition; the latter cannot be labelled funded distributable owner-cash improvement solely from the displayed formula."
+      ],
+      "proposed_correction": "Label the displayed interface as recurring pre-principal operating-to-equity cash, then explicitly carry the existing debt-principal/service schedule, any independently evidenced refinancing costs and claims, liquidity reserves and funding continuity into H support. If debt/funding changes are unknown and could overturn the per-claim conclusion, classify unresolved. Do not subtract debt twice, add borrowing as free owner cash, or rebuild the accepted model. It is enough to demonstrate baseline financing/funding still holds for the claimed revision or document the bounded offset.",
+      "outcome": "required_correction_open",
+      "economic_inputs_changed": false
+    }
+  ],
+  "checks": [
+    {
+      "name": "All 10 freshly captured raw source hashes and byte lengths recomputed",
+      "result": "pass",
+      "count": 10,
+      "details": [
+        {
+          "id": "robots",
+          "sha256": "532e8b9a7d88e23dfac0e0ddf831848847d324932264b6b96ace70adb8e913ba",
+          "hash_match": true,
+          "byte_length_match": true
+        },
+        {
+          "id": "terms",
+          "sha256": "ccd0ad67136ba8afb6685c455392d692a71c012c620afeda82582e3ee738effe",
+          "hash_match": true,
+          "byte_length_match": true
+        },
+        {
+          "id": "data-sources",
+          "sha256": "7c095cb11a961f3d3584b11cbf02d2a28a8778d7fa385be87b1ed88cbdf0ea4c",
+          "hash_match": true,
+          "byte_length_match": true
+        },
+        {
+          "id": "nflx-history",
+          "sha256": "f8acc2f802440b9750ed0c18921a1dc928355290abc0860574497af65979ca1f",
+          "hash_match": true,
+          "byte_length_match": true
+        },
+        {
+          "id": "spy-history",
+          "sha256": "95d2789e7e4a332a562cefefc7c77dc1c79b244a2a7b89acda028ab423863288",
+          "hash_match": true,
+          "byte_length_match": true
+        },
+        {
+          "id": "xlc-history",
+          "sha256": "7be4f897a1f87e5fccbe5ad4a3d3d601c649ed8914e6e0b8229c1e3632844d5f",
+          "hash_match": true,
+          "byte_length_match": true
+        },
+        {
+          "id": "annual-forecast",
+          "sha256": "b5817e313e931edb1842ee7bcba01a22cfba301ef807159836b9d14f2a9e1eaf",
+          "hash_match": true,
+          "byte_length_match": true
+        },
+        {
+          "id": "yahoo-analysis",
+          "sha256": "bc3dfd32e3bfd7f5945711668101638b14261f0916c416238d4f4f1b93f22e00",
+          "hash_match": true,
+          "byte_length_match": true
+        },
+        {
+          "id": "event",
+          "sha256": "a137e37983536b7de079d1d6b3b306938120c1c007f20c0eed156a5c8184da0b",
+          "hash_match": true,
+          "byte_length_match": true
+        },
+        {
+          "id": "sec-submissions",
+          "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+          "hash_match": true,
+          "byte_length_match": true
+        }
+      ]
+    },
+    {
+      "name": "Predecessor preservation independently recomputed",
+      "result": "pass",
+      "count": 534,
+      "mismatches": []
+    },
+    {
+      "name": "Actual raw source passages inspected",
+      "result": "pass",
+      "details": "Terms/robots; all three history headers, first rows and provenance footers; data-sources quote and time-zone sections; annual forecast financial table/adjusted-EPS statement/contributor counts/update date; Yahoo revenue/EPS values and checked GAAP control; issuer event notice; latest SEC 10-Q metadata. Source defects reported above, not waived by hash matches."
+    },
+    {
+      "name": "Management references and arithmetic",
+      "result": "pass",
+      "details": "Existing July PDF hash matches frozen authority; relevant archived derived passages confirm Q3 revenue12860/OI4268/EPS0.82, FY revenue51000-51400/margin31.5%, FCF approximately12500/cash-content-amortisation approximately1.1x. Independent FY implied OI calculation:16065-16191. No closed foundation calculation audit repeated."
+    },
+    {
+      "name": "Prospective event and session calendar",
+      "result": "pass",
+      "details": "Issuer September14 notice schedules October20 13:01 Pacific release and13:45 interview; both are after16:00 New York regular close. Official Nasdaq calendar freshly opened shows no scheduled full/early closure October20-November17. Weekday count independently yields D1 October21,D2 October22,D5 October27,D20 November17.",
+      "source_url": "https://www.nasdaq.com/market-activity/stock-market-holiday-schedule"
+    },
+    {
+      "name": "Named-zone close conversion",
+      "result": "pass",
+      "details": "Independently evaluated all five scheduled closes using America/New_York, UTC, Europe/London. All frozen offsets/times match, including October27 UK-only DST change and November17 US standard time."
+    },
+    {
+      "name": "Rights boundary",
+      "result": "pass_with_limits",
+      "details": "Actual archived terms contain explicit exception for robot-compliant AI agents; robots wildcard disallows unrelated paths and specific other bots. Intended public paths allowed for declared agent. Limited factual snippets and local raw preservation match stated scope; no blanket future licence or legal opinion inferred."
+    },
+    {
+      "name": "Economic support and opposing cases",
+      "result": "pass_subject_to_findings_002_003",
+      "details": "OI trigger and no-trigger category separate from revenue/EPS; positive operating profit alone insufficient; anticipated advertising/content/termination effects excluded; bounded offsets and per-claim evidence required; unknown offset magnitude defaults unresolved. Do not read plausibly fully reverse as contradiction without the following demonstrably-decisive condition."
+    },
+    {
+      "name": "Manual-delay and confound boundaries",
+      "result": "pass",
+      "details": "D1/D2/D5 fixed prospectively; C20/Cdelay price-only ratios are not paper fills or ranking/optimisation. SPY/XLC are descriptive; sector self-inclusion, dividends, intervening news/interview, missing rows, intraday timing, postponement, reversal and no repricing are expressly addressed."
+    },
+    {
+      "name": "Current-value and authority boundary",
+      "result": "pass",
+      "details": "January2027 conditional cash-franchise component remains separate from current equity value; cash/debt/claims/compensation/stub bridge and double-count exclusions stated. No approved numeric model revisions, expected return, allocation, entry or execution. Funding-interface finding concerns H definition, not reopening the valuation audit."
+    }
+  ],
+  "outcome": "required_corrections_before_protocol_acceptance",
+  "unresolved_material_findings": 3,
+  "daily_research_feasibility": "Daily split-consistent price-only descriptive research is demonstrated conditionally; corrections do not require paid sources or a new model. Future actual rows, permission and quality remain use-time gates.",
+  "remaining_limits": [
+    "Unknown backend settings; requested Astra High route recorded honestly.",
+    "October10 frozen external context is not event-time consensus; actual estimator update timestamps unknown.",
+    "S&P historical row availability timing is not guaranteed by general quote-feed documentation.",
+    "No price outcomes, actual future disclosures, returns, backtests, paper fills, broker actions or monitoring changes were retrieved/performed.",
+    "No numerical economic assumptions changed; complete current valuation and executable advantage remain unapproved.",
+    "Parent disposition and any author amendment are separate and have not been approved by this original-input review."
+  ],
+  "author_files_modified": false,
+  "parent_disposition_written": false,
+  "goal_closed": false
+}

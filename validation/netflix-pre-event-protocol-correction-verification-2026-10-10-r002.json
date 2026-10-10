@@ -1,0 +1,142 @@
+{
+  "schema": "netflix-protocol-author-correction-checks-v1",
+  "verified_at_utc": "2026-10-10T17:07:44.858288+00:00",
+  "checks": [
+    {
+      "name": "Original frozen seven inputs preserved",
+      "passed": true,
+      "evidence": [
+        {
+          "path": "monitoring/studies/2026-10-10-netflix-pre-event-protocol-r001.md",
+          "sha256": "1a130711a2b971c448eaeab5dd27472820471f3275e756792a9c1e5fa1f65ebf",
+          "bytes": 20992
+        },
+        {
+          "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-r001.json",
+          "sha256": "9d2ea88cc2ea978d053346752f6f711d2d8f0150819522718ef85bc2dec56eec",
+          "bytes": 10462
+        },
+        {
+          "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/source-retrieval-register.json",
+          "sha256": "bd1af15a9e12b8641e849875ab85ef968596148dc160d4810d599baf905fb48a",
+          "bytes": 6072
+        },
+        {
+          "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/READABLE-EVIDENCE.md",
+          "sha256": "4552a2d83bc0255049614dcf9ec839f24fbb4e6cc65c4bea60239681d1db9ba4",
+          "bytes": 5244
+        },
+        {
+          "path": "validation/netflix-protocol-baseline-2026-10-10-r001.json",
+          "sha256": "6339a7555b8dc404e08dcd9dfd0450490c06401f0ca73f2aaca4dcd708b0e546",
+          "bytes": 101074
+        },
+        {
+          "path": "validation/netflix-pre-event-protocol-2026-10-10-r001-verify.py",
+          "sha256": "3912d8587ab46f04fb467b4d04fedfa0b8f26c0af66d1f81842fee60c56dbab7",
+          "bytes": 7491
+        },
+        {
+          "path": "validation/netflix-pre-event-protocol-verification-2026-10-10-r001.json",
+          "sha256": "f01be84f04f1538c21cdc716ce702f1624f8b19ec3af23505552f422b8f92524",
+          "bytes": 6768
+        }
+      ]
+    },
+    {
+      "name": "Three correction input hashes match",
+      "passed": true,
+      "evidence": [
+        {
+          "path": "monitoring/studies/2026-10-10-netflix-pre-event-protocol-r002.md",
+          "sha256": "0bb0f521a9267cbcea32042ca3c65964ffeb2203812d572aab44593c557aa587",
+          "bytes": 24758
+        },
+        {
+          "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-clarifications-r002.json",
+          "sha256": "e3a1be3a33e0446e1a4cd9a7784dac7c7fd9e3c574f97e53bd83c7a813a344f1",
+          "bytes": 2344
+        },
+        {
+          "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/price-panel-times-r003.json",
+          "sha256": "8b325978837556b17916399e31ddd0686b43cc66b842c1cda5dd4fc4c7a67283",
+          "bytes": 893
+        }
+      ]
+    },
+    {
+      "name": "All534 predecessors still preserved",
+      "passed": true,
+      "evidence": 534
+    },
+    {
+      "name": "nflx-history regular history/quote sample consistent",
+      "passed": true,
+      "evidence": {
+        "regular": "70.30",
+        "history": "70.30",
+        "provenance": "S&P historical footer; no UTP latency assumption"
+      }
+    },
+    {
+      "name": "nflx-history separate afterhours price/time actually present",
+      "passed": true,
+      "evidence": {
+        "price_usd": "70.32",
+        "displayed_timestamp": "Oct 9, 2026, 7:59 PM EDT",
+        "utc": "2026-10-09T23:59:00+00:00"
+      }
+    },
+    {
+      "name": "spy-history regular history/quote sample consistent",
+      "passed": true,
+      "evidence": {
+        "regular": "778.57",
+        "history": "778.57",
+        "provenance": "S&P historical footer; no UTP latency assumption"
+      }
+    },
+    {
+      "name": "spy-history separate afterhours price/time actually present",
+      "passed": true,
+      "evidence": {
+        "price_usd": "778.59",
+        "displayed_timestamp": "Oct 9, 2026, 7:51 PM EDT",
+        "timezone_basis": "Explicit after-hours panel EDT; regular panel Eastern from publisher general US timestamp definition",
+        "utc": "2026-10-09T23:51:00+00:00"
+      }
+    },
+    {
+      "name": "xlc-history regular history/quote sample consistent",
+      "passed": true,
+      "evidence": {
+        "regular": "110.38",
+        "history": "110.38",
+        "provenance": "S&P historical footer; no UTP latency assumption"
+      }
+    },
+    {
+      "name": "Fixed D2 cutoff zones agree",
+      "passed": true,
+      "evidence": {
+        "utc": "2026-10-22T20:00:00+00:00",
+        "eastern": "2026-10-22T16:00:00-04:00",
+        "london": "2026-10-22T21:00:00+01:00",
+        "eligible": "Q3 issuer package/interview and linked clarifications plus pre-cutoff claims/funding evidence; distinguish public availability from researcher actual access",
+        "later_evidence": "Secondary updates/confounds only; preserve D2 primary result"
+      }
+    },
+    {
+      "name": "All protocol revisions pre-event",
+      "passed": true,
+      "evidence": "2026-10-10T17:06:50.816530+00:00"
+    },
+    {
+      "name": "Funding correction leaves existing economic model untouched",
+      "passed": true,
+      "evidence": "Historical baseline and closed model/reviews retained; no economic numeric revision"
+    }
+  ],
+  "passed": true,
+  "scope": "Actual raw-source panel/provenance checks, time arithmetic and preservation. Independent correction review and analytical adjudication remain separate."
+}

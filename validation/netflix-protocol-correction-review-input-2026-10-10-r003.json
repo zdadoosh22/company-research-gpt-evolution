@@ -1,0 +1,21 @@
+{
+  "frozen_at_utc": "2026-10-10T17:06:50.816530+00:00",
+  "scope": "Prospective corrections plus separate completion of panel times; preserves prior input versions",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-pre-event-protocol-r002.md",
+      "sha256": "0bb0f521a9267cbcea32042ca3c65964ffeb2203812d572aab44593c557aa587",
+      "bytes": 24758
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-clarifications-r002.json",
+      "sha256": "e3a1be3a33e0446e1a4cd9a7784dac7c7fd9e3c574f97e53bd83c7a813a344f1",
+      "bytes": 2344
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/price-panel-times-r003.json",
+      "sha256": "8b325978837556b17916399e31ddd0686b43cc66b842c1cda5dd4fc4c7a67283",
+      "bytes": 893
+    }
+  ]
+}

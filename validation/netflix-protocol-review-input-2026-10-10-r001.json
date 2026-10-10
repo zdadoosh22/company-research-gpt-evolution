@@ -1,0 +1,161 @@
+{
+  "recorded_at_utc": "2026-10-10T17:04:41.969800+00:00",
+  "review_scope": "New protocol, frozen reference and source definitions only; predecessor reviews preserved, not repeated",
+  "starting_commit": "cb98b10d4e5fe30e1158907eb2e1c5a57ccc4d42",
+  "new_inputs": [
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-pre-event-protocol-r001.md",
+      "sha256": "1a130711a2b971c448eaeab5dd27472820471f3275e756792a9c1e5fa1f65ebf",
+      "bytes": 20992
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-r001.json",
+      "sha256": "9d2ea88cc2ea978d053346752f6f711d2d8f0150819522718ef85bc2dec56eec",
+      "bytes": 10462
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/source-retrieval-register.json",
+      "sha256": "bd1af15a9e12b8641e849875ab85ef968596148dc160d4810d599baf905fb48a",
+      "bytes": 6072
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/READABLE-EVIDENCE.md",
+      "sha256": "4552a2d83bc0255049614dcf9ec839f24fbb4e6cc65c4bea60239681d1db9ba4",
+      "bytes": 5244
+    },
+    {
+      "path": "validation/netflix-protocol-baseline-2026-10-10-r001.json",
+      "sha256": "6339a7555b8dc404e08dcd9dfd0450490c06401f0ca73f2aaca4dcd708b0e546",
+      "bytes": 101074
+    },
+    {
+      "path": "validation/netflix-pre-event-protocol-2026-10-10-r001-verify.py",
+      "sha256": "3912d8587ab46f04fb467b4d04fedfa0b8f26c0af66d1f81842fee60c56dbab7",
+      "bytes": 7491
+    },
+    {
+      "path": "validation/netflix-pre-event-protocol-verification-2026-10-10-r001.json",
+      "sha256": "f01be84f04f1538c21cdc716ce702f1624f8b19ec3af23505552f422b8f92524",
+      "bytes": 6768
+    }
+  ],
+  "inspected_baseline_bindings": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "9f5b1809330666ce2f54f981e592698c084120acad1cd20c43952abdf48ba704",
+      "bytes": 6628
+    },
+    {
+      "path": "README.md",
+      "sha256": "80482830262b07ac754e62d9e1a6fe4f645d64f5aa6ea56e3579a862eda64434",
+      "bytes": 3839
+    },
+    {
+      "path": "methodology/current.json",
+      "sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5",
+      "bytes": 358
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+      "bytes": 59411
+    },
+    {
+      "path": "methodology/principles.md",
+      "sha256": "ee75607e99c43172efc73a22877cbf6e7b072d7204b017d4a647a77809c84b07",
+      "bytes": 7459
+    },
+    {
+      "path": "workflows/research.md",
+      "sha256": "6b20763316e6c47b0118f0489a499026e76fed34552b7f7a1905e4caf23e15b3",
+      "bytes": 4029
+    },
+    {
+      "path": "workflows/model-review.md",
+      "sha256": "448aa9e8b3f20cc2bb8f41ec6007c9b3fabce9af399a3cc36d7e37b2beb4c11e",
+      "bytes": 1804
+    },
+    {
+      "path": "validation/acceptance.md",
+      "sha256": "66ca65b41c11e42ed06e8531426c967a4fc0bfebd6bdba3062c449e6656f329f",
+      "bytes": 2038
+    },
+    {
+      "path": "lessons/confirmed.md",
+      "sha256": "1e30d315aed33eb0a945b2c906cd9bdf1403788dc65f97a04189171782c88898",
+      "bytes": 2428
+    },
+    {
+      "path": "monitoring/DECISION-SCOPE.md",
+      "sha256": "b424a556978d65327aa6be45702691c824f894a550a6937e288f8b01031f00b8",
+      "bytes": 4912
+    },
+    {
+      "path": "monitoring/config.json",
+      "sha256": "dc7d6ccf634b7e0408bbf0784cdb6d1cafd1ab85edc4bf4fa688b014bf04fd5c",
+      "bytes": 3627
+    },
+    {
+      "path": "monitoring/START-HERE.md",
+      "sha256": "ccf57fb657ef11096dc182ab8d85ced2316634b6cd103289cfcf32360ff11b87",
+      "bytes": 12265
+    },
+    {
+      "path": "monitoring/IMPROVEMENT-ROADMAP.md",
+      "sha256": "b2e03f4d6fc8caa8e93a7f99fb8649f2613471f93343e0e905f55f0aefcf392f",
+      "bytes": 15825
+    },
+    {
+      "path": "validation/observation-status.json",
+      "sha256": "be27138480a8173a86ddf85e1b22413891040723789ef5a7e871b5387a972640",
+      "bytes": 5785
+    },
+    {
+      "path": "validation/status.json",
+      "sha256": "c4c0c34f4deff103ac473445af1871eb5c917328eca90950f9b5d4d382e6d683",
+      "bytes": 2439
+    },
+    {
+      "path": "workflows/chat-handoff.md",
+      "sha256": "f10dfca8759913e61a634fc87f691d276bec656ffb13c1aba26af8a6ff559c8c",
+      "bytes": 5334
+    },
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-framework-r002.md",
+      "sha256": "d87aafe9e180f1a0cd436ddcba350b1548903bdbff49acdd08bc017d259b31c4",
+      "bytes": 15553
+    },
+    {
+      "path": "validation/netflix-framework-clarifications-r003.md",
+      "sha256": "11b1aea5a4db44fee2c82efe1584904b95b105ff2d8530bd5796c2816eeb49b2",
+      "bytes": 1381
+    },
+    {
+      "path": "validation/netflix-framework-astra-challenge-r002.md",
+      "sha256": "1c5df5a6f41aa7a8ca899da695bf44bda8e8c0df2dc54135f221937adf5d8c73",
+      "bytes": 13359
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-feasibility-disposition-r001.md",
+      "sha256": "121db4d846d3054fe0e63e4927208fe332abfc1ac2175fba73c306e310517192",
+      "bytes": 7016
+    },
+    {
+      "path": "monitoring/decisions/2026-10-10-netflix-expectations-gate-r001.md",
+      "sha256": "977ce217c1c5281e9ac859d5b2353ee67930d315ff04a96c7fb41707b2eb6f6d",
+      "bytes": 18675
+    }
+  ],
+  "objective": {
+    "path": "validation/netflix-pre-event-protocol-objective-2026-10-10.md",
+    "sha256": "9ccf7b14eb7314b338c4d61a8cee95f9e0e7024aeef2ae3164a6327df2d81f3e",
+    "bytes": 6879
+  },
+  "delegation": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "high",
+    "task_name": "/root/netflix_protocol_astra_r001",
+    "backend_identity_independently_exposed": false
+  },
+  "raw_sources": "Local ignored raw archives bound by source-retrieval-register.json; review can inspect actual bytes without republishing full websites"
+}

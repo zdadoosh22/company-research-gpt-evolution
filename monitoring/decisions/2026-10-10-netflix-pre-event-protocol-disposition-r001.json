@@ -1,0 +1,34 @@
+{
+  "dated_at_utc": "2026-10-10T17:10:12.378940+00:00",
+  "decision": "protocol_ready_for_separately_authorised_future_limited_daily_research",
+  "protocol": "monitoring/studies/2026-10-10-netflix-pre-event-protocol-r002.md",
+  "required_reference_supplements": [
+    "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-clarifications-r002.json",
+    "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/price-panel-times-r003.json"
+  ],
+  "independent_review": {
+    "path": "validation/netflix-protocol-astra-correction-review-2026-10-10-r002.json",
+    "sha256": "5cdfe7efda7468f93ac5bbd17b482b6c4944aca8ebf8bffb8272602a09787f4c",
+    "unresolved_material_findings": 0
+  },
+  "actionable": false,
+  "current_intrinsic_value": null,
+  "expected_return": null,
+  "portfolio_decision": null,
+  "execution_instruction": null,
+  "numeric_model_changes": false,
+  "event_investigation_started": false,
+  "monitoring_changed": false,
+  "all534_predecessors_preserved": true,
+  "author_checks": {
+    "original": 19,
+    "correction": 11
+  },
+  "limits": [
+    "October10 external context; unknown actual estimate update timestamps",
+    "Publisher-labelled daily split-adjusted price-only history; unknown row latency, not executable or independently exchange certified",
+    "Use-time rights/source/adjustment/cutoff evidence gates remain",
+    "No complete current-value cash/debt/claims/stub bridge; no investment advantage accepted"
+  ],
+  "stop": "Only disposition/handoff; no automatic next stage"
+}

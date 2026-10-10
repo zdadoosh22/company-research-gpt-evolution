@@ -1,0 +1,16 @@
+{
+  "frozen_at_utc": "2026-10-10T17:06:14.935719+00:00",
+  "scope": "Only prospective protocol corrections; original source snapshot, numbers, model and predecessors preserved",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-pre-event-protocol-r002.md",
+      "sha256": "0bb0f521a9267cbcea32042ca3c65964ffeb2203812d572aab44593c557aa587",
+      "bytes": 24758
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-clarifications-r002.json",
+      "sha256": "e3a1be3a33e0446e1a4cd9a7784dac7c7fd9e3c574f97e53bd83c7a813a344f1",
+      "bytes": 2344
+    }
+  ]
+}

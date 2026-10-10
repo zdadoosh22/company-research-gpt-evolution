@@ -1,0 +1,9 @@
+{
+  "schema": "netflix-pre-event-panel-time-completion-v1",
+  "scope": "Completes the r002 corrected panel fields; same archived October9 sample session, no financial, historical-row or future observation changed",
+  "source_register": "source-retrieval-register.json",
+  "nflx_after_hours": {"price_usd": "70.32", "displayed_timestamp": "Oct 9, 2026, 7:59 PM EDT", "utc": "2026-10-09T23:59:00+00:00"},
+  "spy_after_hours": {"price_usd": "778.59", "displayed_timestamp": "Oct 9, 2026, 7:51 PM EDT", "timezone_basis": "Explicit after-hours panel EDT; regular panel Eastern from publisher general US timestamp definition", "utc": "2026-10-09T23:51:00+00:00"},
+  "xlc_after_hours": null,
+  "interpretation": "Separate after-hours observations; never substitutes for regular historical Close. No observed same-basis close conflict in these samples. Null does not assert no after-hours trading."
+}

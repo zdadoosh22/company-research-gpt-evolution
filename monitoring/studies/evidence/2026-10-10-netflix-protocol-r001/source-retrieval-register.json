@@ -1,0 +1,122 @@
+{
+  "recorded_at_utc": "2026-10-10T16:53:39.593782+00:00",
+  "scope": "One-shot AI-agent source availability check; robots-compliant; no bulk or background download. Full website content retained locally only; publish attributed excerpts/factual rows, not full republishing.",
+  "records": [
+    {
+      "id": "robots",
+      "url": "https://stockanalysis.com/robots.txt",
+      "retrieved_at_utc": "2026-10-10T16:53:36.670095+00:00",
+      "agent": "CompanyResearch2AIResearchAgent",
+      "status": 200,
+      "raw_sha256": "532e8b9a7d88e23dfac0e0ddf831848847d324932264b6b96ace70adb8e913ba",
+      "raw_bytes": 242,
+      "local_raw_path": "work/netflix-protocol-r001/raw/robots-532e8b9a7d88e23dfac0e0ddf831848847d324932264b6b96ace70adb8e913ba.txt",
+      "raw_published_to_git": false
+    },
+    {
+      "id": "terms",
+      "url": "https://stockanalysis.com/terms-of-use/",
+      "retrieved_at_utc": "2026-10-10T16:53:36.954240+00:00",
+      "agent": "CompanyResearch2AIResearchAgent",
+      "robots_permitted_for_named_ai_agent": true,
+      "status": 200,
+      "raw_sha256": "ccd0ad67136ba8afb6685c455392d692a71c012c620afeda82582e3ee738effe",
+      "raw_bytes": 65656,
+      "local_raw_path": "work/netflix-protocol-r001/raw/terms-ccd0ad67136ba8afb6685c455392d692a71c012c620afeda82582e3ee738effe.html",
+      "raw_published_to_git": false
+    },
+    {
+      "id": "data-sources",
+      "url": "https://stockanalysis.com/data-sources/",
+      "retrieved_at_utc": "2026-10-10T16:53:37.408143+00:00",
+      "agent": "CompanyResearch2AIResearchAgent",
+      "robots_permitted_for_named_ai_agent": true,
+      "status": 200,
+      "raw_sha256": "7c095cb11a961f3d3584b11cbf02d2a28a8778d7fa385be87b1ed88cbdf0ea4c",
+      "raw_bytes": 67489,
+      "local_raw_path": "work/netflix-protocol-r001/raw/data-sources-7c095cb11a961f3d3584b11cbf02d2a28a8778d7fa385be87b1ed88cbdf0ea4c.html",
+      "raw_published_to_git": false
+    },
+    {
+      "id": "nflx-history",
+      "url": "https://stockanalysis.com/stocks/nflx/history/",
+      "retrieved_at_utc": "2026-10-10T16:53:37.832462+00:00",
+      "agent": "CompanyResearch2AIResearchAgent",
+      "robots_permitted_for_named_ai_agent": true,
+      "status": 200,
+      "raw_sha256": "f8acc2f802440b9750ed0c18921a1dc928355290abc0860574497af65979ca1f",
+      "raw_bytes": 113709,
+      "local_raw_path": "work/netflix-protocol-r001/raw/nflx-history-f8acc2f802440b9750ed0c18921a1dc928355290abc0860574497af65979ca1f.html",
+      "raw_published_to_git": false
+    },
+    {
+      "id": "spy-history",
+      "url": "https://stockanalysis.com/etf/spy/history/",
+      "retrieved_at_utc": "2026-10-10T16:53:37.980363+00:00",
+      "agent": "CompanyResearch2AIResearchAgent",
+      "robots_permitted_for_named_ai_agent": true,
+      "status": 200,
+      "raw_sha256": "95d2789e7e4a332a562cefefc7c77dc1c79b244a2a7b89acda028ab423863288",
+      "raw_bytes": 112774,
+      "local_raw_path": "work/netflix-protocol-r001/raw/spy-history-95d2789e7e4a332a562cefefc7c77dc1c79b244a2a7b89acda028ab423863288.html",
+      "raw_published_to_git": false
+    },
+    {
+      "id": "xlc-history",
+      "url": "https://stockanalysis.com/etf/xlc/history/",
+      "retrieved_at_utc": "2026-10-10T16:53:38.101493+00:00",
+      "agent": "CompanyResearch2AIResearchAgent",
+      "robots_permitted_for_named_ai_agent": true,
+      "status": 200,
+      "raw_sha256": "7be4f897a1f87e5fccbe5ad4a3d3d601c649ed8914e6e0b8229c1e3632844d5f",
+      "raw_bytes": 111294,
+      "local_raw_path": "work/netflix-protocol-r001/raw/xlc-history-7be4f897a1f87e5fccbe5ad4a3d3d601c649ed8914e6e0b8229c1e3632844d5f.html",
+      "raw_published_to_git": false
+    },
+    {
+      "id": "annual-forecast",
+      "url": "https://stockanalysis.com/stocks/nflx/forecast/",
+      "retrieved_at_utc": "2026-10-10T16:53:38.457916+00:00",
+      "agent": "CompanyResearch2AIResearchAgent",
+      "robots_permitted_for_named_ai_agent": true,
+      "status": 200,
+      "raw_sha256": "b5817e313e931edb1842ee7bcba01a22cfba301ef807159836b9d14f2a9e1eaf",
+      "raw_bytes": 173035,
+      "local_raw_path": "work/netflix-protocol-r001/raw/annual-forecast-b5817e313e931edb1842ee7bcba01a22cfba301ef807159836b9d14f2a9e1eaf.html",
+      "raw_published_to_git": false
+    },
+    {
+      "id": "yahoo-analysis",
+      "url": "https://finance.yahoo.com/quote/NFLX/analysis/",
+      "retrieved_at_utc": "2026-10-10T16:53:38.615310+00:00",
+      "agent": "CompanyResearch2AIResearchAgent",
+      "status": 200,
+      "raw_sha256": "bc3dfd32e3bfd7f5945711668101638b14261f0916c416238d4f4f1b93f22e00",
+      "raw_bytes": 1211615,
+      "local_raw_path": "work/netflix-protocol-r001/raw/yahoo-analysis-bc3dfd32e3bfd7f5945711668101638b14261f0916c416238d4f4f1b93f22e00.html",
+      "raw_published_to_git": false
+    },
+    {
+      "id": "event",
+      "url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-to-Announce-Third-Quarter-2026-Financial-Results/default.aspx",
+      "retrieved_at_utc": "2026-10-10T16:53:39.090301+00:00",
+      "agent": "CompanyResearch2AIResearchAgent",
+      "status": 200,
+      "raw_sha256": "a137e37983536b7de079d1d6b3b306938120c1c007f20c0eed156a5c8184da0b",
+      "raw_bytes": 47495,
+      "local_raw_path": "work/netflix-protocol-r001/raw/event-a137e37983536b7de079d1d6b3b306938120c1c007f20c0eed156a5c8184da0b.html",
+      "raw_published_to_git": false
+    },
+    {
+      "id": "sec-submissions",
+      "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+      "retrieved_at_utc": "2026-10-10T16:53:39.361293+00:00",
+      "agent": "CompanyResearch2AIResearchAgent",
+      "status": 200,
+      "raw_sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "raw_bytes": 160304,
+      "local_raw_path": "work/netflix-protocol-r001/raw/sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "raw_published_to_git": false
+    }
+  ]
+}

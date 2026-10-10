@@ -1,0 +1,47 @@
+{
+  "schema": "netflix-pre-event-reference-clarifications-v2",
+  "recorded_at_utc": "2026-10-10T17:06:14.935719+00:00",
+  "original_reference": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-r001.json",
+  "original_sha256": "9d2ea88cc2ea978d053346752f6f711d2d8f0150819522718ef85bc2dec56eec",
+  "supersedes_only": [
+    "r001 quote_panel_timestamp snippets",
+    "Attribution of historical-row official-close/latency claims to general quote feed",
+    "Missing explicit primary economic evidence cutoff",
+    "Recurring diagnostic mistaken for entire funded owner-cash interface"
+  ],
+  "no_financial_values_or_price_rows_changed": true,
+  "primary_hypothesis_cutoff": {
+    "utc": "2026-10-22T20:00:00+00:00",
+    "eastern": "2026-10-22T16:00:00-04:00",
+    "london": "2026-10-22T21:00:00+01:00",
+    "eligible": "Q3 issuer package/interview and linked clarifications plus pre-cutoff claims/funding evidence; distinguish public availability from researcher actual access",
+    "later_evidence": "Secondary updates/confounds only; preserve D2 primary result"
+  },
+  "funding_requirement": "Recurring pre-principal diagnostic + matched scheduled principal/refinancing/residual claims/content stress/liquidity bridge; missing burdens => unresolved",
+  "historical_data_provider": "S&P Global Market Intelligence, explicit history footer",
+  "historical_row_latency": "Not established; general quote-feed 15-minute delay must not be transferred",
+  "historical_close_status": "Publisher-labelled split-adjusted Close, price-only; not independently exchange-certified auction close",
+  "corrected_price_panels": [
+    {
+      "id": "nflx-history",
+      "regular_close": "70.30",
+      "regular_timestamp": "Oct 9, 2026, 4:00 PM EDT",
+      "after_hours": "70.32"
+    },
+    {
+      "id": "spy-history",
+      "regular_close": "778.57",
+      "regular_timestamp": "Oct 9, 2026, 4:00 PM (Eastern from publisher general definition)",
+      "after_hours": "778.59"
+    },
+    {
+      "id": "xlc-history",
+      "regular_close": "110.38",
+      "regular_timestamp": "Oct 9, 2026, 4:00 PM EDT - Market closed",
+      "after_hours": null
+    }
+  ],
+  "sample_session": "2026-10-09",
+  "future_observation_values": null,
+  "source_register": "source-retrieval-register.json"
+}

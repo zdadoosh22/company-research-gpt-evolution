@@ -1,0 +1,163 @@
+{
+  "schema": "independent-pre-event-protocol-correction-review-v1",
+  "reviewed_at_utc": "2026-10-10T17:08:20.439309+00:00",
+  "date_london": "2026-10-10",
+  "reviewer_task": "/root/netflix_protocol_astra_r001",
+  "model_route": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "high",
+    "dispatch_tool": "collaboration.spawn_agent",
+    "fork_turns": "none",
+    "dispatch_confirmation": "Root reports actual call model=gpt-6-astra, reasoning_effort=high; returned task_name /root/netflix_protocol_astra_r001. Independently delegated review performed through that requested route.",
+    "reported_backend_model": null,
+    "reported_actual_reasoning_effort": null,
+    "reported_service_tier": null,
+    "limit": "No backend identity/settings exposed independently to this reviewer; requested route is not a claim of independently verified backend configuration."
+  },
+  "scope": "Actual re-review only of three original medium findings and directly relevant changed inputs/raw passages. No full author-check-suite rerun or closed financial/framework audit.",
+  "manifest": {
+    "path": "validation/netflix-protocol-correction-review-input-2026-10-10-r003.json",
+    "sha256": "c51d846e8b77789c4d6044baf5dbb0f7a9dd613909abb1e31bc6931a149c2fb0"
+  },
+  "reviewed_inputs": [
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-pre-event-protocol-r002.md",
+      "sha256": "0bb0f521a9267cbcea32042ca3c65964ffeb2203812d572aab44593c557aa587",
+      "bytes": 24758
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-clarifications-r002.json",
+      "sha256": "e3a1be3a33e0446e1a4cd9a7784dac7c7fd9e3c574f97e53bd83c7a813a344f1",
+      "bytes": 2344
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/price-panel-times-r003.json",
+      "sha256": "8b325978837556b17916399e31ddd0686b43cc66b842c1cda5dd4fc4c7a67283",
+      "bytes": 893
+    }
+  ],
+  "original_review_preserved": [
+    {
+      "path": "validation/netflix-protocol-astra-challenge-2026-10-10-r001.md",
+      "sha256": "bfafda559cb309ac82c586a2b37e6467837c08ddec88f67279845703650ba90b"
+    },
+    {
+      "path": "validation/netflix-protocol-astra-challenge-2026-10-10-r001.json",
+      "sha256": "ec73c1a6594b4101f75a584d0dd3f5c1f4389554abc4f56ae650b15531caae1c"
+    }
+  ],
+  "original_protocol_reference_and_register_preserved": [
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-pre-event-protocol-r001.md",
+      "sha256": "1a130711a2b971c448eaeab5dd27472820471f3275e756792a9c1e5fa1f65ebf"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-r001.json",
+      "sha256": "9d2ea88cc2ea978d053346752f6f711d2d8f0150819522718ef85bc2dec56eec"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/source-retrieval-register.json",
+      "sha256": "bd1af15a9e12b8641e849875ab85ef968596148dc160d4810d599baf905fb48a"
+    },
+    {
+      "path": "validation/netflix-protocol-baseline-2026-10-10-r001.json",
+      "sha256": "6339a7555b8dc404e08dcd9dfd0450490c06401f0ca73f2aaca4dcd708b0e546"
+    }
+  ],
+  "raw_sources_reinspected": [
+    {
+      "id": "data-sources",
+      "path": "work/netflix-protocol-r001/raw/data-sources-7c095cb11a961f3d3584b11cbf02d2a28a8778d7fa385be87b1ed88cbdf0ea4c.html",
+      "sha256": "7c095cb11a961f3d3584b11cbf02d2a28a8778d7fa385be87b1ed88cbdf0ea4c"
+    },
+    {
+      "id": "nflx-history",
+      "path": "work/netflix-protocol-r001/raw/nflx-history-f8acc2f802440b9750ed0c18921a1dc928355290abc0860574497af65979ca1f.html",
+      "sha256": "f8acc2f802440b9750ed0c18921a1dc928355290abc0860574497af65979ca1f"
+    },
+    {
+      "id": "spy-history",
+      "path": "work/netflix-protocol-r001/raw/spy-history-95d2789e7e4a332a562cefefc7c77dc1c79b244a2a7b89acda028ab423863288.html",
+      "sha256": "95d2789e7e4a332a562cefefc7c77dc1c79b244a2a7b89acda028ab423863288"
+    },
+    {
+      "id": "xlc-history",
+      "path": "work/netflix-protocol-r001/raw/xlc-history-7be4f897a1f87e5fccbe5ad4a3d3d601c649ed8914e6e0b8229c1e3632844d5f.html",
+      "sha256": "7be4f897a1f87e5fccbe5ad4a3d3d601c649ed8914e6e0b8229c1e3632844d5f"
+    }
+  ],
+  "finding_dispositions": [
+    {
+      "id": "NFLX-PROTOCOL-ASTRA-001",
+      "original_severity": "medium",
+      "outcome": "closed_by_actual_scoped_correction_review",
+      "evidence": "Reinspected all three original raw history header/footer passages and general data-source time-zone definition. r002 separates S&P history rows and unknown publication latency from general CBOE/UTP quotes; explicitly withholds same-basis genuine conflicts. Structured r002 fields give correct regular close/time, and r003 completes exact after-hours values/times. NFLX regular70.30 at16:00EDT, after70.32 at19:59EDT; SPY regular778.57 at16:00 Eastern, after778.59 at19:51EDT; XLC regular110.38 at16:00EDT, no supplied after-hours field. UTC conversions23:59/23:51 independently checked. No actual same-basis sample close conflict."
+    },
+    {
+      "id": "NFLX-PROTOCOL-ASTRA-002",
+      "original_severity": "medium",
+      "outcome": "closed_by_actual_scoped_correction_review",
+      "evidence": "Protocol now fixes primary H evidence/adjudication to D2 October22 2026 at20:00UTC/16:00NewYork/21:00BST; independently checked named-zone conversion. Eligible Q3 package/interview/linked clarifications and historical claims/funding evidence require demonstrated pre-cutoff public availability. Publication, availability and actual retrieval/access are distinct. Unknown availability or insufficient capture leaves unresolved/park; D5/D20 developments are separately labelled secondary evidence, unable to repair primary H. Economic forecast horizon FY2027-2029 remains distinct from evidence collection period."
+    },
+    {
+      "id": "NFLX-PROTOCOL-ASTRA-003",
+      "original_severity": "medium",
+      "outcome": "closed_by_actual_scoped_correction_review",
+      "evidence": "Displayed expression is now explicitly recurring pre-principal cash diagnostic. H support additionally requires matched scheduled principal, refinancing amounts/costs/residual claims, content stresses, operating/content reserves and liquidity funding bridge. Principal deducted once; borrowing is not free equity value; unknown potentially decisive burdens leave unresolved. Numeric baseline economics and current-value restrictions unchanged."
+    }
+  ],
+  "new_material_findings": [],
+  "unresolved_material_findings": 0,
+  "checks": [
+    {
+      "name": "Three correction input hashes and byte lengths",
+      "result": "pass"
+    },
+    {
+      "name": "Original review MD/JSON and original four reviewed input hashes",
+      "result": "pass"
+    },
+    {
+      "name": "Independent full r001-to-r002 protocol diff inspection",
+      "result": "pass",
+      "details": "Only review-driven prospective definitions/source labels plus revision/endpoint text changed. Frozen numerical management/external expectations and price observation dates unchanged."
+    },
+    {
+      "name": "Original source panel/footer and general time-zone reinspection",
+      "result": "pass",
+      "raw_source_count": 4
+    },
+    {
+      "name": "D2 and two after-hours UTC conversions independently recalculated",
+      "result": "pass"
+    },
+    {
+      "name": "Adversarial temporal cases",
+      "result": "pass",
+      "details": "Late D5 favourable disclosure cannot repair primary H; unknown historical availability does not permit claimed contemporaneous access; missing necessary pre-cutoff evidence keeps unresolved."
+    },
+    {
+      "name": "Adversarial funded-cash cases",
+      "result": "pass",
+      "details": "Pre-principal uplift consumed by debt service or funding gaps cannot establish supported H; refinancing proceeds do not create owner cash; double subtraction forbidden."
+    }
+  ],
+  "outcome": "accept_limited_pre_event_protocol_r002_with_r002_reference_clarification_and_r003_panel_times",
+  "acceptance_scope": "Protocol ready for parent disposition toward separately authorised future limited daily price-only descriptive research and cutoff-bound economic evidence classification. Accepts the exact combined bundle, not protocol r001 alone.",
+  "accepted_required_supplements": [
+    "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-clarifications-r002.json",
+    "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/price-panel-times-r003.json"
+  ],
+  "remaining_limits": [
+    "Requested Astra High route recorded; independent backend identity/actual settings unavailable.",
+    "Future price row availability, source rights, adjustment consistency and conflicting data remain use-time gates; no 15-minute history publication guarantee.",
+    "October10 estimates are frozen dated context, not verified October20 consensus.",
+    "Primary H may remain unresolved at D2; retrospective knowledge cannot establish contemporaneous access or repair missing evidence.",
+    "No numeric model approval, complete current valuation, executable advantage, allocation, order, paper fill or automatic next stage.",
+    "Parent disposition and handoff integration remain the parent task. Original findings remain in immutable original review, separately closed here."
+  ],
+  "author_files_modified": false,
+  "parent_disposition_written": false,
+  "goal_closed": false,
+  "event_outcomes_retrieved": false
+}
