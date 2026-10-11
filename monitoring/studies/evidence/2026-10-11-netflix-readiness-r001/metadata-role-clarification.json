@@ -1,0 +1,70 @@
+{
+  "scope": "Clarifies original collector SC versus SCHEDULE form spelling; original metadata observations preserved",
+  "records": [
+    {
+      "form": "SCHEDULE 13G/A",
+      "filingDate": "2026-08-06",
+      "reportDate": "",
+      "accessionNumber": "0000315066-26-002077",
+      "primaryDocument": "xslSCHEDULE_13G_X02/primary_doc.xml",
+      "bridge_role": "beneficial holder report, not issuer treasury/claims rollforward"
+    },
+    {
+      "form": "8-K",
+      "filingDate": "2026-07-30",
+      "reportDate": "2026-07-26",
+      "accessionNumber": "0001065280-26-000214",
+      "primaryDocument": "nflx-20260726.htm",
+      "bridge_role": "corporate filing requiring source-specific interpretation"
+    },
+    {
+      "form": "8-K",
+      "filingDate": "2026-07-22",
+      "reportDate": "2026-07-20",
+      "accessionNumber": "0001193125-26-312575",
+      "primaryDocument": "d171951d8k.htm",
+      "bridge_role": "corporate filing requiring source-specific interpretation"
+    },
+    {
+      "form": "424B5",
+      "filingDate": "2026-07-21",
+      "reportDate": "",
+      "accessionNumber": "0001193125-26-310568",
+      "primaryDocument": "d171956d424b5.htm",
+      "bridge_role": "corporate filing requiring source-specific interpretation"
+    },
+    {
+      "form": "FWP",
+      "filingDate": "2026-07-20",
+      "reportDate": "",
+      "accessionNumber": "0001193125-26-309014",
+      "primaryDocument": "d159566dfwp.htm",
+      "bridge_role": "corporate filing requiring source-specific interpretation"
+    },
+    {
+      "form": "424B2",
+      "filingDate": "2026-07-20",
+      "reportDate": "",
+      "accessionNumber": "0001193125-26-308392",
+      "primaryDocument": "d171956d424b2.htm",
+      "bridge_role": "corporate filing requiring source-specific interpretation"
+    },
+    {
+      "form": "10-Q",
+      "filingDate": "2026-07-17",
+      "reportDate": "2026-06-30",
+      "accessionNumber": "0001065280-26-000212",
+      "primaryDocument": "nflx-20260630.htm",
+      "bridge_role": "corporate filing requiring source-specific interpretation"
+    },
+    {
+      "form": "8-K",
+      "filingDate": "2026-07-16",
+      "reportDate": "2026-07-16",
+      "accessionNumber": "0001065280-26-000211",
+      "primaryDocument": "nflx-20260716.htm",
+      "bridge_role": "corporate filing requiring source-specific interpretation"
+    }
+  ],
+  "no_issuer_rollforward_inferred_from_holder_schedule": true
+}

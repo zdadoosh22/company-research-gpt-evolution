@@ -1,0 +1,21 @@
+{
+  "recorded_at_utc": "2026-10-11T18:00:38.236495+00:00",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526310568/d171956d424b5.htm",
+  "source_location": "Description of Notes, Principal and Interest, printed S-12",
+  "units": "USD millions",
+  "basis": "Contractual 5.250% on1000 principal; 360-day year of12 thirty-day months; endpoints avoid monthend ambiguity",
+  "accrual_start": "2026-07-22",
+  "first_cash_payment": "2027-02-15",
+  "scheduled_first_period_days": 203,
+  "scheduled_first_coupon_if_not_redeemed": "29.60416666666666666666666667",
+  "jan1_split_days": [
+    159,
+    44
+  ],
+  "pre_january_contractual_accrual_diagnostic": "23.1875",
+  "jan1_to_payment_contractual_accrual_diagnostic": "6.416666666666666666666666667",
+  "normal_semiannual_coupon": "26.250",
+  "scope": "Scheduled coupon timing diagnostic only; not an observed payment, accounting-effective-interest expense, current cash claim or accepted model revision. Early redemption/default/businessday terms and actual settlement can change cash. Do not add accrued amount on top of ownercash forecasts already including the same eventual coupon.",
+  "checks": 6,
+  "passed": true
+}

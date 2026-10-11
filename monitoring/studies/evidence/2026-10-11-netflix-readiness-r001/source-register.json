@@ -1,0 +1,35 @@
+{
+  "records": [
+    {
+      "id": "july-prospectus",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526310568/d171956d424b5.htm",
+      "publication_basis": "2026-07-20 prospectus; filed2026-07-21",
+      "retrieved_at_utc": "2026-10-11T17:54:32.470359+00:00",
+      "access_error": "HTTPError",
+      "detail": "HTTP Error 403: Forbidden",
+      "raw_path": null,
+      "sha256": null
+    },
+    {
+      "id": "july-governance",
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000214/nflx-20260726.htm",
+      "publication_basis": "2026-07-26 event; filed2026-07-30",
+      "retrieved_at_utc": "2026-10-11T17:54:32.822103+00:00",
+      "access_error": "HTTPError",
+      "detail": "HTTP Error 403: Forbidden",
+      "raw_path": null,
+      "sha256": null
+    },
+    {
+      "id": "event",
+      "url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-to-Announce-Third-Quarter-2026-Financial-Results/default.aspx",
+      "publication_basis": "2026-09-14",
+      "retrieved_at_utc": "2026-10-11T17:54:33.009990+00:00",
+      "http_status": 200,
+      "sha256": "9aa6e238dd52c5b047a6bef0f123393758795827b73834c78dcaee299d17d7b7",
+      "raw_path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/event-9aa6e238dd52c5b047a6bef0f123393758795827b73834c78dcaee299d17d7b7.html",
+      "bytes": 48794
+    }
+  ],
+  "limit": "Successful raw captures are byte-bound; failed captures are not reconstructed as raw HTML from web excerpts"
+}

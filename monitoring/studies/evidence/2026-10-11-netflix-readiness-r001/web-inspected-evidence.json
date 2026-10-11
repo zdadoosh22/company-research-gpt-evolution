@@ -1,0 +1,52 @@
+{
+  "schema": "official-web-inspected-source-projection-v1",
+  "date": "2026-10-11",
+  "route": "Actual official SEC web-tool reading; direct urllib capture returned403 and supplies no successful raw archive/hash for these documents",
+  "prospectus": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526310568/d171956d424b5.htm",
+    "document_date": "2026-07-20",
+    "filing_date": "2026-07-21",
+    "currency": "USD",
+    "units": "millions except percentages",
+    "source_locations": "Cover; Use of Proceeds S-9; Capitalization S-10; Underwriting S-24",
+    "new_principal": "1000",
+    "offering_price_percent": "99.255",
+    "gross_public_proceeds": "992.550",
+    "underwriting_percent": "0.400",
+    "underwriting_discount": "4.000",
+    "issuer_proceeds_before_other_expenses": "988.550",
+    "other_offering_expenses_estimated": "2.500",
+    "issuer_net_proceeds_rounded_estimate": "986",
+    "old_principal": "1000",
+    "old_maturity": "2026-11-15",
+    "new_coupon_percent": "5.250",
+    "new_maturity": "2036-08-15",
+    "first_coupon_date": "2027-02-15",
+    "capitalization_table_date": "2026-06-30",
+    "cash_actual_rounded": "9099",
+    "cash_as_adjusted_rounded": "9085",
+    "debt_actual_principal_rounded": "14372",
+    "debt_as_adjusted_principal_rounded": "14372",
+    "as_adjusted_definition": "Illustrative issuance plus anticipated maturity repayment; not actual July/October balance",
+    "redemption_status": "Intention to repay at maturity, not a redemption notice; no confirmed repayment inferred",
+    "raw_html_sha256": null,
+    "access_limitation": "DirectHTTP403; material details need separately reproducible official web reading/review; no raw byte equality claimed"
+  },
+  "governance": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000214/nflx-20260726.htm",
+    "event_date": "2026-07-26",
+    "filing_date": "2026-07-30",
+    "location": "Item5.02",
+    "fact": "Director resignation effectiveJuly26; issuer says no disagreement",
+    "bridge_limit": "Not a corporate cash/shareclaims rollforward or complete governance clearance",
+    "raw_html_sha256": null
+  },
+  "june_claims_source": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm",
+    "claim_date": "2026-06-30",
+    "filing_date": "2026-07-17",
+    "existing_authoritative_raw_sha256": "b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98",
+    "scope": "Existing approved June definitions retained; official cover freshly checked still expressly June30, not July or October count"
+  },
+  "distinction": "Hash of this projection authenticates our record only, not unavailable original SEC HTML. New record supplements rather than overwrites approved source/model originals."
+}

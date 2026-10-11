@@ -1,0 +1,27 @@
+{
+  "recorded_at_utc": "2026-10-11T18:02:42.131845+00:00",
+  "excluded_local_source_files": [
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "reason": "Local preservation only; unnecessary duplicate metadata or full issuer website with public tracking/auth-routing script text; substantive projections and hashes published"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/event-9aa6e238dd52c5b047a6bef0f123393758795827b73834c78dcaee299d17d7b7.html",
+      "sha256": "9aa6e238dd52c5b047a6bef0f123393758795827b73834c78dcaee299d17d7b7",
+      "reason": "Local preservation only; unnecessary duplicate metadata or full issuer website with public tracking/auth-routing script text; substantive projections and hashes published"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/event.derived.txt",
+      "sha256": "d98fe55e01d4da99152fb79aa8c086e988483f649debfad2d2ee5fd27d9d6226",
+      "reason": "Local preservation only; unnecessary duplicate metadata or full issuer website with public tracking/auth-routing script text; substantive projections and hashes published"
+    }
+  ],
+  "available_through_git": [
+    "Freshness inspection and substantive web-inspected projection",
+    "Original prior SEC metadata with matching8eaef322hash",
+    "New source capture/status register and existing approved issuer archives"
+  ],
+  "no_private_account_or_user_credentials_used": true,
+  "limitation": "New prospectus/governance full originalHTML capture failed403; their raw hash null is explicit, accessible official webreading independently challenged; new fullissuerwebsite raw not published"
+}

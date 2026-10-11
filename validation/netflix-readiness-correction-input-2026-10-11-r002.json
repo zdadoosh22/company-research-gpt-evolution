@@ -1,0 +1,22 @@
+{
+  "frozen_at_utc": "2026-10-11T18:01:22.128636+00:00",
+  "scope": "Correct accrual/payment wording and add sourcebound coupon-timing diagnostic only; no inherited model change",
+  "original_note_sha256": "9041492c3ca57060af2ca9b1eb76250a30250d6df17327552d2cc1a9d491e6ef",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-11-netflix-pre-event-readiness-r002.md",
+      "sha256": "ace6f1bf2bb732c17b48361d4ef57a86079575682d338e53ad5ea666f8094838",
+      "bytes": 13117
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/coupon-timing-diagnostic.json",
+      "sha256": "5d9448b31f97d2944dda1af252dca4e916bca96c8f9db6c92f2439ecf7527397",
+      "bytes": 1213
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/web-inspected-evidence.json",
+      "sha256": "4e715c0fb2e12cd2a1c363dbcac97df22e0b964c01795d21e9975f4fef63d8a3",
+      "bytes": 2793
+    }
+  ]
+}

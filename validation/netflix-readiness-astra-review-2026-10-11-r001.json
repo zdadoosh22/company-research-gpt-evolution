@@ -1,0 +1,256 @@
+{
+  "review_id": "NFLX-READINESS-ASTRA-20261011-R001",
+  "reviewed_at_utc": "2026-10-11T18:00:23.2056643Z",
+  "status": "correction-required; limited no-supported-pre-event-positive-entry conclusion substantiated",
+  "scope": "Independent financing/claims/readiness challenge only; no foundation/model/protocol re-audit, new valuation, future outcomes, fills or operational changes",
+  "review_identity": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "high",
+    "basis": "Parent dispatched this separate scoped review under that requested configuration",
+    "reviewer_task": "/root/netflix_readiness_astra_20261011",
+    "actual_backend_identity": "not independently exposed or verified",
+    "actual_backend_reasoning_effort": "not independently exposed or verified",
+    "speed": "unknown",
+    "review_performed": "Actual delegated independent source reading, analytical challenge and independent decimal/preservation checks; not author self-review",
+    "account_usage_snapshot": "not collected by reviewer; no per-stage usage claim"
+  },
+  "new_input_hashes": [
+    {
+      "path": "monitoring/studies/2026-10-11-netflix-pre-event-readiness-r001.md",
+      "sha256": "9041492c3ca57060af2ca9b1eb76250a30250d6df17327552d2cc1a9d491e6ef",
+      "role": "new input; author checks separately labelled"
+    },
+    {
+      "path": "validation/netflix-readiness-baseline-2026-10-11-r001.json",
+      "sha256": "ca40b90ca8d99b8f13f73aab8c9b28a7556006fae958c3d12b1ea98a5c8a6e08",
+      "role": "new input; author checks separately labelled"
+    },
+    {
+      "path": "validation/netflix-readiness-2026-10-11-r001-verify.py",
+      "sha256": "bae2ec2dfaac5610e4bd4677339d66bef9a44fe29a0ee8e980200856c451319a",
+      "role": "new input; author checks separately labelled"
+    },
+    {
+      "path": "validation/netflix-readiness-verification-2026-10-11-r001.json",
+      "sha256": "213c98f8a27514a9412c0feef51278dba4f64c4f1540018ba9b533549febecf9",
+      "role": "new input; author checks separately labelled"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/event-9aa6e238dd52c5b047a6bef0f123393758795827b73834c78dcaee299d17d7b7.html",
+      "sha256": "9aa6e238dd52c5b047a6bef0f123393758795827b73834c78dcaee299d17d7b7",
+      "role": "new input; author checks separately labelled"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/event.derived.txt",
+      "sha256": "d98fe55e01d4da99152fb79aa8c086e988483f649debfad2d2ee5fd27d9d6226",
+      "role": "new input; author checks separately labelled"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/freshness-inspection.json",
+      "sha256": "8991ff56ce3d8e1c836ea93b7bb155e8a48e495f5fc4ae9c49a268c4dc86c4c0",
+      "role": "new input; author checks separately labelled"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/metadata-role-clarification.json",
+      "sha256": "caeeb7d16c6f8e2d7a2b76feef76080b8d606c53d3334f28ee05468b8acaf085",
+      "role": "new input; author checks separately labelled"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+      "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+      "role": "new input; author checks separately labelled"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/source-register.json",
+      "sha256": "dad53a12e32752fa70d0972687590e3bd454bc8bb6ec5dad36b2669913cf42d3",
+      "role": "new input; author checks separately labelled"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/web-inspected-evidence.json",
+      "sha256": "4e715c0fb2e12cd2a1c363dbcac97df22e0b964c01795d21e9975f4fef63d8a3",
+      "role": "new input; author checks separately labelled"
+    }
+  ],
+  "preserved_context_hashes": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "9f5b1809330666ce2f54f981e592698c084120acad1cd20c43952abdf48ba704",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "workflows/model-review.md",
+      "sha256": "448aa9e8b3f20cc2bb8f41ec6007c9b3fabce9af399a3cc36d7e37b2beb4c11e",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "methodology/current.json",
+      "sha256": "a495bf9f2720d4270a86cb896ed51837b023f3fad4a0590e214dec2da1d65ed5",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "methodology/company-research-v1.0.0.md",
+      "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-framework-r002.md",
+      "sha256": "d87aafe9e180f1a0cd436ddcba350b1548903bdbff49acdd08bc017d259b31c4",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "validation/netflix-framework-clarifications-r003.md",
+      "sha256": "11b1aea5a4db44fee2c82efe1584904b95b105ff2d8530bd5796c2816eeb49b2",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "monitoring/studies/2026-10-10-netflix-pre-event-protocol-r002.md",
+      "sha256": "0bb0f521a9267cbcea32042ca3c65964ffeb2203812d572aab44593c557aa587",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-r001.json",
+      "sha256": "9d2ea88cc2ea978d053346752f6f711d2d8f0150819522718ef85bc2dec56eec",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/frozen-reference-clarifications-r002.json",
+      "sha256": "e3a1be3a33e0446e1a4cd9a7784dac7c7fd9e3c574f97e53bd83c7a813a344f1",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-10-netflix-protocol-r001/price-panel-times-r003.json",
+      "sha256": "8b325978837556b17916399e31ddd0686b43cc66b842c1cda5dd4fc4c7a67283",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224846955058Z-q2-2026-sec-b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98.html",
+      "sha256": "b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224846955058Z-q2-2026-sec-b4a7f6f25de26e7da6fd42da3bdc6264228d533c96bbc36794faa69d3f5b0d98.html.derived.txt",
+      "sha256": "adc89b5ba0d5a16144de855b8cfea3e4db54ae93466d8a0b67fa12399993ad77",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224847361078Z-july-issue-sec-91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd.html",
+      "sha256": "91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd",
+      "role": "preserved context, no repeated model audit"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-09-netflix-foundation-r001/nflx-cash-20261009T224847361078Z-july-issue-sec-91ee03b8c90d542c729e9e85becb9f52a77856749da957db30f1fb6e25b7c5bd.html.derived.txt",
+      "sha256": "16f324d9f608a030b3323ec894497fca4f5935cdcfe724f602d4993e84f7503b",
+      "role": "preserved context, no repeated model audit"
+    }
+  ],
+  "source_reading": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526310568/d171956d424b5.htm",
+      "access": "Official SEC web rendering independently opened successfully",
+      "sections": [
+        "cover",
+        "S-9 Use of Proceeds",
+        "S-10 Capitalization",
+        "S-12 Principal and Interest",
+        "S-24 Underwriting"
+      ],
+      "original_raw_bytes_archived": false,
+      "source_sha256": null,
+      "limit": "Parent direct HTTP capture 403 is preserved; no reconstructed HTML or original-source hash claimed",
+      "support": "Cover amounts, estimated costs/net proceeds, anticipated maturity repayment, June actual/as-adjusted table and coupon timing checked"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000214/nflx-20260726.htm",
+      "access": "Official SEC web rendering independently read",
+      "section": "Item 5.02",
+      "support": "Resignation effective July26; issuer states no disagreement; not current cash/claims clearance"
+    }
+  ],
+  "findings": [
+    {
+      "id": "NFLX-READINESS-ASTRA-001",
+      "severity": "medium",
+      "classification": "verified factual timing defect",
+      "file": "monitoring/studies/2026-10-11-netflix-pre-event-readiness-r001.md",
+      "line": 33,
+      "finding": "New interest starts February15 2027 conflates first payment and accrual start",
+      "evidence": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526310568/d171956d424b5.htm",
+        "location": "S-12, Description of Notes / Principal and Interest",
+        "accrual_from": "2026-07-22",
+        "first_payment": "2027-02-15",
+        "basis": "5.250% annual rate; semiannual payments in arrears; 360-day year of twelve 30-day months"
+      },
+      "impact": "A future valuation-date-to-January bridge could omit accrued interest or falsely infer a cost-free overlap of old/new debt. No current r001 valuation is calculated, so this does not overturn its limited non-entry conclusion.",
+      "correction": "Preserve r001 and issue a dated correction/new version distinguishing July22 accrual from February15 first payment. Keep actual cash payment, accrued claims and modeled future debt service reconciled once; do not silently change the accepted model.",
+      "outcome": "Open at r001 review; correction required before readiness record acceptance"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Independent decimal reconciliation",
+      "result": "pass",
+      "usd_millions": {
+        "public_proceeds": "992.550",
+        "underwriting": "4.000",
+        "before_other_expenses": "988.550",
+        "other_expenses_estimate": "2.500",
+        "net_cash_estimate": "986.050",
+        "principal_cash_shortfall_estimate": "13.950",
+        "illustrative_cash": "9085.282",
+        "illustrative_cash_and_investments": "9113.960"
+      },
+      "basis": "1000*0.99255; subtract underwriting once and estimated expenses once; add net receipts to precise June cash and subtract assumed principal settlement; add June investments only conditionally",
+      "limit": "Arithmetic of estimates, not final receipts or current liquidity"
+    },
+    {
+      "name": "June claims check",
+      "result": "pass",
+      "gross_claims_millions": "4289.843791",
+      "basis": "4163.939676 + 123.891603 + 2.012512; independently matched June filing extracted source passages",
+      "limit": "Not October rollforward or weighted diluted EPS denominator"
+    },
+    {
+      "name": "Currentness and source roles",
+      "result": "pass",
+      "basis": "Archived SEC bytes identify CIK0001065280 NETFLIX INC and latest quarterly June30 filedJuly17. Holder SCHEDULE13G/A is not treasury rollforward; absence of a filing cannot establish unchanged balance."
+    },
+    {
+      "name": "January reserve and claim double counting",
+      "result": "pass",
+      "basis": "9127.910 remains a conditional opening assumption; illustrative cash is not substituted. Principal service and financing costs must enter once; no second debt subtraction or compensation addback is introduced."
+    },
+    {
+      "name": "Event and future-research boundary",
+      "result": "pass",
+      "basis": "Captured issuer notice schedules October20 13:01 Pacific results and13:45 interview. No future economics/prices assigned; accepted D2 October22 20:00UTC cutoff retained; later source access cannot fabricate contemporaneous capture."
+    },
+    {
+      "name": "559 predecessor preservation",
+      "result": "pass",
+      "compared": 559,
+      "changed": [
+        null
+      ],
+      "basis": "Reviewer independently recomputed SHA256 against readiness baseline; not inferred from author PASS"
+    },
+    {
+      "name": "Author check separation",
+      "result": "pass",
+      "basis": "Author verification inspected as a separate input; this review independently read sources and calculated arithmetic."
+    }
+  ],
+  "analytical_judgment": {
+    "limited_conclusion": "No supported pre-event positive-entry case established is justified by incomplete current capital/claims/stub and unestablished price-linked advantage; it is not evidence of overvaluation or a recommendation.",
+    "useful_progress": "New financing friction is reconciled and an accrual/payment defect exposed; current bridge gaps are narrowed without repeating the closed model.",
+    "future_research": "User authority supplied by parent permits independent research progression, but facts remain subject to actual public availability and fixed protocol cuts. No promise or new event capture automation follows from the document.",
+    "remaining_limits": [
+      "No exact final costs/net issue cash confirmation",
+      "No complete current treasury/award/cash rollforward or total-equity valuation",
+      "No price-linked net advantage or executable price/cost evidence",
+      "No future event observations, outcomes or performance",
+      "Source original bytes missing for the newly rendered prospectus/governance documents; reproducibility remains a use-time source gate"
+    ]
+  },
+  "changes_by_reviewer": "Only this new review pair; no parent disposition, goal closure, publication/push or edits to reviewed inputs"
+}

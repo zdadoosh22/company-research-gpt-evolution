@@ -1,0 +1,67 @@
+{
+  "retrieved_at_utc": "2026-10-11T17:53:01.673855+00:00",
+  "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+  "http_status": 200,
+  "sha256": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d",
+  "raw_path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/sec-submissions-8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d.json",
+  "records": [
+    {
+      "form": "SCHEDULE 13G/A",
+      "filingDate": "2026-08-06",
+      "reportDate": "",
+      "accessionNumber": "0000315066-26-002077",
+      "primaryDocument": "xslSCHEDULE_13G_X02/primary_doc.xml"
+    },
+    {
+      "form": "8-K",
+      "filingDate": "2026-07-30",
+      "reportDate": "2026-07-26",
+      "accessionNumber": "0001065280-26-000214",
+      "primaryDocument": "nflx-20260726.htm"
+    },
+    {
+      "form": "8-K",
+      "filingDate": "2026-07-22",
+      "reportDate": "2026-07-20",
+      "accessionNumber": "0001193125-26-312575",
+      "primaryDocument": "d171951d8k.htm"
+    },
+    {
+      "form": "424B5",
+      "filingDate": "2026-07-21",
+      "reportDate": "",
+      "accessionNumber": "0001193125-26-310568",
+      "primaryDocument": "d171956d424b5.htm"
+    },
+    {
+      "form": "FWP",
+      "filingDate": "2026-07-20",
+      "reportDate": "",
+      "accessionNumber": "0001193125-26-309014",
+      "primaryDocument": "d159566dfwp.htm"
+    },
+    {
+      "form": "424B2",
+      "filingDate": "2026-07-20",
+      "reportDate": "",
+      "accessionNumber": "0001193125-26-308392",
+      "primaryDocument": "d171956d424b2.htm"
+    },
+    {
+      "form": "10-Q",
+      "filingDate": "2026-07-17",
+      "reportDate": "2026-06-30",
+      "accessionNumber": "0001065280-26-000212",
+      "primaryDocument": "nflx-20260630.htm"
+    },
+    {
+      "form": "8-K",
+      "filingDate": "2026-07-16",
+      "reportDate": "2026-07-16",
+      "accessionNumber": "0001065280-26-000211",
+      "primaryDocument": "nflx-20260716.htm"
+    }
+  ],
+  "excluded_forms": "Insider transactions/beneficial ownership not a complete issuer cash/claims rollforward; metadata excluded from corporate financial bridge, no assertion they are immaterial",
+  "limit": "Issuer submissions metadata only; financial statements/material exhibits separately inspected; absence of a filing is not unchanged cash or shares"
+}

@@ -1,0 +1,93 @@
+{
+  "verified_at_utc": "2026-10-11T17:58:24.624160+00:00",
+  "checks": [
+    {
+      "name": "559 predecessors unchanged",
+      "passed": true,
+      "evidence": 559
+    },
+    {
+      "name": "Public-price principal distinction",
+      "passed": true,
+      "evidence": {
+        "principal": "1000",
+        "public_gross": "992.550"
+      }
+    },
+    {
+      "name": "Underwriting deducted once",
+      "passed": true,
+      "evidence": {
+        "discount": "4.000",
+        "before_other_expenses": "988.550"
+      }
+    },
+    {
+      "name": "Estimated expenses and rounded net estimate",
+      "passed": true,
+      "evidence": {
+        "estimate": "986.050",
+        "source_rounded": "986",
+        "not_final_paid_amount": true
+      }
+    },
+    {
+      "name": "Principal repayment cash friction",
+      "passed": true,
+      "evidence": "13.950"
+    },
+    {
+      "name": "As-adjusted rounded table reconciliation",
+      "passed": true,
+      "evidence": {
+        "hypothetical_cash": "9085.282",
+        "not_current_cash": true
+      }
+    },
+    {
+      "name": "Investment inclusion remains explicitly hypothetical",
+      "passed": true,
+      "evidence": {
+        "unchanged_other_flows_condition": true,
+        "illustrative_cash_plus_investments": "9113.960",
+        "no_new_reserve_input": true
+      }
+    },
+    {
+      "name": "Debt replacement distinct from overlap",
+      "passed": true,
+      "evidence": {
+        "illustrative_completed_replacement": "14372",
+        "repayment_not_observed": true,
+        "overlap_not_current_balance": "15372"
+      }
+    },
+    {
+      "name": "Gross June claims arithmetic not weighted EPS denominator",
+      "passed": true,
+      "evidence": "June dated counts only; no October claims or exercise-proceeds forecast"
+    },
+    {
+      "name": "Fresh metadata raw hash matches actual bytes",
+      "passed": true,
+      "evidence": "8eaef3227f6a13b687027cc684cf1f1dfae7dcba0ed8c091af2bcb2e9f50823d"
+    },
+    {
+      "name": "Failed captures remain failed",
+      "passed": true,
+      "evidence": "HTTP403 not replaced with reconstructed rawsource"
+    },
+    {
+      "name": "Primary future schedule actually present in captured notice",
+      "passed": true,
+      "evidence": "Rawbytes differ from predecessor; relevant future schedule agrees, no event result generated"
+    },
+    {
+      "name": "Observation boundary retained",
+      "passed": true,
+      "evidence": "All config/model/previous protocol bytes included in preserved559 check"
+    }
+  ],
+  "passed": true,
+  "scope": "Author estimate arithmetic/definitions/sourcecapture truthfulness/preservation only. Official websource reading and independent challenge separate. No model replay, currentvaluation, investmentperformance, eventoutcomes or fills."
+}

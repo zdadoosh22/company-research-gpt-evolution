@@ -1,0 +1,15 @@
+# Netflix readiness: independent correction review r002
+
+11 October 2026. **Accepted for limited financing/readiness research; no supported pre-event positive-entry case established.** Finding NFLX-READINESS-ASTRA-001 is resolved in r002. No new material finding remains in this scope. The original medium finding and r001 review are preserved.
+
+Requested review dispatch remains GPT-6 Astra, High, fork none; backend identity and actual reasoning/speed are not independently exposed. This is an actual scoped follow-up challenge, not a relabelling of the author's six arithmetic assertions or thirteen earlier checks.
+
+I read the complete corrected note and its substantive diff, both supporting JSON inputs and their freeze manifest. All three input hashes match. All eleven original review inputs remain unchanged, and all 559 predecessor hashes still match. The companion JSON records exact hashes, the original review pair and eight actual checks.
+
+The corrected wording matches the [prospectus, printed S-12](https://www.sec.gov/Archives/edgar/data/1065280/000119312526310568/d171956d424b5.htm), independently read through official SEC web rendering in this review session. Accrual starts July 22, 2026; February 15, 2027 is the first nominal scheduled payment, subject to contractual settlement terms. Original source bytes were not successfully archived; neither this reading nor a projection hash repairs that limitation.
+
+Using 30/360, I independently recomputed 203 days for the first period and 159 plus 44 days at the January 1 split. On USD1,000m at 5.250%, the respective amounts are USD29.604167m, USD23.187500m and USD6.416667m; the split reconciles to the same coupon. A normal half-year is USD26.250m. The endpoints avoid month-end convention ambiguity. Repeating-decimal comparison used a USD0.000000000001m tolerance; displayed six-decimal amounts agree.
+
+The economic qualification is sound. The diagnostic is conditional scheduled service, not an observed payment, current cash, effective-interest expense or a change to the accepted model. The note explicitly protects against separately deducting pre-January accrual when the same eventual coupon is already in future cash flows. Contractual replacement of the annual approximation would require a coherent new model review; this isolated diagnostic cannot silently change the reserve, cash distributions or component value. Early redemption, default and nonbusiness-day settlement remain acknowledged qualifications.
+
+The original limited conclusion therefore stands. This record narrows financing uncertainty and corrects a consequential timing distinction, while leaving current capital/claims, the valuation-date-to-January bridge and price-linked advantage unresolved. It does not imply overvaluation, an optimal allocation to cash or an executable entry. No future outcomes were assigned, no prior model review reopened, and no parent disposition, goal closure, monitoring change or publication was performed by this reviewer.

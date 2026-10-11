@@ -1,0 +1,67 @@
+{
+  "recorded_at_utc": "2026-10-11T18:09:45.507114+00:00",
+  "baseline_commit": "ab8c41930f74198835fade5e769d2d6d1fb0b485",
+  "goal_objective": "i wont be at the computer so forget the usual handoff system and just work independently towards the current project goal/ next progression point - ask any questions prior to beggining if neccasary though",
+  "milestone": "Accepted limited Netflix pre-event disclosed financing and ownership readiness record",
+  "decision": "research_readiness_step_complete_no_supported_pre_event_positive_entry",
+  "accepted_record": {
+    "path": "monitoring/studies/2026-10-11-netflix-pre-event-readiness-r002.md",
+    "sha256": "ace6f1bf2bb732c17b48361d4ef57a86079575682d338e53ad5ea666f8094838",
+    "bytes": 13117
+  },
+  "parent_disposition": {
+    "path": "monitoring/decisions/2026-10-11-netflix-pre-event-readiness-disposition-r001.md",
+    "sha256": "2fb8ee6c6b042e987ed7bec5c6ec48ea2374043d92e9abd4c2288fade95d2a02"
+  },
+  "independent_review": {
+    "path": "validation/netflix-readiness-astra-correction-review-2026-10-11-r002.json",
+    "sha256": "0505bce91b2783f462606cb0b391849579721b2f03963c1d2abb5d4dc692a7b4",
+    "unresolved_material_findings": 0
+  },
+  "author_verification": {
+    "path": "validation/netflix-readiness-verification-2026-10-11-r001.json",
+    "sha256": "213c98f8a27514a9412c0feef51278dba4f64c4f1540018ba9b533549febecf9",
+    "checks": 13,
+    "scope": "Author estimate arithmetic/definitions/sourcecapture truthfulness/preservation only. Official websource reading and independent challenge separate. No model replay, currentvaluation, investmentperformance, eventoutcomes or fills."
+  },
+  "coupon_diagnostic": {
+    "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/coupon-timing-diagnostic.json",
+    "sha256": "5d9448b31f97d2944dda1af252dca4e916bca96c8f9db6c92f2439ecf7527397",
+    "author_checks": 6
+  },
+  "all_559_predecessors_preserved": true,
+  "methodology_version": "1.0.0",
+  "methodology_changed": false,
+  "numeric_model_changed": false,
+  "actionable": false,
+  "current_intrinsic_value": null,
+  "expected_return": null,
+  "portfolio_decision": null,
+  "execution_instruction": null,
+  "event_outcomes_generated": false,
+  "monitoring_changed": false,
+  "handoff_created": false,
+  "superseded": [
+    "Original r001 accrual-start sentence corrected by r002",
+    "Awaiting-review labels resolved by actual correction review and this disposition",
+    "Previous requirement to stop for Chat before research progression superseded by current independent-progression instruction"
+  ],
+  "remaining_economic_requirements": [
+    "Current supported cash/debt/claims and current-to-January stub bridge",
+    "Actual disclosure and persistent funded per-claim cash revision assessed under original fixed cutoffs",
+    "Price-linked advantage robust to realistic manual-response delays and costs",
+    "Independent review before accepting any changed economic value or positive opportunity"
+  ],
+  "next_substantive_evidence": "Actual October20 results/interview; October22 20:00UTC D2 primary H boundary, with discoverable current corporate disclosures eligible before the event",
+  "limitations": [
+    "Prospectus original raw capture remains unavailable despite successful official web reading",
+    "Coupon remains a contractual schedule conditional on relevant terms, not observed future cash",
+    "Existing annual interest approximation remains unchanged and is not independently re-audited here"
+  ],
+  "publication_exclusions": {
+    "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/publication-exclusions.json",
+    "sha256": "effcc514b9b4fdb8921a42e4a580a6d5215ee15f28ba7221db37781a507c6257"
+  },
+  "chat_delivery_preference": "Established user-confirmed GitHub access is not retested routinely. Future Chat reviews use repository, exact commit and handoff path; upload only necessary excluded material as one bundle.",
+  "scope_boundary": "The next coherent research progression point is complete; broader project and trading readiness remain incomplete. No future capture promised or automated."
+}

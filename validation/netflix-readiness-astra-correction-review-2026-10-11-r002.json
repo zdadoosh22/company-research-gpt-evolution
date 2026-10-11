@@ -1,0 +1,147 @@
+{
+  "review_id": "NFLX-READINESS-ASTRA-20261011-R002",
+  "reviewed_at_utc": "2026-10-11T18:02:54.7878294Z",
+  "status": "accepted-limited-readiness",
+  "scope": "Only corrected accrual/payment wording, source-bound coupon diagnostic and preserved no-supported-pre-event-entry conclusion",
+  "review_identity": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "high",
+    "basis": "Parent dispatched this separate scoped review under that requested configuration",
+    "reviewer_task": "/root/netflix_readiness_astra_20261011",
+    "actual_backend_identity": "not independently exposed or verified",
+    "actual_backend_reasoning_effort": "not independently exposed or verified",
+    "speed": "unknown",
+    "review_performed": "Actual delegated independent source reading, analytical challenge and independent decimal/preservation checks; not author self-review",
+    "account_usage_snapshot": "not collected by reviewer; no per-stage usage claim"
+  },
+  "input_manifest": {
+    "path": "validation/netflix-readiness-correction-input-2026-10-11-r002.json",
+    "sha256": "b50b4ebccbcee29b54860e3d17ce0e9cc7e8fb785e848d7df216d0f5fd6a85e6"
+  },
+  "exact_reviewed_inputs": [
+    {
+      "path": "monitoring/studies/2026-10-11-netflix-pre-event-readiness-r002.md",
+      "sha256": "ace6f1bf2bb732c17b48361d4ef57a86079575682d338e53ad5ea666f8094838",
+      "bytes": 13117
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/coupon-timing-diagnostic.json",
+      "sha256": "5d9448b31f97d2944dda1af252dca4e916bca96c8f9db6c92f2439ecf7527397",
+      "bytes": 1213
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/web-inspected-evidence.json",
+      "sha256": "4e715c0fb2e12cd2a1c363dbcac97df22e0b964c01795d21e9975f4fef63d8a3",
+      "bytes": 2793
+    }
+  ],
+  "prior_review": [
+    {
+      "path": "validation/netflix-readiness-astra-review-2026-10-11-r001.md",
+      "sha256": "fdf05fbb3f61eccd1b9f043f6e203086161dd8c6e5e77265edb9438d19d207c5"
+    },
+    {
+      "path": "validation/netflix-readiness-astra-review-2026-10-11-r001.json",
+      "sha256": "11655ef4ae910ab45a95303f5672cc340aa00b0a5cfdbf23751ac1ff131f59b8"
+    }
+  ],
+  "source": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526310568/d171956d424b5.htm",
+    "location": "S-12, Description of Notes / Principal and Interest",
+    "reviewer_access": "Official SEC web rendering independently read during this review session; accrual, payment, day-count and nonbusiness-day clauses inspected",
+    "original_raw_html_archived": false,
+    "sha256": null,
+    "limit": "Web-read support and source-projection hashes do not establish an original-source archive"
+  },
+  "findings": [
+    {
+      "id": "NFLX-READINESS-ASTRA-001",
+      "original_severity": "medium",
+      "outcome": "resolved in r002",
+      "evidence": "r002 replaces incorrect accrual wording with July22 accrual and February15 first scheduled payment; note preserves accrual/cash-payment distinction and anti-double-counting guidance",
+      "correction_scope": "No accepted annual service approximation, model reserve, component value or forecast revised",
+      "original_record": "r001 review and original finding retained unchanged"
+    }
+  ],
+  "new_material_findings": [],
+  "actual_checks": [
+    {
+      "name": "Frozen correction inputs",
+      "passed": true,
+      "count": 3,
+      "failures": [
+        null
+      ]
+    },
+    {
+      "name": "Original reviewed inputs preserved",
+      "passed": true,
+      "count": 11,
+      "failures": [
+        null
+      ]
+    },
+    {
+      "name": "Baseline preservation",
+      "passed": true,
+      "count": 559,
+      "failures": [
+        null
+      ]
+    },
+    {
+      "name": "Text change scope",
+      "passed": true,
+      "method": "Read complete r002 and whitespace-normalized diff against r001",
+      "result": "Only revision/status label, accrual/payment replacement and coupon-diagnostic subsection changed substantively"
+    },
+    {
+      "name": "Contractual day-count",
+      "passed": true,
+      "method": "360*(endYear-startYear)+30*(endMonth-startMonth)+endDay-startDay; none of the three endpoints is month-end",
+      "first_period_days": 203,
+      "january_split_days": [
+        159,
+        44
+      ]
+    },
+    {
+      "name": "Coupon arithmetic",
+      "passed": true,
+      "method": "Reviewer PowerShell decimal recomputation; independent of the six author assertions",
+      "first_coupon_usd_m": "29.604166666666666666666666667",
+      "pre_january_usd_m": "23.1875",
+      "post_january_usd_m": "6.4166666666666666666666666667",
+      "ordinary_half_year_usd_m": "26.250",
+      "comparison_tolerance_usd_m": "0.000000000001",
+      "reason_for_tolerance": "Recurring decimal tails differ at machine precision; displayed six-decimal amounts agree"
+    },
+    {
+      "name": "Claims, cash and stub limits",
+      "passed": true,
+      "result": "Scheduled conditional diagnostic; not an observed payment, current cash, effective-interest accounting expense or revised model; business-day/redemption/default limits stated; no separate accrual added on top of same future coupon"
+    },
+    {
+      "name": "Limited readiness conclusion",
+      "passed": true,
+      "result": "No supported positive entry established remains justified; not overvaluation, sell judgement, complete valuation, investment authority or performance"
+    }
+  ],
+  "acceptance": {
+    "scope": "Accept corrected financing/readiness record and original limited non-entry conclusion",
+    "unresolved_material_findings_in_scope": 0,
+    "not_accepted": [
+      "Current total-equity valuation",
+      "Exact current cash/claims or funded January reserve",
+      "Any event result or price outcome",
+      "Positive entry, portfolio decision or execution instruction"
+    ],
+    "future_work": "Discoverable source gaps and prospective fields may be investigated under parent-conveyed authority; actual future disclosure and fixed availability/cutoff checks still required. No promise of unattended capture.",
+    "limitations": [
+      "Prospectus original raw capture remains unavailable despite successful official web reading",
+      "Coupon remains a contractual schedule conditional on relevant terms, not observed future cash",
+      "Existing annual interest approximation remains unchanged and is not independently re-audited here"
+    ]
+  },
+  "reviewer_mutations": "Only new correction-review MD/JSON; original review, author inputs and all baseline files preserved"
+}

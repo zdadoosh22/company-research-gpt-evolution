@@ -1,0 +1,100 @@
+{
+  "recorded_at_utc": "2026-10-11T18:09:45.507114+00:00",
+  "baseline_commit": "ab8c41930f74198835fade5e769d2d6d1fb0b485",
+  "files": [
+    {
+      "path": "monitoring/decisions/2026-10-11-netflix-pre-event-readiness-disposition-r001.json",
+      "sha256": "ae5b3b98573e8c859b93624261df58d7548a5ec8b3fb9c7d8034b994f4be2b2d",
+      "bytes": 4198
+    },
+    {
+      "path": "monitoring/decisions/2026-10-11-netflix-pre-event-readiness-disposition-r001.md",
+      "sha256": "2fb8ee6c6b042e987ed7bec5c6ec48ea2374043d92e9abd4c2288fade95d2a02",
+      "bytes": 6551
+    },
+    {
+      "path": "monitoring/studies/2026-10-11-netflix-pre-event-readiness-r001.md",
+      "sha256": "9041492c3ca57060af2ca9b1eb76250a30250d6df17327552d2cc1a9d491e6ef",
+      "bytes": 11594
+    },
+    {
+      "path": "monitoring/studies/2026-10-11-netflix-pre-event-readiness-r002.md",
+      "sha256": "ace6f1bf2bb732c17b48361d4ef57a86079575682d338e53ad5ea666f8094838",
+      "bytes": 13117
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/coupon-timing-diagnostic.json",
+      "sha256": "5d9448b31f97d2944dda1af252dca4e916bca96c8f9db6c92f2439ecf7527397",
+      "bytes": 1213
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/freshness-inspection.json",
+      "sha256": "8991ff56ce3d8e1c836ea93b7bb155e8a48e495f5fc4ae9c49a268c4dc86c4c0",
+      "bytes": 2392
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/metadata-role-clarification.json",
+      "sha256": "caeeb7d16c6f8e2d7a2b76feef76080b8d606c53d3334f28ee05468b8acaf085",
+      "bytes": 2493
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/publication-exclusions.json",
+      "sha256": "effcc514b9b4fdb8921a42e4a580a6d5215ee15f28ba7221db37781a507c6257",
+      "bytes": 1911
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/source-register.json",
+      "sha256": "dad53a12e32752fa70d0972687590e3bd454bc8bb6ec5dad36b2669913cf42d3",
+      "bytes": 1583
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/web-inspected-evidence.json",
+      "sha256": "4e715c0fb2e12cd2a1c363dbcac97df22e0b964c01795d21e9975f4fef63d8a3",
+      "bytes": 2793
+    },
+    {
+      "path": "validation/netflix-readiness-2026-10-11-r001-verify.py",
+      "sha256": "bae2ec2dfaac5610e4bd4677339d66bef9a44fe29a0ee8e980200856c451319a",
+      "bytes": 4542
+    },
+    {
+      "path": "validation/netflix-readiness-astra-correction-review-2026-10-11-r002.json",
+      "sha256": "0505bce91b2783f462606cb0b391849579721b2f03963c1d2abb5d4dc692a7b4",
+      "bytes": 6741
+    },
+    {
+      "path": "validation/netflix-readiness-astra-correction-review-2026-10-11-r002.md",
+      "sha256": "79ddb17033482093a624407ab2684b7f9467a2816d416b4922b6dd3fc1061d04",
+      "bytes": 3009
+    },
+    {
+      "path": "validation/netflix-readiness-astra-review-2026-10-11-r001.json",
+      "sha256": "11655ef4ae910ab45a95303f5672cc340aa00b0a5cfdbf23751ac1ff131f59b8",
+      "bytes": 14235
+    },
+    {
+      "path": "validation/netflix-readiness-astra-review-2026-10-11-r001.md",
+      "sha256": "fdf05fbb3f61eccd1b9f043f6e203086161dd8c6e5e77265edb9438d19d207c5",
+      "bytes": 5205
+    },
+    {
+      "path": "validation/netflix-readiness-baseline-2026-10-11-r001.json",
+      "sha256": "ca40b90ca8d99b8f13f73aab8c9b28a7556006fae958c3d12b1ea98a5c8a6e08",
+      "bytes": 105816
+    },
+    {
+      "path": "validation/netflix-readiness-correction-input-2026-10-11-r002.json",
+      "sha256": "b50b4ebccbcee29b54860e3d17ce0e9cc7e8fb785e848d7df216d0f5fd6a85e6",
+      "bytes": 965
+    },
+    {
+      "path": "validation/netflix-readiness-verification-2026-10-11-r001.json",
+      "sha256": "213c98f8a27514a9412c0feef51278dba4f64c4f1540018ba9b533549febecf9",
+      "bytes": 2898
+    }
+  ],
+  "self_excluded": "validation/netflix-readiness-publication-manifest-2026-10-11-r001.json",
+  "scope": "Reviewed limited readiness milestone and its preserved original/correction records; no complete valuation, trade signal or future observation",
+  "publication_exclusions": "monitoring/studies/evidence/2026-10-11-netflix-readiness-r001/publication-exclusions.json",
+  "prior_559_unchanged": true
+}
