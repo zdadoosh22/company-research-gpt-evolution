@@ -1,0 +1,10 @@
+{
+  "ObservedAtUtc": "2026-10-11T18:32:37.8815990Z",
+  "ScheduledTaskEnabled": false,
+  "ScheduledTaskState": "Disabled",
+  "ExpectedDaemonAlive": true,
+  "ExpectedDaemonId": 3744,
+  "ScriptMatches": true,
+  "ModelsEnabled": false,
+  "Recovery": "Scheduled task already disabled; same daemon relaunched hidden without changing triggers"
+}

@@ -1,0 +1,349 @@
+{
+  "reviewed_at_utc": "2026-10-11T18:38:57.434555+00:00",
+  "review_type": "actual separate-worker focused economic challenge",
+  "scope": "New AMD funding/claims foundation only",
+  "status": "accepted_limited_historical_conditional_foundation",
+  "material_economic_defect_found": false,
+  "author_correction_required_for_this_scope": false,
+  "model_identity": {
+    "requested": "Astra High",
+    "source": "parent dispatch",
+    "actual_backend": "not independently exposed",
+    "effective_effort": "not independently verified",
+    "speed": "not independently verified",
+    "independent_substantive_review_performed": true,
+    "backend_verified_astra_certification": false,
+    "workflow_identity_disposition": "Parent to preserve requested-versus-verified distinction and resolve gate; no claim of independently verified Astra execution"
+  },
+  "usage_context": {
+    "parent_reported_five_hour_remaining_percent_at_dispatch": 39,
+    "independently_measured": false,
+    "paid_model_calls": 0,
+    "cli_model_launches": 0,
+    "subagents_launched": 0
+  },
+  "frozen_manifest": {
+    "path": "validation/amd-funding-claims-review-input-2026-10-11-r001.json",
+    "sha256": "a41df37d8a8303966d7c0cd2495eb2c9cadb80811c153c97514b553e69b08733"
+  },
+  "frozen_inputs": [
+    {
+      "path": "monitoring/studies/2026-10-11-amd-funding-claims-r001.md",
+      "sha256": "3e557754150b5e57eaab0c4f11bc47b325168cba5069b8750e9e73dddd1c2bc6",
+      "bytes": 14563,
+      "reviewer_hash_verified": true
+    },
+    {
+      "path": "validation/amd-funding-claims-verification-2026-10-11-r001.json",
+      "sha256": "118c5cdabf9c92d067c95c1aa628c8a921d4b8c949b9d2cb23f00bcea9e02d4a",
+      "bytes": 4988,
+      "reviewer_hash_verified": true
+    },
+    {
+      "path": "validation/amd-funding-claims-2026-10-11-r001-verify.py",
+      "sha256": "d9ef1b168ba877700bd972c7e5e69116a85ccd99dfac45a3be1f7a59689e09d6",
+      "bytes": 6174,
+      "reviewer_hash_verified": true
+    },
+    {
+      "path": "validation/subscription-progress-baseline-2026-10-11-r001.json",
+      "sha256": "a0247bd210c0f248da1b6e8943e1ad6e81901ccc54ffb23683dc003ea0b7334f",
+      "bytes": 109456,
+      "reviewer_hash_verified": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-closing-bcc4dbe9d569b7e79ebcda6290111fc6da1a5ed2b0d3f9bacbdaf76bcc9502ce.html",
+      "sha256": "bcc4dbe9d569b7e79ebcda6290111fc6da1a5ed2b0d3f9bacbdaf76bcc9502ce",
+      "bytes": 54672,
+      "reviewer_hash_verified": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-governance-e8848127bd676b57423f43759749e411dbe4e239cc6dd0cfa1d27c87eb7dc775.html",
+      "sha256": "e8848127bd676b57423f43759749e411dbe4e239cc6dd0cfa1d27c87eb7dc775",
+      "bytes": 40800,
+      "reviewer_hash_verified": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-prospectus-eb4af0e2a01eb4524a3799d4065dfd87d26c5b7052644c12007d4d96d382ff8c.html",
+      "sha256": "eb4af0e2a01eb4524a3799d4065dfd87d26c5b7052644c12007d4d96d382ff8c",
+      "bytes": 542880,
+      "reviewer_hash_verified": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/filing-freshness.json",
+      "sha256": "d8208eff4e8f006f5733b3f9652c5b576f80564604a8b463a3b7eacc3fabab0d",
+      "bytes": 7546,
+      "reviewer_hash_verified": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/financing-source-register.json",
+      "sha256": "027f514096222167fc3be843fd6bf5516a2662dc40e2b70a69d9ef79c5eace58",
+      "bytes": 2327,
+      "reviewer_hash_verified": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/selected-source-passages.json",
+      "sha256": "50cfa8b7cee42c9b6e4aa51e6a1096bbf3321f78f8c3e1875a5399b3d079f845",
+      "bytes": 22945,
+      "reviewer_hash_verified": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/september-acquisition-4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be.html",
+      "sha256": "4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be",
+      "bytes": 33609,
+      "reviewer_hash_verified": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/source-capture-register.json",
+      "sha256": "b2dd683f388b06d3816de963f17d9bc6051e451acbd22d5ade8c47f004639f58",
+      "bytes": 3415,
+      "reviewer_hash_verified": true
+    }
+  ],
+  "methodology": {
+    "version": "1.0.0",
+    "path": "methodology/company-research-v1.0.0.md",
+    "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6"
+  },
+  "baseline": {
+    "commit": "4204eec97d681800356db9ffd3582e98b646bdf3",
+    "files_checked": 578,
+    "unchanged": 577,
+    "authorised_changed_path": "monitoring/config.json",
+    "current_config_sha256": "10c985e9dca1e1a255e951bebe79a2399b444b750e670252eadc86b141c86e14",
+    "reviewer_changed_predecessors": 0
+  },
+  "additional_source_binding": {
+    "june_original_path": "monitoring/studies/evidence/2026-10-09-amd/20261009T003433584028Z/q2-10q.html",
+    "june_original_sha256": "fa18ad1095a14dc14fe04d3e256143addbb1c8f0573eb6eb8bb6bc6609bfe2bf",
+    "five_fresh_capture_hashes_checked": true
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "information",
+      "classification": "scope_acceptance",
+      "title": "New financing bridge is supported; current funding sufficiency remains unaccepted",
+      "evidence": [
+        "August17 8-K Item1.01",
+        "August13 prospectus cover, S17-S20, S43-S44",
+        "June27 10-Q Note9 and liquidity pp28-29"
+      ],
+      "finding": "The issuance closed for $4,750m face. Estimated net receipts and annual new-note coupon reconcile. The capitalization table is an issuance-only adjustment to June, retains the $875m tranche and cannot prove October cash or settlement. The study expressly preserves these limits.",
+      "proposed_correction": "No correction to frozen historical foundation required. Obtain actual receipts/use of proceeds, old-note settlement and intervening flows before a current funding conclusion.",
+      "outcome": "Accepted only as historical and conditional foundation; full current funding bridge remains incomplete."
+    },
+    {
+      "id": "F2",
+      "severity": "low",
+      "classification": "downstream_requirement_not_verified_defect",
+      "title": "A later debt bridge must include old-note coupons as well as principal",
+      "evidence": [
+        "June27 10-Q Note9, 4.212%/4.319% notes",
+        "August13 prospectus S20"
+      ],
+      "finding": "The frozen illustration deliberately deducts only $875m principal and explicitly excludes interest. If outstanding for the regular period, the September24 coupons are $18.4275m on the $875m tranche and $13.496875m on the $625m tranche. Neither payment nor nonpayment is established. The new $240m annual coupon is not total company debt service.",
+      "proposed_correction": "Use an event-dated schedule of all actual and conditional coupons, principal and any redemption terms in downstream work; retain the present illustrative label.",
+      "outcome": "Nonblocking for this foundation; required before a numerical holding-window bridge."
+    },
+    {
+      "id": "F3",
+      "severity": "information",
+      "classification": "economic_challenge",
+      "title": "Commitments are not a single incremental debt subtraction",
+      "evidence": [
+        "June27 10-Q Notes8-10; cash-flow pp6-7; liquidity p28"
+      ],
+      "finding": "The $30,276m commitments buy inputs/capacity and overlap operating cash flows. Lease, guarantee and investment amounts have different triggers and dates. Adding every gross amount to debt would overstate immediate funding need; deleting them because CFO is positive would understate forward cash and tail risk. Counterparty/contract mapping is unresolved and disclosed.",
+      "proposed_correction": "Before forecasting, map each obligation to cash period, counterparty, cancellation/assignment terms and amounts already captured in operating/capex/lease cash; do not assume overlap means no incremental exposure.",
+      "outcome": "Treatment accepted; quantitative overlap and near-term payment adequacy remain unaccepted."
+    },
+    {
+      "id": "F4",
+      "severity": "low",
+      "classification": "downstream_requirement_not_verified_defect",
+      "title": "Short-term investments are usable assets with realization assumptions, not identical to immediate cash",
+      "evidence": [
+        "June27 10-Q Note8 fair-value and maturity tables",
+        "August13 prospectus S18"
+      ],
+      "finding": "The $17,837.3875m illustration correctly combines cash and short-term investments while excluding restricted cash and restricted long-term securities. An executable funding schedule must still model maturities/sales, market value and settlement timing; the Note8 total available-for-sale portfolio includes longer maturities. No haircut or loss is evidenced or invented here.",
+      "proposed_correction": "Keep cash and investments separate in a subsequent payment schedule and document realistic liquidation assumptions.",
+      "outcome": "Nonblocking for the dated aggregate illustration; no current surplus is accepted."
+    },
+    {
+      "id": "F5",
+      "severity": "information",
+      "classification": "economic_challenge",
+      "title": "Conditional warrants and variable acquisition shares must remain coupled to business economics",
+      "evidence": [
+        "June27 10-Q cover, Notes11-12",
+        "September28 8-K Item3.02",
+        "Meta February24 announcement",
+        "AMD September28 acquisition release"
+      ],
+      "finding": "The 320m warrant maximum, $3.2m exercise cash and dated 83.6105459% old-owner fraction reconcile. No June vesting is not no October vesting. Higher purchase volumes can increase profits and dilution simultaneously; failure to vest can coexist with excess committed capacity. World Labs consideration is stock with a future pricing window; neither a current-share-count substitution nor an $8.2bn cash deduction is justified.",
+      "proposed_correction": "Model operational cash, vesting, employee claims and acquisition cash/benefits/shares together; verify actual dates and terms before per-share conclusions.",
+      "outcome": "Conditional algebra accepted; current diluted claims, acquisition benefits and investment attractiveness unaccepted."
+    },
+    {
+      "id": "F6",
+      "severity": "medium",
+      "classification": "review_identity_limitation",
+      "title": "Requested Astra High route is recorded; actual backend identity is not independently verified",
+      "evidence": [
+        "Parent review dispatch",
+        "workflows/model-review.md"
+      ],
+      "finding": "This is an actual separate-worker evidence review, not a relabelled author test. The dispatch requested Astra High, but this worker has no independent model-name, reasoning-effort or speed telemetry. No different model identity is inferred.",
+      "proposed_correction": "Parent must preserve requested-versus-verified identity and resolve whether dispatch evidence satisfies the workflow gate; do not claim independently verified Astra execution from this report.",
+      "outcome": "Substantive independent review complete. Economic scope accepted as stated; backend-verified stronger-model certification not asserted."
+    }
+  ],
+  "independent_calculations": [
+    {
+      "name": "new_principal",
+      "formula": "1250+1500+1000+1000",
+      "result_usdm": "4750"
+    },
+    {
+      "name": "gross_proceeds",
+      "formula": "1250*0.99889+1500*0.99921+1000*0.99919+1000*0.99757",
+      "result_usdm": "4744.1875"
+    },
+    {
+      "name": "underwriting",
+      "formula": "1.75+2.25+1.8+2.3",
+      "result_usdm": "8.1000"
+    },
+    {
+      "name": "estimated_net",
+      "formula": "4744.1875-8.1-9.7",
+      "result_usdm": "4726.3875",
+      "status": "estimated, not final expense settlement"
+    },
+    {
+      "name": "face_less_estimated_net",
+      "formula": "4750-4726.3875",
+      "result_usdm": "23.6125"
+    },
+    {
+      "name": "annual_new_coupon",
+      "formula": "1250*0.046+1500*0.05+1000*0.0525+1000*0.055",
+      "result_usdm": "240",
+      "regular_semiannual_usdm": "120",
+      "accrual_start": "2026-08-17",
+      "first_nominal_payment": "2027-02-17",
+      "basis": "30/360; subject to contractual business-day/redemption/default terms"
+    },
+    {
+      "name": "illustrative_carrying_debt",
+      "formula": "3250+4750-48",
+      "result_usdm": "7952",
+      "status": "rounded June as-adjusted; residual convertible approximately $0.065m excluded by rounding"
+    },
+    {
+      "name": "illustrative_liquidity",
+      "formula": "5086+8025+4726.3875",
+      "result_usdm": "17837.3875",
+      "restricted_usdm_excluded": "11",
+      "status": "all other flows held constant; not October"
+    },
+    {
+      "name": "hypothetical_principal_repayment",
+      "liquidity_usdm": "16962.3875",
+      "principal_debt_usdm": "7125",
+      "liquidity_minus_principal_before_and_after_usdm": "9837.3875",
+      "status": "settlement unverified; ignores other changes and residual convertible"
+    },
+    {
+      "name": "unconditional_commitments",
+      "formula": "17386+5474+2851+2528+1471+566",
+      "result_usdm": "30276"
+    },
+    {
+      "name": "continuing_CFO_less_cash_capex",
+      "formula": "5321-1197",
+      "result_usdm": "4124"
+    },
+    {
+      "name": "payables_only_sensitivity",
+      "formula": "5321-1197-2170",
+      "result_usdm": "1954",
+      "status": "not normalized owner cash"
+    },
+    {
+      "name": "all_listed_working_capital_changes",
+      "formula": "-966-548-991+2170+61",
+      "result_usdm": "-274",
+      "implication": "net working capital was a cash drag despite positive payables contribution"
+    },
+    {
+      "name": "hypothetical_warrants",
+      "existing_common_m": "1632.475042",
+      "as_of": "2026-07-29",
+      "maximum_addition_m": "320",
+      "total_m": "1952.475042",
+      "old_owner_fraction": "0.8361054594212836037880580499",
+      "share_addition_fraction": "0.1960213735384016976597673461",
+      "ownership_reduction_fraction": "0.1638945405787163962119419501",
+      "exercise_cash_usdm": "3.2",
+      "status": "dated denominator diagnostic; not current diluted count or vesting probability"
+    },
+    {
+      "name": "world_labs_dimensional_identity",
+      "formula": "unadjusted additional shares in millions = 8200 / contractual future price in USD per share",
+      "status": "not a current numerical forecast; exact contractual averaging convention and closing adjustments govern"
+    },
+    {
+      "name": "conditional_september_coupons",
+      "2026_tranche_usdm": "18.4275",
+      "2028_tranche_usdm": "13.496875",
+      "sum_usdm": "31.924375",
+      "status": "regular contractual period assuming continued outstanding; actual payment not verified"
+    }
+  ],
+  "accepted": [
+    "Actual August financing fact and contractual terms in reviewed source summaries",
+    "Historical/issuance-only cash and debt illustrations",
+    "Obligation classification and anti-double-counting treatment",
+    "Explicitly single-variable cash-timing sensitivity",
+    "Conditional warrant/acquisition ownership algebra"
+  ],
+  "withheld": [
+    "Current October usable liquidity and funding adequacy",
+    "September maturity and coupon settlement",
+    "Actual contract/counterparty overlap and payment roll-forward",
+    "Current vested warrants and employee claims",
+    "Acquisition close, adjusted shares, cash flows and benefit",
+    "Valuation, price ceiling, expected return, opportunity entry, portfolio or trade approval",
+    "Independently backend-verified Astra certification"
+  ],
+  "access_log": [
+    {
+      "method": "official web open",
+      "url": "https://www.sec.gov/Archives/edgar/data/2488/000119312526354029/d142696d8k.htm",
+      "outcome": "success during review"
+    },
+    {
+      "method": "official web open",
+      "url": "https://www.sec.gov/Archives/edgar/data/2488/000119312526352628/d173126d424b5.htm",
+      "outcome": "success during review"
+    },
+    {
+      "method": "local extraction",
+      "outcome": "initial optional bs4 unavailable and initial Windows output encoding failed; standard-library parser and UTF8 resolved; originals untouched"
+    }
+  ],
+  "limitations": [
+    "No complete indenture/customer-contract re-underwriting",
+    "Earlier source access failures are not erased by current successful opens",
+    "No prior discovery/Foundation audit redone",
+    "Economics accepted only within explicit incomplete foundation scope"
+  ],
+  "outputs_only": [
+    "validation/amd-funding-claims-astra-review-2026-10-11-r001.md",
+    "validation/amd-funding-claims-astra-review-2026-10-11-r001.json"
+  ],
+  "narrative_sha256": "79bb169978129bd5e8dcd2734187faa4013f449686c9f7b16b11f413812a6134"
+}

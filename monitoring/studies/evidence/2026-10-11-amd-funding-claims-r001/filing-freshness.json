@@ -1,0 +1,254 @@
+{
+  "retrieved_at_utc": "2026-10-11T18:23:23.991544+00:00",
+  "source": "https://data.sec.gov/submissions/CIK0000002488.json",
+  "sha256": "9789d97cfb1b41fb58cc5fcebd13cfced084409dc3bbcfb6ca1382304f092493",
+  "raw_path": "work/subscription-progress-2026-10-11/amd-submissions-9789d97cfb1b41fb58cc5fcebd13cfced084409dc3bbcfb6ca1382304f092493.json",
+  "filings": [
+    {
+      "accessionNumber": "0000002488-26-000182",
+      "filingDate": "2026-09-28",
+      "reportDate": "2026-09-26",
+      "form": "8-K",
+      "primaryDocument": "amd-20260926.htm"
+    },
+    {
+      "accessionNumber": "0000002488-26-000163",
+      "filingDate": "2026-08-19",
+      "reportDate": "2026-08-17",
+      "form": "8-K",
+      "primaryDocument": "amd-20260817.htm"
+    },
+    {
+      "accessionNumber": "0001193125-26-354029",
+      "filingDate": "2026-08-17",
+      "reportDate": "2026-08-13",
+      "form": "8-K",
+      "primaryDocument": "d142696d8k.htm"
+    },
+    {
+      "accessionNumber": "0001193125-26-352628",
+      "filingDate": "2026-08-14",
+      "reportDate": "",
+      "form": "424B5",
+      "primaryDocument": "d173126d424b5.htm"
+    },
+    {
+      "accessionNumber": "0001193125-26-348029",
+      "filingDate": "2026-08-13",
+      "reportDate": "",
+      "form": "424B5",
+      "primaryDocument": "d173126d424b5.htm"
+    },
+    {
+      "accessionNumber": "0001193125-26-348013",
+      "filingDate": "2026-08-13",
+      "reportDate": "",
+      "form": "S-3ASR",
+      "primaryDocument": "d97381ds3asr.htm"
+    },
+    {
+      "accessionNumber": "0000002488-26-000123",
+      "filingDate": "2026-08-05",
+      "reportDate": "2026-06-27",
+      "form": "10-Q",
+      "primaryDocument": "amd-20260627.htm"
+    },
+    {
+      "accessionNumber": "0000002488-26-000121",
+      "filingDate": "2026-08-04",
+      "reportDate": "2026-08-04",
+      "form": "8-K",
+      "primaryDocument": "amd-20260804.htm"
+    },
+    {
+      "accessionNumber": "0000002488-26-000115",
+      "filingDate": "2026-07-01",
+      "reportDate": "2026-06-26",
+      "form": "8-K",
+      "primaryDocument": "amd-20260626.htm"
+    },
+    {
+      "accessionNumber": "0001193125-26-226746",
+      "filingDate": "2026-05-15",
+      "reportDate": "2026-05-13",
+      "form": "8-K",
+      "primaryDocument": "d118163d8k.htm"
+    },
+    {
+      "accessionNumber": "0000002488-26-000076",
+      "filingDate": "2026-05-06",
+      "reportDate": "2026-03-28",
+      "form": "10-Q",
+      "primaryDocument": "amd-20260328.htm"
+    },
+    {
+      "accessionNumber": "0000002488-26-000072",
+      "filingDate": "2026-05-05",
+      "reportDate": "2026-05-05",
+      "form": "8-K",
+      "primaryDocument": "amd-20260505.htm"
+    },
+    {
+      "accessionNumber": "0000002488-26-000045",
+      "filingDate": "2026-02-24",
+      "reportDate": "2026-02-23",
+      "form": "8-K",
+      "primaryDocument": "amd-20260223.htm"
+    },
+    {
+      "accessionNumber": "0000002488-26-000029",
+      "filingDate": "2026-02-17",
+      "reportDate": "2026-02-10",
+      "form": "8-K",
+      "primaryDocument": "amd-20260210.htm"
+    },
+    {
+      "accessionNumber": "0000002488-26-000018",
+      "filingDate": "2026-02-04",
+      "reportDate": "2025-12-27",
+      "form": "10-K",
+      "primaryDocument": "amd-20251227.htm"
+    },
+    {
+      "accessionNumber": "0000002488-26-000014",
+      "filingDate": "2026-02-03",
+      "reportDate": "2026-02-03",
+      "form": "8-K",
+      "primaryDocument": "amd-20260203.htm"
+    },
+    {
+      "accessionNumber": "0000002488-26-000002",
+      "filingDate": "2026-01-20",
+      "reportDate": "2026-01-16",
+      "form": "8-K",
+      "primaryDocument": "amd-20260116.htm"
+    },
+    {
+      "accessionNumber": "0000002488-25-000182",
+      "filingDate": "2025-12-15",
+      "reportDate": "2025-12-12",
+      "form": "8-K",
+      "primaryDocument": "amd-20251212.htm"
+    },
+    {
+      "accessionNumber": "0000002488-25-000166",
+      "filingDate": "2025-11-05",
+      "reportDate": "2025-09-27",
+      "form": "10-Q",
+      "primaryDocument": "amd-20250927.htm"
+    },
+    {
+      "accessionNumber": "0000002488-25-000163",
+      "filingDate": "2025-11-04",
+      "reportDate": "2025-11-04",
+      "form": "8-K",
+      "primaryDocument": "amd-20251104.htm"
+    },
+    {
+      "accessionNumber": "0001193125-25-250803",
+      "filingDate": "2025-10-27",
+      "reportDate": "2025-10-27",
+      "form": "8-K",
+      "primaryDocument": "d917887d8k.htm"
+    },
+    {
+      "accessionNumber": "0001193125-25-230895",
+      "filingDate": "2025-10-06",
+      "reportDate": "2025-10-05",
+      "form": "8-K",
+      "primaryDocument": "d28189d8k.htm"
+    },
+    {
+      "accessionNumber": "0000002488-25-000147",
+      "filingDate": "2025-08-25",
+      "reportDate": "2025-08-22",
+      "form": "8-K",
+      "primaryDocument": "amd-20250822.htm"
+    },
+    {
+      "accessionNumber": "0000002488-25-000108",
+      "filingDate": "2025-08-06",
+      "reportDate": "2025-06-28",
+      "form": "10-Q",
+      "primaryDocument": "amd-20250628.htm"
+    },
+    {
+      "accessionNumber": "0000002488-25-000106",
+      "filingDate": "2025-08-05",
+      "reportDate": "2025-08-05",
+      "form": "8-K",
+      "primaryDocument": "amd-20250805.htm"
+    },
+    {
+      "accessionNumber": "0000002488-25-000099",
+      "filingDate": "2025-07-02",
+      "reportDate": "2025-06-27",
+      "form": "8-K",
+      "primaryDocument": "amd-20250627.htm"
+    },
+    {
+      "accessionNumber": "0001193125-25-122121",
+      "filingDate": "2025-05-19",
+      "reportDate": "2025-05-18",
+      "form": "8-K",
+      "primaryDocument": "d831221d8k.htm"
+    },
+    {
+      "accessionNumber": "0000002488-25-000064",
+      "filingDate": "2025-05-16",
+      "reportDate": "2025-05-14",
+      "form": "8-K",
+      "primaryDocument": "amd-20250514.htm"
+    },
+    {
+      "accessionNumber": "0000002488-25-000047",
+      "filingDate": "2025-05-07",
+      "reportDate": "2025-03-29",
+      "form": "10-Q",
+      "primaryDocument": "amd-20250329.htm"
+    },
+    {
+      "accessionNumber": "0000002488-25-000045",
+      "filingDate": "2025-05-06",
+      "reportDate": "2025-05-06",
+      "form": "8-K",
+      "primaryDocument": "amd-20250506.htm"
+    },
+    {
+      "accessionNumber": "0000002488-25-000039",
+      "filingDate": "2025-04-16",
+      "reportDate": "2025-04-15",
+      "form": "8-K",
+      "primaryDocument": "amd-20250415.htm"
+    },
+    {
+      "accessionNumber": "0001193125-25-067974",
+      "filingDate": "2025-03-31",
+      "reportDate": "",
+      "form": "S-3ASR",
+      "primaryDocument": "d939073ds3asr.htm"
+    },
+    {
+      "accessionNumber": "0001193125-25-067902",
+      "filingDate": "2025-03-31",
+      "reportDate": "2025-03-31",
+      "form": "8-K",
+      "primaryDocument": "d943962d8k.htm"
+    },
+    {
+      "accessionNumber": "0001193125-25-061366",
+      "filingDate": "2025-03-24",
+      "reportDate": "2025-03-24",
+      "form": "8-K",
+      "primaryDocument": "d914634d8k.htm"
+    },
+    {
+      "accessionNumber": "0001193125-25-052170",
+      "filingDate": "2025-03-12",
+      "reportDate": "",
+      "form": "424B5",
+      "primaryDocument": "d896271d424b5.htm"
+    }
+  ],
+  "limitation": "Metadata is a discovery baseline; absence of a new quarterly filing does not prove unchanged liquidity or debt settlement."
+}

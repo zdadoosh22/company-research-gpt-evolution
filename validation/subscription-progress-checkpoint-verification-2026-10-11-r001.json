@@ -1,0 +1,19 @@
+{
+  "verified_at_utc": "2026-10-11T18:40:24.929947+00:00",
+  "unchanged_predecessors": 577,
+  "only_changed_predecessor": [
+    "monitoring/config.json"
+  ],
+  "amd_frozen_inputs": 12,
+  "review_narrative_hash_matches": true,
+  "research_model_jobs_held": true,
+  "uber_eur_principal_m": 4500,
+  "uber_annual_eur_coupon_m": 200,
+  "uber_august_closing_headroom_usd_m": 7376,
+  "uber_metadata_hash_matches": true,
+  "limits": [
+    "Author checks only; not independent Uber review",
+    "Historical closing headroom is not current cash or guaranteed availability",
+    "No current equity valuation, executable quote, trading authority or investment performance validated"
+  ]
+}

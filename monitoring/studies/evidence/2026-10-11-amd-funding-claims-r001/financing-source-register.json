@@ -1,0 +1,41 @@
+{
+  "records": [
+    {
+      "id": "august-closing",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-354029/d142696d8k.htm",
+      "retrieved_at_utc": "2026-10-11T18:25:11.035764+00:00",
+      "http_status": 200,
+      "raw_path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-closing-bcc4dbe9d569b7e79ebcda6290111fc6da1a5ed2b0d3f9bacbdaf76bcc9502ce.html",
+      "sha256": "bcc4dbe9d569b7e79ebcda6290111fc6da1a5ed2b0d3f9bacbdaf76bcc9502ce",
+      "bytes": 54672
+    },
+    {
+      "id": "august-prospectus",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-352628/d173126d424b5.htm",
+      "retrieved_at_utc": "2026-10-11T18:25:11.301598+00:00",
+      "http_status": 200,
+      "raw_path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-prospectus-eb4af0e2a01eb4524a3799d4065dfd87d26c5b7052644c12007d4d96d382ff8c.html",
+      "sha256": "eb4af0e2a01eb4524a3799d4065dfd87d26c5b7052644c12007d4d96d382ff8c",
+      "bytes": 542880
+    },
+    {
+      "id": "august-governance",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000163/amd-20260817.htm",
+      "retrieved_at_utc": "2026-10-11T18:25:11.639960+00:00",
+      "http_status": 200,
+      "raw_path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-governance-e8848127bd676b57423f43759749e411dbe4e239cc6dd0cfa1d27c87eb7dc775.html",
+      "sha256": "e8848127bd676b57423f43759749e411dbe4e239cc6dd0cfa1d27c87eb7dc775",
+      "bytes": 40800
+    },
+    {
+      "id": "september-acquisition",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000182/amd-20260926.htm",
+      "retrieved_at_utc": "2026-10-11T18:25:12.618428+00:00",
+      "http_status": 200,
+      "raw_path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/september-acquisition-4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be.html",
+      "sha256": "4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be",
+      "bytes": 33609
+    }
+  ],
+  "source_role": "Issuer-hosted exact filing paths independently cross-checked to SEC accession metadata and official SEC web reading; no arbitrary mirror."
+}

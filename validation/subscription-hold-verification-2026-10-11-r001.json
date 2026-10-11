@@ -1,0 +1,9 @@
+{
+  "verified_at_utc": "2026-10-11T18:28:00.909604+00:00",
+  "queued_job_unchanged": true,
+  "no_model_call_or_claim": true,
+  "configured_source_checks_retained": true,
+  "observation_only_retained": true,
+  "fixture": "In-memory queue with a due queued job and actual current config; actual run_one_job returned before claiming or invoking research",
+  "scope": "Held launch path, not uptime, phone delivery or account-wide billing enforcement"
+}

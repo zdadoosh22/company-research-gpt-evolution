@@ -1,0 +1,154 @@
+{
+  "records": [
+    {
+      "source_id": "august-closing",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-354029/d142696d8k.htm",
+      "retrieved_at_utc": "2026-10-11T18:25:11.035764+00:00",
+      "raw_path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-closing-bcc4dbe9d569b7e79ebcda6290111fc6da1a5ed2b0d3f9bacbdaf76bcc9502ce.html",
+      "sha256": "bcc4dbe9d569b7e79ebcda6290111fc6da1a5ed2b0d3f9bacbdaf76bcc9502ce",
+      "source_projection": "Script-stripped whitespace-normalized selected actual source text; not original HTML",
+      "passages": [
+        {
+          "needle": "closed its public offering",
+          "found": true,
+          "excerpt": "o a Material Definitive Agreement On August 17, 2026 (the “Closing Date”), Advanced Micro Devices, Inc. (the “Company”) closed its public offering (the “Offering”) of $4.75 billion aggregate principal amount of senior notes, consisting of $1.25 billion aggregate principal amount of its 4.600% Senior Notes due 2029 (the “2029 Notes”), $1.50 billion aggregate principal amount of its 5.000% Senior Notes due 2031 (the “2031 Notes”), $1.00 billion aggregate principal amount of its 5.250% Senior Notes due 2033 (the “2033 Notes”) and $1.00 billion aggregate principal amount of its 5.500% Senior Notes due 2036 (the “2036 Notes,” and together with the 2029 Notes, the 2031 Notes and the 2033 Notes, the “Notes”). The terms of the Notes are governed by an Indenture, dated June 9, 2022 (the “Base Indenture”), by and between the Company and U.S. Bank Trust Company, National Association (the “Trustee”), as supplemented by the Third Supplemental In"
+        },
+        {
+          "needle": "4.75",
+          "found": true,
+          "excerpt": "2026 (the “Closing Date”), Advanced Micro Devices, Inc. (the “Company”) closed its public offering (the “Offering”) of $4.75 billion aggregate principal amount of senior notes, consisting of $1.25 billion aggregate principal amount of its 4.600% Senior Notes due 2029 (the “2029 Notes”), $1.50 billion aggregate principal amount of its 5.000% Senior Notes due 2031 (the “2031 Notes”), $1.00 billion aggregate principal amount of its 5.250% Senior Notes due 2033 (the “2033 Notes”) and $1.00 billion aggregate principal amount of its 5.500% Senior Notes due 2036 (the “2036 Notes,” and together with the 2029 Notes, the 2031 Notes and the 2033 Notes, the “Notes”). The terms of the Notes are governed by an Indenture, dated June 9, 2022 (the “Base Indenture”), by and between the Company and U.S. Bank Trust Company, National Association (the “Trustee”), as supplemented by the Third Supplemental Indenture, dated as of the C"
+        },
+        {
+          "needle": "general corporate purposes",
+          "found": true,
+          "excerpt": " have the meanings assigned to them in the Indenture. The Company intends to use the net proceeds from the Offering for general corporate purposes, which may include the repayment of debt. The purchase and sale of the Notes was made pursuant to an Underwriting Agreement (the “Underwriting Agreement”), dated August 13, 2026, with Barclays Capital Inc., BofA Securities, Inc., Citigroup Global Markets Inc., J.P. Morgan Securities LLC, Morgan Stanley & Co. LLC and Wells Fargo Securities, LLC, as representatives of the several underwriters named therein (collectively, the “Underwriters”), pursuant to which the Notes were issued and sold to the Underwriters, severally and not jointly, for resale at a public offering price of 99.889% of the aggregate principal amount of the 2029 Notes, 99.921% of the aggregate principal amount of the 2031 Notes, 99.919% of the aggregate principal amount of the 2033 Notes and 99.757% of the aggregate princi"
+        }
+      ]
+    },
+    {
+      "source_id": "august-prospectus",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-352628/d173126d424b5.htm",
+      "retrieved_at_utc": "2026-10-11T18:25:11.301598+00:00",
+      "raw_path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-prospectus-eb4af0e2a01eb4524a3799d4065dfd87d26c5b7052644c12007d4d96d382ff8c.html",
+      "sha256": "eb4af0e2a01eb4524a3799d4065dfd87d26c5b7052644c12007d4d96d382ff8c",
+      "source_projection": "Script-stripped whitespace-normalized selected actual source text; not original HTML",
+      "passages": [
+        {
+          "needle": "Underwriting Discount",
+          "found": true,
+          "excerpt": "ice (1) 99.889 % $ 1,248,612,500 99.921 % $ 1,498,815,000 99.919 % $ 999,190,000 99.757 % $ 997,570,000 $ 4,744,187,500 Underwriting Discount (2) 0.140 % $ 1,750,000 0.150 % $ 2,250,000 0.180 % $ 1,800,000 0.230 % $ 2,300,000 $ 8,100,000 Proceeds to us (before expenses) (1) 99.749 % $ 1,246,862,500 99.771 % $ 1,496,565,000 99.739 % $ 997,390,000 99.527 % $ 995,270,000 $ 4,736,087,500 (1) Plus accrued interest from August 17, 2026, if settlement occurs after that date. (2) See “Underwriting” for additional information regarding underwriting compensation. Neither the U.S. Securities and Exchange Commission nor any state securities commission has approved or disapproved of these securities or determined if this prospectus supplement or the accompanying prospectus is truthful or complete. Any representation to the contrary is a criminal offense. The underwriters expect to deliver the notes in book-entry form through the facilities "
+        },
+        {
+          "needle": "Proceeds to us",
+          "found": true,
+          "excerpt": "0 Underwriting Discount (2) 0.140 % $ 1,750,000 0.150 % $ 2,250,000 0.180 % $ 1,800,000 0.230 % $ 2,300,000 $ 8,100,000 Proceeds to us (before expenses) (1) 99.749 % $ 1,246,862,500 99.771 % $ 1,496,565,000 99.739 % $ 997,390,000 99.527 % $ 995,270,000 $ 4,736,087,500 (1) Plus accrued interest from August 17, 2026, if settlement occurs after that date. (2) See “Underwriting” for additional information regarding underwriting compensation. Neither the U.S. Securities and Exchange Commission nor any state securities commission has approved or disapproved of these securities or determined if this prospectus supplement or the accompanying prospectus is truthful or complete. Any representation to the contrary is a criminal offense. The underwriters expect to deliver the notes in book-entry form through the facilities of The Depository Trust Company for the accounts of its participants, including Clearstream Banking S.A. and Eu"
+        },
+        {
+          "needle": "estimated at $9.7 million",
+          "found": true,
+          "excerpt": "note $ 2,250,000 0.150 % Per 2033 note $ 1,800,000 0.180 % Per 2036 note $ 2,300,000 0.230 % Expenses payable by us are estimated at $9.7 million, excluding the underwriting discounts. The notes of each series are a new issue of securities with no established trading market. The underwriters have informed us that they intend to make a market in the notes but are under no obligation to do so and such market making may be terminated at any time without notice. Indemnification We have agreed to indemnify the several underwriters against certain liabilities, including liabilities under the Securities Act, and to contribute to payments that the underwriters may be required to make in respect of those liabilities. Stabilization and Short Positions In connection with this offering, the underwriters may engage in certain transactions that stabilize, maintain or otherwise affect the prices of the notes. Specifically, the underwriters may ov"
+        },
+        {
+          "needle": "Cash and cash equivalents",
+          "found": true,
+          "excerpt": "issued by the U.S. government or its agencies. S-17 Table of Contents CAPITALIZATION The following table sets forth our cash and cash equivalents, restricted cash, short-term investments and capitalization as of June 27, 2026 on: • an actual basis; and • an as adjusted basis to reflect the issuance of the notes, after deducting the underwriting discounts and estimated offering expenses payable by us. You should read our financial statements and notes thereto that are incorporated by reference into this prospectus supplement and the accompanying prospectus for additional information about our capital structure. As of June 27, 2026 Actual As Adjusted (in millions) Cash and cash equivalents $ 5,086 $ 9,812 Restricted cash (1) 11 11 Short-term investments 8,025 8,025 Debt: 4.393% Senior Notes due 2052 $ 500 $ 500 3.924% Senior Notes due 2032 500 500 2.375% Senior Notes due 2030 750 750 4.319% Senior Notes due 2028 625 625 4.212% Senior"
+        },
+        {
+          "needle": "Principal and Interest",
+          "found": true,
+          "excerpt": "prospectus supplement. The notes will not be guaranteed by any of our subsidiaries. The obligations to make payments of principal and interest on the notes are solely our obligations. Therefore, the notes will be structurally subordinated to all indebtedness and other obligations of our subsidiaries. The 2029 notes, the 2031 notes, the 2033 notes and the 2036 notes are each a new issue of securities with no established trading market. We do not intend to apply for the listing or trading of the notes of either series on any securities exchange or trading facility or for inclusion of the notes of either series in any automated quotation system. Investing in the notes involves risks. See the “ Risk Factors ” section beginning on page S-12 of this prospectus supplement. Per 2029 note Total for 2029 notes Per 2031 note Total for 2031 notes Per 2033 note Total for 2033 notes Per 2036 note Total for 2036 notes Total Public Offering Pri"
+        },
+        {
+          "needle": "February 17, 2027",
+          "found": true,
+          "excerpt": "om August 17, 2026 and will be payable semi-annually in arrears on February 17 and August 17 of each year, beginning on February 17, 2027. The 2031 notes will bear interest at the rate of 5.000% per year and mature on August 17, 2031. Interest on the 2031 notes will accrue from August 17, 2026 and will be payable semi-annually in arrears on February 17 and August 17 of each year, beginning on February 17, 2027. The 2033 notes will bear interest at the rate of 5.250% per year and mature on August 17, 2033. Interest on the 2033 notes will accrue from August 17, 2026 and will be payable semi-annually in arrears on February 17 and August 17 of each year, beginning on February 17, 2027. The 2036 notes will bear interest at the rate of 5.500% per year and mature on August 17, 2036. Interest on the 2036 notes will accrue from August 17, 2026 and will be payable semi-annually in arrears on February 17 and August 17 of each year, be"
+        }
+      ]
+    },
+    {
+      "source_id": "august-governance",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000163/amd-20260817.htm",
+      "retrieved_at_utc": "2026-10-11T18:25:11.639960+00:00",
+      "raw_path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-governance-e8848127bd676b57423f43759749e411dbe4e239cc6dd0cfa1d27c87eb7dc775.html",
+      "sha256": "e8848127bd676b57423f43759749e411dbe4e239cc6dd0cfa1d27c87eb7dc775",
+      "source_projection": "Script-stripped whitespace-normalized selected actual source text; not original HTML",
+      "passages": [
+        {
+          "needle": "Director Retirement",
+          "found": true,
+          "excerpt": "ertain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangements of Certain Officers. Director Retirement On August 17, 2026, Mr. Joe Householder provided Advanced Micro Devices, Inc. (the “Company”) with notice of his intention to retire from the Company’s Board of Directors (the “Board”) effective as of August 19, 2026. Mr. Householder has served as a director since 2014. Mr. Householder’s retirement is not the result of any disagreement with the Company on any matter relating to the Company’s operations, policies, or practices. Upon the effective date of Mr. Householder’s retirement, Ms. KC McClure, a member of the Board, will succeed Mr. Householder as the Chair of the Audit and Finance Committee (the \"Audit and Finance Committee\") of the Board and Ms. Nora Denzel, the Company’s Lead Independent Director, will join the Audit and Finance Committee. In addition, Ms. McClure will be appointe"
+        },
+        {
+          "needle": "Mr. Ryan",
+          "found": true,
+          "excerpt": "he Board appointed Mr. Tim Ryan as a member of the Board effective as of August 19, 2026. The Board has determined that Mr. Ryan qualifies as an independent director for purposes of the rules of the Nasdaq Stock Market as well as applicable rules adopted by the U.S. Securities and Exchange Commission (the “SEC”). Mr. Ryan will receive compensation based on the same policies as the Company’s other non-employee directors, which are described in the Company’s definitive proxy statement filed on March 27, 2026 with the SEC and in the Company’s Outside Director Equity Compensation Policy attached as Exhibit 10.2 to the Company’s Quarterly Report on Form 10-Q filed with the SEC on November 5, 2025. Mr. Ryan is expected to enter into the Company’s standard form of indemnity agreement in the form filed as Exhibit 10.1 to the Company’s Current Report on Form 8-K filed with the SEC on October 10, 2008. There are no family re"
+        }
+      ]
+    },
+    {
+      "source_id": "september-acquisition",
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000182/amd-20260926.htm",
+      "retrieved_at_utc": "2026-10-11T18:25:12.618428+00:00",
+      "raw_path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/september-acquisition-4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be.html",
+      "sha256": "4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be",
+      "source_projection": "Script-stripped whitespace-normalized selected actual source text; not original HTML",
+      "passages": [
+        {
+          "needle": "total purchase price",
+          "found": true,
+          "excerpt": "ment”) to acquire all of the equity interests in World Labs Technologies, Inc. (“World Labs”) (the “Acquisition”) for a total purchase price of approximately $8.2 billion to be paid in shares of the Company’s common stock, par value $0.01 per share (“Common Stock”), to stockholders of World Labs, subject to customary adjustments. At this time, the number of shares to be issued in connection with the Acquisition is not known and will be calculated based on the daily volume-weighted average price of a share of Common Stock on the Nasdaq Global Select Market over the ten (10) consecutive trading-day period ending on and including the second trading day immediately preceding the closing date of the Acquisition. The Company intends to issue the shares of Common Stock in reliance upon the exemptions from registration afforded by Section 4(a)(2) of the Securities Act of 1933, as amended (the “Securities Act”), and/or Rule 506 of Regu"
+        },
+        {
+          "needle": "ten (10)",
+          "found": true,
+          "excerpt": "based on the daily volume-weighted average price of a share of Common Stock on the Nasdaq Global Select Market over the ten (10) consecutive trading-day period ending on and including the second trading day immediately preceding the closing date of the Acquisition. The Company intends to issue the shares of Common Stock in reliance upon the exemptions from registration afforded by Section 4(a)(2) of the Securities Act of 1933, as amended (the “Securities Act”), and/or Rule 506 of Regulation D promulgated under the Securities Act. The issuance is not being conducted in connection with a public offering, and no public solicitation or advertisement will be made or relied upon in connection with the issuance of the shares. SIGNATURES Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized. Date"
+        }
+      ]
+    },
+    {
+      "source_id": "q3-notice",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results",
+      "retrieved_at_utc": "2026-10-11T18:23:24.989024+00:00",
+      "raw_path": "work/subscription-progress-2026-10-11/q3-notice-1c34cd99d3fbf0bba0f0a135a04f9fe9c32be3d51a96f751b4674a90d97d25b7.html",
+      "sha256": "1c34cd99d3fbf0bba0f0a135a04f9fe9c32be3d51a96f751b4674a90d97d25b7",
+      "source_projection": "Script-stripped whitespace-normalized selected actual source text; not original HTML",
+      "passages": [
+        {
+          "needle": "Nov. 3, 2026",
+          "found": true,
+          "excerpt": "SWIRE) -- AMD (NASDAQ: AMD) announced today that it will report fiscal third quarter 2026 financial results on Tuesday, Nov. 3, 2026, after the market close. Management will conduct a conference call to discuss these results at 5 p.m. ET / 2 p.m. PT. Interested parties are invited to listen to the webcast of the conference call via AMD’s Investor Relations website: ir.amd.com . AMD also announced it will participate in the following events with the financial community: UBS Global Technology and AI Conference on Tuesday, Dec. 1, 2026. Barclays 24 th Annual Global Technology Conference on Wednesday, Dec. 9, 2026. Webcasts of the presentations can be accessed on AMD’s Investor Relations website: ir.amd.com . About AMD AMD (NASDAQ: AMD) drives innovation in high-performance and AI computing to solve the world’s most important challenges. Today, AMD technology powers billions of experiences across cloud and AI infrastructur"
+        },
+        {
+          "needle": "5 p.m. ET",
+          "found": true,
+          "excerpt": "on Tuesday, Nov. 3, 2026, after the market close. Management will conduct a conference call to discuss these results at 5 p.m. ET / 2 p.m. PT. Interested parties are invited to listen to the webcast of the conference call via AMD’s Investor Relations website: ir.amd.com . AMD also announced it will participate in the following events with the financial community: UBS Global Technology and AI Conference on Tuesday, Dec. 1, 2026. Barclays 24 th Annual Global Technology Conference on Wednesday, Dec. 9, 2026. Webcasts of the presentations can be accessed on AMD’s Investor Relations website: ir.amd.com . About AMD AMD (NASDAQ: AMD) drives innovation in high-performance and AI computing to solve the world’s most important challenges. Today, AMD technology powers billions of experiences across cloud and AI infrastructure, embedded systems, AI PCs and gaming. With a broad portfolio of AI-optimized CPUs, GPUs, networking and"
+        }
+      ]
+    },
+    {
+      "source_id": "meta-counterparty",
+      "url": "https://about.fb.com/news/2026/02/meta-amd-partner-longterm-ai-infrastructure-agreement/",
+      "retrieved_at_utc": "2026-10-11T18:23:25.233995+00:00",
+      "raw_path": "work/subscription-progress-2026-10-11/meta-counterparty-9ddbfca5f4edfc099ce68f453eb7aa95ed826cd62d0706bc1925a5eaa0bc8a73.html",
+      "sha256": "9ddbfca5f4edfc099ce68f453eb7aa95ed826cd62d0706bc1925a5eaa0bc8a73",
+      "source_projection": "Script-stripped whitespace-normalized selected actual source text; not original HTML",
+      "passages": [
+        {
+          "needle": "Takeaways",
+          "found": true,
+          "excerpt": " Infrastructure Agreement February 24, 2026 February 24, 2026 Listen to Article 10 Pause 10 0.25× 0.5× 1× 1.25× 1.5× 2× Takeaways We’re announcing a long-term agreement with AMD to power Meta’s AI infrastructure with up to 6GW of AMD Instinct GPUs, and to align our product roadmaps across hardware, software, and systems. This partnership is part of our portfolio-based approach to infrastructure, an effort to build a flexible and resilient tech stack with diverse partners to support different workloads. Today, we’re announcing a multi-year agreement with AMD to power our AI infrastructure with up to 6GW of AMD Instinct GPUs, the silicon computing technology used to support modern AI models. At Meta, we’re working to build the next generation of AI and enable personal superintelligence for all. To do this, we need massive, scalable compute power that can handle the growing demands of our AI workloads. Our partnership "
+        },
+        {
+          "needle": "up to 6GW",
+          "found": true,
+          "excerpt": " 0.5× 1× 1.25× 1.5× 2× Takeaways We’re announcing a long-term agreement with AMD to power Meta’s AI infrastructure with up to 6GW of AMD Instinct GPUs, and to align our product roadmaps across hardware, software, and systems. This partnership is part of our portfolio-based approach to infrastructure, an effort to build a flexible and resilient tech stack with diverse partners to support different workloads. Today, we’re announcing a multi-year agreement with AMD to power our AI infrastructure with up to 6GW of AMD Instinct GPUs, the silicon computing technology used to support modern AI models. At Meta, we’re working to build the next generation of AI and enable personal superintelligence for all. To do this, we need massive, scalable compute power that can handle the growing demands of our AI workloads. Our partnership with AMD, which builds on our existing collaboration, will help us meet those needs. Working With"
+        },
+        {
+          "needle": "Shipments to support",
+          "found": true,
+          "excerpt": "ds, accelerating one of the industry’s largest AI deployments and placing AMD at the center of the global AI buildout.” Shipments to support the first GPU deployments will begin in the second half of 2026, and will be built on the Helios rack-scale architecture, a rack that we developed and announced at last year’s Open Compute Project Global Summit in collaboration with AMD. “We’re excited to form a long-term partnership with AMD to deploy efficient inference compute and deliver personal superintelligence,” said Mark Zuckerberg, Founder and CEO of Meta. “This is an important step for Meta as we diversify our compute. I expect AMD to be an important partner for many years to come.” Our Portfolio-Based Approach Our agreement with AMD is part of our Meta Compute initiative, an effort to massively scale our infrastructure for the era of personal superintelligence, future-proofing our leadership in AI. By diversifying our partners"
+        }
+      ]
+    }
+  ]
+}

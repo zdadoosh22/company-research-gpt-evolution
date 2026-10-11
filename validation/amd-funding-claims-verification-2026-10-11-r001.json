@@ -1,0 +1,156 @@
+{
+  "verified_at_utc": "2026-10-11T18:31:51.882306+00:00",
+  "checks": [
+    {
+      "name": "All577 research/method/code predecessors unchanged except authorised config hold",
+      "passed": true,
+      "evidence": 577
+    },
+    {
+      "name": "Original primary quarter archive matches bound source",
+      "passed": true,
+      "evidence": "fa18ad1095a14dc14fe04d3e256143addbb1c8f0573eb6eb8bb6bc6609bfe2bf"
+    },
+    {
+      "name": "All9 fresh captures match actual raw bytes",
+      "passed": true,
+      "evidence": [
+        "amd-submissions",
+        "q2-filing",
+        "q3-notice",
+        "meta-counterparty",
+        "world-labs",
+        "august-closing",
+        "august-prospectus",
+        "august-governance",
+        "september-acquisition"
+      ]
+    },
+    {
+      "name": "Fresh issuer quarter is original-byte-identical",
+      "passed": true,
+      "evidence": "No source facts silently updated"
+    },
+    {
+      "name": "Material selected passages are present in actual projections",
+      "passed": true,
+      "evidence": 6
+    },
+    {
+      "name": "Principal and exact public-price proceeds",
+      "passed": true,
+      "evidence": {
+        "face": "4750",
+        "gross": "4744.1875"
+      }
+    },
+    {
+      "name": "Underwriting deducted once; before expenses agrees with cover",
+      "passed": true,
+      "evidence": {
+        "underwriting": "8.100",
+        "before_expenses": "4736.0875"
+      }
+    },
+    {
+      "name": "Estimated offering costs and cash table",
+      "passed": true,
+      "evidence": {
+        "estimated_net": "4726.3875",
+        "face_less_net": "23.6125",
+        "not_final_actual_costs": true
+      }
+    },
+    {
+      "name": "New contractual annual/normal half-year coupon",
+      "passed": true,
+      "evidence": {
+        "annual": "240.0000",
+        "normal_half_year": "120.0000",
+        "first_nominal_payment": "2027-02-17",
+        "accrual_start": "2026-08-17",
+        "conditional_not_observed": true
+      }
+    },
+    {
+      "name": "Illustrative capitalization distinguishes carrying/principal debt",
+      "passed": true,
+      "evidence": {
+        "principal": "8000",
+        "estimated_carrying": "7952",
+        "not_current_debt": true
+      }
+    },
+    {
+      "name": "Restricted cash excluded from illustrative usable liquidity",
+      "passed": true,
+      "evidence": {
+        "illustrative_unrestricted": "17837.3875",
+        "restricted_excluded": "11",
+        "not_current_liquidity": true
+      }
+    },
+    {
+      "name": "Hypothetical old-principal settlement reduces both sides once",
+      "passed": true,
+      "evidence": {
+        "settlement_unverified": true,
+        "no_equity_gain_from_principal_payment_alone": true
+      }
+    },
+    {
+      "name": "Unconditional payment buckets sum to source total",
+      "passed": true,
+      "evidence": {
+        "periods": [
+          "remainder2026",
+          "2027",
+          "2028",
+          "2029",
+          "2030",
+          "2031+"
+        ],
+        "total": "30276",
+        "not_debt_sum": true
+      }
+    },
+    {
+      "name": "Reported CFO/capex and single-variable payable sensitivity",
+      "passed": true,
+      "evidence": {
+        "reported_continuing_cfo_less_cash_capex": "4124",
+        "one_variable_sensitivity": "1954",
+        "not_normalized_owner_cash": true
+      }
+    },
+    {
+      "name": "Warrant face exercise cash and dated owner-fraction identity",
+      "passed": true,
+      "evidence": {
+        "denominator_date": "2026-07-29",
+        "shares_m": "1632.475042",
+        "hypothetical_total_m": "1952.475042",
+        "old_owner_fraction": "0.8361054594212836037880580498605933012485",
+        "share_addition_fraction": "0.1960213735384016976597673460786667267162",
+        "ownership_reduction_fraction": "0.1638945405787163962119419501394066987515",
+        "exercise_cash_m": "3.2",
+        "not_current_vesting": true
+      }
+    },
+    {
+      "name": "World Labs variable-share relation is dimensional, not market-priced",
+      "passed": true,
+      "evidence": "Only arithmetic identity tested at a fictional200USD VWAP; no current price adopted or numerical acquisition share forecast published"
+    },
+    {
+      "name": "Intentional model hold rather than a hidden trading activation",
+      "passed": true,
+      "evidence": {
+        "before_sha256": "dc7d6ccf634b7e0408bbf0784cdb6d1cafd1ab85edc4bf4fa688b014bf04fd5c",
+        "after_sha256": "10c985e9dca1e1a255e951bebe79a2399b444b750e670252eadc86b141c86e14"
+      }
+    }
+  ],
+  "passed": true,
+  "scope": "Author source-byte and definition/arithmetic checks only; actual new financing source reading and independent challenge separate. No current full cash valuation, future observation, investment performance, broker or phone acceptance."
+}

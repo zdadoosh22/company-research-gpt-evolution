@@ -1,0 +1,184 @@
+{
+  "retrieved_at_utc": "2026-10-11T18:34:27.830760+00:00",
+  "source": "https://data.sec.gov/submissions/CIK0001543151.json",
+  "sha256": "c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643",
+  "raw_path": "work/subscription-progress-2026-10-11/uber-submissions-c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643.json",
+  "filings": [
+    {
+      "accessionNumber": "0001552781-26-000486",
+      "filingDate": "2026-09-15",
+      "reportDate": "2026-09-15",
+      "form": "8-K",
+      "primaryDocument": "e26383_uber-8k.htm"
+    },
+    {
+      "accessionNumber": "0001552781-26-000481",
+      "filingDate": "2026-09-11",
+      "reportDate": "",
+      "form": "424B2",
+      "primaryDocument": "e26382_uber-euro424b2.htm"
+    },
+    {
+      "accessionNumber": "0001552781-26-000414",
+      "filingDate": "2026-08-07",
+      "reportDate": "2026-08-06",
+      "form": "8-K",
+      "primaryDocument": "e26328_uber-8k.htm"
+    },
+    {
+      "accessionNumber": "0001543151-26-000032",
+      "filingDate": "2026-08-05",
+      "reportDate": "2026-06-30",
+      "form": "10-Q",
+      "primaryDocument": "uber-20260630.htm"
+    },
+    {
+      "accessionNumber": "0001543151-26-000027",
+      "filingDate": "2026-08-05",
+      "reportDate": "2026-08-05",
+      "form": "8-K",
+      "primaryDocument": "uber-20260805.htm"
+    },
+    {
+      "accessionNumber": "0001552781-26-000382",
+      "filingDate": "2026-07-16",
+      "reportDate": "2026-07-16",
+      "form": "8-K",
+      "primaryDocument": "e26302_uber-8k.htm"
+    },
+    {
+      "accessionNumber": "0001552781-26-000320",
+      "filingDate": "2026-05-11",
+      "reportDate": "2026-05-05",
+      "form": "8-K",
+      "primaryDocument": "e26247_uber-8k.htm"
+    },
+    {
+      "accessionNumber": "0001552781-26-000314",
+      "filingDate": "2026-05-08",
+      "reportDate": "2026-05-04",
+      "form": "8-K",
+      "primaryDocument": "e26243_uber-8k.htm"
+    },
+    {
+      "accessionNumber": "0001543151-26-000022",
+      "filingDate": "2026-05-06",
+      "reportDate": "2026-03-31",
+      "form": "10-Q",
+      "primaryDocument": "uber-20260331.htm"
+    },
+    {
+      "accessionNumber": "0001543151-26-000019",
+      "filingDate": "2026-05-06",
+      "reportDate": "2026-05-06",
+      "form": "8-K",
+      "primaryDocument": "uber-20260506.htm"
+    },
+    {
+      "accessionNumber": "0001543151-26-000015",
+      "filingDate": "2026-02-13",
+      "reportDate": "2025-12-31",
+      "form": "10-K",
+      "primaryDocument": "uber-20251231.htm"
+    },
+    {
+      "accessionNumber": "0001552781-26-000043",
+      "filingDate": "2026-02-09",
+      "reportDate": "2026-02-08",
+      "form": "8-K",
+      "primaryDocument": "e26049_uber-8k.htm"
+    },
+    {
+      "accessionNumber": "0001543151-26-000011",
+      "filingDate": "2026-02-04",
+      "reportDate": "2026-01-30",
+      "form": "8-K",
+      "primaryDocument": "uber-20260130.htm"
+    },
+    {
+      "accessionNumber": "0001543151-26-000005",
+      "filingDate": "2026-01-12",
+      "reportDate": "2026-01-12",
+      "form": "8-K",
+      "primaryDocument": "uber-20260112.htm"
+    },
+    {
+      "accessionNumber": "0001543151-25-000033",
+      "filingDate": "2025-11-04",
+      "reportDate": "2025-09-30",
+      "form": "10-Q",
+      "primaryDocument": "uber-20250930.htm"
+    },
+    {
+      "accessionNumber": "0001543151-25-000030",
+      "filingDate": "2025-11-04",
+      "reportDate": "2025-11-04",
+      "form": "8-K",
+      "primaryDocument": "uber-20251104.htm"
+    },
+    {
+      "accessionNumber": "0001552781-25-000287",
+      "filingDate": "2025-09-11",
+      "reportDate": "2025-09-08",
+      "form": "8-K",
+      "primaryDocument": "e25325_uber-8k.htm"
+    },
+    {
+      "accessionNumber": "0001552781-25-000283",
+      "filingDate": "2025-09-10",
+      "reportDate": "",
+      "form": "424B2",
+      "primaryDocument": "e25324_uber-424b2.htm"
+    },
+    {
+      "accessionNumber": "0001543151-25-000023",
+      "filingDate": "2025-08-06",
+      "reportDate": "2025-06-30",
+      "form": "10-Q",
+      "primaryDocument": "uber-20250630.htm"
+    },
+    {
+      "accessionNumber": "0001543151-25-000020",
+      "filingDate": "2025-08-06",
+      "reportDate": "2025-07-28",
+      "form": "8-K",
+      "primaryDocument": "uber-20250728.htm"
+    },
+    {
+      "accessionNumber": "0001552781-25-000205",
+      "filingDate": "2025-06-06",
+      "reportDate": "2025-06-04",
+      "form": "8-K",
+      "primaryDocument": "e25232_uber-8k.htm"
+    },
+    {
+      "accessionNumber": "0001552781-25-000203",
+      "filingDate": "2025-06-04",
+      "reportDate": "2025-05-31",
+      "form": "8-K",
+      "primaryDocument": "e25233_uber-8k.htm"
+    },
+    {
+      "accessionNumber": "0001552781-25-000201",
+      "filingDate": "2025-06-02",
+      "reportDate": "2025-06-02",
+      "form": "8-K",
+      "primaryDocument": "e25231_uber-8k.htm"
+    },
+    {
+      "accessionNumber": "0001552781-25-000191",
+      "filingDate": "2025-05-20",
+      "reportDate": "2025-05-13",
+      "form": "8-K",
+      "primaryDocument": "e25222_uber-8k.htm"
+    },
+    {
+      "accessionNumber": "0001552781-25-000174",
+      "filingDate": "2025-05-09",
+      "reportDate": "2025-05-05",
+      "form": "8-K",
+      "primaryDocument": "e25195_uber-8k.htm"
+    }
+  ],
+  "limit": "Metadata only; not completed intervening funding or equity rollforward"
+}

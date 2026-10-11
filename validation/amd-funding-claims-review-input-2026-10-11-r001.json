@@ -1,0 +1,69 @@
+{
+  "recorded_at_utc": "2026-10-11T18:32:38.985641+00:00",
+  "scope": "AMD disclosed funding/claims foundation; current entry remains withheld, no prior foundation audit repeated",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-11-amd-funding-claims-r001.md",
+      "sha256": "3e557754150b5e57eaab0c4f11bc47b325168cba5069b8750e9e73dddd1c2bc6",
+      "bytes": 14563
+    },
+    {
+      "path": "validation/amd-funding-claims-verification-2026-10-11-r001.json",
+      "sha256": "118c5cdabf9c92d067c95c1aa628c8a921d4b8c949b9d2cb23f00bcea9e02d4a",
+      "bytes": 4988
+    },
+    {
+      "path": "validation/amd-funding-claims-2026-10-11-r001-verify.py",
+      "sha256": "d9ef1b168ba877700bd972c7e5e69116a85ccd99dfac45a3be1f7a59689e09d6",
+      "bytes": 6174
+    },
+    {
+      "path": "validation/subscription-progress-baseline-2026-10-11-r001.json",
+      "sha256": "a0247bd210c0f248da1b6e8943e1ad6e81901ccc54ffb23683dc003ea0b7334f",
+      "bytes": 109456
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-closing-bcc4dbe9d569b7e79ebcda6290111fc6da1a5ed2b0d3f9bacbdaf76bcc9502ce.html",
+      "sha256": "bcc4dbe9d569b7e79ebcda6290111fc6da1a5ed2b0d3f9bacbdaf76bcc9502ce",
+      "bytes": 54672
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-governance-e8848127bd676b57423f43759749e411dbe4e239cc6dd0cfa1d27c87eb7dc775.html",
+      "sha256": "e8848127bd676b57423f43759749e411dbe4e239cc6dd0cfa1d27c87eb7dc775",
+      "bytes": 40800
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/august-prospectus-eb4af0e2a01eb4524a3799d4065dfd87d26c5b7052644c12007d4d96d382ff8c.html",
+      "sha256": "eb4af0e2a01eb4524a3799d4065dfd87d26c5b7052644c12007d4d96d382ff8c",
+      "bytes": 542880
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/filing-freshness.json",
+      "sha256": "d8208eff4e8f006f5733b3f9652c5b576f80564604a8b463a3b7eacc3fabab0d",
+      "bytes": 7546
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/financing-source-register.json",
+      "sha256": "027f514096222167fc3be843fd6bf5516a2662dc40e2b70a69d9ef79c5eace58",
+      "bytes": 2327
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/selected-source-passages.json",
+      "sha256": "50cfa8b7cee42c9b6e4aa51e6a1096bbf3321f78f8c3e1875a5399b3d079f845",
+      "bytes": 22945
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/september-acquisition-4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be.html",
+      "sha256": "4facf2d5ec11af42791146e12fd3f19f961c0225094cd79923ab152cab1ce3be",
+      "bytes": 33609
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-11-amd-funding-claims-r001/source-capture-register.json",
+      "sha256": "b2dd683f388b06d3816de963f17d9bc6051e451acbd22d5ade8c47f004639f58",
+      "bytes": 3415
+    }
+  ],
+  "authorised_predecessor_change": "monitoring/config.json automatic model jobs held under current user subscription-only instruction",
+  "unchanged_predecessor_count": 577,
+  "independent_review_pending": true
+}
