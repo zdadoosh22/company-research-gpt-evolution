@@ -1,0 +1,36 @@
+{
+  "frozen_at_utc": "2026-10-12T01:12:41.193974+00:00",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-12-recent-results-discovery-cohort-r001.md",
+      "sha256": "e7411f4ee86dfac27914d3846b1d71d569aff1cfebbd783c05a3a67ae5030836",
+      "bytes": 1693
+    },
+    {
+      "path": "monitoring/studies/2026-10-12-recent-results-discovery-screen-r001.md",
+      "sha256": "ee4de34640601e2b687068aaa2397b4dc354bf32499acec0394324a410e2723f",
+      "bytes": 3935
+    },
+    {
+      "path": "validation/recent-results-screen-2026-10-12-r001-verify.py",
+      "sha256": "f00b1feec88b3f6b6db4b7855acf3990aad99990a4247a4a67274552a465eb57",
+      "bytes": 2385
+    },
+    {
+      "path": "validation/recent-results-screen-verification-2026-10-12-r001.json",
+      "sha256": "e55b3b5a4657642952ea6a42ae4ebcf50cfd87b90537eb9db5d85ba63b87f788",
+      "bytes": 687
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-12-recent-results-r001/selected-source-projections.json",
+      "sha256": "97a7ef42857749c88906d08bd3a1b4b9624b532acaae1fecf385665b849724be",
+      "bytes": 904
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-12-recent-results-r001/source-register.json",
+      "sha256": "76fc6562dffb94bee144f16cc28d5972644a0849c9b1bfe804edd85d0450eaeb",
+      "bytes": 1751
+    }
+  ],
+  "scope": "LEVI/PEP author discovery screen, no valuation or retrospective trade"
+}

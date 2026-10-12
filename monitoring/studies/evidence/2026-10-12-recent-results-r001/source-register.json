@@ -1,0 +1,34 @@
+{
+  "records": [
+    {
+      "id": "levi-q3",
+      "url": "https://investors.levistrauss.com/news/financial-news/news-details/2026/Levi-Strauss--Co--Reports-Third-Quarter-Results/default.aspx",
+      "attempt_utc": "2026-10-12T01:10:17.075378+00:00",
+      "http_status": 200,
+      "raw_path": "work/subscription-progress-2026-10-12/levi-q3-482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36.html",
+      "sha256": "482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36",
+      "bytes": 647001,
+      "publication": "Raw issuer web scripts excluded; original retained locally, selected factual projection separately published"
+    },
+    {
+      "id": "levi-q2",
+      "url": "https://investors.levistrauss.com/news/financial-news/news-details/2026/Levi-Strauss--Co--Reports-Second-Quarter-Results/default.aspx",
+      "attempt_utc": "2026-10-12T01:10:17.078896+00:00",
+      "http_status": 200,
+      "raw_path": "work/subscription-progress-2026-10-12/levi-q2-64cc1622abbbe2043f01489b4c587265d411a51c9d6777d4430b9c98cfd558fe.html",
+      "sha256": "64cc1622abbbe2043f01489b4c587265d411a51c9d6777d4430b9c98cfd558fe",
+      "bytes": 635331,
+      "publication": "Raw issuer web scripts excluded; original retained locally, selected factual projection separately published"
+    },
+    {
+      "id": "pepsi-q3",
+      "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000050/q320268-kxexhibit991.htm",
+      "attempt_utc": "2026-10-12T01:10:17.084964+00:00",
+      "raw_path": null,
+      "sha256": null,
+      "error": "HTTPError",
+      "detail": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "limit": "A source capture is not economic approval; failed originals remain failed"
+}

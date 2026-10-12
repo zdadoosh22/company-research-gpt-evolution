@@ -1,0 +1,12 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/94845/000009484526000047/lvis-20260830.htm",
+  "publication_date": "2026-10-07",
+  "period_end": "2026-08-30",
+  "attempted_at": "2026-10-12T01:19:12.267828+00:00",
+  "web_rendering_inspected": true,
+  "web_original_archive_claimed": false,
+  "http_status": 200,
+  "bytes": 2509155,
+  "sha256": "33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700",
+  "original_path": "monitoring\\studies\\evidence\\2026-10-12-levi-cash-timing-r001\\10q-33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700.html"
+}

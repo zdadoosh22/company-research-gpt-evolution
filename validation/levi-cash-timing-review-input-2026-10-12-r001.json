@@ -1,0 +1,22 @@
+{
+  "frozen_at": "2026-10-12T01:20:05.633421+00:00",
+  "baseline_commit": "fd4e5c9d500055b116632d8c891eb45abf9b8ad7",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-12-levi-cash-timing-r001.md",
+      "sha256": "2e48da23d6d96d03f59aa24d1bba8dfd2e6225ed1e164d03b27688325b2320bf"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-12-levi-cash-timing-r001/source-register.json",
+      "sha256": "fdeae339394a2000d571b214579ca6e334a04fa2e1c2478778fe28908053944e"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-12-levi-cash-timing-r001/10q-33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700.html",
+      "sha256": "33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700"
+    },
+    {
+      "path": "validation/levi-cash-timing-verification-2026-10-12-r001.json",
+      "sha256": "7b06c806a6b1e80a3014854d3676524473998bf3462165937015c9061dad3c54"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "review_date": "2026-10-12",
+  "status": "accepted_as_preliminary_discovery_screen_with_limits",
+  "terminal": true,
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "high",
+  "dispatch_evidence": "Parent reported explicit Astra High dispatch for this agent; backend identity unexposed",
+  "actual_backend_model": null,
+  "actual_reasoning_effort": null,
+  "backend_identity_verified": false,
+  "independent_agent_review": true,
+  "bound_manifest": "validation/recent-results-review-input-2026-10-12-r001.json",
+  "bound_manifest_sha256": "03413eae833f7dba8f0ead39ec3cde87581f1bbb9242c263640e3dd0bfcab461",
+  "bound_files_verified": 6,
+  "baseline_commit": "fd4e5c9d500055b116632d8c891eb45abf9b8ad7",
+  "baseline_files_verified": 604,
+  "baseline_mismatches": [],
+  "methodology_version": "1.0.0",
+  "author_verifier_executed": false,
+  "research_enabled": false,
+  "findings": [],
+  "finding_summary": "No concrete material defect found within preliminary discovery scope; no cosmetic corrections requested",
+  "reviewer_constraints": [
+    {"id": "C1", "severity": "interpretation_constraint_not_defect", "evidence": "LEVI Q3 Financial Highlights and refund/redeployment footnotes", "observation": "Removing net benefit reverses associated spending as well as the refund", "disposition": "Author diagnostic labels and withheld normalization already address this; recurring cost/demand treatment remains a next-stage dependency"},
+    {"id": "C2", "severity": "interpretation_constraint_not_defect", "evidence": "PEP results discussion and guidance table", "observation": "Rounded attributed growth and prior low-end guidance cannot support an exact normalized forecast or consensus surprise", "disposition": "Existing screen properly limits inference"},
+    {"id": "C3", "severity": "source_portability_limit_not_local_review_failure", "evidence": "Source register and selected-source-projections.json", "observation": "LEVI raw originals are available locally in ignored work; nine-word projections do not carry full reviewed evidence", "disposition": "Preserve original access or adequate evidence contents for any later remote review"}
+  ],
+  "checks": {
+    "method": "Independent in-memory Decimal arithmetic and standard-library HTML parsing; PEP official SEC web inspection; file SHA-256 and baseline Git-blob comparisons",
+    "LEVI": {
+      "diagnostic_net_benefit_removed_EPS_USD": "0.37",
+      "diagnostic_net_benefit_removed_EBIT_margin_percent": "12.2",
+      "diagnostic_margin_difference_percentage_points": "0.4",
+      "prior_FY_guidance_midpoint_USD": "1.49",
+      "updated_FY_guidance_midpoint_USD": "1.55",
+      "guidance_midpoint_change_USD": "0.06",
+      "Q3_adjusted_FCF_USD_m": "44.3",
+      "nine_month_adjusted_FCF_USD_m": "427.3",
+      "cash_scope": "continuing_and_discontinued_including_Dockers",
+      "EPS_guidance_scope": "continuing_operations",
+      "forecast_normalization_established": false,
+      "guidance_comparability": "Same continuing scope; tariff/refund/redeployment assumptions differ, so midpoint change does not isolate recurring operations"
+    },
+    "PEP": {
+      "rounded_attributed_profit_growth_diagnostic_percent": "-1",
+      "core_profit_growth_from_published_amounts_percent_approx": "3.3841",
+      "core_margin_change_from_published_amounts_bp_approx": "-36.03",
+      "issuer_reported_core_margin_change_bp": -35,
+      "rounding_assessment": "No material discrepancy; do not force exact equality of rounded presentations",
+      "prior_guidance_low_end_preserved": true,
+      "organic_sales_guidance_is_narrowing_not_proven_acceleration": true,
+      "cash_conversion_denominator": "core_net_income_attributable_to_PepsiCo",
+      "forecast_normalization_established": false
+    }
+  },
+  "sources_inspected": [
+    {
+      "id": "levi-q3",
+      "url": "https://investors.levistrauss.com/news/financial-news/news-details/2026/Levi-Strauss--Co--Reports-Third-Quarter-Results/default.aspx",
+      "publication_date": "2026-10-07",
+      "raw_path": "work/subscription-progress-2026-10-12/levi-q3-482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36.html",
+      "sha256": "482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36",
+      "hash_verified": true,
+      "sections": ["Financial Highlights and refund footnotes", "DTC comparable-sales table and definition", "FY2026 guidance", "Adjusted Free Cash Flow definition and reconciliation"]
+    },
+    {
+      "id": "levi-q2",
+      "url": "https://investors.levistrauss.com/news/financial-news/news-details/2026/Levi-Strauss--Co--Reports-Second-Quarter-Results/default.aspx",
+      "publication_date": "2026-07-08",
+      "raw_path": "work/subscription-progress-2026-10-12/levi-q2-64cc1622abbbe2043f01489b4c587265d411a51c9d6777d4430b9c98cfd558fe.html",
+      "sha256": "64cc1622abbbe2043f01489b4c587265d411a51c9d6777d4430b9c98cfd558fe",
+      "hash_verified": true,
+      "sections": ["FY2026 guidance scope, assumptions and table"]
+    },
+    {
+      "id": "pepsi-q3",
+      "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000050/q320268-kxexhibit991.htm",
+      "publication_date": "2026-10-08",
+      "representation": "official_web_rendering",
+      "locations": ["results lines 29-54", "guidance 149-171", "definitions 404-413"],
+      "direct_original_HTTP403_preserved": true,
+      "original_archive_created": false
+    }
+  ],
+  "dispositions": {
+    "LEVI": "retain_possible_scoped_tariff_cash_DTC_research_only",
+    "PEP": "do_not_prioritize_positive_earnings_revision_dossier_on_this_evidence",
+    "both": "withhold_current_positive_entry_acceptance"
+  },
+  "next_dependencies": {
+    "LEVI_if_pursued": ["Refund receipt/receivable timing and cash classification", "Continuing/discontinued cash and disposal bridge", "Q4 redeployment and recurring cost/demand treatment", "Evidence of DTC recovery", "Current claims/liquidity and contemporaneous expectations/price framework before opportunity assessment"],
+    "PEP_if_pursued": ["Separate recovery/value hypothesis", "Matched core/GAAP, segment, capital-use and price foundations"],
+    "evidence_portability": "Keep local original access or provide adequate supporting contents for remote review"
+  },
+  "scope_limits": ["No full thesis", "No repeated old audits", "No independent consensus", "No executable or delayed response-price evidence", "No recurring forecast established", "No valuation or current funding acceptance", "No retrospective fills or performance", "No portfolio or monitoring changes"],
+  "opportunity_acceptance": false,
+  "portfolio_acceptance": false,
+  "trade_acceptance": false,
+  "only_written_files": ["validation/recent-results-astra-review-2026-10-12-r001.md", "validation/recent-results-astra-review-2026-10-12-r001.json"]
+}

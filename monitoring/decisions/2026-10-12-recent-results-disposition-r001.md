@@ -1,0 +1,7 @@
+# Recent-results discovery disposition — 12 October 2026
+
+Accept the independently challenged LEVI/PEP screen only as preliminary research triage. Six frozen files and the two local LEVI originals matched; the reviewer reproduced arithmetic and reopened PEP's official release. No material defect was found. The actual review is validation/recent-results-astra-review-2026-10-12-r001.md and its JSON, bound to manifest SHA-256 03413eae833f7dba8f0ead39ec3cde87581f1bbb9242c263640e3dd0bfcab461.
+
+LEVI may receive a scoped tariff/cash/DTC investigation. Removing the net refund benefit also reverses redeployment expense; it does not establish recurring earnings. Continuing EPS and cash including discontinued Dockers require a scope bridge. PEP is not prioritized for a positive earnings-revision dossier on this evidence; this is not a negative-return prediction. Both entries remain withheld.
+
+The subsequent LEVI 10-Q cash-timing note is outside these six frozen files and requires its own challenge before quantitative reuse. Do not retrospectively extend this review's scope. No dated consensus, executable quote, realistic delayed response-price evidence, current valuation or portfolio acceptance exists here. Requested route Astra High is documented; effective backend identity remains unexposed. No stronger-model identity certification is claimed. No watchlist, broker, execution or monitoring configuration change follows.

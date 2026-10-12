@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-10-12T01:23:00.146765+00:00",
+  "baseline_commit": "fd4e5c9d500055b116632d8c891eb45abf9b8ad7",
+  "predecessors_unchanged": 604,
+  "frozen_checks": [
+    {
+      "manifest": "uber-funding-review-input-2026-10-12-r001.json",
+      "files_verified": 7
+    },
+    {
+      "manifest": "uber-bridge-correction-input-2026-10-12-r002.json",
+      "files_verified": 1
+    },
+    {
+      "manifest": "recent-results-review-input-2026-10-12-r001.json",
+      "files_verified": 6
+    },
+    {
+      "manifest": "levi-cash-timing-review-input-2026-10-12-r001.json",
+      "files_verified": 4
+    }
+  ],
+  "five_hour_used_percent_at_boundary": 99,
+  "credit_balance_unchanged": "940.3784500000",
+  "scope": "Integrity and source/arithmetic checks; no engineering change, investment-performance test or trade approval",
+  "first_trade_accepted": false
+}

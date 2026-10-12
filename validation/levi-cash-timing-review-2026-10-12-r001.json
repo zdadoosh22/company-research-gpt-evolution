@@ -1,0 +1,41 @@
+{
+  "review_date": "2026-10-12",
+  "status": "accepted_limited_historical_facts_and_labelled_sensitivities",
+  "terminal": true,
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "high",
+  "actual_backend_model": null,
+  "actual_reasoning_effort": null,
+  "backend_identity_verified": false,
+  "dispatch_evidence": "Parent-reported requested Astra High route; backend unexposed",
+  "manifest": "validation/levi-cash-timing-review-input-2026-10-12-r001.json",
+  "manifest_sha256": "cb4695c235228bcf4631ea236a44e248b6db8f787b153ae7cfe35ec85693c1cd",
+  "bound_files_verified": 4,
+  "baseline_commit": "fd4e5c9d500055b116632d8c891eb45abf9b8ad7",
+  "baseline_files_verified": 604,
+  "baseline_mismatches": [],
+  "source": {
+    "url": "https://www.sec.gov/Archives/edgar/data/94845/000009484526000047/lvis-20260830.htm",
+    "publication_date": "2026-10-07",
+    "period_end": "2026-08-30",
+    "original_sha256": "33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700",
+    "original_hash_match": true,
+    "inspection": "locally archived original HTML; standard-library text parsing",
+    "sections": ["Note 10 recognition and receipt", "Note 14 footnote 4 refund interest received", "Note 1 Share Repurchases", "Note 8 debt and credit capacity", "MD&A results, cash and liquidity", "Adjusted Free Cash Flow definition and reconciliation"]
+  },
+  "findings": [],
+  "correction_required": false,
+  "checks_USD_m": {
+    "refund_receivable": {"formula": "78.6-57.1", "result": "21.5"},
+    "CFO_principal_receipt_removed": {"formula": "585.2-57.1", "result": "528.1"},
+    "issuer_FCF_principal_receipt_removed": {"formula": "427.3-57.1", "result": "370.2"}
+  },
+  "economic_controls_confirmed": ["Recognition is distinct from receipt", "Principal-only sensitivities retain interest and other costs", "CFO/FCF retains discontinued scope", "ASR final share settlement is not a second initial cash payment", "Carrying amount, required principal and facility capacity are distinct dated measures", "490bp MD&A wording does not silently replace 330bp release diagnostic"],
+  "additional_observation": "Note 14 footnote 4 states USD4.7m interest received; existing note already says principal-only sensitivities retain interest, so no correction required",
+  "next_dependencies": ["Continuing/discontinued cash bridge", "Recurring tariff and redeployment economics", "Supported bridge between differently specified margin presentations", "Current claims and contemporaneous expectations/price evidence before any opportunity assessment"],
+  "scope_limits": ["Only four frozen files", "No old review rerun", "No web recapture", "No author verifier rerun", "No source-portability supplement reviewed", "No model job, paid source, agent or automation launched"],
+  "normalized_cash_accepted": false,
+  "valuation_accepted": false,
+  "entry_accepted": false,
+  "only_written_files": ["validation/levi-cash-timing-review-2026-10-12-r001.md", "validation/levi-cash-timing-review-2026-10-12-r001.json"]
+}

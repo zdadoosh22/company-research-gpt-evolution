@@ -1,0 +1,12 @@
+{
+  "frozen_at_utc": "2026-10-12T01:08:28.151557+00:00",
+  "original_frozen_input": "validation/uber-funding-review-input-2026-10-12-r001.json",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-12-uber-bridge-clarification-r002.md",
+      "sha256": "93d208e2a76334e47063599beb17c7e596102f4b40adc64bec1ae755acf02f5f",
+      "bytes": 2199
+    }
+  ],
+  "scope": "Only bridge repayment/reduction distinction; no general re-audit"
+}

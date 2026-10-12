@@ -1,0 +1,116 @@
+{
+  "review_date": "2026-10-12",
+  "status": "bounded_review_complete_correction_required_before_quantitative_reuse",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "high",
+  "dispatch_evidence": "Parent reports explicit model=gpt-6-astra, reasoning_effort=high, fork_turns=none",
+  "actual_backend_model": null,
+  "actual_reasoning_effort": null,
+  "backend_identity_verified": false,
+  "independent_agent_review": true,
+  "baseline_commit": "fd4e5c9d500055b116632d8c891eb45abf9b8ad7",
+  "bound_manifest": "validation/uber-funding-review-input-2026-10-12-r001.json",
+  "bound_manifest_sha256": "c2de47319fa441556313cf9397890bc7ebd9eeea24c4e773a8a3f51f8ba5dcc8",
+  "bound_files_verified": 7,
+  "baseline_files_verified": 604,
+  "baseline_mismatches": [],
+  "methodology_version": "1.0.0",
+  "methodology_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+  "research_enabled": false,
+  "frozen_verifier_executed": false,
+  "checks_method": "Independent in-memory Decimal arithmetic from reopened primary contract tables; byte comparison with baseline Git blobs and seven manifest SHA-256 values; no bound outputs overwritten",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "medium",
+      "type": "verified_contract_summary_omission",
+      "title": "Bridge summary omits mandatory repayment timing and restricted-proceeds exceptions",
+      "affected_files": ["monitoring/studies/2026-10-12-uber-funding-r001.md", "monitoring/studies/evidence/2026-10-12-uber-funding-r001/web-inspection.json"],
+      "evidence": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278126000414/e26328_ex10-2.htm",
+        "locations": ["section 2.05(b)(i), lines 829-831", "section 2.05(b)(ii), line 832", "section 2.06(b)(iii)(A) and (c), lines 846 and 852", "Final Settlement Date, line 511"]
+      },
+      "economic_consequence": "Premature repayment or available-liquidity timing could result if the abbreviated summary is reused quantitatively. No incorrect current balance was published.",
+      "proposed_correction": "Preserve the Final Settlement Date deferral and restricted-subsidiary-proceeds exception, while separately retaining the receipt-based commitment reduction and loan-first allocation. Do not assert one exception overrides every mechanism; reconcile the interacting provisions before a dated schedule.",
+      "disposition": "open_add_sourced_correction_and_narrow_review",
+      "existing_withholding_conclusion": "supported"
+    }
+  ],
+  "unresolved_evidence": [
+    {
+      "id": "G1",
+      "severity_for_normalized_owner_cash_use": "medium",
+      "type": "known_unreconciled_account_measures_not_new_arithmetic_defect",
+      "evidence": [
+        {"url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm", "locations": "equity 354-373; Note 7 926-938; cash flows 416-435; reserves 197/202"},
+        {"url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Second-Quarter-2026/default.aspx", "publication_date": "2026-08-05", "locations": "cash flows 214-232; adjusted EBITDA 360-380"}
+      ],
+      "disposition": "retain_unresolved_no_normalization_or_plausible_explanation_substituted",
+      "issuer_accounting_error_claimed": false,
+      "explicit_reconciliation_found": false
+    }
+  ],
+  "independently_reproduced_checks": {
+    "currency_financing": "EUR millions",
+    "principal": [750, 1000, 1000, 1000, 750],
+    "purchase_percent": [99.589, 99.245, 99.197, 99.256, 98.738],
+    "purchase_amounts": ["746.9175", "992.4500", "991.9700", "992.5600", "740.5350"],
+    "purchase_total_before_remaining_expenses_and_any_accrued_interest": "4464.4325",
+    "face_less_purchase_unseparated": "35.5675",
+    "coupon_amounts": ["28.125", "41.250", "43.750", "47.500", "39.375"],
+    "annual_nominal_coupon": "200.000",
+    "first_nominal_coupon_date": "2027-09-15",
+    "normal_first_accrual_interval_days": 365,
+    "currency_cash_definitions": "USD millions",
+    "Q2_Note7_expense": 556,
+    "H1_Note7_expense": 1029,
+    "H1_equity_additions": 1047,
+    "Q2_CF_addback": 550,
+    "H1_CF_addback": 1023,
+    "Q2_EBITDA_exclusion": 549,
+    "H1_EBITDA_exclusion": 1022,
+    "H1_equity_minus_Note7": 18,
+    "H1_equity_minus_CF": 24,
+    "H1_equity_minus_EBITDA": 25,
+    "H1_Note7_minus_CF": 6,
+    "H1_Note7_minus_EBITDA": 7,
+    "derived_Q1_Note7_CF_EBITDA_each": 473,
+    "insurance_balance_change": 823,
+    "insurance_CF_adjustment": 830,
+    "insurance_residual": 7,
+    "interpretation": "Arithmetic and period alignment verified; account reconciliation remains unresolved"
+  },
+  "accepted_controls": [
+    "Do not subtract an inferred commission again from issuer purchase proceeds",
+    "No synthetic current bridge balance from face-value subtraction",
+    "Qualifying facility already reducing commitments is excluded from Debt Issuance; do not reduce twice on drawing",
+    "No scheduled 2026 bond coupon does not eliminate accrued cost",
+    "Term fee accrual from 2026-11-13 is not observed fee payment or draw",
+    "No normalized owner-cash figure from unreconciled compensation or insurance measures"
+  ],
+  "access": {
+    "official_web_renderings_reopened": ["underwriting", "indenture", "amended_bridge", "term_loan", "June_10Q", "issuer_Q2_release"],
+    "frozen_direct_capture_failures_preserved": 5,
+    "June_10Q_original_capture_gap": "unclosed; reported in frozen cash note",
+    "prospectus": "recorded failure retained; not reopened by reviewer",
+    "new_raw_archives_created": 0,
+    "web_rendering_is_original_archive": false
+  },
+  "scope_limits": [
+    "Only seven bound files reviewed; post-freeze capital-use supplement excluded",
+    "No closed discovery or foundation audit repeated",
+    "No current funding, final net cash, blocked-account proof, administrator statement, draw or repayment verified",
+    "No current FX, prices, valuation, trading recommendation or monitoring activation",
+    "No full acquisition/consolidation review",
+    "Frozen metadata snapshot only; no fresh global subsequent-event search",
+    "Actual backend model and reasoning setting unknown"
+  ],
+  "next_dependencies": [
+    "Source-linked immutable correction for F1 and narrow correction review",
+    "Actual receipts, exclusions, restrictions, facility/draw/repayment evidence and closing/final-settlement dates before funding schedule",
+    "Complete corroborated source tables and supported account reconciliation before normalized compensation/owner cash",
+    "Preserve access failures and reviewer-identity qualification"
+  ],
+  "investment_acceptance": false,
+  "execution_acceptance": false
+}

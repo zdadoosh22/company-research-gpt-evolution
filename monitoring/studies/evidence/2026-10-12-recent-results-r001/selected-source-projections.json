@@ -1,0 +1,28 @@
+[
+  {
+    "source_id": "levi-q3",
+    "raw_sha256": "482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36",
+    "representation": "Derived whitespace-normalized extracts; not original HTML",
+    "excerpts": [
+      {
+        "anchor": "Adjusted diluted EPS",
+        "brief_excerpt": "Adjusted diluted EPS Raised to $1.54 to $1.56 This"
+      },
+      {
+        "anchor": "Adjusted Free Cash Flow",
+        "brief_excerpt": "Adjusted Free Cash Flow: Adjusted free cash flow, a"
+      }
+    ]
+  },
+  {
+    "source_id": "levi-q2",
+    "raw_sha256": "64cc1622abbbe2043f01489b4c587265d411a51c9d6777d4430b9c98cfd558fe",
+    "representation": "Derived whitespace-normalized extracts; not original HTML",
+    "excerpts": [
+      {
+        "anchor": "Adjusted diluted EPS",
+        "brief_excerpt": "Adjusted diluted EPS Raised to $1.46 to $1.52 This"
+      }
+    ]
+  }
+]

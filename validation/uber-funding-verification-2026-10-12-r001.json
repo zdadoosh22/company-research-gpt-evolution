@@ -1,0 +1,20 @@
+{
+  "verified_at_utc": "2026-10-12T01:04:55.302745+00:00",
+  "baseline_commit": "fd4e5c9d500055b116632d8c891eb45abf9b8ad7",
+  "predecessors_unchanged": 604,
+  "source_fact_register_sha256": "1eb18981157d061a483ee409ac958ad6eca6d0ef06f5eb7cf1708602d603ca90",
+  "principal_eur_m": "4500",
+  "issuer_purchase_before_other_expenses_eur_m": "4464.4325",
+  "face_less_purchase_eur_m": "35.5675",
+  "annual_nominal_coupon_eur_m": "200.000",
+  "first_nominal_coupon": "2027-09-15",
+  "direct_capture_failures_preserved": 5,
+  "fresh_metadata_latest_accession": "0001552781-26-000486",
+  "research_job_hold_retained": true,
+  "status": "author checks passed; independent economic review pending",
+  "limits": [
+    "No original HTML captured for five failed SEC requests",
+    "No final net proceeds, USD FX, blocked-account proof or current bridge balance",
+    "No investment or execution acceptance"
+  ]
+}

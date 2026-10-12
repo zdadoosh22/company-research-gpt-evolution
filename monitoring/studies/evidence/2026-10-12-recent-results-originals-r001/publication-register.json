@@ -1,0 +1,24 @@
+{
+  "prepared_at": "2026-10-12T01:21:11.511286+00:00",
+  "files": [
+    {
+      "id": "levi-q3",
+      "url": "https://investors.levistrauss.com/news/financial-news/news-details/2026/Levi-Strauss--Co--Reports-Third-Quarter-Results/default.aspx",
+      "original_capture_timestamp": "2026-10-12T01:10:17.075378+00:00",
+      "sha256": "482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36",
+      "bytes": 647001,
+      "repository_path": "monitoring/studies/evidence/2026-10-12-recent-results-originals-r001/levi-q3-482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36.html",
+      "identical_to_reviewed_original": true
+    },
+    {
+      "id": "levi-q2",
+      "url": "https://investors.levistrauss.com/news/financial-news/news-details/2026/Levi-Strauss--Co--Reports-Second-Quarter-Results/default.aspx",
+      "original_capture_timestamp": "2026-10-12T01:10:17.078896+00:00",
+      "sha256": "64cc1622abbbe2043f01489b4c587265d411a51c9d6777d4430b9c98cfd558fe",
+      "bytes": 635331,
+      "repository_path": "monitoring/studies/evidence/2026-10-12-recent-results-originals-r001/levi-q2-64cc1622abbbe2043f01489b4c587265d411a51c9d6777d4430b9c98cfd558fe.html",
+      "identical_to_reviewed_original": true
+    }
+  ],
+  "status": "Identical previously captured issuer HTML added as passive source evidence; never executed. Frozen original register and reviews unchanged. This supersedes only the previous availability limitation for LEVI originals after verified publication; PEP direct-capture limitation remains."
+}

@@ -1,0 +1,42 @@
+{
+  "frozen_at_utc": "2026-10-12T01:04:56.282461+00:00",
+  "baseline_commit": "fd4e5c9d500055b116632d8c891eb45abf9b8ad7",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-12-uber-funding-r001.md",
+      "sha256": "7aa5bfc30dc5d8d38541bdf00c4d5587eb4cb89333b4d758902d131f6b94d67a",
+      "bytes": 4019
+    },
+    {
+      "path": "monitoring/studies/2026-10-12-uber-cash-definition-investigation-r001.md",
+      "sha256": "40cf1adffa51be30c9d39fb77e613149a8889090a0d2c21ca843d1a59d0f7de8",
+      "bytes": 2588
+    },
+    {
+      "path": "validation/uber-funding-2026-10-12-r001-verify.py",
+      "sha256": "c97d8a62761f786082f44d855abbbe708fc4f5ff8ac4579a33500d6150ab8a4d",
+      "bytes": 3542
+    },
+    {
+      "path": "validation/uber-funding-verification-2026-10-12-r001.json",
+      "sha256": "fb9e6d63962018cf0912b9f0fd3f5ed6fca041359967e4bcbcf5636273df7fad",
+      "bytes": 920
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-12-uber-funding-r001/capture-register.json",
+      "sha256": "66261ffe66dabd26664911fe61e6ec21965a0b1fc4e79ef4e7ad384ccbf38570",
+      "bytes": 2233
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-12-uber-funding-r001/submissions-c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643.json",
+      "sha256": "c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643",
+      "bytes": 163842
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-12-uber-funding-r001/web-inspection.json",
+      "sha256": "1eb18981157d061a483ee409ac958ad6eca6d0ef06f5eb7cf1708602d603ca90",
+      "bytes": 3795
+    }
+  ],
+  "scope": "Focused incremental Uber funding and cash-definition challenge; no closed review repeated"
+}

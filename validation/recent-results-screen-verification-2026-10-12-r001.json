@@ -1,0 +1,16 @@
+{
+  "verified_at_utc": "2026-10-12T01:12:40.247782+00:00",
+  "issuer_capture_hashes_match": 2,
+  "failed_original_capture_preserved": "pepsi-q3 HTTP403",
+  "levi_diagnostic_eps_without_attributed_benefit": ".37",
+  "levi_diagnostic_ebit_margin_percent": 12.2,
+  "levi_guidance_midpoint_change": ".06",
+  "levi_q3_reported_fcf_m": "44.3",
+  "levi_ytd_reported_fcf_m": "427.3",
+  "checks_scope": "Author source/diagnostic consistency, not independent review",
+  "limits": [
+    "Diagnostics do not create normalized forecasts",
+    "FCF includes discontinued operations",
+    "No dated analyst consensus, response price, executable quote, return or trade acceptance"
+  ]
+}

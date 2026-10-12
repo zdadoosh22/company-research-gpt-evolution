@@ -1,0 +1,37 @@
+{
+  "review_date": "2026-10-12",
+  "status": "accepted_within_narrow_correction_scope",
+  "original_finding": "F1",
+  "original_finding_outcome": "resolved_as_contract_summary_correction_only",
+  "original_review_outcome_rewritten": false,
+  "correction_path": "monitoring/studies/2026-10-12-uber-bridge-clarification-r002.md",
+  "correction_sha256": "93d208e2a76334e47063599beb17c7e596102f4b40adc64bec1ae755acf02f5f",
+  "correction_manifest_path": "validation/uber-bridge-correction-input-2026-10-12-r002.json",
+  "correction_manifest_sha256": "0148540545d63605011eabc64d9aae83dedaa2d783b5e75de336083db5ecb4b7",
+  "original_review_md_sha256": "7b010a5a850658544b927a176025b31d7e0f5db8474c69a9270e3f183a6f02a4",
+  "original_review_json_sha256": "169244362cc854350bf3f76f27ba4a3f16ac6fe26d533c9ec08cd837493894a8",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "high",
+  "dispatch_evidence": "Parent reports explicit model and effort selection; actual backend metadata unexposed",
+  "actual_backend_model": null,
+  "actual_reasoning_effort": null,
+  "backend_identity_verified": false,
+  "source": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278126000414/e26328_ex10-2.htm",
+    "locations": ["section 2.05(b)(i)-(ii), lines 829-832", "section 2.06(b)(iii), lines 845-849", "section 2.06(c), line 852", "Final Settlement Date definition, line 511"],
+    "method": "Compared with official rendering independently inspected earlier in this same review session",
+    "raw_original_access_failure_preserved": true
+  },
+  "checks": [
+    "Correction hash matches separate frozen manifest",
+    "Final-settlement and restricted-subsidiary-proceeds conditions restored",
+    "Repayment and commitment reduction distinguished with allocation retained",
+    "No invented final-settlement-relative repayment deadline",
+    "No actual funding, unrestricted-cash release or balance asserted"
+  ],
+  "new_findings": [],
+  "still_unresolved": ["G1 compensation/reserve account reconciliation", "Actual funding and receipt/classification/restriction/draw/repayment evidence", "Applicable transaction dates and interaction of conditions for a quantitative schedule", "Original capture gaps", "Backend reviewer identity verification"],
+  "excluded": ["General re-audit", "Post-freeze capital-use supplement", "New research stage", "Valuation", "Prices", "Recommendations", "Trades", "Monitoring activation"],
+  "investment_acceptance": false,
+  "execution_acceptance": false
+}

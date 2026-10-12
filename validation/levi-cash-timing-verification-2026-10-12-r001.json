@@ -1,0 +1,14 @@
+{
+  "verified_at": "2026-10-12T01:20:05.632390+00:00",
+  "raw_original_sha256_match": true,
+  "numeric_anchors_present": true,
+  "checks": {
+    "refund_receivable": "21.5",
+    "CFO_receipt_removed": "528.1",
+    "issuer_FCF_receipt_removed": "370.2"
+  },
+  "method": "Decimal arithmetic and captured HTML anchor checks; source meanings inspected separately, not proven by anchor presence",
+  "normalized_forecast": false,
+  "performance_test": false,
+  "entry_accepted": false
+}

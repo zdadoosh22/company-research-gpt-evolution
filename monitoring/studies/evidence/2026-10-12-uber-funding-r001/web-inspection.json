@@ -1,0 +1,49 @@
+{
+  "inspection_date": "2026-10-12",
+  "representation": "Manually transcribed factual observations from official SEC web rendering, not original-document byte captures. Direct HTTP failures are separately retained.",
+  "sources": [
+    {
+      "id": "underwriting",
+      "url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278126000486/e26383_ex1-1.htm",
+      "version": "Exhibit 1.1, agreement September 9 2026, filed September 15 2026",
+      "location": "Schedule I, web-rendered lines 791-810",
+      "currency": "EUR",
+      "principal_m": [750, 1000, 1000, 1000, 750],
+      "underwriter_purchase_percent": [99.589, 99.245, 99.197, 99.256, 98.738],
+      "rate_percent": [3.750, 4.125, 4.375, 4.750, 5.250],
+      "maturity_year": [2029, 2032, 2034, 2038, 2046],
+      "accrual_from": "2026-09-15",
+      "payment_frequency": "annual",
+      "first_nominal_payment": "2027-09-15",
+      "limit": "Purchase prices are issuer-to-underwriter terms, not independently verified public offering prices or final net proceeds after all other expenses. Additional accrued interest applies if any."
+    },
+    {
+      "id": "indenture",
+      "url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278126000486/e26383_ex4-1.htm",
+      "version": "Third supplemental indenture September 15 2026",
+      "location": "Interest provisions, web-rendered lines 279-282",
+      "exact_excerpt": "commencing September 15, 2027",
+      "observations": "Annual September 15 payment; accrual from issue date if no interest previously paid; ACTUAL/ACTUAL ICMA. A non-business-day payment moves to next business day without extra interest for that delay.",
+      "limit": "Nominal contractual date is not an observed payment. No debt rating, redemption decision or actual future refinancing assumed."
+    },
+    {
+      "id": "bridge-amendment",
+      "url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278126000414/e26328_ex10-2.htm",
+      "version": "Amendment 1 August 6 2026 with amended agreement, filed August 7 2026",
+      "location": "Sections 2.05(b) and 2.06(b)-(c), web-rendered lines 829-852",
+      "exact_excerpt": "only upon the crediting of such Net Cash Proceeds to a Blocked Account",
+      "observations": "Preclosing reduction follows Cash Confirmation Agreement and blocked-account condition. Postclosing reduction uses defined eligible net cash proceeds and euro equivalent at receipt, subject to allocation. Qualifying bank commitments can separately reduce bridge. If loans outstanding, applicable reductions first reduce loans then undrawn commitments.",
+      "additional_definitions": "Section 1.01, lines 439 and 591-594: debt issuance has financing/refinancing exclusions; debt net proceeds deduct required repayments and issuance costs.",
+      "limit": "No blocked-account evidence, notice or current administrator balance obtained. Applicability of exclusions is unresolved. A current bridge figure cannot be inferred by subtracting bond face value."
+    },
+    {
+      "id": "term-loan",
+      "url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278126000414/e26328_ex10-1.htm",
+      "version": "Term loan credit agreement August 6 2026, filed August 7 2026",
+      "location": "Sections 2.01, 2.02 and 2.09, web-rendered lines 696-706, 744-745",
+      "observations": "Up to two borrowing dates within defined conditions; nonrevolving and repaid amounts cannot be reborrowed. Commitment fee starts November 13 2026, based on applicable rate and actual commitments, payable on termination.",
+      "limit": "Agreement establishes commitments and conditions, not actual draw, settlement date or acquisition completion."
+    }
+  ],
+  "prospectus_web_access": "Failed again on 2026-10-12; no assumed original access or expense amount"
+}

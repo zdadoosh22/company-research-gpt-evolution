@@ -1,0 +1,10 @@
+{
+  "url": "https://investor.uber.com/files/doc_earnings/2026/q2/transcript/Uber-Q2-26-Prepared-Remarks.pdf",
+  "retrieved_at_utc": "2026-10-12T01:06:15.907231+00:00",
+  "version": "Q2 2026 prepared remarks, August 5 2026",
+  "classification": "Interested issuer commentary; not audited cash roll-forward",
+  "http_status": 200,
+  "raw_path": "monitoring/studies/evidence/2026-10-12-uber-cash-context-r001/q2-prepared-remarks-9f3ac6168bb0306c46f44f06c6af4a6993fe842a340449288f4705c55eb95d52.pdf",
+  "sha256": "9f3ac6168bb0306c46f44f06c6af4a6993fe842a340449288f4705c55eb95d52",
+  "bytes": 180936
+}
