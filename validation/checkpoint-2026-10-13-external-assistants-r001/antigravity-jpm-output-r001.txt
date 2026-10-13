@@ -1,0 +1,52 @@
+JPM 13 October 2026 post-event read (provisional, text-only)
+
+Status: This is not an Astra review and does not grant project access. I have not accessed any originals. The figures below come only from your packet. They rely on rendered SEC pages and PDF text whose visual columns were not fully checked, so every figure inherits that caveat. The 8 October pre-event rejection and the 9 October disposition stand as decided. Nothing below claims they were profitable.
+
+NII bridge (non-GAAP NII excluding Markets)
+What the old guide needed in Q4: 96.5 − 71.683 YTD = 24.817bn.
+New Q4 outlook of ~25.5bn: about 0.68bn above what the old guide needed.
+FY check: 71.683 + 25.5 = 97.183, which matches the presentation's rounded 97.2bn. The raise is about +0.7bn. Both the Q4 and FY figures are rounded, so treat it as roughly 0.6–0.75bn, not exactly 0.683bn.
+Q3 actual vs the equal-quarter H2 path: 24.726 vs 24.7715, which is −0.046bn. That path is plain arithmetic, not consensus.
+Where the raise sits: Q4 25.5 vs Q3 24.726 is a step of about +0.77bn (+3.1%). The raise is a Q4 forecast, not something Q3 has already delivered.
+2027 diagnostics (not recurring EPS)
+107 vs 97.2: +9.8bn (+10.1%).
+107 vs Q4 annualised (25.5 × 4 = 102.0): +5.0bn (+4.9%).
+Caveat: The 2027 figure is a preliminary central case that depends on balance growth and higher rates. Annualising one quarter ignores seasonality, day count and the rate path.
+NII guide vs expense guide
+Expense guide: 108.6 − 107.5 = +1.1bn. The new figures are internally consistent (81.1 YTD + 27.5 Q4 = 108.6).
+NII guide: about +0.7bn. On these two lines alone, the expense raise is about 0.4bn bigger than the NII raise.
+Why that is not a profit forecast: It leaves out Markets NII, noninterest revenue, firmwide legal (excluded from the expense guide), credit costs, tax and share count. Some of the extra expense may be tied to revenue, and the packet can't tell us how much.
+Pitfalls
+GAAP vs significant item: GAAP EPS is 5.57. Excluding the 658m securities loss (498m after tax) gives 5.75. The provider EPS labels (5.90/5.94) are not reconciled, so neither EPS figure is a same-basis surprise. If the loss reflects portfolio repositioning, part of the NII raise may come from reinvesting those proceeds. Counting both the loss add-back and the higher NII as clean upside would double-count.
+FTE: Managed revenue is 50.9bn and reported is 50.2bn. The ~0.7bn gap is the managed (tax-equivalent) adjustment. The provider's 51.85bn label has no stated basis, so it supports no comparison.
+Credit: The 2.7bn provision is 2.2bn NCO plus a 539m reserve build (rounded). Do not subtract NCO again. The 3.2% Card NCO outlook is unchanged, so there is no credit upgrade.
+Capital:
+September CET1 is an estimate: 13.9% vs 14.2% final for June, down 30bp.
+RWA rose by about 51.6bn (+2.4%).
+Balance growth is what drives the 2027 NII case, and it uses capital. June requirements cannot be read as current free or distributable capital.
+Classification
+Genuine new evidence: Management issued dated forward guidance on 13 October. It raised FY NII and gave a first 2027 figure.
+Not a verified consensus surprise: There is no timestamped, same-definition pre-event expectation to compare against.
+Not a positive entry: There are no prices and no valuation, and today's market reaction is unknown.
+Strongest contrary evidence
+The expense raise is larger than the NII raise.
+Q3 NII came in slightly below the even path, so the FY raise depends on the Q4 forecast.
+Both EPS figures are below the provider labels (unreconciled, so not a confirmed miss).
+There was a reserve build.
+CET1 fell while RWA grew.
+The 2027 figure depends on rates and is preliminary.
+The securities loss may be pulling NII forward rather than adding durable earnings.
+What could justify a scoped reconsideration
+Expense: Management's 2027 adjusted expense outlook. A split of the +1.1bn into revenue-linked and structural costs. Quantified firmwide legal items.
+Capital:
+The 10-Q's final September CET1 and RWA.
+The capital requirement in force now, including the stress capital buffer.
+The actual buyback pace.
+How much RWA the 2027 balance growth would use.
+Expectations:
+A named provider's pre-event consensus with a timestamp, sample and same definitions (NII excluding Markets on a managed basis, and stated treatment of the securities loss).
+Post-event estimate revisions on that same basis.
+Q4 actual NII excluding Markets against 25.5bn in January.
+Price: Timestamped pre- and post-event prices, the reaction relative to peers and the bank index, and a valuation built on the revised, reconciled estimates.
+
+Until those items exist, the 8–9 October disposition stays unchanged.

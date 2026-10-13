@@ -1,0 +1,14 @@
+{
+  "prepared_at": "2026-10-13T22:05:52.898244+00:00",
+  "service": "Antigravity remote UI",
+  "visible_model": "Claude Opus5.5 Medium",
+  "backend_identity_verified": false,
+  "status": "submitted_UI_started",
+  "prompt_sha256": "c52727d08d69af983c9ddc2dc35186ea841159c6c53bcf6ff12831bf357c0cef",
+  "prompt_path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-levi-bridge-assignment-r001.txt",
+  "tools_permitted": false,
+  "project_access_granted": false,
+  "required_Astra_review_replaced": false,
+  "submission_evidence": "Submitted prompt visible; stop-response/working control visible",
+  "captured_at": "2026-10-13T22:07:16.878228+00:00"
+}

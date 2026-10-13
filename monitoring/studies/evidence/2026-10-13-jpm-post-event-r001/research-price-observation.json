@@ -1,0 +1,40 @@
+{
+  "url": "https://stockanalysis.com/stocks/jpm/history/",
+  "observed_at": "2026-10-13T22:31:33.190587+00:00",
+  "source_representation": "public historical table; web inspection",
+  "listing": "NYSE:JPM",
+  "currency": "USD",
+  "source_attribution": "S&P Global Market Intelligence",
+  "provider_update_date": "2026-10-13",
+  "rows": [
+    {
+      "date": "2026-10-13",
+      "open": "339.97",
+      "high": "344.36",
+      "low": "331.17",
+      "close": "331.43",
+      "adjusted_close": "331.43",
+      "volume": 13707565
+    },
+    {
+      "date": "2026-10-12",
+      "close": "334.30"
+    },
+    {
+      "date": "2026-10-07",
+      "close": "329.58"
+    }
+  ],
+  "regular_close_label": "2026-10-13 16:00 EDT",
+  "after_hours_label": "2026-10-13 17:57 EDT",
+  "after_hours_observed_last": "331.90",
+  "executable_quote": false,
+  "scope": "Historical research observations only; no spread, broker eligibility, FX, fee, peer/control or attainable fill evidence",
+  "paper_fill": false,
+  "response_window_complete": false,
+  "original_status": 200,
+  "original_sha256": "8398944f972b2e2baacda2be13f74a71fc2aa8af3c472d73af1c009980c7a527",
+  "original_path": "monitoring/studies/evidence/2026-10-13-jpm-post-event-r001/price-history-8398944f972b2e2baacda2be13f74a71fc2aa8af3c472d73af1c009980c7a527.html",
+  "close_to_close_price_change_percent_diagnostic": "-0.8585103200717918037690697000",
+  "performance_attributed": false
+}

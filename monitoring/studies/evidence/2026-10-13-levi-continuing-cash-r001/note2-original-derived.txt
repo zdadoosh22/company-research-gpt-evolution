@@ -1,0 +1,63 @@
+The following table reconciles the gross proceeds with the gain on sale of the Dockers® operations included in “Net income (loss) from discontinued operations, net of taxes”:
+Nine Months Ended
+August 30,
+2026 August 31,
+2025
+(Dollars in millions)
+Gross proceeds $ 96.3  $ 194.7
+Less direct costs to sell
+16.3  16.6
+Less carrying amount of Dockers® intellectual property and operations
+62.7  39.1
+Gain on sale of Dockers® intellectual property and operations
+$ 17.3  $ 139.0
+Prior to the sale of Dockers® remaining operations in the first quarter of 2026, Dockers® net assets were classified as held for sale in the consolidated balance sheets for all periods presented. The Dockers® net assets were classified as current and non-current. Additionally, the Company classified the Dockers® business as discontinued operations in its consolidated statements of income for all periods presented.
+12
+LEVI STRAUSS & CO. AND SUBSIDIARIES
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS — (continued)
+FOR THE QUARTERLY PERIOD ENDED AUGUST 30, 2026
+The following table presents the assets and liabilities held for sale:
+November 30,
+2025
+(Dollars in millions)
+Current Assets:
+Inventories $ 54.0
+Total current assets held for sale 54.0
+Property, plant and equipment, net 6.9
+Operating lease right-of-use assets, net 14.4
+Total non-current assets held for sale 21.3
+Total assets held for sale $ 75.3
+Current Liabilities:
+Short-term operating lease liabilities $ 3.9
+Total current liabilities held for sale 3.9
+Long-term operating lease liabilities 6.1
+Total long-term liabilities held for sale 6.1
+Total liabilities held for sale $ 10.0
+The following table presents the results of discontinued operations:
+Three Months Ended Nine Months Ended
+August 31,
+2025 August 30,
+2026 August 31,
+2025
+(Dollars in millions)
+Net revenues $ 55.3  $ 31.0  $ 194.5
+Cost of goods sold 27.3  14.6  95.6
+Gross profit 28.0  16.4  98.9
+Selling, general and administrative expenses 30.4  31.4  116.0
+Restructuring charges, net 8.6  8.8  16.9
+Operating loss (11.0) (23.8) (34.0)
+Other expense —  (2.9) —
+Income (loss) from discontinued operations before gain on sale and income taxes (11.0) (26.7) (34.0)
+Gain on sale of Dockers® remaining operations before income taxes
+139.0  17.3  139.0
+Total income (loss) from discontinued operations before income taxes
+128.0  (9.4) 105.0
+Income tax expense (benefit)
+31.9  (0.6) 26.7
+Net income (loss) from discontinued operations, net of taxes
+$ 96.1  $ (8.8) $ 78.3
+Cash flows related to discontinued operations are included in the consolidated statements of cash flows. The gain on sale of Dockers® remaining operations of $33.6 million, prior to costs to sell, was an adjustment to reconcile net income to net cash provided by operating activities and the proceeds from sale of $96.3 million were included in cash flows from investing activities for the nine months ended August 30, 2026. The gain on sale of Dockers® intellectual property and operations in the U.S. and Canada of $155.6 million, prior to costs to sell, was an adjustment to reconcile net income to net cash provided by operating activities and the proceeds from sale of $194.7 million were included in cash flows from investing activities for the nine months ended August 31, 2025. There were no other significant operating noncash items or investing activities cash flows from discontinued operations during the three and nine months ended August 30, 2026 and August 31, 2025.
+13
+LEVI STRAUSS & CO. AND SUBSIDIARIES
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS — (continued)
+FOR THE QUARTERLY PERIOD ENDED AUGUST 30, 2026

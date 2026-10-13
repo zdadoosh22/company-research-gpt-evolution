@@ -1,0 +1,11 @@
+Bounded source-closure task, research cutoff 13 October 2026 after the actual JPM results release. Use public primary sources only. No account access, downloads to my computer, coding, orders, valuations, paid access or new research programme. Maximum 600 words plus a compact source table. Your output is provisional and will be checked locally; do not claim unseen originals were read.
+
+Official presentation: https://jpmorganchaseco.gcs-web.com/static-files/87d753bc-5b07-4a5e-a0fd-0c1504b1abb1 (13 pages, printed slide 8 outlook and 9 definitions).
+SEC release: https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfexhibit991narrative.htm
+SEC supplement: https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfex992supplement.htm (printed page 28 reconciliation).
+
+Work could read web-rendered official text, but raw release/supplement/PDF captures failed HTTP403. Visual PDF column association is not independently closed. Test ONLY whether these sources support the following associations and definitions: Q4 2026 NII excluding Markets approximately USD25.5bn; implied FY2026 approximately97.2bn; separately preliminary2027 central case107bn; FY2026 adjusted expense108.6bn excluding firmwide legal; whether the 2027 figure has an explicitly defined rate/balance-sheet assumption. Distinguish actual source wording from your inference, and management outlook from independent consensus.
+
+Return short exact relevant passages (total verbatim from any one document at most 25 words), URL, printed page/section, publication date versus access date, representation actually accessed (PDF/text/search excerpt), confirmed association or unresolved status. If you cannot access a full source, say so, provide no invented verification, and stop after recording the limitation. Search snippets alone do not close the issue. Do not infer that this was the first-ever 2027 outlook. Do not manufacture rounding ranges or revise an economic conclusion. No price-response analysis is requested.
+
+Acceptance: demonstrably accessed primary content; correct year/column/definition scope; unsupported cases remain unknown. A clear access-failure report is a valid result.

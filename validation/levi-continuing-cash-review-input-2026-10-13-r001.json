@@ -1,0 +1,55 @@
+{
+  "frozen_at": "2026-10-13T22:23:43.569964+00:00",
+  "baseline_commit": "6ec4c65927c00d3b86a65b9ae373b0aa56716e3e",
+  "scope": "Only new LEVI cash/definition gate and external integration; preserve closed original audits",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-13-levi-continuing-cash-gate-r001.md",
+      "sha256": "152c44d26098abad34576fceaba744a98c9b1251ab64dc845a54e2f9068fef58"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/note2-original-derived.txt",
+      "sha256": "92611a82d67d055a63c715267432762b6406492bf37a91826beb0932c7afe6cb"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/parent-verification.json",
+      "sha256": "05d63ce10b556444e922c5cada465d56ae30bf4729134c6e171ac26efadeb4d5"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/q2-six-month-cash-flow-original-derived.txt",
+      "sha256": "f202468710266a7e6092e4571bb3125da52b95ed1d86c753f3e48ce805aeacbd"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/q3-nine-month-cash-flow-original-derived.txt",
+      "sha256": "fe9203e5a454cebb707eac485d78e11f9cfffd175b5f66ffb82929a11dfbc82f"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/quarter-cash-bridge-verification.json",
+      "sha256": "7f35630fe609a0a1befd24156d254f975f77b5fe61183b7a02456beee1505cf9"
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/parent-findings-r001.md",
+      "sha256": "2cfa38966b24ccc9f085293a2836b0935731e971a6685e6bb901af89f4e2ccde"
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/correction-disposition-r002.md",
+      "sha256": "a833853cbfceb9d4e83c95021c0aa75c8754fcacb8d72b1f8bfefd377a2825e1"
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-levi-selected-output-r001.json",
+      "sha256": "c7cbe55ae66c3efe148d8405fe874a92a18fa549d60e729bd9f9d50dbf36c308"
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-levi-output-r001.md",
+      "sha256": "a72fc24815f242801eec0cdb0d344d319818500e4de0700e91662857cbf269c9"
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-corrected-output-r002.txt",
+      "sha256": "fb4a18c0917d36c606a0983f063b6827841c41ac5ec53269f93336aedd8b8348"
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-corrected-output-r002.txt",
+      "sha256": "997cd72d95b37b42e25ae173d4dbcc515881df644c00cd7aba7cd254f608f1eb"
+    }
+  ]
+}

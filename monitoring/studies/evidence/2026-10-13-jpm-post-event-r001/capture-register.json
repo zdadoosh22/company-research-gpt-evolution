@@ -1,0 +1,32 @@
+{
+  "records": [
+    {
+      "id": "presentation",
+      "url": "https://jpmorganchaseco.gcs-web.com/static-files/87d753bc-5b07-4a5e-a0fd-0c1504b1abb1",
+      "attempted_at": "2026-10-13T22:21:33.610430+00:00",
+      "publication_date": "2026-10-13",
+      "financial_period_end": "2026-09-30",
+      "status": 403,
+      "path": null
+    },
+    {
+      "id": "release",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfexhibit991narrative.htm",
+      "attempted_at": "2026-10-13T22:21:34.050503+00:00",
+      "publication_date": "2026-10-13",
+      "financial_period_end": "2026-09-30",
+      "status": 403,
+      "path": null
+    },
+    {
+      "id": "supplement",
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfex992supplement.htm",
+      "attempted_at": "2026-10-13T22:21:34.198269+00:00",
+      "publication_date": "2026-10-13",
+      "financial_period_end": "2026-09-30",
+      "status": 403,
+      "path": null
+    }
+  ],
+  "scope": "Original captures; failure not repaired by successful web rendering"
+}

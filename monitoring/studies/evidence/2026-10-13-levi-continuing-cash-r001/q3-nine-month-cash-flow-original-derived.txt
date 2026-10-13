@@ -1,0 +1,84 @@
+ 2025
+Class A
+& Class B
+Common
+Stock
+(In Shares)
+Class A
+& Class B
+Common
+Stock Additional
+Paid-In Capital Retained
+Earnings Accumulated Other
+Comprehensive Loss
+Total
+Stockholders’ Equity
+(Shares & Dollars in millions)
+(Unaudited)
+Balance at December 1, 2024
+395.4  $ 0.4  $ 732.6  $ 1,672.0  $ (434.5) $ 1,970.5
+Net income —  —  —  420.1  —  420.1
+Other comprehensive income, net of tax
+—  —  —  —  29.2  29.2
+Stock-based compensation and dividends, net 1.7  —  67.9  (0.1) —  67.8
+Employee stock purchase plan 0.3  —  5.6  —  —  5.6
+Accelerated share repurchase, including excise tax (5.0) —  (24.0) (96.9) —  (120.9)
+Repurchase of common stock (1.6) —  —  (30.5) —  (30.5)
+Tax withholdings on equity awards —  —  (20.9) —  —  (20.9)
+Cash dividends declared ($0.40 per share)
+—  —  —  (158.2) —  (158.2)
+Balance at August 31, 2025
+390.8  $ 0.4  $ 761.2  $ 1,806.4  $ (405.3) $ 2,162.7
+The accompanying notes are an integral part of these consolidated financial statements.
+7
+Table of Contents
+LEVI STRAUSS & CO. AND SUBSIDIARIES
+CONSOLIDATED STATEMENTS OF CASH FLOWS
+Nine Months Ended
+August 30,
+2026 August 31,
+2025
+(Dollars in millions)
+(Unaudited)
+Cash Flows from Operating Activities:
+Net income
+$ 431.7  $ 420.1
+Adjustments to reconcile net income to net cash provided by operating activities:
+Depreciation and amortization 167.6  151.4
+Property, plant, equipment impairment, and early lease terminations, net 6.7  15.6
+Gain on sale of business, prior to costs to sell
+(33.6) (155.6)
+Stock-based compensation 58.8  67.8
+Deferred income taxes
+9.7  8.2
+Other, net (7.0) (19.6)
+Net change in operating assets and liabilities (48.7) (225.1)
+Net cash provided by operating activities
+585.2  262.8
+Cash Flows from Investing Activities:
+Proceeds from sale of business 96.3  194.7
+Purchases of property, plant and equipment (157.9) (170.3)
+Net proceeds from sales of assets —  22.4
+(Payments) proceeds on settlement of forward foreign exchange contracts not designated for hedge accounting, net (179.7) 37.1
+Payments to acquire short-term investments
+(130.3) (109.8)
+Proceeds from sale, maturity and collection of short-term investments 84.4  16.2
+Other investing activities, net
+(7.4) —
+Net cash used for investing activities (294.6) (9.7)
+Cash Flows from Financing Activities:
+Proceeds from issuance of long-term debt, net of issuance costs —  543.8
+Repayments of long-term debt —  (550.4)
+Accelerated share repurchase, including excise tax (201.0) (120.0)
+Repurchase of common stock —  (30.5)
+Tax withholdings on equity awards (34.5) (20.9)
+Dividends to stockholders (169.3) (158.2)
+Other financing activities, net (0.8) (0.9)
+Net cash used for financing activities
+(405.6) (337.1)
+Effect of exchange rate changes on cash and cash equivalents and restricted cash (1.5) 6.8
+Net increase (decrease) in cash and cash equivalents and restricted cash
+(116.5) (77.2)
+Beginning cash and cash equivalents
+757.9  690.0
+Ending cash and cash equivalents $ 641.4  $ 612.8

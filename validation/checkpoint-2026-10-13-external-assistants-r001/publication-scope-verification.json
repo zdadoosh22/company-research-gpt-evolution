@@ -1,0 +1,197 @@
+{
+  "verified_at": "2026-10-13T22:44:36.526446+00:00",
+  "added_files_before_receipt": 37,
+  "only_additions": true,
+  "known_private_identifiers_absent": true,
+  "all_new_json_parse": true,
+  "whitespace_check": "One trailing-whitespace line in retained original price HTML; preserved source bytes. No authored-file warning with CRLF recognised.",
+  "excluded": "Existing 18 user media files; credentials; state; ignored working records and private credit balance",
+  "checks_are_not": "Trading approval, backend attestation, full secret-detection guarantee or engineering test suite",
+  "files": [
+    {
+      "path": "monitoring/decisions/2026-10-13-levi-continuing-cash-disposition-r001.md",
+      "sha256": "718084cd4b60529638fcc77cba7b150d8fc287b7cea5a6f94ec02c0d648798d1",
+      "bytes": 1396
+    },
+    {
+      "path": "monitoring/studies/2026-10-13-jpm-post-event-inspection-r001.md",
+      "sha256": "e5a6db07ea525672b96e840471022bea88d98073faec08916aa0f43023e496bf",
+      "bytes": 3494
+    },
+    {
+      "path": "monitoring/studies/2026-10-13-levi-continuing-cash-gate-r001.md",
+      "sha256": "152c44d26098abad34576fceaba744a98c9b1251ab64dc845a54e2f9068fef58",
+      "bytes": 4360
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-jpm-post-event-r001/capture-register.json",
+      "sha256": "2d6bc180390afef0dd7a80386a03b4f1472607ec5f8627312fa1802941b115fe",
+      "bytes": 1122
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-jpm-post-event-r001/price-history-8398944f972b2e2baacda2be13f74a71fc2aa8af3c472d73af1c009980c7a527.html",
+      "sha256": "8398944f972b2e2baacda2be13f74a71fc2aa8af3c472d73af1c009980c7a527",
+      "bytes": 114992
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-jpm-post-event-r001/research-price-observation.json",
+      "sha256": "30159252ccb3f07b78a30b74fc6c333e13d7ad444949b17f3852bc63caecbddd",
+      "bytes": 1472
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-jpm-post-event-r001/web-inspection-and-arithmetic.json",
+      "sha256": "21e909e22356dd03024ca4326308faa36b3121f0eca513dbc13ee9e6fa32aeb5",
+      "bytes": 1677
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/note2-original-derived.txt",
+      "sha256": "92611a82d67d055a63c715267432762b6406492bf37a91826beb0932c7afe6cb",
+      "bytes": 3706
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/parent-verification.json",
+      "sha256": "05d63ce10b556444e922c5cada465d56ae30bf4729134c6e171ac26efadeb4d5",
+      "bytes": 820
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/q2-six-month-cash-flow-original-derived.txt",
+      "sha256": "f202468710266a7e6092e4571bb3125da52b95ed1d86c753f3e48ce805aeacbd",
+      "bytes": 2524
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/q3-nine-month-cash-flow-original-derived.txt",
+      "sha256": "fe9203e5a454cebb707eac485d78e11f9cfffd175b5f66ffb82929a11dfbc82f",
+      "bytes": 3167
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/quarter-cash-bridge-verification.json",
+      "sha256": "7f35630fe609a0a1befd24156d254f975f77b5fe61183b7a02456beee1505cf9",
+      "bytes": 2535
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/CHAT-HANDOFF.md",
+      "sha256": "2acd0df164657b555e0c83cfd852fbb04327c6654ba70675b5966f69bc615ae6",
+      "bytes": 4853
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/SETUP.md",
+      "sha256": "3d02b077a0493d3746c41759b8e25b9ec5851dc86d8b0344c654fce746fe6cf9",
+      "bytes": 6245
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/STATUS-r002.md",
+      "sha256": "4335ea4b050871830bbea425861049c51cd04322615729fca066315f0d4d8877",
+      "bytes": 4991
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-corrected-output-r002.txt",
+      "sha256": "997cd72d95b37b42e25ae173d4dbcc515881df644c00cd7aba7cd254f608f1eb",
+      "bytes": 4332
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-correction-prompt-r002.txt",
+      "sha256": "e4cd1ff0e97ef253170812aabcfe1ab916fe841534c28cf1fdf0eec7bd345357",
+      "bytes": 1361
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-jpm-output-r001.txt",
+      "sha256": "7592d29fad786c51510cdb44260a033c46de201a551e1f7314b707ea5b16d597",
+      "bytes": 4711
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-jpm-post-event-assignment-r001.txt",
+      "sha256": "55f2aee94ba31f478e4c6fca69fcbacc252458b6fe0174880fb287e7409bdd3b",
+      "bytes": 2886
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-levi-assignment-r001.json",
+      "sha256": "066efdb8ae7862273865a392305e7f025b7226c220436d0d573f861816b0eb3b",
+      "bytes": 686
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-levi-bridge-assignment-r001.txt",
+      "sha256": "c52727d08d69af983c9ddc2dc35186ea841159c6c53bcf6ff12831bf357c0cef",
+      "bytes": 2973
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-levi-output-r001.md",
+      "sha256": "a72fc24815f242801eec0cdb0d344d319818500e4de0700e91662857cbf269c9",
+      "bytes": 6456
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/correction-disposition-r002.md",
+      "sha256": "a833853cbfceb9d4e83c95021c0aa75c8754fcacb8d72b1f8bfefd377a2825e1",
+      "bytes": 2359
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-corrected-output-r002.txt",
+      "sha256": "fb4a18c0917d36c606a0983f063b6827841c41ac5ec53269f93336aedd8b8348",
+      "bytes": 4016
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-correction-prompt-r002.txt",
+      "sha256": "b3fff193e4b205a95d2f3e6dc3c853a3d140a98284f2a1143c236ecba0cc1605",
+      "bytes": 1674
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-jpm-source-closure-assignment-r001.txt",
+      "sha256": "b9a10356ea213dd7499f0254e9cef04aba78ebef8797a15c5db579dedf7e72d6",
+      "bytes": 2198
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-jpm-source-closure-output-r001.md",
+      "sha256": "06465f5a7a4122fdaddac1c64fe6e4a0fe4c67b4c314364828daf3239efa1a97",
+      "bytes": 2476
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-levi-assignment-r001.json",
+      "sha256": "c5883ef65aac41ec39abd9847b3dcdb81c8b965c1a286f432e6d0754bbb7c81a",
+      "bytes": 774
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-levi-cash-assignment-r001.txt",
+      "sha256": "3a23a9c675e283f67f8f6f494f619ce84941366994ecb20ae838c919f1c6f6b1",
+      "bytes": 3805
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-levi-selected-output-r001.json",
+      "sha256": "c7cbe55ae66c3efe148d8405fe874a92a18fa549d60e729bd9f9d50dbf36c308",
+      "bytes": 2820
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/parent-findings-r001.md",
+      "sha256": "2cfa38966b24ccc9f085293a2836b0935731e971a6685e6bb901af89f4e2ccde",
+      "bytes": 3438
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/preservation-verification.json",
+      "sha256": "ade519037bdfe8b55def06e0e492c5e40e0fdc459d7747409d4d401b67a2f915",
+      "bytes": 624
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/setup-evidence.json",
+      "sha256": "be061302e29d9104f709750957385874dfe65b4157c882070a898b0bd1479462",
+      "bytes": 3842
+    },
+    {
+      "path": "validation/levi-continuing-cash-astra-review-2026-10-13-r001.json",
+      "sha256": "d3b6963bffe3e9222670b8945524ab29c1a752866d045c9a8e4721857aa83033",
+      "bytes": 10434
+    },
+    {
+      "path": "validation/levi-continuing-cash-astra-review-2026-10-13-r001.md",
+      "sha256": "5e2ffbfd4bec2e40ea25fd21871442a0be562eb45710cbf63071a12c24fb7997",
+      "bytes": 6452
+    },
+    {
+      "path": "validation/levi-continuing-cash-review-input-2026-10-13-r001.json",
+      "sha256": "b68431d794b25986f4e95944691c192e0048da941335dded950daf0f4a56b2c6",
+      "bytes": 2766
+    },
+    {
+      "path": "workflows/external-assistants.md",
+      "sha256": "d08a7a9d76be54c84faf0f130f803faf84f031b541fdf135b68b91e2927f9214",
+      "bytes": 4018
+    }
+  ]
+}

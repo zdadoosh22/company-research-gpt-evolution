@@ -1,0 +1,31 @@
+# External-assistant setup â€” 13 October 2026
+
+Local Company Research2 remains authoritative. Baseline6ec4c65927c00d3b86a65b9ae373b0aa56716e3e; approved methodology1.0.0 unchanged. This setup supplements Chat planning and Work verification; required Astra review and manual trading authority remain separate. No new open-ended goal is created.
+
+## Actual inspection and reusable practices
+
+Read Biological Sciences' local Gemini prompt/UI record, targeted correction and external-test evaluation, plus its relevant source-check excerpt; exact input hashes are in setup-evidence.json. No Biological files or sessions were modified. The UI capture is Antigravity remote control, even though the filename says Gemini. Its evaluation records incorrect mapping and unsupported save claims, not blanket external-model success. Reuse bounded inputs, concrete falsifiable cases, actual-output capture, independent arithmetic, explicit failed-test dispositions, and keeping prompted corrections separate from independent passes. This is inspected historical evidence, not a replay or validation of today's services.
+
+## Verified current access
+
+Three visible controlled browser tabs are signed in after user confirmation. Gemini web offers4Argon,3.1Pro,3.8Flash,3.5Flash-Lite; selected4Argon. PRO usage display shows0%current and weekly use. Antigravity's existing remote connection exposes web2.22.0, No Project, Google AI Pro, selected3.8FlashHigh and selectable ClaudeOpus/Sonnet5.5 plusGPT-OSS. Argon is disabled there. Model labels are UI observations, not independent backend attestations. Antigravity shows Gemini100%weekly/five-hour remaining; Claude/GPT84%weekly and100%five-hour. Its overage switch is off. Exact task/token limits remain unknown; distinct screens do not prove quota independence.
+
+Notion billing shows EducationPlus; its AI chat explicitly reports free responses exhausted. Stop this route. Auto is a UI label, not a verified usable model. No trial, upgrade, AI request, payment, connector or unrelated workspace-content inspection occurs. Reset/renewal is unknown; no repeating free quota is promised.
+
+## Appropriate roles and cost boundaries
+
+Gemini: bounded evidence criticism, opposing cases and conceptual analysis, initially through supplied source excerpts. Antigravity: isolated coding/diagnosis when project scope and execution permissions are actually constrained; its verified remote conversation can also provide text-only criticism. Website access is remote control of an existing local instance, not an independent hosted coding sandbox. This setup did not enable remote control, change global permissions or grant the project. Before code, use an isolated worktree or a minimal scratch packet, permit specific paths, inspect proposed commands and patches, and verify here before integration. Notion: future supplied-material synthesis/documentation only if existing allowance becomes available; never assume Windows/code access. Local authority is retained.
+
+No credit overage, paid API, trial, upgrade or account creation. Check allowance before assignment and stop a depleted route; do not retry through other accounts or silently downgrade. Work stops at1%remaining with save margin. Today's credit baseline is held only in an excluded local usage record; no claim is made that an older account balance is unchanged. Browser coordination itself costs Work usage. Prefer one complete bounded submission, useful independent work while it runs, and one completion capture; poll again only when a specific live task warrants it. Record overhead and useful verified findings rather than exhausting quotas for their own sake.
+
+## Proposed first trial and acceptance
+
+Pending LEVI work needs a continuing/discontinued cash and redeployment evidence bridge. Give Gemini the reviewed cash-timing note, disposition and relevant dated primary sections; request a narrow evidence-collection/calculation plan and strongest contrary case, not a trade or repeat closed audit. Success requires correct periods/units, no invented source access, explicit missing evidence, reproduced material arithmetic and a useful next decision after local verification. A verified no-new-finding result is valid; recurring duplication or greater coordinator cost than direct work argues against that route. No savings percentage is claimed from one trial.
+
+Antigravity should receive a different bounded task only when net benefit is clear; no coding defect is invented simply to exercise it. Notion remains blocked by exhaustion. Initial recommendation is one Gemini trial, then evaluate additional capacity. Subsequent user direction authorises progression on pending research using available assistants; any executed assignments get separate dated records and do not amend this initial setup evidence.
+
+## Assignment and integration record
+
+Every task records service, UI model/thinking label, visible quota before/after where available, baseline and hashed inputs, exact prompt, output text/status, any correction, checked source locations/calculations or code tests, accepted/rejected findings and residual limitations. No credentials, account emails, private ledger, live broker details or broad repository grants. Outputs remain provisional. Concrete material economic revisions still require the applicable Astra challenge; self-review or Gemini/Claude criticism cannot substitute. Ordinary Chat remains available for substantial decisions without repetitive GitHub-access challenges.
+
+Official sources inspected13October: https://gemini.google.com/ ; https://support.google.com/gemini/answer/18648722 ; https://support.google.com/gemini/answer/16275805 ; https://antigravity.google/docs/models ; https://antigravity.google/docs/plans/ ; https://antigravity.google/docs/remote-control/ ; https://www.notion.com/login ; https://www.notion.com/en-gb/help/complimentary-ai-responses . Notion documentation supports limited complimentary responses and upgrade after exhaustion, not an assumed separate recurring allowance. Antigravity documents local app/CLI remote control and a Never overage setting; current visible switch is off. Product claims and actual account observations remain distinct.

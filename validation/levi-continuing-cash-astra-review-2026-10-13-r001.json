@@ -1,0 +1,258 @@
+{
+  "reviewed_at_utc": "2026-10-13T22:27:34.364739+00:00",
+  "requested_route": "Astra High",
+  "actual_backend_identity": "unknown",
+  "actual_reasoning_setting": "unknown",
+  "identity_note": "Requested route separate from actual identity; backend not exposed",
+  "terminal_status": "accepted_within_scope",
+  "unresolved_material_defects": 0,
+  "scope": "Only new LEVI cash/definition gate and external integration; preserve closed original audits",
+  "baseline_commit": "6ec4c65927c00d3b86a65b9ae373b0aa56716e3e",
+  "frozen_manifest": {
+    "path": "validation/levi-continuing-cash-review-input-2026-10-13-r001.json",
+    "sha256": "b68431d794b25986f4e95944691c192e0048da941335dded950daf0f4a56b2c6"
+  },
+  "frozen_files": [
+    {
+      "path": "monitoring/studies/2026-10-13-levi-continuing-cash-gate-r001.md",
+      "sha256": "152c44d26098abad34576fceaba744a98c9b1251ab64dc845a54e2f9068fef58",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/note2-original-derived.txt",
+      "sha256": "92611a82d67d055a63c715267432762b6406492bf37a91826beb0932c7afe6cb",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/parent-verification.json",
+      "sha256": "05d63ce10b556444e922c5cada465d56ae30bf4729134c6e171ac26efadeb4d5",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/q2-six-month-cash-flow-original-derived.txt",
+      "sha256": "f202468710266a7e6092e4571bb3125da52b95ed1d86c753f3e48ce805aeacbd",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/q3-nine-month-cash-flow-original-derived.txt",
+      "sha256": "fe9203e5a454cebb707eac485d78e11f9cfffd175b5f66ffb82929a11dfbc82f",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-levi-continuing-cash-r001/quarter-cash-bridge-verification.json",
+      "sha256": "7f35630fe609a0a1befd24156d254f975f77b5fe61183b7a02456beee1505cf9",
+      "matches": true
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/parent-findings-r001.md",
+      "sha256": "2cfa38966b24ccc9f085293a2836b0935731e971a6685e6bb901af89f4e2ccde",
+      "matches": true
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/correction-disposition-r002.md",
+      "sha256": "a833853cbfceb9d4e83c95021c0aa75c8754fcacb8d72b1f8bfefd377a2825e1",
+      "matches": true
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-levi-selected-output-r001.json",
+      "sha256": "c7cbe55ae66c3efe148d8405fe874a92a18fa549d60e729bd9f9d50dbf36c308",
+      "matches": true
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-levi-output-r001.md",
+      "sha256": "a72fc24815f242801eec0cdb0d344d319818500e4de0700e91662857cbf269c9",
+      "matches": true
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-corrected-output-r002.txt",
+      "sha256": "fb4a18c0917d36c606a0983f063b6827841c41ac5ec53269f93336aedd8b8348",
+      "matches": true
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/antigravity-corrected-output-r002.txt",
+      "sha256": "997cd72d95b37b42e25ae173d4dbcc515881df644c00cd7aba7cd254f608f1eb",
+      "matches": true
+    }
+  ],
+  "methodology": {
+    "version": "1.0.0",
+    "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+    "verified": true
+  },
+  "original_sources": {
+    "q3_10q": {
+      "path": "monitoring/studies/evidence/2026-10-12-levi-cash-timing-r001/10q-33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700.html",
+      "sha256": "33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700",
+      "matches": true
+    },
+    "q2_release": {
+      "path": "monitoring/studies/evidence/2026-10-12-recent-results-originals-r001/levi-q2-64cc1622abbbe2043f01489b4c587265d411a51c9d6777d4430b9c98cfd558fe.html",
+      "sha256": "64cc1622abbbe2043f01489b4c587265d411a51c9d6777d4430b9c98cfd558fe",
+      "matches": true
+    },
+    "q3_release": {
+      "path": "monitoring/studies/evidence/2026-10-12-recent-results-originals-r001/levi-q3-482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36.html",
+      "sha256": "482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36",
+      "matches": true
+    }
+  },
+  "excerpts_exact_original_substrings": {
+    "note2-original-derived.txt": true,
+    "q3-nine-month-cash-flow-original-derived.txt": true,
+    "q2-six-month-cash-flow-original-derived.txt": true
+  },
+  "calculation_basis": "Fresh Decimal arithmetic from independently inspected original source tables; not author verifier output",
+  "units": "USD millions",
+  "scope_entity": "Levi Strauss & Co. consolidated continuing plus discontinued operations",
+  "periods": {
+    "nine_months": "2025-12-01 through 2026-08-30",
+    "six_months": "2025-12-01 through 2026-05-31",
+    "quarter": "2026-06-01 through 2026-08-30"
+  },
+  "independent_nine_month_six_month_inputs": {
+    "CFO": [
+      "585.2",
+      "482.3"
+    ],
+    "CFI": [
+      "-294.6",
+      "-51.5"
+    ],
+    "CFF": [
+      "-405.6",
+      "-340.9"
+    ],
+    "FX_cash": [
+      "-1.5",
+      "1.5"
+    ],
+    "capex": [
+      "-157.9",
+      "-99.3"
+    ],
+    "FX_settlements": [
+      "-179.7",
+      "-5.1"
+    ],
+    "investment_purchases": [
+      "-130.3",
+      "-87.6"
+    ],
+    "investment_proceeds": [
+      "84.4",
+      "50.6"
+    ],
+    "other_investing": [
+      "-7.4",
+      "-6.4"
+    ],
+    "dividends": [
+      "-169.3",
+      "-107.7"
+    ],
+    "withholdings": [
+      "-34.5",
+      "-31.7"
+    ],
+    "other_financing": [
+      "-0.8",
+      "-0.5"
+    ],
+    "ASR_including_excise": [
+      "-201.0",
+      "-201.0"
+    ],
+    "sale_proceeds": [
+      "96.3",
+      "96.3"
+    ]
+  },
+  "independent_Q3": {
+    "CFO": "102.9",
+    "CFI": "-243.1",
+    "CFF": "-64.7",
+    "FX_cash": "-3.0",
+    "capex": "-58.6",
+    "FX_settlements": "-174.6",
+    "investment_purchases": "-42.7",
+    "investment_proceeds": "33.8",
+    "other_investing": "-1.0",
+    "dividends": "-61.6",
+    "withholdings": "-2.8",
+    "other_financing": "-0.3",
+    "ASR_including_excise": "0.0",
+    "sale_proceeds": "0.0"
+  },
+  "independent_checks": {
+    "9m_CFO_components": "585.2",
+    "6m_CFO_components": "482.3",
+    "Q3_CFI_components": "-243.1",
+    "Q3_CFF_components": "-64.7",
+    "Q3_cash_change": "-207.9",
+    "Q3_FCF": "44.3",
+    "closing_cash": "641.4",
+    "residual": "-190.6",
+    "gain_before_costs": "33.6",
+    "gain_after_costs": "17.3",
+    "discontinued_pretax": "-9.4",
+    "discontinued_net": "-8.8",
+    "hypothetical_comp_percent": "0.4000"
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "high",
+      "target": "external first-pass Gemini claims",
+      "evidence": "Q2 release cash table; Q3 10-Q p8; Q3 release footnotes 1-2, guidance and Key Metrics",
+      "finding": "Unexplained cash outflow, isolated expense-minus-receivable deficit, categorical guidance attribution and necessary negative store comps are unsupported.",
+      "correction": "Withdraw all four claims; use complete cash schedules and matched definitions.",
+      "disposition": "Resolved in prompted correction and excluded from author conclusions."
+    },
+    {
+      "id": "F2",
+      "severity": "high",
+      "target": "external first-pass Antigravity/Claude accounting shell",
+      "evidence": "Q3 10-Q pp8,10,12-13; original and corrected retained outputs",
+      "finding": "ASR timing was wrong for nine months; W/T/K could overlap; gross proceeds do not determine costs settlement; qualitative materiality does not bound discontinued CFO.",
+      "correction": "Use CFO_cont = 585.2 - UNKNOWN CFO_disc and one combined reconciling residual; no point or direction.",
+      "disposition": "Resolved for accepted integration; preserve original defects separately."
+    },
+    {
+      "id": "F3",
+      "severity": "medium",
+      "target": "Gemini prompted correction sections 2 and 4",
+      "evidence": "Q3 release footnote 2 and Key Metrics; correction-disposition-r002.md",
+      "finding": "Contra-revenue classification and specific new digital/app growth mechanisms remain unsupported.",
+      "correction": "Exclude these claims; treat hypothetical mix as a mathematical example only.",
+      "disposition": "Contained by explicit parent exclusion; external answer itself is not a clean pass."
+    },
+    {
+      "id": "F4",
+      "severity": "low",
+      "target": "external evidence capture",
+      "evidence": "gemini-levi-selected-output-r001.json and parent-findings-r001.md",
+      "finding": "Only six selected paragraphs of first Gemini answer are retained; visible labels and error notices do not authenticate backend or source access.",
+      "correction": "Limit conclusions to retained material; retain complete bounded responses in future.",
+      "disposition": "Disclosed limitation; does not prevent this original-source review."
+    }
+  ],
+  "continuing_CFO": {
+    "identity": "585.2 - CFO_disc",
+    "CFO_disc": null,
+    "exact_normalization_accepted": false,
+    "direction_accepted": false,
+    "universal_decision_prerequisite": false
+  },
+  "disposition": "Accept bounded park of present opportunity dossier; different hypotheses may use evidence appropriate to their scope.",
+  "external_first_pass_clean": false,
+  "external_prompted_corrections_clean": false,
+  "integration_acceptance": "Accept only corrected, source-supported propositions and explicit exclusions; original defects remain preserved",
+  "limitations": [
+    "Retained-source review only, no fresh search",
+    "First Gemini response captured only as six selected paragraphs",
+    "Backend identity and applied reasoning setting not exposed",
+    "No valuation, price, trade or investment-performance acceptance",
+    "Closed receipt/funding audits not rerun"
+  ],
+  "report_sha256": "5e2ffbfd4bec2e40ea25fd21871442a0be562eb45710cbf63071a12c24fb7997"
+}

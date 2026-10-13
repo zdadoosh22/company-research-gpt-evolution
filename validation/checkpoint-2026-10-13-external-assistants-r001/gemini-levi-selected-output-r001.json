@@ -1,0 +1,17 @@
+{
+  "service": "Gemini web",
+  "visible_model": "Argon High",
+  "full_visible_response_characters": 19458,
+  "capture_kind": "Selected exact paragraphs from visible DOM, not complete output or independent source-access proof",
+  "clipboard_control_failed_twice": true,
+  "full_first_response_not_archived_locally": true,
+  "selected_paragraphs": [
+    "Unbridged Cash & Discontinued Operations: Consolidation of Dockers in reported cash flows, combined with an unexplained -$190.3m Q3 cash outflow between Q2-end ($849.0m) and Q3-end ($641.4m) after accounting for Q3 FCF (+$44.3m) and dividends (-$61.6m), prevents bounding continuing cash generation.",
+    "Guidance Raise Is Entirely Refund-Driven (Underlying Margin Trim): New disclosures show pre-tax tariff refunds plus interest of $83.3m ($84m rounded; $63.3m\u2013$64.0m after $20m tax, or +$0.16 EPS) are offset by $60m of full-year commercial redeployment ($25m in Q3; $35m planned in Q4). Net of the $60m redeployment, the full-year pre-tax EBIT windfall is +$18.6m (ex-interest) or ~+28 bps of FY26 revenue, and ~$18m after tax (~+$0.05/share). Because full-year Adjusted EBIT margin guidance rose only +10 bps (from 12.0% to 12.1%) and Adjusted Diluted EPS midpoint rose $0.06 ($1.49 to $1.55), underlying full-year EBIT margin guidance ex-refunds implicitly compressed by ~18 bps.",
+    "Access Failure: Human-readable body text\u2014Part I Item 1 (Financial Statements and Notes) and Part I Item 2 (MD&A)\u2014was truncated past the XBRL context header. All 10-Q figures not duplicated in the accessible Q3 release narrative rely strictly on the supplied baseline and are labeled unverified at the primary 10-Q source.",
+    "Q3 & Q4 Redeployment Split: Footnote 2 discloses management \"redeployed IEEPA tariff refunds to support the business including additional promotion and marketing expenditures,\" creating $25m of additional Q3 expense (~160 bps; -$0.05 EPS): $19m in Gross Margin (~120 bps) and $6m in SG&A (~40 bps). For the full year, management is redeploying ~$60m, leaving ~$35m for Q4 2026.",
+    "Q4 Cash Mismatch: Only $21.5m of tariff principal receivable remains uncollected at Q3-end, whereas management has committed $35.0m of Q4 redeployment\u2014a -$13.5m pre-tax Q4 cash deficit even if 100% of the residual receivable is collected in Q4.",
+    "Broad Sequential DTC Deterioration: Between Q2 and Q3, DTC comparable sales dropped 560 bps (from +6% to +0.4%), U.S. DTC flipped from +5% to -1% reported, and Europe organic DTC flipped from +7% to -1%. Because Q3 e-commerce grew +10% reported and organic, simple mix arithmetic dictates that comparable brick-and-mortar store sales were negative in Q3."
+  ],
+  "integration_status": "Provisional; material defects identified; no normalized cash or entry accepted"
+}

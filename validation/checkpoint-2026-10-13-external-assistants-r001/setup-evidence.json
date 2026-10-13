@@ -1,0 +1,83 @@
+{
+  "created_at": "2026-10-13T22:00:30.394709+00:00",
+  "baseline_commit": "6ec4c65927c00d3b86a65b9ae373b0aa56716e3e",
+  "biological_project_read_only": true,
+  "biological_inspected_files": [
+    {
+      "path": "work/refinement-20261012/gemini-review-prompt.txt",
+      "sha256": "19e76ea52fcf5dbeb654510e2d279433c5ee6a0c8ec33e2d0f9eaaa293ab622a",
+      "inspection": "Prompt top12 lines, UI top25 lines, targeted recheck top12 lines, full external-test-evaluation and SOURCE-CHECK relevant excerpt inspected; no sessions replayed"
+    },
+    {
+      "path": "work/refinement-20261012/gemini-review-ui.txt",
+      "sha256": "28d2bac5cb1f78338a48da8ed3d5de36d82246af0f5e1aa50b9c6c11ed036ea9",
+      "inspection": "Prompt top12 lines, UI top25 lines, targeted recheck top12 lines, full external-test-evaluation and SOURCE-CHECK relevant excerpt inspected; no sessions replayed"
+    },
+    {
+      "path": "work/refinement-20261012/gemini-targeted-recheck.txt",
+      "sha256": "fb83e449c88ab136fa001c54512186b612a024aac14f7ba3ffab1d321724d462",
+      "inspection": "Prompt top12 lines, UI top25 lines, targeted recheck top12 lines, full external-test-evaluation and SOURCE-CHECK relevant excerpt inspected; no sessions replayed"
+    },
+    {
+      "path": "work/refinement-20261012/external-test-evaluation.md",
+      "sha256": "79b100308afbd2e2b76d7457b48aeab64fdea1a27d56c9a8dacf5369327fb343",
+      "inspection": "Prompt top12 lines, UI top25 lines, targeted recheck top12 lines, full external-test-evaluation and SOURCE-CHECK relevant excerpt inspected; no sessions replayed"
+    },
+    {
+      "path": "outputs/chat-study-setup/SOURCE-CHECK.md",
+      "sha256": "33ec05ea410d9d0cd9ee7ad9d0e8c4629862180bb3e4ffd21942832274f2876e",
+      "inspection": "Prompt top12 lines, UI top25 lines, targeted recheck top12 lines, full external-test-evaluation and SOURCE-CHECK relevant excerpt inspected; no sessions replayed"
+    }
+  ],
+  "account_identifiers_excluded": true,
+  "services": {
+    "Gemini web": {
+      "signed_in_UI": true,
+      "plan_label": "PRO",
+      "model_selected": "Gemini 4 Argon",
+      "picker_models": [
+        "3.5 Flash-Lite",
+        "3.8 Flash",
+        "3.1 Pro",
+        "4 Argon"
+      ],
+      "backend_identity_verified": false,
+      "usage_visible": "0% current; 0% weekly; current reset2:33AM; weekly18Oct9:33AM; timezone not independently established",
+      "exact_prompts_or_tokens_available": null
+    },
+    "Antigravity": {
+      "signed_in_remote_UI": true,
+      "version_UI_path": "web/2.22.0",
+      "local_instance_selected": true,
+      "workspace_selected": "No Project",
+      "plan_label": "Google AI Pro",
+      "selected_model": "Gemini 3.8 Flash High",
+      "selectable_labels": [
+        "Claude Opus 5.5 Medium",
+        "Claude Sonnet 5.5 Medium",
+        "GPT-OSS120B Medium"
+      ],
+      "disabled_label": "Gemini4Argon Unavailable",
+      "Gemini_weekly_remaining_percent": 100,
+      "Gemini_five_hour_remaining_percent": 100,
+      "Claude_GPT_weekly_remaining_percent": 84,
+      "Claude_GPT_five_hour_remaining_percent": 100,
+      "overage_switch_on": false,
+      "backend_identity_verified": false,
+      "isolated_coding_access_verified": false
+    },
+    "Notion": {
+      "signed_in_UI": true,
+      "plan_label": "Education Plus",
+      "AI_chat_model_label": "Auto",
+      "visible_status": "You have run out of free AI responses. Upgrade Notion AI.",
+      "route_stopped": true,
+      "separate_recurring_quota_verified": false,
+      "renewal_limit_unknown": true,
+      "no_AI_submission": true
+    }
+  },
+  "separate_Google_quota_displays_are_not_proof_of_independent_underlying_pools": true,
+  "initial_Work_primary_used_percent": 14,
+  "assignments_submitted_at_capture": 0
+}

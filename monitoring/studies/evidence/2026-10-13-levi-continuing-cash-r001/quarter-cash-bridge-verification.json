@@ -1,0 +1,99 @@
+{
+  "verified_at": "2026-10-13T22:09:39.277831+00:00",
+  "source_units": "USD millions",
+  "source_periods": {
+    "nine_months": "2025-12-01 to2026-08-30",
+    "six_months": "2025-12-01 to2026-05-31",
+    "derived_quarter": "2026-06-01 to2026-08-30"
+  },
+  "source_paths": [
+    "monitoring/studies/evidence/2026-10-12-levi-cash-timing-r001/10q-33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700.html",
+    "monitoring/studies/evidence/2026-10-12-recent-results-originals-r001/levi-q2-64cc1622abbbe2043f01489b4c587265d411a51c9d6777d4430b9c98cfd558fe.html"
+  ],
+  "source_sha256": [
+    "33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700",
+    "64cc1622abbbe2043f01489b4c587265d411a51c9d6777d4430b9c98cfd558fe"
+  ],
+  "values_nine_month_six_month": {
+    "CFO": [
+      "585.2",
+      "482.3"
+    ],
+    "CFI": [
+      "-294.6",
+      "-51.5"
+    ],
+    "CFF": [
+      "-405.6",
+      "-340.9"
+    ],
+    "FX_on_cash": [
+      "-1.5",
+      "1.5"
+    ],
+    "capex": [
+      "-157.9",
+      "-99.3"
+    ],
+    "FX_contract_settlement": [
+      "-179.7",
+      "-5.1"
+    ],
+    "investment_purchase": [
+      "-130.3",
+      "-87.6"
+    ],
+    "investment_proceeds": [
+      "84.4",
+      "50.6"
+    ],
+    "other_investing": [
+      "-7.4",
+      "-6.4"
+    ],
+    "dividends": [
+      "-169.3",
+      "-107.7"
+    ],
+    "withholding": [
+      "-34.5",
+      "-31.7"
+    ],
+    "other_financing": [
+      "-0.8",
+      "-0.5"
+    ],
+    "ASR_including_excise": [
+      "-201.0",
+      "-201.0"
+    ],
+    "business_sale_proceeds": [
+      "96.3",
+      "96.3"
+    ]
+  },
+  "derived_Q3_signed_cash": {
+    "CFO": "102.9",
+    "CFI": "-243.1",
+    "CFF": "-64.7",
+    "FX_on_cash": "-3.0",
+    "capex": "-58.6",
+    "FX_contract_settlement": "-174.6",
+    "investment_purchase": "-42.7",
+    "investment_proceeds": "33.8",
+    "other_investing": "-1.0",
+    "dividends": "-61.6",
+    "withholding": "-2.8",
+    "other_financing": "-0.3",
+    "ASR_including_excise": "0.0",
+    "business_sale_proceeds": "0.0"
+  },
+  "Q3_total_cash_change": "-207.9",
+  "Q2_exact_cash": "849.3",
+  "Q3_exact_cash": "641.4",
+  "residual_after_FCF_and_dividends": "-190.6",
+  "residual_explained_by_other_reported_cash_flows": "-190.6",
+  "normalization_accepted": false,
+  "current_cash_accepted": false,
+  "scope": "Full consolidated cash movement reconciled; not a continuing-only CFO, recurring owner cash or trade test"
+}

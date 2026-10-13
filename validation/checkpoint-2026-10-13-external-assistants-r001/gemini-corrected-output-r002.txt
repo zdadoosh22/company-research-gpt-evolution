@@ -1,0 +1,86 @@
+Targeted Correction Ledger
+1. Q3 Consolidated Cash Flow Bridge & Overclaim Retraction
+
+The prior assertion of an "unexplained -$190.3m Q3 cash outflow" is formally withdrawn. That figure was an artifact of comparing consolidated FCF against net cash change without the investing and financing schedules.
+
+With the complete retained statements, the Q3 cash bridge reconciles exactly to $0.0m:
+
+Opening Cash (31 May 2026): $849.3m
+
+Operating Cash Flow: +$102.9m (9M $585.2m less 6M $482.3m)
+
+Investing Cash Flow: -$243.1m (9M -$294.6m less 6M -$51.5m)
+
+Capital expenditures: -$58.6m
+
+FX derivative settlements: -$174.6m
+
+Net investments: -$8.9m (purchases -$42.7m; proceeds +$33.8m)
+
+Other investing: -$1.0m
+
+Financing Cash Flow: -$64.7m (9M -$405.6m less 6M -$340.9m)
+
+Dividends paid: -$61.6m
+
+Share award tax withholding: -$2.8m
+
+Other financing: -$0.3m
+
+January ASR: $0.0m incremental cash (share-settlement only)
+
+Effect of FX on Cash: -$3.0m (9M -$1.5m less 6M +$1.5m)
+
+Net Change in Cash: -$207.9m
+
+Closing Cash (30 August 2026): $641.4m ($849.3m − $207.9m)
+
+2. Tariff Redeployment & Q4 Cash Flow Timing
+
+The claim that planned Q4 redeployment ($35m) versus uncollected principal ($21.5m) creates a "-$13.5m Q4 cash deficit" is withdrawn:
+
+P&L Expense vs. Cash Timing: Redeployment is disclosed as an expense run-rate ($19m gross margin promotions, $6m SG&A marketing in Q3). Promotional expense operates largely as contra-revenue price concessions rather than direct cash disbursements; marketing outlays follow vendor payable cycles that cross fiscal quarters.
+
+Fungibility: Levi funds operations from aggregate operating cash flow, not an isolated customs escrow. Comparing isolated tariff receipts to marketing expense accruals mischaracterizes enterprise liquidity.
+
+3. Guidance Attribution & Underlying Margin Reassessment
+
+The prior conclusions that tariff windfalls accounted for "100% of the EPS guidance raise" and implied an "18 bps underlying EBIT margin trim" are withdrawn:
+
+Mechanically isolating pre-tax tariff refund adjustments from the full-year EPS and EBIT guidance ranges without a matched bridge ignores offsetting baseline variables: full-year organic SG&A leverage, wholesale channel mix, foreign exchange translation adjustments, shifting baseline promotional allowances, and product input costs.
+
+Deducting gross refunds from guided margins while treating redeployment as purely discretionary operational bloat produces an unverified, asymmetric baseline.
+
+4. Scope Disconnect: E-Commerce Growth vs. Store Comps
+
+The prior inference that +10% e-commerce growth mathematically forced brick-and-mortar store comps to be negative is withdrawn.
+
+Total e-commerce (+10% reported/organic) measures total digital revenue (including new digital market entries, app expansions, and concessions), whereas DTC comparable sales (+0.4%) measure only mature omni-channel locations.
+
+Hypothetical Counterexample:
+
+Assume DTC comp sales are split 20% Comp Digital and 80% Comp Stores.
+
+If the total 10% e-commerce growth is driven primarily by new non-comp digital expansion, while Comp Digital grew only +0.5%, then Comp Stores grew +0.375%:
+
+(0.20×0.5%)+(0.80×0.375%)=0.1%+0.3%=0.4% blended comp
+
+Because non-comp digital revenue is excluded from comp calculations, positive overall e-commerce does not require negative store comps.
+
+5. Note 2 Boundaries & Retained Core Questions
+
+Note 2 discloses:
+
+Dockers sale gross proceeds: $96.3m (investing cash inflow)
+
+Pre-tax gain: $33.6m less transaction costs of $16.3m = net gain of $17.3m
+
+Discontinued operations net loss: -$8.8m
+
+Reconciling consolidated balance sheet cash does not isolate continuing cash flows. Complete discontinued operating cash flow remains omitted from Note 2.
+
+Retained Next-Evidence Questions:
+
+What was Dockers' discrete operating cash contribution (or working capital drag) within 9M CFO ($585.2m)?
+
+What portion of Q4's planned $35m redeployment represents contra-revenue discounting versus cash SG&A disbursements?

@@ -1,0 +1,140 @@
+CONSOLIDATED STATEMENTS OF CASH FLOWS
+Six Months Ended
+May 31,
+2026
+June 1,
+2025
+(Dollars in millions)
+(Unaudited)
+Cash Flows from Operating Activities:
+Net income
+$
+263.1
+$
+202.0
+Adjustments to reconcile net income to net cash provided by operating activities:
+Depreciation and amortization
+112.8
+99.6
+Property, plant, equipment impairment, and early lease terminations, net
+0.9
+14.8
+Gain on sale of business, prior to costs to sell
+(33.6
+)
+—
+Gain on sale of assets
+—
+(8.5
+)
+Stock-based compensation
+40.1
+44.2
+Deferred income taxes
+(2.0
+)
+(17.2
+)
+Other, net
+(7.3
+)
+7.6
+Net change in operating assets and liabilities
+108.3
+(104.5
+)
+Net cash provided by operating activities
+482.3
+238.0
+Cash Flows from Investing Activities:
+Proceeds from sale of business
+96.3
+—
+Purchases of property, plant and equipment
+(99.3
+)
+(106.1
+)
+Net proceeds from sales of assets
+—
+22.3
+(Payments) proceeds on settlement of forward foreign exchange contracts not designated for hedge accounting, net
+(5.1
+)
+36.6
+Payments to acquire short-term investments
+(87.6
+)
+(83.5
+)
+Proceeds from sale, maturity and collection of short-term investments
+50.6
+1.0
+Other investing activities, net
+(6.4
+)
+—
+Net cash used for investing activities
+(51.5
+)
+(129.7
+)
+Cash Flows from Financing Activities:
+Accelerated share repurchase, including excise tax
+(201.0
+)
+—
+Repurchase of common stock
+—
+(30.5
+)
+Tax withholdings on equity awards
+(31.7
+)
+(18.5
+)
+Dividends to stockholders
+(107.7
+)
+(102.8
+)
+Other financing activities, net
+(0.5
+)
+(0.6
+)
+Net cash used for financing activities
+(340.9
+)
+(152.4
+)
+Effect of exchange rate changes on cash and cash equivalents and restricted cash
+1.5
+7.7
+Net increase (decrease) in cash and cash equivalents and restricted cash
+91.4
+(36.4
+)
+Beginning cash and cash equivalents
+757.9
+690.0
+Ending cash and cash equivalents
+$
+849.3
+$
+653.6
+Noncash Investing Activity:
+Property, plant and equipment acquired and not yet paid at end of period
+$
+37.9
+$
+50.5
+Supplemental Disclosure of Cash Flow Information:
+Cash paid for income taxes during the period, net of refunds
+$
+105.0
+$
+84.4
+____________
+Consolidated statements of cash flows include the cash flows from continuing and discontinued operations.
+The notes accompanying our consolidated financial statements in our Form 10-Q for the second quarter of fiscal 2026 are an integral part of these consolidated financial statements.

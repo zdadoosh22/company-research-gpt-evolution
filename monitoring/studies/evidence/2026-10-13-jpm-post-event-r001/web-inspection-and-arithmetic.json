@@ -1,0 +1,48 @@
+{
+  "inspected_at": "2026-10-13T22:30:54.816437+00:00",
+  "publication_date": "2026-10-13",
+  "period_end": "2026-09-30",
+  "source_representation": "Official web-rendered release/supplement and PDF text; not original archive",
+  "sources": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfexhibit991narrative.htm",
+      "locations": [
+        "opening highlights",
+        "discussion",
+        "footnotes3and4"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfex992supplement.htm",
+      "locations": [
+        "printed page28 NII/FTE/Markets reconciliation"
+      ]
+    },
+    {
+      "url": "https://jpmorganchaseco.gcs-web.com/static-files/87d753bc-5b07-4a5e-a0fd-0c1504b1abb1",
+      "locations": [
+        "printed slide8 outlook",
+        "slide9 nonGAAP definitions"
+      ],
+      "visual_column_inspection_completed": false
+    }
+  ],
+  "checks_USD_bn_except_EPS": {
+    "Q4_required_by_old_guide": "24.817",
+    "rounded_outlook_minus_required": "0.683",
+    "FY_sum_diagnostic": "97.183",
+    "Q3_minus_even_path": "-0.0455",
+    "2027_minus_FY26_round": "9.8",
+    "Q4_annualised": "102.0",
+    "2027_minus_Q4_runrate": "5.0",
+    "rounded_NII_change": "0.7",
+    "rounded_expense_change": "1.1",
+    "two_line_difference_diagnostic": "-0.4"
+  },
+  "rounding_ranges_established": false,
+  "current_capital_requirements_verified": false,
+  "consensus_surprise_accepted": false,
+  "price_response_accepted": false,
+  "required_independent_review": "pending_before_economic_acceptance",
+  "full_thesis": false
+}

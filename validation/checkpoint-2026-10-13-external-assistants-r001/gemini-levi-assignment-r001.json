@@ -1,0 +1,15 @@
+{
+  "prepared_at": "2026-10-13T22:03:20.236859+00:00",
+  "service": "Gemini web",
+  "visible_model": "Argon High",
+  "backend_identity_verified": false,
+  "prompt_path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-levi-cash-assignment-r001.txt",
+  "prompt_sha256": "3a23a9c675e283f67f8f6f494f619ce84941366994ecb20ae838c919f1c6f6b1",
+  "status": "submitted_UI_started",
+  "input_baseline": "6ec4c65927c00d3b86a65b9ae373b0aa56716e3e",
+  "scope": "LEVI existing pending continuing cash/demand evidence only",
+  "private_account_data_supplied": false,
+  "required_Astra_review_replaced": false,
+  "submission_evidence": "Submitted prompt visible; stop-response/working control visible",
+  "captured_at": "2026-10-13T22:07:16.876305+00:00"
+}

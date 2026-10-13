@@ -1,0 +1,56 @@
+Corrected shell and defect ledger
+Corrected accounting shell (nine months ended 30 August 2026)
+
+Main identity. I retreat to the identity:
+
+CFO_cont = 585.2 − CFO_disc, where CFO_disc is UNKNOWN.
+
+Accrual decomposition, with no overlapping terms:
+
+CFO_disc = (−8.8) + (−33.6) + R_disc = −42.4 + R_disc
+
+−8.8 is Dockers' net loss, sitting inside consolidated net income.
+−33.6 is the gain adjustment in the indirect method.
+R_disc is one combined, unquantified term covering every other Dockers reconciling item:
+non-cash income items other than the gain;
+deferred tax;
+changes in all operating assets and liabilities, including income tax payable/receivable and accrued disposal costs.
+
+Tax and cost-accrual movements sit only inside R_disc. They are not counted again anywhere else.
+
+What −42.4 is. It is an accrual shell only (= −26.7 − 16.3 + 0.6). It is not Dockers' cash, not an estimate of continuing CFO, and not normalised owner cash. Note 2 puts no numerical bound on R_disc. So no number or direction for CFO_cont follows from it.
+
+Recurring owner cash. It cannot be derived. Even after the 57.1 refund (verified as CFO in the separately inspected MD&A) is removed, 528.1 is still a consolidated sensitivity that strips out principal only. It is not a continuing figure. Still unknown:
+
+CFO_disc;
+where the 4.7 interest is classified and whether it recurs;
+cash timing of transition-service fees;
+cash and tax timing of redeploying the proceeds;
+capex attributable to Dockers.
+
+ASR. The January 200m buyback falls within the nine months but before Q3. It is out of CFO because it is classified as financing, not because of when it was paid.
+
+Defect ledger (first-pass failures kept on record)
+# First-pass error Correction
+F0 The first two generation attempts were blocked and produced no output. Recorded; nothing to correct.
+D1 Said the ASR was "paid before the period." It was within the nine months, before Q3. It is excluded because it is financing.
+D2 Split W, T and K as separate terms; W already contains tax and cost accruals, so they would be double counted. Retracted. Replaced by the single term R_disc.
+D3 Presented "627.6 − (N+W+T+K)" and later spoke of continuing CFO "near 627.6" or "at or below 585.2," which gave numerical and directional anchors. Retracted. Only 585.2 − UNKNOWN stands.
+D4 Claimed gross 96.3 proceeds "would conflict" with costs paid at closing. Retracted. Gross presentation can coexist with costs to sell paid separately through operating cash. The disclosure does not establish how the costs were settled.
+D5 Said non-cash items were "plausibly small" and that the wording "supports" most capex being continuing. Retracted as numerical inference. "No other significant" is qualitative only. It sets no bound on Dockers' working-capital, tax or residual investing items.
+D6 Said the 57.1 classification was unknown, and included it in the evidence request. Corrected: it is CFO per the separately inspected MD&A. Removed from the request.
+D7 Hedged that the income table might not cover nine months. Removed. The table is nine months.
+D8 The 16.3 add-back test relied partly on the D4 conflict. Restated: adding back 16.3 is invalid because whether it was paid or accrued in the period is unknown. Any accrual already sits in R_disc.
+What remains useful
+The identities: 96.3 − 62.7 = 33.6; 33.6 − 16.3 = 17.3; −23.8 − 2.9 = −26.7; −26.7 + 17.3 = −9.4; −9.4 + 0.6 = −8.8.
+The adjustment is −33.6 rather than −17.3, so the 16.3 costs to sell stay in net income.
+The shortcuts still fail:
+Subtracting 96.3: the proceeds are investing cash, never in CFO.
+Adding 8.8: it is an accrual figure that already contains a gain which has been reversed.
+Adding back 16.3: settlement in the period is unknown.
+The smallest evidence request is unchanged: net cash from operating activities of discontinued operations, nine months ended 30 August 2026. Without it, the fallback is Dockers' changes in operating assets and liabilities plus deferred tax for the same period.
+Disposition
+Accept: the identities, the accrual shell, and the classification facts above.
+Withhold: any continuing CFO, continuing free cash flow, or recurring owner cash figure or direction, until CFO_disc is obtained.
+
+This gives no view on current liquidity, valuation or entry.
