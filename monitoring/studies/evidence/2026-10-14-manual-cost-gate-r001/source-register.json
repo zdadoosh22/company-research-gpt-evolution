@@ -1,0 +1,113 @@
+[
+  {
+    "name": "t212-fractional",
+    "url": "https://helpcentre.trading212.com/hc/en-us/articles/9511997937437-Can-I-trade-with-fractional-shares",
+    "final_url": "https://helpcentre.trading212.com/hc/en-us/articles/9511997937437-Can-I-trade-with-fractional-shares",
+    "retrieved_at_utc": "2026-10-14T13:29:46.996021+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-fractional-7ac28dc762f8b83e6edf894920ac8922f5a4f8bc21b3985ba5699beda2240084.html",
+    "sha256": "7ac28dc762f8b83e6edf894920ac8922f5a4f8bc21b3985ba5699beda2240084",
+    "bytes": 32853,
+    "derived_path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-fractional-derived.txt",
+    "representation": "HTTP HTML original and text-only extraction; not rendered visual inspection"
+  },
+  {
+    "name": "t212-fx",
+    "url": "https://helpcentre.trading212.com/hc/en-us/articles/360018909758-What-is-the-FX-fee-Invest-Stocks-ISA",
+    "final_url": "https://helpcentre.trading212.com/hc/en-us/articles/360018909758-What-is-the-FX-fee-Invest-Stocks-ISA",
+    "retrieved_at_utc": "2026-10-14T13:29:46.997470+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-fx-0c794311a627164361905f758257c5be8fe6731dddfa36c1e2b2ccc59e3d1c12.html",
+    "sha256": "0c794311a627164361905f758257c5be8fe6731dddfa36c1e2b2ccc59e3d1c12",
+    "bytes": 28821,
+    "derived_path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-fx-derived.txt",
+    "representation": "HTTP HTML original and text-only extraction; not rendered visual inspection"
+  },
+  {
+    "name": "t212-fees",
+    "url": "https://helpcentre.trading212.com/hc/en-us/articles/11471996799517-What-are-the-fees-in-the-Invest-ISAs-and-SIPP",
+    "final_url": "https://helpcentre.trading212.com/hc/en-us/articles/11471996799517-What-are-the-fees-in-the-Invest-ISAs-and-SIPP",
+    "retrieved_at_utc": "2026-10-14T13:29:46.998512+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-fees-e0d2aca18059621d8e494956d075798bcb2508f07a63dce39757720a13df30c3.html",
+    "sha256": "e0d2aca18059621d8e494956d075798bcb2508f07a63dce39757720a13df30c3",
+    "bytes": 27451,
+    "derived_path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-fees-derived.txt",
+    "representation": "HTTP HTML original and text-only extraction; not rendered visual inspection"
+  },
+  {
+    "name": "t212-currency",
+    "url": "https://helpcentre.trading212.com/hc/en-us/articles/34159237080861-Can-I-choose-the-currency-in-which-to-buy-sell-assets-for-Invest-accounts",
+    "final_url": "https://helpcentre.trading212.com/hc/en-us/articles/34159237080861-Can-I-choose-the-currency-in-which-to-buy-sell-assets-for-Invest-accounts",
+    "retrieved_at_utc": "2026-10-14T13:29:46.999514+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-currency-9656a7603105af94d07ddfe46b61c0f961972f2ded43a850d88296f25737d5ef.html",
+    "sha256": "9656a7603105af94d07ddfe46b61c0f961972f2ded43a850d88296f25737d5ef",
+    "bytes": 29015,
+    "derived_path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-currency-derived.txt",
+    "representation": "HTTP HTML original and text-only extraction; not rendered visual inspection"
+  },
+  {
+    "name": "t212-expiry",
+    "url": "https://helpcentre.trading212.com/hc/en-us/articles/360008730977-Can-I-set-my-orders-to-expire",
+    "final_url": "https://helpcentre.trading212.com/hc/en-us/articles/360008730977-Can-I-set-my-orders-to-expire",
+    "retrieved_at_utc": "2026-10-14T13:29:47.611024+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-expiry-aa1d4d1f73c97f288cc863ea32ac6700a62eb027b746c6045ce977d86be3920d.html",
+    "sha256": "aa1d4d1f73c97f288cc863ea32ac6700a62eb027b746c6045ce977d86be3920d",
+    "bytes": 26249,
+    "derived_path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-expiry-derived.txt",
+    "representation": "HTTP HTML original and text-only extraction; not rendered visual inspection"
+  },
+  {
+    "name": "t212-stop-limit",
+    "url": "https://helpcentre.trading212.com/hc/en-us/articles/360007081297-Stop-Limit-Orders",
+    "final_url": "https://helpcentre.trading212.com/hc/en-us/articles/360007081297-Stop-Limit-Orders",
+    "retrieved_at_utc": "2026-10-14T13:29:47.633380+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-stop-limit-92fadbc9719e3d57549189c883c10b318276a6b43b8bb5c654877d30b37ca2ce.html",
+    "sha256": "92fadbc9719e3d57549189c883c10b318276a6b43b8bb5c654877d30b37ca2ce",
+    "bytes": 28380,
+    "derived_path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-stop-limit-derived.txt",
+    "representation": "HTTP HTML original and text-only extraction; not rendered visual inspection"
+  },
+  {
+    "name": "sec-section31",
+    "url": "https://www.sec.gov/rules-regulations/fee-rate-advisories/2026-2",
+    "retrieved_at_utc": "2026-10-14T13:29:47.655633+00:00",
+    "error": "HTTPError: HTTP Error 403: Forbidden",
+    "captured": false
+  },
+  {
+    "name": "finra-pause-notice",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-23/html/2026-19392.htm",
+    "final_url": "https://www.govinfo.gov/content/pkg/FR-2026-09-23/html/2026-19392.htm",
+    "retrieved_at_utc": "2026-10-14T13:29:47.662008+00:00",
+    "http_status": 200,
+    "content_type": "text/html",
+    "path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/finra-pause-notice-1a3b712d056d82421d2ee810c296c3ab88d50a3ab062ae696ab989b76847c46c.html",
+    "sha256": "1a3b712d056d82421d2ee810c296c3ab88d50a3ab062ae696ab989b76847c46c",
+    "bytes": 26324,
+    "derived_path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/finra-pause-notice-derived.txt",
+    "representation": "HTTP HTML original and text-only extraction; not rendered visual inspection"
+  },
+  {
+    "name": "finra-pause-status",
+    "url": "https://www.finra.org/rules-guidance/rule-filings/sr-finra-2026-021",
+    "final_url": "https://www.finra.org/rules-guidance/rule-filings/sr-finra-2026-021",
+    "retrieved_at_utc": "2026-10-14T13:29:47.739148+00:00",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/finra-pause-status-f11b3283584bda24caa8a97b3d0bd4af4d2212b5ba05be87ba08fd7a999ee8ad.html",
+    "sha256": "f11b3283584bda24caa8a97b3d0bd4af4d2212b5ba05be87ba08fd7a999ee8ad",
+    "bytes": 77013,
+    "derived_path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/finra-pause-status-derived.txt",
+    "representation": "HTTP HTML original and text-only extraction; not rendered visual inspection"
+  }
+]

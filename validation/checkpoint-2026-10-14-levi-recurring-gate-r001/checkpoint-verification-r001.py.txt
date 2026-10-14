@@ -1,0 +1,42 @@
+import datetime,hashlib,json,subprocess
+from pathlib import Path
+root=Path(r'C:\Users\aidan\Documents\Company research 2');out=root/'validation/checkpoint-2026-10-14-levi-recurring-gate-r001'
+baseline='2f13fdc72002c061e99ab27f741e687af0979f1b'
+def git(*a):return subprocess.check_output(['git',*a],cwd=root)
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+assert git('rev-parse','HEAD').decode().strip()==baseline
+assert not git('diff','--name-only').strip()
+rows=[r for r in git('ls-tree','-rz',baseline).split(b'\0') if r];assert len(rows)==786
+blobs=[(r.split(b'\t')[0].split()[2],r.split(b'\t')[1].decode()) for r in rows]
+raw=subprocess.run(['git','cat-file','--batch'],cwd=root,input=b'\n'.join(b for b,_ in blobs)+b'\n',capture_output=True,check=True).stdout
+pos=0
+for blob,name in blobs:
+ end=raw.index(b'\n',pos);size=int(raw[pos:end].split()[2]);assert (root/name).read_bytes()==raw[end+1:end+1+size],name;pos=end+size+2
+manifests=['validation/levi-recurring-demand-review-input-2026-10-14-r001.json','validation/levi-continuing-cash-review-input-2026-10-13-r001.json','validation/uber-new-disclosure-review-input-2026-10-14-r001.json']
+checks=[]
+for name in manifests:
+ m=json.loads((root/name).read_text());matches=0
+ for row in m['files']:
+  assert sha(root/row['path'])==row['sha256'],row['path'];matches+=1
+ checks.append(dict(path=name,sha256=sha(root/name),files_unchanged=matches))
+assert checks[0]['sha256']=='89a209afe54be8c87813f4171b66eb2089d78a6018a77ba8b86d2d349c2a27cc'
+method=json.loads((root/'methodology/current.json').read_text());assert method['version']=='1.0.0';assert sha(root/method['file'])==method['sha256']
+assert json.loads((root/'monitoring/config.json').read_text())['research_enabled'] is False
+assert sha(root/'tools/observation_monitor.py')=='450a4d492071e02fd81f4eb85638bfd040b2fcbd613909cf3135705e8737afb0'
+setup=json.loads((root/'validation/checkpoint-2026-10-13-external-assistants-r001/setup-evidence.json').read_text())
+bio=Path(r'C:\Users\aidan\Documents\Codex\2026-10-03\read-over-the-biologival-sciences-project')
+for row in setup['biological_inspected_files']:assert sha(bio/row['path'])==row['sha256']
+register=json.loads((root/'monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/source-register.json').read_text());captured=0
+for row in register:
+ if 'path' in row:assert sha(root/row['path'])==row['sha256'];captured+=1
+assert captured==8
+terms=json.loads((root/'monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/terms-source-register.json').read_text());assert sha(root/terms['path'])==terms['sha256']
+initial=json.loads((out/'cost-math-results-r001.json').read_text());follow=json.loads((out/'cost-followup-results-r002.json').read_text());assert initial['checks_passed']==17 and follow['checks_passed']==7
+from decimal import Decimal as D
+quote='starting on April 4, 2026, the fee rates applicable to most securities transactions will be set at $20.60 per million dollars.'
+assert len(quote.split())==21
+assert 'RD-01' in (root/'monitoring/studies/2026-10-14-levi-recurring-demand-clarification-r002.md').read_text()
+report=dict(verified_at_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),baseline_commit=baseline,predecessor_raw_files_identical=786,frozen_manifests=checks,approved_methodology_unchanged=True,monitor_unchanged=True,research_enabled=False,biological_files_unchanged=len(setup['biological_inspected_files']),cost_original_HTML_hashes_verified=captured,cost_original_PDF_hash_verified=True,cost_final_checks=24,scope='Preservation, source integrity and reported test consistency only; no investment readiness or full engineering suite')
+p=out/'preservation-verification-r001.json';assert not p.exists();p.write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+(out/'checkpoint-verification-r001.py.txt').write_bytes(Path(__file__).read_bytes())
+print(json.dumps(report))

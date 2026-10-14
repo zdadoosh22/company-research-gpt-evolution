@@ -1,0 +1,6 @@
+{
+  "checks_passed_before_failure": 4,
+  "failed_check": "Reference-rate product formula independent of reciprocal notation",
+  "cause": "Exact Decimal equality compared equivalent expressions rounded in different operation order at precision40. Harness precision assertion defect, not evidence of a broker or economic-model defect.",
+  "repair": "Use an explicit absolute GBP tolerance of 1e-30 for this rational identity; other exact dimensional/inequality checks unchanged."
+}

@@ -1,0 +1,46 @@
+"""Offline dimensional illustrations only. No prices, fills, broker or production adapter."""
+from decimal import Decimal as D, getcontext
+from pathlib import Path
+import json, datetime
+getcontext().prec=40
+root=Path(r'C:\Users\aidan\Documents\Company research 2')
+out=root/'validation/checkpoint-2026-10-14-levi-recurring-gate-r001'
+f=D('0.0015'); tests=[]
+def check(name, condition):
+ assert condition,name
+ tests.append(name)
+def gbp_price(price,currency):
+ if currency=='GBP':return price
+ if currency=='GBX':return price/100
+ raise ValueError('Explicit FX rate required for foreign currency')
+def buy_cost(q,p,r):return q*p/(r*(1-f))
+def sell_proceeds(q,p,r):return q*p/(r*(1+f))
+check('FX published buy-rate example',D('1.40')*(1-f)==D('1.3979'))
+check('FX published sell-rate example',D('1.41')*(1+f)==D('1.412115'))
+check('SEC dollars per million to fraction',D('20.60')/D('1000000')==D('0.0000206'))
+check('SEC fraction to percentage',D('0.0000206')*100==D('0.00206'))
+check('SEC fraction to basis points',D('0.0000206')*10000==D('0.206'))
+check('USD100 sale regulatory illustration USD0.00206',D('100')*D('0.0000206')==D('0.00206'))
+check('GBP versus pence same price',gbp_price(D('1234'),'GBX')==gbp_price(D('12.34'),'GBP'))
+try:gbp_price(D('12.34'),'USD');rejected=False
+except ValueError:rejected=True
+check('No silent foreign-currency conversion',rejected)
+q=D('2.5');p=D('40');r=D('1.25');ratio=(1+f)/(1-f)
+check('Same reference FX flat-price loss',sell_proceeds(q,p,r)<buy_cost(q,p,r))
+check('Break-even exact oriented FX equation',abs(sell_proceeds(q,p*ratio,r)-buy_cost(q,p,r))<D('1e-30'))
+check('GBP strengthening reduces GBP sale proceeds',sell_proceeds(q,p,r*D('1.05'))<sell_proceeds(q,p,r))
+check('GBP weakening increases GBP sale proceeds',sell_proceeds(q,p,r*D('0.95'))>sell_proceeds(q,p,r))
+check('Price gain does not guarantee GBP gain',sell_proceeds(q,p*D('1.02'),r*D('1.05'))<buy_cost(q,p,r))
+check('Fractional USD quantity shares identity',D('0.1')*D('200')==D('20'))
+check('Hypothetical reservation does not overspend maximum',buy_cost(D('100')*r*(1-f)/p,p,r)==D('100'))
+check('No-fee GBP commission illustration is not spread assumption',D('1')*D('100')-D('1')*D('99.8')==D('0.2'))
+factor=(1-f)/(1+f)
+check('Ten hypothetical zero-return cycles compound FX drag',factor**10<factor<1)
+record={'verified_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'checks_passed':len(tests),'checks':tests,
+ 'illustrations':{'static_reference_fx_fee_only_break_even_percent':str((ratio-1)*100),'ten_flat_price_static_reference_fx_cycles_remaining_percent':str(factor**10*100)},
+ 'assumptions':'Hypothetical constant reference FX, oriented rate convention from broker example; no FX spread, equity spread, taxes, other fees, rounding, slippage, dividends or price changes unless specifically tested.',
+ 'limitations':'Dimensional/algebra consistency only. Not a broker charge estimate, executable sizing interface, paper fill, forecast, return hurdle or investment performance. Actual fee preview, currency units and account/security eligibility remain unverified.'}
+assert not (out/'cost-math-results-r001.json').exists()
+(out/'cost-math-results-r001.json').write_text(json.dumps(record,indent=2)+'\n',encoding='utf-8')
+(out/'cost-math-verification-r001.py.txt').write_bytes(Path(__file__).read_bytes())
+print(json.dumps(record))

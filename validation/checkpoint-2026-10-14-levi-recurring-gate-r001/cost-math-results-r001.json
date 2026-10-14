@@ -1,0 +1,29 @@
+{
+  "verified_at_utc": "2026-10-14T13:30:45.772732+00:00",
+  "checks_passed": 17,
+  "checks": [
+    "FX published buy-rate example",
+    "FX published sell-rate example",
+    "SEC dollars per million to fraction",
+    "SEC fraction to percentage",
+    "SEC fraction to basis points",
+    "USD100 sale regulatory illustration USD0.00206",
+    "GBP versus pence same price",
+    "No silent foreign-currency conversion",
+    "Same reference FX flat-price loss",
+    "Break-even exact oriented FX equation",
+    "GBP strengthening reduces GBP sale proceeds",
+    "GBP weakening increases GBP sale proceeds",
+    "Price gain does not guarantee GBP gain",
+    "Fractional USD quantity shares identity",
+    "Hypothetical reservation does not overspend maximum",
+    "No-fee GBP commission illustration is not spread assumption",
+    "Ten hypothetical zero-return cycles compound FX drag"
+  ],
+  "illustrations": {
+    "static_reference_fx_fee_only_break_even_percent": "0.300450676014021031547320981472208312500",
+    "ten_flat_price_static_reference_fx_cycles_remaining_percent": "97.04455117134544404053256246953846380834"
+  },
+  "assumptions": "Hypothetical constant reference FX, oriented rate convention from broker example; no FX spread, equity spread, taxes, other fees, rounding, slippage, dividends or price changes unless specifically tested.",
+  "limitations": "Dimensional/algebra consistency only. Not a broker charge estimate, executable sizing interface, paper fill, forecast, return hurdle or investment performance. Actual fee preview, currency units and account/security eligibility remain unverified."
+}

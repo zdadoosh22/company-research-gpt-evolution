@@ -1,0 +1,400 @@
+Federal Register, Volume 91 Issue 183 (Wednesday, September 23, 2026)
+[Federal Register Volume 91, Number 183 (Wednesday, September 23, 2026)]
+[Notices]
+[Pages 60435-60438]
+From the Federal Register Online via the Government Publishing Office [www.gpo.gov]
+[FR Doc No: 2026-19392]
+-----------------------------------------------------------------------
+SECURITIES AND EXCHANGE COMMISSION
+[Release No. 34-106409; File No. SR-FINRA-2026-021]
+Self-Regulatory Organizations; Financial Industry Regulatory
+Authority, Inc.; Notice of Filing and Immediate Effectiveness of a
+Proposed Rule Change to Temporarily Pause Assessment of the Trading
+Activity Fee
+September 18, 2026.
+Pursuant to Section 19(b)(1) of the Securities Exchange Act of 1934
+(``Act'') \1\ and Rule 19b-4 thereunder,\2\ notice is hereby given that
+on September 15, 2026, the Financial Industry Regulatory Authority,
+Inc. (``FINRA'') filed with the Securities and Exchange Commission
+(``SEC'' or ``Commission'') the proposed rule change as described in
+Items I, II, and III below, which Items have been prepared by FINRA.
+FINRA has designated the proposed rule change as ``establishing or
+changing a due, fee or other charge'' under Section 19(b)(3)(A)(ii) of
+the Act \3\ and Rule 19b-4(f)(2) thereunder,\4\ which renders the
+proposal effective upon receipt of this filing by the Commission. The
+Commission is publishing this notice to solicit comments on the
+proposed rule change from interested persons.
+---------------------------------------------------------------------------
+\1\ 15 U.S.C. 78s(b)(1).
+\2\ 17 CFR 240.19b-4.
+\3\ 15 U.S.C. 78s(b)(3)(A)(ii).
+\4\ 17 CFR 240.19b-4(f)(2).
+---------------------------------------------------------------------------
+I. Self-Regulatory Organization's Statement of the Terms of Substance
+of the Proposed Rule Change
+FINRA is proposing to temporarily pause assessment of the Trading
+Activity Fee (``TAF'') for three months, for transactions from October
+1, 2026 through December 31, 2026.
+The text of the proposed rule change is available on FINRA's
+website at http://www.finra.org and at the principal office of FINRA.
+II. Self-Regulatory Organization's Statement of the Purpose of, and
+Statutory Basis for, the Proposed Rule Change
+In its filing with the Commission, FINRA included statements
+concerning the purpose of and basis for the proposed rule change and
+discussed any comments it received on the proposed rule change. The
+text of these statements may be examined at the places specified in
+Item IV below. FINRA has prepared summaries, set forth in sections A,
+B, and C below, of the most significant aspects of such statements.
+A. Self-Regulatory Organization's Statement of the Purpose of, and
+Statutory Basis for, the Proposed Rule Change
+1. Purpose
+As a private not-for-profit self-regulatory organization, FINRA
+receives no taxpayer funding and instead relies on a mix of fees to
+generate the revenues it relies upon to fund its regulatory mission.
+FINRA derives roughly two thirds of its revenues from three core
+regulatory fees: the Trading Activity Fee (TAF), Gross Income
+Assessment (GIA), and Personnel Assessment (PA).\5\ Each of these fees
+reflect one of the three critical components that drive FINRA's
+regulatory costs with respect to a particular member firm: (1) the
+firm's trading activity,\6\ (2) the size of the firm
+[[Page 60436]]
+measured by firm revenue, and (3) the number and role of persons
+registered with the firm. FINRA's fee structure is thus designed to
+seek recovery of costs in a manner that is allocated equitably among
+its large and diverse membership, and to collect a generally comparable
+amount of revenue from fees associated with each of these main
+components.\7\ The Commission has agreed that this longstanding fee
+structure is reasonable.\8\
+---------------------------------------------------------------------------
+\5\ See FINRA 2026 Annual Budget Summary, https://www.finra.org/sites/default/files/2026-04/2026-finra-annual-budget-summary.pdf
+(``2026 Budget Summary''). FINRA also derives approximately 25
+percent of its revenue from user fees, including registration fees
+and qualification fees. Id.
+\6\ The TAF is a transaction-based fee that is assessed monthly
+on firm trading activity in covered securities across all markets.
+As discussed below, firms may pass through these assessments to
+their customers. See infra note 27. FINRA initially adopted the TAF
+in 2002, modeled on the Commission's transaction-based Section 31
+fee. Subject to specified exemptions, the TAF is generally assessed
+on the sale of all exchange-listed securities wherever executed
+(except debt securities that are not TRACE-Eligible Securities),
+over-the-counter equity securities, security futures, TRACE-Eligible
+Securities (provided that the transaction is a Reportable TRACE
+Transaction), and all municipal securities subject to Municipal
+Securities Rulemaking Board reporting requirements. See FINRA By-
+Laws, Schedule A, Section 1(b). The proposed rule change would not
+change the scope of the TAF.
+\7\ See Securities Exchange Act Release No. 101696 (November 21,
+2024), 89 FR 93709, 93710 (November 27, 2024) (Notice of Filing and
+Immediate Effectiveness of File No. SR-FINRA-2024-019) (``2024 Fee
+Filing'').
+\8\ See, e.g., 2024 Fee Filing, supra note 7 at 93710. (``The
+Commission has historically agreed that this overall cost-based
+pricing structure `is reasonable in that it achieves a generally
+equitable impact across FINRA's membership and correlates the fees
+assessed to the regulatory services provided by FINRA.' '') (quoting
+Securities Exchange Act Release No. 61042 (November 20, 2009), 74 FR
+62616, 62620 (November 30, 2009) (Order Approving File No. SR-FINRA-
+2009-057)).
+---------------------------------------------------------------------------
+As set out in FINRA's public Financial Guiding Principles, FINRA
+targets break-even cash flows to appropriately fund its mission of
+protecting investors and promoting market integrity while facilitating
+vibrant capital markets.\9\ FINRA also relies on financial reserves to
+support its mission.\10\ FINRA actively monitors its reserves and takes
+appropriate action to address potential surpluses (reserve levels above
+target) or deficits (reserve levels below target).\11\ In recent years,
+FINRA's operating revenues have increased beyond target, driven by a
+combination of higher average daily trading volume (driving increased
+TAF collection) and higher member firm revenues (driving increased GIA
+collection), as well as the impact of the 2024 Fee Filing. At the same
+time, FINRA's expenses have been reduced, including an approximately
+ten percent budgeted expense reduction for 2026.\12\
+---------------------------------------------------------------------------
+\9\ FINRA's Financial Guiding Principles, https://www.finra.org/sites/default/files/finra_financial_guiding_principles_0.pdf.
+\10\ FINRA strives to maintain an appropriate level of reserves,
+which the FINRA Board of Governors has determined to be at least one
+year of expenditures. Information about FINRA's financial reserves
+is provided each year in FINRA's published annual financial reports.
+See FINRA Financial Reports and Policies, https://www.finra.org/about/annual-reports.
+\11\ See 2026 Budget Summary, supra note 5.
+\12\ See 2026 Budget Summary, supra note 5.
+---------------------------------------------------------------------------
+The proposed rule change is designed to address surplus TAF
+revenues for 2026 driven by higher trading volumes.\13\ FINRA projected
+a 2026 TAF budget of $438.6 million, anticipating that trading volumes
+would continue to be elevated following the then-record highs reached
+in 2025, albeit at a more moderate pace.\14\ However, year-to-date
+trading volumes for the first and second quarter of 2026 have exceeded
+2025 actuals for the same period, resulting in TAF revenues that are
+projected to exceed the budgeted amount for 2026. In response, the
+proposed rule change is intended to reduce TAF 2026 revenues that are
+projected to exceed 2026 expectations because of higher-than-
+anticipated trading activity, consistent with the approach described in
+the 2024 Fee Filing and with FINRA's Financial Guiding Principles.
+---------------------------------------------------------------------------
+\13\ In addition to the temporary TAF fee holiday proposed
+herein, FINRA has recently filed a proposed rule change to postpone
+for two years implementation of the remaining fee increases adopted
+in the 2024 Fee Filing. See SR-FINRA-2026-020.
+\14\ See 2026 Budget Summary, supra note 5.
+---------------------------------------------------------------------------
+Specifically, FINRA is proposing to temporarily pause TAF revenue
+collection for transactions from October 1, 2026 through December 31,
+2026. For transactions during the three-month period of October,
+November, and December 2026, the TAF rates set forth in Section 1 of
+Schedule A to the FINRA By-Laws would temporarily be set at $0.00 and
+monthly invoices would reflect a $0.00 TAF assessment.\15\ During this
+period, members would, however, continue to report their monthly
+aggregate trading volumes in accordance with Section 1(b)(4) of
+Schedule A to the FINRA By-Laws.\16\ Beginning with January 2027
+transactions, the previous TAF fee rates will resume, with normal
+invoicing commencing in February 2027 (for January transactions).\17\
+---------------------------------------------------------------------------
+\15\ FINRA understands from members that structuring the rule
+change to establish TAF fee rates of $0.00 simplifies processes for
+members whose procedures provide for the systemic application of a
+fee rate across covered securities on a monthly basis.
+\16\ Section 1(b)(4) of Schedule A to the FINRA By-Laws requires
+members to report to FINRA the ``aggregate share, bond, contract,
+and/or round turn volume of sales of covered securities in a manner
+as prescribed by FINRA from time to time.'' Continued reporting of
+this transaction information regarding covered securities will
+provide FINRA with valuable insight into the fee amounts that
+otherwise would have been assessed for future financial planning
+purposes.
+\17\ See SR-FINRA-2026-020.
+---------------------------------------------------------------------------
+FINRA has filed the proposed rule change for immediate
+effectiveness. The effective date and the implementation date will be
+the date of filing. The proposed rule change would temporarily pause
+assessment of the TAF for three months, from October 1, 2026 through
+December 31, 2026, with TAF assessment resuming on January 1, 2027.\18\
+---------------------------------------------------------------------------
+\18\ The proposed rule change was filed after FINRA filed SR-
+FINRA-2026-020, which maintains TAF rates at their current levels
+through December 31, 2028. Accordingly, the text of the proposed
+rule change in Exhibit 5, available on FINRA's website at https://www.finra.org, reflects the TAF rates returning to their current
+levels as of January 1, 2027.
+---------------------------------------------------------------------------
+2. Statutory Basis
+FINRA believes that the proposed rule change is consistent with the
+provisions of Section 15A(b)(5) of the Act,\19\ which requires, among
+other things, that FINRA rules provide for the equitable allocation of
+reasonable dues, fees, and other charges among members and issuers and
+other persons using any facility or system that FINRA operates or
+controls. FINRA further believes that the proposed rule change is
+consistent with the provisions of Section 15A(b)(6) of the Act,\20\
+which requires, among other things, that FINRA rules are not designed
+to permit unfair discrimination between customers, issuers, brokers, or
+dealers.
+---------------------------------------------------------------------------
+\19\ 15 U.S.C. 78o-3(b)(5).
+\20\ 15 U.S.C 78o-3(b)(6).
+---------------------------------------------------------------------------
+As stated in the 2024 Fee Filing, FINRA's core regulatory fees as
+well as select use-based fees are designed to allow FINRA to balance
+its cash flow sources, operating expenses and capital expenditures, and
+stabilize its financial reserves in a manner consistent with FINRA's
+public Financial Guiding Principles.\21\ Because the proposed rule
+change is designed to address a surplus of TAF revenues resulting from
+increased trading volumes, FINRA believes that the proposed rule change
+would maintain the equitable allocation of reasonable fees under
+FINRA's existing, longstanding fee structure and is consistent with
+FINRA's Financial Guiding Principles. The proposed rule change also
+would apply on equal terms to all members that otherwise would have
+been subject to the TAF during the period, and therefore will preserve
+the same equitable and not unfairly discriminatory fee allocation that
+has long served as the foundation for FINRA's funding model and has
+been approved by the Commission.
+---------------------------------------------------------------------------
+\21\ See 2024 Fee Filing, supra note 7; see also FINRA's
+Financial Guiding Principles, supra note 9.
+---------------------------------------------------------------------------
+B. Self-Regulatory Organization's Statement on Burden on Competition
+FINRA does not believe that the proposed rule change will result in
+any burden on competition that is not necessary or appropriate in
+furtherance of the purposes of the Act.
+[[Page 60437]]
+Economic Impact Assessment
+FINRA has undertaken an economic impact assessment, as set forth
+below, to analyze the potential economic impacts, including anticipated
+costs, benefits, and distributional and competitive effects, relative
+to the current baseline, and the alternatives FINRA considered in
+assessing how to best meet its regulatory objectives.
+Regulatory Need
+As discussed above, FINRA has determined to provide a TAF fee
+holiday for the fourth quarter of 2026 during which the TAF fee rate
+will be zero. The temporary fee rate is a result of net income that has
+exceeded projections, due primarily to higher-than-expected trading
+activity,\22\ and informed by FINRA's anticipated reduced expenses for
+fiscal year 2026.
+---------------------------------------------------------------------------
+\22\ Equity TAF-eligible average daily volume was 10.5 billion
+in 2025, a 32% increase from 2024 levels. Equity TAF-eligible
+average daily volume was 11.4 billion in the first six months of
+2026, a 44% increase from 2024 average daily volume.
+---------------------------------------------------------------------------
+Economic Baseline
+The baseline for the proposed rule change includes FINRA's costs
+and revenues, the current schedule of fees assessed by FINRA, and the
+direct and indirect allocation of TAF fees across members, associated
+persons, third parties, and investors.
+FINRA funds its regulatory and other related activities primarily
+through a combination of regulatory fees and use-based fees. Regulatory
+fee revenues, such as the TAF, GIA, PA, and Branch Office Assessment,
+represented about 60% of FINRA's 2025 operating revenues.\23\ FINRA
+estimates that approximately 186 member firms submitted TAF reports
+during the first six months of 2026.\24\ FINRA estimates that the TAF
+fees that would be waived under the proposed rule change amount to
+approximately $160 million.
+---------------------------------------------------------------------------
+\23\ See FINRA 2025 Annual Financial Report, https://www.finra.org/sites/default/files/2026-07/2025-finra-annual-financial-report.pdf.
+\24\ While this estimate reflects the number of member firms
+that submitted TAF reports, many clearing firms pass through TAF
+fees to the broader group of executing brokers on whose trades the
+TAF is assessed. See, e.g., FINRA's Trading Activity Fee Frequently
+Asked Questions 100.6 and 100.13, available at https://www.finra.org/rules-guidance/guidance/faqs/trading-activity-fee.
+---------------------------------------------------------------------------
+Economic Impact
+FINRA assessed whether seasonal variations in trading might affect
+the allocation of savings to firms under the proposal. Based on
+historical TAF fees from January 2023 to June 2026, FINRA found that
+fourth-quarter TAF activity does not differ meaningfully from other
+quarters.\25\ The proposed rule change is designed to maintain the
+current distribution of TAF fees allocated across firms by the amount
+of TAF reported. Based on FINRA's historical TAF fees by firm from
+January 2023 to June 2026, approximately 98% of TAF fees were reported
+by the top one-third of firms in terms of reported TAF fees, 1.9% by
+the middle one-third, and 0.1% by the remaining one-third. To project
+the fourth quarter 2026 distribution, FINRA applied historical fourth
+quarter averages. Without the proposed rule change, the top, middle,
+and bottom thirds of firms are anticipated to account for 98%, 1.9%,
+and 0.1% of TAF fees collected, respectively. Therefore, the allocation
+of fee savings across reporting firms is essentially the same as the
+allocation of fees paid through the first nine months of year. The fee
+holiday is thus not expected to materially alter the allocation of the
+TAF fee burden over the full year, as intended by the proposed rule
+change.
+---------------------------------------------------------------------------
+\25\ The average monthly TAF fees for the fourth quarter of the
+year are 1.75% less than the average monthly TAF fees over the
+entire year, which is less than a quarter of the standard deviation
+below the whole sample average. The coefficient of variation for
+monthly TAF fees is 7.70%.
+---------------------------------------------------------------------------
+Individual firm savings would depend upon reportable trading that
+will occur during the fee holiday period, and FINRA recognizes that the
+level of trading activity may vary substantially across firms based on
+their business model and customers. FINRA estimates that, based on the
+number of TAF reporting firms in the baseline, about 1.08% of TAF
+reporting firms have historically reported zero TAF fees for the fourth
+quarter of the year with positive TAF fees for the rest of the year.
+FINRA does not believe the proposed TAF fee holiday is likely to
+have a significant impact on trading behavior, as TAF represents a
+small portion of the average costs of transactions. FINRA estimates
+that the current equity TAF fee rate of 0.0195 cents per share
+represents roughly 5% of total broker-dealer execution costs (assuming
+that the fees are not passed through to the end user),\26\ or about 1%
+of the transaction costs to the end investor (assuming that the fees
+are passed through to the end investor).
+---------------------------------------------------------------------------
+\26\ The calculation does not consider direct employee costs or
+overhead. Part of broker-dealer execution costs is exchange/venue
+costs, which are highly variable and can only be estimated roughly.
+We also have to make rough estimates of some other costs to broker-
+dealers as they are priced in dollars per million dollars of
+transactions, not per share.
+---------------------------------------------------------------------------
+All core regulatory fees mentioned above are assessed directly to
+members. FINRA understands that many members shift at least some of the
+fees to other parties. For instance, it is common practice among
+clearing firms to ``pass-through'' the TAF to the underlying firm
+executing the trade. Further, FINRA understands that executing firms
+commonly pass the TAF directly on to their customers submitting
+orders.\27\ Typically, TAF pass-through fees are reflected in the
+confirmation statement received by customers. FINRA understands that
+there may be differences in this practice across firms depending on
+each firm's business model. Competitive markets for the provision of
+brokerage and related financial intermediation services, along with
+difficulty in allocating certain fees to specific transactions, can
+limit the extent to which TAF can be passed-through. To the extent that
+member firms pass TAF fees directly on to counterparties or customers,
+there would be no material savings to firms from the fee holiday,
+although there may be small costs to adjust systems to reflect the
+temporary TAF rate of $0.00. Alternatively, the TAF holiday may benefit
+member firms directly, and whether their customers accrue any of those
+savings depends on individual firm practices and competitive
+conditions.
+---------------------------------------------------------------------------
+\27\ FINRA conducted a prior study of a sample of members, which
+included approximately 25 retail investor-focused broker-dealers and
+approximately 15 institutional investor-focused broker-dealers, to
+better understand practices of TAF pass through. The research found
+that the majority of the retail focused firms did pass through the
+TAF to their customers. FINRA does not know the full extent of this
+practice across all members. See 2024 Fee Filing, supra note 7, 89
+FR 93709, 93727 n.112.
+---------------------------------------------------------------------------
+FINRA does not anticipate that the proposed rule change will unduly
+impact competition among members. The proposed rule change is designed
+to maintain the relative allocation of fees across its core regulatory
+fees and select use-based fees. Firms will continue to report their
+monthly aggregate trading volumes; however, implementation of the
+proposed rule change may require minimal incremental costs for firms.
+Alternatives Considered
+No other alternatives were considered for the proposed rule change.
+C. Self-Regulatory Organization's Statement on Comments on the Proposed
+Rule Change Received from Members, Participants, or Others
+Written comments were neither solicited nor received.
+III. Date of Effectiveness of the Proposed Rule Change and Timing for
+Commission Action
+The foregoing rule change has become effective pursuant to Section
+19(b)(3)(A)
+[[Page 60438]]
+of the Act \28\ and paragraph (f)(2) of Rule 19b-4 thereunder.\29\ At
+any time within 60 days of the filing of the proposed rule change, the
+Commission summarily may temporarily suspend such rule change if it
+appears to the Commission that such action is necessary or appropriate
+in the public interest, for the protection of investors, or otherwise
+in furtherance of the purposes of the Act. If the Commission takes such
+action, the Commission shall institute proceedings to determine whether
+the proposed rule should be approved or disapproved.
+---------------------------------------------------------------------------
+\28\ 15 U.S.C. 78s(b)(3)(A).
+\29\ 17 CFR 240.19b-4(f)(2).
+---------------------------------------------------------------------------
+IV. Solicitation of Comments
+Interested persons are invited to submit written data, views and
+arguments concerning the foregoing, including whether the proposed rule
+change is consistent with the Act. Comments may be submitted by any of
+the following methods:
+Electronic Comments
+Use the Commission's internet comment form (http://www.sec.gov/rules/sro.shtml); or
+Send an email to [email protected]. Please include
+File Number SR-FINRA-2026-021 on the subject line.
+Paper Comments
+Send paper comments in triplicate to Secretary, Securities
+and Exchange Commission, 100 F Street NE, Washington, DC 20549-1090.
+All submissions should refer to File Number SR-FINRA-2026-021. This
+file number should be included on the subject line if email is used. To
+help the Commission process and review your comments more efficiently,
+please use only one method. The Commission will post all comments on
+the Commission's internet website (http://www.sec.gov/rules/sro.shtml).
+Copies of the filing will be available for inspection and copying at
+the principal office of FINRA. Do not include personal identifiable
+information in submissions; you should submit only information that you
+wish to make available publicly. We may redact in part or withhold
+entirely from publication submitted material that is obscene or subject
+to copyright protection. All submissions should refer to File Number
+SR-FINRA-2026-021 and should be submitted on or before October 14,
+2026.
+For the Commission, by the Division of Trading and Markets,
+pursuant to delegated authority.\30\
+---------------------------------------------------------------------------
+\30\ 17 CFR 200.30-3(a)(12).
+---------------------------------------------------------------------------
+Sherry R. Haywood,
+Assistant Secretary.
+[FR Doc. 2026-19392 Filed 9-22-26; 8:45 am]
+BILLING CODE 8011-01-P

@@ -1,0 +1,56 @@
+Can I choose the currency in which to buy/sell assets for Invest accounts? – Trading 212
+Skip to main content
+Home
+Trading 212
+Invest & Trade
+General Information
+Articles in this section
+Which of my instruments are still held in custody by Trading 212 Markets Ltd.?
+Can I choose the currency in which to buy/sell assets for Invest accounts?
+Understanding Return and Cost
+Can I move shares between my Trading 212 accounts?
+What is an interbank rate?
+Do you offer ETF data I can check?
+What are the risks of extended hours trading?
+24/5 Trading - Invest & Stocks ISA
+What is a multi-currency account?
+Appropriateness assessment test in Invest/ISA/SIPP
+See more
+Can I choose the currency in which to buy/sell assets for Invest accounts?
+With the Trading 212 Invest account, you have the flexibility to choose which currency you use for your trades. This allows you to manage your funds more efficiently and reduce costs.
+📄 Note
+When investing, your capital is at risk. A FX fee applies when converting funds. Other fees may apply.
+How do I select the currency for my order?
+Open the instrument you wish to trade.
+Tap Buy or Sell.
+On the order screen, tap on the currency displayed next to the price.
+Select your preferred currency from the list.
+Can I set a default currency for my trades?
+Yes. You can set a default currency to make placing orders quicker and easier.
+To set a default currency for your trades:
+Tap ☰.
+Select Settings.
+Select Currency options.
+Are there any limitations?
+Pies & AutoInvest: Currently, Pies support only your account’s primary currency. If a Pie contains assets denominated in a different currency, an automatic conversion will take place and the standard FX fee will apply.
+ISA and CFD accounts: Multi-currency order selection is available only for Invest accounts. ISA and CFD accounts use the primary account currency for all transactions.
+Was this article helpful?
+❤️
+👎
+Related articles
+Understanding Return and Cost
+What is a multi-currency account?
+What is the FX fee? (Invest & Stocks ISA)
+How do I create a Trading 212 account?
+Why can I not trade stocks during a halt?
+When investing, your capital is at risk and you may get back less than invested. Past performance doesn’t guarantee future results.
+CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 77% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+Trading 212 is a trading name of Trading 212 UK Ltd., Trading 212 Markets Ltd., Trading 212 AU PTY LTD, Trading 212 EU GmbH, and Trading 212 Ltd.
+Trading 212 UK Ltd. is registered in England and Wales (Company number 8590005). Registered address: Aldermary House, 10-15 Queen Street, London, EC4N 1TX. Trading 212 UK Ltd. is authorised and regulated by the Financial Conduct Authority (Firm reference number 609146).
+Trading 212 Ltd. is registered in Bulgaria (Company number 201659500). Registered address: 3 Lachezar Stanchev str., floor 10, 1797 Sofia, Bulgaria. Trading 212 Ltd. is authorised and regulated by the Financial Supervision Commission (License number RG-03-0237).
+Trading 212 EU GmbH is registered in Germany (Company number HRB 101710). Registered address: Bahnstraße 47, 40878 Ratingen, Germany. Trading 212 EU GmbH is authorised and regulated by the German Federal Financial Supervisory Authority (BaFin) (BaFin ID number 10109603).
+Trading 212 Markets Ltd. is registered in Cyprus (HE 409763). Registered address: 1, Ayias Fylaxeos str., 2nd floor, Office 1, 3025, Limassol, Cyprus. Trading 212 Markets Ltd. is authorised and regulated by the Cyprus Securities and Exchange Commission (License number 398/21).
+Trading 212 AU PTY LTD is registered in Australia (ABN 46 660 342 763). Registered address: Suite 102, 151 Clarence Street SYDNEY NSW 2000. Trading 212 AU PTY LTD is authorised and regulated by the Australian Securities and Investments Commission (AFSL 541122).
+The information on this site is not directed at residents of the United States and Canada, and is not intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.
+English (United States)
+Deutsch (Deutschland)

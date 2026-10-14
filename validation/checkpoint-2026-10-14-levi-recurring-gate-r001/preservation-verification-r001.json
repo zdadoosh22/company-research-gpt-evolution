@@ -1,0 +1,30 @@
+{
+  "verified_at_utc": "2026-10-14T13:40:17.076638+00:00",
+  "baseline_commit": "2f13fdc72002c061e99ab27f741e687af0979f1b",
+  "predecessor_raw_files_identical": 786,
+  "frozen_manifests": [
+    {
+      "path": "validation/levi-recurring-demand-review-input-2026-10-14-r001.json",
+      "sha256": "89a209afe54be8c87813f4171b66eb2089d78a6018a77ba8b86d2d349c2a27cc",
+      "files_unchanged": 11
+    },
+    {
+      "path": "validation/levi-continuing-cash-review-input-2026-10-13-r001.json",
+      "sha256": "b68431d794b25986f4e95944691c192e0048da941335dded950daf0f4a56b2c6",
+      "files_unchanged": 12
+    },
+    {
+      "path": "validation/uber-new-disclosure-review-input-2026-10-14-r001.json",
+      "sha256": "c6e196ec9e09eb2c925cd6627ee336eca605c7085176e91cbf83159506230148",
+      "files_unchanged": 14
+    }
+  ],
+  "approved_methodology_unchanged": true,
+  "monitor_unchanged": true,
+  "research_enabled": false,
+  "biological_files_unchanged": 5,
+  "cost_original_HTML_hashes_verified": 8,
+  "cost_original_PDF_hash_verified": true,
+  "cost_final_checks": 24,
+  "scope": "Preservation, source integrity and reported test consistency only; no investment readiness or full engineering suite"
+}

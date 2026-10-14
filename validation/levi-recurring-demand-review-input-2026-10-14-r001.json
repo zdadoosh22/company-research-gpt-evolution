@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-10-14T13:16:57.508550+00:00",
+  "scope": "New source-section/recurring-demand feasibility challenge; no repeat closed cash/model calculations, forecast or entry acceptance",
+  "files": [
+    {
+      "path": "monitoring/studies/2026-10-14-levi-recurring-demand-gate-r001.md",
+      "sha256": "717da127e2dd91a05ff29d5cd14033a359260ac819c5b77c84bb5e4408ccdcbf",
+      "bytes": 5548
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-14-levi-recurring-gate-r001/q3-10q-original-derived.txt",
+      "sha256": "87e5881a7303ac9da40c78bb3c0c0c1a8f811824aa49d8d60e183abb9a03d295",
+      "bytes": 237908
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-14-levi-recurring-gate-r001/q3-release-original-derived.txt",
+      "sha256": "13cfda128df5febab41458fcd8825d963aca0c6ab62d8079ad8faf534ab2e745",
+      "bytes": 65743
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-14-levi-recurring-gate-r001/mdna-extraction-register.json",
+      "sha256": "aaa5a82679bee7acefc85736d5d89204aaedf6de5c813e2ed383e72d90f9b8d3",
+      "bytes": 593
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-14-levi-recurring-gate-r001/extraction-register.json",
+      "sha256": "06619e56145d32bc771f35be41a9472dce2767e1f195e51664f6d1138d43874b",
+      "bytes": 599
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-12-levi-cash-timing-r001/10q-33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700.html",
+      "sha256": "33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700",
+      "bytes": 2509155
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-12-recent-results-originals-r001/levi-q3-482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36.html",
+      "sha256": "482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36",
+      "bytes": 647001
+    },
+    {
+      "path": "monitoring/decisions/2026-10-13-levi-continuing-cash-disposition-r001.md",
+      "sha256": "718084cd4b60529638fcc77cba7b150d8fc287b7cea5a6f94ec02c0d648798d1",
+      "bytes": 1396
+    },
+    {
+      "path": "monitoring/decisions/2026-10-12-recent-results-disposition-r001.md",
+      "sha256": "75bca1d98651d4a1bfd7aa350f398767b7a67f63bdfb2a575012583add94e607",
+      "bytes": 1442
+    },
+    {
+      "path": "validation/checkpoint-2026-10-14-levi-recurring-gate-r001/EVIDENCE-PACKET.md",
+      "sha256": "06650d38228ae8c59aa4e679ce218f4ae2b5f04c89d3e0572d666dc0680fa1ab",
+      "bytes": 3506
+    },
+    {
+      "path": "validation/checkpoint-2026-10-14-levi-recurring-gate-r001/external-criticisms-disposition-r001.md",
+      "sha256": "90b7e657df9d998b4664a2a211cac564d427c38a0fe0c69be142b7905d1dde72",
+      "bytes": 3205
+    }
+  ]
+}

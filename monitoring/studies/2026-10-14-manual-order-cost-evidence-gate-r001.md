@@ -1,0 +1,41 @@
+# Manual order and cost evidence gate
+
+Cutoff: 14 October 2026. Public documentation inspection only; no broker/account access, orders, paper fills or portfolio-rule changes. This operational evidence cannot establish company value, an edge or a trading recommendation. Actual security eligibility, account currency/entity and broker cost preview remain unverified.
+
+## Source versions and access
+
+Eight original HTML responses and derived text are retained with retrieval timestamps, URLs, hashes and bytes in `evidence/2026-10-14-manual-cost-gate-r001/source-register.json`. All eight returned HTTP 200 through the public capture route. SEC's separate direct capture returned 403; the advisory and advisory index were successfully read through the web tool. Do not describe the SEC page as a locally archived original. Its web-tool excerpt is separately labelled in the checkpoint. Broker help pages did not expose a reliable publication/effective timestamp in the inspected article body; retrieval date is not publication date. Text inspection is not rendered visual or account verification.
+
+The current public [UK Invest Terms](https://www.trading212.com/legal-documentation/uk/invest/Invest-Terms_EN.pdf) were additionally captured with SHA-256 `0d896dfc03bf658d73edfe040458b2439cec14ff59954660d62426fc66e7010b`. Only PDF pages 19–22 / clauses 12–13 were extracted and inspected. No complete-document read, acceptance of terms or confirmation that this version governs the user's account is claimed.
+
+## Supported mechanics and limits
+
+[Fractional shares](https://helpcentre.trading212.com/hc/en-us/articles/9511997937437-Can-I-trade-with-fractional-shares): broker documentation supports fractional market/limit/stop/stop-limit orders for most Invest/ISA instruments. Pending fractional orders require **number of shares**, not a cash-value instruction. Specific eligible instruments, minimums, precision and reservations must be checked later. The broker describes internal fractional execution without an added spread and references exchange bid/offer: this does not eliminate the underlying market bid/ask difference. Whole-share regulatory/tax costs can also apply to fractions.
+
+[ISA currency](https://helpcentre.trading212.com/hc/en-us/articles/34159237080861-Can-I-choose-the-currency-in-which-to-buy-sell-assets-for-Invest-accounts): currency selection is an Invest feature; ISA transactions use the primary account currency. An Invest USD cash-retention strategy cannot simply be assumed for this ISA.
+
+[FX guidance](https://helpcentre.trading212.com/hc/en-us/articles/360018909758-What-is-the-FX-fee-Invest-Stocks-ISA): the published 0.15% conversion fee applies to foreign-currency buys/sells. Its example adjusts GBP/USD rates down on buying and up on selling. The review-order page exposes the fee; corporate-event dividends have no such FX fee under this guidance. Currency-rate orientation matters; do not silently invert a rate or add the fee twice.
+
+[Expiry](https://helpcentre.trading212.com/hc/en-us/articles/360008730977-Can-I-set-my-orders-to-expire): pending Invest/ISA orders have end-of-day expiry at midnight in the exchange timezone, or remain until fill/manual cancellation. Alert expiry is a different record and cannot cancel a broker order. [Stop-limit](https://helpcentre.trading212.com/hc/en-us/articles/360007081297-Stop-Limit-Orders): activation creates a limit order; a gap outside the limit can leave it pending. Limits constrain price, not completion. No specific standing sell rule is adopted.
+
+## Fee units and conflicting versions
+
+[Broker fees](https://helpcentre.trading212.com/hc/en-us/articles/11471996799517-What-are-the-fees-in-the-Invest-ISAs-and-SIPP) lists free commission/custody, FX 0.15%, applicable LSE purchase tax 0.5% with exemptions, £1.50 PTM above £10,000, and eligible French purchase tax 0.4%. It lists SEC sell fees with unclear units and FINRA at USD0.000195 per share. These summaries are not a security-specific tax determination; no retail rounding/minimum policy is established.
+
+[SEC advisory, 27 February 2026](https://www.sec.gov/rules-regulations/fee-rate-advisories/2026-2) specifies USD20.60 per million covered sales from 4 April charge dates, lasting until its defined appropriation-related transition. This is fraction 0.0000206, percentage 0.00206%, or 0.206 basis points, **not** fraction 0.00206. The [advisory index](https://www.sec.gov/rules-regulations/fee-rate-advisories) still identifies this Section 31 advisory as latest; the newer FY2027 Section 6(b) filing fee is a different fee. Inference: the broker wording may omit percentage units; broker intent/pass-through is not independently confirmed.
+
+[Immediate-effectiveness notice, release 34-106409, 18 September; published 23 September](https://www.govinfo.gov/content/pkg/FR-2026-09-23/html/2026-19392.htm), corroborated by [FINRA's filing page](https://www.finra.org/rules-guidance/rule-filings/sr-finra-2026-021), specifies TAF rates zero for transactions 1 October–31 December 2026 and resumption 1 January 2027. This supersedes treating the ordinary 2026 per-share regulatory rate as universal at this cutoff. A filing titled proposed can be immediately effective; the notice states that explicitly. No exhaustive suspension/rescission search or account pass-through verification was performed. Preserve the discrepancy and require the current broker preview before accepting actual charges.
+
+## Offline consistency evidence and decision
+
+Seventeen dimensional/algebra checks passed in the checkpoint's archived harness. Under its explicit hypothetical constant reference FX and fee-only assumptions, round-trip price break-even is about 0.30045%; ten flat-price cycles retain about 97.04455%. These are illustrative friction, not expected performance, a forecast, chosen return hurdle or complete all-in estimate. Real FX movement, reference-rate spread, equity spread, taxes, rounding and partial execution can change the outcome.
+
+**Decision:** public mechanics are sufficient to design a later manual confirmation interface; exact executable sizing/cost acceptance remains parked until contemporaneous instrument/account/order-preview evidence is supplied. No need to connect a broker to inspect these public mechanics. Necessary later inputs: exact security/exchange/share-unit currency, quantity precision/eligibility, timestamped bid/ask and FX orientation, GBP maximum commitment including costs/buffer, available sleeve-only cash/shares, pending orders, expiry/timezone, and confirmed fills/cancellations. Manual-response delay and economic edge remain separate research requirements.
+
+## Standing buy orders and the isolated sleeve
+
+The inspected UK terms describe blocked funds / sufficient cash (12.4), partial fills (12.2), order value up to 95% of account Available Cash (12.7), and charges in the review window (12.9). The broker's account-level cash test is **not** a separate £300 sleeve safeguard where unrelated ISA cash exists. Do not import 95% as a chosen sleeve allocation rule or assume it guarantees settlement within the sleeve. The terms' negative-balance language reinforces why account cash cannot substitute for this project's separate maximum commitment.
+
+A share-price limit in USD plus fixed quantity does not mathematically fix GBP cost when conversion changes before execution. A later standing buy policy must address duration, fresh FX, cost/quantity buffers and cancellation/reconfirmation; no arbitrary buffer is adopted here. No claim is made about the broker's exact FX reservation/rejection implementation. Sell orders also need sleeve-owned quantity and pending-order reconciliation; an alert withdrawal cannot cancel them.
+
+Additional hypothetical FX/quantity checks are recorded separately after the initial 17-check harness. External Opus criticism corroborated the narrow fee-only algebra but supplied no source access. Its statements that every ISA trade incurs FX, and that the published two reference rates definitely are not a bid/ask pair, are not accepted: currency matching and actual reference-rate semantics matter. Its generic buy-at-ask/sell-at-bid claim does not describe every resting limit execution. No actual large-value preview or probe trade is requested merely to distinguish tiny fee-formula differences.

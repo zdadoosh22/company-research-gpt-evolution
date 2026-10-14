@@ -1,0 +1,21 @@
+from decimal import Decimal as D,getcontext
+from pathlib import Path
+import json,datetime
+getcontext().prec=40
+root=Path(r'C:\Users\aidan\Documents\Company research 2');out=root/'validation/checkpoint-2026-10-14-levi-recurring-gate-r001'
+f=D('.0015');cap=D('100');p=D('40');r0=D('1.25');q=cap*r0*(1-f)/p
+cost=lambda quantity,price,usd_per_gbp:quantity*price/(usd_per_gbp*(1-f))
+tests=[]
+def check(name,c):assert c,name;tests.append(name)
+check('Limit-share-price held constant while GBP cap breached by FX',cost(q,p,D('1.10'))>cap)
+check('Lower USD execution price can still breach GBP cap',cost(q,p*D('.99'),D('1.10'))>cap)
+check('FX fee not double-counted when effective rate already supplied',q*p/(r0*(1-f))==cost(q,p,r0))
+fx_spread_factor=(D('1.40')/D('1.41'))*((1-f)/(1+f))
+check('Illustrative distinct reference rates increase loss beyond fee-only',fx_spread_factor<(1-f)/(1+f))
+check('Reference-rate product formula independent of reciprocal notation',abs(D('100')*(D('1.40')*(1-f))/(D('1.41')*(1+f))-D('100')*fx_spread_factor)<D('1e-30'))
+filled=q*D('.4');pending=q-filled
+check('Partial fill leaves positive residual quantity, not acknowledgement fill',filled+pending==q and pending>0)
+check('Account-level cash sufficiency cannot enforce smaller sleeve',cost(q,p,D('1.10'))<D('1000') and cost(q,p,D('1.10'))>cap)
+record={'verified_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'checks_passed':len(tests),'checks':tests,'hypothetical_example':{'initial_GBP_cap':str(cap),'USD_limit_price':str(p),'reference_USD_per_GBP_initial':str(r0),'quantity':str(q),'reference_USD_per_GBP_later':str(D('1.10')),'later_GBP_cost':str(cost(q,p,D('1.10')))},'scope':'Offline arithmetic and counterexample only, no actual price, broker reservation implementation, paper fill, allocated position or forecast. Source reference rates are hypothetical pairs, not certified bid/ask semantics.'}
+path=out/'cost-followup-results-r002.json';assert not path.exists();path.write_text(json.dumps(record,indent=2)+'\n',encoding='utf-8')
+(out/'cost-followup-verification-r002.py.txt').write_bytes(Path(__file__).read_bytes());print(json.dumps(record))

@@ -1,0 +1,42 @@
+Can I set my orders to expire? – Trading 212
+Skip to main content
+Home
+Trading 212
+Invest & Trade
+Orders
+Articles in this section
+Market Orders
+Stop Orders
+Limit Orders
+Stop Limit Orders
+What are pre-listing orders for IPOs?
+Limit vs. Stop orders
+Trade Transaction Corrections
+Why is my pending order still not executed?
+Value orders vs. Number of shares
+Why is my market order still not executed?
+See more
+Can I set my orders to expire?
+Yes. When setting a pending order (Stop, Limit or Stop-Limit) on the Invest or Stocks ISA, you have two options for setting an expiration:
+End of day: The order will automatically expire if not executed by midnight in the time zone of the exchange where the stock is traded.
+Never: The order will remain pending unless it is filled or cancelled by yourself.
+Was this article helpful?
+❤️
+👎
+Related articles
+How to cancel a pending order?
+Limit vs. Stop orders
+Why is my market order still not executed?
+Value orders vs. Number of shares
+Take Profit and Stop Loss Orders
+When investing, your capital is at risk and you may get back less than invested. Past performance doesn’t guarantee future results.
+CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 77% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+Trading 212 is a trading name of Trading 212 UK Ltd., Trading 212 Markets Ltd., Trading 212 AU PTY LTD, Trading 212 EU GmbH, and Trading 212 Ltd.
+Trading 212 UK Ltd. is registered in England and Wales (Company number 8590005). Registered address: Aldermary House, 10-15 Queen Street, London, EC4N 1TX. Trading 212 UK Ltd. is authorised and regulated by the Financial Conduct Authority (Firm reference number 609146).
+Trading 212 Ltd. is registered in Bulgaria (Company number 201659500). Registered address: 3 Lachezar Stanchev str., floor 10, 1797 Sofia, Bulgaria. Trading 212 Ltd. is authorised and regulated by the Financial Supervision Commission (License number RG-03-0237).
+Trading 212 EU GmbH is registered in Germany (Company number HRB 101710). Registered address: Bahnstraße 47, 40878 Ratingen, Germany. Trading 212 EU GmbH is authorised and regulated by the German Federal Financial Supervisory Authority (BaFin) (BaFin ID number 10109603).
+Trading 212 Markets Ltd. is registered in Cyprus (HE 409763). Registered address: 1, Ayias Fylaxeos str., 2nd floor, Office 1, 3025, Limassol, Cyprus. Trading 212 Markets Ltd. is authorised and regulated by the Cyprus Securities and Exchange Commission (License number 398/21).
+Trading 212 AU PTY LTD is registered in Australia (ABN 46 660 342 763). Registered address: Suite 102, 151 Clarence Street SYDNEY NSW 2000. Trading 212 AU PTY LTD is authorised and regulated by the Australian Securities and Investments Commission (AFSL 541122).
+The information on this site is not directed at residents of the United States and Canada, and is not intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.
+English (United States)
+Deutsch (Deutschland)

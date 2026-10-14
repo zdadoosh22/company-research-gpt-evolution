@@ -1,0 +1,76 @@
+Can I trade with fractional shares? – Trading 212
+Skip to main content
+Home
+Trading 212
+Invest & Trade
+General Information
+Articles in this section
+Which of my instruments are still held in custody by Trading 212 Markets Ltd.?
+Can I choose the currency in which to buy/sell assets for Invest accounts?
+Understanding Return and Cost
+Can I move shares between my Trading 212 accounts?
+What is an interbank rate?
+Do you offer ETF data I can check?
+What are the risks of extended hours trading?
+24/5 Trading - Invest & Stocks ISA
+What is a multi-currency account?
+Appropriateness assessment test in Invest/ISA/SIPP
+See more
+Can I trade with fractional shares?
+Yes, you can purchase and sell fractions of whole shares, also known as fractional shares. To accomplish this, you can modify the quantity of your order based on your personal preference.
+What are fractional shares? (Key info)
+Fractional shares are split up into portions of a whole share to represent ownership in a company. Their value goes up and down based on the whole share price. By trading fractional shares, investors can open positions with more expensive instruments without having to pay the total cost of a full share.
+💡 Example
+If you wish to buy shares in Company A, the price for one share is 200 USD. However, you can place an order for a fractional share of 0.1, which will cost only 20 USD. Also, if the stock goes up 10%, the value of your shares will also increase by 10%.
+When you own fractional shares, Trading 212 will always hold the relevant whole share for you and any other owners, divided according to each person's share.
+Any government or regulatory fees that apply to whole shares, like Stamp Duty, also apply to fractional shares in the same way.
+We guarantee the best execution for you by executing all fractional share orders internally and matching the price for whole shares on the reference exchange. No spread is applied.
+Which instruments offer fractional trading?
+Most instruments available on the Invest accounts and ISAs can be traded fractionally.
+Fractional Market, Limit, Stop and Stop Limit orders are all supported.
+You can check all available order types 👉 here.
+How to place an order for a fractional share?
+You can place a fractional order both by choosing the value you want to purchase or by manually typing in the fraction of the share you want to place an order for. When placing a pending order for fractional shares, you will only be able to set it by number of shares.
+Do fractional shares qualify for corporate actions?
+Yes.
+When you own fractional shares, you are entitled to:
+Dividends: You are entitled to receive dividends just as you would with whole shares. The payout is proportional to the fraction of the share you own rounded to the nearest penny. For example, if you own 0.5 Tesla shares and the company pays $10 per share, you will receive $5.
+Voting: You can exercise your voting rights proportionally based on the fraction of the share you own through Proxy Voting on behalf of all fractional share owners.
+Stock split: Your fractions will be treated as any other type of shares. Just as with whole shares, fractional shares are adjusted proportionally. For example, in a 2-for-1 stock split, every share you own is doubled. If you own 0.5 shares before the split, you will own 1 share after the split.
+What are the pros and cons of fractional shares?
+Pros
+You can make the most out of your investment allocation. No need to save up the full amount to buy a high-priced share.
+Diversification for the same amount of money across stocks and industries.
+Cons
+You can't transfer fractions to other brokers.
+💡 Example
+You have 100.5 Tesla shares. You can transfer 100 shares and will need to sell the 0.5 shares.
+Are there any fees for trading fractional shares?
+No. There are no extra fees for trading fractional shares. The only cost involved is a 0.15% foreign exchange fee, where applicable, which is the same as what you'd pay when dealing with whole shares.
+Disclosure
+We will comply with “best execution” on all fractional orders in compliance with regulatory requirements. Execution will be based on a price no worse than the prevailing bid/offer on the reference exchange at the time of your order for all full and fractional orders.
+Check the relevant disclosure notice based on your entity:
+Trading 212 Markets Ltd.
+Trading 212 UK Ltd.
+Trading 212 AU PTY Ltd.
+If you want to learn more about fractional shares, check out “The ultimate guide to fractional shares”.
+Was this article helpful?
+❤️
+👎
+Related articles
+How to sell my shares in the Invest or ISA account?
+Do I own my shares?
+Can you sell my shares without my permission?
+Why am I unable to sell my share? (”To sell this equity, you need to buy it first”)
+What is stock split and reverse stock split? (Invest/ISA)
+When investing, your capital is at risk and you may get back less than invested. Past performance doesn’t guarantee future results.
+CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 77% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+Trading 212 is a trading name of Trading 212 UK Ltd., Trading 212 Markets Ltd., Trading 212 AU PTY LTD, Trading 212 EU GmbH, and Trading 212 Ltd.
+Trading 212 UK Ltd. is registered in England and Wales (Company number 8590005). Registered address: Aldermary House, 10-15 Queen Street, London, EC4N 1TX. Trading 212 UK Ltd. is authorised and regulated by the Financial Conduct Authority (Firm reference number 609146).
+Trading 212 Ltd. is registered in Bulgaria (Company number 201659500). Registered address: 3 Lachezar Stanchev str., floor 10, 1797 Sofia, Bulgaria. Trading 212 Ltd. is authorised and regulated by the Financial Supervision Commission (License number RG-03-0237).
+Trading 212 EU GmbH is registered in Germany (Company number HRB 101710). Registered address: Bahnstraße 47, 40878 Ratingen, Germany. Trading 212 EU GmbH is authorised and regulated by the German Federal Financial Supervisory Authority (BaFin) (BaFin ID number 10109603).
+Trading 212 Markets Ltd. is registered in Cyprus (HE 409763). Registered address: 1, Ayias Fylaxeos str., 2nd floor, Office 1, 3025, Limassol, Cyprus. Trading 212 Markets Ltd. is authorised and regulated by the Cyprus Securities and Exchange Commission (License number 398/21).
+Trading 212 AU PTY LTD is registered in Australia (ABN 46 660 342 763). Registered address: Suite 102, 151 Clarence Street SYDNEY NSW 2000. Trading 212 AU PTY LTD is authorised and regulated by the Australian Securities and Investments Commission (AFSL 541122).
+The information on this site is not directed at residents of the United States and Canada, and is not intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.
+English (United States)
+Deutsch (Deutschland)

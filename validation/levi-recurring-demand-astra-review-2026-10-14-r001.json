@@ -1,0 +1,222 @@
+{
+  "review_id": "levi-recurring-demand-astra-review-2026-10-14-r001",
+  "created_at_utc": "2026-10-14T13:25:14.956165+00:00",
+  "status": "completed_with_nonblocking_corrections",
+  "requested_dispatched_route": "Astra High (as supplied in task)",
+  "backend_model_identity": "not independently exposed or verified",
+  "effective_reasoning_identity": "not independently exposed or verified",
+  "independent_delegated_challenge_performed": true,
+  "scope": "New recurring-demand source-section evidence gate only; preserve closed cash, receipt and diagnostic challenges",
+  "manifest": {
+    "path": "validation/levi-recurring-demand-review-input-2026-10-14-r001.json",
+    "expected_sha256": "89a209afe54be8c87813f4171b66eb2089d78a6018a77ba8b86d2d349c2a27cc",
+    "actual_sha256": "89a209afe54be8c87813f4171b66eb2089d78a6018a77ba8b86d2d349c2a27cc",
+    "file_count": 11,
+    "all_hashes_and_sizes_match": true
+  },
+  "verified_files": [
+    {
+      "path": "monitoring/studies/2026-10-14-levi-recurring-demand-gate-r001.md",
+      "expected_sha256": "717da127e2dd91a05ff29d5cd14033a359260ac819c5b77c84bb5e4408ccdcbf",
+      "actual_sha256": "717da127e2dd91a05ff29d5cd14033a359260ac819c5b77c84bb5e4408ccdcbf",
+      "expected_bytes": 5548,
+      "actual_bytes": 5548,
+      "match": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-14-levi-recurring-gate-r001/q3-10q-original-derived.txt",
+      "expected_sha256": "87e5881a7303ac9da40c78bb3c0c0c1a8f811824aa49d8d60e183abb9a03d295",
+      "actual_sha256": "87e5881a7303ac9da40c78bb3c0c0c1a8f811824aa49d8d60e183abb9a03d295",
+      "expected_bytes": 237908,
+      "actual_bytes": 237908,
+      "match": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-14-levi-recurring-gate-r001/q3-release-original-derived.txt",
+      "expected_sha256": "13cfda128df5febab41458fcd8825d963aca0c6ab62d8079ad8faf534ab2e745",
+      "actual_sha256": "13cfda128df5febab41458fcd8825d963aca0c6ab62d8079ad8faf534ab2e745",
+      "expected_bytes": 65743,
+      "actual_bytes": 65743,
+      "match": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-14-levi-recurring-gate-r001/mdna-extraction-register.json",
+      "expected_sha256": "aaa5a82679bee7acefc85736d5d89204aaedf6de5c813e2ed383e72d90f9b8d3",
+      "actual_sha256": "aaa5a82679bee7acefc85736d5d89204aaedf6de5c813e2ed383e72d90f9b8d3",
+      "expected_bytes": 593,
+      "actual_bytes": 593,
+      "match": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-14-levi-recurring-gate-r001/extraction-register.json",
+      "expected_sha256": "06619e56145d32bc771f35be41a9472dce2767e1f195e51664f6d1138d43874b",
+      "actual_sha256": "06619e56145d32bc771f35be41a9472dce2767e1f195e51664f6d1138d43874b",
+      "expected_bytes": 599,
+      "actual_bytes": 599,
+      "match": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-12-levi-cash-timing-r001/10q-33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700.html",
+      "expected_sha256": "33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700",
+      "actual_sha256": "33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700",
+      "expected_bytes": 2509155,
+      "actual_bytes": 2509155,
+      "match": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-12-recent-results-originals-r001/levi-q3-482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36.html",
+      "expected_sha256": "482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36",
+      "actual_sha256": "482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36",
+      "expected_bytes": 647001,
+      "actual_bytes": 647001,
+      "match": true
+    },
+    {
+      "path": "monitoring/decisions/2026-10-13-levi-continuing-cash-disposition-r001.md",
+      "expected_sha256": "718084cd4b60529638fcc77cba7b150d8fc287b7cea5a6f94ec02c0d648798d1",
+      "actual_sha256": "718084cd4b60529638fcc77cba7b150d8fc287b7cea5a6f94ec02c0d648798d1",
+      "expected_bytes": 1396,
+      "actual_bytes": 1396,
+      "match": true
+    },
+    {
+      "path": "monitoring/decisions/2026-10-12-recent-results-disposition-r001.md",
+      "expected_sha256": "75bca1d98651d4a1bfd7aa350f398767b7a67f63bdfb2a575012583add94e607",
+      "actual_sha256": "75bca1d98651d4a1bfd7aa350f398767b7a67f63bdfb2a575012583add94e607",
+      "expected_bytes": 1442,
+      "actual_bytes": 1442,
+      "match": true
+    },
+    {
+      "path": "validation/checkpoint-2026-10-14-levi-recurring-gate-r001/EVIDENCE-PACKET.md",
+      "expected_sha256": "06650d38228ae8c59aa4e679ce218f4ae2b5f04c89d3e0572d666dc0680fa1ab",
+      "actual_sha256": "06650d38228ae8c59aa4e679ce218f4ae2b5f04c89d3e0572d666dc0680fa1ab",
+      "expected_bytes": 3506,
+      "actual_bytes": 3506,
+      "match": true
+    },
+    {
+      "path": "validation/checkpoint-2026-10-14-levi-recurring-gate-r001/external-criticisms-disposition-r001.md",
+      "expected_sha256": "90b7e657df9d998b4664a2a211cac564d427c38a0fe0c69be142b7905d1dde72",
+      "actual_sha256": "90b7e657df9d998b4664a2a211cac564d427c38a0fe0c69be142b7905d1dde72",
+      "expected_bytes": 3205,
+      "actual_bytes": 3205,
+      "match": true
+    }
+  ],
+  "methodology": {
+    "version": "1.0.0",
+    "path": "methodology/company-research-v1.0.0.md",
+    "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+    "unchanged": true
+  },
+  "source_read": {
+    "representation": "Retained original HTML independently parsed with BeautifulSoup; relevant text and original release table structure inspected; frozen derived-text lines cross-checked",
+    "fresh_network_capture": false,
+    "visual_browser_or_pdf_validation": false,
+    "whole_filing_validation": false,
+    "original_html_sha256": [
+      "33cc70914b298e0f98182f153a8c2a30ffb66211a15364c76f5641549b2b4700",
+      "482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36"
+    ],
+    "ten_q_sections": [
+      "Note 1 Revenue Recognition and adjacent scope",
+      "MD&A Overview channel weights",
+      "MD&A Americas/Europe/Asia/Beyond Yoga",
+      "MD&A Net revenues by channel Wholesale and DTC",
+      "MD&A Levi’s brand and Signature"
+    ],
+    "release_sections": [
+      "Dated heading; CEO/CFO remarks",
+      "Financial highlights and channel growth",
+      "Q3 refund/redeployment footnotes",
+      "Original DTC comparable-sales table and prior-year footnote",
+      "Fiscal 2026 Guidance table and limitations",
+      "Key Metrics DTC Comparable sales growth"
+    ],
+    "ten_q_derived_line_locations": [
+      366,
+      1007,
+      1135,
+      1136,
+      1137,
+      1138,
+      1139,
+      1142,
+      1143,
+      1144,
+      1145,
+      1146,
+      1147,
+      1148,
+      1149,
+      1150,
+      1151
+    ],
+    "release_derived_line_locations": "217-236; 475-511; 520",
+    "filing_publication_date_live_verified": false
+  },
+  "findings": [
+    {
+      "id": "RD-01",
+      "severity": "medium",
+      "type": "omitted_contrary_evidence",
+      "blocking_for_retained_park": false,
+      "required_before_unqualified_evidence_gate_acceptance": true,
+      "location": "Gate item 4 and Useful hypothesis; original 10-Q MD&A Net revenues by channel / Wholesale, Europe and Asia; derived lines 1139, 1144, 1147",
+      "finding": "The gate states the Americas Q3 price/volume weakness explicitly but leaves favorable regional evidence as unspecified distinctions and omits the explicit global Q3 wholesale price-and-volume attribution. This underweights directly available contrary evidence around the price-only wholesale phrase. It is an incompleteness defect, not proof that the gate expressly asserts global volume decline.",
+      "evidence": "Global Q3 wholesale growth is attributed to price increases and higher volumes. Europe Q3 wholesale growth is attributed to higher volumes. Asia Q3 DTC growth includes store performance and expansion and higher ecommerce revenues primarily due to higher demand.",
+      "required_correction": "In the parent disposition or a new non-destructive revision, explicitly retain these favorable source attributions next to the Americas Q3 slight volume decrease. Limit price-led wholesale characterization to the identified regional/brand scope and period. Do not infer a global unit-growth rate or promotional ROI.",
+      "decision_effect": "Retain positive-entry park; neither favorable nor adverse regional descriptions establish durable incremental profitability from redeployment."
+    },
+    {
+      "id": "RD-02",
+      "severity": "low",
+      "type": "definition_precision",
+      "blocking_for_retained_park": false,
+      "required_before_unqualified_evidence_gate_acceptance": true,
+      "location": "Gate item 2; evidence packet DTC definition; original release Key Metrics / DTC Comparable sales growth; derived release line 520",
+      "finding": "The comparable metric is explicitly for the Levi’s brand existing eligible company-owned store base and owned digital channels. The gate correctly refuses the inferred store comp, but its generic eligible-comparable wording does not expose this additional brand/sample mismatch with aggregate reported ecommerce and channel weights.",
+      "evidence": "Release Key Metrics identifies the Levi’s brand, eligible stores open at least 12 full fiscal months, portfolio/calendar adjustments and constant currency. The 10-Q Overview weights are aggregate first-nine-month reported weights.",
+      "required_correction": "Record Levi’s-brand sample scope explicitly; a weighted-growth decomposition would require matching period, currency, brand/eligibility and prior-period eligible revenue weights. The current 23%/22% YTD and 45% Q3 total-DTC shares cannot supply that denominator.",
+      "decision_effect": "Strengthens the existing refusal to compute physical-store comps; no numeric reopening is needed."
+    }
+  ],
+  "severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 1,
+    "low": 1
+  },
+  "decision": {
+    "positive_entry_park": "retain",
+    "recurring_demand_or_earnings_established": false,
+    "new_facts_support": "Bounded hypothesis and clearer evidence gap, with explicit favorable regional/global qualifications",
+    "frozen_note_unqualified_completeness_accepted": false,
+    "required_parent_action": "Record RD-01 and RD-02 in a non-destructive parent disposition or new revision; preserve frozen inputs",
+    "forecast_valuation_recommendation_or_portfolio_authority": false
+  },
+  "conceptual_checks": {
+    "item_specific_tax_and_continuing_scope": "sound",
+    "period_consistent_weighted_diluted_claims": "required; no current claims schedule verified",
+    "net_vs_gross_refund_addback_logic": "sound; no old diagnostics recalculated",
+    "fy_guide_vs_q3_eps_comparison": "insufficient to establish recurring downgrade",
+    "ordinary_cash_dividend_share_count_claim": "correctly rejects mechanical share reduction",
+    "different_quarter_tax_rates_alone_invalidate_eps_sum": false
+  },
+  "closed_reviews_reopened": false,
+  "old_diagnostics_recomputed": false,
+  "unreviewed_limitations": [
+    "No fresh source retrieval or subsequent-disclosure completeness check",
+    "No independent issuer authenticity or full-filing visual validation",
+    "No independent demand/industry/customer or causal ROI evidence",
+    "No actual Q4 results or FY2027 cost recurrence verified",
+    "No current price, consensus, valuation, claims underwriting or return calculation",
+    "No operational ledger, broker/cash, account, monitoring or portfolio acceptance"
+  ],
+  "writes_authorized_only": [
+    "validation/levi-recurring-demand-astra-review-2026-10-14-r001.md",
+    "validation/levi-recurring-demand-astra-review-2026-10-14-r001.json"
+  ],
+  "markdown_sha256": "218bfe11a9877674461f7aa8352b2acc8be67be29c6e4bb7c3d1107cebdbcc63"
+}

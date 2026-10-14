@@ -1,0 +1,8 @@
+{
+  "extracted_at": "2026-10-14T12:50:01.371963+00:00",
+  "original_path": "monitoring/studies/evidence/2026-10-12-recent-results-originals-r001/levi-q3-482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36.html",
+  "original_sha256": "482e9dd7be29d4b0605922b1a231960ecd3e67a1ce360f32db75f82b9c3dae36",
+  "derived_path": "monitoring/studies/evidence/2026-10-14-levi-recurring-gate-r001/q3-release-original-derived.txt",
+  "source_read_scope": "Original retained HTML; derived text preserves table-cell separators but is not visual PDF inspection",
+  "new_source_capture": false
+}

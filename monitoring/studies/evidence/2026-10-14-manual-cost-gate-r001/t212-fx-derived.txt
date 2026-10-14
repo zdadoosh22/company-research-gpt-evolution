@@ -1,0 +1,59 @@
+What is the FX fee? (Invest & Stocks ISA) – Trading 212
+Skip to main content
+Home
+Trading 212
+Invest & Trade
+General Information
+Articles in this section
+Which of my instruments are still held in custody by Trading 212 Markets Ltd.?
+Can I choose the currency in which to buy/sell assets for Invest accounts?
+Understanding Return and Cost
+Can I move shares between my Trading 212 accounts?
+What is an interbank rate?
+Do you offer ETF data I can check?
+What are the risks of extended hours trading?
+24/5 Trading - Invest & Stocks ISA
+What is a multi-currency account?
+Appropriateness assessment test in Invest/ISA/SIPP
+See more
+What is the FX fee? (Invest & Stocks ISA)
+When executing an order with an instrument in a different currency, the value of the trade will be converted to the stock’s currency using the spot exchange rate + 0.15% FX fee.
+💡 Example (GBP/USD Spot Rate: 1.4000/1.4100)
+Order
+Direction of the spot rate
+Calculation
+FX conversion rate
+Buy
+Sell
+1.40 - [(0.15 / 100) * 1.40]
+1.3979
+Sell
+Buy
+1.41 + [(0.15 / 100) * 1.41]
+1.412115
+Can I check the amount I will pay as an FX fee?
+Yes, it will be listed on the Review Order page before you submit your order. 👇
+Do I have to pay the fee for orders in a pie?
+Yes. If you buy or sell instruments in a pie that are in another currency, you will still pay the 0.15% fee.
+Do I have to pay the fee for the dividends I receive?
+No. The FX fee does not apply for payments arising from corporate events such as dividends.
+Was this article helpful?
+❤️
+👎
+Related articles
+What are the fees in the Invest, ISAs, and SIPP?
+Do I own my shares?
+Can I transfer my ISA from another bank or provider to Trading 212?
+How to sell my shares in the Invest or ISA account?
+Why can I not trade stocks during a halt?
+When investing, your capital is at risk and you may get back less than invested. Past performance doesn’t guarantee future results.
+CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 77% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.
+Trading 212 is a trading name of Trading 212 UK Ltd., Trading 212 Markets Ltd., Trading 212 AU PTY LTD, Trading 212 EU GmbH, and Trading 212 Ltd.
+Trading 212 UK Ltd. is registered in England and Wales (Company number 8590005). Registered address: Aldermary House, 10-15 Queen Street, London, EC4N 1TX. Trading 212 UK Ltd. is authorised and regulated by the Financial Conduct Authority (Firm reference number 609146).
+Trading 212 Ltd. is registered in Bulgaria (Company number 201659500). Registered address: 3 Lachezar Stanchev str., floor 10, 1797 Sofia, Bulgaria. Trading 212 Ltd. is authorised and regulated by the Financial Supervision Commission (License number RG-03-0237).
+Trading 212 EU GmbH is registered in Germany (Company number HRB 101710). Registered address: Bahnstraße 47, 40878 Ratingen, Germany. Trading 212 EU GmbH is authorised and regulated by the German Federal Financial Supervisory Authority (BaFin) (BaFin ID number 10109603).
+Trading 212 Markets Ltd. is registered in Cyprus (HE 409763). Registered address: 1, Ayias Fylaxeos str., 2nd floor, Office 1, 3025, Limassol, Cyprus. Trading 212 Markets Ltd. is authorised and regulated by the Cyprus Securities and Exchange Commission (License number 398/21).
+Trading 212 AU PTY LTD is registered in Australia (ABN 46 660 342 763). Registered address: Suite 102, 151 Clarence Street SYDNEY NSW 2000. Trading 212 AU PTY LTD is authorised and regulated by the Australian Securities and Investments Commission (AFSL 541122).
+The information on this site is not directed at residents of the United States and Canada, and is not intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.
+English (United States)
+Deutsch (Deutschland)

@@ -1,0 +1,22 @@
+{
+  "verified_at_utc": "2026-10-14T13:37:35.011700+00:00",
+  "checks_passed": 7,
+  "checks": [
+    "Limit-share-price held constant while GBP cap breached by FX",
+    "Lower USD execution price can still breach GBP cap",
+    "FX fee not double-counted when effective rate already supplied",
+    "Illustrative distinct reference rates increase loss beyond fee-only",
+    "Reference-rate product formula independent of reciprocal notation",
+    "Partial fill leaves positive residual quantity, not acknowledgement fill",
+    "Account-level cash sufficiency cannot enforce smaller sleeve"
+  ],
+  "hypothetical_example": {
+    "initial_GBP_cap": "100",
+    "USD_limit_price": "40",
+    "reference_USD_per_GBP_initial": "1.25",
+    "quantity": "3.1203125",
+    "reference_USD_per_GBP_later": "1.10",
+    "later_GBP_cost": "113.6363636363636363636363636363636363636"
+  },
+  "scope": "Offline arithmetic and counterexample only, no actual price, broker reservation implementation, paper fill, allocated position or forecast. Source reference rates are hypothetical pairs, not certified bid/ask semantics."
+}

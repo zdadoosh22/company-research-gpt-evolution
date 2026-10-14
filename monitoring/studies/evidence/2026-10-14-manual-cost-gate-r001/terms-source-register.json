@@ -1,0 +1,18 @@
+{
+  "url": "https://www.trading212.com/legal-documentation/uk/invest/Invest-Terms_EN.pdf",
+  "final_url": "https://www.trading212.com/legal-documentation/uk/invest/Invest-Terms_EN.pdf",
+  "retrieved_at_utc": "2026-10-14T13:35:07.657122+00:00",
+  "http_status": 200,
+  "path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-uk-invest-terms-0d896dfc03bf658d73edfe040458b2439cec14ff59954660d62426fc66e7010b.pdf",
+  "sha256": "0d896dfc03bf658d73edfe040458b2439cec14ff59954660d62426fc66e7010b",
+  "bytes": 711931,
+  "total_pdf_pages": 56,
+  "actual_extracted_pages_1_based": [
+    19,
+    20,
+    21,
+    22
+  ],
+  "derived_path": "monitoring/studies/evidence/2026-10-14-manual-cost-gate-r001/t212-uk-invest-terms-pages19-22-derived.txt",
+  "scope": "Clauses12-13 text only; no whole-PDF read, rendered inspection, acceptance of terms or confirmation of user account applicability"
+}
