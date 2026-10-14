@@ -1,0 +1,34 @@
+{
+  "verified_at": "2026-10-14T13:42:17.045383+00:00",
+  "repository": "zdadoosh22/company-research-work",
+  "url": "https://github.com/zdadoosh22/company-research-work",
+  "repository_id": 1412109923,
+  "private": true,
+  "standalone": true,
+  "branch": "main",
+  "commit": "7d12f42de466f169bb19b3c610ba194b9aeb535d",
+  "tree_files": 837,
+  "all_blob_ids_match": true,
+  "critical_raw_byte_checks": [
+    {
+      "path": "validation/checkpoint-2026-10-14-levi-recurring-gate-r001/CHAT-HANDOFF-r001.md",
+      "sha256": "8254ffd4f0aedb4fc1fa3aa3d0c50da8b29afe188f3c74502cf3430c302f1cd0",
+      "bytes": 6517,
+      "match": true
+    },
+    {
+      "path": "validation/levi-recurring-demand-astra-review-2026-10-14-r001.md",
+      "sha256": "218bfe11a9877674461f7aa8352b2acc8be67be29c6e4bb7c3d1107cebdbcc63",
+      "bytes": 13696,
+      "match": true
+    },
+    {
+      "path": "monitoring/studies/2026-10-14-manual-order-cost-evidence-gate-r001.md",
+      "sha256": "56bfe3c817bbfabf88d59e0f287b6ff058fe584e854387f4779f9f4131010543",
+      "bytes": 8333,
+      "match": true
+    }
+  ],
+  "chat_plugin_access_retested": false,
+  "chat_access_basis": "User-confirmed established access; this verifier only checks publishing and does not challenge Chat access again"
+}
