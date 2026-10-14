@@ -1,0 +1,185 @@
+"""Offline RSS 2.0 item -> event parser (stdlib only, research prototype).
+All feed text is passive data: nothing is evaluated, no URL is fetched or
+resolved, and error messages never echo feed content (item index only).
+"""
+import hashlib
+import html
+import json
+import re
+import xml.etree.ElementTree as ET
+import xml.parsers.expat
+from datetime import timezone
+from email.utils import parsedate_to_datetime
+from urllib.parse import urlsplit, urlunsplit
+MAX_BYTES = 2 * 1024 * 1024
+MAX_ITEMS = 1000
+MAX_FIELD_CHARS = 200_000
+MAX_URL_CHARS = 2048
+SCHEMA = "rss-event-v1"
+DIGEST_SCHEMA = "rss-digest-v2"
+CONTENT_NS = "http://purl.org/rss/1.0/modules/content/"
+_SOURCE_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._:-]{0,127}")
+_TAG_RE = re.compile(r"</?[A-Za-z][A-Za-z0-9:-]*(?:\s[^<>]*)?/?>")
+_WS_RE = re.compile(r"\s+")
+_CTRL_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
+_BAD_URL_CHARS = re.compile(r"[\s\x00-\x1f\x7f]")
+class FeedError(ValueError):
+    """Any parse/validation failure. Never equivalent to an empty feed."""
+    def __init__(self, code, detail=""):
+        super().__init__(f"{code}: {detail}" if detail else code)
+        self.code = code
+        self.detail = detail
+def _reject_dtd(raw):
+    """Pre-pass with expat: refuse any DOCTYPE/ENTITY declaration; catch malformed XML."""
+    p = xml.parsers.expat.ParserCreate()
+    def deny(*_args):
+        raise FeedError("dtd_forbidden", "DOCTYPE/ENTITY declarations are not allowed")
+    p.StartDoctypeDeclHandler = deny
+    p.EntityDeclHandler = deny
+    p.UnparsedEntityDeclHandler = deny
+    p.ExternalEntityRefHandler = deny
+    try:
+        p.Parse(raw, True)
+    except xml.parsers.expat.ExpatError as exc:
+        raise FeedError("malformed_xml", f"line {exc.lineno} col {exc.offset}") from None
+def _split(tag):
+    if not isinstance(tag, str):
+        return None, None
+    if tag.startswith("{"):
+        ns, _, local = tag[1:].partition("}")
+        return ns, local
+    return "", tag
+def _children(parent, name):
+    return [c for c in parent if _split(c.tag)[1] == name]
+def _field(parent, name, idx, ns_req=None):
+    """Non-empty text of child <name>; un-namespaced preferred; differing repeats rejected."""
+    plain, spaced = [], []
+    for ch in parent:
+        ns, local = _split(ch.tag)
+        if local != name or (ns_req is not None and ns != ns_req):
+            continue
+        txt = "".join(ch.itertext())
+        if txt.strip():
+            (spaced if ns else plain).append(txt)
+    vals = plain or spaced
+    if len({v.strip() for v in vals}) > 1:
+        raise FeedError("ambiguous_field", f"item {idx}: differing <{name}> elements")
+    if vals and len(vals[0]) > MAX_FIELD_CHARS:
+        raise FeedError("field_too_long", f"item {idx}: <{name}>")
+    return vals[0] if vals else None
+def _norm_raw(text):
+    """XML-decoded text; no HTML unescape or tag stripping."""
+    return _WS_RE.sub(" ", _CTRL_RE.sub(" ", text or "")).strip()
+
+def _display_title(text):
+    """Passive text: consumers must not render this as HTML."""
+    return _norm_raw(html.unescape(_norm_raw(text)))
+
+def _meaningful(text):
+    return any(ch.isalnum() for ch in _TAG_RE.sub(" ", text))
+def _norm_url(text, idx):
+    s = html.unescape(text).strip()
+    if not s or len(s) > MAX_URL_CHARS or _BAD_URL_CHARS.search(s):
+        raise FeedError("invalid_link", f"item {idx}")
+    try:
+        parts = urlsplit(s)
+        port = parts.port
+    except ValueError:
+        raise FeedError("invalid_link", f"item {idx}") from None
+    scheme = parts.scheme.lower()
+    if scheme not in ("http", "https") or not parts.hostname:
+        raise FeedError("invalid_link", f"item {idx}: absolute http(s) URL required")
+    if parts.username is not None or parts.password is not None:
+        raise FeedError("invalid_link", f"item {idx}: credentials in URL")
+    host = parts.hostname  # already lower-cased by urllib
+    if ":" in host:
+        host = f"[{host}]"
+    if port is not None and (scheme, port) not in (("http", 80), ("https", 443)):
+        host = f"{host}:{port}"
+    return urlunsplit((scheme, host, parts.path or "/", parts.query, parts.fragment))
+def _utc(text, idx):
+    s = _WS_RE.sub(" ", html.unescape(text)).strip()
+    try:
+        dt = parsedate_to_datetime(s)
+        if dt is None:
+            raise ValueError
+        if dt.tzinfo is None:
+            # email.utils yields naive for "-0000" (UTC per RFC 5322) and for
+            # missing/unknown zones (ambiguous -> reject).
+            if not s.endswith("-0000"):
+                raise FeedError("ambiguous_timezone", f"item {idx}")
+            dt = dt.replace(tzinfo=timezone.utc)
+        dt = dt.astimezone(timezone.utc)
+    except (TypeError, ValueError, IndexError, OverflowError) as exc:
+        if isinstance(exc, FeedError):
+            raise
+        raise FeedError("invalid_date", f"item {idx}") from None
+    if not 1990 <= dt.year <= 2100:
+        raise FeedError("invalid_date", f"item {idx}: out of range")
+    return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+def _sha(obj):
+    data = json.dumps(obj, sort_keys=True, ensure_ascii=False, separators=(",", ":"))
+    return hashlib.sha256(data.encode("utf-8")).hexdigest()
+def _event(item, idx, source_id):
+    link = _field(item, "link", idx)
+    if link is None:
+        raise FeedError("missing_link", f"item {idx}")
+    url = _norm_url(link, idx)
+    date = _field(item, "pubDate", idx)
+    if date is None:
+        raise FeedError("missing_pubdate", f"item {idx}")
+    published = _utc(date, idx)
+    raw_title = _norm_raw(_field(item, "title", idx))
+    title = _display_title(raw_title)
+    if not _meaningful(title):
+        raise FeedError("missing_title", f"item {idx}: non-empty meaningful title required")
+    desc = _norm_raw(_field(item, "description", idx))
+    body = _norm_raw(_field(item, "encoded", idx, ns_req=CONTENT_NS))
+    digest = _sha({"v": DIGEST_SCHEMA, "title": raw_title, "description": desc,
+                   "content": body, "published_at": published})
+    return {
+        "stable_id": f"{source_id}:{_sha([SCHEMA, source_id, url])[:40]}",
+        "source_id": source_id,
+        "url": url,
+        "title": title,
+        "published_at": published,
+        "content_digest": f"sha256:{digest}",
+    }
+def parse_feed(raw: bytes, source_id: str) -> list:
+    """Parse one RSS 2.0 document. Raises FeedError on any failure.
+    Returns [] only for a structurally valid channel with zero items; that is
+    NOT evidence of deletion/withdrawal of previously seen events.
+    """
+    if not isinstance(raw, (bytes, bytearray)):
+        raise FeedError("bad_input_type", "bytes required")
+    if not isinstance(source_id, str) or not _SOURCE_RE.fullmatch(source_id):
+        raise FeedError("bad_source_id")
+    raw = bytes(raw)  # private immutable copy; caller's buffer never touched
+    if not raw.strip():
+        raise FeedError("empty_input")
+    if len(raw) > MAX_BYTES:
+        raise FeedError("oversize", f"{len(raw)} > {MAX_BYTES} bytes")
+    _reject_dtd(raw)
+    try:
+        root = ET.fromstring(raw)
+    except ET.ParseError:
+        raise FeedError("malformed_xml") from None
+    if _split(root.tag)[1] != "rss" or root.get("version") != "2.0":
+        raise FeedError("not_rss2", "root must be <rss version=\"2.0\">")
+    channels = _children(root, "channel")
+    if not channels:
+        raise FeedError("missing_channel")
+    if len(channels) > 1:
+        raise FeedError("multiple_channels")
+    items = _children(channels[0], "item")
+    if len(items) > MAX_ITEMS:
+        raise FeedError("too_many_items", f"{len(items)} > {MAX_ITEMS}")
+    by_url = {}
+    for idx, item in enumerate(items):
+        ev = _event(item, idx, source_id)
+        prev = by_url.get(ev["url"])
+        if prev is None:
+            by_url[ev["url"]] = ev
+        elif prev["content_digest"] != ev["content_digest"]:
+            raise FeedError("conflicting_duplicate", f"item {idx}: same link, different content")
+    return sorted(by_url.values(), key=lambda e: (e["published_at"], e["stable_id"]))

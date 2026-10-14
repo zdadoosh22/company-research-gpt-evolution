@@ -1,0 +1,38 @@
+[
+  {
+    "id": "hudson",
+    "url": "https://www.hudson-labs.com/research/jpmorgan-q3-2026-earnings-preview-revenue-guidance-outlook",
+    "requested_at": "2026-10-13T23:17:20.550025+00:00",
+    "representation_requested": "public primary publication; no login or paid access",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "original_path": "monitoring/studies/evidence/2026-10-14-jpm-expectations-gate-r001/hudson-242472882127973791788efaa6cba73a15e1a02da8ec272c08562055d7c233fe.html",
+    "original_sha256": "242472882127973791788efaa6cba73a15e1a02da8ec272c08562055d7c233fe",
+    "bytes": 722821,
+    "pdf_magic": false
+  },
+  {
+    "id": "factset",
+    "url": "https://www.factset.com/earningsinsight",
+    "requested_at": "2026-10-13T23:17:24.239022+00:00",
+    "representation_requested": "public primary publication; no login or paid access",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "original_path": "monitoring/studies/evidence/2026-10-14-jpm-expectations-gate-r001/factset-0d37bc1aa7a5f09bb5bd52c752dbcb968b26c5cea69f1b8658fd006a665e1d5a.pdf",
+    "original_sha256": "0d37bc1aa7a5f09bb5bd52c752dbcb968b26c5cea69f1b8658fd006a665e1d5a",
+    "bytes": 1266055,
+    "pdf_magic": true
+  },
+  {
+    "id": "lseg",
+    "url": "https://lipperalpha.refinitiv.com/2026/10/sp-500-q3-2026-earnings-insight-big-6-banks-kick-off-earnings-season/",
+    "requested_at": "2026-10-13T23:17:27.903315+00:00",
+    "representation_requested": "public primary publication; no login or paid access",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "original_path": "monitoring/studies/evidence/2026-10-14-jpm-expectations-gate-r001/lseg-903ae376b40d9264484a159d4ace1e10157aa01020e1d3247e96640fa2dae62c.html",
+    "original_sha256": "903ae376b40d9264484a159d4ace1e10157aa01020e1d3247e96640fa2dae62c",
+    "bytes": 69434,
+    "pdf_magic": false
+  }
+]

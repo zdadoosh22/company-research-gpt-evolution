@@ -1,0 +1,49 @@
+ 
+   
+FactSet Research Systems Inc. Updated: June 2015 
+Copyright © 2015 FactSet Research Systems Inc. All rights reserved. www.factset.com 
+7 | P a g e  
+ 
+ 
+ 
+  
+  
+  
+1.4 Estimates Report - Actuals  
+The FactSet Estimates Actuals report provides access to the income statement, balanc e sheet, cash 
+flow statement and per share data for all companies covered by FactSet Estimates ; as well as the 
+median value of the post -event consensus, known as the Broker Actual. The data extracted by this 
+report is accessible by using other functions su ch as ExtractFormulaHistory and ExtractDataSnapshot, 
+but the value added of this function is that the default output includes a more comprehensive 
+overview of the estimate actuals value, date and a flag explaining from where the actuals value is 
+extracted. This default output would entail making multiple requests using the other functions. 
+1.4.1 Actuals Methodology 
+Estimates are data points representing information about a future period: FY1, or FQ1, and beyond. 
+Actuals are data points representing information about the past: FY0, FQ0, or earlier. 
+An "Actual" can have two forms: 
++ The value collected directly from the company’s income statement, balance sheet, cash flow 
+statement, known as the Actual. 
++ The median value of the post-event consensus, known as the Broker Actual. 
++ Mean can be used to calculate Broker Actual if desired. 
++ The Broker Actual is the default value for the European zone, even if an Actual is present. 
+FactSet Estimates actuals data is collected through a variety of channels, but the primary source is 
+financial statements published by the company. For the U.S., European, and Japanese sources 
+mentioned below, FactSet collects earnings announcements as soon as the data is made available to 
+these news services. Depending on local regulations, this can be anywhere from one to six months 
+after the end of the fiscal period. These sources include: 
+For U.S. Companies: 
++ CallStreet Transcripts 
++ PR Newswire 
++ Business Wire 
++ CCN Matthews 
++ GlobeNewswire 
++ Market Wire 
++ CallStreet 
+For European Companies: 
++ Financial Express Company Announcements 
++ Europe PR Newswire 
++ Hugin Southern Europe 
++ Hugin 
++ Europe Business Wire 
+For Japanese Companies: 
++ TDNet 

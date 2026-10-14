@@ -1,0 +1,21 @@
+# Trade-readiness assessment — 13 October 2026
+
+No trade is currently accepted. This is a decision-status synthesis of inspected local records, not a new company thesis, ranking or investment recommendation. Growing the isolated sleeve aggressively does not justify lowering evidence standards or scoring readiness by usage consumed, tests passed or model confidence. The money and order authority remain the user's.
+
+| Subject | Accepted evidence within scope | Why it does not yet support entry |
+|---|---|---|
+| LEVI | New independently challenged historical cash reconciliation and specific positive-entry park | Continuing/recurring economics, demand and priced durable revision remain unresolved. The reconciled cash decline is not a cash-leak opportunity. |
+| JPM | Prior independently checked pre-event rejection; new actual event inspection remains preliminary | New management outlook is not independent consensus; persistence, costs, capital and realistic delayed-entry value are unestablished. Raw capture/visual association limits remain. |
+| Netflix | Closed conditional framework and limited financing/ownership readiness | The October20 event is still prospective at this cutoff. No actual future result/response exists; current funding/claims and price-linked advantage remain unestablished. Do not redo closed challenges. |
+| AMD | Dated financing facts and conditional ownership arithmetic | Current funding/claims, settlement and warrant/acquisition conditions remain unresolved; retain its review-identity limitation. No synthetic current balance sheet. |
+| Uber | Limited contract/proceeds facts and reviewed bridge clarification | Actual draw/blocked account/proceeds classification/current claims and recurring cash remain unresolved. Later capital-use supplement is outside the earlier frozen review. |
+
+Sources: dated dispositions13OctoberLEVI,9OctoberJPM with13Octoberpreliminary study,11OctoberNetflix readiness,11OctoberAMD funding and12OctoberUber funding. The12Octobercheckpoint defines evidence-led continuation. These are research subjects, not selected investments. Older observation-status.json retains dated9October claims and must not be treated as an up-to-date summary of subsequent reviews or Gemini setup. This synthesis supersedes that snapshot only for the specific research/access facts documented here; it does not amend private ledger state or operational acceptance.
+
+The useful progression is evidence that could change a falsifiable opportunity decision: current disclosed funding/claim facts, same-basis dated expectations, material recurring per-claim consequences and economic value after hours/days of manual delay. Repeated reads of unchanged documents or another model repeating supplied figures cannot provide those facts. A separately scoped material economic revision still needs actual required independent challenge; no completed audit is reopened automatically.
+
+Existing paper policy is explicitly experimental: three£100 per-idea ceilings with comparison variants and paired loss-control/thesis exits. It is neither an optimal allocation nor a live instruction. An accepted opportunity must supply evidence-based adverse/entry/exit/reassessment conditions and fit reconciled sleeve resources. Cash declaration is not independent broker verification. No arbitrary stop, return probability or price ceiling is added here.
+
+Execution readiness remains separately incomplete: no verified iPhone delivery, broker cash/holdings/orders reconciliation or unattended executable quote/FX/cost/eligibility coverage. Historical daily lows do not create retrospective fills. The earlier observed uptime report is dated; elapsed days and a point-in-time daemon tick do not establish continuous reliability or the14-day trial gate. No operational test or monitoring change was run as part of this assessment.
+
+Confidence has improved in the narrow LEVI accounting explanation and in identifying external-assistant failure modes. It has not crossed the evidential threshold for a defensible trade. External setup is usable for bounded criticism, with Notion exhausted and coding isolation unverified. Subscription incentives and prospective capital increases confer no analytical evidence.

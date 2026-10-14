@@ -1,0 +1,26 @@
+Safe claims (with qualifiers)
+
+FactSet's mean Q3 EPS estimate moved from 5.49 (30 June) to 5.93 (9 October cover). That is a pre-event revision within one provider. It is not the event's surprise. The figure is a 14 October retrospective retrieval, so its vintage is unverified.
+A managed-revenue context comparison is possible: Hudson's 50,847m (28 September, managed basis, aggregator not disclosed) against issuer managed revenue of about 50.9bn. The gap is about +0.1%, which is smaller than the rounding of "about 50.9" (50.85–50.95bn). So the sign can't be determined at this precision.
+Raw EPS gaps can only be stated as conditional arithmetic: 5.57 or 5.75 minus 5.86 gives −0.29 or −0.11, and minus 5.93 gives −0.36 or −0.18. They are not formal surprises.
+
+Blocked claims
+
+Formal EPS surprise. A "GAAP" label plus a pre-event print date is not enough. Hudson's own Table 2 labels an adjusted figure (6.14) as GAAP, which disproves that label and weakens trust in its labelling generally. The Q3 "GAAP" label is unverified, not disproved. Separately, a print date is not an estimate cutoff timestamp.
+5.86→5.93 as a "revision." These are different providers, aggregation methods and dates, so this is a gap between providers.
+Exact 50,907m, NII/cost consensus, any 2027 comparison. Unverified or absent. None is disproved.
+Agreement between sources says nothing about strategy performance or whether to enter a position.
+
+Missing sample count vs missing EPS mapping: different effects
+
+Missing EPS mapping blocks comparing levels against actuals, because the basis can't be matched. It matters less for a same-provider time series like 5.49→5.93, if the method stayed the same.
+Missing sample count doesn't affect basis. It limits reliability, any dispersion-scaled surprise, and checks for changes in analyst composition within a revision series.
+Revenue is less affected by either, because the managed basis is stated.
+
+Kept separate
+
+Timestamps: Hudson's estimate time is undisclosed and FactSet's cutoff is unknown.
+Basis conflicts: GAAP vs adjusted EPS, and reported vs managed revenue.
+Current quote refresh: outside this packet and not tested.
+
+One minimal next check Find FactSet's stated EPS basis for JPM in its methodology or company detail: GAAP, or excluding significant items. This decides whether 5.93 should be compared with 5.57 or with 5.75.

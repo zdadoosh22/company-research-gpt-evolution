@@ -1,0 +1,43 @@
+[
+  {
+    "id": "hudson",
+    "original_hash_matches": true,
+    "representation": "locally extracted retained original HTML; relevant dated tables/body inspected"
+  },
+  {
+    "id": "factset",
+    "pages": 38,
+    "metadata": {
+      "/MSIP_Label_ce06a806-128a-42b3-9b50-2719b8746adb_SiteId": "ff9b87e3-c548-4b3d-8782-7cf47b86c057",
+      "/MSIP_Label_ce06a806-128a-42b3-9b50-2719b8746adb_Method": "Standard",
+      "/MSIP_Label_ce06a806-128a-42b3-9b50-2719b8746adb_Enabled": "True",
+      "/Title": "FactSet Earnings Insight",
+      "/Author": "FactSet Research Systems, Inc.",
+      "/Creator": "Microsoft\u00ae Word for Microsoft 365",
+      "/CreationDate": "D:20261009121750-04'00'",
+      "/ModDate": "D:20261009121750-04'00'",
+      "/Producer": "Microsoft\u00ae Word for Microsoft 365"
+    },
+    "searched_terms_and_pages": {
+      "GAAP": [],
+      "adjusted": [],
+      "data as of": [],
+      "5.93": [
+        12
+      ],
+      "5.49": [
+        12
+      ]
+    },
+    "read_pages": [
+      1,
+      12
+    ],
+    "full_document_read_claim": false
+  },
+  {
+    "id": "lseg",
+    "original_hash_matches": true,
+    "representation": "locally extracted retained original HTML; relevant dated tables/body inspected"
+  }
+]

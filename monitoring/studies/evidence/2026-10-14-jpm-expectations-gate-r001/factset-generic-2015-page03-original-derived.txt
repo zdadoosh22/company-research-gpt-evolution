@@ -1,0 +1,61 @@
+ 
+   
+FactSet Research Systems Inc. Updated: June 2015 
+Copyright © 2015 FactSet Research Systems Inc. All rights reserved. www.factset.com 
+3 | P a g e  
+ 
+ 
+ 
+  
+  
+  
+can be -1, 0, 1, 2, etc. 
+periodType   The argument can be entered as “annual”, “quarterly”, or “semi”, depending on the type 
+of estimates data request. Not all equities have estimates for all period types.  
+fields Specification of a select number of fields to extract.  
+Note: Each section provides a detailed list of the output fields associated with each FactSet 
+Estimates report. 
+timeStamp Display the publication time associated with the publication date. The argument would be 
+set up as: 'timestamp', 'y' and it can be used with an actuals report. 
+reportDate Display report date. The argument would be set up as: 'reportDate', 'y' and can be used 
+with the Broker Detail report. 
+previousDates Used with the Consensus report and refers to previous date as of which estimates can be 
+retrieved and compared to the estimates retrieved as of the date argument. For example, 
+if EPS estimates are displayed as of now, allows clients to compare the EPS estimate s as of 
+i.e. 30 days ago. 
+prev If the previousDates argument is used the ‘fields’ and ‘prev’ should be appended.  
+display Used with the Broker Detail report. If utilizing HISTO for the historical look an ‘end date’ 
+argument must be entered. If utilizing the SNAP mode, an ‘end date’ parameter is not 
+needed unless looking for the current consensus less than 100 days old. Otherwise SNAP 
+will bring back the current consensus as of the last 100 days. 
+statistic Used with the Surprise report. There are a number of different statistics that the client can 
+bring back using the Surprise Report. They have the ability to specify which one they 
+prefer. The list includes: Mean, Median (MED), High Estimate (HIGH), Low Estimate (LOW), 
+Sigma and Standard Deviation (STDDEV).  
+Offset1/offset2 Used with the Surprise report. This parameter is to change the number of days used 
+before and after the report date to calculate price impact. The argument would be set up 
+as: 'offset1', 'offset2'. 
+Currency Allows all values to be changed to the specified currency. By default, the currency is the 
+value of the security.   
+meanText To display the Rating Name. The argument would be set up as: 'meanText', 'y' and can be 
+used with the Consensus Recommendation report. 
+estCurrency In cases where the security’s local currency does not match the Currency of the estimates 
+the argument 'estCurrency', 'Y' can be used. This changes the currency field to display the 
+Estimate Currency of the first security returned. Therefore, if the first security in the list as 
+an Estimate Currency of EUR, all of the results will return in EUR. Also, the field heading 
+changes to EST_CURRENCY. 
+showExcluded Available for BrokerDetail and BrokerSnapshot, specifying this to N will only display the  
+broker estimates that are included in the consensus; default is to show all values.  
+universe Screening expression to limit the universe 
+ison Ison-codes can be used to limit the universe ISON_MSCI_WORLD(0,1) is written as 'ison', 
+'msci_world', 'isonParams', '0,1' 
+isonParams The arguments within brackets in the ison-code 
+OFDB Universe is the constituents of an OFDB file, default directory is Client, if the OFDB is 
+stored in another location the path must be included 
+OFDBDate Specific date for the constituents of the OFDB 
+ 
+1.2 Date Format - Absolute Dates 
+ 
+Absolute dates indicate a specific day, month -end, fiscal quarter -end, calendar quarter -end, fiscal 
+year-end, or calendar year-end as depicted in the examples below: 
+ 

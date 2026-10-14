@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-14T00:08:24.103940+00:00",
+  "archived_files": {
+    "rss_original_prototype_r001.py.txt": {
+      "sha256": "86d7f751d4be8ee73022f59b98a3b64d7f5a5155f03ce467c86226e97b10e171",
+      "bytes": 7755
+    },
+    "rss_corrected_prototype_r002.py.txt": {
+      "sha256": "c7e925997d07ca9346121afc00e9fd683daa798ec3288fd5bc99740708874251",
+      "bytes": 8026
+    },
+    "verify_rss_trial.py.txt": {
+      "sha256": "f13e0464077b5bd3879bdd5944cd669ae9d24f403622fea51bd1b82cebf53360",
+      "bytes": 10351
+    },
+    "rss-original-results-r001.json": {
+      "sha256": "3cde8a329d83f43e00792383d149a19a0913f9758604621e8138d1a9074729b0",
+      "bytes": 7346
+    },
+    "rss-corrected-results-r002.json": {
+      "sha256": "e7e01423a604ac9eaea7d18b0f32d3032b0808bf98fa00f65561d8e4b701ce5d",
+      "bytes": 7073
+    }
+  },
+  "additional_title_checks": 3,
+  "result": "pass",
+  "scope": "Offline synthetic title comparisons and clarified meaningful-title rule; no production integration"
+}

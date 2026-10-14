@@ -1,0 +1,58 @@
+ 
+   
+FactSet Research Systems Inc. Updated: June 2015 
+Copyright © 2015 FactSet Research Systems Inc. All rights reserved. www.factset.com 
+2 | P a g e  
+ 
+ 
+ 
+  
+  
+  
+ 
+1 FactSet Estimates 
+ 
+FactSet Estimates provides consensus - and detail -level estimates and statistics from leading 
+investment banks and research firms. With over 780 contributing brokers g lobally, FactSet Estimates 
+covers more than 16,300 active global companies and 100 data items. Categories of data include 
+sector specific items, commodity estimates, EPS, DPS, guidance and more. Global scope of companies 
+covered is approximately 31% from N orth America, 27% from Europe, and 35% from Asia. Historical 
+information is available from 1997 for European companies and 2000 for companies in the Americas 
+and Asia. A subscription to the FactSet Estimates database is necessary to be able to extract this data. 
+ 
+The manner in which contributed content is displayed and available on FactSet for individual users and 
+user groups is ultimately determined by the contributing partner. Several of FactSet brokerage 
+partners have additional restrictions on their data. Clients can request that the broker allow greater 
+entitlements and/or greater access to their supplied data on FactSet. Please contact your FactSet 
+representative for additional details.  
+ 
+For more information regarding the FactSet Estimates database  refer to Online Assistant page 13369. 
+For a list of active brokers available in FactSet Estimates refer to Online Assistant page 14706. 
+ 
+1.1  F.EstimatesOnDemand Syntax  
+The syntax for the EstimatesOnDemand function is: 
+ 
+Data = F.EstimatesOnDemand(ids, items, report, startDate, optional 
+arguments) 
+ 
+data variable name for the data returned 
+ids CellString array with a list of one or multiple security identifiers 
+items CellString array with a list of one or more FactSet data items from the FactSet Estimates 
+database (e.g., EPS, Sales, Net Debt).  
+Note: Table 1 in Appendix has a comprehensive list of items for which estimates are 
+available using this function. 
+report Allows specification of the types of estimates report through which the data is retrieved. 
+The available reports as Actuals, BrokerDetail, BrokerSnapshot, Consensus, Guidance, 
+Surprise, Consensus Recommendations, Detailed Recommendations, and Broker Coverage.  
+startDate The start date as of which the estimate data is retrieved. 
+ 
+ 
+Optional arguments, 
+ 
+end The end date as of which the estimate data is retrieved 
+freq The frequency of which the estimate data is retrieved 
+fiscalPeriod The fiscal period for the estimate item. The option is available of looking at historical, 
+current, or future fiscal periods. The fiscal period can be specified using relative dates. The 
+arguments entered as relative dates represent a date relative to the most recently 
+updated period. For example, 0 (zero) represents the most recently reported period; -1 
+represents the time period prior to the most recently reported period.  Arguments entered 

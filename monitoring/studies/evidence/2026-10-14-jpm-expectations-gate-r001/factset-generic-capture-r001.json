@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://go.factset.com/hubfs/Website_Downloads/Statistical%20Package%20Integration/Docs%203.0/estimates-ondemand.pdf",
+    "final_url": "https://go.factset.com/hubfs/Website_Downloads/Statistical%20Package%20Integration/Docs%203.0/estimates-ondemand.pdf",
+    "status": 200,
+    "path": "monitoring/studies/evidence/2026-10-14-jpm-expectations-gate-r001/factset-generic-2015-10e6a83bf30c88591c2945b0e3061afb7de9e38eac95d8634e764dfe91840974.pdf",
+    "sha256": "10e6a83bf30c88591c2945b0e3061afb7de9e38eac95d8634e764dfe91840974",
+    "bytes": 882371,
+    "captured_at": "2026-10-14T00:08:24.501394+00:00"
+  },
+  {
+    "url": "https://insight.factset.com/resources/factset-consensus-estimates-datafeed",
+    "final_url": "https://insight.factset.com/resources/factset-consensus-estimates-datafeed",
+    "status": 200,
+    "path": "monitoring/studies/evidence/2026-10-14-jpm-expectations-gate-r001/factset-generic-2019-4f8d1ea5b045b2f64074645299eaff2d8dbfce83809dabe12bd8f838e429e2d4.html",
+    "sha256": "4f8d1ea5b045b2f64074645299eaff2d8dbfce83809dabe12bd8f838e429e2d4",
+    "bytes": 80957,
+    "captured_at": "2026-10-14T00:08:24.672164+00:00"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "verified_at": "2026-10-14T00:14:24.247399+00:00",
+  "baseline_commit": "5a3c7bc7aae836b3377e692eaf12560b712a2139",
+  "predecessor_git_blobs_preserved": 683,
+  "predecessor_raw_bytes_identical": 683,
+  "git_filter_equivalent_only": [],
+  "approved_methodology_unchanged": true,
+  "frozen_levi_input_files_unchanged": 12,
+  "frozen_manifest_unchanged": true,
+  "biological_inspected_files_unchanged": 5,
+  "jpm_price_original_hash_matches": true,
+  "research_enabled": false,
+  "frozen_uber_input_files_unchanged": 14,
+  "scope": "Preservation/source-integrity checks only; no engineering suite, model quality or trading performance certification"
+}

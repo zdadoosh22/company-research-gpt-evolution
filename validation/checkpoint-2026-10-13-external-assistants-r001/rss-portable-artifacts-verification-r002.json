@@ -1,0 +1,25 @@
+{
+  "archived_files": {
+    "rss_corrected_prototype_r003.py.txt": {
+      "sha256": "92e0ac98d849f8e6e66759cd2c5633978c683895f69cfcd09658cc6acf7542da",
+      "bytes": 8286
+    },
+    "verify_rss_boundaries.py.txt": {
+      "sha256": "83378f81d57db5d166a527051da01edd036f77ac72eabae2d431fc8647f18aa2",
+      "bytes": 3226
+    },
+    "rss-boundary-results-r002.json": {
+      "sha256": "393ff9c7cec3d630b8aab90717db28183e8e750a5fd3db0591147f53e3410afb",
+      "bytes": 1178
+    },
+    "rss-boundary-results-r003.json": {
+      "sha256": "5c7f5a9f5724675644b4d5cab9f1732c5a7e1891ed5243ba55a21fa2e0d992e2",
+      "bytes": 1096
+    },
+    "rss-corrected-results-r003.json": {
+      "sha256": "20469112c2d6f14a9c31a5e4ffe23b7801c46632a8c95a6ad2ea8ef9efaf945f",
+      "bytes": 7073
+    }
+  },
+  "scope": "Preserved failed r002 boundary test and final r003 source plus both harness results; no live integration"
+}

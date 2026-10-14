@@ -1,0 +1,241 @@
+{
+  "verified_at": "2026-10-13T23:57:47.617663+00:00",
+  "candidate": "rss_original_prototype_r001.py",
+  "candidate_sha256": "86d7f751d4be8ee73022f59b98a3b64d7f5a5155f03ce467c86226e97b10e171",
+  "tests": [
+    {
+      "name": "six output fields",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "UTC conversion",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "repeat determinism",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "equivalent UTC rendering",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "build time ignored",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "cross-source identity",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "title revision",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "description revision",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "publication revision",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "exact duplicate deduplicated",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "conflicting duplicate rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "item order invariant",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "namespace extension ignored",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "prefixed core elements",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "multiple channels rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "valid empty distinct",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "missing channel rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "truncated source rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "empty bytes rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "wrong root rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "wrong RSS version rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "DTD rejected UTF8",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "DTD rejected UTF8 BOM",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "DTD rejected UTF16 BOM",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "valid UTF16 equivalent",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "bad link rejected javascript",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "bad link rejected relative",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "bad link rejected ftp",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "bad link rejected credentials",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "bad link rejected whitespace",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "missing link rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "missing date rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "impossible date rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "unknown timezone rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "missing timezone rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "oversize rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "ambiguous repeated link rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "blank source rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "invalid input type rejected",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "required research title",
+      "passed": false,
+      "scope": "clarified contract; generator noted initial ambiguity",
+      "failure": "invalid input returned success",
+      "type": "AssertionError"
+    },
+    {
+      "name": "blank research title",
+      "passed": false,
+      "scope": "clarified contract; generator noted initial ambiguity",
+      "failure": "invalid input returned success",
+      "type": "AssertionError"
+    },
+    {
+      "name": "financial comparison revision retained",
+      "passed": false,
+      "scope": "original/clarified functional specification",
+      "failure": "material comparison-value revision disappeared",
+      "type": "AssertionError"
+    },
+    {
+      "name": "passive injected text; no side effects",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    },
+    {
+      "name": "actual archived ten-item feed",
+      "passed": true,
+      "scope": "original/clarified functional specification"
+    }
+  ],
+  "passed": 41,
+  "failed": 3,
+  "total": 44,
+  "actual_source_sha256": "9ad326f2944fd914f45cf20c4a4b120ff38150e5b53a09d5c366da29688e13b6",
+  "frozen_uber_inputs_unchanged": 14,
+  "fixture_scope": "Retained actual RSS read offline; all variants synthetic, no fills, source fetching or monitoring activation",
+  "test_origin": "Blind external spec-based cases plus parent substantive-comparison and robustness cases",
+  "limits": "No baseline persistence, queue integration, phone delivery, live coverage, production readiness or investment performance tested"
+}

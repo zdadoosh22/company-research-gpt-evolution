@@ -1,0 +1,57 @@
+ 
+   
+FactSet Research Systems Inc. Updated: June 2015 
+Copyright © 2015 FactSet Research Systems Inc. All rights reserved. www.factset.com 
+8 | P a g e  
+ 
+ 
+ 
+  
+  
+  
+1.4.2 Data Fields extracted with the FactSet Estimates Actuals Report 
+ 
+The following table provides a detailed description of each of the 9  data fields that are by default 
+retrieved when using the FactSet Estimates Actuals Report. 
+ 
+Field Name Description 
+SecId The security identifier. 
+CURRENCY The currency in which the selected estimate actual item is displayed.  
+FE_ITEM The estimates actual item that is being retrieved, i.e. EPS. 
+FE_PER_REL The relative fiscal period that is specified in the syntax. For example, when the syntax 
+specified fiscal period=1 and period type=annual, the data is retrieved for the current 
+unreported fiscal year for the company. This field retrieves a 1 for this example since 
+the fiscal period argument is 1. If the argument is for the current reported fiscal year or 
+quarter it would be FY0 or FQ0, respectively. 
+FE_REPORT_FY The actual report date. 
+PUBDATE The date when the company actually release their data. 
+Date The period ending date. 
+FE_ACTUAL The actual value. 
+ 
+FE_ACTUAL_FLAG The Flag for the actual report type being retrieved.  
++ 1 is returned if an actual is available outside of Europe (U.S., Canada, 
+Latin America, Asia/Pacific, and Australia).  
+Note: This is not a broker actual. 
++ 2 is returned if a European actual is available.  
+ Note: This is not a broker actual. 
++ 3 is returned if the data is a broker actual (consensus coverage). 
+ 
+Example 1:  
+In this example, retrieve for Microsoft the EPS and sales actuals as of now for the current reported 
+fiscal year that the company is in (denoted with the fiscal period 0 argument in the request syntax 
+below) and the values for the fiscal year before that (denoted with the -1 fiscal period argument). 
+ 
+data = F.EstimatesOnDemand('msft','eps,sales','actuals','NOW', 
+'fiscalperiod','-1,0','periodtype','annual'); 
+ 
+With the output: 
+ 
+R: 
+ SecId CURRENCY FE.ITEM FE.PER.REL FE.REPORT.FY  PUBDATE    DATE    FE.ACTUAL  FE.ACTUAL.FLAG 
+1  MSFT      USD     EPS         -1   2013-07-19 2013-07-18 2013-06-30      2.58        1 
+2  MSFT      USD     EPS          0   2014-07-23 2014-07-22 2014-06-30      2.63        1 
+3  MSFT      USD   SALES         -1   2013-07-19 2013-07-18 2013-06-30  77849.00        1 
+4  MSFT      USD   SALES          0   2014-07-23 2014-07-22 2014-06-30  86833.00        1 
+ 
+ 
+ 

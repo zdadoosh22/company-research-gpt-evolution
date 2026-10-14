@@ -1,0 +1,246 @@
+{
+  "review_id": "uber-new-disclosure-astra-review-2026-10-14-r001",
+  "author_date_Europe_London": "2026-10-14",
+  "research_cutoff": "2026-10-13",
+  "completed_at_utc": "2026-10-13T23:05:26.231174+00:00",
+  "review_type": "actual separate-worker independent challenge; bounded frozen-input source consistency and disposition review",
+  "requested_configured_route": "Astra High",
+  "route_basis": "Parent dispatch states actual configured route; not independently exposed backend attestation",
+  "effective_backend_identity": "unknown",
+  "manifest": {
+    "path": "validation/uber-new-disclosure-review-input-2026-10-14-r001.json",
+    "expected_sha256": "c6e196ec9e09eb2c925cd6627ee336eca605c7085176e91cbf83159506230148",
+    "actual_sha256": "c6e196ec9e09eb2c925cd6627ee336eca605c7085176e91cbf83159506230148",
+    "matches": true,
+    "file_count": 14
+  },
+  "input_hash_checks": [
+    {
+      "path": "monitoring/decisions/2026-10-12-uber-funding-disposition-r001.md",
+      "expected_sha256": "2dd9f207aad7808b262167348ff817a0ce887035ad648b63a201344b41b55e50",
+      "actual_sha256": "2dd9f207aad7808b262167348ff817a0ce887035ad648b63a201344b41b55e50",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/2026-10-12-uber-cash-context-r001.md",
+      "expected_sha256": "a024801480e350395325ba7c2a10d12efa51a7c4808e579d3b87a898e9df6905",
+      "actual_sha256": "a024801480e350395325ba7c2a10d12efa51a7c4808e579d3b87a898e9df6905",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/2026-10-13-uber-new-disclosure-gate-r001.md",
+      "expected_sha256": "83a37bcb1d811a9ef7fe9d88d1e09d179382f720c0f5c57a62141df618a2623a",
+      "actual_sha256": "83a37bcb1d811a9ef7fe9d88d1e09d179382f720c0f5c57a62141df618a2623a",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/ezcater-4a2cf84586037bb2c6801750c8e2758884b11d0df95ab33b4cd0a42d05b79d59.html",
+      "expected_sha256": "4a2cf84586037bb2c6801750c8e2758884b11d0df95ab33b4cd0a42d05b79d59",
+      "actual_sha256": "4a2cf84586037bb2c6801750c8e2758884b11d0df95ab33b4cd0a42d05b79d59",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/ezcater-original-derived.txt",
+      "expected_sha256": "60ba575510b83530b0c541e4c030cd2981be32275ebe0028ac740e366eb22a83",
+      "actual_sha256": "60ba575510b83530b0c541e4c030cd2981be32275ebe0028ac740e366eb22a83",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/issuer-capture-register.json",
+      "expected_sha256": "a1a9a436af68ae6a5bff3ade082b3911e616770cf6caf59e1cf2b4dcaa50bb4d",
+      "actual_sha256": "a1a9a436af68ae6a5bff3ade082b3911e616770cf6caf59e1cf2b4dcaa50bb4d",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/issuer-news-rss-9ad326f2944fd914f45cf20c4a4b120ff38150e5b53a09d5c366da29688e13b6.xml",
+      "expected_sha256": "9ad326f2944fd914f45cf20c4a4b120ff38150e5b53a09d5c366da29688e13b6",
+      "actual_sha256": "9ad326f2944fd914f45cf20c4a4b120ff38150e5b53a09d5c366da29688e13b6",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/issuer-rss-inspection.json",
+      "expected_sha256": "20acceae58857f98fc99c4374b9b4d79671386a15fa61facf6f449922fffbd73",
+      "actual_sha256": "20acceae58857f98fc99c4374b9b4d79671386a15fa61facf6f449922fffbd73",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/metadata-inspection.json",
+      "expected_sha256": "33fc34bee7a9ce15613c14037e62e190ba93c104e6d8493232ad55bbc7e2d943",
+      "actual_sha256": "33fc34bee7a9ce15613c14037e62e190ba93c104e6d8493232ad55bbc7e2d943",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/q3-call-29b092350e445ff03335567aad3833dce5b168bbff1b3c83a49439424e18703d.html",
+      "expected_sha256": "29b092350e445ff03335567aad3833dce5b168bbff1b3c83a49439424e18703d",
+      "actual_sha256": "29b092350e445ff03335567aad3833dce5b168bbff1b3c83a49439424e18703d",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/q3-call-original-derived.txt",
+      "expected_sha256": "b598803df2890bbe523b2f995cc0b6601ef844b8705701b86d8dca60343156d3",
+      "actual_sha256": "b598803df2890bbe523b2f995cc0b6601ef844b8705701b86d8dca60343156d3",
+      "matches": true
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/submissions-c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643.json",
+      "expected_sha256": "c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643",
+      "actual_sha256": "c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643",
+      "matches": true
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-uber-new-disclosure-assignment-r001.txt",
+      "expected_sha256": "6d22d1f7541b95e6515ca5184a5fab1d0c37024a1a5adc53601441e58c3df55d",
+      "actual_sha256": "6d22d1f7541b95e6515ca5184a5fab1d0c37024a1a5adc53601441e58c3df55d",
+      "matches": true
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-uber-new-disclosure-output-r001.md",
+      "expected_sha256": "c28dbbd0e30e8dc1d2da66c7e84758c8b5ab8a1ad84c6c203aa69930774b3eaf",
+      "actual_sha256": "c28dbbd0e30e8dc1d2da66c7e84758c8b5ab8a1ad84c6c203aa69930774b3eaf",
+      "matches": true
+    }
+  ],
+  "issuer_original_checks": [
+    {
+      "id": "ezcater",
+      "original_path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/ezcater-4a2cf84586037bb2c6801750c8e2758884b11d0df95ab33b4cd0a42d05b79d59.html",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-to-Acquire-ezCater-as-it-Brings-Catering-to-Uber-Eats/default.aspx",
+      "actual_bytes": 68480,
+      "registered_bytes": 68480,
+      "bytes_match": true,
+      "original_hash_matches": true,
+      "derived_nonwhitespace_text_matches": true,
+      "nonwhitespace_characters": 7529,
+      "recorded_request_at": "2026-10-13T22:58:47.188668+00:00",
+      "recorded_http_status": 200,
+      "reviewer_network_refetch": false
+    },
+    {
+      "id": "q3-call",
+      "original_path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/q3-call-29b092350e445ff03335567aad3833dce5b168bbff1b3c83a49439424e18703d.html",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx",
+      "actual_bytes": 62671,
+      "registered_bytes": 62671,
+      "bytes_match": true,
+      "original_hash_matches": true,
+      "derived_nonwhitespace_text_matches": true,
+      "nonwhitespace_characters": 2943,
+      "recorded_request_at": "2026-10-13T22:58:47.443605+00:00",
+      "recorded_http_status": 200,
+      "reviewer_network_refetch": false
+    }
+  ],
+  "rss_check": {
+    "original_items": 10,
+    "reconstructed_rows_equal_record": true,
+    "last_build_date": "Tue, 13 Oct 2026 05:35:00 -0400",
+    "coverage": "retained ten-item snapshot only"
+  },
+  "sec_check": {
+    "cik": "0001543151",
+    "issuer": "Uber Technologies, Inc",
+    "tickers": [
+      "UBER"
+    ],
+    "exchanges": [
+      "NYSE"
+    ],
+    "recent_rows": 1002,
+    "recent_filing_date_min": "2020-09-18",
+    "recent_filing_date_max": "2026-09-21",
+    "filtered_rows": 11,
+    "reconstructed_rows_equal_record": true,
+    "post_2026_09_15_through_cutoff_8k_10q_including_amendments": [],
+    "prior_snapshot_equality_independently_retested": false
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "informational",
+      "classification": "verified boundary; no defect",
+      "finding": "The release establishes an announced conditional acquisition agreement, not paid cash, a quantified current payable or final net closing cash.",
+      "evidence": "ezCater original HTML: opening acquisition paragraph, closing-conditions paragraph, and Forward-Looking Statements. The retained extract is text-consistent with the original.",
+      "proposed_correction": "None required. Preserve USD2.3bn as the stated all-cash transaction value and separately inventory the announced future capital use; require actual terms and settlement evidence for any cash/claim conclusion.",
+      "outcome": "Author treatment supported; current funding and entry remain parked."
+    },
+    {
+      "id": "F2",
+      "severity": "informational",
+      "classification": "verified boundary; no defect",
+      "finding": "June liquidity and earlier Q2 deployment cannot produce a current balance by subtracting the new stated transaction value. Separate target identity supports tracking, not an additive funded bill.",
+      "evidence": "Bound 12 October cash-context note identifies June USD5.4bn cash/cash equivalents/short-term investments, Q2 stake deployment, future Delivery Hero and AV commitments; new gate explicitly rejects synthetic USD3.1bn current cash and double subtraction.",
+      "proposed_correction": "None required for this scope. Retain period, overlap, restrictions and claim uncertainties; no independent acceptance of the older cash-context economics is implied.",
+      "outcome": "No normalized owner cash, aggregate current capital bill or funding sufficiency accepted."
+    },
+    {
+      "id": "F3",
+      "severity": "informational",
+      "classification": "verified boundary; no defect",
+      "finding": "Profitability on Non-GAAP Operating Income and expected margin accretion do not establish recurring per-share owner cash or value creation; closing in coming months supplies conditional timing, not a close date.",
+      "evidence": "ezCater original operating-metrics paragraph and closing-conditions paragraph; forward-looking caution identifies approval, closing-condition and synergy risks.",
+      "proposed_correction": "None required. Preserve management attribution and conditional timing; no return, synergy or funding forecast follows.",
+      "outcome": "Possible overlap with the stated days-to-months horizon is reasonable as a possibility only."
+    },
+    {
+      "id": "F4",
+      "severity": "informational",
+      "classification": "verified boundary; no defect",
+      "finding": "The retained recent SEC table and ten-item RSS support bounded discovery statements only. No later 8-K/10-Q, including amendments, was found in that table after 15 September through cutoff.",
+      "evidence": "Reconstructed all 11 retained filtered metadata rows and all 10 RSS rows exactly; 1,002 recent SEC records; latest listed filing is CERT on 21 September; latest 8-K 15 September; latest 10-Q 5 August for 30 June.",
+      "proposed_correction": "None required. Retain channel/table limits. Do not describe the fresh request as comprehensive or infer no transaction occurred.",
+      "outcome": "Bounded absence wording accepted. Equality to the separate 12 October original remains an inherited capture-record assertion, not independently re-performed here."
+    },
+    {
+      "id": "F5",
+      "severity": "informational",
+      "classification": "verified boundary; no defect",
+      "finding": "The 5 October notice schedules a 4 November results call at 05:00 Pacific/08:00 Eastern; it does not establish the 10-Q filing date or future resolution of funding gaps.",
+      "evidence": "Call-notice original opening paragraph; no 10-Q filing-date assertion in inspected notice; full extracted non-whitespace text agrees with original.",
+      "proposed_correction": "None required. Preserve call-versus-filing distinction and avoid assuming the future release resolves funding.",
+      "outcome": "Author timing treatment supported."
+    },
+    {
+      "id": "F6",
+      "severity": "informational",
+      "classification": "provenance limitation; already qualified",
+      "finding": "The Gemini artifact is a selected quotation/summary and a reported UI reading, not a complete response, search log or independent proof of its source access/model backend.",
+      "evidence": "Bound Gemini assignment and selected-output record explicitly disclose selective retention, three-source assertion, baseline 8-A, and source-access limitations.",
+      "proposed_correction": "None required in the gate. Keep external criticism distinct from this separate-worker review and do not promote it into exhaustive search or stronger-model certification.",
+      "outcome": "Qualifications sufficient for retained park; external access, workload savings and backend remain unverified."
+    }
+  ],
+  "verdict": {
+    "status": "supported_with_stated_limits",
+    "material_defects_found": 0,
+    "required_author_corrections": 0,
+    "acceptance": "Add conditional ezCater transaction to future capital-use inventory; retain actual-funding and entry park.",
+    "not_accepted": [
+      "current liquidity or solvency",
+      "normalized owner cash",
+      "net closing cash or current payable",
+      "current funding or entry approval",
+      "full-thesis or predecessor approval",
+      "comprehensive disclosure absence",
+      "backend-attested model certification"
+    ]
+  },
+  "limitations": [
+    "Bounded independent evidence-to-conclusion review of the frozen 14 files through research cutoff 13 October 2026; no full thesis, valuation, current cash reconstruction or old bridge arithmetic review.",
+    "Original HTML/XML/JSON bytes were independently opened, parsed and hashed locally. Recorded URLs, request timestamps and HTTP 200 statuses are inherited capture provenance; this reviewer made no network refetch or server-origin attestation.",
+    "The prior 12 October SEC snapshot itself is not among the 14 inputs. Its claimed byte equality was not independently retested; the retained 13 October metadata contents and hash were verified directly.",
+    "The prior cash-context note and funding disposition are comparison boundaries, not newly certified predecessor calculations; the prepared-remarks PDF and contractual financing exhibits were not reopened.",
+    "Requested configured route is Astra High according to the dispatch supplied to this independent worker. Effective backend identity is not independently exposed and remains unknown; no backend-attested stronger-model certificate.",
+    "The saved external capture does not independently establish full response completeness, actual external browsing, source count, search completeness, backend identity or net coordination savings.",
+    "Actual net receipts, restrictions/blocked proceeds, loan draw, bridge reduction/current commitments, acquisition settlement, current balances/claims and final ezCater closing cash remain unresolved.",
+    "No private account, credentials, state/observation, user media, account connection, paid service, trade, monitoring activation or new goal was used. No per-review usage or cost attribution is available."
+  ],
+  "preservation": {
+    "bound_inputs_rehashed_after_review": true,
+    "all_14_unchanged": true,
+    "manifest_unchanged": true,
+    "writes_limited_to": [
+      "validation/uber-new-disclosure-astra-review-2026-10-14-r001.md",
+      "validation/uber-new-disclosure-astra-review-2026-10-14-r001.json"
+    ]
+  }
+}

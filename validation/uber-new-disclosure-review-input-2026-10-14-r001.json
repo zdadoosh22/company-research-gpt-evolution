@@ -1,0 +1,74 @@
+{
+  "frozen_at": "2026-10-13T23:01:27.423899+00:00",
+  "research_cutoff": "2026-10-13",
+  "author_date_Europe_London": "2026-10-14",
+  "baseline_commit": "5a3c7bc7aae836b3377e692eaf12560b712a2139",
+  "scope": "New source inspection and retained funding/entry park; no closed-review repetition or current cash forecast",
+  "files": [
+    {
+      "path": "monitoring/decisions/2026-10-12-uber-funding-disposition-r001.md",
+      "sha256": "2dd9f207aad7808b262167348ff817a0ce887035ad648b63a201344b41b55e50"
+    },
+    {
+      "path": "monitoring/studies/2026-10-12-uber-cash-context-r001.md",
+      "sha256": "a024801480e350395325ba7c2a10d12efa51a7c4808e579d3b87a898e9df6905"
+    },
+    {
+      "path": "monitoring/studies/2026-10-13-uber-new-disclosure-gate-r001.md",
+      "sha256": "83a37bcb1d811a9ef7fe9d88d1e09d179382f720c0f5c57a62141df618a2623a"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/ezcater-4a2cf84586037bb2c6801750c8e2758884b11d0df95ab33b4cd0a42d05b79d59.html",
+      "sha256": "4a2cf84586037bb2c6801750c8e2758884b11d0df95ab33b4cd0a42d05b79d59"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/ezcater-original-derived.txt",
+      "sha256": "60ba575510b83530b0c541e4c030cd2981be32275ebe0028ac740e366eb22a83"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/issuer-capture-register.json",
+      "sha256": "a1a9a436af68ae6a5bff3ade082b3911e616770cf6caf59e1cf2b4dcaa50bb4d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/issuer-news-rss-9ad326f2944fd914f45cf20c4a4b120ff38150e5b53a09d5c366da29688e13b6.xml",
+      "sha256": "9ad326f2944fd914f45cf20c4a4b120ff38150e5b53a09d5c366da29688e13b6"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/issuer-rss-inspection.json",
+      "sha256": "20acceae58857f98fc99c4374b9b4d79671386a15fa61facf6f449922fffbd73"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/metadata-inspection.json",
+      "sha256": "33fc34bee7a9ce15613c14037e62e190ba93c104e6d8493232ad55bbc7e2d943"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/q3-call-29b092350e445ff03335567aad3833dce5b168bbff1b3c83a49439424e18703d.html",
+      "sha256": "29b092350e445ff03335567aad3833dce5b168bbff1b3c83a49439424e18703d"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/q3-call-original-derived.txt",
+      "sha256": "b598803df2890bbe523b2f995cc0b6601ef844b8705701b86d8dca60343156d3"
+    },
+    {
+      "path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/submissions-c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643.json",
+      "sha256": "c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643"
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-uber-new-disclosure-assignment-r001.txt",
+      "sha256": "6d22d1f7541b95e6515ca5184a5fab1d0c37024a1a5adc53601441e58c3df55d"
+    },
+    {
+      "path": "validation/checkpoint-2026-10-13-external-assistants-r001/gemini-uber-new-disclosure-output-r001.md",
+      "sha256": "c28dbbd0e30e8dc1d2da66c7e84758c8b5ab8a1ad84c6c203aa69930774b3eaf"
+    }
+  ],
+  "author_checks": {
+    "issuer_original_hashes_match": 2,
+    "source_passages_present": true,
+    "metadata_unchanged_from_previous_snapshot": true,
+    "no_later_8k_10q_in_inspected_recent_table": true,
+    "rss_original_hash_matches": true,
+    "rss_items": 10,
+    "exhaustive_absence_claim": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "requested_at": "2026-10-13T22:57:44.647077+00:00",
+  "url": "https://investor.uber.com/rss/PressRelease.aspx",
+  "cutoff_date": "2026-10-13",
+  "scope": "Official RSS feed as exposed by issuer news page, not exhaustive event verification",
+  "http_status": 200,
+  "original_sha256": "9ad326f2944fd914f45cf20c4a4b120ff38150e5b53a09d5c366da29688e13b6",
+  "original_path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/issuer-news-rss-9ad326f2944fd914f45cf20c4a4b120ff38150e5b53a09d5c366da29688e13b6.xml",
+  "rows": [
+    {
+      "title": "Sur la table Arrives on Uber Eats, Delivering Chef-Trusted Kitchen Gear to Customers Nationwide",
+      "publication_text": "Thu, 08 Oct 2026 08:00:00 -0400",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Sur-la-table-Arrives-on-Uber-Eats-Delivering-Chef-Trusted-Kitchen-Gear-to-Customers-Nationwide/default.aspx"
+    },
+    {
+      "title": "Uber to Acquire ezCater as it Brings Catering to Uber Eats",
+      "publication_text": "Tue, 06 Oct 2026 08:00:00 -0400",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-to-Acquire-ezCater-as-it-Brings-Catering-to-Uber-Eats/default.aspx"
+    },
+    {
+      "title": "Uber Announces Date of Third Quarter 2026 Results Conference Call",
+      "publication_text": "Mon, 05 Oct 2026 16:30:00 -0400",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx"
+    },
+    {
+      "title": "Costco Expands Nationwide Delivery on Uber Eats",
+      "publication_text": "Wed, 16 Sep 2026 07:00:00 -0400",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Costco-Expands-Nationwide-Delivery-on-Uber-Eats/default.aspx"
+    },
+    {
+      "title": "WeRide, Uber and AVOMO Receive Spain's First National Operating Permit for Level 4 Autonomous Passenger Vehicles",
+      "publication_text": "Thu, 10 Sep 2026 04:30:00 -0400",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/WeRide-Uber-and-AVOMO-Receive-Spains-First-National-Operating-Permit-for-Level-4-Autonomous-Passenger-Vehicles/default.aspx"
+    },
+    {
+      "title": "Uber Eats and Wakefern Food Corp. Team Up to Expand On-Demand Grocery Delivery Across the U.S. Northeast",
+      "publication_text": "Wed, 09 Sep 2026 07:30:00 -0400",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Eats-and-Wakefern-Food-Corp--Team-Up-to-Expand-On-Demand-Grocery-Delivery-Across-the-U-S--Northeast/default.aspx"
+    },
+    {
+      "title": "Wayve and Uber Launch First-Ever Autonomous Rides in the UK",
+      "publication_text": "Thu, 03 Sep 2026 00:01:00 -0400",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Wayve-and-Uber-Launch-First-Ever-Autonomous-Rides-in-the-UK-2026-VoFQI1WbQi/default.aspx"
+    },
+    {
+      "title": "Uber Publishes Offer Document for its Takeover Offer for Delivery Hero",
+      "publication_text": "Thu, 27 Aug 2026 05:15:00 -0400",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Publishes-Offer-Document-for-its-Takeover-Offer-for-Delivery-Hero/default.aspx"
+    },
+    {
+      "title": "Uber Launches Baidu\u2019s Fully Driverless Apollo Go in Dubai, Establishing the First Multi-Partner Autonomous Network Globally",
+      "publication_text": "Thu, 20 Aug 2026 02:30:00 -0400",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Launches-Baidus-Fully-Driverless-Apollo-Go-in-Dubai-Establishing-the-First-Multi-Partner-Autonomous-Network-Globally/default.aspx"
+    },
+    {
+      "title": "Uber CEO to Participate in Fireside Chat Hosted by Goldman Sachs",
+      "publication_text": "Wed, 19 Aug 2026 16:30:00 -0400",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-CEO-to-Participate-in-Fireside-Chat-Hosted-by-Goldman-Sachs/default.aspx"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "requested_at": "2026-10-13T22:53:43.751290+00:00",
+  "url": "https://data.sec.gov/submissions/CIK0001543151.json",
+  "cutoff_date": "2026-10-13",
+  "scope": "Primary filing metadata only; not disclosure contents or proof of no transaction",
+  "http_status": 200,
+  "original_sha256": "c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643",
+  "original_path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/submissions-c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643.json",
+  "issuer": "Uber Technologies, Inc",
+  "dated_recent_rows": [
+    {
+      "filingDate": "2026-09-21",
+      "reportDate": "",
+      "form": "CERT",
+      "accessionNumber": "0000876661-26-000778",
+      "primaryDocument": "UBER092126.pdf"
+    },
+    {
+      "filingDate": "2026-09-18",
+      "reportDate": "2026-09-16",
+      "form": "4",
+      "accessionNumber": "0001525321-26-000010",
+      "primaryDocument": "xslF345X06/primarydocument.xml"
+    },
+    {
+      "filingDate": "2026-09-18",
+      "reportDate": "2026-09-16",
+      "form": "4",
+      "accessionNumber": "0002071761-26-000012",
+      "primaryDocument": "xslF345X06/primarydocument.xml"
+    },
+    {
+      "filingDate": "2026-09-18",
+      "reportDate": "2026-09-16",
+      "form": "4",
+      "accessionNumber": "0001775297-26-000013",
+      "primaryDocument": "xslF345X06/primarydocument.xml"
+    },
+    {
+      "filingDate": "2026-09-18",
+      "reportDate": "2026-09-16",
+      "form": "4",
+      "accessionNumber": "0002111867-26-000013",
+      "primaryDocument": "xslF345X06/primarydocument.xml"
+    },
+    {
+      "filingDate": "2026-09-18",
+      "reportDate": "2026-09-16",
+      "form": "4",
+      "accessionNumber": "0001626201-26-000020",
+      "primaryDocument": "xslF345X06/primarydocument.xml"
+    },
+    {
+      "filingDate": "2026-09-17",
+      "reportDate": "2026-09-15",
+      "form": "4",
+      "accessionNumber": "0001552781-26-000495",
+      "primaryDocument": "xslF345X06/ownership.xml"
+    },
+    {
+      "filingDate": "2026-09-17",
+      "reportDate": "",
+      "form": "SCHEDULE 13D/A",
+      "accessionNumber": "0001552781-26-000494",
+      "primaryDocument": "xslSCHEDULE_13D_X02/primary_doc.xml"
+    },
+    {
+      "filingDate": "2026-09-15",
+      "reportDate": "2026-09-11",
+      "form": "4",
+      "accessionNumber": "0001775297-26-000012",
+      "primaryDocument": "xslF345X06/primarydocument.xml"
+    },
+    {
+      "filingDate": "2026-09-15",
+      "reportDate": "",
+      "form": "8-A12B",
+      "accessionNumber": "0001552781-26-000487",
+      "primaryDocument": "e26384_uber-8a12b.htm"
+    },
+    {
+      "filingDate": "2026-09-15",
+      "reportDate": "2026-09-15",
+      "form": "8-K",
+      "accessionNumber": "0001552781-26-000486",
+      "primaryDocument": "e26383_uber-8k.htm"
+    }
+  ],
+  "filtered_rows_count": 11
+}

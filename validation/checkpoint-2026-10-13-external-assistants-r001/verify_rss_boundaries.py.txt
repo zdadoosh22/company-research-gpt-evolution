@@ -1,0 +1,38 @@
+import importlib.util,sys,json,hashlib,datetime
+from pathlib import Path
+base=Path(__file__).resolve().parent
+module=base/sys.argv[1]; spec=importlib.util.spec_from_file_location('candidate',module)
+m=importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+def feed(description='',extra='',link='https://example.test/deal',title='Deal'):
+    return ('<rss version="2.0"><channel><item><title>'+title+'</title><link>'+link+'</link><pubDate>Tue, 06 Oct 2026 12:00:00 GMT</pubDate><description>'+description+'</description>'+extra+'</item></channel></rss>').encode()
+results=[]
+def check(name,fn):
+    try:fn();results.append({'name':name,'passed':True})
+    except Exception as exc:results.append({'name':name,'passed':False,'failure':str(exc),'type':type(exc).__name__})
+def distinct(a,b):
+    left=m.parse_feed(a,'A')[0];right=m.parse_feed(b,'A')[0]
+    assert left['stable_id']==right['stable_id'],'identity changed'
+    assert left['content_digest']!=right['content_digest'],'substantive text collision'
+check('adjacent financial table cells retain boundaries',lambda:distinct(feed('<x:td xmlns:x="http://www.w3.org/1999/xhtml">12</x:td><x:td xmlns:x="http://www.w3.org/1999/xhtml">5</x:td>'),feed('<x:td xmlns:x="http://www.w3.org/1999/xhtml">1</x:td><x:td xmlns:x="http://www.w3.org/1999/xhtml">25</x:td>')))
+check('content encoded independently hashed despite description',lambda:distinct(feed('Cash offer.','<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">Price $5</content:encoded>'),feed('Cash offer.','<content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/">Price $4</content:encoded>')))
+def urlvariants():
+    a=m.parse_feed(feed(),'A')[0];b=m.parse_feed(feed(link='https://example.test/deal?utm_source=rss'),'A')[0]
+    assert a['stable_id']!=b['stable_id']
+check('tracking URL identity remains an explicit unresolved association policy',urlvariants)
+def sourcevariants():
+    assert m.parse_feed(feed(),'A')[0]['stable_id']!=m.parse_feed(feed(),'B')[0]['stable_id']
+check('separate sources intentionally have separate identities',sourcevariants)
+def titlecomparisons():
+    a=m.parse_feed(feed(title='Net cash &lt; 5 and debt &gt; 9'),'A')[0]
+    assert a['title']=='Net cash < 5 and debt > 9'
+    distinct(feed(title='Net cash &lt; 5 and debt &gt; 9'),feed(title='Net cash &lt; 4 and debt &gt; 9'))
+check('financial title comparison visible and fingerprinted',titlecomparisons)
+def rejectedtitle(title):
+    try:m.parse_feed(feed(title=title),'A')
+    except m.FeedError:return
+    raise AssertionError('meaningless title accepted')
+check('empty tag-only title rejected',lambda:rejectedtitle('<![CDATA[<b></b>]]>'))
+check('punctuation-only title rejected',lambda:rejectedtitle('---'))
+report={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'module':module.name,'sha256':hashlib.sha256(module.read_bytes()).hexdigest(),'tests':results,'passed':sum(x['passed'] for x in results),'total':len(results),'scope':'Offline synthetic external adversarial cases plus preserved clarified title tests; no coverage/trade approval'}
+(base/sys.argv[2]).write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+print(json.dumps(report,indent=2))

@@ -1,0 +1,92 @@
+JPMorgan Q3 2026 Earnings Preview: Revenue, Guidance, Outlook | Hudson Labs
+No Hallucination Guarantee now live—Learn more
+Skip to main content
+Product
+Solutions
+Pricing
+Company
+Blog
+Sign In
+Start Free Trial
+Home/Research/JPMorgan Q3 2026 Earnings Preview: Revenue, Guidance, Outlook
+JPM3 min read
+JPMorgan Q3 2026 Earnings Preview: Revenue, Guidance, Outlook
+H
+September 28, 2026·3 min read
+Share
+JPMorgan Chase (JPM) — Q3 2026 Earnings Preview
+Key Takeaways
+Consensus expects Q3 2026 revenue of $50,847M and EPS of $5.86.Guidance was raised after Q2: FY2026 NII ex Markets to ~$96.5B, total NII to ~$105.5B, adjusted expense to ~$107.5B, Card NCO rate to ~3.2%.Q2 2026 was a record quarter for revenue and profitability, driven by exceptionally strong Markets and Investment Banking activity.Year-over-year comparables are tough: Q3 2025 revenue was $47,120M, net income $14,393M, EPS $5.07, with strong capital markets performance.Most important factors to watch: sustainability of capital markets outperformance, deposit and loan growth trends, expense discipline, credit quality, and management’s tone on macro/AI/capital deployment.
+Table 1: Forward Consensus vs. Guidance — Q3 & FY2026
+Metric Q3 2026 Consensus FY2026 Consensus FY2026 Guidance (as of Q2) Notes
+Revenue ($M) 50,847 208,244 Consensus is for managed revenue
+Net Income ($M) 15,739 65,101
+EPS (GAAP) 5.86 25.30
+NII ex Markets ($B) ~$96.5B Raised from $95B after Q2
+Total NII ($B) ~$105.5B Raised from $103B after Q2
+Adjusted Expense ($B) ~$107.5B Raised from $105B after Q2
+Card NCO Rate (%) ~3.2% Lowered from 3.4% after Q2
+Consensus figures rounded to millions; guidance as per Q2 2026 earnings call and slides.
+Table 2: Actual Results — Recent Quarters
+Period Revenue ($M) Net Income ($M) EPS (GAAP) NII ex Markets ($B) Total NII ($B) Adjusted Expense ($B) Card NCO Rate (%)
+Q2 2026 58,022 16,900* 6.14* 23.7 25.6 27.3 3.34
+Q1 2026 50,536 16,494 5.94 23.3 25.5 26.9 3.47
+Q4 2025 46,767 13,025 4.63 23.9 25.1 24.0 3.14
+Q3 2025 47,120 14,393 5.07 23.4 24.1 24.3 3.15
+Q2 2026 net income/EPS exclude significant items (Visa/equity gains); reported net income was $21,155M, EPS $7.70.
+Table 3: Year-over-Year Comparable — Q3 2025
+Metric Q3 2025 Actual
+Revenue ($M) 47,120
+Net Income ($M) 14,393
+EPS (GAAP) 5.07
+NII ex Markets ($B) 23.4
+Total NII ($B) 24.1
+Adjusted Expense ($B) 24.3
+Card NCO Rate (%) 3.15
+What to Watch for in Q3 2026
+1. Capital Markets Sustainability
+Q2 2026 saw record Markets revenue ($12.1B, +35% YoY) and IB fees (+30% YoY).Management flagged some pull-forward of activity and exceptional events (large IPOs, index rebalancing, Asia/Korea equity market dynamics).Key question: Can Markets and IB sustain this level, or will there be normalization?
+2. Deposit and Loan Growth
+Q2 2026: Average deposits up 7% YoY, 3% QoQ; average loans up 10% YoY, 2% QoQ.CCB average deposits up 3% YoY, 2% QoQ; net new checking account growth robust.Wholesale deposit growth outperformed expectations in H1; watch for continued strength or signs of slowing.
+3. Expense Discipline
+FY2026 adjusted expense guidance raised to ~$107.5B (from $105B), mainly due to higher volume/revenue-related costs.Q2 2026 expense up 15% YoY, driven by comp, front office hiring, tech, marketing.Investors will focus on whether expense growth is leveraged to revenue and if further upward revisions are needed.
+4. Credit Quality
+Card NCO rate guidance lowered to ~3.2% for FY2026 (was 3.4%).Q2 2026 Card NCO rate: 3.34%; delinquencies lower than expected.Management continues to highlight benign credit environment but notes vigilance for normalization or deterioration.
+5. Macro/AI/Capital Deployment Commentary
+Management remains “cautiously optimistic” but flags risks: geopolitics, inflation, asset prices, fiscal deficits.AI investments and efficiency: JPM sees real productivity gains, but expects most benefits to accrue to customers over time.Capital deployment: Large excess capital ($40B+), preference for organic growth, selective buybacks, open to M&A if value-accretive.
+Summary and Conclusions
+JPM enters Q3 2026 coming off record results, with consensus expecting a modest sequential step-down but still very strong performance.Year-over-year comparables are tough, especially in Markets and IB, but management has guided to higher NII and expense, and lower card NCOs.Key investor focus will be on the durability of capital markets outperformance, deposit/loan growth, expense leverage, and any early signs of credit normalization.Management’s tone on macro, AI, and capital deployment will be closely watched for signals on risk appetite and future returns.Any deviation from the upgraded guidance, especially on NII, expenses, or credit, will be scrutinized.
+In summary: JPMorgan Chase faces a high bar for Q3 2026 given record recent results and upgraded guidance. The most important factors for the upcoming report are the sustainability of capital markets strength, ongoing deposit and loan growth, expense control, and credit quality. Investors should also watch for management’s commentary on macro risks, AI-driven change, and capital allocation strategy.
+Share
+Research LibraryUpdated weekly
+Deep DiveThe Anatomy of a GPU: Value Chain MapAll the components of a GPU explained, with each component's supply chain ecosystem mapped
+Jul 27, 2026AI & Emerging TechnologiesAI Replacing SaaS: 2026 Software Insourcing TrendsMajor software firms like Palantir and GoDaddy are shifting from third-party SaaS to AI-powered internal solutions in 2026.Jul 14, 2026AI & Emerging TechnologiesAI-Driven Spending Reprioritization: IBM-style CommentaryIBM, CDW, Arista Networks, and ServiceNow report major customer budget shifts driven by artificial intelligence infrastructure needs and expanding internal capabilities. Evidence of customer buying pattern changes tied to AI, new models, and data infrastructure.Jul 14, 2026ConsumerPeptide beneficiariesExplore leading public companies benefiting from increased peptide usage in 2026, including Dr. Reddy’s, Amphastar, and West Pharma.Jul 8, 2026AI & Emerging TechnologiesQuantified Returns from AI AdoptionIBM, ServiceNow, and TD report billions in AI-driven savings and revenue for 2026. See which companies lead in quantified AI adoption impact.Jul 6, 2026AI & Emerging TechnologiesTech & Industrials: Backlog Increase over 50%Oracle, Microsoft, IonQ, D-Wave, and others reported record backlog growth over 50% in 2026. Discover the top tickers and key stats driving sector momentum.Jun 25, 2026Transactions & Capital Markets50+ Spin-Offs & DivestituresExplore major 2026 spin-offs and divestitures, including Honeywell, FedEx, and S&P Global, with expected dates and transaction details.Jun 25, 2026Company ResearchRTX (RTX Corp): Equity Initiation Report — Outperform on Defense Backlog Strength and Margin RecoveryRTX Corp (RTX) sees strong 2026 growth with a $271B backlog and rising margins. Explore the latest stock analysis and outlook.Jun 17, 2026Market & MacroCommunication Services Sector Q1 Earnings: Key Themes, Outlook, and Risks AnalysAT&T, Charter, and Comcast drive 2026 Communication Services sector growth with fiber, 5G, and bundled services. See key earnings trends.Jun 16, 2026Risk & Red FlagsForeign Companies with Potentially Illegal BusinessesFinVolution, Uxin, and others face explicit illegal business risks in 2026 20-F filings. See which foreign issuers are exposed and why.Jun 16, 2026Company ResearchMerck (MRK): Equity Initiation Report — Outperform on Pipeline Depth and M&A-Driven Diversification Ahead of Keytruda LOEMerck (MRK) 2026 stock analysis highlights $16.3B Q1 revenue, pipeline depth, and M&A-driven diversification.Jun 16, 2026TechTechnology Sector Q1 Earnings Primer: Key Themes, Outlooks, and RisksAI infrastructure drives 2026 tech sector growth, with Cisco, Dell, and Microsoft reporting record AI-related revenues and orders.Jun 16, 2026Deep DiveThe AI Ecosystem Stack — Market MapMaps 500+ public and private companies across the AI stack and flags where the critical bottlenecks sit at each layer. Built with Hudson Labs Co-Analyst Deep Dive.Jun 16, 2026Risk & Red FlagsCFO resignations in the last weekNetskope, WD-40, and CVRx announced CFO resignations in 2026. Get details on transitions.Jun 10, 2026Industry LandscapeCompanies Involved in Prediction Markets, Gambling, or Sports Betting ActivitiesDiscover leading companies in prediction markets and sports betting, including DraftKings and Flutter, with key 2026 stats and trends.Jun 10, 2026IndustrialsComprehensive Overview of the Space Industry: Key Segments and TrendsDetailed primer on the space industry, with key players, drivers, risks and long-term trajectory.Jun 9, 2026Market & MacroK-Shaped Economy: Consumer Behaviour Trends in 2026Consumer demand in 2026 is split: lower-income shoppers face pressure, while higher-income cohorts remain resilient. UNFI, ELF, KO, TGT trends included.Jun 9, 2026AI & Emerging TechnologiesWhat could be the next bottleneck for AI after memory?Discover why power and energy are the top AI bottlenecks after memory, with insights from Nvidia, Marvell, Enbridge, and more in 2026.Jun 5, 2026Market & MacroThe Most Stressed Out CEOsDiscover why CEOs at Magnera (MAGN), Moelis (MC), and Scotts Miracle-Gro (SMG) are worried in 2026.Jun 5, 2026Risk & Red FlagsCFO Resignations vs. Date of Announcement in the Last MonthSee which CFOs resigned in 2026, including MTDR and DOCS, with details on replacements and timing.Jun 5, 2026Industry LandscapeDrone/UAV/Aerial Robotics Landscape by Value Chain PositionMap the drone value chain in the US. Discover leading companies like AeroVironment, Kratos, and Teledyne with 2026 performance highlights.Jun 5, 2026Market & MacroLow-Income Consumers are HurtingMajor consumer brands like Albertsons (ACI) and Domino's (DPZ) report pressure among low-income shoppers in 2026, highlighting shifting demand and spending patterns.Jun 5, 2026Industry LandscapePhotonics Value Chain MapPhotonics sector analysis for 2026 highlights COHR, LITE, and AXTI amid record demand and capacity expansion in optical components.Jun 5, 2026Transactions & Capital Markets20+ Companies with Spin-Off or Divestiture PlansDiscover 20+ companies, including Textron and Modine, with major spin-off or divestiture plans for 2026.Jun 5, 2026IndustrialsSupply Bottlenecks at Tech Companies in 2026CoreWeave, KLA, NXP, and Nutanix face 2026 supply chain Discover tech companies with supply-side bottlenecks in 2026, including CoreWeave (CRWV), KLA (KLAC), NXP (NXPI), and Nutanix (NTNX).Jun 5, 2026Deep DiveJensen Bump: Companies named by Nvidia's Jensen Huang at GTC TaipeiJensen Huang named Nvidia's key AI factory and cloud partners at GTC Taipei Computex 2026, highlighting NVDA's expanding ecosystem.Jun 3, 2026TransportationComprehensive Overview and Key Insights of the Airline IndustryIndustry primer of the airline industry, including revenue models, fleet strategies, value chain, and strategic positioning.May 12, 2026IndustrialsTech Companies Seeing Surge in Purchase Orders in 2026Many publicly listed tech companies have seen rapid increases in purchase orders and demand over the last year.Mar 11, 2026AccountingOff Balance Sheet Special Purpose Vehicles at Meta, Micron and OthersSpecial purpose vehicles are used to enter into off balance sheet leasing agreements at Meta, Micron and othersFeb 25, 2026
+Free Trial
+Try Hudson Labs free for 14 days.
+Start free trial
+No charge for 14 days. Then $119/month — cancel anytime.
+Billed monthly, no annual contract. We'll email you before your first charge.
+Trusted by funds managing $600B+ in AUM
+You might also like
+View all
+PNCJPMKEY
+PNC Competitors: PNC Top Peers in 2026
+May 22, 2026
+USBMTBCFG+3
+U.S. Bancorp Competitors: USB Peer Comparison 2026
+May 22, 2026
+ABT
+Abbott Q3 2026 Earnings Preview: ABT Revenue, Guidance, Key Drivers
+Oct 5, 2026
+All research
+Institutional-grade intelligence for public markets. Find what matters.
+Product
+The Co-AnalystMarket IntelligenceForensic Risk AssessmentAgentsCoverage & MCPPricing
+Solutions
+Institutional InvestingCorporate StrategySecurities LawBrokerage & BankingPublic D&O InsuranceInvestor Relations
+Company
+AboutTechnologyResearchIn the MediaBlogCareersSecurity
+Legal
+Terms of ServicePrivacy PolicyWeb Scraping Policy
+© 2026 Hudson Labs. All rights reserved.
+Terms of ServicePrivacy Policy

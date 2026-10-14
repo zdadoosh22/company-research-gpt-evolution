@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ezcater",
+    "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-to-Acquire-ezCater-as-it-Brings-Catering-to-Uber-Eats/default.aspx",
+    "requested_at": "2026-10-13T22:58:47.188668+00:00",
+    "http_status": 200,
+    "original_path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/ezcater-4a2cf84586037bb2c6801750c8e2758884b11d0df95ab33b4cd0a42d05b79d59.html",
+    "original_sha256": "4a2cf84586037bb2c6801750c8e2758884b11d0df95ab33b4cd0a42d05b79d59",
+    "bytes": 68480
+  },
+  {
+    "id": "q3-call",
+    "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx",
+    "requested_at": "2026-10-13T22:58:47.443605+00:00",
+    "http_status": 200,
+    "original_path": "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/q3-call-29b092350e445ff03335567aad3833dce5b168bbff1b3c83a49439424e18703d.html",
+    "original_sha256": "29b092350e445ff03335567aad3833dce5b168bbff1b3c83a49439424e18703d",
+    "bytes": 62671
+  }
+]

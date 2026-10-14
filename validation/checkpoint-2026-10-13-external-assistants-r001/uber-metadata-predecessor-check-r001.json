@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-14T00:10:05.544026+00:00",
+  "paths": [
+    "monitoring/studies/evidence/2026-10-12-uber-funding-r001/submissions-c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643.json",
+    "monitoring/studies/evidence/2026-10-13-uber-disclosure-gate-r001/submissions-c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643.json"
+  ],
+  "raw_bytes_identical": true,
+  "sha256": "c995406f241c4e6cb376abdd696ae447e2f30e1c24d7b45a715c433070ab2643",
+  "scope": "Parent comparison outside the frozen Astra 14-file input; not proof of no issuer news"
+}

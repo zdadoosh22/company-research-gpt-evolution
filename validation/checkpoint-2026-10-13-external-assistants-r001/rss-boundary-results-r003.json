@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-14T00:13:02.794356+00:00",
+  "module": "rss_corrected_prototype_r003.py",
+  "sha256": "92e0ac98d849f8e6e66759cd2c5633978c683895f69cfcd09658cc6acf7542da",
+  "tests": [
+    {
+      "name": "adjacent financial table cells retain boundaries",
+      "passed": true
+    },
+    {
+      "name": "content encoded independently hashed despite description",
+      "passed": true
+    },
+    {
+      "name": "tracking URL identity remains an explicit unresolved association policy",
+      "passed": true
+    },
+    {
+      "name": "separate sources intentionally have separate identities",
+      "passed": true
+    },
+    {
+      "name": "financial title comparison visible and fingerprinted",
+      "passed": true
+    },
+    {
+      "name": "empty tag-only title rejected",
+      "passed": true
+    },
+    {
+      "name": "punctuation-only title rejected",
+      "passed": true
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "scope": "Offline synthetic external adversarial cases plus preserved clarified title tests; no coverage/trade approval"
+}
