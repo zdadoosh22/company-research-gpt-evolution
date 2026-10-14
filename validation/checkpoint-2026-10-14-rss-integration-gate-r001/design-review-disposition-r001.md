@@ -1,0 +1,19 @@
+# Offline RSS integration design gate — 14 October 2026
+
+Baseline82a3aae801bb55f67468829bdf8855420d6e1a1c. Actual goal status null. Work five-hour ceiling now **70% used**, superseding the previous99%ceiling for this continuation; it is a maximum, not a quota to burn. No credits or allowance resets. Approved methodology1.0.0 and accepted economic dispositions unchanged.
+
+External design reviews: Antigravity visible ClaudeOpus5.5Medium, separate ClaudeSonnet5.5Medium blind tests, Geminiweb visible ArgonHigh, all supplied-context/text-only with no tools/project access. Antigravity Argon unavailable; Gemini3.8Flash selectable but not used simply to consume allowance. Claude/GPTfive-hour100%remaining and weekly51%remaining seen in the usage submenu, initially refreshing; dated observation not guaranteed current allowance. Geminiweb Pro access verified; exact visible current quota was not obtained. Model labels are not backend attestations.
+
+Parent compatibility probe used an in-memory SQLite database and inspected existing monitor module. Sameid/differentdigest was not appended to a queued job; a distinct revisionid was. Uberhost not allowlisted. These are **missing RSS compatibility**, not defects in the current SEC accession-ID design. No production database, host list, config, service or queue changed.
+
+Accepted design direction for a **pure offline experiment**: explicit source/company/origin/registry-version binding; release identity separate from versioned content and observed transition; sequence-aware event identity preserves A→B→A→B; immutable provenance and retry binding; failure/lastsuccessful health separate; missing items neverdelete/withdraw; schema/registry drift requires explicit reconciliation. Later old-date corrections remain triage candidates. Separate source/linkvariants until reviewed association; digest changes are candidates, not economic conclusions.
+
+Contrary findings/qualifications:
+
+- Opus proposed leaving lastsuccess unchanged for all emptyfeeds. Rejected for a structurally valid successful emptyfeed: successful transport/parse health may advance while itemhistory remains intact. No feed proves exhaustive coverage. Malformed/truncation failures remain failures; a well-formed shorterwindow cannot be diagnosed as truncated from count alone.
+- Opus's purported missing failurerollback protection already exists in the inspected monitor. Retain it; no fabricated defect/fix. Snapshot observation history aids auditability, but not the sole possible idempotence design.
+- Sonnet called publication/retrieval/hash “three timestamps”. There are two dates/times plus a content hash, not a third timestamp. It left several policies unresolved appropriately; its cases are proposed tests, not executed results.
+- Gemini's demand for financial-node verification *before* a triage research job was too restrictive/circular: the focused job can establish whether a detected delta is material. Matching publicationtime/digest is neither necessary nor sufficient to merge issuer/wire economic events. Text-node changes alone don't prove a financial-definition change.
+- Gemini's “unconditional funded closing” prerequisite is not adopted as a universal research/entry gate. Relevant financing can be underwritten before closing with sufficient current evidence and required review. Conversely, a closing disclosure alone does not establish current owner cash or attractive entry. The actual Uber funding/entry park remains; no new economic conclusion accepted.
+
+Next verification is the delegated pure revision-state reducer under the retained exact experimental contract. It has no SQLite, network, source discovery, models, notifications or execution. No live adapter approval implied. A later durable integration step must reconcile outbox/job idempotence, transaction boundaries, restart handling, origin/path/redirect coverage and configured source onboarding before activation.

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-14T11:55:08.409135+00:00",
+  "module_path": "tools/observation_monitor.py",
+  "sha256": "450a4d492071e02fd81f4eb85638bfd040b2fcbd613909cf3135705e8737afb0",
+  "temporary_database": ":memory:",
+  "same_id_new_digest_not_appended": true,
+  "different_revision_id_appended": true,
+  "uber_host_not_live_allowlisted": true,
+  "scope": "Synthetic interface compatibility probe. Not a defect in current SEC accession identity handling; live RSS is not supported/configured. No network, operational state, monitoring, research, notifications or fills."
+}

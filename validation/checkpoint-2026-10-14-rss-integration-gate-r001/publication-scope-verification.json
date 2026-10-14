@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-14T12:15:25.411598+00:00",
+  "staged_additions_before_receipt": 23,
+  "paths": [
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/CHAT-HANDOFF.md",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/STATUS.md",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/design-review-disposition-r001.md",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/external-output-captures-r001.md",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/gemini-assignment.txt",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/gemini-jpm-new-provider-assignment.txt",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/inspect_queue_contract.py.txt",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/jpm-provider-access-disposition-r001.md",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/opus-assignment.txt",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/portable-source-verification-r001.json",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/preservation-verification-r001.json",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/queue-interface-probe-r001.json",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/reducer-assignment-r001.txt",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/reducer-correction-assignment-r002.txt",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/reducer-disposition-r002.md",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/reducer-followup-results-r002.json",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/reducer-results-r001.json",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/reducer-results-r002.json",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/reducer_r001.py.txt",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/reducer_r002.py.txt",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/sonnet-assignment.txt",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/verify_reducer.py.txt",
+    "validation/checkpoint-2026-10-14-rss-integration-gate-r001/verify_reducer_followup.py.txt"
+  ],
+  "predecessor_modifications": 0,
+  "scope": "Checkpoint-only additions and limited sensitive-pattern/path exclusions; not a blanket credential-audit claim"
+}

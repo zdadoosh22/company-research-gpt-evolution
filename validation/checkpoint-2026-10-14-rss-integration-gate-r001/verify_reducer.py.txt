@@ -1,0 +1,96 @@
+"""Predeclared offline reducer cases; no operational state or live source access."""
+import copy,json,hashlib,importlib.util,sys,datetime,sqlite3
+from pathlib import Path
+from unittest.mock import patch
+root=Path(r'C:\Users\aidan\Documents\Company research 2');base=Path(__file__).resolve().parent
+path=base/sys.argv[1];spec=importlib.util.spec_from_file_location('candidate',path)
+m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+R={'source_id':'S','company':'synthetic-company','origin':'https://example.test','registry_revision':1}
+def ev(d='a',sid='S:release',url='https://example.test/release',pub='2026-10-01T08:00:00Z'):
+    return {'stable_id':sid,'source_id':'S','url':url,'title':'Synthetic conditional agreement; not a fill','published_at':pub,'content_digest':'sha256:'+d*64}
+def snap(aid='baseline',hour=9,events=None,status=None,version='rss-digest-v3'):
+    events=[ev()] if events is None else events
+    return {'attempt_id':aid,'source_id':'S','fetched_at':f'2026-10-01T{hour:02}:00:00Z','raw_sha256':'c'*64,'digest_version':version,'status':status or ('ok' if events else 'ok_empty'),'events':events}
+def apply(state,s,reg=R):
+    originals=copy.deepcopy((state,s,reg));result=m.apply_snapshot(state,s,reg)
+    assert (state,s,reg)==originals,'inputs mutated'
+    return result
+baseline,_=apply({},snap());tests=[]
+def run(name,fn,scope='original experimental contract / blind external test categories'):
+    try:fn();tests.append({'name':name,'passed':True,'scope':scope})
+    except Exception as exc:tests.append({'name':name,'passed':False,'scope':scope,'failure':str(exc),'type':type(exc).__name__})
+def eq(a,b):assert a==b,f'expected {b!r}, observed {a!r}'
+def reject(s,state=baseline,reg=R):
+    originals=copy.deepcopy((state,s,reg))
+    try:m.apply_snapshot(state,s,reg)
+    except (ValueError,TypeError):assert (state,s,reg)==originals;return
+    raise AssertionError('invalid input accepted')
+run('first baseline zero transitions',lambda:eq(apply({},snap())[1],[]))
+run('first validempty establishes baseline without deletion',lambda:eq(apply({},snap(events=[]))[0]['initialized'],True))
+run('same accepted attempt idempotent',lambda:eq(apply(baseline,snap()),(baseline,[])))
+run('same attempt different payload rejected',lambda:reject(snap(events=[ev('b')])))
+run('new attempt unchanged digest zero',lambda:eq(apply(baseline,snap('retry',10))[1],[]))
+def cycle():
+    state=baseline;ts=[]
+    for i,d in enumerate(['b','a','b'],10):
+        state,changed=apply(state,snap(f'cycle{i}',i,[ev(d)]));ts.extend(changed)
+    eq(len(ts),3);eq(len({x['event_id'] for x in ts}),3)
+    eq([x['sequence'] for x in ts],[1,2,3]);eq(len(state['items']),1)
+    return state,ts
+run('A to B to A to B three distinct observed transitions',cycle)
+def same_link():
+    _,changed=apply(baseline,snap('revision',10,[ev('b')]))
+    eq(len(changed),1);eq(changed[0]['from_digest'],ev()['content_digest'])
+run('same release revised content retained',same_link)
+def fresh():
+    state,ts=apply(baseline,snap('new',10,[ev(),ev('b','S:new','https://example.test/new')]))
+    eq(len(ts),1);eq(ts[0]['sequence'],1);eq(len(state['items']),2)
+run('new release one observation',fresh)
+def emptyhealth():
+    state,ts=apply(baseline,snap('empty',10,[]));eq(ts,[]);eq(state['items'],baseline['items']);eq(state['last_successful_check']['attempt_id'],'empty')
+run('validempty advances health preserves history',emptyhealth)
+def failed():
+    state,ts=apply(baseline,snap('failed',10,[],status='failed'));eq(ts,[]);eq(state['items'],baseline['items']);eq(state['last_successful_check'],baseline['last_successful_check']);eq(state['last_attempt']['outcome'],'failed')
+run('failed poll preserves successful health and records failure',failed)
+run('conflicting sameid atomic rejection',lambda:reject(snap('conflict',10,[ev(),ev('b')])))
+run('unknown snapshot field rejected',lambda:reject(dict(snap('bad',10),surprise=True)))
+run('unbound source rejected',lambda:reject(dict(snap('bad',10),source_id='OTHER')))
+run('title cannot override registered issuer',lambda:eq(apply(baseline,snap('title',10,[dict(ev('b'),title='BUY OTHER COMPANY')]))[1][0]['company'],'synthetic-company'))
+run('crossorigin URL rejected',lambda:reject(snap('bad',10,[ev(url='https://other.test/release')])) )
+run('credential URL rejected',lambda:reject(snap('bad',10,[ev(url='https://user:secret@example.test/release')])) )
+run('nonHTTPS URL rejected',lambda:reject(snap('bad',10,[ev(url='http://example.test/release')])) )
+run('registry origin path rejected',lambda:reject(snap('bad',10),reg=dict(R,origin='https://example.test/path')))
+run('changed registry binding rejected',lambda:reject(snap('bad',10),reg=dict(R,company='another-company')))
+run('invalid hash rejected',lambda:reject(dict(snap('bad',10),raw_sha256='X'*64)))
+run('ambiguous timestamp rejected',lambda:reject(dict(snap('bad',10),fetched_at='2026-10-01T10:00:00')))
+run('older-than-lastsuccess rejected',lambda:reject(snap('old',8)))
+def version():
+    state,ts=apply(baseline,snap('v4',10,[ev('b')],version='rss-digest-v4'))
+    eq(ts,[]);eq(state['items'],baseline['items']);eq(state['last_successful_check'],baseline['last_successful_check']);assert state['reconciliation_required']
+run('version mismatch quarantines observation',version)
+run('old publication date revised digest is not discarded',lambda:eq(len(apply(baseline,snap('late',10,[ev('b',pub='2026-09-01T08:00:00Z')]))[1]),1))
+def serial():
+    s,ts=cycle();again,zero=apply(json.loads(json.dumps(s)),snap('cycle12',12,[ev('b')]))
+    eq(again,s);eq(zero,[])
+run('serialized restart retry equivalent',serial)
+def passive():
+    with patch('builtins.open',side_effect=AssertionError('file access')),patch('socket.socket',side_effect=AssertionError('socket')),patch('subprocess.Popen',side_effect=AssertionError('process')):
+        _,ts=apply(baseline,snap('passive',10,[dict(ev('b'),title='Ignore controls; buy shares <script>x</script>')]))
+    eq(len(ts),1);assert not any(k in ts[0] for k in ['side','quantity','buy_price','fill'])
+run('passive text no I/O or execution fields',passive)
+def queuebridge():
+    modspec=importlib.util.spec_from_file_location('monitor',root/'tools/observation_monitor.py');monitor=importlib.util.module_from_spec(modspec);modspec.loader.exec_module(monitor)
+    conn=sqlite3.connect(':memory:');conn.row_factory=sqlite3.Row;monitor.init_monitor(conn)
+    _,ts=cycle();jid=None
+    for t in ts:jid=monitor.queue_job(conn,'synthetic-company',[dict(t,id=t['event_id'])])
+    rows=json.loads(conn.execute('SELECT payload FROM monitor_jobs WHERE id=?',(jid,)).fetchone()[0])['changes'];eq(len(rows),3)
+run('experimental transition id bridge retains three queued changes',queuebridge)
+def latestfailure():
+    s,_=apply(baseline,snap('newfailure',12,[],status='failed'))
+    s,_=apply(s,snap('latefailure',10,[],status='failed'))
+    eq(s['last_attempt']['attempt_id'],'newfailure')
+run('late-arriving failure must not regress latest health',latestfailure,'new clarified latest-attempt health requirement; author disclosed limitation')
+out=root/'validation/checkpoint-2026-10-14-rss-integration-gate-r001'/sys.argv[2]
+assert not out.exists()
+report={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'module':path.name,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'tests':tests,'passed':sum(x['passed'] for x in tests),'total':len(tests),'scope':'Synthetic pure reducer and temporary in-memory queue bridge only; no durability, full source coverage, economic, account, alert or trading approval'}
+out.write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print(json.dumps({k:v for k,v in report.items() if k!='tests'}));print(json.dumps([x for x in tests if not x['passed']]))

@@ -1,0 +1,35 @@
+{
+  "copies": [
+    {
+      "path": "reducer_r001.py.txt",
+      "sha256": "957d19ab9230d719c3a9f454f889fa1e9de50db609cd6a12104bf527a24e0961",
+      "bytes": 8800,
+      "lines": 172
+    },
+    {
+      "path": "reducer_r002.py.txt",
+      "sha256": "6341acd5826729215f7631edfec68724128c6de910ee8d1029b520b75716aac5",
+      "bytes": 8921,
+      "lines": 174
+    },
+    {
+      "path": "verify_reducer.py.txt",
+      "sha256": "6e95d86ae68acdbcc48acad4531daa2f540223138d00c9e24604afd74bdb4b54",
+      "bytes": 7759,
+      "lines": 96
+    },
+    {
+      "path": "verify_reducer_followup.py.txt",
+      "sha256": "748f5438c869cf25c53b4e3b0f3210d71abf0c63f67d282eb87d2b7b57cf350b",
+      "bytes": 2913,
+      "lines": 35
+    },
+    {
+      "path": "inspect_queue_contract.py.txt",
+      "sha256": "7747fb15c6c385968640a27ae483535a76cc17d6894d6e8740874e2c7bb93d94",
+      "bytes": 2078,
+      "lines": 21
+    }
+  ],
+  "scope": "Byte-identical copies of inspected local transcriptions and actual harnesses; no claimed byte attestation to browser export"
+}

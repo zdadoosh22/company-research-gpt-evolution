@@ -1,0 +1,152 @@
+{
+  "checked_at": "2026-10-14T12:04:13.101336+00:00",
+  "module": "reducer_r001.py",
+  "sha256": "957d19ab9230d719c3a9f454f889fa1e9de50db609cd6a12104bf527a24e0961",
+  "tests": [
+    {
+      "name": "first baseline zero transitions",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "first validempty establishes baseline without deletion",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "same accepted attempt idempotent",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "same attempt different payload rejected",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "new attempt unchanged digest zero",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "A to B to A to B three distinct observed transitions",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "same release revised content retained",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "new release one observation",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "validempty advances health preserves history",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "failed poll preserves successful health and records failure",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "conflicting sameid atomic rejection",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "unknown snapshot field rejected",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "unbound source rejected",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "title cannot override registered issuer",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "crossorigin URL rejected",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "credential URL rejected",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "nonHTTPS URL rejected",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "registry origin path rejected",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "changed registry binding rejected",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "invalid hash rejected",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "ambiguous timestamp rejected",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "older-than-lastsuccess rejected",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "version mismatch quarantines observation",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "old publication date revised digest is not discarded",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "serialized restart retry equivalent",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "passive text no I/O or execution fields",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "experimental transition id bridge retains three queued changes",
+      "passed": true,
+      "scope": "original experimental contract / blind external test categories"
+    },
+    {
+      "name": "late-arriving failure must not regress latest health",
+      "passed": false,
+      "scope": "new clarified latest-attempt health requirement; author disclosed limitation",
+      "failure": "expected 'newfailure', observed 'latefailure'",
+      "type": "AssertionError"
+    }
+  ],
+  "passed": 27,
+  "total": 28,
+  "scope": "Synthetic pure reducer and temporary in-memory queue bridge only; no durability, full source coverage, economic, account, alert or trading approval"
+}

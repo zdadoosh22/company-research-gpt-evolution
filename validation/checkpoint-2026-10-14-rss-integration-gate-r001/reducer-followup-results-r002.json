@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-14T12:08:25.485082+00:00",
+  "module_sha256": "6341acd5826729215f7631edfec68724128c6de910ee8d1029b520b75716aac5",
+  "tests": [
+    {
+      "name": "missing older item retained separately from validempty",
+      "passed": true
+    },
+    {
+      "name": "latest failed health retained while later-arriving usable earlier snapshot accepted",
+      "passed": true
+    },
+    {
+      "name": "equal retrieval times use explicit caller order",
+      "passed": true
+    },
+    {
+      "name": "knownv3 continues with unresolved unsupported-version marker retained",
+      "passed": true
+    }
+  ],
+  "passed": 4,
+  "scope": "Four targeted followups for changed health ordering and explicitly selected offline policies; no live integration or economic acceptance"
+}

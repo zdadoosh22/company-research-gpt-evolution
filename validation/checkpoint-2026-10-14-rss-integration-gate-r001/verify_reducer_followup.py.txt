@@ -1,0 +1,35 @@
+import importlib.util,copy,json,datetime,hashlib
+from pathlib import Path
+root=Path(r'C:\Users\aidan\Documents\Company research 2');base=Path(__file__).resolve().parent
+spec=importlib.util.spec_from_file_location('reducer',base/'reducer_r002.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+r={'source_id':'S','company':'synthetic-company','origin':'https://example.test','registry_revision':1}
+def e(sid='S:one',d='a'):return {'stable_id':sid,'source_id':'S','url':'https://example.test/'+sid.split(':')[1],'title':'Synthetic data only','published_at':'2026-10-01T08:00:00Z','content_digest':'sha256:'+d*64}
+def s(aid,hour,rows,status=None,version='rss-digest-v3'):return {'attempt_id':aid,'source_id':'S','fetched_at':f'2026-10-01T{hour:02}:00:00Z','raw_sha256':'c'*64,'digest_version':version,'status':status or ('ok' if rows else 'ok_empty'),'events':rows}
+baseline,_=m.apply_snapshot({},s('baseline',9,[e(),e('S:two','b')]),r)
+tests=[]
+def run(name,fn):
+    fn();tests.append({'name':name,'passed':True})
+def missing():
+    new,ts=m.apply_snapshot(baseline,s('missing',10,[e()]),r)
+    assert new['items']==baseline['items'] and ts==[]
+run('missing older item retained separately from validempty',missing)
+def late():
+    failure,_=m.apply_snapshot(baseline,s('failure',12,[],status='failed'),r)
+    new,ts=m.apply_snapshot(failure,s('late-success',10,[e(d='d')]),r)
+    assert new['last_attempt']['attempt_id']=='failure'
+    assert new['last_successful_check']['attempt_id']=='late-success' and len(ts)==1
+    assert 'failure' in new['attempts'] and 'late-success' in new['attempts']
+run('latest failed health retained while later-arriving usable earlier snapshot accepted',late)
+def tie():
+    failure,_=m.apply_snapshot(baseline,s('failure',10,[],status='failed'),r)
+    new,_=m.apply_snapshot(failure,s('same-time',10,[]),r)
+    assert new['last_attempt']['attempt_id']=='same-time'
+run('equal retrieval times use explicit caller order',tie)
+def versions():
+    failed,_=m.apply_snapshot(baseline,s('v4',10,[e(d='d')],version='rss-digest-v4'),r)
+    new,ts=m.apply_snapshot(failed,s('known-v3',11,[e(d='d')]),r)
+    assert new['reconciliation_required'] and len(ts)==1
+    assert new['attempts']['v4']['outcome']=='reconciliation_required'
+run('knownv3 continues with unresolved unsupported-version marker retained',versions)
+report={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'module_sha256':hashlib.sha256((base/'reducer_r002.py').read_bytes()).hexdigest(),'tests':tests,'passed':4,'scope':'Four targeted followups for changed health ordering and explicitly selected offline policies; no live integration or economic acceptance'}
+out=root/'validation/checkpoint-2026-10-14-rss-integration-gate-r001/reducer-followup-results-r002.json';assert not out.exists();out.write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print(json.dumps(report))

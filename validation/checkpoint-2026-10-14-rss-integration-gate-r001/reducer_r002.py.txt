@@ -1,0 +1,174 @@
+"""Experimental offline RSS snapshot reducer. Prototype only; not production acceptance."""
+import copy
+import hashlib
+import json
+import re
+import unicodedata
+from datetime import datetime, timedelta, timezone
+from urllib.parse import urlsplit
+EXPECTED_VERSION = "rss-digest-v3"
+REGISTRY_KEYS = {"source_id", "company", "origin", "registry_revision"}
+SNAPSHOT_KEYS = {"attempt_id", "source_id", "fetched_at", "raw_sha256",
+                 "digest_version", "status", "events"}
+EVENT_KEYS = {"stable_id", "source_id", "url", "title", "published_at", "content_digest"}
+STATE_KEYS = {"binding", "attempts", "items", "initialized",
+              "last_successful_check", "last_attempt", "reconciliation_required"}
+HEX64 = re.compile(r"[0-9a-f]{64}")
+DIGEST = re.compile(r"sha256:[0-9a-f]{64}")
+def _fail(msg):
+    raise ValueError(msg)
+def _exact(obj, keys, name):
+    if not isinstance(obj, dict) or set(obj) != keys:
+        _fail(f"{name} must have exactly keys {sorted(keys)}")
+def _text(v, name):
+    if not isinstance(v, str) or not v.strip():
+        _fail(f"{name} must be non-empty text")
+    if any(unicodedata.category(c) == "Cc" and c not in "\t\n\r" for c in v):
+        _fail(f"{name} contains control characters")
+    return v
+def _utc(v, name):
+    if not isinstance(v, str):
+        _fail(f"{name} must be an ISO8601 string")
+    s = v[:-1] + "+00:00" if v.endswith("Z") else v
+    try:
+        dt = datetime.fromisoformat(s)
+    except ValueError:
+        _fail(f"{name} is not valid ISO8601")
+    if dt.tzinfo is None or dt.utcoffset() != timedelta(0):
+        _fail(f"{name} must be timezone-aware UTC")
+    return dt.astimezone(timezone.utc)
+def _iso(dt):
+    return dt.isoformat().replace("+00:00", "Z")
+def _origin_of(u, name, bare):
+    if not isinstance(u, str) or not u or any(c <= " " or c == "\\" for c in u):
+        _fail(f"{name} must be a URL without whitespace")
+    p = urlsplit(u)
+    if p.scheme != "https" or not p.hostname or "@" in p.netloc:
+        _fail(f"{name} must be HTTPS without credentials")
+    try:
+        port = p.port
+    except ValueError:
+        _fail(f"{name} has an invalid port")
+    if port == 0:
+        _fail(f"{name} has an invalid port")
+    if bare and (p.path not in ("", "/") or "?" in u or "#" in u):
+        _fail(f"{name} must be scheme+host[:port] with optional trailing slash only")
+    host = f"[{p.hostname}]" if ":" in p.hostname else p.hostname
+    return f"https://{host}" + ("" if port in (None, 443) else f":{port}")
+def _check_registry(reg):
+    _exact(reg, REGISTRY_KEYS, "registry")
+    _text(reg["source_id"], "registry.source_id")
+    _text(reg["company"], "registry.company")
+    rev = reg["registry_revision"]
+    if isinstance(rev, bool) or not isinstance(rev, (int, str)) or rev == "":
+        _fail("registry.registry_revision must be int or non-empty str")
+    return _origin_of(reg["origin"], "registry.origin", bare=True)
+def _check_state(state, binding):
+    if not isinstance(state, dict):
+        _fail("state must be a dict")
+    if not state:
+        return {"binding": dict(binding), "attempts": {}, "items": {},
+                "initialized": False, "last_successful_check": None,
+                "last_attempt": None, "reconciliation_required": None}
+    _exact(state, STATE_KEYS, "state")
+    if state["binding"] != binding:
+        _fail("registry binding changed or wrong source; explicit rebind required")
+    return copy.deepcopy(state)
+def _check_snapshot(snap, reg, origin):
+    _exact(snap, SNAPSHOT_KEYS, "snapshot")
+    _text(snap["attempt_id"], "attempt_id")
+    if snap["source_id"] != reg["source_id"]:
+        _fail("snapshot.source_id does not match registry")
+    fetched = _utc(snap["fetched_at"], "fetched_at")
+    if not isinstance(snap["raw_sha256"], str) or not HEX64.fullmatch(snap["raw_sha256"]):
+        _fail("raw_sha256 must be 64 lowercase hex characters")
+    _text(snap["digest_version"], "digest_version")
+    status, events = snap["status"], snap["events"]
+    if status not in ("ok", "ok_empty", "failed"):
+        _fail("status must be ok|ok_empty|failed")
+    if not isinstance(events, list):
+        _fail("events must be a list")
+    if (status == "ok") != bool(events):
+        _fail("status ok requires events; ok_empty/failed require none")
+    prefix, rows = reg["source_id"] + ":", {}
+    for i, ev in enumerate(events):
+        n = f"events[{i}]"
+        _exact(ev, EVENT_KEYS, n)
+        if ev["source_id"] != reg["source_id"]:
+            _fail(f"{n}.source_id does not match registry")
+        sid = _text(ev["stable_id"], f"{n}.stable_id")
+        if not sid.startswith(prefix) or len(sid) == len(prefix):
+            _fail(f"{n}.stable_id must be qualified as '<source_id>:<id>'")
+        if _origin_of(ev["url"], f"{n}.url", bare=False) != origin:
+            _fail(f"{n}.url is not same-origin with registry")
+        _text(ev["title"], f"{n}.title")
+        _utc(ev["published_at"], f"{n}.published_at")
+        if not isinstance(ev["content_digest"], str) or not DIGEST.fullmatch(ev["content_digest"]):
+            _fail(f"{n}.content_digest must be sha256:<64 lowercase hex>")
+        if sid in rows and rows[sid] != ev:
+            _fail(f"conflicting duplicate stable_id {sid!r}")
+        rows[sid] = ev
+    return fetched, rows
+def _hash(obj):
+    blob = json.dumps(obj, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+    return "sha256:" + hashlib.sha256(blob.encode("utf-8")).hexdigest()
+def apply_snapshot(state, snapshot, registry):
+    """Pure reducer: returns (new_state, transitions). Inputs are never mutated."""
+    origin = _check_registry(registry)
+    new = _check_state(state, dict(registry))
+    fetched, rows = _check_snapshot(snapshot, registry, origin)
+    aid, fp = snapshot["attempt_id"], _hash(snapshot)
+    prior = new["attempts"].get(aid)
+    if prior is not None:
+        if prior["fingerprint"] != fp:
+            _fail("attempt_id reused with a different payload")
+        return new, []
+    last_ok = new["last_successful_check"]
+    if last_ok is not None and fetched < _utc(last_ok["fetched_at"], "state.last_ok"):
+        _fail("fetched_at is older than last successful check")
+    status, version, observed = snapshot["status"], snapshot["digest_version"], _iso(fetched)
+    transitions, outcome = [], None
+    if version != EXPECTED_VERSION:
+        outcome = "reconciliation_required"
+        new["reconciliation_required"] = {"attempt_id": aid, "digest_version": version,
+                                          "expected": EXPECTED_VERSION}
+    elif status == "failed":
+        outcome = "failed"
+    elif not new["initialized"]:
+        for sid, ev in sorted(rows.items()):
+            new["items"][sid] = {"current_digest": ev["content_digest"], "sequence": 0,
+                                 "url": ev["url"],
+                                 "published_at": _iso(_utc(ev["published_at"], "p")),
+                                 "last_change_attempt_id": aid}
+        new["initialized"], outcome = True, "baseline"
+    else:
+        for sid, ev in sorted(rows.items()):
+            item = new["items"].get(sid)
+            if item is not None and item["current_digest"] == ev["content_digest"]:
+                continue
+            seq = 1 if item is None else item["sequence"] + 1
+            pub = _iso(_utc(ev["published_at"], "p"))
+            transitions.append({
+                "event_id": _hash([registry["source_id"], sid, version, seq]),
+                "company": registry["company"], "source_id": registry["source_id"],
+                "stable_id": sid,
+                "from_digest": None if item is None else item["current_digest"],
+                "to_digest": ev["content_digest"], "sequence": seq,
+                "attempt_id": aid, "observed_at": observed, "published_at": pub,
+                "raw_sha256": snapshot["raw_sha256"], "digest_version": version})
+            new["items"][sid] = {"current_digest": ev["content_digest"], "sequence": seq,
+                                 "url": ev["url"], "published_at": pub,
+                                 "last_change_attempt_id": aid}
+        outcome = "observed"
+    if outcome in ("baseline", "observed"):
+        new["last_successful_check"] = {"attempt_id": aid, "fetched_at": observed,
+                                        "status": status}
+    prev = new["last_attempt"]
+    if prev is None or fetched >= _utc(prev["fetched_at"], "state.last_attempt"):
+        new["last_attempt"] = {"attempt_id": aid, "fetched_at": observed,
+                               "status": status, "outcome": outcome}
+    new["attempts"][aid] = {"fingerprint": fp, "fetched_at": observed, "status": status,
+                            "digest_version": version, "raw_sha256": snapshot["raw_sha256"],
+                            "outcome": outcome,
+                            "transition_ids": [t["event_id"] for t in transitions]}
+    return new, transitions
