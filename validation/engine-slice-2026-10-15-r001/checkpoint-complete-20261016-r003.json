@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "engine-acceptance-20261016-r003-complete",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "acceptance-20261016-r003",
+  "phase": "complete",
+  "created_at": "2026-10-16T17:32:16.533148+00:00",
+  "observed_at": "2026-10-16T17:32:16.533148+00:00",
+  "origin": "User resumed on Sol 6.1 on16October2026; ordinary allowance verified available; previous credit authorisation exhausted.",
+  "request": "Continue the original complete engine acceptance audit against current implementation and protected scope.",
+  "work": [
+    "Reproduced and repaired non-atomic index rebuild; tested actual process exit and competing writer exclusion.",
+    "Repaired new accepted paper per-idea ceiling, preserving historical cohorts and stronger exit/capital tests.",
+    "Audited93 requirements with explicit evidence and installed final tested code/configuration-safe checkpoint."
+  ],
+  "outcome": "partial",
+  "artifacts": [
+    {
+      "path": "validation/engine-slice-2026-10-15-r001/CONTINUATION-r005.md",
+      "sha256": "042d23fa2835e7627ee76240b6f40e4bc20952728eb0a7e0d3ae5d066e5fe7b3"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r007.txt",
+      "sha256": "3b66833644fe166168816d68fe0a69b38b1687b70f2e006c4a674c6bfd438bce"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-15-r001/ENGINEERING-REVIEW-20261016-r004.md",
+      "sha256": "34cbc368ef541efeb5c1308252a572824e38bf60426779641789d66b3c2ea406"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-15-r001/INTEGRATION-20261016-r003.json",
+      "sha256": "8ed4c53a6bd6a9c5caab1e8d79240d59e41c676ff3ed5e1b241d68c0c8b9d22c"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-15-r001/PROTECTED-VERIFICATION-20261016-r002.json",
+      "sha256": "078078835a595f3bc775c12f71249130ba629ca9c57aba77784502060e426ac2"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-15-r001/REQUIREMENT-EVIDENCE-20261016-r004.json",
+      "sha256": "032d2f6cd5fdd47d115d52141d6a18f5e20eb1b4dd6d3a02914aa2517e6b57e7"
+    }
+  ],
+  "checks": [
+    {
+      "id": "regression-20261016-r007",
+      "method": "402 deterministic tests:401 passed,one OS symlink permission skip in52.896 seconds; fake workers and temporary state",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r007.txt"
+      ]
+    },
+    {
+      "id": "integration-20261016-r003",
+      "method": "Original checkout fast-forward after concurrent-change check; configuration/untracked/import closure preserved; installed status command succeeds",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-15-r001/INTEGRATION-20261016-r003.json"
+      ]
+    }
+  ],
+  "blockers": {
+    "resolved": [
+      "Index rebuild could lose prior data and saved import registry after failure/exit",
+      "New paper commitments bypassed experimental100 per-idea ceiling",
+      "Workflow falsely said development slice had not been installed"
+    ],
+    "introduced": [],
+    "unchanged": [
+      "Required actual Sol/Astra cycle not performed",
+      "Final item-by-item acceptance audit incomplete",
+      "Held-out comparison remains 4/5 per route"
+    ]
+  },
+  "readiness_impact": {
+    "label": "improved",
+    "requirements": [
+      "BRIEF-L0176",
+      "BRIEF-L0424"
+    ],
+    "artifact_paths": [
+      "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r007.txt"
+    ],
+    "explanation": "Software recovery and experimental paper controls improved; no research, operational, portfolio or trading gate acceptance."
+  },
+  "verified_gate_changes": [],
+  "next_action": "Read CONTINUATION-r005.md; continue original requirement audit and bounded preparation only within remaining ordinary allowance; do not repeat failed runtime probes.",
+  "unknowns": [
+    "Required packet-only worker restrictions and actual Sol/Astra cycle",
+    "182 original requirements still not assessed",
+    "Actual current-source/candidate economic disposition",
+    "Legacy paper cohorts retain original budgets; no current allocation authority"
+  ],
+  "supersedes": []
+}
