@@ -286,7 +286,9 @@ def validate_output(result, job, project_root):
 def needs_continuation(result):
     return (result['status'] in {'partial','withheld'} or
             any(f['severity']=='material' and f['outcome']!='resolved' for f in result['findings']) or
-            any(g['material'] for g in result['gaps']))
+            any(g['material'] for g in result['gaps']) or
+            any(c['status']=='withheld' for c in result['conclusions']) or
+            any(c['status']=='withheld' for c in result['coverage']))
 
 
 DISABLED_FEATURES = (

@@ -73,6 +73,21 @@ class ResearchMemoryTests(unittest.TestCase):
             self.assertEqual(record["assumptions"], ["Demand remains uncertain"])
         self.assertEqual(result["worker_calls"], 0)
 
+    def test_originating_run_inference_and_explicit_values(self):
+        self.records[1]["originating_run"] = "manual-r2"
+        self.load()
+        records, _ = self.memory.data()
+        by_id = {record["id"]: record for record in records}
+        self.assertEqual(by_id["support"]["originating_run"], "monitoring/studies")
+        self.assertEqual(by_id["contrary"]["originating_run"], "manual-r2")
+
+        for invalid in (None, "", "   "):
+            with self.subTest(originating_run=invalid):
+                self.records[0]["originating_run"] = invalid
+                with self.assertRaisesRegex(ValueError, "Missing record field: originating_run"):
+                    self.load()
+        self.records[0].pop("originating_run")
+
     def test_nonmatching_unclassified_context_is_not_silently_lost(self):
         self.add('unclassified-limit', 'Archived originals could not be preserved.', polarity='unknown')
         self.add('other-question', 'Unrelated history.', polarity='unknown', question_scope='other-question')

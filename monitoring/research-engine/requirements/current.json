@@ -1,7 +1,6 @@
 {
-  "schema_version": 1,
   "assessment": {
-    "path": "validation/engine-slice-2026-10-15-r001/REQUIREMENT-EVIDENCE-20261016-r001.json",
-    "sha256": "4ca2af026ffa6a833d84c1c52db494c676325a2fa8e46b584481904a15457ca5"
+    "path": "validation/engine-slice-2026-10-15-r001/REQUIREMENT-EVIDENCE-20261016-r003.json",
+    "sha256": "ee1ef2c91f729b102a407b6c2cabf55fe17d260d326fbed80733e07d11f6e0b8"
   }
 }

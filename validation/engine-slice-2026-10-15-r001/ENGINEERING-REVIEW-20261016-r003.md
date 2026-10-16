@@ -1,0 +1,25 @@
+# Acceptance audit continuation — 16 October 2026, r003
+
+Baseline: local development and authoritative checkout `dee4fefdfea62c2cad7f0c744d1288f0b96ead72`. This is another bounded direct engineering review by the main coordinator, not an analytical Astra review or final release acceptance. Earlier reviews remain preserved.
+
+## New material defect and repair
+
+**ENG-11 — supported disposition could ignore an incomplete finished review (material, repaired).** A schema-valid `review-complete` could contain a material gap or withheld conclusion without an unresolved material finding. The disposition validator checked only the latter. A synthetic regression demonstrated both unsupported promotions before repair: `REVIEW-GAP-RED-20261016-r003.txt`, fourteen tests, two failing subcases. The preceding two red logs are test-authoring indentation errors, not reproduction of the product defect.
+
+The disposition now uses the adapter's shared continuation predicate. That predicate also recognizes withheld conclusions and coverage, alongside partial/withheld execution, unresolved material findings and material gaps. This preserves completed negative reviews and parked dispositions, while refusing supported promotion. Queue and translation use the same continuation meaning. No live gates or research records were accepted. The full regression after this repair ran396 tests:395 passed, one Windows symlink-permission skip in89.780 seconds (`REGRESSION-20261016-r004.txt`). Source newline normalization after that run restored the predecessor LF convention without changing executable statements.
+
+## Narrow delegated audit and direct reconciliation
+
+One bounded read-only packet/memory audit was requested through a Luna High subagent, followed by a narrow originating-run repair assignment. The requested model selection is recorded; backend identity is not independently verified. These are engineering support tasks and consume none of the four real-case analysis/review attempts. External criticism was checked against the actual files, not accepted automatically.
+
+- **Originating run (repaired):** absent legacy metadata is inferred from the explicit source path. A supplied null/blank bypassed that inference and was not validated. Direct inspection confirmed the narrow repair: this field now passes the same required nonblank-text check as other provenance. Tests verify absent-field inference, preservation of a valid supplied value and refusal of null/empty/whitespace values. The focused31-test run passes (`MEMORY-ORIGIN-20261016.txt`).
+- **Park reopening conditions:** the engine's authoritative parked disposition requires nonempty reopening conditions, and `research_engine.export_memory` copies them into `reopen_conditions`. Generic historical imports preserve supplied conditions but can lack them. Thus the delegated finding does not establish loss in the new connected export path. Historical absence must remain a limitation; it is not permission to invent a reopening condition or reopen a closed audit.
+- **Historical public availability:** a matching preserved source register overrides/checks publication metadata. Without a register, supplied public-date metadata is not independent proof of earlier availability. Retrospective labels and software cutoff tests do not certify that source assertion. This remains an evidence-validation limitation for a real historical case, including the frozen comparison; no dates or gold passages were changed.
+- **Cross-company relationships:** entity/security/context filters prevent direct cross-company record reuse. They do not determine economic equivalence from a shared supplier or industry. That remains a bounded analytical claim to challenge in the actual review, not an inference this index is entitled to make.
+- **Worker isolation:** staging/hash/path tests prove packet preparation behavior only. The production route remains unavailable. No new supported runtime lead emerged from this audit, so the prior failed probes were not repeated.
+
+## Acceptance consequence
+
+Software correctness improved; goal completion and research acceptance did not. The required actual Sol High analysis and Astra High review remain unperformed, all four case attempts unused. The held-out comparison remains4/5 for each route. No positive efficiency, investment performance or edge claim follows. The interim requirement matrix is being extended item by item; its counts are evidence bookkeeping, not a readiness percentage. Keep the five status axes and all ten gates separate. Observation-only configuration, approved methodology1.0.0 and completed company reviews remain authoritative.
+
+After the origin repair, the final full regression ran397 tests:396 passed, one symlink-permission skip in62.299 seconds (`REGRESSION-20261016-r005.txt`). This supersedes r004 as the final executable-code regression; r004 and the reproduction logs remain preserved. No further executable changes were made after this run. There is no need to rerun the frozen comparison or a full suite merely to copy these same committed bytes into the authoritative checkout.

@@ -1,0 +1,39 @@
+test_ambiguous_disposition_lineages_require_reconciliation (test_research_records.RecordTests.test_ambiguous_disposition_lineages_require_reconciliation) ... ok
+test_backdated_disposition_cannot_use_later_analysis (test_research_records.RecordTests.test_backdated_disposition_cannot_use_later_analysis) ... ok
+test_full_parked_fixture_is_not_trade_acceptance (test_research_records.RecordTests.test_full_parked_fixture_is_not_trade_acceptance) ... ok
+test_packet_reproduced_and_schema_tamper_rejected (test_research_records.RecordTests.test_packet_reproduced_and_schema_tamper_rejected) ... ok
+test_projection_never_falls_back_from_broken_newer_disposition (test_research_records.RecordTests.test_projection_never_falls_back_from_broken_newer_disposition) ... ok
+test_request_identity_and_coverage_cannot_be_relaxed (test_research_records.RecordTests.test_request_identity_and_coverage_cannot_be_relaxed) ... ok
+test_review_can_finish_with_material_negative_findings (test_research_records.RecordTests.test_review_can_finish_with_material_negative_findings) ... ok
+test_review_wrong_target_and_same_dispatch_refused (test_research_records.RecordTests.test_review_wrong_target_and_same_dispatch_refused) ... ok
+test_supported_disposition_refuses_finished_review_with_material_gap (test_research_records.RecordTests.test_supported_disposition_refuses_finished_review_with_material_gap) ... 
+  test_supported_disposition_refuses_finished_review_with_material_gap (test_research_records.RecordTests.test_supported_disposition_refuses_finished_review_with_material_gap) (issue='gap') ... FAIL
+  test_supported_disposition_refuses_finished_review_with_material_gap (test_research_records.RecordTests.test_supported_disposition_refuses_finished_review_with_material_gap) (issue='withheld') ... FAIL
+test_tampered_dependency_regresses_projection (test_research_records.RecordTests.test_tampered_dependency_regresses_projection) ... ok
+test_targeted_correction_requires_material_review (test_research_records.RecordTests.test_targeted_correction_requires_material_review) ... ok
+test_translated_artifact_cannot_self_promote_to_accepted (test_research_records.RecordTests.test_translated_artifact_cannot_self_promote_to_accepted) ... ok
+test_unknown_cost_is_null_and_decimal_not_float (test_research_records.RecordTests.test_unknown_cost_is_null_and_decimal_not_float) ... ok
+test_unsupported_promotion_and_immutable_versions (test_research_records.RecordTests.test_unsupported_promotion_and_immutable_versions) ... ok
+
+======================================================================
+FAIL: test_supported_disposition_refuses_finished_review_with_material_gap (test_research_records.RecordTests.test_supported_disposition_refuses_finished_review_with_material_gap) (issue='gap')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\aidan\cr2-engine\validation\tests\test_research_records.py", line 211, in test_supported_disposition_refuses_finished_review_with_material_gap
+    with self.assertRaisesRegex(ValueError,'Incomplete independent review'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_supported_disposition_refuses_finished_review_with_material_gap (test_research_records.RecordTests.test_supported_disposition_refuses_finished_review_with_material_gap) (issue='withheld')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\aidan\cr2-engine\validation\tests\test_research_records.py", line 211, in test_supported_disposition_refuses_finished_review_with_material_gap
+    with self.assertRaisesRegex(ValueError,'Incomplete independent review'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 14 tests in 33.744s
+
+FAILED (failures=2)

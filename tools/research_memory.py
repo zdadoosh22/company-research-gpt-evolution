@@ -112,7 +112,8 @@ def table_rows(text):
 
 def validate_record(record, sources):
     for field in ("id", "record_type", "entity_id", "question_scope", "source_id",
-                  "source_path", "source_sha256", "location", "text", "text_sha256", "review_status"):
+                  "source_path", "source_sha256", "location", "text", "text_sha256", "review_status",
+                  "originating_run"):
         if not isinstance(record.get(field), str) or not record[field].strip():
             raise ValueError("Missing record field: " + field)
     if record["record_type"] not in TYPES:

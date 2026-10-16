@@ -72,7 +72,7 @@ class RecordTests(unittest.TestCase):
     def save(self,kind,content,rid,unknowns=None):
         return save_record(self.root,self.record(kind,content,rid,unknowns))
 
-    def translate(self,job,output,rid,target=None,version=1,supersedes=None):
+    def translate(self,job,output,rid,target=None,version=1,supersedes=None,unknowns=None):
         j=self.file('validation/'+rid+'-job.json',job); result=self.file('validation/'+rid+'-output.json',output)
         meta=self.file('validation/'+rid+'-execution.json',dict(job_id=job['job_id'],role=job['role'],
             model_requested='gpt-6-astra' if job['role']=='review' else 'gpt-6.1-sol',reasoning_effort='high',speed='standard',
@@ -81,7 +81,7 @@ class RecordTests(unittest.TestCase):
             started_at=self.when,completed_at=self.when,engineering_test=True,runtime_verified_live=False))
         if job['role']=='analysis': self.analysis_result=result
         return translate_scoped(self.root,request=self.request,job=j,result=result,execution=meta,case_id='example-case',
-            record_id=rid,created_at=self.when,unknowns=['Synthetic worker; no live verification'],target_record=target,version=version,supersedes=supersedes)
+            record_id=rid,created_at=self.when,unknowns=['Synthetic worker; no live verification'] if unknowns is None else unknowns,target_record=target,version=version,supersedes=supersedes)
 
     def test_full_parked_fixture_is_not_trade_acceptance(self):
         ref=self.save('disposition',self.disposition_content,'disposition')
@@ -186,5 +186,31 @@ class RecordTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'requires material'):
             self.translate(correction,self.output,'unnecessary-correction',self.review)
 
+
+
+    def test_supported_disposition_refuses_finished_review_with_material_gap(self):
+        analysis=self.translate(self.job,self.output,'complete-analysis',unknowns=[])
+        dossier=copy.deepcopy(self.dossier_content)
+        dossier['research']=analysis
+        dossier['costs'].update(schedule=self.origin,round_trip='0.10',limitations=[])
+        dossier_ref=self.save('opportunity-dossier',dossier,'complete-dossier',unknowns=[])
+        for issue in ('gap','withheld'):
+            with self.subTest(issue=issue):
+                output=copy.deepcopy(self.review_output)
+                if issue=='gap':
+                    output['gaps']=[dict(id='cash-gap',description='Recurring cash unresolved',material=True,affected_conclusions=['c1'])]
+                    output['conclusions'][0].update(status='withheld',blocking_issues=['cash-gap'])
+                else:
+                    output['conclusions'][0].update(status='withheld')
+                job=copy.deepcopy(self.job)
+                job.update(job_id='review-'+issue,role='review',target=self.analysis_result)
+                review=self.translate(job,output,'review-'+issue,analysis,unknowns=[])
+                disposition=copy.deepcopy(self.disposition_content)
+                disposition.update(research=analysis,review=review,dossier=dossier_ref,status='supported',
+                    expires_at=(self.now+timedelta(hours=1)).isoformat())
+                with self.assertRaisesRegex(ValueError,'Incomplete independent review'):
+                    self.save('disposition',disposition,'supported-'+issue)
+                disposition.update(status='parked',expires_at=None)
+                self.save('disposition',disposition,'parked-'+issue)
 
 if __name__=='__main__': unittest.main()

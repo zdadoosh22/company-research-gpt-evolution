@@ -14,13 +14,13 @@ from pathlib import Path
 try:
     from .research_checkpoint import (artifact_path, canonical, identifier,
         make_reference, sha256, timestamp, verify_reference, _atomic, _safe_directory, _lock)
-    from .scoped_research_adapter import validate_package, validate_output, MODELS, _no_credentials
+    from .scoped_research_adapter import validate_package, validate_output, needs_continuation, MODELS, _no_credentials
     from .decision_readiness import SCOPED_COVERAGE
     from .alert_contract import GATES
 except ImportError:
     from research_checkpoint import (artifact_path, canonical, identifier,
         make_reference, sha256, timestamp, verify_reference, _atomic, _safe_directory, _lock)
-    from scoped_research_adapter import validate_package, validate_output, MODELS, _no_credentials
+    from scoped_research_adapter import validate_package, validate_output, needs_continuation, MODELS, _no_credentials
     from decision_readiness import SCOPED_COVERAGE
     from alert_contract import GATES
 
@@ -288,6 +288,8 @@ def validate_record(root, record, *, now=None, _stack=None):
             analysis = _json(root, research['content']['result'])
             if analysis['status'] != 'scoped-analysis-complete' or record['unknowns'] or research['unknowns'] or dossier['unknowns']:
                 raise ValueError('Incomplete research cannot support opportunity disposition')
+            if needs_continuation(review_output):
+                raise ValueError('Incomplete independent review cannot support opportunity disposition')
             if any(f['severity'] == 'material' and f['outcome'] != 'resolved' for f in review_output['findings']):
                 raise ValueError('Material unresolved review findings')
             if dossier['content']['costs']['schedule'] is None or c['expires_at'] is None:

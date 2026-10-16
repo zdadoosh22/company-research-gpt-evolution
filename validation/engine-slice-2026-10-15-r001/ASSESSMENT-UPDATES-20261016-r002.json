@@ -1,0 +1,41 @@
+{
+  "purpose": "Explicit direct-review amendments to the interim matrix; these do not establish goal or trade acceptance. Unlisted requirements retain their prior status. Each group applies the written limitation to every named original requirement.",
+  "groups": [
+    {
+      "ids": ["BRIEF-L0020", "BRIEF-L0139", "BRIEF-L0389", "BRIEF-L0391", "BRIEF-L0393", "BRIEF-L0394", "BRIEF-L0395", "BRIEF-L0396", "BRIEF-L0397", "BRIEF-L0398", "BRIEF-L0400", "BRIEF-L0402", "BRIEF-L0404", "BRIEF-L0406", "BRIEF-L0408", "BRIEF-L0412", "BRIEF-L0413", "BRIEF-L0414", "BRIEF-L0415", "BRIEF-L0416", "BRIEF-L0417", "BRIEF-L0418"],
+      "status": "implemented-fixture-tested",
+      "paths": ["AGENTS.md", "workflows/research-engine.md", "tools/research_checkpoint.py", "validation/tests/test_research_checkpoint.py"],
+      "notes": "Explicit checkpoint lifecycle, evidence validation, immutable idempotent events, missing-completion wording, rebuilding and escaped static output are implemented and fixture-tested. This is no lifecycle hook, served dashboard, actual outage recovery, investment gate or proof that every future human/agent turn will obey instructions. Symlink enforcement test remains permission-skipped."
+    },
+    {
+      "ids": ["BRIEF-L0133", "BRIEF-L0137", "BRIEF-L0138", "BRIEF-L0129"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/research_records.py", "tools/research_engine.py", "validation/tests/test_research_records.py", "validation/tests/test_research_engine_integration.py"],
+      "notes": "Versioned request/review/dossier contracts and exact dependency bindings are enforced. The completed-negative-review promotion defect is repaired. Synthetic execution proves contracts, not supported real economics, verified fees, independent model identity or an actual Astra review."
+    },
+    {
+      "ids": ["BRIEF-L0298", "BRIEF-L0300", "BRIEF-L0302", "BRIEF-L0314", "BRIEF-L0318", "BRIEF-L0324", "BRIEF-L0326", "BRIEF-L0330"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/research_memory.py", "tools/research_engine.py", "validation/tests/test_research_memory.py", "validation/tests/test_research_engine_integration.py"],
+      "notes": "Explicit entity/disposition/claim FTS5 bundles, rebuild, exact source-location provenance, scope/status/cutoff/context filters, contrary/affected links and deterministic history export are implemented. No model summary, personal memory update or semantic economic-equivalence inference. Frozen held-out comparison still fails4/5 and is not repaired by these generic fixture checks."
+    },
+    {
+      "ids": ["BRIEF-L0351", "BRIEF-L0361", "BRIEF-L0367", "BRIEF-L0369", "BRIEF-L0371", "BRIEF-L0373"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/research_checkpoint.py", "tools/research_records.py", "tools/decision_readiness.py", "validation/tests/test_gate_projection.py", "validation/tests/test_research_checkpoint.py"],
+      "notes": "Separate non-authoritative status and read-only current acceptance-verifier projections preserve all ten gates, prominent disabled activation, counts and regression. Display categories cannot confer acceptance. Real current gate validators/account/market prerequisites remain absent; visual browser inspection was unavailable."
+    },
+    {
+      "ids": ["BRIEF-L0016", "BRIEF-L0042", "BRIEF-L0043", "BRIEF-L0049", "BRIEF-L0115", "BRIEF-L0153", "BRIEF-L0214", "BRIEF-L0215", "BRIEF-L0219", "BRIEF-L0221", "BRIEF-L0229", "BRIEF-L0230", "BRIEF-L0238", "BRIEF-L0485", "BRIEF-L0486", "BRIEF-L0487", "BRIEF-L0488", "BRIEF-L0490", "BRIEF-L0608", "BRIEF-L0620", "BRIEF-L0625"],
+      "status": "blocked",
+      "paths": ["tools/scoped_research_adapter.py", "validation/engine-slice-2026-10-15-r001/RUNTIME-ROUTE-INSPECTION-20261016-r002.md", "validation/engine-slice-2026-10-15-r001/ENGINEERING-REVIEW-20261016-r003.md"],
+      "notes": "Required actual packet-only Sol High/Astra High cycle remains unperformed because complete runtime restrictions are unverified. Four real-case attempts remain unused; fixture workers cannot discharge this requirement. Preparation and queue contracts exist, but no real case was selected or disposition accepted. Blocking a required item is not deferring it or completing the goal."
+    },
+    {
+      "ids": ["BRIEF-L0540", "BRIEF-L0544", "BRIEF-L0609"],
+      "status": "evaluated-failed",
+      "paths": ["validation/engine-slice-2026-10-15-r001/RETRIEVAL-PROTOCOL.json", "validation/engine-slice-2026-10-15-r001/RETRIEVAL-FINDINGS.md"],
+      "notes": "A frozen, saved historical question/corpus was compared deterministically with zero worker calls. Both routes retrieve4/5 required gold passages. Preserve the contrary finding and packet/hash evidence; no changed gold, rerun, efficiency benefit or edge is claimed."
+    }
+  ]
+}
