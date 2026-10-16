@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "engine-integration-20261016-r004",
+  "created_at": "2026-10-16T17:44:07.7640835+00:00",
+  "previous_commit": "7cee7d8e3a4700f555393586082930bf31f6879a",
+  "installed_commit": "bb0dfc2312c3d1dde185a9a83e6f9ede28d2a80b",
+  "configuration_sha256": "10c985e9dca1e1a255e951bebe79a2399b444b750e670252eadc86b141c86e14",
+  "configuration_changed": false,
+  "preserved_untracked_paths": 33,
+  "modified_modules_in_observation_closure": [],
+  "restart_performed": false,
+  "live_database_migration_performed": false,
+  "status_command_exit_code": 0,
+  "software_completion": "in progress",
+  "software_release": {
+    "software_completion": "in progress",
+    "status_explanation": "No public release assessment is selected; software acceptance remains unproven.",
+    "reason": "No public release assessment is selected; software acceptance remains unproven.",
+    "authoritative": false,
+    "evidence": [],
+    "limitations": [
+      "This projection evaluates software completion only and grants no live or trading authority."
+    ]
+  },
+  "activation": "disabled",
+  "gates": 10,
+  "actual_release_selected": false,
+  "real_case_attempts": 0,
+  "pushed": false
+}
