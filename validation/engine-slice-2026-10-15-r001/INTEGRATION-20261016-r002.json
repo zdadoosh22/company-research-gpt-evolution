@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "engine-integration-20261016-r002",
+  "created_at": "2026-10-16T17:18:26.8059020+00:00",
+  "previous_commit": "dee4fefdfea62c2cad7f0c744d1288f0b96ead72",
+  "installed_commit": "7a94d7030aaf097f71991faf50034f933396052e",
+  "configuration_sha256": "10c985e9dca1e1a255e951bebe79a2399b444b750e670252eadc86b141c86e14",
+  "configuration_changed": false,
+  "preserved_untracked_paths": 33,
+  "modified_modules_in_observation_closure": [],
+  "restart_performed": false,
+  "live_database_migration_performed": false,
+  "installed_status_command": "./tools/run.ps1 engine-status",
+  "installed_status_exit_code": 0,
+  "activation": "disabled",
+  "gates": 10,
+  "requirements": {
+    "not-assessed": 272,
+    "blocked": 25,
+    "implemented-fixture-tested": 118,
+    "evaluated-failed": 4
+  },
+  "real_case_attempts": 0,
+  "pushed": false,
+  "limitations": [
+    "An attempted legacy Windows PowerShell child invocation refused the script under its execution policy. No policy was changed; the existing configured project shell invocation succeeded.",
+    "No actual worker, outage/recovery, browser visual validation or trade readiness demonstrated.",
+    "The397-test final code is installed; no broad repeat solely for identical copying."
+  ]
+}
