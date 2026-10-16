@@ -1,11 +1,14 @@
 """Independent synthetic fixtures; the held-out historical corpus is not a unit fixture."""
 import copy
+from contextlib import closing
 import json
+import sqlite3
 from pathlib import Path
 import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "tools"))
 from research_memory import ResearchMemory, build_packet, canonical, digest, load_bundle, main, sha256
@@ -72,6 +75,53 @@ class ResearchMemoryTests(unittest.TestCase):
             self.assertEqual(record["readiness_effect"], "none")
             self.assertEqual(record["assumptions"], ["Demand remains uncertain"])
         self.assertEqual(result["worker_calls"], 0)
+
+    def test_import_and_rebuild_lock_registry_before_input_validation(self):
+        self.load()
+        with closing(sqlite3.connect(self.memory.path,timeout=0)) as contender:
+            original=load_bundle
+            probes=[]
+            def checked(*args,**kwargs):
+                with self.assertRaisesRegex(sqlite3.OperationalError,'locked'):
+                    contender.execute("INSERT INTO bundles VALUES ('competing-import','{}')")
+                contender.rollback()
+                probes.append(True)
+                return original(*args,**kwargs)
+            with patch('research_memory.load_bundle',side_effect=checked):
+                self.memory.import_bundle('validation/fixture/records.json','validation/fixture/sources.json')
+                self.memory.rebuild()
+            self.assertEqual(len(probes),2)
+            self.assertEqual(self.memory.conn.execute('SELECT count(*) FROM bundles').fetchone()[0],1)
+
+    def test_failed_rebuild_preserves_import_registry_and_search(self):
+        self.load()
+        before=self.query()
+        self.memory.conn.executescript("CREATE TEMP TRIGGER fail_rebuild BEFORE INSERT ON records WHEN NEW.id='support' BEGIN SELECT RAISE(ABORT,'injected rebuild failure'); END;")
+        with self.assertRaisesRegex(sqlite3.IntegrityError,'injected rebuild failure'):
+            self.memory.rebuild()
+        self.memory.conn.execute('DROP TRIGGER fail_rebuild')
+        self.assertEqual(self.memory.conn.execute('SELECT count(*) FROM bundles').fetchone()[0],1)
+        self.assertEqual(before['packet_sha256'],self.query()['packet_sha256'])
+
+    def test_process_exit_during_rebuild_rolls_back_deletion(self):
+        self.load()
+        before=self.query()
+        script="""
+import os,sys
+from research_memory import ResearchMemory
+with ResearchMemory(sys.argv[1]) as memory:
+    def crash(sql):
+        if sql.startswith('INSERT OR IGNORE INTO sources'):
+            os._exit(71)
+    memory.conn.set_trace_callback(crash)
+    memory.rebuild()
+raise SystemExit('Fault injection was not reached')
+"""
+        tools=str(Path(__file__).resolve().parents[2]/'tools')
+        result=subprocess.run([sys.executable,'-B','-c','import sys;sys.path.insert(0,'+repr(tools)+');'+script,str(self.root)],capture_output=True,text=True,timeout=30)
+        self.assertEqual(result.returncode,71,result.stderr)
+        self.assertEqual(self.memory.conn.execute('SELECT count(*) FROM bundles').fetchone()[0],1)
+        self.assertEqual(before['packet_sha256'],self.query()['packet_sha256'])
 
     def test_originating_run_inference_and_explicit_values(self):
         self.records[1]["originating_run"] = "manual-r2"

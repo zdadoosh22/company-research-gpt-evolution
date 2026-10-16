@@ -171,6 +171,9 @@ class PaperStudy:
                     raise ValueError('Opportunity ID belongs to another cohort')
                 return existing
             if payload['status']=='accepted':
+                # Older same-ID records replay above with their frozen terms.
+                if budget > Decimal('100'):
+                    raise ValueError('Accepted paper idea exceeds the £100 per-idea experimental ceiling')
                 if stamp(payload['deadline']) <= self._now():
                     raise ValueError('Prospective deadline must be in the future')
                 for arm in self._protocol(cohort)['arms']:

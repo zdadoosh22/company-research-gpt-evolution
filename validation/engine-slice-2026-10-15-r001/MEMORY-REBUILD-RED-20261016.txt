@@ -1,0 +1,55 @@
+test_affected_links_work_in_both_directions_and_preserve_limits (test_research_memory.ResearchMemoryTests.test_affected_links_work_in_both_directions_and_preserve_limits) ... ok
+test_all_commands_help_and_invalid_arguments (test_research_memory.ResearchMemoryTests.test_all_commands_help_and_invalid_arguments) ... Research memory refused: Derived memory state must stay in state/research-memory or state/research-engine
+ok
+test_budget_cannot_emit_favorable_only_packet (test_research_memory.ResearchMemoryTests.test_budget_cannot_emit_favorable_only_packet) ... ok
+test_confirmed_lesson_has_explicit_methodology_applicability (test_research_memory.ResearchMemoryTests.test_confirmed_lesson_has_explicit_methodology_applicability) ... ok
+test_exact_location_and_changed_passage_fail_before_index (test_research_memory.ResearchMemoryTests.test_exact_location_and_changed_passage_fail_before_index) ... ok
+test_explicit_contrary_record_survives_nonmatching_words (test_research_memory.ResearchMemoryTests.test_explicit_contrary_record_survives_nonmatching_words) ... ok
+test_failed_rebuild_preserves_import_registry_and_search (test_research_memory.ResearchMemoryTests.test_failed_rebuild_preserves_import_registry_and_search) ... FAIL
+test_frozen_evaluator_labels_removed_before_retrieval (test_research_memory.ResearchMemoryTests.test_frozen_evaluator_labels_removed_before_retrieval) ... ok
+test_idempotence_and_conflicting_stable_id_refused (test_research_memory.ResearchMemoryTests.test_idempotence_and_conflicting_stable_id_refused) ... ok
+test_immutable_successor_supersedes_only_after_actual_availability (test_research_memory.ResearchMemoryTests.test_immutable_successor_supersedes_only_after_actual_availability) ... ok
+test_import_filters_and_references_keep_both_sides (test_research_memory.ResearchMemoryTests.test_import_filters_and_references_keep_both_sides) ... ok
+test_late_capture_requires_retrospective_label (test_research_memory.ResearchMemoryTests.test_late_capture_requires_retrospective_label) ... ok
+test_later_successor_does_not_rewrite_earlier_history (test_research_memory.ResearchMemoryTests.test_later_successor_does_not_rewrite_earlier_history) ... ok
+test_lesson_cannot_masquerade_as_company_fact (test_research_memory.ResearchMemoryTests.test_lesson_cannot_masquerade_as_company_fact) ... ok
+test_malicious_source_instructions_remain_plain_text (test_research_memory.ResearchMemoryTests.test_malicious_source_instructions_remain_plain_text) ... ok
+test_manifest_alias_cannot_launder_private_state (test_research_memory.ResearchMemoryTests.test_manifest_alias_cannot_launder_private_state) ... ok
+test_manifest_tampering_after_import_is_rejected (test_research_memory.ResearchMemoryTests.test_manifest_tampering_after_import_is_rejected) ... ok
+test_nonmatching_unclassified_context_is_not_silently_lost (test_research_memory.ResearchMemoryTests.test_nonmatching_unclassified_context_is_not_silently_lost) ... ok
+test_originating_run_inference_and_explicit_values (test_research_memory.ResearchMemoryTests.test_originating_run_inference_and_explicit_values) ... ok
+test_period_basis_scope_and_unit_mismatch_fail_closed (test_research_memory.ResearchMemoryTests.test_period_basis_scope_and_unit_mismatch_fail_closed) ... ok
+test_private_path_and_path_escape_refused (test_research_memory.ResearchMemoryTests.test_private_path_and_path_escape_refused) ... ok
+test_process_exit_during_rebuild_rolls_back_deletion (test_research_memory.ResearchMemoryTests.test_process_exit_during_rebuild_rolls_back_deletion) ... FAIL
+test_rebuild_delete_and_explicit_reimport_match (test_research_memory.ResearchMemoryTests.test_rebuild_delete_and_explicit_reimport_match) ... ok
+test_reject_unknown_family_record_type_and_origin_forgery (test_research_memory.ResearchMemoryTests.test_reject_unknown_family_record_type_and_origin_forgery) ... ok
+test_rejected_parked_conflicting_superseded_retained_with_links (test_research_memory.ResearchMemoryTests.test_rejected_parked_conflicting_superseded_retained_with_links) ... ok
+test_source_register_dependency_unknown_date_withholds_claim (test_research_memory.ResearchMemoryTests.test_source_register_dependency_unknown_date_withholds_claim) ... ok
+test_source_tampering_after_import_is_rejected (test_research_memory.ResearchMemoryTests.test_source_tampering_after_import_is_rejected) ... ok
+test_successor_cannot_supersede_another_company (test_research_memory.ResearchMemoryTests.test_successor_cannot_supersede_another_company) ... ok
+test_table_exact_lines_units_and_headers_preserved (test_research_memory.ResearchMemoryTests.test_table_exact_lines_units_and_headers_preserved) ... ok
+test_unknown_analysis_is_not_backfilled_from_event (test_research_memory.ResearchMemoryTests.test_unknown_analysis_is_not_backfilled_from_event) ... ok
+test_unknown_future_publication_and_later_analysis (test_research_memory.ResearchMemoryTests.test_unknown_future_publication_and_later_analysis) ... ok
+test_whole_passage_byte_bound_and_query_tie_order (test_research_memory.ResearchMemoryTests.test_whole_passage_byte_bound_and_query_tie_order) ... ok
+test_wrong_entity_security_question_type_review_status (test_research_memory.ResearchMemoryTests.test_wrong_entity_security_question_type_review_status) ... ok
+
+======================================================================
+FAIL: test_failed_rebuild_preserves_import_registry_and_search (test_research_memory.ResearchMemoryTests.test_failed_rebuild_preserves_import_registry_and_search)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\aidan\cr2-engine\validation\tests\test_research_memory.py", line 84, in test_failed_rebuild_preserves_import_registry_and_search
+    self.assertEqual(self.memory.conn.execute('SELECT count(*) FROM bundles').fetchone()[0],1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_process_exit_during_rebuild_rolls_back_deletion (test_research_memory.ResearchMemoryTests.test_process_exit_during_rebuild_rolls_back_deletion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\aidan\cr2-engine\validation\tests\test_research_memory.py", line 104, in test_process_exit_during_rebuild_rolls_back_deletion
+    self.assertEqual(self.memory.conn.execute('SELECT count(*) FROM bundles').fetchone()[0],1)
+AssertionError: 0 != 1
+
+----------------------------------------------------------------------
+Ran 33 tests in 4.948s
+
+FAILED (failures=2)

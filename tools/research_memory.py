@@ -427,7 +427,13 @@ class ResearchMemory:
         self.close()
 
     def import_bundle(self, records_path, manifest_path, source_root=None, *, frozen=False):
-        records, sources, provenance = load_bundle(self.root, records_path, manifest_path, source_root, frozen=frozen)
+        with self.conn:
+            self.conn.execute("BEGIN IMMEDIATE")
+            loaded = load_bundle(self.root, records_path, manifest_path, source_root, frozen=frozen)
+            return self._store_bundle(*loaded)
+
+    def _store_bundle(self, records, sources, provenance):
+        """Write validated inputs inside the caller's transaction; never commit here."""
         bundle_id = digest(canonical(provenance))
         # Validate every collision before inserting anything; reimport is idempotent.
         for table, items in (("records", {r["id"]: r for r in records}), ("sources", sources)):
@@ -435,15 +441,14 @@ class ResearchMemory:
                 old = self.conn.execute("SELECT document FROM " + table + " WHERE id=?", (key,)).fetchone()
                 if old and old[0] != canonical(value):
                     raise ValueError("Conflicting stable identifier; append a revision instead: " + key)
-        with self.conn:
-            for key, source in sorted(sources.items()):
-                self.conn.execute("INSERT OR IGNORE INTO sources VALUES (?,?)", (key, canonical(source)))
-            for record in sorted(records, key=lambda r: r["id"]):
-                if self.conn.execute("SELECT 1 FROM records WHERE id=?", (record["id"],)).fetchone():
-                    continue
-                cur = self.conn.execute("INSERT INTO records VALUES (?,?,?,?,?,?)", (record["id"], record["entity_id"], record.get("security_id"), record["record_type"], record["review_status"], canonical(record)))
-                self.conn.execute("INSERT INTO passages(rowid,text) VALUES (?,?)", (cur.lastrowid, record["text"]))
-            self.conn.execute("INSERT OR IGNORE INTO bundles VALUES (?,?)", (bundle_id, canonical(provenance)))
+        for key, source in sorted(sources.items()):
+            self.conn.execute("INSERT OR IGNORE INTO sources VALUES (?,?)", (key, canonical(source)))
+        for record in sorted(records, key=lambda r: r["id"]):
+            if self.conn.execute("SELECT 1 FROM records WHERE id=?", (record["id"],)).fetchone():
+                continue
+            cur = self.conn.execute("INSERT INTO records VALUES (?,?,?,?,?,?)", (record["id"], record["entity_id"], record.get("security_id"), record["record_type"], record["review_status"], canonical(record)))
+            self.conn.execute("INSERT INTO passages(rowid,text) VALUES (?,?)", (cur.lastrowid, record["text"]))
+        self.conn.execute("INSERT OR IGNORE INTO bundles VALUES (?,?)", (bundle_id, canonical(provenance)))
         return {"records": len(records), "sources": len(sources), "bundle_sha256": bundle_id, "provenance": provenance}
 
     def data(self):
@@ -477,17 +482,21 @@ class ResearchMemory:
         return build_packet(records, sources, ranked, query_terms=query_terms, **kwargs)
 
     def rebuild(self):
-        bundles = [json.loads(r[0]) for r in self.conn.execute("SELECT document FROM bundles ORDER BY id")]
-        # Validate sources and imports before touching the disposable projection.
-        self.data()
-        for b in bundles:
-            load_bundle(self.root, b["records_path"], b["manifest_path"], b["source_root"], frozen=b["frozen"])
+        # Lock before reading the import registry: a concurrent import cannot
+        # disappear between validation and deletion of the preceding index.
         with self.conn:
+            self.conn.execute("BEGIN IMMEDIATE")
+            bundles = [json.loads(r[0]) for r in self.conn.execute("SELECT document FROM bundles ORDER BY id")]
+            self.data()
+            prepared = [load_bundle(self.root, b["records_path"], b["manifest_path"], b["source_root"], frozen=b["frozen"])
+                        for b in bundles]
+            # One transaction includes every deletion, reimport and registry row.
             for table in ("passages", "records", "sources", "bundles"):
                 self.conn.execute("DELETE FROM " + table)
-        for b in bundles:
-            self.import_bundle(b["records_path"], b["manifest_path"], b["source_root"], frozen=b["frozen"])
+            for loaded in prepared:
+                self._store_bundle(*loaded)
         return {"bundles": len(bundles), "records": self.conn.execute("SELECT count(*) FROM records").fetchone()[0]}
+
 
 
 def evaluate(project_root, protocol_path, output_root=None):

@@ -1,0 +1,71 @@
+{
+  "purpose": "Explicit direct requirement audit amendments; each limitation applies to every named original ID. No final acceptance.",
+  "groups": [
+    {
+      "ids": ["BRIEF-L0053", "BRIEF-L0086", "BRIEF-L0087", "BRIEF-L0088", "BRIEF-L0089", "BRIEF-L0090", "BRIEF-L0091", "BRIEF-L0463", "BRIEF-L0464", "BRIEF-L0465"],
+      "status": "verified",
+      "paths": ["validation/engine-slice-2026-10-15-r001/PREFLIGHT.json", "validation/engine-slice-2026-10-15-r001/PREFLIGHT.md", "validation/engine-slice-2026-10-15-r001/BASELINE-TESTS.txt", "validation/engine-slice-2026-10-15-r001/RETRIEVAL-PROTOCOL.json", "validation/engine-slice-2026-10-15-r001/PROTECTED-VERIFICATION-20261016-r002.json"],
+      "notes": "Dated preflight evidenced by actual292-test baseline, route/capability/status reconciliation and frozen protocol. Current predecessor hashes and partial pilot indexes rechecked. This verifies the preflight record, not live model availability, analytical truth, continuous operation or release acceptance."
+    },
+    {
+      "ids": ["BRIEF-L0071", "BRIEF-L0072", "BRIEF-L0073", "BRIEF-L0075", "BRIEF-L0076", "BRIEF-L0077"],
+      "status": "verified",
+      "paths": ["validation/engine-slice-2026-10-15-r001/PREFLIGHT.json", "validation/engine-slice-2026-10-15-r001/PROTECTED-VERIFICATION-20261016-r002.json", "validation/engine-slice-2026-10-15-r001/INTEGRATION-20261016-r002.json"],
+      "notes": "Isolated codex worktree, concurrent-change check and prior additive installation recorded. Configuration and protected research unchanged; three intentional test changes retain predecessors. Observation import closure unchanged. Dated verification does not claim further uninstalled changes are integrated or actual production recovery tested."
+    },
+    {
+      "ids": ["BRIEF-L0176", "BRIEF-L0177", "BRIEF-L0473", "BRIEF-L0475", "TEST-L0525-07"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/research_memory.py", "tools/research_checkpoint.py", "tools/scoped_research_queue.py", "validation/tests/test_research_memory.py", "validation/tests/test_research_checkpoint.py", "validation/tests/test_scoped_research_queue.py"],
+      "notes": "Transactional index rebuild/import, process interruption and competing writer, atomic checkpoint writes, idempotence and history links fixture-tested. Frozen comparison still misses one gold passage. This is not analytical recall acceptance or production recovery."
+    },
+    {
+      "ids": ["BRIEF-L0175", "BRIEF-L0178", "BRIEF-L0179", "BRIEF-L0135", "BRIEF-L0234", "BRIEF-L0236", "BRIEF-L0240", "BRIEF-L0483", "BRIEF-L0484"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/scoped_research_queue.py", "validation/SCOPED-QUEUE-CONTROLS.md", "validation/tests/test_scoped_research_queue.py", "validation/tests/test_research_engine_integration.py"],
+      "notes": "Named authorization, exact dependency/correction binding, shared nonrefundable four-attempt ledger committed before adapter, replay prevention and validated interrupted-checkpoint recovery use fake workers. No actual Sol/Astra attempt or model/account attestation inferred."
+    },
+    {
+      "ids": ["BRIEF-L0200", "BRIEF-L0208", "BRIEF-L0169", "TEST-L0524-01", "TEST-L0524-02", "TEST-L0524-03", "TEST-L0524-04", "TEST-L0524-05", "TEST-L0524-06"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/finance.py", "tools/decision_economics.py", "validation/tests/test_finance.py", "validation/tests/test_decision_economics.py"],
+      "notes": "Reusable helpers and numerical fixtures cover missing versus zero, incompatible TTM, adjustments, dated cash flows/XIRR, sensitivity retaining original assumptions, exact currency/unit/FX and supplied charge/rounding arithmetic. No company assumptions, fee schedule, forecast quality or allocation accepted."
+    },
+    {
+      "ids": ["BRIEF-L0422", "BRIEF-L0424", "BRIEF-L0428", "BRIEF-L0430", "BRIEF-L0445", "BRIEF-L0447", "BRIEF-L0496", "BRIEF-L0532", "TEST-L0532-01", "TEST-L0532-02", "TEST-L0532-03", "TEST-L0532-04", "TEST-L0532-05", "TEST-L0532-06", "TEST-L0532-07"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/paper_study.py", "tools/decision_lane.py", "tools/decision_pipeline.py", "tools/alert_contract.py", "validation/tests/test_paper_study.py", "validation/tests/test_decision_lane.py", "validation/tests/test_decision_pipeline.py", "validation/tests/test_alert_contract.py"],
+      "notes": "Temporary paper/lane/pipeline tests cover isolated capital, new paper ideas capped100 and aggregate300, delayed/missed entry, partial fills, supplied FX, reservations, unrelated cash and withdrawal versus cancellation. Historical >100 frozen cohorts remain and can receive old-budget paper fills: explicit legacy boundary, never live sizing approval. No account, phone, execution or policy acceptance."
+    },
+    {
+      "ids": ["BRIEF-L0436", "BRIEF-L0437", "BRIEF-L0438", "BRIEF-L0439", "BRIEF-L0440", "BRIEF-L0441", "BRIEF-L0442", "BRIEF-L0443"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/paper_study.py", "tools/decision_economics.py", "validation/tests/test_paper_study.py", "validation/tests/test_decision_economics.py"],
+      "notes": "Frozen cohort rules/hashes precede supplied observations; cash/benchmark assumptions, dates, response delays, rejected/missed ideas, supplied costs/FX, partial fills and unknown prices retained. Executable-side evidence required, not touched/last-price fills. Synthetic paper observations cannot establish prospective edge or broker fills."
+    },
+    {
+      "ids": ["BRIEF-L0256", "BRIEF-L0260", "BRIEF-L0261", "BRIEF-L0262", "BRIEF-L0263", "BRIEF-L0264", "BRIEF-L0266", "BRIEF-L0268", "BRIEF-L0270", "BRIEF-L0274", "BRIEF-L0275", "BRIEF-L0276", "BRIEF-L0280", "BRIEF-L0282", "BRIEF-L0286", "BRIEF-L0288", "BRIEF-L0290", "BRIEF-L0030", "BRIEF-L0031", "BRIEF-L0032", "BRIEF-L0033", "BRIEF-L0034"],
+      "status": "blocked",
+      "paths": ["tools/scoped_research_adapter.py", "validation/engine-slice-2026-10-15-r001/CONTINUATION-r004.md", "validation/engine-slice-2026-10-15-r001/ENGINEERING-REVIEW-20261016-r004.md"],
+      "notes": "Real selection/current-source brief, gap classification and expectations/response/cost/adverse-case assessment unperformed. Restrictions unavailable; no case entered required Sol/Astra cycle. Historical dispositions are not current selection/ranking. Required incomplete research, not optional deferral. Some preparation could precede dispatch but has not been done; do not imply all these steps are intrinsically impossible without a model."
+    },
+    {
+      "ids": ["BRIEF-L0449", "BRIEF-L0610"],
+      "status": "verified",
+      "paths": ["workflows/research-engine.md", "validation/engine-slice-2026-10-15-r001/ENGINEERING-REVIEW-20261016-r004.md"],
+      "notes": "Unknown/omission branch explicit: no complete verified schedule available, so optional pre-screen omitted and friction/advantage/minimum practical position unknown. Does not verify broker charges, implement future schedule adapter or rank candidates."
+    },
+    {
+      "ids": ["BRIEF-L0381", "BRIEF-L0383", "BRIEF-L0385"],
+      "status": "deferred",
+      "paths": ["workflows/research-engine.md", "validation/engine-slice-2026-10-15-r001/PREFLIGHT.md"],
+      "notes": "Optional JSON Patch/delta and companyfacts omitted; full replacement correction supported. Institutional/library access remains optional and user-controlled, with no credentials/account setup/scraper. These omissions do not discharge required evidence/runtime/review work."
+    },
+    {
+      "ids": ["BRIEF-L0545", "BRIEF-L0546", "BRIEF-L0547", "BRIEF-L0548"],
+      "status": "verified",
+      "paths": ["validation/engine-slice-2026-10-15-r001/RETRIEVAL-FINDINGS.md", "validation/engine-slice-2026-10-15-r001/RETRIEVAL-PROTOCOL.json"],
+      "notes": "Frozen comparison records normalized table/period/unit/source-location preservation, negative-control/cutoff/supersession and bounded reference observations. These specified evaluation observations only: both routes still miss one required gold passage, with no efficiency/edge claim."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+F
+======================================================================
+FAIL: test_new_accepted_idea_budget_cannot_exceed_experimental_ceiling (test_paper_study.ProspectivePaperTests.test_new_accepted_idea_budget_cannot_exceed_experimental_ceiling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\aidan\cr2-engine\validation\tests\test_paper_study.py", line 102, in test_new_accepted_idea_budget_cannot_exceed_experimental_ceiling
+    with self.assertRaisesRegex(ValueError, 'per-idea experimental ceiling'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 0.022s
+
+FAILED (failures=1)

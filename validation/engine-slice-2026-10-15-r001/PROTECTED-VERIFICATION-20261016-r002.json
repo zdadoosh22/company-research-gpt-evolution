@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-16T17:24:02.742718+00:00",
+  "checked": 761,
+  "unchanged": 758,
+  "mismatches": [
+    "validation/tests/test_paper_study.py",
+    "validation/tests/test_scoped_research_adapter.py",
+    "validation/tests/test_scoped_research_queue.py"
+  ],
+  "passed": false,
+  "disposition": "Three intentional test extensions; original tests preserved by baseline Git. All protected research, methodology, reviews and configuration remain byte-identical.",
+  "methodology": {
+    "version": "1.0.0",
+    "file": "methodology/company-research-v1.0.0.md",
+    "sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+    "source_document_sha256": "74613e5230b68128cc314c631335ca2baed9dbe8fcac3ebf46a8c54300d93e8d",
+    "approval": "User authorised implementation of complete project plan",
+    "date": "2026-10-06"
+  },
+  "company_indexes": {
+    "applovin-corporation": {
+      "latest": null,
+      "latest_active": "2026-10-06-r002",
+      "status": "partial"
+    },
+    "jpmorgan-chase": {
+      "latest": null,
+      "latest_active": "2026-10-06-r003",
+      "status": "partial"
+    },
+    "unilever-plc": {
+      "latest": null,
+      "latest_active": "2026-10-06-r002",
+      "status": "partial"
+    }
+  },
+  "development_head": "7bed40bb52a5a252dd313892f79909ce2a60173d",
+  "configuration_sha256": "10c985e9dca1e1a255e951bebe79a2399b444b750e670252eadc86b141c86e14"
+}

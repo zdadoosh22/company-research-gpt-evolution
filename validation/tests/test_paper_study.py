@@ -10,7 +10,7 @@ from decimal import Decimal as D
 from pathlib import Path
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'tools'))
-from paper_study import PaperStudy
+from paper_study import PaperStudy, dump
 
 
 class ProspectivePaperTests(unittest.TestCase):
@@ -27,7 +27,7 @@ class ProspectivePaperTests(unittest.TestCase):
     def tick(self,seconds=1):
         self.time+=timedelta(seconds=seconds)
 
-    def idea(self,id='idea',quantity='2',budget='200',status='accepted',wait_for_response=True):
+    def idea(self,id='idea',quantity='2',budget='100',status='accepted',wait_for_response=True):
         payload={'status':status,'security':'LSE:ABC','reason':'fixture reason','evidence':['dated fixture'],'evidence_asof':self.time.isoformat(),'deadline':(self.time+timedelta(hours=1)).isoformat(),'entry_quantity':quantity,'entry_budget_gbp':budget}
         result=self.study.register_opportunity('c',id,payload)
         if wait_for_response:self.tick(60)
@@ -53,18 +53,18 @@ class ProspectivePaperTests(unittest.TestCase):
         self.assertEqual(initial['hash'],hashlib.sha256(initial['protocol'].encode()).hexdigest())
 
     def test_partial_entries_identical_arms_cost_caps_and_replays(self):
-        self.idea();self.tick();self.quote()
+        self.idea(quantity='2',budget='100');self.tick();self.quote(price='49')
         self.study.entry_fill('idea','e1','1','q','1')
         self.study.entry_fill('idea','e1','1','q','1')
         snap=self.snapshot({'LSE:ABC':'q'})
         for outcome in snap['arms'].values():
-            self.assertEqual(D(outcome['cash_gbp']),D(209))
-            self.assertEqual(D(outcome['available_gbp']),D(100))
+            self.assertEqual(D(outcome['cash_gbp']),D(250))
+            self.assertEqual(D(outcome['available_gbp']),D(200))
             self.assertEqual(outcome['open_marks'][0]['quantity'],'1')
         with self.assertRaises(ValueError):self.study.entry_fill('idea','e1','1','q','2')
         with self.assertRaises(ValueError):self.study.entry_fill('idea','e2','1','q','30')
         self.study.entry_fill('idea','e2','1','q','1')
-        self.assertEqual(D(self.snapshot({'LSE:ABC':'q'})['arms']['price']['cash_gbp']),D(118))
+        self.assertEqual(D(self.snapshot({'LSE:ABC':'q'})['arms']['price']['cash_gbp']),D(200))
 
     def test_entry_delay_requires_new_executable_quote_after_response(self):
         self.idea(wait_for_response=False);self.quote(id='early')
@@ -93,10 +93,36 @@ class ProspectivePaperTests(unittest.TestCase):
                 self.assertEqual(D(self.study.conn.execute('SELECT spent FROM ideas WHERE id=?',(idea,)).fetchone()[0]),D(90))
 
     def test_overlapping_entries_cannot_use_unlimited_paper_capital(self):
-        self.idea(budget='200')
-        with self.assertRaises(ValueError):self.idea(id='other',budget='101')
+        self.idea(budget='100')
+        self.idea(id='second',budget='100')
+        self.idea(id='third',budget='100')
+        with self.assertRaises(ValueError):self.idea(id='other',budget='1')
         self.study.cancel_entry('idea')
-        self.idea(id='other',budget='300')
+        self.idea(id='replacement',budget='100')
+
+    def test_new_accepted_idea_budget_cannot_exceed_experimental_ceiling(self):
+        with self.assertRaisesRegex(ValueError, 'per-idea experimental ceiling'):
+            self.idea(budget='100.01')
+        accepted=self.idea(id='exact-ceiling',budget='100')
+        self.assertEqual(accepted['budget'],'100')
+
+    def test_legacy_over_ceiling_opportunity_replays_without_rejection_or_rewrite(self):
+        payload={'status':'accepted','security':'LSE:ABC','reason':'legacy record','evidence':['dated fixture'],
+                 'evidence_asof':self.time.isoformat(),'deadline':(self.time+timedelta(hours=1)).isoformat(),
+                 'entry_quantity':'2','entry_budget_gbp':'200'}
+        recorded={'id':'legacy','cohort':'c','registered':self.time.isoformat(),'payload':dump(payload),
+                  'status':'accepted','quantity':'2','budget':'200','filled':'0','spent':'0','entry_open':1}
+        self.study.conn.execute('INSERT INTO ideas VALUES(?,?,?,?,?,?,?,?,?,?)',tuple(recorded.values()))
+        for arm in self.protocol['arms']:
+            self.study.conn.execute('INSERT INTO positions VALUES(?,?,?,?)',('legacy',arm,'0','0'))
+        self.study.conn.commit()
+
+        replay=self.study.register_opportunity('c','legacy',payload)
+
+        self.assertEqual(replay,recorded)
+        self.assertEqual(self.study.conn.execute('SELECT budget FROM ideas WHERE id=?',('legacy',)).fetchone()[0],'200')
+        with self.assertRaisesRegex(ValueError, 'per-idea experimental ceiling'):
+            self.idea(id='new-over-ceiling',budget='200')
 
     def test_no_backdated_quote_entry_or_expired_commitment(self):
         self.quote(id='old');self.tick();self.idea()
@@ -112,24 +138,30 @@ class ProspectivePaperTests(unittest.TestCase):
         self.assertEqual(self.study.conn.execute('SELECT COUNT(*) FROM ideas').fetchone()[0],2)
 
     def test_delayed_exit_partial_fill_cash_lock_and_identical_entry_freeze(self):
-        self.idea();self.quote();self.study.entry_fill('idea','e','1','q','0')
-        self.request();self.quote(id='too_early',price='70',kind='bid')
+        self.idea(quantity='1',wait_for_response=False);self.idea(id='second',quantity='1',wait_for_response=False)
+        self.idea(id='third',quantity='1',wait_for_response=False);self.tick(60);self.quote()
+        for idea_id in ('idea','second','third'):
+            self.study.entry_fill(idea_id,idea_id+'-entry','1','q','0')
+        self.request(quantity='1')
+        self.study.request_exit('idea','thesis','exit-thesis',{'quantity':'1','reason':'fixture condition observed now','evidence':['dated fixture'],'evidence_asof':self.time.isoformat()})
+        self.quote(id='too_early',price='70',kind='bid')
         with self.assertRaises(ValueError):self.study.exit_fill('exit','s','0.5','too_early','1')
         with self.assertRaises(ValueError):self.study.entry_fill('idea','late_entry','1','q','0')
         self.tick(60);self.quote(id='sell',price='70',kind='bid')
         self.study.exit_fill('exit','s','0.5','sell','1')
         self.study.exit_fill('exit','s','0.5','sell','1')
         snap=self.snapshot({'LSE:ABC':'sell'})
-        self.assertEqual(D(snap['arms']['price']['cash_gbp']),D(244))
-        self.assertEqual(D(snap['arms']['price']['available_gbp']),D(210))
+        self.assertEqual(D(snap['arms']['price']['cash_gbp']),D(64))
+        self.assertEqual(D(snap['arms']['price']['available_gbp']),D(30))
         self.assertEqual(snap['arms']['price']['open_marks'][0]['quantity'],'0.5')
         self.assertEqual(snap['arms']['thesis']['open_marks'][0]['quantity'],'1')
-        with self.assertRaises(ValueError):self.idea(id='reinvest',budget='211')
+        with self.assertRaises(ValueError):self.idea(id='reinvest',budget='31')
+        self.study.exit_fill('exit-thesis','s-thesis','0.5','sell','1')
         self.tick(3601)
-        self.idea(id='reinvest',budget='210')
+        self.idea(id='reinvest',budget='64')
 
     def test_exit_quantity_reservation_and_cancelled_request(self):
-        self.idea();self.quote();self.study.entry_fill('idea','e','2','q','0')
+        self.idea();self.quote(price='49');self.study.entry_fill('idea','e','2','q','0')
         self.request(quantity='1.5')
         with self.assertRaises(ValueError):self.request(id='overlap',quantity='1')
         self.study.cancel_exit('exit');self.study.cancel_exit('exit')
