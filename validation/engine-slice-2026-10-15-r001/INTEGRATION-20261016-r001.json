@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "engine-integration-20261016-r001",
+  "created_at": "2026-10-16T16:59:32.083876+00:00",
+  "original_root": "C:\\Users\\aidan\\Documents\\Company research 2",
+  "development_root": "C:\\Users\\aidan\\cr2-engine",
+  "previous_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+  "code_commit": "7b0029499daaa59de663fd2cfd56eb02c4b25231",
+  "installed_commit": "7b0029499daaa59de663fd2cfd56eb02c4b25231",
+  "branch": "main",
+  "fast_forward": true,
+  "configuration_sha256": "10c985e9dca1e1a255e951bebe79a2399b444b750e670252eadc86b141c86e14",
+  "configuration_changed": false,
+  "preserved_untracked_files": 33,
+  "observation_import_closure": [
+    "observation",
+    "observation_core",
+    "observation_monitor",
+    "observation_research",
+    "observation_transport"
+  ],
+  "modified_modules_in_observation_closure": [],
+  "restart_performed": false,
+  "live_database_migration_performed": false,
+  "live_research_calls": 0,
+  "live_recommendations_enabled": false,
+  "pushed": false,
+  "limitations": [
+    "Development slice installed; required real case and final goal acceptance remain incomplete.",
+    "No dynamic process-module introspection or actual service rollback was performed; observation code files in the conservative import closure are unchanged."
+  ]
+}

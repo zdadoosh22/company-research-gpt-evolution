@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "engine-installed-smoke-20261016-r001",
+  "created_at": "2026-10-16T17:02:07.940779+00:00",
+  "installed_root": "C:\\Users\\aidan\\Documents\\Company research 2",
+  "installed_commit": "7b0029499daaa59de663fd2cfd56eb02c4b25231",
+  "actual_commands": [
+    "tools/run.ps1 engine --help",
+    "tools/run.ps1 engine-status"
+  ],
+  "help_sha256": "1297e7dd2f28a8411e7e32ef3dc7087728d32d32f2899a0f9820143ea2203e06",
+  "software": "in progress",
+  "gate_count": 10,
+  "activation": "disabled",
+  "live_recommendations_enabled": false,
+  "requirement_status_counts": {
+    "not-assessed": 333,
+    "implemented-fixture-tested": 81,
+    "blocked": 4,
+    "evaluated-failed": 1
+  },
+  "configured_research_enabled": false,
+  "configured_mode": "observation-only",
+  "protected_files_checked": 761,
+  "protected_differences": [
+    "validation/tests/test_scoped_research_adapter.py",
+    "validation/tests/test_scoped_research_queue.py"
+  ],
+  "expected_protected_differences": [
+    "validation/tests/test_scoped_research_adapter.py",
+    "validation/tests/test_scoped_research_queue.py"
+  ],
+  "visual_inspection": {
+    "status": "unavailable",
+    "reason": "In-app browser rejected file: protocol; only http/https are allowed. No workaround attempted."
+  },
+  "observation_task": {
+    "observed_state": "Running",
+    "observed_process_id": 5756,
+    "process_created_at": "2026-10-16T16:44:42.71069+01:00",
+    "restart_performed_by_this_task": false,
+    "limitation": "Point-in-time task/process observation, not continuous uptime or an operational acceptance."
+  },
+  "real_case_inference_calls": 0,
+  "pushed": false
+}
