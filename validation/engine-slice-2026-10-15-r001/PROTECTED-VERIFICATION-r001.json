@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-15T01:33:09.441119+00:00",
+  "checked": 761,
+  "mismatches": [
+    "validation/tests/test_scoped_research_adapter.py",
+    "validation/tests/test_scoped_research_queue.py"
+  ],
+  "passed": false
+}

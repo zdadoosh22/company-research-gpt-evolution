@@ -1,0 +1,39 @@
+{
+  "schema": "cr2.retrieval.comparison.v1",
+  "protocol_sha256": "e66af62d0bc2576db1bfda6f123e9f2d702cb378e2f4c29cea000a07392c0399",
+  "route_results": {
+    "baseline": {
+      "primary_passed": false,
+      "controls_passed": true,
+      "selected_record_ids": [
+        "UL-H1-INTERPRETATION",
+        "UL-H1-TABLE",
+        "UL-SECURITY-CURRENCY",
+        "UL-DISPOSITION",
+        "UL-IDENTITY",
+        "LESSON-DEFINITIONS"
+      ],
+      "packet_sha256": "db244893d8e1482db14f05bda04e5431fe2b4c609c1c17b9d0a5a76d63838214",
+      "packet_utf8_bytes": 15570
+    },
+    "new": {
+      "primary_passed": false,
+      "controls_passed": true,
+      "selected_record_ids": [
+        "UL-SECURITY-CURRENCY",
+        "UL-H1-INTERPRETATION",
+        "UL-H1-TABLE",
+        "UL-DISPOSITION",
+        "UL-IDENTITY",
+        "LESSON-DEFINITIONS"
+      ],
+      "packet_sha256": "f541dfd0f675661dfb1acdea390f83fff66e4b14d12f200cc36ef2f63eb3b737",
+      "packet_utf8_bytes": 15570
+    }
+  },
+  "same_selected_set": true,
+  "efficiency_gain_claimed": false,
+  "worker_calls": 0,
+  "network_calls": 0,
+  "conclusion": "Deterministic historical retrieval only; no timing, cost saving, research approval or edge claim."
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "engine-preflight-20261015-r001",
+  "created_at": "2026-10-15T00:35:45.561120+00:00",
+  "origin": "current-checkout-inspection",
+  "repository": "https://github.com/zdadoosh22/company-research-work",
+  "authoritative_checkout": "C:/Users/aidan/Documents/Company research 2",
+  "worktree": "C:\\Users\\aidan\\cr2-engine",
+  "branch": "codex/research-engine-slice-r001",
+  "baseline_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+  "assignment_sha256": "be7ce1350158737a63167aceec98b82916f88457743e6ad6da72c647544343e0",
+  "prior_goal_turn": "progress: published authorised brief and supersession record at user request; no implementation claimed",
+  "baseline": {
+    "command": ".\\tools\\run.ps1 test",
+    "exit_code": 0,
+    "tests": 292,
+    "seconds": 7.382,
+    "log_sha256": "8432f79dde26b3054154bb938d4555bf67a3069efc0a2b2fe6055755c777da8e",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sqlite": "3.53.1",
+    "fts5": "verified with in-memory table"
+  },
+  "tracked_changes_at_start": false,
+  "original_checkout_untracked_count": 33,
+  "original_untracked_scope": "15 duplicate delivery text bundles;18 JPG/MP4 files; preserve all",
+  "operations": {
+    "scheduled_task": "CompanyResearch2-Observation",
+    "task_state_observed": "Running",
+    "process_handle_state": "pythonw.exe PID5412 observed live, started2026-10-14T12:38:12.783387+01:00",
+    "research_enabled": false,
+    "new_scoped_workers_started": 0
+  },
+  "company_indexes": {
+    "applovin-corporation": {
+      "latest": null,
+      "latest_active": "2026-10-06-r002",
+      "run_status": "partial",
+      "run_path": "companies/applovin-corporation/runs/2026-10-06-r002/run.json",
+      "sha256": "bc975e059b9ae03af97577347bd2be769a215feeee5ce7491fad327a07ffb3a7"
+    },
+    "jpmorgan-chase": {
+      "latest": null,
+      "latest_active": "2026-10-06-r003",
+      "run_status": "partial",
+      "run_path": "companies/jpmorgan-chase/runs/2026-10-06-r003/run.json",
+      "sha256": "e6b599d3def44253392b2a9ca0016eec62418e05c3fb526f56247ed76d20d6bb"
+    },
+    "unilever-plc": {
+      "latest": null,
+      "latest_active": "2026-10-06-r002",
+      "run_status": "partial",
+      "run_path": "companies/unilever-plc/runs/2026-10-06-r002/run.json",
+      "sha256": "38b5c9912e1776b226c9c1a5f3385a5f75ce7aae2d426572ee05b906e6df7a4d"
+    }
+  },
+  "statuses": {
+    "software_completion": "in progress",
+    "research_disposition": "active: no real case selected",
+    "operational_readiness": "evidence incomplete",
+    "trade_readiness": "evidence incomplete",
+    "edge_evidence": "not assessed"
+  },
+  "real_case_calls": {
+    "ceiling": 4,
+    "attempts_consumed": 0,
+    "required": [
+      "Sol High analysis",
+      "Astra High independent review"
+    ],
+    "conditional": [
+      "one correction",
+      "one material recheck"
+    ]
+  },
+  "routes": {
+    "analysis": {
+      "requested": "gpt-6.1-sol",
+      "reasoning": "high",
+      "speed": "default",
+      "live_availability": "unverified",
+      "reported_identity": null,
+      "backend_identity": "not independently exposed"
+    },
+    "review": {
+      "requested": "gpt-6-astra",
+      "reasoning": "high",
+      "speed": "default",
+      "live_availability": "unverified",
+      "reported_identity": null,
+      "backend_identity": "not independently exposed"
+    },
+    "engineering_review": {
+      "role": "main Goal agent directly"
+    },
+    "retrieval_evaluation": {
+      "live_worker_calls": 0
+    }
+  },
+  "runtime": {
+    "codex_version": "0.162.0-alpha.17.2",
+    "old_cli_version_0_160_1": "superseded by actual inspection",
+    "exec_help": "verified --ignore-user-config, --strict-config, --ephemeral, --output-schema, --json",
+    "worker_restrictions": "not yet fully verified; no live worker may run until validated",
+    "credit_policy": "No additional credits, purchases, resets, paid APIs or fallbacks. Check current allowance before any bounded dispatch. Account usage not attributable precisely to this task."
+  },
+  "source_docs": [
+    {
+      "url": "https://learn.chatgpt.com/docs/config-file/config-reference",
+      "inspected": "2026-10-15",
+      "purpose": "shell feature and configuration controls; actual runtime enforcement still to verify"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/non-interactive-mode",
+      "inspected": "2026-10-15",
+      "purpose": "schema-bound noninteractive output"
+    }
+  ],
+  "limitations": [
+    "First long worktree path failed Windows MAX_PATH; Git removed checkout registration; existing branch successfully reused at shorter path.",
+    "No implementation, real-case review, external-account verification or edge acceptance is claimed by this baseline.",
+    "Full requirements and heldout protocol are separate freeze records; code implementation waits for them."
+  ]
+}

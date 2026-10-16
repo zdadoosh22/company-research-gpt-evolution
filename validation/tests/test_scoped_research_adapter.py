@@ -7,6 +7,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "tools"))
 from scoped_research_adapter import MODELS, run_scoped_job, validate_output, validate_package
@@ -31,6 +32,24 @@ class ScopedAdapterTests(unittest.TestCase):
         self.ref = {"source_id": "filing", "location": "Page 1, Revenue"}
         self.output = {"status": "scoped-analysis-complete", "summary": "Source reviewed within scope.", "sources": [self.ref], "coverage": [{"category": "resilience", "status": "covered", "evidence": [self.ref]}], "findings": [], "gaps": [], "conclusions": [{"id": "c1", "claim": "Revenue disclosed.", "status": "supported", "evidence": [self.ref], "blocking_issues": [], "numerical_inputs": [{"name": "revenue", "value": 10, "basis": "reported", "explanation": "Archived filing in source units.", "evidence": [self.ref]}]}], "continuation": "Analytical scope complete; no trading approval."}
         self.calls = []
+        self.legacy = copy.deepcopy(self.job)
+        data = (self.root / source["path"]).read_bytes()
+        context = {"entity": "Example plc", "security": "EXAMPLE:ORD", "period": "FY2026", "basis": "reported", "unit": "million", "currency": "GBP"}
+        self.job.update(schema_version=2, packet={"schema_version": 1, "context": context, "max_utf8_bytes": 20000,
+            "passages": [{"source_id": "filing", "location": "Page 1, Revenue", "text_file": {"path": source["path"], "sha256": source["sha256"]},
+                "range": {"start_byte": 0, "end_byte": len(data), "sha256": source["sha256"]}, "metadata": copy.deepcopy(context),
+                "extraction": {"method": "utf8-byte-range", "version": "1", "status": "complete", "original_sha256": source["sha256"]},
+                "table_context": {"kind": "prose", "headers": [], "footnotes": []}}]})
+        self.runtime_patch = patch("scoped_research_adapter.runtime_capabilities", return_value={"status": "verified", "verified_live": False, "origin": "engineering fake; no live verification"})
+        self.runtime = self.runtime_patch.start()
+        self.addCleanup(self.runtime_patch.stop)
+        self.claim = patch("scoped_research_queue.verify_dispatch", return_value={"dispatch_id": "fixture"}).start()
+        self.addCleanup(patch.stopall)
+
+    def run_job(self, job=None, **kwargs):
+        job = self.job if job is None else job
+        kwargs.setdefault("dispatch", {"dispatch_id": "fixture", "attempt": kwargs.get("attempt", 1)})
+        return run_scoped_job(self.root, job, **kwargs)
 
     def tearDown(self):
         self.temp.cleanup()
@@ -60,7 +79,7 @@ class ScopedAdapterTests(unittest.TestCase):
         return runner
 
     def test_safe_subscription_command_and_checkpoint(self):
-        meta = run_scoped_job(self.root, self.job, runner=self.fake(), environ={"PATH": "normal", "OPENAI_API_KEY": "secret-value", "TELEGRAM_BOT_TOKEN": "bot-secret"})
+        meta = self.run_job( runner=self.fake(), environ={"PATH": "normal", "OPENAI_API_KEY": "secret-value", "TELEGRAM_BOT_TOKEN": "bot-secret"})
         self.assertEqual(meta["status"], "scoped-analysis-complete")
         self.assertFalse(meta["actionable"])
         self.assertFalse(meta["gate_activation"])
@@ -69,6 +88,15 @@ class ScopedAdapterTests(unittest.TestCase):
         for arg in ("--ignore-user-config", "--ephemeral", "read-only", 'forced_login_method="chatgpt"', 'service_tier="default"', 'model_reasoning_effort="high"'):
             self.assertIn(arg, args)
         self.assertEqual(kwargs["env"], {"PATH": "normal"})
+        self.assertFalse(Path(kwargs["cwd"]).is_relative_to(self.root))
+        self.assertFalse(Path(kwargs["cwd"]).exists())
+        self.assertTrue(meta["engineering_test"])
+        self.assertFalse(meta["runtime_verified_live"])
+        self.assertEqual(meta["dispatch_id"], "fixture")
+        self.assertIn("--strict-config", args)
+        self.assertIn("shell_tool", args)
+        self.assertNotIn(str(self.root), kwargs["input"])
+        self.claim.assert_called_once()
         folder = Path(meta["metadata_path"]).parent
         self.assertFalse((folder / "candidate.json").exists())
         self.assertNotIn("secret", (folder / "events.json").read_text())
@@ -76,7 +104,7 @@ class ScopedAdapterTests(unittest.TestCase):
     def test_review_requested_route_honest_unknown_backend(self):
         self.job["role"] = "review"
         self.output["status"] = "review-complete"
-        meta = run_scoped_job(self.root, self.job, runner=self.fake(model=None))
+        meta = self.run_job( runner=self.fake(model=None))
         self.assertEqual(meta["status"], "review-complete")
         self.assertEqual(meta["model_requested"], "gpt-6-astra")
         self.assertIsNone(meta["actual_model"])
@@ -84,8 +112,18 @@ class ScopedAdapterTests(unittest.TestCase):
         self.assertFalse(meta["backend_independently_verified"])
         self.assertTrue(meta["selected_route_completed"])
 
+    def test_finished_review_with_material_findings_still_needs_disposition(self):
+        self.job['role']='review';self.output['status']='review-complete'
+        self.output['findings']=[dict(id='f1',severity='material',claim='Unsupported comparison',evidence=[],
+            proposed_correction='Withhold affected comparison',outcome='withheld',affected_conclusions=['c1'])]
+        self.output['conclusions'][0].update(status='withheld',blocking_issues=['f1'])
+        meta=self.run_job(runner=self.fake())
+        self.assertEqual(meta['execution_outcome'],'completed')
+        self.assertTrue(meta['continuation_required'])
+        self.assertFalse(meta['analytical_approval'])
+
     def test_auth_refused(self):
-        meta = run_scoped_job(self.root, self.job, runner=self.fake(auth="Logged in using API key"))
+        meta = self.run_job( runner=self.fake(auth="Logged in using API key"))
         self.assertEqual(meta["reason"], "chatgpt-auth-required")
         self.assertEqual(len(self.calls), 1)
 
@@ -96,11 +134,12 @@ class ScopedAdapterTests(unittest.TestCase):
                 # Each explicit attempt has one fresh checkpoint folder.
                 temp = tempfile.TemporaryDirectory()
                 self.addCleanup(temp.cleanup)
-                meta = run_scoped_job(self.root, self.job, state_root=self.root / "state" / Path(temp.name).name, runner=self.failure_runner(failure), attempt=3)
+                meta = self.run_job( state_root=self.root / "state" / Path(temp.name).name, runner=self.failure_runner(failure), attempt=3)
                 self.assertEqual(meta["reason"], reason)
                 self.assertTrue(meta["continuation_required"])
                 self.assertEqual(len(self.calls), 2)
-                self.assertGreater((datetime.fromisoformat(meta["retry_not_before"]) - datetime.now(timezone.utc)).total_seconds(), 230)
+                self.assertNotIn("retry_not_before", meta)
+                self.assertTrue(meta["retry_decision_required"])
 
     def failure_runner(self, failure):
         def runner(args, **kwargs):
@@ -113,17 +152,17 @@ class ScopedAdapterTests(unittest.TestCase):
         return runner
 
     def test_model_substitution_refused(self):
-        meta = run_scoped_job(self.root, self.job, runner=self.fake(model="gpt-6-luna"))
+        meta = self.run_job( runner=self.fake(model="gpt-6-luna"))
         self.assertEqual(meta["status"], "partial")
         self.assertFalse(Path(meta["result_path"]).exists())
 
     def test_target_mutation_refused(self):
-        meta = run_scoped_job(self.root, self.job, runner=self.fake(mutation=lambda: (self.root / self.job["target"]["path"]).write_text("Changed")))
+        meta = self.run_job( runner=self.fake(mutation=lambda: (self.root / self.job["target"]["path"]).write_text("Changed")))
         self.assertTrue(meta["continuation_required"])
         self.assertFalse(Path(meta["result_path"]).exists())
 
     def test_missing_completion_event_refused(self):
-        meta = run_scoped_job(self.root, self.job, runner=self.fake(events='{"type":"thread.started"}'))
+        meta = self.run_job( runner=self.fake(events='{"type":"thread.started"}'))
         self.assertEqual(meta["status"], "partial")
 
     def test_paths_hashes_and_method_before_call(self):
@@ -132,7 +171,7 @@ class ScopedAdapterTests(unittest.TestCase):
                 job = copy.deepcopy(self.job)
                 alter(job)
                 with self.assertRaises(ValueError):
-                    run_scoped_job(self.root, job, runner=self.fake())
+                    self.run_job(job, runner=self.fake())
                 self.assertEqual(self.calls, [])
 
     def test_source_chronology(self):
@@ -180,6 +219,13 @@ class ScopedAdapterTests(unittest.TestCase):
         self.output["conclusions"][0].update(status="withheld", blocking_issues=["f1"])
         validate_output(self.output, self.job, self.root)
 
+    def test_private_account_json_cannot_be_authorized_by_hash(self):
+        target=self.root/'state/observation/portfolio-private.json'
+        target.parent.mkdir(parents=True,exist_ok=True);target.write_text('{"cash":"300"}',encoding='utf-8')
+        self.job['target']={'path':'state/observation/portfolio-private.json','sha256':hashlib.sha256(target.read_bytes()).hexdigest()}
+        with self.assertRaisesRegex(ValueError,'Private operational state'):
+            validate_package(self.root,self.job)
+
     def test_actionable_and_credential_output_rejected(self):
         for text in ["Buy shares now", "Bearer abcdefghijklmnopqrstuvwxyz"]:
             output = copy.deepcopy(self.output)
@@ -189,7 +235,7 @@ class ScopedAdapterTests(unittest.TestCase):
 
     def test_known_environment_secret_output_not_persisted(self):
         self.output["summary"] = "Known confidential value abcdefghijklmno"
-        meta = run_scoped_job(self.root, self.job, runner=self.fake(), environ={"OPENAI_API_KEY": "abcdefghijklmno"})
+        meta = self.run_job( runner=self.fake(), environ={"OPENAI_API_KEY": "abcdefghijklmno"})
         self.assertTrue(meta["continuation_required"])
         folder = Path(meta["metadata_path"]).parent
         self.assertFalse((folder / "candidate.json").exists())
@@ -200,6 +246,64 @@ class ScopedAdapterTests(unittest.TestCase):
         self.output["coverage"].append(copy.deepcopy(self.output["coverage"][0]))
         with self.assertRaises(ValueError):
             validate_output(self.output, self.job, self.root)
+
+
+    def test_runtime_unavailable_never_calls_auth_or_worker(self):
+        self.runtime.return_value = {"status": "unavailable", "verified_live": False}
+        meta = self.run_job(runner=self.fake())
+        self.assertEqual(meta["reason"], "runtime-restrictions-unverified")
+        self.assertEqual(self.calls, [])
+        self.claim.assert_not_called()
+        self.assertFalse(meta["runtime_verified_live"])
+
+    def test_direct_dispatch_bypass_refused(self):
+        with self.assertRaisesRegex(ValueError, "Persisted queue dispatch"):
+            run_scoped_job(self.root, self.job, runner=self.fake())
+        self.assertEqual(self.calls, [])
+
+    def test_legacy_read_compatible_but_new_dispatch_requires_compact(self):
+        validate_package(self.root, self.legacy)
+        validate_output(self.output, self.legacy, self.root)
+        with self.assertRaisesRegex(ValueError, "compact job schema"):
+            self.run_job(self.legacy, runner=self.fake())
+
+    def test_unknown_or_mismatched_metadata_and_incomplete_extraction(self):
+        for field in ("entity", "security", "period", "basis", "unit", "currency"):
+            for value in (None, "different"):
+                job = copy.deepcopy(self.job)
+                job["packet"]["passages"][0]["metadata"][field] = value
+                validate_package(self.root, job)
+                with self.assertRaisesRegex(ValueError, "cannot qualify"):
+                    validate_output(self.output, job, self.root)
+        self.job["packet"]["passages"][0]["extraction"]["status"] = "incomplete"
+        with self.assertRaisesRegex(ValueError, "cannot qualify"):
+            validate_output(self.output, self.job, self.root)
+
+    def test_unauthorized_tool_and_instruction_events_fail_closed(self):
+        for event in ({"type": "item.completed", "item": {"type": "command_execution", "command": "read outside"}},
+                      {"type": "unauthorized_tool"}, {"type": "instruction_injection"},
+                      {"type": "item.started", "item": {"type": "mcp_tool_call"}}):
+            with self.subTest(event=event):
+                self.calls.clear()
+                events = json.dumps(event) + '\n' + json.dumps({"type": "turn.completed"})
+                meta = self.run_job(runner=self.failure_runner_events(events))
+                self.assertFalse(Path(meta["result_path"]).exists())
+                self.assertTrue(meta["retry_decision_required"])
+
+    def failure_runner_events(self, events):
+        def runner(args, **kwargs):
+            self.calls.append((args, kwargs))
+            if args[1] == "login":
+                return subprocess.CompletedProcess(args, 0, "Logged in using ChatGPT", "")
+            Path(args[args.index("--output-last-message") + 1]).write_text(json.dumps(self.output))
+            return subprocess.CompletedProcess(args, 0, events, "")
+        return runner
+
+    def test_duplicate_dispatch_claim_prevents_inference(self):
+        self.claim.side_effect = ValueError("Already consumed")
+        meta = self.run_job(runner=self.fake())
+        self.assertEqual(len(self.calls), 1)
+        self.assertFalse(meta["selected_route_completed"])
 
 
 if __name__ == "__main__":

@@ -1,0 +1,12 @@
+test_archive_refuses_incomplete_or_tampered_state (test_research_engine_integration.EngineIntegrationTests.test_archive_refuses_incomplete_or_tampered_state) ... ok
+test_explicit_two_stage_cycle_archive_and_projection (test_research_engine_integration.EngineIntegrationTests.test_explicit_two_stage_cycle_archive_and_projection) ... ok
+test_prepare_command_freezes_reproducible_packet (test_research_engine_integration.EngineIntegrationTests.test_prepare_command_freezes_reproducible_packet) ... usage: python.exe -m unittest prepare [-h] --request REQUEST --job JOB
+                                      --record-id RECORD_ID --created-at
+                                      CREATED_AT
+python.exe -m unittest prepare: error: the following arguments are required: --request, --job, --record-id, --created-at
+ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.575s
+
+OK

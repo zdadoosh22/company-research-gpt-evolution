@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-10-16T16:35:10.618072+00:00",
+  "inference_calls": 0,
+  "results": [
+    {
+      "case": "packet-read",
+      "status": "timeout"
+    }
+  ],
+  "limitations": [
+    "Synthetic filesystem controls only; no complete tool inventory, hosted-tool restriction or global filesystem isolation proved."
+  ]
+}

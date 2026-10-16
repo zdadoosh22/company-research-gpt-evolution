@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-16T16:17:15.331740+00:00",
+  "inference_calls": 0,
+  "profile_config": "permissions.research_canary.filesystem={\":root\"=\"read\",\"C:/Users/aidan/AppData/Local/Temp/cr2-deny-check-wfai4ue3/denied\"=\"deny\"}",
+  "results": [
+    {
+      "case": "allowed",
+      "returncode": 0,
+      "stdout": "ALLOW-CANARY",
+      "stderr": ""
+    },
+    {
+      "case": "denied",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Access is denied.\n"
+    }
+  ],
+  "limitation": "Only synthetic sentinels tested. Does not prove tools removed, broad filesystem isolation or model route availability. Earlier probe lost output during cleanup failure; no success inferred."
+}

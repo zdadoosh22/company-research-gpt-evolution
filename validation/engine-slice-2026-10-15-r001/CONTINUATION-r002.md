@@ -1,0 +1,25 @@
+# Engine continuation — 15 October 2026, r002
+
+Status: partial implementation in isolated worktree C:/Users/aidan/cr2-engine, branch codex/research-engine-slice-r001, base ccd49d083c0e6921917a5d0b813b10b4955a6d72. The original Windows project and running observation service have not been integrated or restarted. No live model case, trade, broker connection, phone setup or paid API call occurred. This is a continuation record, not final engine acceptance.
+
+## Implemented and verified
+- Explicit checkpoint commands and rebuildable static status view, immutable event records, evidence hashes and missing-completion handling.
+- Explicit queue batch/job authorization, shared four-attempt case cap, single-use dispatch claims, explicit retry decisions and recovery validation.
+- Narrow derived SQLite/FTS5 memory with dated provenance, exact passages, limitations, exclusions and immutable import identities.
+- Compact packet preparation and staged adapter execution; unverified real runtime restrictions fail closed. Tests use fake workers and make no live isolation claim.
+- Combined regression: 357 tests run, 356 passed and one symlink-permission test skipped, in 12.760 seconds. See REGRESSION-r001.txt. No test establishes research acceptance or trading readiness.
+- Protected predecessor audit: 761 files checked; 759 unchanged, two intentional test-suite edits (test_scoped_research_adapter.py and test_scoped_research_queue.py). The exact baseline remains in the base Git commit. All other listed protected files, including methodology and company research, retain their hashes. The strict all-files equality result is correctly false; see PROTECTED-VERIFICATION-r001.json.
+
+## Acceptance failures and incomplete work
+1. Frozen held-out comparison FAILED: both routes satisfy 4/5 gold requirements, not 5/5. GOLD-C3 preservation-limit text has no frozen query phrase. All six historical negatives and seven synthetic controls pass. Preserve original protocol, sources, first execution and corrected implementation verification. Do not tune the frozen evaluation or claim efficiency improvement. Next work must address contextual limitation retrieval generically and explicitly design a new independent acceptance test if needed.
+2. Actual worker isolation is unverified. Windows packet-only sandbox fails before execution with the root-read requirement; debug prompt rendering is not an actual tool inventory. runtime_capabilities therefore refuses live execution. No live attempts have been consumed. Obtain supported measured restrictions before authorizing a case; do not bypass with a caller attestation or fake test capability.
+3. Packet worker reports standalone prepare_packet chronology validation gap: adapter callers validate chronology first, direct callers do not. Parent must inspect and repair with a meaningful direct-call regression. Dedicated packet extraction/table/staging tests remain outstanding.
+4. No parent final engineering review has been completed. Implementation-agent self-checks are not that review. Inspect all changes and tests, including queue/adapter integration, malformed or conflicting checkpoint identities and supersession, privacy/path boundaries and fail-closed recovery.
+5. Research request/result/review/dossier bridge, version-bound readiness verification, real case selection, actual Sol High analysis and Astra High review, disposition, requirement-by-requirement acceptance, original-checkout integration, service maintenance and verified rollback remain incomplete. The checkpoint status is not a complete readiness projector. All ten gates stay unaccepted; no live recommendations.
+6. The 419-item frozen requirements inventory remains an unaccepted inventory, not a completed checklist. Map actual evidence when components are accepted. Preserve methodology1.0.0 and closed analytical reviews.
+
+## Exact resumption order
+Inspect this record, current goal/credit authority and worktree diff. Repair/test direct packet chronology. Perform parent engineering review and reconcile complete queue/adapter contracts. Resolve supported worker restriction gate, then implement the record bridge and bounded real-case path within the four-attempt limit. Preserve the failed retrieval evaluation and establish a defensible limitation-retrieval acceptance route without post-hoc gold tuning. Run only verification justified by new changes, then complete integrated acceptance and original-checkout recovery/rollback. No incidental push or new goal.
+
+## Budget / supersession
+The user authorised up to500 existing credits, with private exact baseline/floor in state/engine/credit-authorisation-20261015-r001.json. Last observed balance before closeout was240.531707, against floor211.389807; this is account-wide evidence, not task attribution. Stop with headroom and do not purchase credits. This continuation supersedes CONTINUATION-r001.json only for current implementation progress; USER-CLARIFICATION-r001.md supplies spending authority. No claim that a full stage or the active goal is complete.

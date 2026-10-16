@@ -1,0 +1,538 @@
+{
+  "schema": "cr2.retrieval.protocol.v1",
+  "id": "unilever-h1-historical-heldout-r001",
+  "created_at": "2026-10-15T01:22:41.744131+00:00",
+  "status": "frozen-before-implementation-and-route-execution",
+  "originating_run": "engine-slice-2026-10-15-r001",
+  "baseline_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+  "question": "As of 9 October 2026, what do the preserved Unilever records establish about H1 2026 continuing turnover, operating profit and cash flow, and what prevents their use as a price-specific conclusion for the London ordinary share? Retain period, continuing-operation scope and EUR/GBp/GBP distinctions; identify annual-TTM and source-preservation limits.",
+  "evidence_cutoff": "2026-10-09T16:02:01Z",
+  "cutoff_rationale": "Exact first versioned baseline commit timestamp: 1b2a859ea438475c4f4d5123beb91fc71b0c19b1 at 2026-10-09T17:02:01+01:00. Earlier project capture times are not reconstructed from as_of fields.",
+  "historical_label": "Retrospective reconstruction from archived project records; not contemporaneous capture, current investment research or prospective edge evidence.",
+  "approval_boundary": "Existing company runs, source registers, observations, confirmed lessons and dated study families are authorized artifact families; this does not make their partial/provisional contents approved valuations. Unilever index latest is null; latest_active is r002.",
+  "freeze_rules": [
+    "No route has been run while preparing this protocol. Freeze question, cutoff, bytes, normalized corpus, query, filtering, packet limits and gold before either route runs.",
+    "Hold this question/corpus out of implementation tuning and ordinary training/regression fixtures. Implementation tests use separate fixtures.",
+    "No outcome-driven changes to query, gold, ranking, cutoffs, source eligibility or packet limits. If a contract cannot be implemented, record failure/limitation; amend only as a new explicitly non-held-out protocol while preserving r001.",
+    "Evaluator-only fields polarity and expected_exclusion_reason and all gold/rubric must not enter either route input.",
+    "Procedural held-out separation is claimed; evaluator blindness or security isolation is not claimed.",
+    "Do not import later research conclusions, engineering review findings or any live source into this frozen comparison."
+  ],
+  "source_manifest": [
+    {
+      "source_id": "ul-index",
+      "repository_path": "companies/unilever-plc/index.json",
+      "frozen_path": "frozen-inputs/ul-index.json",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "dfd5a15b4d66b828af77df84634676108bc3c90e",
+      "sha256": "b8f0f1fcbc58df8d93733838b24c934442d337b0421135dbdebdffd3bb4ee2f1",
+      "bytes": 350,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "ul-r1-run",
+      "repository_path": "companies/unilever-plc/runs/2026-10-06-r001/run.json",
+      "frozen_path": "frozen-inputs/ul-r1-run.json",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "9bf87be40f4978120831eff16b975777bba89b9c",
+      "sha256": "e88a1130f1e2dd64eb2153c87fcf7978a3f3a10403de2fa3af1923791d2eb007",
+      "bytes": 2804,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "ul-r1-report",
+      "repository_path": "companies/unilever-plc/runs/2026-10-06-r001/report.json",
+      "frozen_path": "frozen-inputs/ul-r1-report.json",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "2a6d7d56ca7674234b30139a0d4cc3dd35926e36",
+      "sha256": "db5e62c881057143bf6e968c8732f0f451f016eedf274af0f8909f6d02aef53d",
+      "bytes": 3087,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "ul-r2-run",
+      "repository_path": "companies/unilever-plc/runs/2026-10-06-r002/run.json",
+      "frozen_path": "frozen-inputs/ul-r2-run.json",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "dac5efcd740ab42847fd753a9aa68f11bfe5c330",
+      "sha256": "38b5c9912e1776b226c9c1a5f3385a5f75ce7aae2d426572ee05b906e6df7a4d",
+      "bytes": 3465,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "ul-r2-report",
+      "repository_path": "companies/unilever-plc/runs/2026-10-06-r002/report.json",
+      "frozen_path": "frozen-inputs/ul-r2-report.json",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "2a6d7d56ca7674234b30139a0d4cc3dd35926e36",
+      "sha256": "db5e62c881057143bf6e968c8732f0f451f016eedf274af0f8909f6d02aef53d",
+      "bytes": 3087,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "ul-r2-register",
+      "repository_path": "companies/unilever-plc/runs/2026-10-06-r002/sources.json",
+      "frozen_path": "frozen-inputs/ul-r2-register.json",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "cc91dc65727624e4feb4d824d3fa789f18a89ac2",
+      "sha256": "e5fb1ccd3004ec47032f78512cd1f5ffdd466c05c960fbe38342571a19589ded",
+      "bytes": 1297,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "ul-r2-observations",
+      "repository_path": "companies/unilever-plc/runs/2026-10-06-r002/observations.json",
+      "frozen_path": "frozen-inputs/ul-r2-observations.json",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "10a29f3288e4871216dbde8d6826cb40aff77346",
+      "sha256": "d2069611de573fda565fe3dd2698d14a818df37459e1dca80f9436cd9321e5b4",
+      "bytes": 5890,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "ul-r2-u1",
+      "repository_path": "companies/unilever-plc/runs/2026-10-06-r002/sources/u1-verified-extract.txt",
+      "frozen_path": "frozen-inputs/ul-r2-u1.txt",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "cd150b49c8f8a6e55b722b4e7486fe02b227b3ec",
+      "sha256": "9687677bb23ccf2322b09588e74021ae1d708a20aeb326457751afe78c23ba45",
+      "bytes": 1155,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": false,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "ul-r2-u2",
+      "repository_path": "companies/unilever-plc/runs/2026-10-06-r002/sources/u2-verified-extract.txt",
+      "frozen_path": "frozen-inputs/ul-r2-u2.txt",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "a7a1955e3065da7392f19aaf17c320640e9a342e",
+      "sha256": "7d08dfa8723c05b81229dc34e0f58a57bd1c94eb03d6193201fe5316091ccb98",
+      "bytes": 888,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": false,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "ul-screen",
+      "repository_path": "monitoring/studies/2026-10-07-unilever-short-horizon-screen.md",
+      "frozen_path": "frozen-inputs/ul-screen.md",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "cfd4955dbb646db9312206a314434d5be42dbe47",
+      "sha256": "a2032062514d421acf35fc4cb678545ea1dc43105a699690e8180c30841006ef",
+      "bytes": 6515,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "ul-screen-register",
+      "repository_path": "monitoring/studies/2026-10-07-unilever-short-horizon-source-register.json",
+      "frozen_path": "frozen-inputs/ul-screen-register.json",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "e4dbb16dcc950d0ffa44b4b7d15ecdb995bc42a1",
+      "sha256": "885ac2753f529ab2733b0a2cfe4410a0769705eafd4d105ad0fa3b80e7a04768",
+      "bytes": 4465,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "confirmed-lessons",
+      "repository_path": "lessons/confirmed.md",
+      "frozen_path": "frozen-inputs/confirmed-lessons.md",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "e27b41f2c0f0ab6330824de757fe34bbd60ca7bd",
+      "sha256": "1e30d315aed33eb0a945b2c906cd9bdf1403788dc65f97a04189171782c88898",
+      "bytes": 2428,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "later-cost-conclusion",
+      "repository_path": "monitoring/studies/2026-10-14-manual-order-cost-evidence-gate-r001.md",
+      "frozen_path": "frozen-inputs/later-cost-conclusion.md",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "f5e22b155e7a23ecd9f999e35d9e24c777b48a4b",
+      "sha256": "56bfe3c817bbfabf88d59e0f287b6ff058fe584e854387f4779f9f4131010543",
+      "bytes": 8333,
+      "first_versioned_commit": "7d12f42de466f169bb19b3c610ba194b9aeb535d",
+      "first_versioned_at": "2026-10-14T14:41:49+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    },
+    {
+      "source_id": "other-entity-control",
+      "repository_path": "companies/applovin-corporation/index.json",
+      "frozen_path": "frozen-inputs/other-entity-control.json",
+      "version_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+      "git_blob": "784d424dc70154a7d8b49a0bbee0446cfc6d450c",
+      "sha256": "4ce0d5041796e0bf37175b0e8fbbd647c86e3692829743b69396abe74ffee87d",
+      "bytes": 364,
+      "first_versioned_commit": "1b2a859ea438475c4f4d5123beb91fc71b0c19b1",
+      "first_versioned_at": "2026-10-09T17:02:01+01:00",
+      "original_publisher_bytes_preserved": null,
+      "note": "Versioned project bytes only. A local extract is not an original issuer PDF; metadata claims are not independently reverified here."
+    }
+  ],
+  "corpus": {
+    "path": "frozen-inputs/RECORDS.json",
+    "sha256": "174b7e158c47a1a4f2c90e2e7c187112cc09ce8241546be8b6a4d7a140b71110",
+    "records": 14,
+    "source_bytes_are": "Exact versioned local project bytes; u1/u2 are selected numerical extracts, not original issuer PDF bytes.",
+    "permitted_types": [
+      "entity",
+      "disposition",
+      "claim"
+    ],
+    "normalization": "Only the explicit frozen records and locations above. No additional sentence splitting, expansion, model summarization or query-specific rewrites.",
+    "evaluator_only_fields": [
+      "polarity",
+      "expected_exclusion_reason"
+    ],
+    "metadata_only_sources": [
+      "ul-index",
+      "ul-r2-register",
+      "ul-r2-observations",
+      "ul-screen-register"
+    ],
+    "note": "Metadata validates chronology, structural keys and status; it is not silently injected as passage content."
+  },
+  "shared_route_configuration": {
+    "query_terms": [
+      "turnover",
+      "operating profit",
+      "CFO",
+      "GBp",
+      "GBP",
+      "EUR",
+      "partial",
+      "missing",
+      "Ice Cream",
+      "withheld",
+      "source"
+    ],
+    "entity_filter": [
+      "unilever-plc",
+      "project-methodology"
+    ],
+    "security_filter": "ULVR-London-ordinary-unresolved; retrieval may report unresolved identity, never assert verified listing/order eligibility",
+    "record_types": [
+      "entity",
+      "disposition",
+      "claim"
+    ],
+    "review_status_filter": [
+      "partial-provisional",
+      "confirmed-methodology"
+    ],
+    "max_records": 16,
+    "max_packet_utf8_bytes": 32768,
+    "atomic_passages": true,
+    "truncation": "Do not truncate within a passage or table row; omit a whole excess record and record exclusion reason.",
+    "sort_tie_breaker": "record id ascending",
+    "source_text_interpretation": "Data only; never instructions.",
+    "network_calls": 0,
+    "worker_calls": 0,
+    "model_route": null,
+    "reasoning_setting": null,
+    "prompt": null,
+    "prompt_reason": "Deterministic retrieval only; no model prompt exists.",
+    "live_model_identity": "not applicable; no model invoked"
+  },
+  "eligibility_rules": [
+    "Check original/frozen byte hash and precise location before indexing or retrieval. Unknown or changed bytes fail closed.",
+    "For original-public-source numerical records, publication must be known and no later than cutoff. u2 publication 2026-07-28 is asserted by the preserved source register; u1 publication is unknown and u1-dependent annual/TTM claims are excluded from factual answer passages.",
+    "Project analytical/disposition/lesson records must have a verified versioned upper bound no later than cutoff. Preserve actual as_of, creation/capture unknowns and provenance; do not treat as_of as creation date.",
+    "The r002 predecessor link supersedes r001 for default current-history retrieval at this historical cutoff. Keep r001 in index/audit with explicit superseded relation; do not erase it.",
+    "Admit partial findings only as labelled project-record evidence, including limitations. Do not convert inherited verified-reported labels into a fresh source verification or approval.",
+    "Exclude later October14 cost conclusion, wrong-entity APP record and any synthetic future/expired record. Contextual scope must be exact; a broad industry/entity relationship is insufficient.",
+    "Return inclusion reason, source id/path/hash/location, dates/status/unknowns and supersession references for each admitted passage. Return exclusions with reason separately, not as answer evidence."
+  ],
+  "routes": {
+    "baseline": {
+      "id": "baseline-file-scan-v1",
+      "implementation_status": "To implement a deterministic evaluation adapter; no existing general retrieval CLI is claimed.",
+      "basis": "Existing file-based research/source register workflow at the named commit; equivalent direct archive inspection restricted to the frozen normalized records.",
+      "algorithm": "Apply shared eligibility; casefold text and query phrases, retain a record if any exact query phrase is a substring; rank by descending count of distinct matched phrases then ascending record id; apply shared whole-passage caps.",
+      "output_directory": "retrieval-results/baseline",
+      "model_calls": 0
+    },
+    "new": {
+      "id": "sqlite-fts5-v1",
+      "implementation_status": "Not implemented or evaluated at freeze.",
+      "basis": "Required derived entity/disposition/claim index from the same frozen records and metadata.",
+      "tokenizer": "unicode61 remove_diacritics 2",
+      "fts_columns": [
+        "text"
+      ],
+      "fts_query": "turnover OR \"operating profit\" OR CFO OR GBp OR GBP OR EUR OR partial OR missing OR \"Ice Cream\" OR withheld OR source",
+      "ranking": "bm25 ascending then record id ascending; apply the identical shared eligibility before caps.",
+      "output_directory": "retrieval-results/new",
+      "model_calls": 0
+    }
+  },
+  "gold": [
+    {
+      "id": "GOLD-S1",
+      "record_id": "UL-H1-TABLE",
+      "kind": "supporting",
+      "required_exact_passages": [
+        "2025-H1 | Turnover | 25506 EUR million",
+        "2026-H1 | Turnover | 25623 EUR million",
+        "2025-H1 | Continuing CFO | 2019 EUR million",
+        "2026-H1 | Continuing CFO | 2577 EUR million"
+      ],
+      "meaning": "Retrieve both comparable continuing H1 periods with EUR million units and locations. These are preserved project extracts, not reverified originals."
+    },
+    {
+      "id": "GOLD-S2",
+      "record_id": "UL-H1-INTERPRETATION",
+      "kind": "supporting-and-contrary",
+      "required_exact_passages": [
+        "H1 IFRS operating profit was EUR4,885m, giving a 19.1% reported operating margin.",
+        "Underlying measures, currency-neutral growth and reported turnover must remain separately labelled.",
+        "total CFO also contains discontinued cash flow."
+      ],
+      "meaning": "Retrieve reported measure and limitation together; do not replace reported margin with underlying margin or equate continuing and total CFO."
+    },
+    {
+      "id": "GOLD-C1",
+      "record_id": "UL-SECURITY-CURRENCY",
+      "kind": "contrary",
+      "required_exact_passages": [
+        "A London ordinary-share quote in GBp must first be divided by 100 to obtain GBP.",
+        "neither number is a market observation or forecast.",
+        "Price-specific value/return conclusions are withheld."
+      ],
+      "meaning": "The illustrative 4,500/1.20 values must stay controlled-test examples, never market observations."
+    },
+    {
+      "id": "GOLD-C2",
+      "record_id": "UL-DISPOSITION",
+      "kind": "contrary",
+      "required_exact_passages": [
+        "partial",
+        "Price and FX absent; security valuation and prospective returns withheld."
+      ],
+      "meaning": "Focused reviewed limitations do not become full-thesis or security acceptance."
+    },
+    {
+      "id": "GOLD-C3",
+      "record_id": "UL-PRESERVATION-LIMIT",
+      "kind": "contrary",
+      "required_exact_passages": [
+        "Original issuer PDFs returned HTTP403 to local preservation.",
+        "Verified numerical extracts and precise links retained; complete PDFs remain online."
+      ],
+      "meaning": "Do not claim original PDFs or complete table/footnote access."
+    }
+  ],
+  "table_contract": {
+    "record_id": "UL-H1-TABLE",
+    "original_table_headers_available": false,
+    "original_issuer_table_bytes_available": false,
+    "preserve": "All six pipe-delimited numerical rows, period, metric, number, EUR million unit, page locations and continuing/re-presented scope exactly.",
+    "normalized_column_labels": [
+      "period",
+      "metric",
+      "value_and_unit",
+      "source_location",
+      "scope"
+    ],
+    "header_provenance": "Normalized labels describe actual extract field order and observation JSON keys. They are not represented as original issuer table headers.",
+    "source_field_keys": [
+      "metric",
+      "period",
+      "value",
+      "unit",
+      "scope",
+      "source_id",
+      "location",
+      "currency",
+      "source_raw_value",
+      "source_raw_unit",
+      "conversion_to_working_unit"
+    ],
+    "footnote_limit": "Full original footnotes are unavailable; retain the project narrative as attributed and do not certify complete extraction."
+  },
+  "negative_controls": [
+    {
+      "record_id": "UL-U1-UNKNOWN-DATE",
+      "expect": "excluded from answer facts; unknown publication date visible"
+    },
+    {
+      "record_id": "UL-ANNUAL-TTM-CLAIM",
+      "expect": "excluded from answer facts due u1 dependency; do not independently approve EUR50,620m TTM"
+    },
+    {
+      "record_id": "UL-R1-SUPERSEDED",
+      "expect": "excluded from default answer but retained with supersession link"
+    },
+    {
+      "record_id": "UL-R1-STALE-CLAIM",
+      "expect": "excluded from default answer but retained with supersession link"
+    },
+    {
+      "record_id": "LATER-COST-CONCLUSION",
+      "expect": "excluded by creation/availability cutoff even though some underlying source events predate cutoff"
+    },
+    {
+      "record_id": "OTHER-ENTITY",
+      "expect": "excluded by entity applicability"
+    }
+  ],
+  "synthetic_controls": {
+    "separate_from_historical_gold": true,
+    "purpose": "Deterministic contract/failure controls only; never source evidence, actual findings or live-readiness evidence.",
+    "execution": "Run separately per route after the unchanged primary comparison; do not add these mutations to the primary historical corpus.",
+    "cases": [
+      {
+        "id": "SYN-FUTURE-PUBLICATION",
+        "base_record": "UL-H1-TABLE",
+        "mutation": {
+          "public_source_date": "2026-10-10"
+        },
+        "expected": "exclude future public source"
+      },
+      {
+        "id": "SYN-UNKNOWN-PUBLICATION",
+        "base_record": "UL-H1-TABLE",
+        "mutation": {
+          "public_source_date": null
+        },
+        "expected": "exclude as unknown publication, not replace with period/as_of"
+      },
+      {
+        "id": "SYN-EXPIRED",
+        "base_record": "UL-H1-TABLE",
+        "mutation": {
+          "valid_until": "2026-10-08T23:59:59Z"
+        },
+        "expected": "exclude expired claim for current reuse at cutoff; retain audit"
+      },
+      {
+        "id": "SYN-LATER-ANALYSIS",
+        "base_record": "UL-H1-INTERPRETATION",
+        "mutation": {
+          "versioned_no_later_than": "2026-10-10T00:00:00Z"
+        },
+        "expected": "exclude later conclusion despite older underlying period"
+      },
+      {
+        "id": "SYN-TAMPER",
+        "base_record": "UL-H1-TABLE",
+        "mutation": {
+          "text_replace": [
+            "25623",
+            "99999"
+          ],
+          "keep_original_hash": true
+        },
+        "expected": "reject hash mismatch; do not present altered number"
+      },
+      {
+        "id": "SYN-UNIT",
+        "base_record": "UL-H1-TABLE",
+        "mutation": {
+          "declared_currency": "USD",
+          "declared_unit": "USD million",
+          "keep_original_text": true
+        },
+        "expected": "reject incompatible metadata; no silent currency conversion"
+      },
+      {
+        "id": "SYN-MISSING-LOCATION",
+        "base_record": "UL-H1-TABLE",
+        "mutation": {
+          "location": ""
+        },
+        "expected": "reject missing precise location"
+      }
+    ]
+  },
+  "rubric": {
+    "scoring": "Boolean per gold/control/dimension, with pass count and explicit failures. No percentage-quality, profit-confidence, edge or savings score.",
+    "pass_conditions": [
+      "All five gold items are returned with every exact supporting/contrary substring and correct source references.",
+      "The complete six-row table and normalized field labels survive without original-header claims, period/unit loss or invented footnotes.",
+      "All six historical negative controls are correctly excluded and labelled; excluded evidence cannot enter factual conclusions.",
+      "Every admitted passage has a specific inclusion reason and intact source path/hash/location, chronology and review status.",
+      "Packets respect both bounds without truncating atomic passages; exclusions are explicit.",
+      "Separate synthetic controls are detected as specified; these results cannot improve historical recall scores.",
+      "Rebuilding the new index from identical source bytes yields identical selected records, packet content hash and exclusion decisions.",
+      "Both routes make zero worker and network calls; absent tokens/costs remain unavailable, not estimated."
+    ],
+    "comparison_rule": "Report each route independently. Equality is a legitimate result. An efficiency gain is reportable only if new-route quality meets all primary rubric items with no regression; never claim prefix-cache or percentage savings. A defect is an implementation failure to repair without altering the frozen gold."
+  },
+  "comparison_fields": [
+    "protocol_sha256",
+    "baseline_commit",
+    "evaluation_code_revision",
+    "route_id",
+    "query",
+    "cutoff",
+    "source_set_sha256",
+    "normalization_sha256",
+    "selected_record_ids",
+    "excluded_record_ids_and_reasons",
+    "gold_item_results",
+    "table_preservation_result",
+    "cutoff_result",
+    "stale_supersession_result",
+    "inclusion_reason_source_reference_result",
+    "synthetic_control_results_separate",
+    "packet_sha256",
+    "packet_utf8_bytes",
+    "record_count",
+    "network_calls",
+    "worker_calls",
+    "actual_usage_if_exposed_otherwise_unavailable",
+    "timing_if_measured_with_environment",
+    "limitations"
+  ],
+  "known_limitations": [
+    "Small single historical case; no statistical generalization or trading-edge conclusion.",
+    "Only selected numerical extracts exist; complete issuer table headers/footnotes and primary PDF bytes cannot be evaluated or claimed preserved.",
+    "u1 public date unknown: strict cutoff withholds annual TTM facts even though project narrative contains them.",
+    "Historical Unilever analytical approval is partial; latest is null and current price, FX and security/order verification are absent.",
+    "Original creation/capture timestamps are often missing; first versioned commit supplies upper bounds, not contemporaneous collection.",
+    "No real route outputs or performance results exist at freeze.",
+    "No new research conclusion, source approval, external source re-verification or live gate satisfaction is created by this protocol."
+  ],
+  "usage": {
+    "live_worker_calls_authorized": 0,
+    "live_worker_calls_consumed": 0,
+    "network_calls_consumed": 0,
+    "tokens": "unavailable/not applicable",
+    "monetary_cost": "unavailable/not applicable"
+  },
+  "supersedes": []
+}

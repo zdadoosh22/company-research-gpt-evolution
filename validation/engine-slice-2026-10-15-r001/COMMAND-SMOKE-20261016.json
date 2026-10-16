@@ -1,0 +1,108 @@
+{
+  "created_at": "2026-10-16T16:54:49.059988+00:00",
+  "inference_calls": 0,
+  "results": [
+    {
+      "command": [
+        "C:\\Users\\aidan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/research.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "stdout": "usage: research.py [-h]\n                   {init,validate,publish,verify,test,list,checkpoint,engine-status,engine}\n                   ...\n\nFile-based research lifecycle CLI; archives and completed runs are never\noverwritten.\n\npositional arguments:\n  {init,validate,publish,verify,test,list,checkpoint,engine-status,engine}\n    checkpoint          Record an explicit project turn boundary\n    engine-status       Rebuild the research engine checkpoint projection\n    engine              Explicit case preparation, record translation and\n                        read-only case status\n\noptions:\n  -h, --help            show this help message and exit\n",
+      "stderr": "",
+      "expected_returncode": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\aidan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/research.py",
+        "engine",
+        "--help"
+      ],
+      "returncode": 0,
+      "stdout": "usage: research.py [-h] [--root ROOT]\n                   {record,prepare,archive-result,translate,case-status,memory-export}\n                   ...\n\nExplicit research case commands. No automatic jobs, acceptance or activation.\n\npositional arguments:\n  {record,prepare,archive-result,translate,case-status,memory-export}\n    record              Validate and append a versioned record\n    prepare             Freeze exact authorized evidence packet\n    archive-result      Export a revalidated queue result without private\n                        state\n    translate           Bind a validated scoped result or independent review\n    case-status         Revalidate a case without changing acceptance\n    memory-export       Export explicit case records for the derived history\n                        index\n\noptions:\n  -h, --help            show this help message and exit\n  --root ROOT\n",
+      "stderr": "",
+      "expected_returncode": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\aidan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/research.py",
+        "engine",
+        "prepare",
+        "--help"
+      ],
+      "returncode": 0,
+      "stdout": "usage: research.py prepare [-h] --request REQUEST --job JOB --record-id\n                           RECORD_ID --created-at CREATED_AT\n\noptions:\n  -h, --help            show this help message and exit\n  --request REQUEST\n  --job JOB\n  --record-id RECORD_ID\n  --created-at CREATED_AT\n",
+      "stderr": "",
+      "expected_returncode": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\aidan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/research.py",
+        "engine",
+        "memory-export",
+        "--help"
+      ],
+      "returncode": 0,
+      "stdout": "usage: research.py memory-export [-h] --disposition DISPOSITION\n\noptions:\n  -h, --help            show this help message and exit\n  --disposition DISPOSITION\n",
+      "stderr": "",
+      "expected_returncode": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\aidan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/research.py",
+        "checkpoint",
+        "--help"
+      ],
+      "returncode": 0,
+      "stdout": "usage: research.py checkpoint [-h] (--start | --complete) --record RECORD\n\noptions:\n  -h, --help       show this help message and exit\n  --start\n  --complete\n  --record RECORD  Allowlisted project-relative JSON record\n",
+      "stderr": "",
+      "expected_returncode": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\aidan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/scoped_research_queue.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "stdout": "usage: scoped_research_queue.py [-h] [--project-root PROJECT_ROOT]\n                                {enqueue,authorize-batch,status,recover,run-one,retry}\n                                ...\n\nExplicit scoped queue: no background worker or automatic retry\n\npositional arguments:\n  {enqueue,authorize-batch,status,recover,run-one,retry}\n\noptions:\n  -h, --help            show this help message and exit\n  --project-root PROJECT_ROOT\n",
+      "stderr": "",
+      "expected_returncode": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\aidan\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/research_memory.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "stdout": "usage: research_memory.py [-h] [--root ROOT] [--state-root STATE_ROOT]\n                          {import,query,rebuild,evaluate} ...\n\nExplicit, rebuildable research retrieval. Sources are data; this module runs\nno workers. Only manifest-selected approved artifact families are read. The\nSQLite database is a disposable projection, never an approval, a source\narchive or a live gate.\n\npositional arguments:\n  {import,query,rebuild,evaluate}\n    import              Import explicit source manifest and normalized records\n    query               Retrieve exact scoped records with source integrity\n                        checks\n    rebuild             Delete/reimport only the derived index from explicit\n                        bundles\n    evaluate            Run both frozen routes with zero worker/network calls\n\noptions:\n  -h, --help            show this help message and exit\n  --root ROOT\n  --state-root STATE_ROOT\n",
+      "stderr": "",
+      "expected_returncode": 0
+    },
+    {
+      "command": [
+        "tools/research.py",
+        "engine",
+        "translate"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: research.py translate [-h] --request REQUEST --job JOB --result RESULT\n                             --execution EXECUTION --case-id CASE_ID\n                             --record-id RECORD_ID --created-at CREATED_AT\n                             [--target-record TARGET_RECORD]\n                             [--unknown UNKNOWN] [--version VERSION]\n                             [--supersedes SUPERSEDES]\nresearch.py translate: error: the following arguments are required: --request, --job, --result, --execution, --case-id, --record-id, --created-at\n",
+      "expected_returncode": 2
+    }
+  ],
+  "passed": true
+}

@@ -21,7 +21,10 @@ import hashlib
 import json
 from pathlib import Path
 
-from alert_contract import ArtifactRef, GateEvidence, VerifiedArtifact, stamp, name
+try:
+    from .alert_contract import ArtifactRef, GateEvidence, VerifiedArtifact, stamp, name
+except ImportError:
+    from alert_contract import ArtifactRef, GateEvidence, VerifiedArtifact, stamp, name
 
 SCOPE_FIELDS = ('decision_version', 'dossier_version', 'decision_sha256',
                 'dossier_sha256', 'instruction_fingerprint', 'portfolio_fingerprint',
@@ -287,3 +290,40 @@ class ArtifactVerifier:
             'accepted', evidence.decision_version, evidence.dossier_version,
             evidence.portfolio_fingerprint, evidence.decision_sha256, evidence.dossier_sha256,
             evidence.instruction_fingerprint, condition, evidence.quote_fingerprint, stamp(review['valid_until']))
+
+
+def project_gates(evidence, *, verifier, now):
+    """Read-only view of the existing verifier; never adds registry entries.
+
+    The caller supplies the independent current instruction scope, registry
+    digest and actual validators when constructing ArtifactVerifier. A missing
+    current validator remains a failure. Engine research records alone cannot
+    enter this interface because they are not accepted gate artifacts.
+    """
+    try:
+        from .alert_contract import GATES
+    except ImportError:
+        from alert_contract import GATES
+    now=stamp(now)
+    if not isinstance(verifier,ArtifactVerifier) or verifier.now!=now:
+        raise ValueError('Current existing artifact verifier required')
+    if not isinstance(evidence,(list,tuple)) or any(not isinstance(e,GateEvidence) for e in evidence):
+        raise ValueError('Typed gate evidence list required')
+    gates=[]
+    for gate in sorted(GATES):
+        rows=[e for e in evidence if e.gate==gate]
+        row=dict(gate=gate,status='evidence incomplete',evidence=[],reason='No version-bound acceptance evidence',valid_until=None)
+        if len(rows)>1:row.update(status='invalidated',reason='Conflicting duplicate gate evidence')
+        elif rows:
+            e=rows[0]
+            try:
+                verified=verifier(e)
+                if verified.artifact!=e.artifact or verified.checked_at!=now or verified.verdict!='accepted':
+                    raise ValueError('Verifier outcome inconsistent')
+                expiry=min(e.valid_until,verified.valid_until)
+                row.update(status='satisfied',evidence=[dict(artifact_id=e.artifact.artifact_id,version=e.artifact.version,sha256=e.artifact.sha256)],
+                    reason='Existing current artifact verifier accepted this exact scope',valid_until=expiry.isoformat())
+            except (ValueError,KeyError,TypeError,OSError):row.update(status='invalidated',reason='Acceptance evidence changed, expired or lacks current verification')
+        gates.append(row)
+    return dict(authoritative=False,assessed_at=now.isoformat(),gates=gates,activation='disabled',
+        live_recommendations_enabled=False,limitation='Read-only acceptance view; capability activation is a separate operation.')

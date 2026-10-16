@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "engine-stage-verification-20261015-complete",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "verification-20261015-r001",
+  "phase": "complete",
+  "created_at": "2026-10-15T01:33:47.793322+00:00",
+  "observed_at": "2026-10-15T01:33:47.793322+00:00",
+  "origin": "Explicit checkpoint adoption after checkpoint command implementation; this does not backdate the earlier implementation work.",
+  "request": "Verify and preserve the current isolated implementation stage within the remaining authorised credit budget.",
+  "work": [
+    "Preserved component implementation and failed acceptance findings.",
+    "Ran combined 357-test regression: 356 passed, one skipped.",
+    "Audited 761 predecessor hashes; two intentional test edits, other759 unchanged."
+  ],
+  "outcome": "partial",
+  "artifacts": [
+    {
+      "path": "validation/engine-slice-2026-10-15-r001/CONTINUATION-r002.md",
+      "sha256": "bc8858e553ef1d7b98c294cb7b1d8903a4c75ad65ce7beabbb3bb8ad9dfa8176"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-r001.txt",
+      "sha256": "99d9995df9242143088d0d39b9078292fab4e2d9172d70f5d5a57a03360a0475"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-15-r001/PROTECTED-VERIFICATION-r001.json",
+      "sha256": "4ae651d60ba0a1eefdc3719ff64d8256239433d4a72df6b8c712818427835b59"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-15-r001/RETRIEVAL-FINDINGS.md",
+      "sha256": "822ce63698a0bb5f4c63e1993840b1646abf380afb88428f01d41f8451efdbd5"
+    }
+  ],
+  "checks": [
+    {
+      "id": "regression-r001",
+      "method": "Full unittest discovery, fake model workers, no live inference",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-15-r001/REGRESSION-r001.txt"
+      ]
+    },
+    {
+      "id": "protected-exact-r001",
+      "method": "Exact SHA256 comparison against frozen predecessor manifest; two intentional test edits retained as mismatches",
+      "outcome": "failed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-15-r001/PROTECTED-VERIFICATION-r001.json"
+      ]
+    }
+  ],
+  "blockers": {
+    "resolved": [],
+    "introduced": [],
+    "unchanged": [
+      "Worker restriction not yet verified",
+      "Frozen retrieval comparison missing required limitation record",
+      "Full vertical slice and original-checkout integration incomplete"
+    ]
+  },
+  "readiness_impact": {
+    "label": "not assessed",
+    "requirements": [],
+    "artifact_paths": [],
+    "explanation": "Engineering progress is recorded; failed retrieval acceptance and missing live worker verification prevent full slice acceptance."
+  },
+  "verified_gate_changes": [],
+  "next_action": "Resume from CONTINUATION-r002.md after checking remaining authorised budget; final engineering review and real case remain outstanding.",
+  "unknowns": [
+    "Supported enforceable worker restriction route",
+    "Complete requirement acceptance",
+    "Remaining account-wide credit balance after final response"
+  ],
+  "supersedes": []
+}

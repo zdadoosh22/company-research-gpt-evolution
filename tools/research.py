@@ -163,6 +163,9 @@ def verify_publication(run):
 
 
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == 'engine':
+        from research_engine import main as engine_main
+        sys.exit(engine_main(sys.argv[2:]))
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
     init = sub.add_parser('init')
@@ -174,8 +177,28 @@ def main():
         sub.add_parser(cmd).add_argument('run')
     sub.add_parser('test')
     sub.add_parser('list')
+    checkpoint = sub.add_parser('checkpoint', help='Record an explicit project turn boundary')
+    phase = checkpoint.add_mutually_exclusive_group(required=True)
+    phase.add_argument('--start', action='store_true')
+    phase.add_argument('--complete', action='store_true')
+    checkpoint.add_argument('--record', required=True, help='Allowlisted project-relative JSON record')
+    sub.add_parser('engine-status', help='Rebuild the research engine checkpoint projection')
+    sub.add_parser('engine', help='Explicit case preparation, record translation and read-only case status')
     args = parser.parse_args()
-    if args.command == 'init':
+    if args.command in {'checkpoint', 'engine-status'}:
+        from research_checkpoint import load_checkpoint_input, record_checkpoint, rebuild_projection
+        try:
+            if args.command == 'engine-status':
+                result = rebuild_projection(ROOT)
+            else:
+                event = load_checkpoint_input(ROOT, args.record)
+                if event.get('phase') != ('start' if args.start else 'complete'):
+                    raise ValueError('Record phase differs from explicit command flag')
+                result = record_checkpoint(ROOT, event)
+            print(json.dumps(result, indent=2, ensure_ascii=False))
+        except (ValueError, OSError, RuntimeError) as exc:
+            parser.error(str(exc))
+    elif args.command == 'init':
         print(init_run(args.entity_id, args.legal_name, args.ticker, as_of=args.as_of, mode=args.mode, predecessor=args.predecessor))
     elif args.command == 'test':
         suite = unittest.defaultTestLoader.discover(str(ROOT / 'validation' / 'tests'))

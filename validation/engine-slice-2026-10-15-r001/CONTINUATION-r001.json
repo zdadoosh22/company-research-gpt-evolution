@@ -1,0 +1,44 @@
+{
+  "id": "engine-turn-20261015-preflight-r001",
+  "schema_version": 1,
+  "created_at": "2026-10-15T00:36:18.857870+00:00",
+  "outcome": "partial",
+  "request": "Resume active research engine r002 goal",
+  "work": [
+    "Isolated worktree created on codex/research-engine-slice-r001",
+    "Fresh292-test baseline passed",
+    "Protected761 predecessor artifact hashes saved",
+    "Current authority and capability preflight recorded"
+  ],
+  "artifacts": [
+    "validation/engine-slice-2026-10-15-r001/BASELINE-TESTS.txt",
+    "validation/engine-slice-2026-10-15-r001/PREFLIGHT.json",
+    "validation/engine-slice-2026-10-15-r001/PREFLIGHT.md",
+    "validation/engine-slice-2026-10-15-r001/PROTECTED-ARTIFACTS.json"
+  ],
+  "blockers": {
+    "resolved": [
+      "current baseline unverified",
+      "isolated checkout missing"
+    ],
+    "introduced": [
+      "account five-hour allowance exhausted; no credit continuation authorised"
+    ],
+    "unchanged": [
+      "required implementation, frozen evaluation completion, real-case analysis/review, integration and final acceptance"
+    ]
+  },
+  "readiness_impact": "unchanged",
+  "verified_gate_changes": [],
+  "real_case_calls_consumed": 0,
+  "next_action": "Check refreshed allowance first. Inspect and finish preflight REQUIREMENTS.json and RETRIEVAL-PROTOCOL.json and freeze hashes before implementation. Then implement durable explicit checkpoint command and queue budget/retry controls.",
+  "goal_status": "active; incomplete",
+  "usage": {
+    "five_hour_used_percent": 100,
+    "ordinary_usage_allowed": false,
+    "reset_epoch": 1792038482,
+    "credit_spending_authorised": false
+  },
+  "worker_status": "preflight record helper interrupted at exhausted-allowance snapshot",
+  "completion_command": "not yet implemented; this explicit interim checkpoint preserves actual work without claiming command acceptance"
+}

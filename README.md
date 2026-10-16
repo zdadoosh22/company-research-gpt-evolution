@@ -5,7 +5,7 @@ A local research workspace for detailed company theses, focused questions, compa
 ## Start a research chat
 Open this folder as a local project in the desktop app, then start a chat there. This makes AGENTS.md the entry point for shared instructions. A folder on disk is not automatically a registered sidebar project. If working from another folder, explicitly ask the assistant to load this folder's AGENTS.md first.
 
-You can simply say: **Research [company / ticker].** Optional context: listing, buyer/holder, concerns, horizon, return hurdle or source limits. See templates/ for copyable requests. Full theses run without checkpoints. Ask questions or request an update after delivery.
+You can simply say: **Research [company / ticker].** Optional context: listing, buyer/holder, concerns, horizon, return hurdle or source limits. See templates/ for copyable requests. Full theses run unattended with dated work checkpoints. Ask questions or request an update after delivery.
 
 ## What you receive
 A full PDF, a standalone thesis PDF of at most five readable pages, and an editable Excel workbook. The PDF records the original dated judgement; What-if edits to Excel do not rewrite the research. Material evidence and calculation inputs stay with each dated run so a future chat can audit or update it.
@@ -25,6 +25,8 @@ A full PDF, a standalone thesis PDF of at most five readable pages, and an edita
 See validation/status.json for the current implementation and pilot status. Read any limitations before relying on numerical outputs. Pilots are validation research, not personalised investment recommendations.
 
 ## Continuity
+
+The bounded engine extension is in development. [Engine workflow](workflows/research-engine.md) documents the explicit checkpoint and status commands; implementing them does not complete the required research cycle or approve a trade. [The authorised r002 brief](planning/2026-10-14-research-engine-goal-brief-r002.md) defines the full acceptance boundary.
 The next chat loads the current methodology, relevant company index and run records. Completed runs are immutable by convention and protected by publication hashes. An update creates a new version and preserves the prior assessment. Methodology changes require a documented reason and approval when consequential. We have not archived the pasted historical conversation.
 
 The company index distinguishes `latest` (published/approved) from `latest_active` (unfinished or partial). Load run.json before using either. The focused Astra audit is complete, with corrections preserved in r002. The pilots remain partial and must not be treated as approved valuations; the remaining analytical foundations and model workflow validation are recorded in validation/status.json.

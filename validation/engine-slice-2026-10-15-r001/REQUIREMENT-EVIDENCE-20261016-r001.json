@@ -1,0 +1,4064 @@
+{
+  "schema_version": 1,
+  "id": "engine-requirement-assessment-20261016-r001",
+  "version": 1,
+  "created_at": "2026-10-16T16:56:13.029541+00:00",
+  "origin": "Main Sol coordinator interim direct review; not final release/analytical acceptance",
+  "inventory": {
+    "path": "validation/engine-slice-2026-10-15-r001/REQUIREMENTS.json",
+    "sha256": "ba1d4722e38de0c61bf83050930be9bf1998863e4e0a37d2ddbc136439bb767b"
+  },
+  "source_brief": {
+    "path": "planning/2026-10-14-research-engine-goal-brief-r002.md",
+    "sha256": "be7ce1350158737a63167aceec98b82916f88457743e6ad6da72c647544343e0"
+  },
+  "requirements": [
+    {
+      "id": "BRIEF-L0014",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0016",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0018",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0020",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0026",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0030",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0031",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0032",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0033",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0034",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0036",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0042",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0043",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0044",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0045",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0047",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0049",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0053",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0055",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0059",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0060",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0061",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0062",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0063",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0064",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0065",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0067",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0071",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0072",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0073",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0074",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0075",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0076",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0077",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0078",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0080",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0086",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0087",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0088",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0089",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0090",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0091",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0093",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0095",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0101",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0102",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0106",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0107",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0111",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0115",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0119",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0120",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0121",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0122",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0123",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0125",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0129",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0133",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0134",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0135",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0136",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0137",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0138",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0139",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0140",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0142",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0150",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0151",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0152",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0153",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0154",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0155",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0159",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Automatic retries replaced with explicit uncertain state, persisted intent and consumed attempts; verified in temporary state."
+    },
+    {
+      "id": "BRIEF-L0163",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0167",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0169",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0173",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0174",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0175",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0176",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        }
+      ],
+      "notes": "Atomic persistence and idempotent imports/events/dispatch decisions tested; not actual production fault recovery."
+    },
+    {
+      "id": "BRIEF-L0177",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        }
+      ],
+      "notes": "Atomic persistence and idempotent imports/events/dispatch decisions tested; not actual production fault recovery."
+    },
+    {
+      "id": "BRIEF-L0178",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0179",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0181",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0185",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0187",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0195",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0196",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0197",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0198",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0199",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0200",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0201",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0202",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0204",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0206",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0208",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0214",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0215",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0217",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0219",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0221",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0223",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0229",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0230",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0234",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0236",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0238",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0240",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0242",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0246",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0248",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0250",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0252",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0256",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0260",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0261",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0262",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0263",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0264",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0266",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0268",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0270",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0274",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0275",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0276",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0278",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0280",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0282",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0286",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0288",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0290",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0292",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0298",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0300",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0302",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0308",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0309",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0310",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0311",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0312",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0314",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0316",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0318",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0320",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0324",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0326",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0328",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0330",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0336",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0337",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0338",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0339",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0341",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0343",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0345",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0347",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0351",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0355",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0356",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0357",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0358",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0359",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0361",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0367",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0369",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0371",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0373",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0377",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_records.py",
+          "sha256": "ea9f8e86bcb907b3d55a0a9242140aa9b3683c681ac766a31f0c7dba7490413a"
+        },
+        {
+          "path": "tools/research_engine.py",
+          "sha256": "0736a7194bc05607114aef9c0bd71fd5a2ae5770ff0ed3bfc8979ee77e4b1855"
+        },
+        {
+          "path": "validation/tests/test_research_engine_integration.py",
+          "sha256": "dd21cf2d2a67e392d4820adb478f680db9d7390bfb45066822e8af39a098f9a0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        }
+      ],
+      "notes": "Deterministic unaccepted-scoped translation and read-only current verifier projection are connected. Real analytical acceptance remains outstanding."
+    },
+    {
+      "id": "BRIEF-L0381",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0383",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0385",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0389",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0393",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0394",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0395",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0396",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0397",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0398",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0400",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0402",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0404",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0406",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/COMMAND-SMOKE-20261016.json",
+          "sha256": "9e08add8a8472bc95ec8194605838626789edad89879cdafddc6acdfa76b89c8"
+        }
+      ],
+      "notes": "Explicit --start/--complete and exact unmatched-start message are tested; no hooks installed."
+    },
+    {
+      "id": "BRIEF-L0408",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0412",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        }
+      ],
+      "notes": "Atomic persistence and idempotent imports/events/dispatch decisions tested; not actual production fault recovery."
+    },
+    {
+      "id": "BRIEF-L0413",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        }
+      ],
+      "notes": "Atomic persistence and idempotent imports/events/dispatch decisions tested; not actual production fault recovery."
+    },
+    {
+      "id": "BRIEF-L0414",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0415",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0416",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0417",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0418",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0422",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0424",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0426",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0428",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0430",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0432",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0436",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0437",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0438",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0439",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0440",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0441",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0442",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0443",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0445",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0447",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0449",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0453",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0455",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0459",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0463",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0464",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0465",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0466",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0467",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0469",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0473",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0474",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0475",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0476",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0477",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0479",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0483",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0484",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0485",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0486",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0487",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0488",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0490",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0494",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0495",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0496",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0497",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0498",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0500",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0504",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0505",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0506",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0507",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0508",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0509",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0511",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0513",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0517",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0523",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0524",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0525",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0526",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0527",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0528",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0529",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0530",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0531",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0532",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0533",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0534",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0536",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0540",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0544",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0545",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0546",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0547",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0548",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0550",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0552",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0554",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0560",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0561",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0562",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0563",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0564",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0565",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0567",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0569",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0571",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0577",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0578",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0579",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0580",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0581",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0582",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0583",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0585",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0587",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0589",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0593",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0594",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0595",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0596",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0597",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0599",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0605",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0606",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0607",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0608",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0609",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0610",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0611",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0612",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0613",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0615",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0619",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0620",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0621",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0622",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0623",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0625",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0523-01",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_records.py",
+          "sha256": "ea9f8e86bcb907b3d55a0a9242140aa9b3683c681ac766a31f0c7dba7490413a"
+        },
+        {
+          "path": "tools/research_engine.py",
+          "sha256": "0736a7194bc05607114aef9c0bd71fd5a2ae5770ff0ed3bfc8979ee77e4b1855"
+        },
+        {
+          "path": "validation/tests/test_research_engine_integration.py",
+          "sha256": "dd21cf2d2a67e392d4820adb478f680db9d7390bfb45066822e8af39a098f9a0"
+        },
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        }
+      ],
+      "notes": "Structural identity, scope, period/unit and contradictory-context controls tested; actual security verification remains analyst work."
+    },
+    {
+      "id": "TEST-L0523-02",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_records.py",
+          "sha256": "ea9f8e86bcb907b3d55a0a9242140aa9b3683c681ac766a31f0c7dba7490413a"
+        },
+        {
+          "path": "tools/research_engine.py",
+          "sha256": "0736a7194bc05607114aef9c0bd71fd5a2ae5770ff0ed3bfc8979ee77e4b1855"
+        },
+        {
+          "path": "validation/tests/test_research_engine_integration.py",
+          "sha256": "dd21cf2d2a67e392d4820adb478f680db9d7390bfb45066822e8af39a098f9a0"
+        },
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        }
+      ],
+      "notes": "Structural identity, scope, period/unit and contradictory-context controls tested; actual security verification remains analyst work."
+    },
+    {
+      "id": "TEST-L0523-03",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_records.py",
+          "sha256": "ea9f8e86bcb907b3d55a0a9242140aa9b3683c681ac766a31f0c7dba7490413a"
+        },
+        {
+          "path": "tools/research_engine.py",
+          "sha256": "0736a7194bc05607114aef9c0bd71fd5a2ae5770ff0ed3bfc8979ee77e4b1855"
+        },
+        {
+          "path": "validation/tests/test_research_engine_integration.py",
+          "sha256": "dd21cf2d2a67e392d4820adb478f680db9d7390bfb45066822e8af39a098f9a0"
+        },
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        }
+      ],
+      "notes": "Structural identity, scope, period/unit and contradictory-context controls tested; actual security verification remains analyst work."
+    },
+    {
+      "id": "TEST-L0523-04",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_records.py",
+          "sha256": "ea9f8e86bcb907b3d55a0a9242140aa9b3683c681ac766a31f0c7dba7490413a"
+        },
+        {
+          "path": "tools/research_engine.py",
+          "sha256": "0736a7194bc05607114aef9c0bd71fd5a2ae5770ff0ed3bfc8979ee77e4b1855"
+        },
+        {
+          "path": "validation/tests/test_research_engine_integration.py",
+          "sha256": "dd21cf2d2a67e392d4820adb478f680db9d7390bfb45066822e8af39a098f9a0"
+        },
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        }
+      ],
+      "notes": "Structural identity, scope, period/unit and contradictory-context controls tested; actual security verification remains analyst work."
+    },
+    {
+      "id": "TEST-L0523-05",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_records.py",
+          "sha256": "ea9f8e86bcb907b3d55a0a9242140aa9b3683c681ac766a31f0c7dba7490413a"
+        },
+        {
+          "path": "tools/research_engine.py",
+          "sha256": "0736a7194bc05607114aef9c0bd71fd5a2ae5770ff0ed3bfc8979ee77e4b1855"
+        },
+        {
+          "path": "validation/tests/test_research_engine_integration.py",
+          "sha256": "dd21cf2d2a67e392d4820adb478f680db9d7390bfb45066822e8af39a098f9a0"
+        },
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        }
+      ],
+      "notes": "Structural identity, scope, period/unit and contradictory-context controls tested; actual security verification remains analyst work."
+    },
+    {
+      "id": "TEST-L0523-06",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        }
+      ],
+      "notes": "Deterministic source/location/hash/date/extraction controls; no live source or economic approval."
+    },
+    {
+      "id": "TEST-L0523-07",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        }
+      ],
+      "notes": "Deterministic source/location/hash/date/extraction controls; no live source or economic approval."
+    },
+    {
+      "id": "TEST-L0523-08",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        }
+      ],
+      "notes": "Deterministic source/location/hash/date/extraction controls; no live source or economic approval."
+    },
+    {
+      "id": "TEST-L0524-01",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0524-02",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0524-03",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0524-04",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0524-05",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0524-06",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0525-01",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Dated supersession, conflict/lesson applicability, cross-company exclusion and rebuild controls tested with independent synthetic inputs."
+    },
+    {
+      "id": "TEST-L0525-02",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Dated supersession, conflict/lesson applicability, cross-company exclusion and rebuild controls tested with independent synthetic inputs."
+    },
+    {
+      "id": "TEST-L0525-03",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0525-04",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0525-05",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Dated supersession, conflict/lesson applicability, cross-company exclusion and rebuild controls tested with independent synthetic inputs."
+    },
+    {
+      "id": "TEST-L0525-06",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Dated supersession, conflict/lesson applicability, cross-company exclusion and rebuild controls tested with independent synthetic inputs."
+    },
+    {
+      "id": "TEST-L0525-07",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Dated supersession, conflict/lesson applicability, cross-company exclusion and rebuild controls tested with independent synthetic inputs."
+    },
+    {
+      "id": "TEST-L0526-01",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        }
+      ],
+      "notes": "Deterministic source/location/hash/date/extraction controls; no live source or economic approval."
+    },
+    {
+      "id": "TEST-L0526-02",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        }
+      ],
+      "notes": "Deterministic source/location/hash/date/extraction controls; no live source or economic approval."
+    },
+    {
+      "id": "TEST-L0526-03",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Dated supersession, conflict/lesson applicability, cross-company exclusion and rebuild controls tested with independent synthetic inputs."
+    },
+    {
+      "id": "TEST-L0526-04",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Dated supersession, conflict/lesson applicability, cross-company exclusion and rebuild controls tested with independent synthetic inputs."
+    },
+    {
+      "id": "TEST-L0526-05",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        }
+      ],
+      "notes": "Deterministic source/location/hash/date/extraction controls; no live source or economic approval."
+    },
+    {
+      "id": "TEST-L0527-01",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Explicit selection, budgets, model refusal and interruption/recovery tested using fictional transports."
+    },
+    {
+      "id": "TEST-L0527-02",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Explicit selection, budgets, model refusal and interruption/recovery tested using fictional transports."
+    },
+    {
+      "id": "TEST-L0527-03",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Explicit selection, budgets, model refusal and interruption/recovery tested using fictional transports."
+    },
+    {
+      "id": "TEST-L0527-04",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Explicit selection, budgets, model refusal and interruption/recovery tested using fictional transports."
+    },
+    {
+      "id": "TEST-L0527-05",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Explicit selection, budgets, model refusal and interruption/recovery tested using fictional transports."
+    },
+    {
+      "id": "TEST-L0527-06",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Explicit selection, budgets, model refusal and interruption/recovery tested using fictional transports."
+    },
+    {
+      "id": "TEST-L0527-07",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Explicit selection, budgets, model refusal and interruption/recovery tested using fictional transports."
+    },
+    {
+      "id": "TEST-L0528-01",
+      "status": "blocked",
+      "evidence": [
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/RUNTIME-ROUTE-INSPECTION-20261016.md",
+          "sha256": "4c13c03602f749a47abc751e0db013594b826e4348327132c5b3e2c3ae8cf5a5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/RUNTIME-ROUTE-INSPECTION-20261016-r002.md",
+          "sha256": "0a0c0e2933918b360312508fc9d1dd44ae83406ec9b2f6292c19be913608e107"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/HOME-DENY-CANARY-20261016.json",
+          "sha256": "5922f29b5704667388fbc795d51262ee7e50d1efa8d3bdd22b0522e621b220d1"
+        }
+      ],
+      "notes": "Complete relevant capability denial remains unverified. Output-event rejection is not proof a tool never acted."
+    },
+    {
+      "id": "TEST-L0528-02",
+      "status": "blocked",
+      "evidence": [
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/RUNTIME-ROUTE-INSPECTION-20261016.md",
+          "sha256": "4c13c03602f749a47abc751e0db013594b826e4348327132c5b3e2c3ae8cf5a5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/RUNTIME-ROUTE-INSPECTION-20261016-r002.md",
+          "sha256": "0a0c0e2933918b360312508fc9d1dd44ae83406ec9b2f6292c19be913608e107"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/HOME-DENY-CANARY-20261016.json",
+          "sha256": "5922f29b5704667388fbc795d51262ee7e50d1efa8d3bdd22b0522e621b220d1"
+        }
+      ],
+      "notes": "Complete relevant capability denial remains unverified. Output-event rejection is not proof a tool never acted."
+    },
+    {
+      "id": "TEST-L0528-03",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_adapter.py",
+          "sha256": "37ce7fb82d45e0da7b1359d0da8642fb91216cccf891f9d27331e542d2bd87a4"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Invalid output, substitution and unknown identity reporting tested. Requested/reported identity is not backend attestation."
+    },
+    {
+      "id": "TEST-L0528-04",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_adapter.py",
+          "sha256": "37ce7fb82d45e0da7b1359d0da8642fb91216cccf891f9d27331e542d2bd87a4"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Invalid output, substitution and unknown identity reporting tested. Requested/reported identity is not backend attestation."
+    },
+    {
+      "id": "TEST-L0528-05",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_adapter.py",
+          "sha256": "37ce7fb82d45e0da7b1359d0da8642fb91216cccf891f9d27331e542d2bd87a4"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Invalid output, substitution and unknown identity reporting tested. Requested/reported identity is not backend attestation."
+    },
+    {
+      "id": "TEST-L0529-01",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Path/allowlist/cwd and fail-closed unavailable restrictions tested; live packet-only worker access is still unverified."
+    },
+    {
+      "id": "TEST-L0529-02",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Path/allowlist/cwd and fail-closed unavailable restrictions tested; live packet-only worker access is still unverified."
+    },
+    {
+      "id": "TEST-L0529-03",
+      "status": "blocked",
+      "evidence": [
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/RUNTIME-ROUTE-INSPECTION-20261016.md",
+          "sha256": "4c13c03602f749a47abc751e0db013594b826e4348327132c5b3e2c3ae8cf5a5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/RUNTIME-ROUTE-INSPECTION-20261016-r002.md",
+          "sha256": "0a0c0e2933918b360312508fc9d1dd44ae83406ec9b2f6292c19be913608e107"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/HOME-DENY-CANARY-20261016.json",
+          "sha256": "5922f29b5704667388fbc795d51262ee7e50d1efa8d3bdd22b0522e621b220d1"
+        }
+      ],
+      "notes": "Complete relevant capability denial remains unverified. Output-event rejection is not proof a tool never acted."
+    },
+    {
+      "id": "TEST-L0529-04",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Path/allowlist/cwd and fail-closed unavailable restrictions tested; live packet-only worker access is still unverified."
+    },
+    {
+      "id": "TEST-L0529-05",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Path/allowlist/cwd and fail-closed unavailable restrictions tested; live packet-only worker access is still unverified."
+    },
+    {
+      "id": "TEST-L0529-06",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Path/allowlist/cwd and fail-closed unavailable restrictions tested; live packet-only worker access is still unverified."
+    },
+    {
+      "id": "TEST-L0530-01",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0530-02",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0530-03",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_records.py",
+          "sha256": "ea9f8e86bcb907b3d55a0a9242140aa9b3683c681ac766a31f0c7dba7490413a"
+        },
+        {
+          "path": "tools/research_engine.py",
+          "sha256": "0736a7194bc05607114aef9c0bd71fd5a2ae5770ff0ed3bfc8979ee77e4b1855"
+        },
+        {
+          "path": "validation/tests/test_research_engine_integration.py",
+          "sha256": "dd21cf2d2a67e392d4820adb478f680db9d7390bfb45066822e8af39a098f9a0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Material findings remain withholding; fictional four-stage replacement correction and exact-target recheck pass. No real analytical review performed."
+    },
+    {
+      "id": "TEST-L0530-04",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_records.py",
+          "sha256": "ea9f8e86bcb907b3d55a0a9242140aa9b3683c681ac766a31f0c7dba7490413a"
+        },
+        {
+          "path": "tools/research_engine.py",
+          "sha256": "0736a7194bc05607114aef9c0bd71fd5a2ae5770ff0ed3bfc8979ee77e4b1855"
+        },
+        {
+          "path": "validation/tests/test_research_engine_integration.py",
+          "sha256": "dd21cf2d2a67e392d4820adb478f680db9d7390bfb45066822e8af39a098f9a0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        }
+      ],
+      "notes": "Material findings remain withholding; fictional four-stage replacement correction and exact-target recheck pass. No real analytical review performed."
+    },
+    {
+      "id": "TEST-L0531-01",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Current binding, missing validators, simulated evidence, expiry and ten-gate protection tested; actual operational gates remain incomplete."
+    },
+    {
+      "id": "TEST-L0531-02",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Current binding, missing validators, simulated evidence, expiry and ten-gate protection tested; actual operational gates remain incomplete."
+    },
+    {
+      "id": "TEST-L0531-03",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Current binding, missing validators, simulated evidence, expiry and ten-gate protection tested; actual operational gates remain incomplete."
+    },
+    {
+      "id": "TEST-L0531-04",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Current binding, missing validators, simulated evidence, expiry and ten-gate protection tested; actual operational gates remain incomplete."
+    },
+    {
+      "id": "TEST-L0531-05",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Current binding, missing validators, simulated evidence, expiry and ten-gate protection tested; actual operational gates remain incomplete."
+    },
+    {
+      "id": "TEST-L0532-01",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0532-02",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0532-03",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0532-04",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0532-05",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0532-06",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0532-07",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0533-01",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Execution outcomes, missing/repeated events, rebuild, evidence regression and escaping tested; visual inspection was blocked by browser protocol policy."
+    },
+    {
+      "id": "TEST-L0533-02",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Execution outcomes, missing/repeated events, rebuild, evidence regression and escaping tested; visual inspection was blocked by browser protocol policy."
+    },
+    {
+      "id": "TEST-L0533-03",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Execution outcomes, missing/repeated events, rebuild, evidence regression and escaping tested; visual inspection was blocked by browser protocol policy."
+    },
+    {
+      "id": "TEST-L0533-04",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Execution outcomes, missing/repeated events, rebuild, evidence regression and escaping tested; visual inspection was blocked by browser protocol policy."
+    },
+    {
+      "id": "TEST-L0533-05",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Execution outcomes, missing/repeated events, rebuild, evidence regression and escaping tested; visual inspection was blocked by browser protocol policy."
+    },
+    {
+      "id": "TEST-L0533-06",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Execution outcomes, missing/repeated events, rebuild, evidence regression and escaping tested; visual inspection was blocked by browser protocol policy."
+    },
+    {
+      "id": "TEST-L0533-07",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Execution outcomes, missing/repeated events, rebuild, evidence regression and escaping tested; visual inspection was blocked by browser protocol policy."
+    },
+    {
+      "id": "TEST-L0533-08",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Execution outcomes, missing/repeated events, rebuild, evidence regression and escaping tested; visual inspection was blocked by browser protocol policy."
+    },
+    {
+      "id": "TEST-L0533-09",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Execution outcomes, missing/repeated events, rebuild, evidence regression and escaping tested; visual inspection was blocked by browser protocol policy."
+    },
+    {
+      "id": "TEST-L0534-01",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0534-02",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "TEST-L0534-03",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "validation/tests/test_engine_rollback.py",
+          "sha256": "6caa13acfcbd6877ae98ece6ec254039fdbc9b872d3f9e598c361ed9cfa18ea7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/ROLLBACK-VERIFICATION-20261016.md",
+          "sha256": "15bfd6583e80c6a544b72ec45423acb4db6d4f2ca090b25347fa75e061261d5c"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Consistent temporary backup, migration, restore and exact baseline status reader tested; real service rollback was not exercised."
+    },
+    {
+      "id": "TEST-L0534-04",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "validation/tests/test_engine_rollback.py",
+          "sha256": "6caa13acfcbd6877ae98ece6ec254039fdbc9b872d3f9e598c361ed9cfa18ea7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/ROLLBACK-VERIFICATION-20261016.md",
+          "sha256": "15bfd6583e80c6a544b72ec45423acb4db6d4f2ca090b25347fa75e061261d5c"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Consistent temporary backup, migration, restore and exact baseline status reader tested; real service rollback was not exercised."
+    },
+    {
+      "id": "TEST-L0534-05",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "validation/tests/test_engine_rollback.py",
+          "sha256": "6caa13acfcbd6877ae98ece6ec254039fdbc9b872d3f9e598c361ed9cfa18ea7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/ROLLBACK-VERIFICATION-20261016.md",
+          "sha256": "15bfd6583e80c6a544b72ec45423acb4db6d4f2ca090b25347fa75e061261d5c"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Consistent temporary backup, migration, restore and exact baseline status reader tested; real service rollback was not exercised."
+    },
+    {
+      "id": "GATE-RESEARCH",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/alert_contract.py",
+          "sha256": "f526959f958e328627d44b9906adb19523615b771459bc1a5b66590602302605"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Existing exact-bound gate verifier preserved and fixture-tested. This does not satisfy the actual gate."
+    },
+    {
+      "id": "GATE-DOSSIER",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/alert_contract.py",
+          "sha256": "f526959f958e328627d44b9906adb19523615b771459bc1a5b66590602302605"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Existing exact-bound gate verifier preserved and fixture-tested. This does not satisfy the actual gate."
+    },
+    {
+      "id": "GATE-DECISION",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/alert_contract.py",
+          "sha256": "f526959f958e328627d44b9906adb19523615b771459bc1a5b66590602302605"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Existing exact-bound gate verifier preserved and fixture-tested. This does not satisfy the actual gate."
+    },
+    {
+      "id": "GATE-PORTFOLIO_POLICY",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/alert_contract.py",
+          "sha256": "f526959f958e328627d44b9906adb19523615b771459bc1a5b66590602302605"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Existing exact-bound gate verifier preserved and fixture-tested. This does not satisfy the actual gate."
+    },
+    {
+      "id": "GATE-QUOTE",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/alert_contract.py",
+          "sha256": "f526959f958e328627d44b9906adb19523615b771459bc1a5b66590602302605"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Existing exact-bound gate verifier preserved and fixture-tested. This does not satisfy the actual gate."
+    },
+    {
+      "id": "GATE-PHONE",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/alert_contract.py",
+          "sha256": "f526959f958e328627d44b9906adb19523615b771459bc1a5b66590602302605"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Existing exact-bound gate verifier preserved and fixture-tested. This does not satisfy the actual gate."
+    },
+    {
+      "id": "GATE-MONITORING",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/alert_contract.py",
+          "sha256": "f526959f958e328627d44b9906adb19523615b771459bc1a5b66590602302605"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Existing exact-bound gate verifier preserved and fixture-tested. This does not satisfy the actual gate."
+    },
+    {
+      "id": "GATE-OPERATIONAL_TRIAL",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/alert_contract.py",
+          "sha256": "f526959f958e328627d44b9906adb19523615b771459bc1a5b66590602302605"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Existing exact-bound gate verifier preserved and fixture-tested. This does not satisfy the actual gate."
+    },
+    {
+      "id": "GATE-STRATEGY_VALIDATION",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/alert_contract.py",
+          "sha256": "f526959f958e328627d44b9906adb19523615b771459bc1a5b66590602302605"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Existing exact-bound gate verifier preserved and fixture-tested. This does not satisfy the actual gate."
+    },
+    {
+      "id": "GATE-ACTIVATION",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/decision_readiness.py",
+          "sha256": "de4c64b5c4a00e80a79cd55523206a877328a649efc395c531bfe1b4e9f04398"
+        },
+        {
+          "path": "validation/tests/test_gate_projection.py",
+          "sha256": "23801df296594ffe4aa3d68ecd21cfd80827210f0ee3ae58b9617ccf24ba4e05"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "tools/alert_contract.py",
+          "sha256": "f526959f958e328627d44b9906adb19523615b771459bc1a5b66590602302605"
+        },
+        {
+          "path": "validation/tests/test_alert_contract.py",
+          "sha256": "c55b2d5650590f57e480355416891d501d0f1c5ac29b6f66d6a0b59baf418355"
+        }
+      ],
+      "notes": "Existing exact-bound gate verifier preserved and fixture-tested. This does not satisfy the actual gate."
+    },
+    {
+      "id": "COMMAND-PREPARE-CASE",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_records.py",
+          "sha256": "ea9f8e86bcb907b3d55a0a9242140aa9b3683c681ac766a31f0c7dba7490413a"
+        },
+        {
+          "path": "tools/research_engine.py",
+          "sha256": "0736a7194bc05607114aef9c0bd71fd5a2ae5770ff0ed3bfc8979ee77e4b1855"
+        },
+        {
+          "path": "validation/tests/test_research_engine_integration.py",
+          "sha256": "dd21cf2d2a67e392d4820adb478f680db9d7390bfb45066822e8af39a098f9a0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Request/packet contracts and command are exercised with synthetic securities; real case preparation remains outstanding."
+    },
+    {
+      "id": "COMMAND-RETRIEVE",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_memory.py",
+          "sha256": "c253be4831f6ab892be625b43ecd1ea195a6b8645de1f74b6e68691df60c6de4"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "sha256": "da5e162861778cb6aeda4cb3e01267600bfa6fe6c65ab0643cadd163cfda2214"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Filtered derived history and explicit structured case export/import are tested; source truth and semantic completeness are not certified."
+    },
+    {
+      "id": "COMMAND-PREPARE-BATCH",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Explicit durable manifests/retry decisions tested with fake workers and temporary databases."
+    },
+    {
+      "id": "COMMAND-RUN-BATCH",
+      "status": "blocked",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/RUNTIME-ROUTE-INSPECTION-20261016.md",
+          "sha256": "4c13c03602f749a47abc751e0db013594b826e4348327132c5b3e2c3ae8cf5a5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/RUNTIME-ROUTE-INSPECTION-20261016-r002.md",
+          "sha256": "0a0c0e2933918b360312508fc9d1dd44ae83406ec9b2f6292c19be913608e107"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/HOME-DENY-CANARY-20261016.json",
+          "sha256": "5922f29b5704667388fbc795d51262ee7e50d1efa8d3bdd22b0522e621b220d1"
+        }
+      ],
+      "notes": "Named dispatch and four-attempt accounting are fixture-tested; live restriction gate prevents the required real cycle."
+    },
+    {
+      "id": "COMMAND-RETRY-DECISION",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_queue.py",
+          "sha256": "b138346763ba2efbdf83d6e3738f09359fc6e9696450a2e7deba6107ea5ea2a8"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_queue.py",
+          "sha256": "182b9206f913db35f0dfa35c9c0db9061ccb31244d0eef3bd296d4200a6acce6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Explicit durable manifests/retry decisions tested with fake workers and temporary databases."
+    },
+    {
+      "id": "COMMAND-CHECKPOINT",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/COMMAND-SMOKE-20261016.json",
+          "sha256": "9e08add8a8472bc95ec8194605838626789edad89879cdafddc6acdfa76b89c8"
+        }
+      ],
+      "notes": "Explicit commands, missing completion and rebuild are tested. No checklist status grants trading authority."
+    },
+    {
+      "id": "COMMAND-STATUS",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/COMMAND-SMOKE-20261016.json",
+          "sha256": "9e08add8a8472bc95ec8194605838626789edad89879cdafddc6acdfa76b89c8"
+        }
+      ],
+      "notes": "Explicit commands, missing completion and rebuild are tested. No checklist status grants trading authority."
+    },
+    {
+      "id": "COMMAND-EVALUATE",
+      "status": "evaluated-failed",
+      "evidence": [
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/RETRIEVAL-PROTOCOL.json",
+          "sha256": "e66af62d0bc2576db1bfda6f123e9f2d702cb378e2f4c29cea000a07392c0399"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/retrieval-results-verification-r002/COMPARISON.json",
+          "sha256": "590af3c5aef72f96e0f438eed18061fce9eacfea1ec8f197a96eb00de5d96fe9"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/RETRIEVAL-FINDINGS.md",
+          "sha256": "822ce63698a0bb5f4c63e1993840b1646abf380afb88428f01d41f8451efdbd5"
+        }
+      ],
+      "notes": "Both frozen routes miss one of five required passages. Preserve failed evaluation; ordinary-route repairs are not a held-out success."
+    },
+    {
+      "id": "COMMAND-START",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/COMMAND-SMOKE-20261016.json",
+          "sha256": "9e08add8a8472bc95ec8194605838626789edad89879cdafddc6acdfa76b89c8"
+        }
+      ],
+      "notes": "Explicit commands, missing completion and rebuild are tested. No checklist status grants trading authority."
+    },
+    {
+      "id": "COMMAND-COMPLETE",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_checkpoint.py",
+          "sha256": "f115c65ea90d1af27984630754ef50feaddebde468d5f07be3a6274c3eec7227"
+        },
+        {
+          "path": "validation/tests/test_research_checkpoint.py",
+          "sha256": "7eaf5d56d6b312c0c9f2fcd54833c3d97a1e62af1015f488d4113f2c7f6c7c4a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/COMMAND-SMOKE-20261016.json",
+          "sha256": "9e08add8a8472bc95ec8194605838626789edad89879cdafddc6acdfa76b89c8"
+        }
+      ],
+      "notes": "Explicit commands, missing completion and rebuild are tested. No checklist status grants trading authority."
+    },
+    {
+      "id": "COMMAND-HELP-SMOKE",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/COMMAND-SMOKE-20261016.json",
+          "sha256": "9e08add8a8472bc95ec8194605838626789edad89879cdafddc6acdfa76b89c8"
+        }
+      ],
+      "notes": "Eight actual local command smoke checks, including expected rejection of missing arguments; no inference."
+    },
+    {
+      "id": "COMMAND-ARGUMENT-SMOKE",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/COMMAND-SMOKE-20261016.json",
+          "sha256": "9e08add8a8472bc95ec8194605838626789edad89879cdafddc6acdfa76b89c8"
+        }
+      ],
+      "notes": "Eight actual local command smoke checks, including expected rejection of missing arguments; no inference."
+    },
+    {
+      "id": "COMMAND-PACKET-SMOKE",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/research_packet.py",
+          "sha256": "36870252b77107a1ec897d14939d48a3b4981b39937c7d5ad26adc460d64c651"
+        },
+        {
+          "path": "validation/tests/test_research_packet.py",
+          "sha256": "f8b039ffb1498ce6335826df3b525b6d7c464aa0c88a1ed0a8e4d2342562922e"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Exact passages, chronology, tables, loaded bytes and staging tested deterministically."
+    },
+    {
+      "id": "COMMAND-WORKER-CONTRACT-SMOKE",
+      "status": "implemented-fixture-tested",
+      "evidence": [
+        {
+          "path": "tools/scoped_research_adapter.py",
+          "sha256": "37ce7fb82d45e0da7b1359d0da8642fb91216cccf891f9d27331e542d2bd87a4"
+        },
+        {
+          "path": "validation/tests/test_scoped_research_adapter.py",
+          "sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r003.txt",
+          "sha256": "d1dd5b11027d2d1055f6f2b2d5ff1446d2a9bfb240444f83048b4b2a4dcfeba6"
+        }
+      ],
+      "notes": "Worker contract, metadata, identity and event validation tested using a fictional transport; no live isolation claim."
+    },
+    {
+      "id": "BRIEF-L0008",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0024",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0146",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0193",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0212",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0227",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0232",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0306",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0334",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0353",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0365",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0391",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    },
+    {
+      "id": "BRIEF-L0575",
+      "status": "not-assessed",
+      "evidence": [],
+      "notes": "Full requirement acceptance has not been established; retain original scope and complete the final item-by-item audit."
+    }
+  ],
+  "unknowns": [
+    "Required real model cycle unperformed",
+    "Remaining requirements need final direct acceptance audit",
+    "Installed worker restrictions unavailable"
+  ],
+  "supersedes": [],
+  "acceptance_effect": "none"
+}

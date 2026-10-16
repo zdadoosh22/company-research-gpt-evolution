@@ -1,0 +1,70 @@
+{
+  "id": "2026-10-06-r002",
+  "legal_name": "Unilever PLC",
+  "ticker": "ULVR",
+  "as_of": "2026-10-06",
+  "mode": "pilot",
+  "predecessor": "2026-10-06-r001",
+  "methodology_version": "1.0.0",
+  "methodology_file": "methodology/company-research-v1.0.0.md",
+  "methodology_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+  "status": "partial",
+  "request": {
+    "purpose": "Focused Astra audit revision of original implementation pilot; unchanged historical research cutoff",
+    "mode": "focused sector/evidence pilot",
+    "investor_context": "prospective buyer",
+    "cost_basis": null,
+    "portfolio_weight": null
+  },
+  "security": {
+    "legal_entity": "Unilever PLC",
+    "selected_security": "London ordinary-share conversion convention; current security identity/quote/FX still to verify",
+    "trading_currency": "GBp / GBP",
+    "reporting_currency": "EUR",
+    "fiscal_year_end": "December 31",
+    "latest_reviewed_period": "2026-06-30"
+  },
+  "evidence_gaps": [
+    "Focused evidence/currency pilot, not a Unilever valuation.",
+    "London ordinary shares require GBp to GBP conversion and an explicitly dated EUR/GBP spot before numeric security conclusions.",
+    "2025 shares were consolidated after the Ice Cream demerger; do not compare unre-based per-share series.",
+    "Original issuer PDFs returned HTTP403 to local preservation. Verified numerical extracts and precise links retained; complete PDFs remain online.",
+    "No FX forecast, no market quote, no buy/sell conclusion."
+  ],
+  "assumptions": [
+    "Focused evidence/currency pilot, not a Unilever valuation.",
+    "London ordinary shares require GBp to GBP conversion and an explicitly dated EUR/GBP spot before numeric security conclusions.",
+    "2025 shares were consolidated after the Ice Cream demerger; do not compare unre-based per-share series.",
+    "Original issuer PDFs returned HTTP403 to local preservation. Verified numerical extracts and precise links retained; complete PDFs remain online.",
+    "No FX forecast, no market quote, no buy/sell conclusion."
+  ],
+  "review_findings": [
+    {
+      "id": "F03",
+      "severity": "P1",
+      "finding": "Blank and domain guards did not protect all dependent outputs.",
+      "disposition": "fixed",
+      "resolution": "Guard selected inputs, dates, sensitivities and terminal cash; bank selectors and supporting outputs; scope-compatible Unilever TTM and margins. 122 mutation checks recorded.",
+      "resolved": true,
+      "material": true
+    }
+  ],
+  "checks": {
+    "arithmetic": true,
+    "source_traceability": true,
+    "visual_review": true,
+    "workbook_recalculation": true,
+    "export_roundtrip": true,
+    "native_excel": false,
+    "stronger_review": true
+  },
+  "continuation": "For a full thesis, research company economics and valuations, verify selected security and dated price/FX; current focused evidence pilot is complete within its narrow scope.",
+  "model_identity": "Current chat model configuration not independently verified; do not claim these pilots ran on 6.1 Sol High.",
+  "stronger_review": "completed-with-limitations",
+  "stronger_review_required": true,
+  "audit_completed": "2026-10-07",
+  "conclusion_limits": [
+    "Focused IFRS/scope/currency validation only, not a full company thesis.",
+    "Price and FX absent; security valuation and prospective returns withheld."
+  ]
+}

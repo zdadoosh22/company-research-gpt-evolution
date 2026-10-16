@@ -1,0 +1,215 @@
+{
+  "protocol_sha256": "e66af62d0bc2576db1bfda6f123e9f2d702cb378e2f4c29cea000a07392c0399",
+  "baseline_commit": "ccd49d083c0e6921917a5d0b813b10b4955a6d72",
+  "evaluation_code_revision": {
+    "path": "tools/research_memory.py",
+    "sha256": "e2387472a078d13b590a798116e7b517b533d1fb69665033f8bee093623b9528"
+  },
+  "route_id": "baseline-file-scan-v1",
+  "query": "As of 9 October 2026, what do the preserved Unilever records establish about H1 2026 continuing turnover, operating profit and cash flow, and what prevents their use as a price-specific conclusion for the London ordinary share? Retain period, continuing-operation scope and EUR/GBp/GBP distinctions; identify annual-TTM and source-preservation limits.",
+  "cutoff": "2026-10-09T16:02:01Z",
+  "source_set_sha256": "152cb382e8750c697eb4bbe576ae2014333a51b5100982e0119f02cd1fddd8d3",
+  "normalization_sha256": "174b7e158c47a1a4f2c90e2e7c187112cc09ce8241546be8b6a4d7a140b71110",
+  "selected_record_ids": [
+    "UL-H1-INTERPRETATION",
+    "UL-SECURITY-CURRENCY",
+    "UL-H1-TABLE",
+    "UL-IDENTITY",
+    "UL-DISPOSITION",
+    "LESSON-DEFINITIONS"
+  ],
+  "excluded_record_ids_and_reasons": [
+    {
+      "record_id": "LATER-COST-CONCLUSION",
+      "reason": "analytical-conclusion-after-cutoff",
+      "source_id": "later-cost-conclusion",
+      "public_source_date": null,
+      "versioned_no_later_than": "2026-10-14T23:59:59Z",
+      "superseded_by": null
+    },
+    {
+      "record_id": "OTHER-ENTITY",
+      "reason": "wrong-entity",
+      "source_id": "other-entity-control",
+      "public_source_date": null,
+      "versioned_no_later_than": "2026-10-09T16:02:01Z",
+      "superseded_by": null
+    },
+    {
+      "record_id": "UL-ANNUAL-TTM-CLAIM",
+      "reason": "dependency-unknown-publication-date:ul-r2-u1",
+      "source_id": "ul-r2-report",
+      "public_source_date": null,
+      "versioned_no_later_than": "2026-10-09T16:02:01Z",
+      "superseded_by": null
+    },
+    {
+      "record_id": "UL-PRESERVATION-LIMIT",
+      "reason": "no-query-match"
+    },
+    {
+      "record_id": "UL-R1-STALE-CLAIM",
+      "reason": "superseded-for-default-reuse",
+      "source_id": "ul-r1-report",
+      "public_source_date": null,
+      "versioned_no_later_than": "2026-10-09T16:02:01Z",
+      "superseded_by": "UL-SECURITY-CURRENCY"
+    },
+    {
+      "record_id": "UL-R1-SUPERSEDED",
+      "reason": "superseded-for-default-reuse",
+      "source_id": "ul-r1-run",
+      "public_source_date": null,
+      "versioned_no_later_than": "2026-10-09T16:02:01Z",
+      "superseded_by": "UL-DISPOSITION"
+    },
+    {
+      "record_id": "UL-SCREEN-WITHHELD",
+      "reason": "no-query-match"
+    },
+    {
+      "record_id": "UL-U1-UNKNOWN-DATE",
+      "reason": "unknown-publication-date",
+      "source_id": "ul-r2-u1",
+      "public_source_date": null,
+      "versioned_no_later_than": "2026-10-09T16:02:01Z",
+      "superseded_by": null
+    }
+  ],
+  "gold_item_results": [
+    {
+      "id": "GOLD-S1",
+      "passed": true,
+      "missing_passages": []
+    },
+    {
+      "id": "GOLD-S2",
+      "passed": true,
+      "missing_passages": []
+    },
+    {
+      "id": "GOLD-C1",
+      "passed": true,
+      "missing_passages": []
+    },
+    {
+      "id": "GOLD-C2",
+      "passed": true,
+      "missing_passages": []
+    },
+    {
+      "id": "GOLD-C3",
+      "passed": false,
+      "missing_passages": [
+        "Original issuer PDFs returned HTTP403 to local preservation.",
+        "Verified numerical extracts and precise links retained; complete PDFs remain online."
+      ]
+    }
+  ],
+  "table_preservation_result": true,
+  "cutoff_result": [
+    {
+      "id": "UL-U1-UNKNOWN-DATE",
+      "passed": true,
+      "reason": "unknown-publication-date"
+    },
+    {
+      "id": "UL-ANNUAL-TTM-CLAIM",
+      "passed": true,
+      "reason": "dependency-unknown-publication-date:ul-r2-u1"
+    },
+    {
+      "id": "UL-R1-SUPERSEDED",
+      "passed": true,
+      "reason": "superseded-for-default-reuse"
+    },
+    {
+      "id": "UL-R1-STALE-CLAIM",
+      "passed": true,
+      "reason": "superseded-for-default-reuse"
+    },
+    {
+      "id": "LATER-COST-CONCLUSION",
+      "passed": true,
+      "reason": "analytical-conclusion-after-cutoff"
+    },
+    {
+      "id": "OTHER-ENTITY",
+      "passed": true,
+      "reason": "wrong-entity"
+    }
+  ],
+  "stale_supersession_result": [
+    {
+      "id": "UL-R1-SUPERSEDED",
+      "passed": true,
+      "reason": "superseded-for-default-reuse"
+    },
+    {
+      "id": "UL-R1-STALE-CLAIM",
+      "passed": true,
+      "reason": "superseded-for-default-reuse"
+    }
+  ],
+  "inclusion_reason_source_reference_result": true,
+  "synthetic_control_results_separate": [
+    {
+      "id": "SYN-FUTURE-PUBLICATION",
+      "passed": true,
+      "reason": "public-source-after-cutoff"
+    },
+    {
+      "id": "SYN-UNKNOWN-PUBLICATION",
+      "passed": true,
+      "reason": "unknown-publication-date"
+    },
+    {
+      "id": "SYN-EXPIRED",
+      "passed": true,
+      "reason": "expired-for-current-reuse"
+    },
+    {
+      "id": "SYN-LATER-ANALYSIS",
+      "passed": true,
+      "reason": "analytical-conclusion-after-cutoff"
+    },
+    {
+      "id": "SYN-TAMPER",
+      "passed": true,
+      "reason": "integrity-failure:Passage text hash mismatch"
+    },
+    {
+      "id": "SYN-UNIT",
+      "passed": true,
+      "reason": "integrity-failure:Incompatible declared unit and source table"
+    },
+    {
+      "id": "SYN-MISSING-LOCATION",
+      "passed": true,
+      "reason": "integrity-failure:Missing record field: location"
+    }
+  ],
+  "rebuild_result": null,
+  "packet_sha256": "3470048f9533691960899cb00bcf1a5366acc1d08468568d0c6e42326d507ebf",
+  "packet_utf8_bytes": 15546,
+  "record_count": 6,
+  "network_calls": 0,
+  "worker_calls": 0,
+  "actual_usage_if_exposed_otherwise_unavailable": {
+    "tokens": null,
+    "cost": null,
+    "reason": "No model calls; unavailable/not applicable"
+  },
+  "timing_if_measured_with_environment": null,
+  "limitations": [
+    "Small single historical case; no statistical generalization or trading-edge conclusion.",
+    "Only selected numerical extracts exist; complete issuer table headers/footnotes and primary PDF bytes cannot be evaluated or claimed preserved.",
+    "u1 public date unknown: strict cutoff withholds annual TTM facts even though project narrative contains them.",
+    "Historical Unilever analytical approval is partial; latest is null and current price, FX and security/order verification are absent.",
+    "Original creation/capture timestamps are often missing; first versioned commit supplies upper bounds, not contemporaneous collection.",
+    "No real route outputs or performance results exist at freeze.",
+    "No new research conclusion, source approval, external source re-verification or live gate satisfaction is created by this protocol."
+  ],
+  "primary_passed": false,
+  "controls_passed": true
+}

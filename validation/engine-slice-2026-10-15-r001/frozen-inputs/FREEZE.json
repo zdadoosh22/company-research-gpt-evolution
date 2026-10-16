@@ -1,0 +1,16 @@
+{
+  "schema": "cr2.retrieval.freeze.v1",
+  "id": "unilever-h1-freeze-r001",
+  "frozen_at": "2026-10-15T01:22:41.744131+00:00",
+  "protocol_path": "RETRIEVAL-PROTOCOL.json",
+  "protocol_sha256": "e66af62d0bc2576db1bfda6f123e9f2d702cb378e2f4c29cea000a07392c0399",
+  "source_manifest_path": "frozen-inputs/SOURCE-MANIFEST.json",
+  "source_manifest_sha256": "152cb382e8750c697eb4bbe576ae2014333a51b5100982e0119f02cd1fddd8d3",
+  "normalized_records_path": "frozen-inputs/RECORDS.json",
+  "normalized_records_sha256": "174b7e158c47a1a4f2c90e2e7c187112cc09ce8241546be8b6a4d7a140b71110",
+  "initial_requirements_sha256": "ba1d4722e38de0c61bf83050930be9bf1998863e4e0a37d2ddbc136439bb767b",
+  "routes_executed": [],
+  "worker_calls": 0,
+  "network_calls": 0,
+  "note": "Parent may append requirement evidence/statuses; preserve the initial contract identity. Protocol/source/gold remain unchanged for held-out evaluation."
+}
