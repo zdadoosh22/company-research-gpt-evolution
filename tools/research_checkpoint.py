@@ -362,6 +362,14 @@ def _rebuild(root, *, now=None):
         projection['gates']=cases[0]['gates']
     projection['counts']['research_cases']=len(cases)
     projection['requirements']=requirements_snapshot(root,now=current)
+    try:
+        from .research_release import project_release
+    except ImportError:
+        from research_release import project_release
+    release = project_release(root, now=current)
+    projection['software_release'] = release
+    if events or release['software_completion'] != 'in progress':
+        projection['software_completion'] = release['software_completion']
     state = _safe_directory(root, "state/research-engine")
     _atomic(state / "status.json", canonical(projection) + b"\n")
     rendered = render_html(projection)
@@ -420,9 +428,10 @@ def render_html(projection):
         ' · Review: ' + esc(c['review_status']) + '</p><ul>' + ''.join('<li>' + esc(x) + '</li>' for x in c['limitations']) + '</ul></article>'
         for c in projection.get('cases', []))
     requirements=projection.get('requirements',{})
+    release_reason='<p>Software release: '+esc(projection.get('software_release',{}).get('reason','No release assessment'))+'</p>'
     milestones='<h2>Requirement evidence</h2><p>'+esc(requirements.get('counts',{}))+'</p><ul>'+''.join(
         '<li>'+esc(m['name'])+': '+esc(m['status'])+'</li>' for m in requirements.get('milestones',[]))+'</ul>'
-    return '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'"><title>Research engine status</title><style>body{font:16px system-ui;max-width:960px;margin:2rem auto;padding:0 1rem;color:#18302e;background:#f6f8f5}h1{font-size:2rem}article{background:white;padding:1rem;margin:1rem 0;border:1px solid #cbd5cd}td,th{text-align:left;padding:.4rem 1rem}strong{color:#70370d}table{border-collapse:collapse}p{line-height:1.5}</style><main><h1>Research engine status</h1><p><strong>Live recommendations disabled.</strong> This view records dated work; it does not approve a trade.</p><p>Software: ' + esc(projection["software_completion"]) + ' · Research: ' + esc(projection["research_disposition"]) + '</p><p>Operations: ' + esc(projection["operational_readiness"]) + ' · Trade readiness: ' + esc(projection["trade_readiness"]) + ' · Edge: ' + esc(projection["edge_evidence"]) + '</p><p>Assessed: ' + esc(projection["assessed_at"]) + '</p><h2>Ten separate acceptance gates</h2><table><thead><tr><th>Gate</th><th>Status</th></tr></thead><tbody>' + gates + '</tbody></table>' + milestones + cases + tasks + '</main></html>'
+    return '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'"><title>Research engine status</title><style>body{font:16px system-ui;max-width:960px;margin:2rem auto;padding:0 1rem;color:#18302e;background:#f6f8f5}h1{font-size:2rem}article{background:white;padding:1rem;margin:1rem 0;border:1px solid #cbd5cd}td,th{text-align:left;padding:.4rem 1rem}strong{color:#70370d}table{border-collapse:collapse}p{line-height:1.5}</style><main><h1>Research engine status</h1><p><strong>Live recommendations disabled.</strong> This view records dated work; it does not approve a trade.</p><p>Software: ' + esc(projection["software_completion"]) + ' · Research: ' + esc(projection["research_disposition"]) + '</p><p>Operations: ' + esc(projection["operational_readiness"]) + ' · Trade readiness: ' + esc(projection["trade_readiness"]) + ' · Edge: ' + esc(projection["edge_evidence"]) + '</p><p>Assessed: ' + esc(projection["assessed_at"]) + '</p><h2>Ten separate acceptance gates</h2><table><thead><tr><th>Gate</th><th>Status</th></tr></thead><tbody>' + gates + '</tbody></table>' + release_reason + milestones + cases + tasks + '</main></html>'
 
 
 def load_checkpoint_input(root, path):

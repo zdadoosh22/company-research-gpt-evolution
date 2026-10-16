@@ -1,0 +1,11 @@
+# Direct software-release projection review — 16 October 2026
+
+Baseline7cee7d8, executable predecessor d38c792. ENG-15 is implemented by the read-only release projector and wired into the existing checkpoint view; it changes no research/operational/trading acceptance. No actual release record/pointer was created.
+
+A requested Luna High agent implemented the narrow helper/tests; backend identity unverified. Main Sol performed this direct review, integrated the checkpoint/HTML path and added an invalid-pointer/nonactivation test. Parent review repaired three concrete first-draft gaps: an expired research window could retain independently-reviewed status; a backdated release could use a later requirement assessment; and the real inventory's extra source-brief line_count metadata made exact two-field reference comparison fail. Additional tests cover those cases. Required/optional flags must be genuine booleans, and an empty source set cannot qualify.
+
+The helper revalidates the complete current source manifest, all419 original requirement identities and evidence, current matrix selection, independent case graph at release creation and now, plus engineering review bytes. Required unresolved/blocked/failed/unassessed work prevents completion; optional deferral never hides a required row. Positive tests explicitly mock the existing case validator, proving the software boundary only. No actual research cycle, analytical review, release approval, account attestation, runtime probe or trading capability is demonstrated.
+
+No-pointer status remains conservative; a malformed supplied release produces generic safe text and blocks software status. The checkpoint UI escapes the explanation and retains all ten gates and disabled recommendations. No-event state remains not-started. No new service, scheduler, browser workaround, dependency or paid route.
+
+The helper is deliberately stricter than a task-completion label. Historical measured retrieval failure remains preserved and unresolved items remain visible; no failed result was relabeled to permit a release. The matrix may record this component as fixture-tested while the overall release/goal remains incomplete. Approved methodology and completed company research are unchanged. Final regression evidence is recorded separately; do not infer a pass from this prose or the agent's focused run.

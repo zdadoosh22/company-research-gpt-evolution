@@ -64,6 +64,17 @@ class CheckpointTests(unittest.TestCase):
     def record(self, event):
         return record_checkpoint(self.root, event, now=NOW)
 
+    def test_invalid_release_blocks_software_without_minting_live_gates(self):
+        self.assertEqual(rebuild_projection(self.root,now=NOW)['software_completion'],'not started')
+        self.record(self.start)
+        folder=self.root/'monitoring/research-engine/releases';folder.mkdir(parents=True)
+        (folder/'current.json').write_text(json.dumps({'assessment':{'path':'state/observation/private.json','sha256':'0'*64}}),encoding='utf-8')
+        view=rebuild_projection(self.root,now=NOW)
+        self.assertEqual(view['software_completion'],'blocked')
+        self.assertFalse(view['live_recommendations_enabled'])
+        self.assertTrue(all(g['status']=='not assessed' for g in view['gates']))
+        self.assertNotIn('private.json',json.dumps(view.get('software_release',{})))
+
     def test_crash_after_start_does_not_invent_running_or_complete(self):
         self.record(self.start)
         p = rebuild_projection(self.root, now=NOW)
