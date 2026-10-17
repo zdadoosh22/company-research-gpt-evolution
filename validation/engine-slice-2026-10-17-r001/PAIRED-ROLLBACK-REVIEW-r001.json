@@ -1,0 +1,30 @@
+{
+  "observed_at": "2026-10-17T16:23:33.104703+00:00",
+  "disposition": "Parent accepts bounded paired-state rollback/replay fixture and recovery documentation; no production rollback",
+  "changes": [
+    "One integration fixture backs up/restores a temporary research SQLite database and active failed metadata as a consistent pair",
+    "Preserves processed metadata, raw response, normalized output,receipt and immutable public archive",
+    "Recovery leaves restored failure unaccepted; explicit replay returns identical archive with unchanged attempt count",
+    "Document explicit connection closure and worker-lock requirements"
+  ],
+  "initial_failure": "First test run completed its scenario but temporary cleanup failed with Windows WinError32 because sqlite transaction contexts do not close connections; preserved r001 transcript.",
+  "repair": "Use contextlib.closing to close every backup/restore connection explicitly; r002 focused9tests pass.",
+  "full_regression": "455run,454passed,one existing Windows symlink-permission skip; exact source snapshot unchanged",
+  "model_calls": 0,
+  "live_queue_or_broker_changes": false,
+  "files": [
+    {
+      "path": "validation/tests/test_research_revalidation.py",
+      "sha256": "304b435687660fae53a6b6c047caaacbf6fecc94063fe1d8b6677baad9e56b89"
+    },
+    {
+      "path": "workflows/research-engine.md",
+      "sha256": "0f62da8328554e5bb278b1eca2efdd8112347edddc3269f30097193ff1eaabbf"
+    }
+  ],
+  "limitations": [
+    "No live service restart or production rollback exercised",
+    "Astra review and case disposition remain outstanding",
+    "This does not establish investment quality or operational/trading acceptance"
+  ]
+}

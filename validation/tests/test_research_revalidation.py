@@ -4,11 +4,13 @@ These run the adapter with an in-process fixture transport. They make no
 claim about a real model, subscription, or company review.
 """
 import copy
+from contextlib import closing
 from datetime import datetime, timedelta, timezone
 import hashlib
 import json
 from pathlib import Path
 import shutil
+import sqlite3
 import subprocess
 import sys
 import tempfile
@@ -364,6 +366,49 @@ class RetainedRevalidationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'processing context'):
             self.queue.authorize_batch(auth2)
         self.assertEqual(self.queue.status()['cases'][0]['consumed_attempts'],1)
+
+    def test_paired_database_and_failed_metadata_restore_is_recoverable_without_inference(self):
+        self.prepare()
+        before = self.queue.status()
+        meta_path = Path(before['jobs'][0]['metadata_path'])
+        failed_bytes = meta_path.read_bytes()
+        raw_path = meta_path.parent/'unaccepted-output.json'
+        raw_bytes = raw_path.read_bytes()
+        backup_path = self.root/'state/scoped-research/fixture-before-revalidation.sqlite'
+        with self.queue._worker_lock():
+            with closing(sqlite3.connect(self.queue.database)) as source, closing(sqlite3.connect(backup_path)) as backup:
+                source.backup(backup)
+                self.assertEqual(backup.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
+        self.revalidate()
+        exported = self.queue.export_result('j1',case_id='case1')
+        result_bytes = (self.root/exported['result']['path']).read_bytes()
+        processed_bytes = meta_path.read_bytes()
+        # Rollback is a coordinated local operation: preserve the processed
+        # checkpoint, restore the SQLite snapshot AND original failed slot.
+        # All immutable output/receipt/public archives remain preserved.
+        with self.queue._worker_lock():
+            (meta_path.parent/'metadata-processed-before-fixture-rollback.json').write_bytes(processed_bytes)
+            with closing(sqlite3.connect(backup_path)) as backup, closing(sqlite3.connect(self.queue.database)) as restored:
+                backup.backup(restored)
+                self.assertEqual(restored.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
+            meta_path.write_bytes(failed_bytes)
+        recovered = self.queue.recover()
+        self.assertEqual(recovered['jobs'][0]['status'],'needs-retry-decision')
+        self.assertEqual(recovered['cases'][0]['consumed_attempts'],1)
+        self.assertEqual(len(recovered['dispatches']),1)
+        self.assertEqual(raw_path.read_bytes(),raw_bytes)
+        self.assertEqual(meta_path.read_bytes(),failed_bytes)
+        # Restored failure cannot silently export an accepted current result.
+        with self.assertRaisesRegex(ValueError,'No validated result'):
+            self.queue.export_result('j1',case_id='case1')
+        # Explicit deterministic replay can re-use exact immutable receipt
+        # bytes and reproduce the same public result without a model dispatch.
+        self.revalidate()
+        replayed = self.queue.export_result('j1',case_id='case1')
+        self.assertEqual(exported,replayed)
+        self.assertEqual((self.root/replayed['result']['path']).read_bytes(),result_bytes)
+        self.assertEqual(self.queue.status()['cases'][0]['consumed_attempts'],1)
+        self.assertEqual(len(self.queue.status()['dispatches']),1)
 
 
 if __name__ == "__main__":
