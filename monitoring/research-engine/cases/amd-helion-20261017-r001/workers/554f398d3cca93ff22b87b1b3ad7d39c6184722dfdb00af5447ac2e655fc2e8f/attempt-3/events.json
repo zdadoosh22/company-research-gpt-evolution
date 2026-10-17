@@ -1,0 +1,24 @@
+[
+  {
+    "type": "thread.started"
+  },
+  {
+    "type": "item.completed",
+    "item_type": "disabled-code-host-diagnostic"
+  },
+  {
+    "type": "turn.started"
+  },
+  {
+    "type": "item.completed",
+    "item_type": "agent_message"
+  },
+  {
+    "type": "turn.completed",
+    "usage": {
+      "input_tokens": 30945,
+      "cached_input_tokens": 0,
+      "output_tokens": 5327
+    }
+  }
+]

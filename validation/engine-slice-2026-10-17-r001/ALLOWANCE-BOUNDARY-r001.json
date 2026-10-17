@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-10-17T01:46:00.809376+00:00",
+  "ordinary_used_percent": 96,
+  "ordinary_service_flag_allowed": true,
+  "stored_credit_balance": "205.6006570000",
+  "balance_changed_since_resumption": false,
+  "next_ordinary_reset_utc": "2026-10-17T05:44:25+00:00",
+  "next_ordinary_reset_london": "2026-10-17T06:44:25+01:00",
+  "stop_reason": "Conservative headroom before stored-credit risk; not a claim ordinary allowance already exhausted.",
+  "new_model_calls": 0,
+  "new_engineering_changes": 0,
+  "prior_goal_turn": "progress: resolved divergent worktree checkpoint conflict and preserved code bytes",
+  "this_goal_turn": "no progress toward implementation: allowance revalidation and safety checkpoint only",
+  "same_blocker_consecutive_goal_turns": 1,
+  "goal_completion": false,
+  "next_action": "After ordinary reset verify capacity, then repair findings1-4 in REVALIDATION-PARENT-REVIEW-r001.md. Existing case authorization expires19October01:10:24UTC. Preserve3consumed attempts, fourth reserved Astra."
+}

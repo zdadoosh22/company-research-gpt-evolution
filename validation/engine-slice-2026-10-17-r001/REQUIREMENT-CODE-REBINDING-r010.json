@@ -1,0 +1,1785 @@
+{
+  "created_at": "2026-10-17T16:15:23.436991+00:00",
+  "changed_evidence_rows": [
+    {
+      "id": "BRIEF-L0016",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0020",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0026",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0030",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0031",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0032",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0033",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0034",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0036",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0042",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0043",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0045",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0047",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0049",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0061",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py",
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0067",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0080",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0093",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py",
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0095",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0101",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "tools/research_packet.py",
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0102",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0106",
+      "current_code_evidence": [
+        "tools/research_packet.py",
+        "tools/scoped_research_queue.py",
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0107",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0111",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0115",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0119",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0120",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0121",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0122",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0123",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0125",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0129",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0133",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0134",
+      "current_code_evidence": [
+        "tools/research_packet.py",
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0135",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0136",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0137",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0138",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0139",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0142",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0150",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_packet.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0151",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0153",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0155",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "deferred"
+    },
+    {
+      "id": "BRIEF-L0159",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0167",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0173",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0175",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0176",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0177",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0178",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0179",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0181",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0185",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0187",
+      "current_code_evidence": [
+        "tools/research_packet.py",
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0195",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0196",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0197",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0202",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0204",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0206",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0214",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0215",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0217",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py",
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0219",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0221",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0223",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0229",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0230",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0234",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0236",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0238",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0240",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0242",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "tools/research_records.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0246",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0248",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0252",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0256",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0260",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0261",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0262",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0263",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0264",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0266",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0268",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0270",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0274",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0275",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0276",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0278",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0280",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0282",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0286",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0288",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0290",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0292",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0298",
+      "current_code_evidence": [
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0300",
+      "current_code_evidence": [
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0302",
+      "current_code_evidence": [
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0314",
+      "current_code_evidence": [
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0316",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0318",
+      "current_code_evidence": [
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0324",
+      "current_code_evidence": [
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0326",
+      "current_code_evidence": [
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0330",
+      "current_code_evidence": [
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0345",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0347",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0351",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0361",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0367",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0369",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0371",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0373",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0377",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0381",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "deferred"
+    },
+    {
+      "id": "BRIEF-L0383",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "deferred"
+    },
+    {
+      "id": "BRIEF-L0385",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "deferred"
+    },
+    {
+      "id": "BRIEF-L0389",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0393",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0394",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0395",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0396",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0397",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0398",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0400",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0402",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0404",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0406",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0408",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0412",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0413",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0414",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0415",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0416",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0417",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0418",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0426",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0449",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0453",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "deferred"
+    },
+    {
+      "id": "BRIEF-L0455",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0473",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0475",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0483",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0484",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0485",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0486",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0487",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0488",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0490",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0494",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0495",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0497",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0498",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0500",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0509",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0511",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0517",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0523",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0524",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0525",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0526",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0527",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0528",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0529",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0530",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0531",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0533",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0534",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0536",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0552",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0554",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0571",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0585",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0587",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0589",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0593",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0594",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0595",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0596",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0597",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0599",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0605",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0606",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0607",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0608",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0610",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0613",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0615",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0619",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0620",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "BRIEF-L0621",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0622",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0623",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0625",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "TEST-L0523-01",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py",
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0523-02",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py",
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0523-03",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py",
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0523-04",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py",
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0523-05",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py",
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0523-06",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0523-07",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0523-08",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0525-07",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0526-01",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0526-02",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0526-05",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0527-01",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0527-02",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0527-03",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0527-04",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0527-05",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0527-06",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0527-07",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0528-03",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0528-04",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0528-05",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0529-01",
+      "current_code_evidence": [
+        "tools/research_packet.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0529-02",
+      "current_code_evidence": [
+        "tools/research_packet.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0529-04",
+      "current_code_evidence": [
+        "tools/research_packet.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0529-05",
+      "current_code_evidence": [
+        "tools/research_packet.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0529-06",
+      "current_code_evidence": [
+        "tools/research_packet.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0530-01",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "TEST-L0530-02",
+      "current_code_evidence": [
+        "tools/research_records.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "TEST-L0530-03",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0530-04",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0534-01",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "TEST-L0534-02",
+      "current_code_evidence": [
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-PREPARE-CASE",
+      "current_code_evidence": [
+        "tools/research_records.py",
+        "tools/research_engine.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-PREPARE-BATCH",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-RUN-BATCH",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "blocked"
+    },
+    {
+      "id": "COMMAND-RETRY-DECISION",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-PACKET-SMOKE",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-WORKER-CONTRACT-SMOKE",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0193",
+      "current_code_evidence": [
+        "tools/research_packet.py"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0212",
+      "current_code_evidence": [
+        "tools/scoped_research_adapter.py"
+      ],
+      "status_unchanged": "verified"
+    },
+    {
+      "id": "BRIEF-L0232",
+      "current_code_evidence": [
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    },
+    {
+      "id": "BRIEF-L0391",
+      "current_code_evidence": [
+        "workflows/research-engine.md"
+      ],
+      "status_unchanged": "implemented-fixture-tested"
+    }
+  ],
+  "classification_changes": 0
+}

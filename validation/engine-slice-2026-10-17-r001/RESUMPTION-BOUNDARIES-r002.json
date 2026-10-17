@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-10-17T16:18:00.700245+00:00",
+  "methodology_and_observation_config_unchanged": true,
+  "original33untracked_paths_preserved": true,
+  "tracked_private_state_paths": 0,
+  "observation_restart": false,
+  "broker_or_phone_connection": false,
+  "new_research_inference_calls_this_stage": 0,
+  "real_case_attempts_consumed": 3,
+  "real_case_attempts_remaining": 1,
+  "fresh_astra_review_pending": true,
+  "source_snapshot_commit": "61a605bdaa9d9cd8b73f0cf19fd4e44e17887b7a",
+  "not_claimed": [
+    "Investment performance",
+    "Backend model identity",
+    "Final engine release acceptance",
+    "Trading activation"
+  ]
+}

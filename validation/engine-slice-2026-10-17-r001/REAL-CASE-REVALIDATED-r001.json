@@ -1,0 +1,49 @@
+{
+  "observed_at": "2026-10-17T16:13:44.962036+00:00",
+  "analysis_record": {
+    "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+    "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+  },
+  "archived_analysis": {
+    "job": {
+      "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/workers/554f398d3cca93ff22b87b1b3ad7d39c6184722dfdb00af5447ac2e655fc2e8f/attempt-3/job.json",
+      "sha256": "a991d2428de439585833c09d338691eb093b6769d72c925a5dc72af049de9074"
+    },
+    "result": {
+      "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/workers/554f398d3cca93ff22b87b1b3ad7d39c6184722dfdb00af5447ac2e655fc2e8f/attempt-3/result.json",
+      "sha256": "e5506632f1af0481740980bea4d15b0ff8157e5843d5b513d2a8130ec52d2bd7"
+    },
+    "execution": {
+      "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/workers/554f398d3cca93ff22b87b1b3ad7d39c6184722dfdb00af5447ac2e655fc2e8f/attempt-3/execution.json",
+      "sha256": "68aedcaf709bf25b92ac10579e929323f9c1fa0ccbcd84d7e3f6949b06e6ddec"
+    },
+    "packet": {
+      "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/workers/554f398d3cca93ff22b87b1b3ad7d39c6184722dfdb00af5447ac2e655fc2e8f/attempt-3/packet.json",
+      "sha256": "a2328a17b467200cc65a71c0ce06bd1ee9cb131f1e967ef2881272b0ca0e1c51"
+    }
+  },
+  "review_packet_record": {
+    "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-evidence-packet-r001.json",
+    "sha256": "f281ae576152c1180ccf32bffb595a80b0aa491b0d6887b8bdd8754833072aa8"
+  },
+  "review_authorization": {
+    "batch_id": "amd-helion-20261017-r001-batch",
+    "version": 2,
+    "recorded": true,
+    "sha256": "3c71459996d57c2ad5fbf1e3e56bb18a2d52d8d48f488cc0442249c2010adf58"
+  },
+  "review_job": {
+    "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/inputs/review-job-r003.json",
+    "sha256": "0e81ae46ac843bfb1d5226e2655d80c9fa093abdc85cc3ef0e10f0f572aa5640"
+  },
+  "review_packet_sha256": "f9079685848b6873401729bc121e372117b4567f892faf8f28785dce63f386e3",
+  "review_packet_utf8_bytes": 116002,
+  "frozen_maximum": 131072,
+  "original_failed_metadata_sha256": "59aba544d8396b8bb39129afc4f814299eb7d33e547f9e0fb55b6456dba83523",
+  "raw_sha256": "94c7881a22614d4c2dc2753b987ea4a45e532a36619b6960977431eb66ef38cd",
+  "deterministic_reference_edits": 19,
+  "consumed_attempts": 3,
+  "remaining_attempts": 1,
+  "research_status": "Partial analysis with explicit processing provenance; independent review still pending",
+  "gate_activation": false
+}

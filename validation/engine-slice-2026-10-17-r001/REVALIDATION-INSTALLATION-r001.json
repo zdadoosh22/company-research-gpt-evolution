@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-10-17T16:10:35.669101+00:00",
+  "backup_created": true,
+  "backup_sha256": "7623eface741938c5ee31386b02bc99754266dd39a8fffcf583f9f6f136068da",
+  "backup_integrity": "ok",
+  "consumed_attempts_before": 3,
+  "remaining_attempts_before": 1,
+  "failed_metadata_sha256": "59aba544d8396b8bb39129afc4f814299eb7d33e547f9e0fb55b6456dba83523",
+  "raw_sha256": "94c7881a22614d4c2dc2753b987ea4a45e532a36619b6960977431eb66ef38cd",
+  "observation_restart": false,
+  "portfolio_database_modified": false
+}
