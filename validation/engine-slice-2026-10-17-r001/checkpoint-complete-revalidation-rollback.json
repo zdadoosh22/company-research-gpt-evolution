@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "engine-revalidation-rollback-20261017-complete",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "revalidation-rollback-20261017-r001",
+  "phase": "complete",
+  "created_at": "2026-10-17T16:24:22.939368+00:00",
+  "observed_at": "2026-10-17T16:24:22.939368+00:00",
+  "origin": "Original bounded engine goal authorizes actual Sol High analysis and independent Astra High review; client restrictions now measured and reviewed; no credit renewal or trade authority.",
+  "request": "Verify coherent database plus metadata rollback after retained-output repair using isolated fixtures only.",
+  "work": [
+    "Added a temporary-state paired SQLite+failed-metadata restore/replay integration test; preserves all originals and immutable public archive.",
+    "First attempt exposed Windows cleanup error from unclosed SQLite handles in new fixture; preserved failure transcript and repaired explicit connection closure.",
+    "Focused9tests pass; full455run/454pass/one existing permission skip, exact source snapshot unchanged.",
+    "Documented coordinated rollback and preserved processed metadata; no production rollback or new model call.",
+    "Installed reviewed test/documentation changes and reconciled56documentation evidence hashes without changing any419requirement classifications."
+  ],
+  "outcome": "complete",
+  "artifacts": [
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/PAIRED-ROLLBACK-REVIEW-r001.json",
+      "sha256": "183d4fcd317ee99d68530d1e432a0944cacd4aa6e0f6a1617c0487e5d528b378"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REVALIDATION-ROLLBACK-TESTS-r001.txt",
+      "sha256": "47732ce3e949ecfe8cd8d872d36d72d0b0c591bfe67348ebd22812ced05dfecf"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REVALIDATION-ROLLBACK-TESTS-r002.txt",
+      "sha256": "311eaa269954f429ac40ea5408f0773ae1b3f5cd5e414c852dfa117bce08c416"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REGRESSION-20261017-r007.txt",
+      "sha256": "ae709830fbfd5324fe89b7eff82340efe415fd4071987e7616c6cd0c633d3c69"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REGRESSION-20261017-r007-manifest.json",
+      "sha256": "24b5e8c9b02d428974b58614c4e9da627b0d420eff1830a59ed11db7c6dbfff6"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REQUIREMENT-CONSISTENCY-r011.json",
+      "sha256": "66b272b8979015dda327eeaf91f70c10b22abb3a789ccdbe36b26de1e766af07"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REQUIREMENT-EVIDENCE-20261017-r011.json",
+      "sha256": "639f7d03fa88e823b3ca2c35c7d7145f57baa00f2babb820ed77af7b799e3596"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/ROLLBACK-BOUNDARIES-r001.json",
+      "sha256": "ee3cbc69e3a7093c484fa248fbaa6938efbdc704a6adf52e1e8d92d096738228"
+    }
+  ],
+  "checks": [
+    {
+      "id": "paired-restore-replay",
+      "method": "Temporary real queue/adapter fixture, SQLite backupAPI, paired failedmetadata restore, recovery remains unaccepted, explicit deterministic replay reproduces same immutable archive without new dispatch",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-17-r001/REVALIDATION-ROLLBACK-TESTS-r002.txt"
+      ]
+    },
+    {
+      "id": "frozen-source-regression",
+      "method": "455tests;454pass/one Windows permission skip; source hashes unchanged during run",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-17-r001/REGRESSION-20261017-r007.txt",
+        "validation/engine-slice-2026-10-17-r001/REGRESSION-20261017-r007-manifest.json"
+      ]
+    }
+  ],
+  "blockers": {
+    "resolved": [
+      "Paired pre-repair database/metadata rollback and explicit replay now fixture-verified; connection lifetime documented"
+    ],
+    "introduced": [],
+    "unchanged": [
+      "Actual Astra review and final research disposition pending",
+      "Frozen retrieval failure and complete software acceptance audit unresolved",
+      "Insufficient conservative ordinary headroom to safely forecast a final Astra call without credit risk"
+    ]
+  },
+  "readiness_impact": {
+    "label": "improved",
+    "requirements": [
+      "BRIEF-L0044"
+    ],
+    "artifact_paths": [
+      "validation/engine-slice-2026-10-17-r001/PAIRED-ROLLBACK-REVIEW-r001.json",
+      "validation/engine-slice-2026-10-17-r001/REVALIDATION-ROLLBACK-TESTS-r002.txt"
+    ],
+    "explanation": "Recovery verification expanded. Stage complete does not complete full engine, accept analysis or satisfy any live gate."
+  },
+  "verified_gate_changes": [],
+  "next_action": "When ordinary headroom permits, execute only named queued Astra review with pinned client, existing authv2, one remaining attempt; then archive/translate and complete dossier/disposition plus original-scope final audit. No new Sol inference, new batch, credit use, trade or monitoring changes.",
+  "unknowns": [
+    "Astra per-call ordinary percentage cannot be reliably forecast from available counters.",
+    "No actual operational rollback, fresh Astra review, accepted investment recommendation or performance edge established."
+  ],
+  "supersedes": []
+}

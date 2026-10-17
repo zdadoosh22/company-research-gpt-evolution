@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "engine-revalidation-rollback-20261017-start",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "revalidation-rollback-20261017-r001",
+  "phase": "start",
+  "created_at": "2026-10-17T16:20:08.502436+00:00",
+  "observed_at": "2026-10-17T16:20:08.502436+00:00",
+  "origin": "Original bounded engine goal authorizes actual Sol High analysis and independent Astra High review; client restrictions now measured and reviewed; no credit renewal or trade authority.",
+  "request": "Verify coherent database plus metadata rollback after retained-output repair using isolated fixtures only.",
+  "work": [],
+  "outcome": null,
+  "artifacts": [],
+  "checks": [],
+  "blockers": {
+    "resolved": [],
+    "introduced": [],
+    "unchanged": [
+      "Fresh actual Astra review pending adequate ordinary headroom",
+      "Goal release and frozen retrieval acceptance incomplete"
+    ]
+  },
+  "readiness_impact": {
+    "label": "not assessed",
+    "requirements": [],
+    "artifact_paths": [],
+    "explanation": "Stage start only; no research or trading gate acceptance."
+  },
+  "verified_gate_changes": [],
+  "next_action": "Add restore/replay integration fixture, document exact paired-state rollback boundary, run appropriate tests; no actual rollback or inference.",
+  "unknowns": [
+    "No current security eligibility, financial/current claims, consensus, quote or transaction cost acceptance."
+  ],
+  "supersedes": []
+}

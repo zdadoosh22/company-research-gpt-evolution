@@ -1,0 +1,20 @@
+{
+  "observed_at": "2026-10-17T16:24:22.939368+00:00",
+  "actual_case_inferences_still_consumed": 3,
+  "actual_case_inferences_remaining": 1,
+  "actual_job_states": [
+    [
+      "analysis",
+      "needs-input"
+    ],
+    [
+      "review",
+      "queued"
+    ]
+  ],
+  "live_database_rollback_performed": false,
+  "new_model_calls": 0,
+  "code_change": "Test and documentation only; production module bytes unchanged from prior accepted integration",
+  "regression": "455run,454pass,one existing permission skip; source snapshot unchanged",
+  "full_goal_complete": false
+}
