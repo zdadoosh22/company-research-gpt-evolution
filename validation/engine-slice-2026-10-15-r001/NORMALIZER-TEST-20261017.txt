@@ -1,0 +1,13 @@
+test_labelled_known_id_is_repaired_on_copy_only (validation.tests.test_research_output.ResearchOutputNormalizerTests.test_labelled_known_id_is_repaired_on_copy_only) ... ok
+test_nondict_and_malformed_structure_are_rejected (validation.tests.test_research_output.ResearchOutputNormalizerTests.test_nondict_and_malformed_structure_are_rejected) ... ok
+test_noop_has_zero_edits_and_equal_canonical_hashes (validation.tests.test_research_output.ResearchOutputNormalizerTests.test_noop_has_zero_edits_and_equal_canonical_hashes) ... ok
+test_only_existing_material_unresolved_edge_gets_backlink (validation.tests.test_research_output.ResearchOutputNormalizerTests.test_only_existing_material_unresolved_edge_gets_backlink) ... ok
+test_prefix_collision_uses_exact_known_id (validation.tests.test_research_output.ResearchOutputNormalizerTests.test_prefix_collision_uses_exact_known_id) ... ok
+test_supported_affected_conclusion_is_never_downgraded_or_rewritten (validation.tests.test_research_output.ResearchOutputNormalizerTests.test_supported_affected_conclusion_is_never_downgraded_or_rewritten) ... ok
+test_unknown_labels_and_duplicate_ids_fail_closed (validation.tests.test_research_output.ResearchOutputNormalizerTests.test_unknown_labels_and_duplicate_ids_fail_closed) ... ok
+test_unrelated_extra_source_fields_survive_for_strict_validator (validation.tests.test_research_output.ResearchOutputNormalizerTests.test_unrelated_extra_source_fields_survive_for_strict_validator) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+OK

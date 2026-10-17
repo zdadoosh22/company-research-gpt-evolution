@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "blocker-reference-normalizer-20261017-start",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "blocker-reference-normalizer-20261017",
+  "phase": "start",
+  "created_at": "2026-10-17T02:30:15+01:00",
+  "observed_at": "2026-10-17T02:30:15+01:00",
+  "origin": "Bounded engineering helper assignment delegated by the user-authorized main task.",
+  "request": "Implement a conservative pure issue-reference normalizer and focused tests without changing validation or readiness behavior.",
+  "work": [],
+  "outcome": null,
+  "artifacts": [],
+  "checks": [],
+  "blockers": {"resolved": [], "introduced": [], "unchanged": []},
+  "readiness_impact": {"label": "not assessed", "requirements": [], "artifact_paths": [], "explanation": "Stage start only; no analytical or trading gate acceptance."},
+  "verified_gate_changes": [],
+  "next_action": "Implement the bounded helper and focused tests, then record actual verification and limitations.",
+  "unknowns": [],
+  "supersedes": []
+}
+
