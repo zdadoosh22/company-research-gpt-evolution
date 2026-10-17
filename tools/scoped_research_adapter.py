@@ -495,21 +495,34 @@ def run_scoped_job(project_root, job, *, state_root=None, runner=subprocess.run,
                         meta["reason"] = ("quota-unavailable" if any(x in detail for x in ("quota", "usage limit", "rate limit")) else
                             "model-unavailable" if "model" in detail and any(x in detail for x in ("unavailable", "not found", "unsupported", "not supported")) else "process-failed")
                     else:
+                        meta["validation_stage"] = "output-bounds"
                         if len((completed.stdout or "").encode()) > MAX_OUTPUT_BYTES or output_path.stat().st_size > MAX_OUTPUT_BYTES:
                             raise ValueError("Bounded output exceeded")
+                        meta["validation_stage"] = "candidate-json-and-credential-check"
+                        candidate = json.loads(output_path.read_text(encoding="utf-8"))
+                        _no_credentials(candidate, environ)
+                        # Private recovery evidence only. Export/translation
+                        # still require the separately validated result.json.
+                        _write_json(folder / "unaccepted-output.json", candidate)
+                        meta["unaccepted_output_sha256"] = _hash(folder / "unaccepted-output.json")
+                        meta["validation_stage"] = "event-audit"
                         audit, seen = _audit_events(completed.stdout or "", model)
                         _write_json(folder / "events.json", audit)
                         meta.update(models_observed=sorted(seen), actual_model=next(iter(seen)) if seen else None,
                             actual_model_verification="reported" if seen else "not-reported")
+                        meta["validation_stage"] = "original-input-integrity"
                         if any(not Path(path).is_file() or _hash(Path(path)) != digest for path, digest in manifest.items()):
                             raise ValueError("Input or target mutated during job")
+                        meta["validation_stage"] = "staged-input-integrity"
                         if any(not (staged_root / name).is_file() or _hash(staged_root / name) != digest for name, digest in staged.items()):
                             raise ValueError("Staged input mutated")
                         if {p.name for p in staged_root.iterdir()} != set(staged) | {"candidate.json"}:
                             raise ValueError("Unauthorized staged file creation")
-                        result = validate_output(json.loads(output_path.read_text(encoding="utf-8")), job, root)
+                        meta["validation_stage"] = "output-schema-and-provenance"
+                        result = validate_output(candidate, job, root)
                         _no_credentials(result, environ)
                         _write_json(folder / "result.json", result)
+                        meta["validation_stage"] = "validated"
                         meta.update(reason="analytical-output-validated", selected_route_completed=True,
                             status=result["status"], output_sha256=_hash(folder / "result.json"),
                             continuation_required=needs_continuation(result),
@@ -520,8 +533,18 @@ def run_scoped_job(project_root, job, *, state_root=None, runner=subprocess.run,
         meta["reason"] = "job-timeout"
     except OSError:
         meta["reason"] = "cli-or-output-unavailable"
-    except (ValueError, TypeError, KeyError, UnicodeError):
+    except (ValueError, TypeError, KeyError, UnicodeError) as exc:
         meta["reason"] = "invalid-output-input-or-unauthorized-event"
+        meta["validation_error_class"] = type(exc).__name__
+        # Trusted validator messages are useful; do not retain arbitrary raw
+        # process output, paths or credential-bearing exception details.
+        detail = str(exc)
+        if re.fullmatch(r"[A-Za-z][A-Za-z0-9 ,;().-]{0,159}", detail):
+            try:
+                _no_credentials(detail, environ)
+                meta["validation_detail"] = detail
+            except ValueError:
+                pass
     meta["completed_at"] = datetime.now(timezone.utc).isoformat()
     if meta["execution_outcome"] != "completed":
         meta["continuation"] = "Resolve " + meta["reason"] + "; record an explicit retry decision before a new authorized attempt."

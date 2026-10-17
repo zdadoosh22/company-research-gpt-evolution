@@ -245,7 +245,21 @@ class ScopedAdapterTests(unittest.TestCase):
         folder = Path(meta["metadata_path"]).parent
         self.assertFalse((folder / "candidate.json").exists())
         self.assertFalse((folder / "result.json").exists())
+        self.assertFalse((folder / "unaccepted-output.json").exists())
         self.assertNotIn("abcdefghijklmno", (folder / "metadata.json").read_text())
+
+    def test_rejected_nonsecret_candidate_is_retained_without_acceptance(self):
+        candidate = copy.deepcopy(self.output)
+        candidate['coverage'] = []
+        meta = self.run_job(runner=self.fake(output=candidate))
+        folder = Path(meta['metadata_path']).parent
+        self.assertEqual(json.loads((folder/'unaccepted-output.json').read_text()), candidate)
+        self.assertEqual(meta['validation_stage'], 'output-schema-and-provenance')
+        self.assertEqual(meta['validation_detail'], 'Incomplete coverage ledger')
+        self.assertFalse((folder/'result.json').exists())
+        self.assertFalse(meta['selected_route_completed'])
+        self.assertFalse(meta['analytical_approval'])
+        self.assertTrue(meta['retry_decision_required'])
 
     def test_empty_or_duplicate_coverage_rejected(self):
         self.output["coverage"].append(copy.deepcopy(self.output["coverage"][0]))
