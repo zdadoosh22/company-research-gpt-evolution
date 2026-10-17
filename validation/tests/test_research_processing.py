@@ -73,7 +73,9 @@ class ProcessingTests(unittest.TestCase):
         self.assertEqual(first['context'], second['context'])
         self.assertNotEqual(first['input_manifest'], second['input_manifest'])
         self.assertEqual(len(first['input_manifest']), 4)
-        self.assertIn('not independently proven', first['context']['limitations'][1])
+        self.assertIn('not independently proven', first['context']['limitations'][-1])
+        self.assertEqual(set(first['context']['artifacts']), {'receipt','failure_projection'})
+        self.assertIn('raw_output', first['context']['artifact_hashes'])
 
     def test_changed_claim_is_not_a_formatting_repair_even_with_updated_hash(self):
         changed = json.loads(self.target)

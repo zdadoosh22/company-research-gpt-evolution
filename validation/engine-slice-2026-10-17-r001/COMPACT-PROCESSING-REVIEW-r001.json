@@ -1,0 +1,18 @@
+{
+  "observed_at": "2026-10-17T16:13:43.528085+00:00",
+  "scope": "Compact reviewer processing context; prior engineering review remains applicable except replaced module/test hashes below.",
+  "cause": "Real review preparation exceeded frozen131072byte ceiling when raw response was duplicated in model context. No review dispatch occurred.",
+  "repair": "Retain all4explicit hash-bound provenance artifacts and replay raw locally. Embed receipt, safe failure projection and usage, omitting duplicate raw/event bytes from model context. Do not raise ceiling or alter issuer passages.",
+  "verification": "454tests run,453pass,one existing permission skip; source snapshot unchanged during r006. Positive packet-path/replay/translation fixture and hash-preserving archive controls pass.",
+  "files": [
+    {
+      "path": "tools/research_processing.py",
+      "sha256": "d462c699e6cf84c6c5c7b313015ee88fb79571f93482cac32d370da04f5752ba"
+    },
+    {
+      "path": "validation/tests/test_research_processing.py",
+      "sha256": "ea23203dfb3638ea5c335755fac5b3f4ae6c7b8a2172e676b12dfefe7c321db2"
+    }
+  ],
+  "acceptance": "Parent accepts this bounded compacting repair for installation; not full engine release, investment analysis or Astra review."
+}

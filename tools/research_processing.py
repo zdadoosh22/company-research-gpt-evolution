@@ -121,7 +121,9 @@ def processing_context(root, binding, target_bytes, *, execution=None, now=None)
                 execution.get("output_sha256") != _hash(target_bytes) or execution.get("usage") != usage):
             raise ValueError("Processed execution receipt or usage differs")
     return {"context": {"kind": "deterministic-reference-formatting-only", "engineering_fixture_only": fixture, "artifact_hashes": hashes,
-                "artifacts": documents, "limitations": [
+                "artifacts": {key: documents[key] for key in ('receipt','failure_projection')},
+                "usage": usage, "limitations": [
                     "Processing context is not citable issuer evidence or analytical approval.",
+                    "Raw output and sanitized events remain explicitly hash-bound and locally replayed; their full bytes are omitted from model context to avoid duplicating the target.",
                     "Private metadata contents, dispatch authority and backend identity are not independently proven by these public projections."]},
             "input_manifest": manifest}
