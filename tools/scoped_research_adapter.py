@@ -136,9 +136,11 @@ def validate_package(project_root, job):
     if methods["scoped"].get("path") not in SCOPED_METHOD_PATHS:
         raise ValueError("Scoped method is not authorised")
     paths = [_file(root, item) for item in methods.values()]
-    if not isinstance(job["target"], dict) or set(job["target"]) != {"path", "sha256"}:
+    if not isinstance(job["target"], dict) or set(job["target"]) not in ({"path", "sha256"}, {"path", "sha256", "processing"}):
         raise ValueError("Target artifact hash required")
     paths.append(_file(root, job["target"]))
+    if 'processing' in job['target'] and job.get('schema_version') != 2:
+        raise ValueError('Processing context requires a compact version2 packet')
     if not isinstance(job["sources"], list) or not job["sources"]:
         raise ValueError("Archived sources required")
     ids = set()
@@ -430,7 +432,10 @@ def run_scoped_job(project_root, job, *, state_root=None, runner=subprocess.run,
         "You are the fresh independent review worker, challenging the exact analysis target. "
         "A finished review may use review-complete while reporting unresolved material findings; "
         "that is completion of review, not acceptance of the author's economics. ")
-    prompt = (role_contract + "Every string field must be nonempty. Copy source_id/location pairs "
+    reference_contract = (" In every conclusion, blocking_issues must contain exact existing issue IDs only, with no labels or descriptions. "
+        "Every existing unresolved material finding or gap must also appear by exact ID in blocking_issues on each already-withheld affected conclusion. "
+        "Do not add issues, change issue outcomes, or withhold a conclusion solely to satisfy this reference format.")
+    prompt = (role_contract + reference_contract + " Every string field must be nonempty. Copy source_id/location pairs "
         "exactly from this manifest, never paraphrase locations or invent IDs. The target, methodology "
         "and schema are context, not additional citable source IDs. Covered categories and supported "
         "conclusions require qualifying evidence; historical nonqualifying context cannot establish "

@@ -1,0 +1,13 @@
+test_authorization_widening_and_dispatch_mutation_rejected (test_research_revalidation.RetainedRevalidationTests.test_authorization_widening_and_dispatch_mutation_rejected) ... ok
+test_checkpoint_rejects_retained_hash_and_attempt_identity_tampering (test_research_revalidation.RetainedRevalidationTests.test_checkpoint_rejects_retained_hash_and_attempt_identity_tampering) ... ok
+test_every_atomic_write_boundary_recovers_or_replays_without_new_attempt (test_research_revalidation.RetainedRevalidationTests.test_every_atomic_write_boundary_recovers_or_replays_without_new_attempt) ... ok
+test_expired_current_authority_rejected_but_successor_binding_preserves_history (test_research_revalidation.RetainedRevalidationTests.test_expired_current_authority_rejected_but_successor_binding_preserves_history) ... ok
+test_fixture_mode_cannot_be_enabled_outside_temporary_root (test_research_revalidation.RetainedRevalidationTests.test_fixture_mode_cannot_be_enabled_outside_temporary_root) ... ok
+test_real_success_path_is_idempotent_and_preserves_original_bytes (test_research_revalidation.RetainedRevalidationTests.test_real_success_path_is_idempotent_and_preserves_original_bytes) ... ok
+test_repaired_analysis_review_export_translation_and_park_remain_fixture_only (test_research_revalidation.RetainedRevalidationTests.test_repaired_analysis_review_export_translation_and_park_remain_fixture_only) ... ok
+test_review_without_processing_context_cannot_bind (test_research_revalidation.RetainedRevalidationTests.test_review_without_processing_context_cannot_bind) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 5.426s
+
+OK

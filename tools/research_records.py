@@ -144,6 +144,14 @@ def _execution(root, content, role, *, case_id, now, stack):
         raise ValueError('Compact job role mismatch')
     _context(request, job)
     validate_output(result, job, root)
+    if 'processing' in meta:
+        try:
+            from .research_processing import processing_context
+        except ImportError:
+            from research_processing import processing_context
+        processing_context(root, meta['processing'], verify_reference(root, content['result']).read_bytes(), execution=meta, now=now)
+    elif 'processing_receipt' in meta:
+        raise ValueError('Processed execution lacks explicit public lineage')
     if content['artifact']!=scoped_artifact(job,result,meta):
         raise ValueError('Translated readiness artifact differs from the validated scoped output')
     if (meta.get('job_id') != job['job_id'] or meta.get('role') != role or
@@ -178,6 +186,13 @@ def _execution(root, content, role, *, case_id, now, stack):
         if target['content']['request'] != content['request'] or target['content']['result']['sha256'] != job['target']['sha256']:
             raise ValueError('Review target differs from the exact analysis result')
         analysis_meta = _json(root, target['content']['execution'])
+        if analysis_meta.get('processing'):
+            supplied = job['target'].get('processing')
+            expected = analysis_meta['processing']
+            if not isinstance(supplied, dict) or {k: v.get('sha256') for k, v in supplied.items()} != {k: v['sha256'] for k, v in expected.items()}:
+                raise ValueError('Review target omits or changes analysis processing context')
+        elif 'processing' in job['target']:
+            raise ValueError('Review target invents processing context')
         if meta['dispatch_id'] == analysis_meta['dispatch_id']:
             raise ValueError('Independent review must use a fresh dispatch')
     elif content['target_record'] is not None:

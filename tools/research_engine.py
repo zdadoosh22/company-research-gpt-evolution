@@ -94,6 +94,8 @@ def main(argv=None):
     for name in ('request','job','record-id','created-at'):packet.add_argument('--'+name,required=True)
     archive=sub.add_parser('archive-result', help='Export a revalidated queue result without private state')
     archive.add_argument('--job-id',required=True);archive.add_argument('--case-id',required=True)
+    revalidate=sub.add_parser('revalidate-failed-output', help='Deterministically revalidate one retained failed response')
+    revalidate.add_argument('--job-id',required=True);revalidate.add_argument('--batch-id',required=True)
     translate=sub.add_parser('translate', help='Bind a validated scoped result or independent review')
     for name in ('request','job','result','execution','case-id','record-id','created-at'):
         translate.add_argument('--'+name,required=True)
@@ -108,6 +110,7 @@ def main(argv=None):
         if args.command=='record': result=save_record(root,load(root,args.input))
         elif args.command=='prepare': result=prepare(root,request_path=args.request,job_path=args.job,record_id=args.record_id,created_at=args.created_at)
         elif args.command=='archive-result': result=ScopedQueue(root).export_result(args.job_id,case_id=args.case_id)
+        elif args.command=='revalidate-failed-output': result=ScopedQueue(root).revalidate_failed_output(job_id=args.job_id,batch_id=args.batch_id)
         elif args.command=='translate':
             refs={key:make_reference(root,getattr(args,key)) for key in ('request','job','result','execution')}
             result=translate_scoped(root,**refs,case_id=args.case_id,record_id=args.record_id,created_at=args.created_at,

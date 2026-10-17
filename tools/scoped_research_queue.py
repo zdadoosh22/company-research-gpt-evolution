@@ -54,13 +54,63 @@ def _ident(value):
         raise ValueError("Invalid record identity")
 
 
+def _validate_sanitized_events(events):
+    """Validate only the fields intentionally retained by the adapter audit."""
+    lifecycle = {"thread.started", "turn.started", "turn.completed", "turn.failed", "error",
+                 "item.started", "item.completed", "item.updated"}
+    if not isinstance(events, list) or not events:
+        raise ValueError("Sanitized lifecycle events are missing")
+    for event in events:
+        if not isinstance(event, dict) or set(event) - {"type", "item_type", "usage"}:
+            raise ValueError("Sanitized event fields differ")
+        if event.get("type") not in lifecycle:
+            raise ValueError("Unknown sanitized lifecycle event")
+        if event["type"].startswith("item."):
+            if event.get("item_type") not in {"reasoning", "agent_message", "disabled-code-host-diagnostic"}:
+                raise ValueError("Sanitized event contains unauthorized item")
+        elif "item_type" in event:
+            raise ValueError("Unexpected item type on lifecycle event")
+        if "usage" in event:
+            usage = event["usage"]
+            if not isinstance(usage, dict) or not usage or set(usage) - {"input_tokens", "cached_input_tokens", "output_tokens"}:
+                raise ValueError("Sanitized usage fields differ")
+            if any(type(value) is not int or value < 0 for value in usage.values()):
+                raise ValueError("Sanitized usage values differ")
+    if any(e["type"] in {"turn.failed", "error"} for e in events) or sum(e["type"] == "turn.completed" for e in events) != 1:
+        raise ValueError("Sanitized turn is incomplete or repeated")
+    return [e["usage"] for e in events if "usage" in e]
+
+
+def _failure_projection(meta, original_bytes):
+    fields = ('job_id','role','dispatch_id','status','reason','model_requested','reasoning_effort','speed',
+        'authentication','actual_model','actual_model_verification','models_observed','backend_independently_verified',
+        'started_at','completed_at','selected_route_completed','independent_review','engineering_test',
+        'runtime_verified_live','execution_outcome','attempt','target_sha256','packet_sha256','packet_utf8_bytes',
+        'original_bytes','prompt_sha256','prompt_utf8_bytes','returncode','validation_stage','validation_error_class',
+        'validation_detail','unaccepted_output_sha256')
+    safe = {key: meta[key] for key in fields if key in meta}
+    safe.update(schema_version=1, original_private_metadata_sha256=hashlib.sha256(original_bytes).hexdigest(),
+        input_manifest_sha256=hashlib.sha256(_json(meta.get('input_manifest', {})).encode('utf-8')).hexdigest(),
+        staged_input_manifest=meta.get('staged_input_manifest'),
+        limitations=['Original operational metadata is retained and validated locally; this projection does not reproduce its private bytes.'])
+    return safe
+
+
 class QueueBusy(RuntimeError):
     pass
 
 
 class ScopedQueue:
-    def __init__(self, project_root):
+    def __init__(self, project_root, *, fixture_only=False):
         self.root = Path(project_root).resolve()
+        if type(fixture_only) is not bool:
+            raise ValueError("Fixture mode must be an explicit boolean")
+        self.fixture_only = fixture_only
+        if self.fixture_only:
+            import tempfile
+            temporary_root = Path(tempfile.gettempdir()).resolve()
+            if self.root == temporary_root or not self.root.is_relative_to(temporary_root):
+                raise ValueError("Engineering fixture mode is restricted to a temporary project root")
         self.folder = (self.root / "state/scoped-research").resolve()
         if not self.folder.is_relative_to(self.root / "state"):
             raise ValueError("Queue path escapes isolated state")
@@ -275,6 +325,15 @@ class ScopedQueue:
             meta = self._checkpoint(previous, Path(previous["metadata_path"]), db=db)
             if job["target"]["sha256"] != meta["output_sha256"] or (self.root / job["target"]["path"]).resolve() != Path(meta["result_path"]).resolve():
                 raise ValueError("Continuation target differs from predecessor output")
+            if meta.get('processing_receipt'):
+                supplied = job['target'].get('processing')
+                expected = {name: meta['lineage_sha256'][field] for name, field in
+                    [('receipt','processing_receipt'), ('raw_output','unaccepted_output'),
+                     ('failure_projection','failure_projection'), ('events','events')]}
+                if not isinstance(supplied, dict) or {k: v.get('sha256') for k,v in supplied.items()} != expected:
+                    raise ValueError('Continuation target omits or changes predecessor processing context')
+            elif 'processing' in job['target']:
+                raise ValueError('Continuation target invents predecessor processing context')
             if spec["stage"] == "correction":
                 result = json.loads(Path(meta["result_path"]).read_text(encoding="utf-8"))
                 if not any(f["severity"] == "material" and f["outcome"] != "resolved" for f in result["findings"]):
@@ -323,6 +382,11 @@ class ScopedQueue:
             if hashlib.sha256(target_bytes).hexdigest()!=job['target']['sha256']:
                 raise ValueError('Target changed during export')
             target = immutable('target.txt', target_bytes)
+            if 'processing' in job['target']:
+                processing_refs = {}
+                for key, ref in job['target']['processing'].items():
+                    processing_refs[key] = immutable('target-processing-' + key + '.json', _file(self.root, ref).read_bytes())
+                target = dict(target, processing=processing_refs)
             job['target'] = target
             packet = _packet(self.root, job)
             if packet['sha256'] != old_packet['sha256']:
@@ -333,6 +397,20 @@ class ScopedQueue:
                 raise ValueError('Result changed during export')
             _no_credentials(json.loads(result_bytes.decode('utf-8')))
             result = immutable('result.json', result_bytes)
+            lineage = {}
+            if meta.get('processing_receipt'):
+                for field, filename in (('failure_projection', 'failure-projection.json'),
+                                        ('unaccepted_output', 'unaccepted-output.json'),
+                                        ('events', 'events.json'),
+                                        ('processing_receipt', 'processing-receipt.json')):
+                    source = Path(meta['metadata_path']).parent / filename
+                    if not source.is_file() or source.is_symlink():
+                        raise ValueError('Processed failure lineage is incomplete')
+                    data = source.read_bytes()
+                    digest = meta['lineage_sha256'].get(field)
+                    if hashlib.sha256(data).hexdigest() != digest:
+                        raise ValueError('Processed failure lineage changed')
+                    lineage[field] = immutable(filename, data)
             fields = {'schema_version', 'job_id', 'role', 'dispatch_id', 'status', 'reason',
                 'model_requested', 'reasoning_effort', 'speed', 'authentication', 'actual_model',
                 'actual_model_verification', 'models_observed', 'backend_independently_verified',
@@ -343,9 +421,379 @@ class ScopedQueue:
             public = {key: meta[key] for key in fields if key in meta}
             public.update(case_id=case_id,batch_id=binding['batch_id'],
                 original_package_sha256=row['package_sha256'], archived_package_sha256=package_sha256(job))
+            if lineage:
+                public['processing_receipt'] = lineage['processing_receipt']
+                public['failure_projection'] = lineage['failure_projection']
+                public['unaccepted_output'] = lineage['unaccepted_output']
+                public['events'] = lineage['events']
+                public['lineage_sha256'] = dict(meta['lineage_sha256'])
+                public['normalization_timestamp'] = meta['normalization_timestamp']
+                public['processing'] = dict(receipt=lineage['processing_receipt'],
+                    raw_output=lineage['unaccepted_output'], failure_projection=lineage['failure_projection'],
+                    events=lineage['events'])
+                try:
+                    from .research_processing import processing_context
+                except ImportError:
+                    from research_processing import processing_context
+                processing_context(self.root, public['processing'], result_bytes, execution=public)
+                public['original_failure_metadata_sha256'] = meta['lineage_sha256']['failure_metadata']
+                public['failure_metadata_verification'] = 'original private metadata verified locally; exported safe projection only'
             execution = immutable('execution.json', _json(public).encode('utf-8') + b'\n')
             packet_ref = immutable('packet.json', packet['bytes'])
             return dict(job=request, result=result, execution=execution, packet=packet_ref)
+
+    def revalidate_failed_output(self, *, job_id, batch_id):
+        """Explicitly normalize one retained failed response under its claimed dispatch.
+
+        This is a deterministic post-processing operation. It does not dispatch,
+        create an attempt, refund a call, or treat an engineering run as live.
+        """
+        try:
+            from .research_output import normalize_issue_references
+            from .research_checkpoint import _atomic
+            from .scoped_research_adapter import (_packet, _audit_events, _no_credentials,
+                SCHEMA, PINNED_CATALOG_PATH, PINNED_CATALOG_SHA256, validate_output)
+            from .research_runtime import freeze_catalog, write_model_catalog
+            from .research_packet import stage_packet
+        except ImportError:
+            from research_output import normalize_issue_references
+            from research_checkpoint import _atomic
+            from scoped_research_adapter import (_packet, _audit_events, _no_credentials,
+                SCHEMA, PINNED_CATALOG_PATH, PINNED_CATALOG_SHA256, validate_output)
+            from research_runtime import freeze_catalog, write_model_catalog
+            from research_packet import stage_packet
+        _ident(job_id); _ident(batch_id)
+        with self._worker_lock():
+            with self._db() as db:
+                row = db.execute('SELECT * FROM scoped_jobs WHERE job_id=?', (job_id,)).fetchone()
+                if row is None:
+                    raise ValueError('Unknown job')
+                binding = db.execute('SELECT * FROM scoped_job_bindings WHERE job_id=?', (job_id,)).fetchone()
+                if binding is None or binding['batch_id'] != batch_id:
+                    raise ValueError('Failed output is outside the named authorization')
+                if row['status'] in {'needs-input','complete'} and row['metadata_path']:
+                    already = self._checkpoint(row, Path(row['metadata_path']), db=db)
+                    if already.get('processing_receipt'):
+                        return {'job_id':job_id,'status':row['status'],'revalidated':False,'reason':'already-revalidated',
+                            'dispatch_id':already['dispatch_id'],'attempt':already['attempt']}
+                if row['status']=='needs-retry-decision' and row['metadata_path']:
+                    committed = self._checkpoint(row,Path(row['metadata_path']),db=db)
+                    if committed.get('processing_receipt') and committed.get('reason')=='analytical-output-validated':
+                        self._finish_revalidation(db,row,committed)
+                        return {'job_id':job_id,'status':'needs-input' if committed['continuation_required'] else 'complete',
+                            'revalidated':False,'reason':'recovered-committed-revalidation',
+                            'dispatch_id':committed['dispatch_id'],'attempt':committed['attempt']}
+                if row['status'] != 'needs-retry-decision' or row['attempt'] < 1:
+                    raise ValueError('Only a retained failed dispatch can be revalidated')
+                binding = db.execute('SELECT * FROM scoped_job_bindings WHERE job_id=?', (job_id,)).fetchone()
+                if binding is None or binding['batch_id'] != batch_id:
+                    raise ValueError('Failed output is outside the named authorization')
+                dispatch = db.execute('SELECT * FROM scoped_dispatches WHERE job_id=? AND attempt=?', (job_id, row['attempt'])).fetchone()
+                auth_row, auth = self._authorization(db, batch_id)
+                if (dispatch is None or dispatch['batch_id'] != batch_id or
+                    dispatch['case_id'] != binding['case_id'] or
+                    dispatch['status'] != 'needs-retry-decision' or
+                    dispatch['invocation_claimed_at'] is None or
+                    auth_row['version'] != dispatch['authorization_version'] or
+                    auth_row['sha256'] != dispatch['authorization_sha256'] or
+                    _stamp(auth['expires_at']) <= datetime.now(timezone.utc)):
+                    raise ValueError('Dispatch authorization is stale, unclaimed, or expired')
+                spec = next((x for x in auth['jobs'] if x['job_id'] == job_id), None)
+                job = json.loads(row['package'])
+                if (spec is None or spec['package_sha256'] != row['package_sha256'] or
+                    spec['scope_sha256'] != scope_sha256(job) or spec['model'] != dispatch['model'] or
+                    spec['role'] != dispatch['role'] or spec['stage'] != dispatch['stage'] or
+                    dispatch['attempt'] != row['attempt'] or dispatch['package_sha256'] != row['package_sha256']):
+                    raise ValueError('Current package, stage, model, role, or attempt differs')
+                folder = Path(row['metadata_path']).resolve().parent
+                meta_path = Path(row['metadata_path']).resolve()
+                if meta_path.name != 'metadata.json' or meta_path.parent.parent != (self.folder / 'jobs' / row['package_sha256']).resolve():
+                    raise ValueError('Failure checkpoint escapes its package attempt')
+                failure_bytes = meta_path.read_bytes()
+                original = self._checkpoint(row, meta_path, db=db)
+                live_failure = (original.get('engineering_test') is False and original.get('runtime_verified_live') is True)
+                fixture_failure = (self.fixture_only and original.get('engineering_test') is True and
+                    original.get('runtime_verified_live') is False and original.get('actual_model') is None and
+                    original.get('models_observed') == [])
+                if (original.get('reason') != 'invalid-output-input-or-unauthorized-event' or
+                    original.get('validation_stage') != 'output-schema-and-provenance' or
+                    original.get('returncode') != 0 or original.get('authentication') != 'chatgpt-subscription' or
+                    not (live_failure or fixture_failure) or
+                    original.get('selected_route_completed') is not False):
+                    raise ValueError('Failed output is not eligible for live deterministic revalidation or the isolated engineering fixture')
+                raw_path, events_path = folder / 'unaccepted-output.json', folder / 'events.json'
+                if raw_path.is_symlink() or events_path.is_symlink() or not raw_path.is_file() or not events_path.is_file():
+                    raise ValueError('Retained raw output or sanitized events are missing')
+                raw_bytes, events_bytes = raw_path.read_bytes(), events_path.read_bytes()
+                if hashlib.sha256(raw_bytes).hexdigest() != original.get('unaccepted_output_sha256'):
+                    raise ValueError('Retained raw output hash differs')
+                raw = json.loads(raw_bytes.decode('utf-8'))
+                _no_credentials(raw)
+                events = json.loads(events_bytes.decode('utf-8'))
+                usage = _validate_sanitized_events(events)
+                if original.get('models_observed') not in ([], [MODELS[job['role']]]) or original.get('actual_model') not in {None,MODELS[job['role']]}:
+                    raise ValueError('Sanitized event identity differs')
+                input_manifest = validate_package(self.root, job)
+                if original.get('input_manifest') != input_manifest:
+                    raise ValueError('Original source input manifest changed')
+                packet = _packet(self.root, job)
+                if original.get('packet_sha256') != packet['sha256'] or original.get('target_sha256') != job['target']['sha256']:
+                    raise ValueError('Frozen packet or target changed')
+                if original.get('staged_input_manifest') is None:
+                    raise ValueError('Staged input manifest unavailable')
+                # Rebuild only the previously staged immutable inputs. No CLI or model call occurs.
+                import tempfile
+                with tempfile.TemporaryDirectory(prefix='cr2-revalidate-') as tmp:
+                    staged_root = Path(tmp).resolve()
+                    staged = stage_packet(packet, SCHEMA, staged_root)
+                    catalog = freeze_catalog(self.root / PINNED_CATALOG_PATH, expected_sha256=PINNED_CATALOG_SHA256)
+                    model_catalog = write_model_catalog(staged_root, catalog)
+                    staged[model_catalog.name] = hashlib.sha256(model_catalog.read_bytes()).hexdigest()
+                    if staged != original['staged_input_manifest']:
+                        raise ValueError('Reconstructed staged input manifest differs')
+                normalized, helper_receipt = normalize_issue_references(raw)
+                if not helper_receipt['edits']:
+                    raise ValueError('No permitted reference repair is needed')
+                try:
+                    validate_output(raw, job, self.root)
+                except ValueError:
+                    pass
+                else:
+                    raise ValueError('Retained original does not reproduce a strict validation failure')
+                result = validate_output(normalized, job, self.root)
+                result_bytes = _json(result).encode('utf-8') + b'\n'
+                algorithm_path = Path(__file__).resolve().with_name('research_output.py')
+                failure_hash = hashlib.sha256(failure_bytes).hexdigest()
+                failure_projection_bytes = _json(_failure_projection(original, failure_bytes)).encode('utf-8') + b'\n'
+                failure_projection_hash = hashlib.sha256(failure_projection_bytes).hexdigest()
+                raw_hash = hashlib.sha256(raw_bytes).hexdigest()
+                events_hash = hashlib.sha256(events_bytes).hexdigest()
+                processed_hash = hashlib.sha256(result_bytes).hexdigest()
+                normalization_timestamp = datetime.now(timezone.utc).isoformat()
+                receipt = {
+                    'schema_version': 1, 'job_id': job_id, 'batch_id': batch_id,
+                    'case_id': binding['case_id'], 'authorization_version': dispatch['authorization_version'],
+                    'authorization_sha256': dispatch['authorization_sha256'], 'dispatch_id': dispatch['dispatch_id'],
+                    'attempt': dispatch['attempt'], 'role': dispatch['role'], 'model': dispatch['model'], 'stage': dispatch['stage'],
+                    'package_sha256': row['package_sha256'], 'scope_sha256': scope_sha256(job),
+                    'target_sha256': job['target']['sha256'], 'packet_sha256': packet['sha256'],
+                    'catalog_sha256': PINNED_CATALOG_SHA256,
+                    'input_manifest_sha256': hashlib.sha256(_json(input_manifest).encode('utf-8')).hexdigest(),
+                    'staged_input_manifest': original['staged_input_manifest'],
+                    'failure_metadata_sha256': failure_hash, 'raw_output_sha256': raw_hash,
+                    'failure_projection_sha256': failure_projection_hash,
+                    'events_sha256': events_hash, 'processed_result_sha256': processed_hash,
+                    'normalization_timestamp': normalization_timestamp,
+                    'engineering_fixture_only': bool(self.fixture_only),
+                    'algorithm_sha256': hashlib.sha256(algorithm_path.read_bytes()).hexdigest(),
+                    'normalization': helper_receipt, 'limitations': ['Deterministic formatting repair only; no analytical or investment approval.']}
+                receipt_bytes = _json(receipt).encode('utf-8') + b'\n'
+                existing_receipt_path = folder / 'processing-receipt.json'
+                if existing_receipt_path.exists():
+                    if existing_receipt_path.is_symlink():
+                        raise ValueError('Conflicting prior revalidation artifact')
+                    prior_receipt_bytes = existing_receipt_path.read_bytes()
+                    prior_receipt = json.loads(prior_receipt_bytes.decode('utf-8'))
+                    comparable = dict(prior_receipt)
+                    comparable.pop('normalization_timestamp', None)
+                    expected_comparable = dict(receipt)
+                    expected_comparable.pop('normalization_timestamp', None)
+                    if comparable != expected_comparable:
+                        raise ValueError('Conflicting prior revalidation receipt')
+                    normalization_timestamp = prior_receipt.get('normalization_timestamp')
+                    receipt = prior_receipt
+                    receipt_bytes = prior_receipt_bytes
+                receipt_hash = hashlib.sha256(receipt_bytes).hexdigest()
+                # Stable names plus byte equality make replay idempotent. The original failure
+                # snapshot is written before result/receipt; active metadata is replaced last.
+                def preserve(name, data):
+                    path = folder / name
+                    if path.exists():
+                        if path.is_symlink() or path.read_bytes() != data:
+                            raise ValueError('Conflicting prior revalidation artifact')
+                    else:
+                        _atomic(path, data)
+                preserve('failure-metadata.json', failure_bytes)
+                preserve('failure-projection.json', failure_projection_bytes)
+                preserve('processing-receipt.json', receipt_bytes)
+                preserve('result.json', result_bytes)
+                finalized = dict(original)
+                finalized.update(reason='analytical-output-validated', status=result['status'],
+                    continuation_required=needs_continuation(result), selected_route_completed=True,
+                    execution_outcome='completed', output_sha256=processed_hash,
+                    continuation=result['continuation'], retry_decision_required=False,
+                    independent_review=job['role']=='review',
+                    normalization_timestamp=normalization_timestamp,
+                    processing_receipt={'path': 'processing-receipt.json', 'sha256': receipt_hash},
+                    lineage_sha256={'failure_metadata': failure_hash, 'unaccepted_output': raw_hash,
+                        'failure_projection': failure_projection_hash, 'events': events_hash,
+                        'processing_receipt': receipt_hash}, usage=usage)
+                # Revalidate everything immediately before committing metadata last.
+                self._validate_processing_lineage(row, finalized, db, job=job,
+                    parts={'failure':failure_bytes,'raw':raw_bytes,'events':events_bytes,'receipt':receipt_bytes,
+                        'result':result_bytes,'failure_projection':failure_projection_bytes})
+                _atomic(meta_path, _json(finalized).encode('utf-8') + b'\n')
+                # The final metadata's completed_at remains the original completion time.
+                self._finish_revalidation(db, row, finalized)
+                return {'job_id': job_id, 'status': 'needs-input' if finalized['continuation_required'] else 'complete',
+                    'dispatch_id': dispatch['dispatch_id'], 'attempt': dispatch['attempt'], 'revalidated': True,
+                    'normalization_timestamp': finalized['normalization_timestamp'], 'receipt_sha256': receipt_hash}
+
+    def _finish_revalidation(self, db, row, meta):
+        status = 'needs-input' if meta['continuation_required'] else 'complete'
+        db.execute("UPDATE scoped_jobs SET status=?,reason='analytical-output-validated',metadata_path=?,updated_at=? WHERE job_id=?",
+                   (status, meta['metadata_path'], _now(), row['job_id']))
+        db.execute("UPDATE scoped_dispatches SET status=?,reason='analytical-output-validated',metadata_path=? WHERE job_id=? AND attempt=?",
+                   (status, meta['metadata_path'], row['job_id'], row['attempt']))
+
+    def _validate_processing_lineage(self, row, meta, db, *, job=None, parts=None):
+        """Recompute the deterministic transformation and verify all receipt bindings."""
+        try:
+            from .research_output import normalize_issue_references
+            from .scoped_research_adapter import (_packet, SCHEMA, PINNED_CATALOG_PATH,
+                PINNED_CATALOG_SHA256, validate_output)
+            from .research_runtime import freeze_catalog, write_model_catalog
+            from .research_packet import stage_packet
+        except ImportError:
+            from research_output import normalize_issue_references
+            from scoped_research_adapter import (_packet, SCHEMA, PINNED_CATALOG_PATH,
+                PINNED_CATALOG_SHA256, validate_output)
+            from research_runtime import freeze_catalog, write_model_catalog
+            from research_packet import stage_packet
+        folder=Path(meta['metadata_path']).resolve().parent
+        def read(key,name):
+            if parts and key in parts:return parts[key]
+            path=folder/name
+            if path.is_symlink() or not path.is_file():raise ValueError('Processing lineage artifact missing')
+            return path.read_bytes()
+        raw_bytes=read('raw','unaccepted-output.json');events_bytes=read('events','events.json')
+        failure_bytes=read('failure','failure-metadata.json');receipt_bytes=read('receipt','processing-receipt.json')
+        projection_bytes=read('failure_projection','failure-projection.json')
+        result_bytes=read('result','result.json')
+        hashes={'failure_metadata':hashlib.sha256(failure_bytes).hexdigest(),
+            'unaccepted_output':hashlib.sha256(raw_bytes).hexdigest(),'events':hashlib.sha256(events_bytes).hexdigest(),
+            'processing_receipt':hashlib.sha256(receipt_bytes).hexdigest()}
+        original=json.loads(failure_bytes.decode('utf-8'));raw=json.loads(raw_bytes.decode('utf-8'))
+        events=json.loads(events_bytes.decode('utf-8'));receipt=json.loads(receipt_bytes.decode('utf-8'))
+        job=job or json.loads(row['package']);binding=db.execute('SELECT * FROM scoped_job_bindings WHERE job_id=?',(row['job_id'],)).fetchone()
+        dispatch=db.execute('SELECT * FROM scoped_dispatches WHERE job_id=? AND attempt=?',(row['job_id'],row['attempt'])).fetchone()
+        auth_row,auth=self._authorization(db,dispatch['batch_id']) if dispatch else (None,None)
+        auth_history=db.execute('SELECT * FROM scoped_authorizations WHERE batch_id=? ORDER BY version',(dispatch['batch_id'],)).fetchall() if dispatch else []
+        spec=next((x for x in auth['jobs'] if x['job_id']==row['job_id']),None) if auth else None
+        packet=_packet(self.root,job);manifest=validate_package(self.root,job)
+        expected_projection=_json(_failure_projection(original,failure_bytes)).encode('utf-8')+b'\n'
+        hashes['failure_projection']=hashlib.sha256(projection_bytes).hexdigest()
+        if (projection_bytes!=expected_projection or meta.get('lineage_sha256')!=hashes or
+            meta.get('processing_receipt')!={'path':'processing-receipt.json','sha256':hashes['processing_receipt']}):
+            raise ValueError('Processing lineage hashes or safe failure projection differ')
+        fixed={'job_id':row['job_id'],'batch_id':dispatch['batch_id'],'case_id':binding['case_id'],
+            'authorization_version':dispatch['authorization_version'],'authorization_sha256':dispatch['authorization_sha256'],
+            'dispatch_id':dispatch['dispatch_id'],'attempt':dispatch['attempt'],'role':dispatch['role'],'model':dispatch['model'],
+            'stage':dispatch['stage'],'package_sha256':row['package_sha256'],'scope_sha256':scope_sha256(job),
+            'target_sha256':job['target']['sha256'],'packet_sha256':packet['sha256'],'catalog_sha256':PINNED_CATALOG_SHA256,
+            'input_manifest_sha256':hashlib.sha256(_json(manifest).encode('utf-8')).hexdigest(),
+            'staged_input_manifest':original.get('staged_input_manifest'),
+            'failure_metadata_sha256':hashes['failure_metadata'],'raw_output_sha256':hashes['unaccepted_output'],
+            'failure_projection_sha256':hashes['failure_projection'],
+            'events_sha256':hashes['events'],'processed_result_sha256':hashlib.sha256(result_bytes).hexdigest(),
+            'algorithm_sha256':hashlib.sha256(Path(__file__).resolve().with_name('research_output.py').read_bytes()).hexdigest()}
+        if not dispatch or not binding or not auth_history or any(receipt.get(k)!=v for k,v in fixed.items()):
+            raise ValueError('Processing receipt bindings differ')
+        dispatch_auth_row = next((a for a in auth_history if a['version']==dispatch['authorization_version']),None)
+        dispatch_auth = json.loads(dispatch_auth_row['manifest']) if dispatch_auth_row else None
+        if (dispatch_auth_row is None or dispatch_auth_row['sha256']!=dispatch['authorization_sha256'] or
+            package_sha256(dispatch_auth)!=dispatch_auth_row['sha256']):
+            raise ValueError('Historical dispatch authorization is missing or changed')
+        expires=_stamp(dispatch_auth['expires_at'])
+        normalized_at=_stamp(meta.get('normalization_timestamp')) if meta.get('normalization_timestamp') else None
+        if (binding['batch_id']!=dispatch['batch_id'] or spec is None or spec['package_sha256']!=row['package_sha256'] or
+            spec['scope_sha256']!=scope_sha256(job) or dispatch['package_sha256']!=row['package_sha256'] or
+            dispatch['model']!=MODELS[job['role']] or dispatch['role']!=job['role'] or dispatch['invocation_claimed_at'] is None or
+            _stamp(dispatch['consumed_at'])>expires or normalized_at is None or normalized_at>expires or
+            not (_stamp(original['started_at'])<=_stamp(original['completed_at'])<=normalized_at<=datetime.now(timezone.utc))):
+            raise ValueError('Processing dispatch or authorization is no longer current')
+        previous_manifest=dispatch_auth
+        expected_version=dispatch['authorization_version']
+        for successor_row in auth_history:
+            if successor_row['version']<=expected_version:
+                continue
+            successor=json.loads(successor_row['manifest'])
+            old_fixed={k:v for k,v in previous_manifest.items() if k not in {'version','jobs'}}
+            new_fixed={k:v for k,v in successor.items() if k not in {'version','jobs'}}
+            if (successor['version']!=expected_version+1 or old_fixed!=new_fixed or
+                len(previous_manifest['jobs'])!=len(successor['jobs'])):
+                raise ValueError('Authorization successor widened or changed scope')
+            for before,after in zip(previous_manifest['jobs'],successor['jobs']):
+                before_fixed={k:v for k,v in before.items() if k!='package_sha256'}
+                after_fixed={k:v for k,v in after.items() if k!='package_sha256'}
+                if before_fixed!=after_fixed or (before['package_sha256'] is not None and before!=after):
+                    raise ValueError('Authorization successor changed a named job')
+                if before['package_sha256'] is None and after['package_sha256'] is not None:
+                    successor_job=db.execute('SELECT * FROM scoped_jobs WHERE job_id=?',(after['job_id'],)).fetchone()
+                    if successor_job is None:
+                        raise ValueError('Authorization successor bound an unknown package')
+                    successor_package=json.loads(successor_job['package'])
+                    validate_package(self.root,successor_package)
+                    if (successor_job['package_sha256']!=after['package_sha256'] or
+                        package_sha256(successor_package)!=after['package_sha256'] or
+                        scope_sha256(successor_package)!=after['scope_sha256']):
+                        raise ValueError('Authorization successor package binding differs')
+                    if after['target_from_job_id']==row['job_id']:
+                        predecessor_meta=meta
+                    else:
+                        predecessor=db.execute('SELECT * FROM scoped_jobs WHERE job_id=?',(after['target_from_job_id'],)).fetchone()
+                        if predecessor is None or not predecessor['metadata_path']:
+                            raise ValueError('Authorization successor predecessor is unavailable')
+                        predecessor_meta=self._checkpoint(predecessor,Path(predecessor['metadata_path']),db=db)
+                    if (successor_package['target']['sha256']!=predecessor_meta.get('output_sha256') or
+                        (self.root/successor_package['target']['path']).resolve()!=Path(predecessor_meta['result_path']).resolve()):
+                        raise ValueError('Authorization successor target differs from predecessor result')
+            if package_sha256(successor)!=successor_row['sha256']:
+                raise ValueError('Authorization successor hash differs')
+            expected_version=successor['version'];previous_manifest=successor
+        if (original.get('reason')!='invalid-output-input-or-unauthorized-event' or original.get('returncode')!=0 or
+            original.get('authentication')!='chatgpt-subscription' or
+            original.get('input_manifest')!=manifest or
+            original.get('packet_sha256')!=packet['sha256']):
+            raise ValueError('Original failure evidence is not eligible or has changed')
+        live_flags=(original.get('engineering_test') is False and original.get('runtime_verified_live') is True)
+        fixture_flags=(receipt.get('engineering_fixture_only') is True and original.get('engineering_test') is True and
+            original.get('runtime_verified_live') is False and original.get('actual_model') is None and
+            original.get('models_observed')==[])
+        if not (live_flags or fixture_flags):
+            raise ValueError('Original runtime identity flags differ')
+        usage=_validate_sanitized_events(events)
+        import tempfile
+        with tempfile.TemporaryDirectory(prefix='cr2-revalidate-check-') as tmp:
+            stage=Path(tmp).resolve();staged=stage_packet(packet,SCHEMA,stage)
+            catalog=freeze_catalog(self.root/PINNED_CATALOG_PATH,expected_sha256=PINNED_CATALOG_SHA256)
+            mc=write_model_catalog(stage,catalog);staged[mc.name]=hashlib.sha256(mc.read_bytes()).hexdigest()
+            if staged!=original.get('staged_input_manifest'):raise ValueError('Staged input manifest differs')
+        normalized,edit_receipt=normalize_issue_references(raw)
+        if not edit_receipt['edits'] or receipt.get('normalization')!=edit_receipt:raise ValueError('Normalization edits differ')
+        try:
+            validate_output(raw,job,self.root)
+        except ValueError:
+            pass
+        else:
+            raise ValueError('Original strict validation failure does not reproduce')
+        result=validate_output(normalized,job,self.root)
+        if _json(result).encode('utf-8')+b'\n'!=result_bytes or meta.get('output_sha256')!=hashlib.sha256(result_bytes).hexdigest():
+            raise ValueError('Strictly validated normalized result differs')
+        preserved_identity=('job_id','role','dispatch_id','model_requested','reasoning_effort','speed','authentication',
+            'actual_model','actual_model_verification','models_observed','backend_independently_verified','started_at',
+            'completed_at','engineering_test','runtime_verified_live','attempt','target_sha256',
+            'packet_sha256','returncode','validation_stage','validation_error_class','validation_detail','input_manifest',
+            'staged_input_manifest','prompt_sha256','packet_utf8_bytes','original_bytes','prompt_utf8_bytes')
+        if (meta.get('reason')!='analytical-output-validated' or meta.get('dispatch_id')!=dispatch['dispatch_id'] or
+            meta.get('attempt')!=dispatch['attempt'] or any(meta.get(key)!=original.get(key) for key in preserved_identity) or
+            receipt.get('normalization_timestamp') != meta.get('normalization_timestamp') or
+            meta.get('continuation')!=result['continuation'] or meta.get('retry_decision_required') is not False or
+            meta.get('independent_review') is not (job['role']=='review') or
+            receipt.get('engineering_fixture_only') is not fixture_flags or meta.get('normalization_timestamp') is None or
+            meta.get('usage')!=usage):
+            raise ValueError('Final processing execution metadata differs')
+        return True
 
     def status(self):
         with self._db() as db:
@@ -391,6 +839,8 @@ class ScopedQueue:
             result = validate_output(json.loads(result_path.read_text(encoding="utf-8")), job, self.root)
             if result["status"] != meta.get("status") or meta.get("continuation_required") != needs_continuation(result):
                 raise ValueError("Checkpoint result status differs")
+            if meta.get('processing_receipt'):
+                self._validate_processing_lineage(row, meta, db, job=job)
         elif meta.get("continuation_required") is not True:
             raise ValueError("Unvalidated completion refused")
         return meta
@@ -409,6 +859,15 @@ class ScopedQueue:
         db.execute("UPDATE scoped_dispatches SET status='needs-retry-decision',reason=?,completed_at=? WHERE job_id=? AND attempt=?", (reason, _now(), row["job_id"], row["attempt"]))
 
     def _recover_interrupted(self, db):
+        # Metadata is the final filesystem write. A rollback can therefore leave
+        # a valid processed checkpoint attached to the old retry-decision row.
+        for row in db.execute("SELECT * FROM scoped_jobs WHERE status='needs-retry-decision' AND metadata_path IS NOT NULL").fetchall():
+            try:
+                candidate=self._checkpoint(row,Path(row['metadata_path']),db=db)
+            except (OSError,ValueError,KeyError,TypeError):
+                continue
+            if candidate.get('processing_receipt') and candidate.get('reason')=='analytical-output-validated':
+                self._finish_revalidation(db,row,candidate)
         for row in db.execute("SELECT * FROM scoped_jobs WHERE status='running'").fetchall():
             valid, invalid = [], False
             root = self.folder / "jobs" / row["package_sha256"]

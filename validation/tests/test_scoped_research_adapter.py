@@ -101,6 +101,8 @@ class ScopedAdapterTests(unittest.TestCase):
         self.assertIn("--strict-config", args)
         self.assertIn("shell_tool", args)
         self.assertNotIn(str(self.root), kwargs["input"])
+        self.assertIn("blocking_issues must contain exact existing issue IDs only", kwargs["input"])
+        self.assertIn("Every existing unresolved material finding or gap must also appear by exact ID", kwargs["input"])
         self.claim.assert_called_once()
         folder = Path(meta["metadata_path"]).parent
         self.assertFalse((folder / "candidate.json").exists())

@@ -197,6 +197,14 @@ all files independently so it can safely serve deterministic packet callers.
     except ImportError:
         from scoped_research_adapter import _stamp, _evidence_stamp
     retrospective = any(_evidence_stamp(s['accessed_at']) > _stamp(job['as_of']) for s in job['sources'])
+    if 'processing' in job['target']:
+        try:
+            from .research_processing import processing_context
+        except ImportError:
+            from research_processing import processing_context
+        processing = processing_context(root, job['target']['processing'], target)
+        content['target']['processing'] = processing['context']
+        manifest.update(processing['input_manifest'])
     content['historical_reconstruction'] = retrospective
     content['capture_label'] = ('Retrospective capture; earlier publication metadata is not contemporaneous project observation.'
         if retrospective else 'Dated capture metadata; not a current-price or analytical acceptance certification.')

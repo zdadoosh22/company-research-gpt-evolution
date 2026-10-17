@@ -1,0 +1,71 @@
+{
+  "observed_at": "2026-10-17T16:10:09.105230+00:00",
+  "scope": "Parent direct engineering review of retained-output revalidation and public review lineage, not full engine release or analytical acceptance.",
+  "disposition": "accepted for bounded integration and explicit retained-case application under original authorization",
+  "files": [
+    {
+      "path": "tools/research_processing.py",
+      "sha256": "27e569e88739fd210d3f37b47a7b55163f6bb3a75d0e64cebaa1aecdf2614125"
+    },
+    {
+      "path": "tools/research_packet.py",
+      "sha256": "53d4cffec97bed087a6c29802c7b1bdfc4ca4100826ece77de8219ac68a9aa7a"
+    },
+    {
+      "path": "tools/research_records.py",
+      "sha256": "af3122e4401c1d14195c62e12393245a07718a077880cf1dd2d43840eff68e28"
+    },
+    {
+      "path": "tools/research_engine.py",
+      "sha256": "b8e5cb993c86141c644ec392f4593ffb9bec31ae9abd2750d1226e8ea9672c8d"
+    },
+    {
+      "path": "tools/scoped_research_adapter.py",
+      "sha256": "a4802395139be0afde9f3b9236a85e58636776e26f0d0452c7f4fea9379abf49"
+    },
+    {
+      "path": "tools/scoped_research_queue.py",
+      "sha256": "0dbe9169672dbd7f2933b43d93b248c4c8fd0d83ef30bd992dbd481e6d6f2142"
+    },
+    {
+      "path": "validation/tests/test_research_processing.py",
+      "sha256": "6f1c38483828d9c2016ece28c334c035b190980de409b198c94021b883642fad"
+    },
+    {
+      "path": "validation/tests/test_research_revalidation.py",
+      "sha256": "ea6a59af8c521a5755d3857cae388cb16335fc3e89629180cfa763dfd3855c79"
+    },
+    {
+      "path": "validation/tests/test_scoped_research_adapter.py",
+      "sha256": "fc57465700a1f96476f42b5b5b8d41a41dcbaca89d2f1bef9204afa6faaadae9"
+    },
+    {
+      "path": "validation/tests/test_scoped_research_queue.py",
+      "sha256": "5db03d6385214a4b93d462e8e7a12637970df08830d0e55c77a048c5605eb473"
+    },
+    {
+      "path": "workflows/research-engine.md",
+      "sha256": "ec39f8b33b3ae74f0b4f9b683e7cdf01ae9bafb17ad15a88426733093d357242"
+    }
+  ],
+  "regression": "454run,453passed,one existing Windows symlink-permission skip; exact source snapshot unchanged during final run",
+  "resolved_findings": [
+    "Idempotent five-write boundary replay and post-metadata rollback recovery without inference or attempt refund",
+    "Historical authorization checked against original dispatch plus constrained append-only successors; new normalization cannot run after expiry",
+    "Explicit target processing refs enter packet, source IDs unchanged, archive relocation preserves bytes",
+    "Public record replay retains safe original route facts, normalized bytes, edits, events, timestamps and fixture flag; private metadata retained locally only"
+  ],
+  "parent_repairs": [
+    "Require named batch even on idempotent return",
+    "Retained raw must still fail strict validation; no zero-edit normalization",
+    "Derive continuation/retry/independent-review completion consistently without changing original evidence",
+    "Require provenance hash and staged-manifest shapes, model-reporting consistency and chronology",
+    "Connect exact repaired predecessor to downstream packet and record; reject omission and tamper"
+  ],
+  "limitations": [
+    "Public digests/projections do not independently prove worker authorship, private dispatch authority, absence of hidden calls, authentic wall-clock timestamps or backend identity.",
+    "Fixtures exercise control paths and remain engineering-only; real-case review/disposition still required.",
+    "Full419requirement acceptance and frozen retrieval failure remain unresolved; no final software release.",
+    "Delegate68tests were dated before parent repairs; final454test snapshot is authoritative for this code."
+  ]
+}

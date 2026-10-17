@@ -8,7 +8,7 @@ import unittest
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "tools"))
-from scoped_research_queue import ScopedQueue, package_sha256, scope_sha256, verify_dispatch
+from scoped_research_queue import ScopedQueue, package_sha256, scope_sha256, verify_dispatch, _validate_sanitized_events
 from scoped_research_adapter import MODELS
 import test_scoped_research_adapter as adapter_tests
 
@@ -102,6 +102,16 @@ class ScopedQueueTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.run_job()
         self.assertEqual(self.calls, [])
+
+    def test_sanitized_event_validator_preserves_usage_without_reconstructing_raw_items(self):
+        usage = {"input_tokens": 10, "cached_input_tokens": 2, "output_tokens": 4}
+        events = [{"type": "thread.started"}, {"type": "item.completed", "item_type": "agent_message"},
+                  {"type": "turn.completed", "usage": usage}]
+        self.assertEqual(_validate_sanitized_events(events), [usage])
+        unsafe = copy.deepcopy(events)
+        unsafe[1]["item_type"] = "tool_call"
+        with self.assertRaises(ValueError):
+            _validate_sanitized_events(unsafe)
 
     def test_selected_job_leaves_older_unrelated_job_untouched(self):
         older = copy.deepcopy(self.job)
@@ -240,6 +250,19 @@ class ScopedQueueTests(unittest.TestCase):
             return {"status": "scoped-analysis-complete", "reason": "analytical-output-validated", "continuation_required": False,
                     "metadata_path": str(kwargs["state_root"] / "fake" / "metadata.json")}
         self.assertEqual(self.run_job(adapter=fabricated)["status"], "needs-retry-decision")
+
+    def test_revalidation_rejects_non_output_failure_without_changing_attempt_or_metadata(self):
+        self.prepare()
+        self.assertEqual(self.run_job(adapter=self.failed)["status"], "needs-retry-decision")
+        before = self.queue.status()
+        failure_path = Path(before["jobs"][0]["metadata_path"])
+        failure_bytes = failure_path.read_bytes()
+        with self.assertRaisesRegex(ValueError, "eligible for live deterministic revalidation"):
+            self.queue.revalidate_failed_output(job_id="j1", batch_id="b1")
+        after = self.queue.status()
+        self.assertEqual(after["cases"][0]["consumed_attempts"], before["cases"][0]["consumed_attempts"])
+        self.assertEqual(after["dispatches"], before["dispatches"])
+        self.assertEqual(failure_path.read_bytes(), failure_bytes)
 
     def test_result_schema_validated_not_just_hash(self):
         self.prepare()
