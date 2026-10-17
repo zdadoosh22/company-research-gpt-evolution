@@ -261,6 +261,16 @@ class ScopedAdapterTests(unittest.TestCase):
         self.assertFalse(meta['analytical_approval'])
         self.assertTrue(meta['retry_decision_required'])
 
+    def test_invented_target_source_failure_remains_diagnosable_not_accepted(self):
+        candidate = copy.deepcopy(self.output)
+        candidate['sources'].append({'source_id':'frozen-target','location':'Invented target alias'})
+        meta = self.run_job(runner=self.fake(output=candidate))
+        folder = Path(meta['metadata_path']).parent
+        self.assertEqual(meta['validation_detail'], 'Unknown archived source/location')
+        self.assertEqual(json.loads((folder/'unaccepted-output.json').read_text()), candidate)
+        self.assertFalse((folder/'result.json').exists())
+        self.assertFalse(meta['selected_route_completed'])
+
     def test_empty_or_duplicate_coverage_rejected(self):
         self.output["coverage"].append(copy.deepcopy(self.output["coverage"][0]))
         with self.assertRaises(ValueError):

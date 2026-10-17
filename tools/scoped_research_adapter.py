@@ -421,6 +421,21 @@ def run_scoped_job(project_root, job, *, state_root=None, runner=subprocess.run,
         "No trading approval, allocations or actionable alerts. Unknown publication snapshots "
         "prove captured bytes only, not historical public availability. Return the prefix output "
         "schema exactly. Never infer backend identity. Frozen packet:\n" + packet["bytes"].decode("utf-8"))
+    references = [{"source_id": source["source_id"], "location": location}
+        for source in job["sources"] for location in source["read_locations"]]
+    role_contract = ("You are the analysis worker, not an independent reviewer of your own output. "
+        "Use partial status if any category is withheld or any material blocker/withheld conclusion remains, "
+        "even when your bounded assignment is finished. A limited supported negative conclusion may coexist "
+        "with withheld economic conclusions. " if job["role"] == "analysis" else
+        "You are the fresh independent review worker, challenging the exact analysis target. "
+        "A finished review may use review-complete while reporting unresolved material findings; "
+        "that is completion of review, not acceptance of the author's economics. ")
+    prompt = (role_contract + "Every string field must be nonempty. Copy source_id/location pairs "
+        "exactly from this manifest, never paraphrase locations or invent IDs. The target, methodology "
+        "and schema are context, not additional citable source IDs. Covered categories and supported "
+        "conclusions require qualifying evidence; historical nonqualifying context cannot establish "
+        "current financial facts. Allowed reference pairs: " + json.dumps(references, ensure_ascii=False) +
+        "\n" + prompt)
     capabilities = runtime_capabilities(executable, project_root=root, runner=runner, environ=environ)
     engineering_test = runner is not subprocess.run
     meta = {"schema_version": 2, "job_id": job["job_id"], "role": job["role"],
@@ -539,7 +554,8 @@ def run_scoped_job(project_root, job, *, state_root=None, runner=subprocess.run,
         # Trusted validator messages are useful; do not retain arbitrary raw
         # process output, paths or credential-bearing exception details.
         detail = str(exc)
-        if re.fullmatch(r"[A-Za-z][A-Za-z0-9 ,;().-]{0,159}", detail):
+        if (re.fullmatch(r"[A-Za-z][A-Za-z0-9 ,;().-]{0,159}", detail) or
+                detail in {"Unknown archived source/location", "Execution/allocation instructions outside scope"}):
             try:
                 _no_credentials(detail, environ)
                 meta["validation_detail"] = detail
