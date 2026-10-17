@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "engine-revalidation-20261017-complete",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "revalidation-20261017-r001",
+  "phase": "complete",
+  "created_at": "2026-10-17T01:42:56.202492+00:00",
+  "observed_at": "2026-10-17T01:42:56.202492+00:00",
+  "origin": "Bounded engineering assignment from parent; fixture-only implementation and no live queue application.",
+  "request": "Implement explicit deterministic revalidation of retained raw failed output through the current queue, with immutable failure and receipt lineage in exports and research records.",
+  "work": [
+    "Unintegrated deterministic revalidation prototype added to isolated worktree.",
+    "62 focused queue/adapter tests reported passed; parent independently reran35queue tests, all passed.",
+    "No successful revalidation/recovery/export/record/target-packet path verified. No actual queue or model work."
+  ],
+  "outcome": "partial",
+  "artifacts": [
+    {
+      "path": "tools/scoped_research_queue.py",
+      "sha256": "4aa1dc7f393ae8ad01ff1a8e31ac1ee2d3d9e9444181abdfccf7838f2c1e981b"
+    },
+    {
+      "path": "tools/scoped_research_adapter.py",
+      "sha256": "2dc4f4a25198eeb951df75bfbc77ce14ae1134f1ebe43022a2dfb40bfc4b35b5"
+    },
+    {
+      "path": "tools/research_engine.py",
+      "sha256": "b8e5cb993c86141c644ec392f4593ffb9bec31ae9abd2750d1226e8ea9672c8d"
+    },
+    {
+      "path": "validation/tests/test_scoped_research_queue.py",
+      "sha256": "5db03d6385214a4b93d462e8e7a12637970df08830d0e55c77a048c5605eb473"
+    },
+    {
+      "path": "validation/tests/test_scoped_research_adapter.py",
+      "sha256": "fc57465700a1f96476f42b5b5b8d41a41dcbaca89d2f1bef9204afa6faaadae9"
+    }
+  ],
+  "checks": [],
+  "blockers": {
+    "resolved": [],
+    "introduced": [
+      "Success/recovery/export/record/target-packet provenance unverified"
+    ],
+    "unchanged": [
+      "No accepted analysis or Astra review; one case call remains"
+    ]
+  },
+  "readiness_impact": {
+    "label": "not assessed",
+    "requirements": [],
+    "artifact_paths": [],
+    "explanation": "Incomplete isolated engineering prototype only."
+  },
+  "verified_gate_changes": [],
+  "next_action": "Parent review and preserve prototype. Implement and test success/recovery/export/record/target processing provenance before integration or use.",
+  "unknowns": [
+    "Operational private queue state is out of scope and will not be inspected or used."
+  ],
+  "supersedes": []
+}

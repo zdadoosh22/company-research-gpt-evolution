@@ -1,0 +1,22 @@
+# Retained-response prototype review — 17 October 2026
+
+Disposition: **not accepted for integration or real-case use**. The authoritative installed code remains commit `09c415d4e2003e738a5799ab0f8b724572358dc0`. An uncommitted engineering draft remains in `C:/Users/aidan/cr2-engine`; its exact patch is archived alongside this record. No queue normalization, new dispatch, model call, accepted analysis or trading action occurred during this stage.
+
+The parent read the queue, export, adapter, packet, record-validation and runtime interfaces; inspected successive draft changes; and identified several corrected draft faults: treating sanitized events as raw CLI events, expecting failed metadata to contain token usage, inconsistent helper arguments, a local datetime import shadowing earlier use, expiry handling, and unsafe publication of full private failure metadata. The last two need successful-path verification rather than acceptance from inspection alone.
+
+The parent independently ran the final draft's queue suite (35 tests) and adapter suite (27 tests): all62 passed. These establish existing behavior plus narrow negative controls and sanitized-event handling. They **do not exercise successful revalidation**. The installed pure helper's earlier8tests and the authoritative437-test regression remain separate evidence; this draft was not part of that full regression.
+
+## Material outstanding findings
+
+1. **No verified success/recovery path.** Metadata is replaced before the transaction finishes while the job remains `needs-retry-decision`. A crash/rollback after replacement can leave validated metadata with the old job state; existing recovery selects running jobs. An idempotent fixture must demonstrate how this state is recognized without spending or manual metadata alteration.
+2. **Authorization successor regression.** Draft lineage validation requires the latest authorization version/hash to equal the original dispatch authorization. Binding the future review target creates a legitimate successor authorization. Subsequent predecessor validation would then reject the normalized analysis. Check the original dispatch against its historical authorization, and separately validate any permitted successor's unchanged budget/expiry/scope and exact predecessor binding. Do not weaken dispatch provenance or permit widened authority.
+3. **Reviewer input and public record lineage are incomplete.** The target still accepts only `{path, sha256}`. No explicit processing reference enters the frozen review packet; `research_records._execution` does not yet replay or validate the public receipt/raw/failure projection. Current export code alone cannot establish the required chain. No hidden sidecar discovery or out-of-packet prompt input is acceptable.
+4. **Positive and adversarial coverage is missing.** Add success, idempotence, every interrupted-write boundary, expired/stale authorization, authorization successor, hash/identity/flag mutation, exported replay/tampering, normalization chronology and unchanged inference-accounting fixtures. Keep the exact retained original and strict validator unchanged. The operation must reject every unrelated defect and cannot invent analytical outcomes.
+
+The prior `REVALIDATION-DESIGN-r001.md` remains the intended boundary, not implemented acceptance. Complete and directly review these findings before considering application to the third raw response. Three real Sol attempts remain consumed; the single remaining real inference attempt remains reserved for Astra High. No extra Sol, correction/recheck, new batch, credit spending or automatic fallback is authorized.
+
+## Checkpoint provenance
+
+The delegate accidentally reused the parent stage's task/turn/start identity in the isolated worktree, producing different start contents under the same event filename. Its own partial completion was recorded locally. Those isolated bytes are preserved under `isolated-prototype-checkpoints/` **as non-authoritative evidence**, and must not be imported into the original project's checkpoint directory. The parent original start and matching completion govern this stage. Before any later worktree merge, preserve/relocate the conflicting untracked isolated input/event; never overwrite the authoritative originals or silently treat the two starts as equivalent.
+
+No complete requirements/release acceptance is claimed. The frozen retrieval failure remains unchanged, and all trading/operational boundaries remain in place.
