@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-10-17T00:48:11.552384+00:00",
+  "outside": "C:\\Users\\aidan\\AppData\\Local\\Temp\\cr2-mxc-outside-jcd_04x7\\outside.txt",
+  "expected_bytes": "USER-TEMP-OUTSIDE",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Access is denied.\n",
+  "stage": "C:\\Windows\\Temp\\cr2-mxc-policy-hnhf0cpz",
+  "inference_calls": 0,
+  "limitation": "Windows-directory sentinel was readable through minimal OS read roots; separate user-temp sentinel tests user data boundary."
+}

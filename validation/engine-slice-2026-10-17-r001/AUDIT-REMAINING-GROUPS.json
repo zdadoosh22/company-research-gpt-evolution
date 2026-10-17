@@ -1,0 +1,865 @@
+{
+  "groups": [
+    {
+      "ids": [
+        "BRIEF-L0008",
+        "BRIEF-L0014"
+      ],
+      "status": "verified",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "validation/engine-slice-2026-10-17-r001/checkpoint-start.json"
+      ],
+      "notes": "The dated brief and current start record identify the resumed bounded assignment. Repository records do not establish UI Goal/Plan mode, so that setting is not inferred."
+    },
+    {
+      "ids": [
+        "BRIEF-L0018",
+        "BRIEF-L0024"
+      ],
+      "status": "blocked",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "validation/engine-slice-2026-10-15-r001/ENGINEERING-REVIEW-20261016-r005.md"
+      ],
+      "notes": "Full autonomous implementation/review and the end-to-end researcher through disposition remain incomplete: no actual Sol/Astra case cycle or accepted release, and the required worker route is still unavailable."
+    },
+    {
+      "ids": [
+        "BRIEF-L0026"
+      ],
+      "status": "verified",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "AGENTS.md",
+        "workflows/research-engine.md"
+      ],
+      "notes": "The mandate remains the isolated £300 sleeve, days-to-months horizon and no frequency target. Repository boundaries preserve separation of research, portfolio and execution; this establishes no current opportunity or allocation."
+    },
+    {
+      "ids": [
+        "BRIEF-L0036",
+        "BRIEF-L0047"
+      ],
+      "status": "verified",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "AGENTS.md",
+        "workflows/research-engine.md"
+      ],
+      "notes": "The source excludes intraday/options/borrowing/new leverage and says a positive trade, profit, trial duration and private-account access are separate outcomes. Instructions retain full-thesis workflow and separate gates."
+    },
+    {
+      "ids": [
+        "BRIEF-L0044"
+      ],
+      "status": "blocked",
+      "paths": [
+        "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r008.txt",
+        "validation/engine-slice-2026-10-15-r001/RETRIEVAL-FINDINGS.md",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Although dated fixture regression covers much of the slice, recovery/status integration still has no real worker cycle; the frozen retrieval preservation miss remains. Whole-slice acceptance has unresolved core work; 412 passed and one symlink-permission scenario was skipped."
+    },
+    {
+      "ids": [
+        "BRIEF-L0045"
+      ],
+      "status": "verified",
+      "paths": [
+        "README.md",
+        "workflows/research-engine.md",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Launch/status commands, limitations, rollback guidance and next bounded action are documented. Documentation existence does not certify release."
+    },
+    {
+      "ids": [
+        "BRIEF-L0055"
+      ],
+      "status": "verified",
+      "paths": [
+        "AGENTS.md",
+        "validation/engine-slice-2026-10-15-r001/PREFLIGHT.md",
+        "validation/engine-slice-2026-10-15-r001/PREFLIGHT.json",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Dated preflight/continuation records preserve authority and supersession. This audit read the current instructions, brief, inventory/assessment and relevant engine docs; it did not repeat earlier baseline probes."
+    },
+    {
+      "ids": [
+        "BRIEF-L0059"
+      ],
+      "status": "verified",
+      "paths": [
+        "validation/engine-slice-2026-10-15-r001/PROTECTED-ARTIFACTS.json",
+        "validation/engine-slice-2026-10-15-r001/PROTECTED-VERIFICATION-20261016-r002.json",
+        "companies/",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "The baseline claim is immutable company runs and source registers. The dated protected-artifact inventory/verification records preserved families and hashes; it is not a fresh review of every claim."
+    },
+    {
+      "ids": [
+        "BRIEF-L0060"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/evidence.py",
+        "tools/finance.py",
+        "validation/tests/test_evidence.py",
+        "validation/tests/test_finance.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Baseline claim: financial/evidence utilities. Specific fixtures cover units/sign, incompatible periods and missing-versus-zero (test_units_and_sign, test_period_mismatch, test_missing_is_not_zero, test_ttm_incompatible); not every calculation or analytical conclusion."
+    },
+    {
+      "ids": [
+        "BRIEF-L0061"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/scoped_research_adapter.py",
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/SCOPED-QUEUE-CONTROLS.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Baseline claim: explicit adapter and durable queue. Named selection, retry, call ceiling and identity uncertainty have fixtures (test_selected_job_leaves_older_unrelated_job_untouched, test_four_attempt_ceiling_includes_failures, test_unknown_identity_consumed_without_backend_claim). No actual subscription worker call is shown."
+    },
+    {
+      "ids": [
+        "BRIEF-L0062"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/observation.py",
+        "tools/observation_research.py",
+        "validation/tests/test_observation_service.py",
+        "validation/tests/test_observation_research.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Baseline claim: deterministic observation service. Temporary backup/recovery and no-fallback fixtures cover selected paths (test_backup_and_interrupted_recovery, test_model_fallback_rejected); they do not prove current live operation. Integration r004 says no restart or live DB migration."
+    },
+    {
+      "ids": [
+        "BRIEF-L0063"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/decision_readiness.py",
+        "tools/decision_pipeline.py",
+        "tools/decision_lane.py",
+        "validation/tests/test_decision_readiness.py",
+        "validation/tests/test_gate_projection.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Baseline claim: artifact verifier, dormant instruction contract and paper pipeline. Hash-bound validators and simulated phone/short-trial rejection have fixture coverage (test_current_validator_required_and_typed, test_simulated_phone_and_short_trial_rejected). No live activation follows."
+    },
+    {
+      "ids": [
+        "BRIEF-L0064",
+        "BRIEF-L0065"
+      ],
+      "status": "verified",
+      "paths": [
+        "validation/engine-slice-2026-10-15-r001/PREFLIGHT.md",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "companies/",
+        "monitoring/",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Dated records preserve partial pilots/parked cases and describe the RSS revision prototype as not durably/live accepted. Neither is treated as complete or as release evidence."
+    },
+    {
+      "ids": [
+        "BRIEF-L0067"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_memory.py",
+        "tools/scoped_research_queue.py",
+        "tools/scoped_research_adapter.py",
+        "tools/decision_readiness.py",
+        "validation/tests/test_research_memory.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "The brief requires reuse of capabilities that meet the slice rather than rebuilding to a diagram. The named modules are extended and their local contracts have fixture suites; this does not establish the whole architecture."
+    },
+    {
+      "ids": [
+        "BRIEF-L0074"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "validation/tests/test_research_memory.py",
+        "validation/tests/test_engine_rollback.py",
+        "validation/tests/test_observation_service.py",
+        "validation/engine-slice-2026-10-15-r001/INTEGRATION-20261016-r004.json",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Requirement: keep test databases/fixtures separate from live observation/portfolio state. Tests use temporary projects/databases; r004 records no live DB migration/restart. No private operational DB was inspected."
+    },
+    {
+      "ids": [
+        "BRIEF-L0078"
+      ],
+      "status": "verified",
+      "paths": [
+        "AGENTS.md",
+        "validation/engine-slice-2026-10-15-r001/INTEGRATION-20261016-r004.json",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Dated integration/continuation records report no push, account connection, activation, purchase, paid API or external message. This is a process fact, not a test."
+    },
+    {
+      "ids": [
+        "BRIEF-L0080"
+      ],
+      "status": "verified",
+      "paths": [
+        "AGENTS.md",
+        "workflows/research-engine.md",
+        "methodology/current.json",
+        "methodology/principles.md",
+        "validation/engine-slice-2026-10-15-r001/PROTECTED-VERIFICATION-20261016-r002.json",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Project instructions match the command boundaries and protected verification records the approved methodology unchanged; no methodology rewrite or release promotion is evidenced."
+    },
+    {
+      "ids": [
+        "BRIEF-L0093"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/scoped_research_adapter.py",
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_observation_research.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/engine-slice-2026-10-17-r001/SYNTHETIC-TOOL-MANIFEST.json",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Unknown model identity is preserved by test_no_actual_identity_is_inferred_from_requested_model and test_unknown_identity_consumed_without_backend_claim. Current tools=[] evidence came from unauthenticated cr2_synthetic with zero inference; it is not subscription identity/isolation proof."
+    },
+    {
+      "ids": [
+        "BRIEF-L0095"
+      ],
+      "status": "verified",
+      "paths": [
+        "AGENTS.md",
+        "workflows/research-engine.md",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "The ordinary Chat companion/handoff loop is documented as removed from the critical path; repository artifacts and durable continuation are used directly. Historical handoffs remain provenance."
+    },
+    {
+      "ids": [
+        "BRIEF-L0101"
+      ],
+      "status": "blocked",
+      "paths": [
+        "tools/scoped_research_queue.py",
+        "tools/research_packet.py",
+        "tools/research_records.py",
+        "tools/decision_readiness.py",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "validation/engine-slice-2026-10-17-r001/MXC-WORKER-PROFILE.json",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Queue recovery, packet staging, record bridge, read-only gates, four-call ledger, FTS5 and checkpoints have specific fixture coverage. The accepted list also needs a real isolated worker route; r007 still marks it unavailable. MXC command canaries do not establish hosted inference tools/subscription execution."
+    },
+    {
+      "ids": [
+        "BRIEF-L0102"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "validation/engine-slice-2026-10-17-r001/MXC-MINIMAL-FILESYSTEM.json",
+        "validation/engine-slice-2026-10-17-r001/SYNTHETIC-TOOL-MANIFEST.json",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "The source rejects substitution/fallback and requires deterministic contract/argument/packet smoke checks (test_runtime_unavailable_never_calls_auth_or_worker, test_model_substitution_refused). Current no-network/tools=[] canaries are synthetic; no live route probe or identity is claimed."
+    },
+    {
+      "ids": [
+        "BRIEF-L0106"
+      ],
+      "status": "blocked",
+      "paths": [
+        "tools/research_memory.py",
+        "tools/research_packet.py",
+        "tools/scoped_research_queue.py",
+        "tools/research_records.py",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "tools/RESEARCH-MEMORY.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "This compound clause combines four-call scope/reuse/compact packet with optional correction deltas, companyfacts, verified-cost friction and library route. The implemented subset has fixture evidence; JSON Patch is omitted, companyfacts is absent, and no verified cost schedule exists. No real worker/case cycle completed; optional routes are not asserted as capabilities."
+    },
+    {
+      "ids": [
+        "BRIEF-L0107"
+      ],
+      "status": "deferred",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "AGENTS.md",
+        "workflows/research-engine.md"
+      ],
+      "notes": "Prefix-cache savings claims, bot-bypass access and cloud migration are explicitly rejected/deferred; Windows observation setup and off-device recovery remain separate future scope."
+    },
+    {
+      "ids": [
+        "BRIEF-L0111"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_memory.py",
+        "tools/research_checkpoint.py",
+        "tools/research_records.py",
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_research_memory.py",
+        "validation/tests/test_research_checkpoint.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "The architecture calls for Python/SQLite/lightweight local assets and focused modules, without another framework/server/database/queue. These local modules and their fixture interfaces implement that design; live operational availability is not claimed."
+    },
+    {
+      "ids": [
+        "BRIEF-L0119",
+        "BRIEF-L0120",
+        "BRIEF-L0121",
+        "BRIEF-L0122",
+        "BRIEF-L0123",
+        "BRIEF-L0125"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_checkpoint.py",
+        "tools/research_records.py",
+        "tools/decision_readiness.py",
+        "validation/tests/test_research_checkpoint.py",
+        "validation/tests/test_research_records.py",
+        "validation/tests/test_gate_projection.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Separate task/research/review/trade/activation states and their non-equivalence are coded; fixtures test execution outcomes, negative findings, parked cases and ten gates (test_all_execution_outcomes_stay_distinct_from_trade_acceptance, test_review_can_finish_with_material_negative_findings, test_full_parked_fixture_is_not_trade_acceptance). No real case/activation is shown."
+    },
+    {
+      "ids": [
+        "BRIEF-L0134"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_packet.py",
+        "tools/research_records.py",
+        "validation/tests/test_research_packet.py",
+        "validation/tests/test_research_records.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Packet clause: source identity/hash/location/content, calculations/methodology/history/gaps. Exact passage/hash, explicit incompatible gaps and packet reproduction have fixture coverage; no real worker packet was analyzed."
+    },
+    {
+      "ids": [
+        "BRIEF-L0136"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_records.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_research_records.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Typed result contracts cover claims, evidence, assumptions, limitations and disposition; fixture controls include material findings, gaps, coverage and unknown costs. Synthetic schema validation establishes no company conclusion."
+    },
+    {
+      "ids": [
+        "BRIEF-L0140"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_checkpoint.py",
+        "tools/research_release.py",
+        "tools/decision_readiness.py",
+        "validation/tests/test_research_checkpoint.py",
+        "validation/tests/test_research_release.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Projection references current version-bound evidence/status/time/expiry/invalidation. Tamper regression, expiry and no-pointer controls are tested; no actual release pointer exists."
+    },
+    {
+      "ids": [
+        "BRIEF-L0142"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_records.py",
+        "tools/research_memory.py",
+        "tools/research_checkpoint.py",
+        "validation/tests/test_research_records.py",
+        "validation/tests/test_research_memory.py",
+        "validation/tests/test_research_checkpoint.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Record/checkpoint schemas validate stable ids, versions, times, origins, provenance, unknowns, supersession/disposition; tests cover immutable versions, chronology, unknown dates, tampering and duplicate events. Projection is derived, not authoritative."
+    },
+    {
+      "ids": [
+        "BRIEF-L0146"
+      ],
+      "status": "verified",
+      "paths": [
+        "validation/engine-slice-2026-10-15-r001/REQUIREMENTS.json",
+        "validation/engine-slice-2026-10-15-r001/REQUIREMENT-EVIDENCE-20261016-r007.json",
+        "validation/engine-slice-2026-10-17-r001/AUDIT-GROUPS.json",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "The initial inventory and dated r007 assessment preserve source ids/status/evidence; audit-group files are separate coordinator inputs and do not modify the matrix."
+    },
+    {
+      "ids": [
+        "BRIEF-L0150"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_records.py",
+        "tools/research_packet.py",
+        "validation/tests/test_research_records.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Request resolution requires exact entity/security, coverage and stopping conditions; test_request_identity_and_coverage_cannot_be_relaxed and test_paths_hashes_and_method_before_call exercise fixture bindings. No real case is selected."
+    },
+    {
+      "ids": [
+        "BRIEF-L0151",
+        "BRIEF-L0195",
+        "BRIEF-L0204"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_packet.py",
+        "tools/research_memory.py",
+        "tools/extract.py",
+        "validation/tests/test_research_packet.py",
+        "validation/tests/test_research_memory.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Saved-source capture/hash/dedup and byte preservation have fixture coverage (test_loaded_bytes_must_still_match_verified_file, test_source_tampering_after_import_is_rejected, test_exact_passage_headers_footnotes_and_hashes_are_frozen). The interface consumes explicit saved sources; no network download or live acquisition is demonstrated."
+    },
+    {
+      "ids": [
+        "BRIEF-L0196"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_records.py",
+        "tools/research_packet.py",
+        "validation/tests/test_research_records.py",
+        "validation/tests/test_research_packet.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Filing/entity/security binding is validated by request/packet schemas; test_request_identity_and_coverage_cannot_be_relaxed and test_direct_call_rejects_future_scope_publication_and_access cover fixture refusals. No current filing was fetched."
+    },
+    {
+      "ids": [
+        "BRIEF-L0197",
+        "BRIEF-L0206"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/extract.py",
+        "tools/research_memory.py",
+        "tools/research_packet.py",
+        "validation/tests/test_research_packet.py",
+        "validation/tests/test_research_memory.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Extraction location and table heading/column/period/unit/footnote preservation are exercised by test_exact_passage_headers_footnotes_and_hashes_are_frozen and test_table_exact_lines_units_and_headers_preserved. This does not validate every format/source."
+    },
+    {
+      "ids": [
+        "BRIEF-L0152",
+        "BRIEF-L0198",
+        "BRIEF-L0199",
+        "BRIEF-L0201"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_memory.py",
+        "tools/RESEARCH-MEMORY.md",
+        "validation/tests/test_research_memory.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "FTS/history filters, scope/period/unit compatibility, supersession, affected links and stale handling are implemented; direct fixtures include test_wrong_entity_security_question_type_review_status, test_period_basis_scope_and_unit_mismatch_fail_closed, test_affected_links_work_in_both_directions_and_preserve_limits and test_immutable_successor_supersedes_only_after_actual_availability. Unlabelled semantic opposition remains outside the narrow index."
+    },
+    {
+      "ids": [
+        "BRIEF-L0202"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/scoped_research_queue.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Named queue selection, persisted authorization, retry and attempt accounting have fixture coverage (test_run_requires_both_names_and_recorded_authorization, test_selected_job_leaves_older_unrelated_job_untouched, test_four_attempt_ceiling_includes_failures). Actual model usage is unavailable; no real case call occurred."
+    },
+    {
+      "ids": [
+        "BRIEF-L0217"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/scoped_research_adapter.py",
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/engine-slice-2026-10-17-r001/SYNTHETIC-TOOL-MANIFEST.json",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Requested/reported model and verification limitations are represented; test_review_requested_route_honest_unknown_backend and test_unknown_identity_consumed_without_backend_claim prevent identity fabrication. Actual model/backend/reasoning cycle remains unknown; synthetic provider evidence is not subscription proof."
+    },
+    {
+      "ids": [
+        "BRIEF-L0223"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "tools/research_records.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Missing source/location/value stays explicit and blocks unsupported continuation in test_unknown_source_or_location, test_missing_value_stays_null_and_blocks and test_material_findings_block_conclusions. No actual acquisition or next reasoning pass occurred."
+    },
+    {
+      "ids": [
+        "BRIEF-L0242"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/observation_research.py",
+        "tools/scoped_research_queue.py",
+        "tools/research_records.py",
+        "validation/tests/test_observation_research.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_research_records.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Batch authorization is explicit; the observation path has no automatic source-triggered call/fallback. No verified cost schedule exists, so costs remain null and the optional friction screen is withheld as required."
+    },
+    {
+      "ids": [
+        "BRIEF-L0246",
+        "BRIEF-L0248"
+      ],
+      "status": "verified",
+      "paths": [
+        "validation/engine-slice-2026-10-15-r001/USER-CLARIFICATION-20261016-r002.md",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "validation/engine-slice-2026-10-17-r001/checkpoint-start.json",
+        "workflows/research-engine.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "The old 500-credit authority is spent and does not renew; current start explicitly says no new credit spending. Dated records prohibit purchases/top-ups/APIs/fallback. This records authority, not exact per-task attribution."
+    },
+    {
+      "ids": [
+        "BRIEF-L0250"
+      ],
+      "status": "verified",
+      "paths": [
+        "validation/engine-slice-2026-10-17-r001/checkpoint-start.json",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Current dated start records ordinary allowance refreshed at 0%; r007 earlier recorded 94% used. Per-task token/credit measurements are unavailable and remain so; percentages, tokens and credits are distinct."
+    },
+    {
+      "ids": [
+        "BRIEF-L0252"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/scoped_research_queue.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "validation/engine-slice-2026-10-17-r001/checkpoint-start.json",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Explicit decision before retry, no timer/fallback, and safe stopping at quota/runtime failure have fixture coverage (test_failure_requires_explicit_decision_and_no_timer, test_retry_cannot_run_without_permitted_continuation, test_quota_model_timeout_defer_without_fallback). Current start records no further credit spending."
+    },
+    {
+      "ids": [
+        "BRIEF-L0163"
+      ],
+      "status": "evaluated-failed",
+      "paths": [
+        "validation/engine-slice-2026-10-15-r001/RETRIEVAL-PROTOCOL.json",
+        "validation/engine-slice-2026-10-15-r001/RETRIEVAL-FINDINGS.md",
+        "validation/engine-slice-2026-10-15-r001/retrieval-results/COMPARISON.json",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Frozen question/cutoff/source/config/rubric and separate no-worker outputs are preserved; the held-out route still misses one required passage (4/5). Gold/query were not altered; no edge or efficiency claim follows."
+    },
+    {
+      "ids": [
+        "BRIEF-L0167",
+        "BRIEF-L0278"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_records.py",
+        "validation/tests/test_research_records.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Dossier/disposition schemas preserve missing evidence, material gaps, park rationale and reopening conditions; fixtures test_full_parked_fixture_is_not_trade_acceptance, test_supported_disposition_refuses_finished_review_with_material_gap and test_material_findings_block_conclusions. No real company was analyzed or parked."
+    },
+    {
+      "ids": [
+        "BRIEF-L0173"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_records.py",
+        "tools/research_memory.py",
+        "validation/tests/test_research_records.py",
+        "validation/tests/test_research_memory.py",
+        "validation/engine-slice-2026-10-15-r001/PROTECTED-VERIFICATION-20261016-r002.json",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Immutable versions, source hash checks and preservation of original bytes have fixture coverage; the dated protected verification records original project artifacts unchanged at its cutoff."
+    },
+    {
+      "ids": [
+        "BRIEF-L0174"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_memory.py",
+        "tools/research_checkpoint.py",
+        "validation/tests/test_research_memory.py",
+        "validation/tests/test_research_checkpoint.py",
+        ".gitignore",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Private state-root conventions and private/path-escape refusals are coded/tested by test_private_path_and_path_escape_refused and test_private_and_escaping_inputs_are_refused. No operational DB was inspected."
+    },
+    {
+      "ids": [
+        "BRIEF-L0181",
+        "BRIEF-L0185"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/run.ps1",
+        "tools/research_memory.py",
+        "tools/scoped_research_queue.py",
+        "tools/scoped_research_adapter.py",
+        "tools/decision_readiness.py",
+        "validation/engine-slice-2026-10-15-r001/COMMAND-SMOKE-20261016.json",
+        "validation/tests/test_research_memory.py",
+        "validation/tests/test_scoped_research_queue.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "The scriptable interface reuses existing command contracts for retrieval, queue/batch, checkpoint/status/evaluation. Dated help/argument smoke and unit fixtures exercise interfaces; this does not mean a real case command ran."
+    },
+    {
+      "ids": [
+        "BRIEF-L0187"
+      ],
+      "status": "blocked",
+      "paths": [
+        "tools/research_packet.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_research_packet.py",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "validation/engine-slice-2026-10-17-r001/MXC-WORKER-PROFILE.json",
+        "validation/engine-slice-2026-10-17-r001/SYNTHETIC-TOOL-MANIFEST.json",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Compact hashed authorized passages/prefix have fixture coverage; the clause also requires disabling file-hunting tools where the real runtime supports it. Synthetic MXC command canaries show file/network policy only; customprovider tools=[] is unauthenticated and not the subscription route. Hosted tools remain unverified, so actual isolation is blocked."
+    },
+    {
+      "ids": [
+        "BRIEF-L0292"
+      ],
+      "status": "verified",
+      "paths": [
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "validation/tests/test_research_records.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Dated continuation says no real case was selected and zero real attempts were used; pipeline branch tests are synthetic, not a positive trade or real rejection/park."
+    },
+    {
+      "ids": [
+        "BRIEF-L0426"
+      ],
+      "status": "blocked",
+      "paths": [
+        "tools/research_records.py",
+        "validation/tests/test_research_records.py",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "This row requires a real scoped review of security/claims, holding-window resilience, drivers, assumptions, limitations and contrary evidence. Coverage/schema fixtures cannot replace absent Sol High analysis and Astra High review."
+    },
+    {
+      "ids": [
+        "BRIEF-L0432"
+      ],
+      "status": "blocked",
+      "paths": [
+        "tools/decision_readiness.py",
+        "validation/tests/test_decision_readiness.py",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "Fourteen-day observation and executed fault evidence remain live prerequisites; test_simulated_phone_and_short_trial_rejected and test_missing_executed_fault_case_blocks_trial reject fixture substitutes. No accepted real trial exists."
+    },
+    {
+      "ids": [
+        "BRIEF-L0453"
+      ],
+      "status": "deferred",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "workflows/research-engine.md"
+      ],
+      "notes": "The source explicitly defers dashboard/event sourcing, hooks, EdgarTools absent extraction failure, skills, vault, RSS promotion, embeddings/graphs/freshness, integrations, cloud trial migration, bot bypass, broad old pilots and off-device recovery."
+    },
+    {
+      "ids": [
+        "BRIEF-L0455"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_memory.py",
+        "tools/scoped_research_queue.py",
+        "tools/scoped_research_adapter.py",
+        "validation/tests/test_research_memory.py",
+        "validation/tests/test_scoped_research_adapter.py",
+        "validation/engine-slice-2026-10-15-r001/ENGINEERING-REVIEW-20261016-r005.md",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "The clause requires existing retrieval paths, source provenance, approved methodology and no silent fallback without a new framework/bundle. Exact source/hash and no-substitution fixtures support these software boundaries; the review records no new framework/dependency/paid route."
+    },
+    {
+      "ids": [
+        "TEST-L0530-01"
+      ],
+      "status": "blocked",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "tools/research_records.py",
+        "validation/tests/test_research_records.py",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md"
+      ],
+      "notes": "Atomic requirement: challenge unsupported economic conclusions. Material-gap schema fixtures exist, but no dedicated demonstrated semantic challenge or real analytical review exists; no fixture proves a company's economics."
+    },
+    {
+      "ids": [
+        "TEST-L0530-02"
+      ],
+      "status": "blocked",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "tools/research_records.py",
+        "validation/tests/test_research_records.py",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md"
+      ],
+      "notes": "Atomic requirement: challenge incorrect expectation comparisons. Dossier records expectations and the parked fixture keeps them unknown, but no independent correctness check for a real comparison is recorded; the case/reviewer is absent."
+    },
+    {
+      "ids": [
+        "BRIEF-L0154"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "tools/research_checkpoint.py",
+        "validation/tests/test_research_checkpoint.py",
+        "planning/2026-10-14-research-engine-goal-brief-r002.md"
+      ],
+      "notes": "The architecture table requires deleting/rebuilding a projection to yield identical statuses. rebuild_projection reconstructs from events; test_delete_projection_rebuild_is_identical_at_same_cutoff covers the temporary-state behavior."
+    },
+    {
+      "ids": [
+        "BRIEF-L0155"
+      ],
+      "status": "deferred",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "workflows/research-engine.md"
+      ],
+      "notes": "The architecture row explicitly says dashboard, skills, hooks and external controls are not in this slice and do not block acceptance; static/rebuildable status is the selected form."
+    },
+    {
+      "ids": [
+        "BRIEF-L0193"
+      ],
+      "status": "verified",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "tools/research_packet.py",
+        "tools/research_memory.py"
+      ],
+      "notes": "This source row is the heading 'Use code for:'; its atomic capability rows are separately mapped in this file. The heading itself adds no distinct executable behavior."
+    },
+    {
+      "ids": [
+        "BRIEF-L0212"
+      ],
+      "status": "verified",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "tools/scoped_research_adapter.py",
+        "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md"
+      ],
+      "notes": "This source row is the heading 'Use the existing routes:'; route implementations/limitations are assessed separately. The actual subscription route and worker restrictions remain unavailable."
+    },
+    {
+      "ids": [
+        "BRIEF-L0227"
+      ],
+      "status": "verified",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "validation/engine-slice-2026-10-15-r001/USER-CLARIFICATION-20261016-r002.md",
+        "validation/engine-slice-2026-10-17-r001/checkpoint-start.json"
+      ],
+      "notes": "The brief's bounded-work authorization is documented. Current resumption adds no credit spending and this audit performs no model call; authorization text is not evidence that a model cycle occurred."
+    },
+    {
+      "ids": [
+        "BRIEF-L0232"
+      ],
+      "status": "implemented-fixture-tested",
+      "paths": [
+        "planning/2026-10-14-research-engine-goal-brief-r002.md",
+        "tools/scoped_research_queue.py",
+        "validation/tests/test_scoped_research_queue.py"
+      ],
+      "notes": "This source row introduces the batch call-limit bullets; the four-call cap is persisted and shared by the case. test_four_attempt_ceiling_includes_failures and test_versions_and_case_identity_cannot_reset_budget exercise fixture enforcement; no actual calls were made."
+    }
+  ]
+}

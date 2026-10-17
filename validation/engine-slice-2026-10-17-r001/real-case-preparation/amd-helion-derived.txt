@@ -1,0 +1,114 @@
+Introducing AMD Helion, Agentic AI Compute at Rack Scale :: Advanced Micro Devices, Inc. (AMD)
+Skip to main content
+Skip to section navigation
+Skip to footer
+Investor Relations
+IR Overview
+News & Events
+Press Releases
+IR Calendar
+Financial Analyst Day
+Annual Meeting of Stockholders
+Stock Data
+Stock Data
+Price History
+Stock Split History
+Analyst Coverage
+Transfer Agent
+Financial Information
+Financial Results
+SEC Filings
+Governance
+Board of Directors
+Leadership
+Board Committees
+Governance Documents
+Corporate Responsibility
+Contacts & FAQ
+Contacts
+Email Alerts
+FAQ
+Press Release
+News & Events
+News & Events
+Press Releases
+IR Calendar
+Financial Analyst Day
+Annual Meeting of Stockholders
+Introducing AMD Helion, Agentic AI Compute at Rack Scale
+October 12, 2026 9:00 am EDT
+Download as PDF
+News Highlights:
+AMD Helion lets customers tailor CPU core density, performance and power to agentic workloads, with CPU-only configurations for hyperscale deployments and integrated CPU/GPU configurations for enterprises.
+AMD Helion combines open hardware and software with an integrated token router that directs agents’ model calls across frontier and open-source models.
+SANTA CLARA, Calif., Oct. 12, 2026 (GLOBE NEWSWIRE) --
+AMD
+(NASDAQ: AMD) today introduced the AMD Helion agentic AI rack, an open blueprint for agentic AI infrastructure based on an Open Compute Project spec-design and powered by AMD compute.
+Building on the open-platform approach of the AMD Helios™ rackscale solution, AMD Helion is designed to provide partners and customers with the flexibility they need for agentic AI infrastructure. With AMD Helion, customers can match CPU performance, core density and power with GPU acceleration for the work their AI agents perform.
+“Agentic AI is not a single workload. It spans personal agents, enterprise applications, code execution and complex workflows, each with different compute requirements,” said Dan McNamara, senior vice president and general manager, Compute and Enterprise AI, AMD. “To do that takes optimized compute and infrastructure that can adapt to different workloads. With AMD Helion, we are bringing AMD EPYC™ performance, open software and flexible rack designs together so our partners can build systems around customer needs and make efficient use of available power.”
+AMD Helion’s OCP spec-based rack blueprint supports open software and can come in flexible configurations, including liquid- and air-cooled versions, allowing customers to create virtually any configuration needed for their needs. Some examples of this include:
+A CPU-only rack powered by 6th Gen AMD EPYC™ processors that can support up to 32,768 CPU cores. This rack is designed for hyperscale customers, providing dedicated capacity for agent execution and connections to separate model inference infrastructure.
+An all-in-one rack that combines AMD EPYC CPU nodes, AMD Instinct™ MI350P GPU nodes and general-purpose compute on one platform. This rack is designed to provide partners and customers an all-in-one concept for enterprise agentic AI.
+AMD Helion enables customers to deploy agentic AI in the IT infrastructure they already have, turning existing investments into a foundation for new AI capabilities. Partners can tailor CPU and GPU configurations to customer workloads, matching agent execution, model inference and supporting compute to each deployment’s performance, power and cost requirements.
+AMD plans to contribute the AMD Helion specification to OCP, making it available to the community for further development and adoption. AMD Helion agentic rack configurations are currently under development with ecosystem partners and are planned to be available in November 2026.
+Ecosystem Support
+AMD is helping shape the next phase of AI infrastructure through open, flexible platforms, a broad portfolio of workload-optimized compute and collaboration across the ecosystem. AMD Helion brings that approach to agentic AI, helping partners match software and compute to the work agents perform and giving customers flexibility to scale as their requirements evolve.
+“Agentic AI is changing what customers need from their infrastructure. It's not just about compute performance, but how the entire system is connected, managed and secured. Architectures like AMD Helion, combined with Cisco's full-stack infrastructure capabilities, can give customers greater flexibility to deploy, operate and scale agentic workloads into their environments as their needs evolve.” -
+Jeremy Foster, Senior Vice President and General Manager, Cisco Compute
+“Dell PowerRack gives customers choice without compromise, and our support for AMD Helion Agentic Rack Reference Design extends that promise to the next generation of agentic AI. By combining AMD's rack-scale architecture with Dell's proven engineering expertise, along with the flexibility to extend deployments with Dell PowerRack for Networking and Storage, we're giving customers a complete, validated path to deploy agentic compute at scale with the manageability and reliability they expect from Dell.” -
+Arun Narayanan, Senior Vice President, Compute and Networking, Dell Technologies
+“Hon Hai Technology Group continues to deepen its collaboration with AMD on AI infrastructure, supporting the new AMD Helion Agentic AI Rack reference design. Built on an open architecture, the platform combines 6th Gen AMD EPYC processors with flexible CPU and GPU configurations to address hyperscale data center and enterprise Agentic AI workloads. The Group will continue to leverage its strengths in rack-level system integration and global manufacturing, working with ecosystem partners to advance rack-scale Agentic AI solutions and accelerate next-generation AI infrastructure deployment.” –
+Hon Hai Technology Group
+“Next-generation AI workloads require scale, efficiency, and flexibility that open, rack-scale architectures deliver, as demonstrated by our recent customer agreement to deploy AMD Helios. For decades, HPE and AMD have jointly championed open standards, and we are continuing to advance those efforts with AMD Helion. Together, we are ushering in the next era of AI with open large-scale systems, enhanced with air-cooled and direct liquid-cooled networking, supported by decades of HPE expertise and innovation.” –
+Trish Damkroger, Senior Vice President and General Manager, HPC & AI Infrastructure Solutions, HPE
+“As agentic AI moves into production, customers need flexibility in how and where they deploy it. That’s at the core of the Lenovo Hybrid AI Advantage, and AMD Helion will give added versatility to meet customers where they are and support the workloads they want to run.” -
+Scott Patti, VP, Infrastructure Solutions Group, Lenovo
+“Agentic AI will require a range of system designs to serve different customer needs. AMD Helion provides an open blueprint that gives QCT the flexibility to tailor compute configurations and bring system design and customization expertise to those requirements.” - Mike Yang, President of QCT
+“Supermicro is accelerating the deployment of next-generation agentic AI infrastructure by bringing AMD’s Helion - the open, ORv3 compliant rack-scale architecture to market through our Data Center Building Block Solutions® (DCBBS). With our proven expertise in OCP accepted™ rack-scale design, integration, liquid cooling, software, and deployment services, we transform advanced Agentic AI architectures into production-ready solutions. Together with AMD, we enable customers to deploy faster, scale efficiently, and accelerate time to online for agentic AI.” -
+Vik Malyala, Chief Business Officer, Supermicro
+“AMD Helion provides an open, flexible foundation for agentic AI infrastructure. Wiwynn is excited to collaborate with AMD, bringing our expertise in rack-level integration and advanced cooling to help hyperscaler customers tailor systems that meet the demanding workloads, power requirements, and data center environments of the agentic AI era.” -
+William Lin, President and CEO, Wiwynn
+Supporting Resources
+Learn more about
+AMD Helion
+Learn more about
+AMD Instinct GPUs
+Learn more about
+AMD EPYC CPUs
+Follow AMD on
+LinkedIn
+Follow AMD on
+X
+About AMD
+AMD (NASDAQ: AMD) drives innovation in high-performance and AI computing to solve the world’s most important challenges. Today, AMD technology powers billions of experiences across cloud and AI infrastructure, embedded systems, AI PCs and gaming. With a broad portfolio of AI-optimized CPUs, GPUs, networking and software, AMD delivers full-stack AI solutions that provide the performance and scalability needed for a new era of intelligent computing. Learn more at
+www.amd.com
+.
+AMD, EPYC, Instinct and the AMD Arrow logo and the combination thereof are trademarks of Advanced Micro Devices, Inc. Other names are for informational purposes only and may be trademarks of their respective owners.
+CAUTIONARY STATEMENT
+This press release contains forward-looking statements concerning Advanced Micro Devices, Inc. (AMD) such as the features, functionality, performance, availability, timing and expected benefits of AMD Helion, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995. Forward-looking statements are commonly identified by words such as "would," "may," "expects," "believes," "plans," "intends," "projects" and other terms with similar meaning. Investors are cautioned that the forward-looking statements in this press release are based on current beliefs, assumptions and expectations, speak only as of the date of this press release and involve risks and uncertainties that could cause actual results to differ materially from current expectations. Such statements are subject to certain known and unknown risks and uncertainties, many of which are difficult to predict and are generally beyond AMD's control, that could cause actual results and other future events to differ materially from those expressed in, or implied or projected by, the forward-looking information and statements. Material factors that could cause actual results to differ materially from current expectations include, without limitation, the following: impact of government actions and regulations such as export regulations, national-security-based regulations, import tariffs, trade protection measures, and licensing requirements; competitive markets in which AMD’s products are sold; the cyclical nature of the semiconductor industry; market conditions of the industries in which AMD products are sold; AMD’s ability to introduce products on a timely basis with expected features and performance levels; loss of a significant customer; economic and market uncertainty; quarterly and seasonal sales patterns; AMD's ability to adequately protect its technology or other intellectual property; unfavorable currency exchange rate fluctuations; ability of third party manufacturers to manufacture AMD's products on a timely basis in sufficient quantities and using competitive technologies; availability of essential equipment, materials, components (such as memory supply), substrates or manufacturing processes; ability to achieve expected manufacturing yields for AMD’s products; AMD's ability to generate revenue from its semi-custom SoC products; potential security vulnerabilities; potential security incidents including IT outages, data loss, data breaches and cyberattacks; uncertainties involving the ordering and shipment of AMD’s products; AMD’s reliance on third-party intellectual property to design and introduce new products; AMD's reliance on third-party companies for design, manufacture and supply of motherboards, software, memory and other computer platform components; AMD's reliance on Microsoft and other software vendors' support to design and develop software to run on AMD’s products; AMD’s reliance on third-party distributors and add-in-board partners; impact of modification or interruption of AMD’s internal business processes and information systems; compatibility of AMD’s products with some or all industry-standard software and hardware; costs related to defective products; failure to maintain an efficient supply chain as customer demand changes; AMD's ability to rely on third party supply-chain logistics functions; AMD’s ability to effectively control sales of its products on the gray market; impact of climate change on AMD’s business; AMD’s ability to realize its deferred tax assets; potential tax liabilities; current and future claims and litigation; impact of environmental laws, conflict minerals related provisions and other laws or regulations; evolving expectations from governments, investors, customers and other stakeholders regarding corporate responsibility matters; issues related to the responsible use of AI; restrictions imposed by agreements governing AMD’s notes, the guarantees of Xilinx’s notes and the revolving credit agreement; AMD’s ability to satisfy financial obligations under guarantees, leases and other commercial commitments; impact of acquisitions, joint ventures and/or investments on AMD’s business and AMD’s ability to integrate acquired businesses; impact of any impairment of the combined company’s assets; political, legal and economic risks and natural disasters; future impairments of technology license purchases; AMD’s ability to attract and retain key employees; and AMD’s stock price volatility. Investors are urged to review in detail the risks and uncertainties in AMD’s Securities and Exchange Commission filings, including but not limited to AMD’s most recent reports on Forms 10-K and 10-Q.
+Contacts Aaron Grabein AMD Communications aaron.grabein@amd.com Liz Stine AMD Investor Relations investor.relations@amd.com
+Source: Advanced Micro Devices, Inc.
+Released October 12, 2026
+Investor Relations
+AMD
+AI
+Server
+Ryzen
+Radeon
+Embedded
+Gaming
+AMD
+Developers
+Gaming
+Terms and Conditions
+Privacy
+Trademarks
+Supply Chain Transparency
+Fair & Open Competition
+UK Tax Strategy
+Accessibility Statement
+Cookies Policy
+Cookies Settings
+©
+2026
+Advanced Micro Devices, Inc.

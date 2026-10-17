@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-10-17T01:01:44.064330+00:00",
+  "source_cache_fetched_at": "2026-10-17T01:00:25.272091100Z",
+  "selected_catalog_sha256": "3096c0167d00a39847a269fdcd81dfcf105c660f43e368421dc5655cee9e51d1",
+  "selected_models": [
+    "gpt-6.1-sol",
+    "gpt-6-astra"
+  ],
+  "scope": "Exact two model capability entries only. Account identity/ETag/auth/unrelatedmodels omitted. Full generic model metadata retained privately for reproducible CLI catalog pinning, not copied to published evidence.",
+  "catalog_format": "models object; accepted installed CLI schema still to be measured",
+  "private_file": "state/research-engine/runtime/selected-catalog-3096c0167d00a39847a269fdcd81dfcf105c660f43e368421dc5655cee9e51d1.json"
+}

@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-10-17T00:56:30.309257+00:00",
+  "command": "bundled Python -m unittest discover -s validation/tests -p test_scoped_research_adapter.py -v",
+  "run": 24,
+  "passed": 24,
+  "skipped": 0,
+  "seconds_reported_by_unittest": 1.717,
+  "outcome": "passed",
+  "source_sha256": "5e1be424ab88b3b31ccb899fe64ee5075366dddbed98b96710ca84313b1f787f",
+  "test_sha256": "ea142fd0363df5f68fcc17601cc35868c98f2e56aa48d42cb143b72d7ef42030",
+  "scope": "Focused adapter verification after capability metadata correction, not full regression, live runtime proof or analytical approval."
+}

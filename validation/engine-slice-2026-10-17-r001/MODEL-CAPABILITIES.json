@@ -1,0 +1,93 @@
+{
+  "observed_at": "2026-10-17T00:58:04.073776+00:00",
+  "cache_fetched_at": "2026-10-17T00:55:54.942917900Z",
+  "client_version": "0.162.0",
+  "source_kind": "CLI account model-capability cache; not auth material",
+  "selected_models": [
+    {
+      "slug": "gpt-6.1-sol",
+      "tool_mode": "code_mode_only",
+      "shell_type": "unified_exec",
+      "node_repl_disabled": false,
+      "apply_patch_tool_type": "freeform",
+      "web_search_tool_type": "text_and_image",
+      "supports_search_tool": true,
+      "include_apps_usage_instructions": false,
+      "experimental_supported_tools": [
+        "send_user_message_async",
+        "clock"
+      ],
+      "supported_reasoning_levels": [
+        {
+          "effort": "low",
+          "description": "Fast responses with lighter reasoning"
+        },
+        {
+          "effort": "medium",
+          "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+          "effort": "high",
+          "description": "Greater reasoning depth for complex problems"
+        },
+        {
+          "effort": "xhigh",
+          "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+          "effort": "max",
+          "description": "Maximum reasoning depth for the hardest problems"
+        },
+        {
+          "effort": "ultra",
+          "description": "Maximum reasoning with automatic task delegation"
+        }
+      ]
+    },
+    {
+      "slug": "gpt-6-astra",
+      "tool_mode": "code_mode_only",
+      "shell_type": "unified_exec",
+      "node_repl_disabled": false,
+      "apply_patch_tool_type": "freeform",
+      "web_search_tool_type": "text_and_image",
+      "supports_search_tool": true,
+      "include_apps_usage_instructions": false,
+      "experimental_supported_tools": [
+        "send_user_message_async",
+        "clock"
+      ],
+      "supported_reasoning_levels": [
+        {
+          "effort": "low",
+          "description": "Fast responses with lighter reasoning"
+        },
+        {
+          "effort": "medium",
+          "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+          "effort": "high",
+          "description": "Greater reasoning depth for complex problems"
+        },
+        {
+          "effort": "xhigh",
+          "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+          "effort": "max",
+          "description": "Maximum reasoning depth for the hardest problems"
+        },
+        {
+          "effort": "ultra",
+          "description": "Maximum reasoning with automatic task delegation"
+        }
+      ]
+    }
+  ],
+  "excluded": "Account identity, ETag, credentials, full instructions and unrelated models not copied.",
+  "limitations": [
+    "Capability labels do not independently verify backend identity or current call availability.",
+    "Code-mode-only metadata plus code-mode host disabled is a lead for a strictly text-only client route, not accepted production proof yet."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-10-17T00:57:05.427639+00:00",
+  "checked": 761,
+  "unchanged": 758,
+  "mismatches": [
+    "validation/tests/test_paper_study.py",
+    "validation/tests/test_scoped_research_adapter.py",
+    "validation/tests/test_scoped_research_queue.py"
+  ],
+  "expected_test_extensions_only": true,
+  "methodology_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+  "observation_config_sha256": "10c985e9dca1e1a255e951bebe79a2399b444b750e670252eadc86b141c86e14",
+  "scope": "All research/methodology/reviews/config protected bytes unchanged; three existing intentional test extensions preserved."
+}

@@ -1,0 +1,27 @@
+{
+  "observed_at": "2026-10-17T01:02:35.992501+00:00",
+  "captured_at_file_write_utc": "2026-10-17T01:02:18.482727+00:00",
+  "url": "https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale",
+  "publication_date": "2026-10-12",
+  "publication_time_status": "Date in body. Index separately reports09:00EDT; no precise body clock time invented.",
+  "original": {
+    "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/amd-helion-original.html",
+    "sha256": "1ae931464790b24d084811f511311781bf3ccb1abdc3b4b25a56586cf57af86f"
+  },
+  "derived": {
+    "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/amd-helion-derived.txt",
+    "sha256": "b78b97f323933a740abd89c914e6e7a2a1db0fcc484bf83dd9f6ad3f900cf52a"
+  },
+  "extraction": "stdlib HTMLParser, script/style suppressed, normalized nonempty text nodes. Prose only; no numerical/table certification.",
+  "article_lines": {
+    "start": 38,
+    "end": 88
+  },
+  "checks": {
+    "issuer_ticker_observed": true,
+    "date_observed": true,
+    "november_planning_statement_present": true
+  },
+  "preparation_error_preserved": "Initial location-register assembly expected a standalone final sentence but parser retained the cautionary statement as one text node, raising StopIteration. Original and derived bytes were already saved. Register rebuilt from contains-match; no refetch or text alteration.",
+  "status": "Preparation only; no reviewed company conclusion or inference."
+}

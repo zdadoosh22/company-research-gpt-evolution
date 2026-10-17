@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "id": "engine-resumption-20261017-complete",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "resumption-20261017-r001",
+  "phase": "complete",
+  "created_at": "2026-10-17T01:11:32.121872+00:00",
+  "observed_at": "2026-10-17T01:11:32.121872+00:00",
+  "origin": "User explicitly resumed on17October; ordinary allowance verified refreshed0percent, stored credits205.600657 unchanged; no renewed credit authority.",
+  "request": "Resume original bounded research engine goal with selective tiered agents and no further credit spending.",
+  "work": [
+    "Measured supported MXC command boundaries and pinned both requested model catalog entries; actual installed client offers no tools under shared restrictive config.",
+    "Integrated measured client verifier/worker factory, exact host-disabled diagnostic handling and explicit executable CLI selection; direct parent review repaired first-draft faults.",
+    "427-test full regression:426 pass, one permission skip. Preserved failed diagnostics and earlier nonexistent-test-module error.",
+    "Mapped all168 previously unassessed requirement IDs provisionally and directly reviewed exact source wording; successor authoritative matrix pending.",
+    "Captured three prospective issuer schedule notices and new12OctoberAMDHelion source; prepared request, scopes and decision brief without inference."
+  ],
+  "outcome": "partial",
+  "artifacts": [
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/CLIENT-RESTRICTION-ACCEPTANCE.md",
+      "sha256": "c7646c1a0efcad48f230201a7a35e4a4c57feb4fe494800423a0fcc452ab650c"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/ADAPTER-CLIENT-VERIFICATION-r004.json",
+      "sha256": "2cd33849fe721621e2488c2ae5602c8ba351ca2d44d1c803eeafbd664a87dd7c"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/ENGINEERING-REVIEW-r002.md",
+      "sha256": "9b9d37e9081e85dcbad793729a66ac3d86c8ffe6c4bbf0111efd9c1d816dd5d9"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REGRESSION-20261017-r001.txt",
+      "sha256": "eb00a5938c8d46420330d8e21a912f385e37666ecf4be80d5cdaf39ee9fb7296"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/PROTECTED-VERIFICATION.json",
+      "sha256": "4dd2fd9d0eca8c17e25cc87bbf53f63f260289061f85e3d19254a32170a4c368"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/AUDIT-GROUPS.json",
+      "sha256": "3af3104d4f47b032a8355ddbf02abcc0a73414616dfa6f2d8c189166960f745a"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/AUDIT-REMAINING-GROUPS.json",
+      "sha256": "107dc47d733af2bdb497ec52e6bc29874b4b29f34ee2a05d34a4ec954793c112"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/AUDIT-PARENT-DECISIONS.json",
+      "sha256": "caef517ec69d943f02a823ceacd4db8480c45d15e33bb42ce23a535b3856c4a0"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/PREPARATION-CHECK.json",
+      "sha256": "83b59e6312555af6c695bb3c38ce08897ea61d652b1f1cabf432ebd09aa37565"
+    }
+  ],
+  "checks": [
+    {
+      "id": "runtime-client",
+      "method": "Actual pinned installed CLI, selected full catalog and per-role synthetic loopback request capture; no inference/auth/forwarding",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-17-r001/CLIENT-RESTRICTION-ACCEPTANCE.md",
+        "validation/engine-slice-2026-10-17-r001/ADAPTER-CLIENT-VERIFICATION-r004.json"
+      ]
+    },
+    {
+      "id": "regression",
+      "method": "Bundled Python unittest discovery,427 run/426 pass/one Windows permission skip",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-17-r001/REGRESSION-20261017-r001.txt"
+      ]
+    },
+    {
+      "id": "protected",
+      "method": "761 protected bytes:758 unchanged and three previously intentional test extensions before this stage runtime test extension; no research/methodology/config change",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-17-r001/PROTECTED-VERIFICATION.json"
+      ]
+    }
+  ],
+  "blockers": {
+    "resolved": [
+      "Bounded client tool restriction verified; shared actual worker profile now selected"
+    ],
+    "introduced": [],
+    "unchanged": [
+      "Actual Sol/Astra case and disposition not yet performed",
+      "Final original-scope acceptance audit/matrix not yet integrated",
+      "Frozen retrieval recall remains4/5 per route"
+    ]
+  },
+  "readiness_impact": {
+    "label": "improved",
+    "requirements": [
+      "BRIEF-L0221",
+      "BRIEF-L0187"
+    ],
+    "artifact_paths": [
+      "validation/engine-slice-2026-10-17-r001/CLIENT-RESTRICTION-ACCEPTANCE.md",
+      "validation/engine-slice-2026-10-17-r001/ADAPTER-CLIENT-VERIFICATION-r004.json"
+    ],
+    "explanation": "Client-side runtime restriction established; no model availability, analytical, portfolio or live gate acceptance."
+  },
+  "verified_gate_changes": [],
+  "next_action": "Integrate reviewed code into authoritative folder, install exact noncredential catalog locally, back up explicit research queue, then run authorized bounded Sol/Astra case within four attempts and ordinary allowance only.",
+  "unknowns": [
+    "Subscription route availability/backend identity remain unverified.",
+    "Current funding/claims/expectations/price/costs for case remain incomplete."
+  ],
+  "supersedes": []
+}

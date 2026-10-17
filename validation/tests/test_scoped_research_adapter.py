@@ -10,7 +10,7 @@ import unittest
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "tools"))
-from scoped_research_adapter import MODELS, run_scoped_job, validate_output, validate_package
+from scoped_research_adapter import MODELS, run_scoped_job, validate_output, validate_package, _audit_events, DISABLED_HOST_DIAGNOSTIC
 
 
 class ScopedAdapterTests(unittest.TestCase):
@@ -85,8 +85,13 @@ class ScopedAdapterTests(unittest.TestCase):
         self.assertFalse(meta["gate_activation"])
         self.assertFalse(meta["analytical_approval"])
         args, kwargs = self.calls[1]
-        for arg in ("--ignore-user-config", "--ephemeral", "read-only", 'forced_login_method="chatgpt"', 'service_tier="default"', 'model_reasoning_effort="high"'):
+        for arg in ("--ignore-user-config", "--ignore-rules", "--ephemeral", 'default_permissions="cr2_packet"',
+                'windows.sandbox="mxc"', 'forced_login_method="chatgpt"', 'service_tier="default"', 'model_reasoning_effort="high"'):
             self.assertIn(arg, args)
+        self.assertNotIn("--sandbox", args)
+        self.assertIn('permissions.cr2_packet.network.enabled=false', args)
+        self.assertIn('permissions.cr2_packet.network.allow_local_binding=false', args)
+        self.assertIn("model_catalog.json", meta["staged_input_manifest"])
         self.assertEqual(kwargs["env"], {"PATH": "normal"})
         self.assertFalse(Path(kwargs["cwd"]).is_relative_to(self.root))
         self.assertFalse(Path(kwargs["cwd"]).exists())
@@ -304,6 +309,19 @@ class ScopedAdapterTests(unittest.TestCase):
         meta = self.run_job(runner=self.fake())
         self.assertEqual(len(self.calls), 1)
         self.assertFalse(meta["selected_route_completed"])
+
+    def test_exact_disabled_host_diagnostic_preserves_completion_but_not_other_errors(self):
+        diagnostic = {"type": "item.completed", "item": {"type": "error", "message": DISABLED_HOST_DIAGNOSTIC}}
+        completed = {"type": "turn.completed"}
+        audit, seen = _audit_events(json.dumps(diagnostic) + '\n' + json.dumps(completed), MODELS['analysis'])
+        self.assertEqual(audit[0]['item_type'], 'disabled-code-host-diagnostic')
+        for message in (DISABLED_HOST_DIAGNOSTIC + ' altered', 'Unrelated error'):
+            diagnostic['item']['message'] = message
+            with self.assertRaises(ValueError):
+                _audit_events(json.dumps(diagnostic) + '\n' + json.dumps(completed), MODELS['analysis'])
+        diagnostic['item']['message'] = DISABLED_HOST_DIAGNOSTIC
+        with self.assertRaises(ValueError):
+            _audit_events(json.dumps(diagnostic) + '\n' + json.dumps({'type':'turn.failed'}), MODELS['analysis'])
 
 
 if __name__ == "__main__":

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "batch_id": "amd-helion-20261017-r001-batch",
+  "case_id": "amd-helion-20261017-r001",
+  "version": 1,
+  "created_at": "2026-10-17T01:10:24.368345+00:00",
+  "expires_at": "2026-10-19T01:10:24.368345+00:00",
+  "purpose": "One bounded new-source commercialization/foundation and opportunity gate; independent Sol High/Astra High negative or positive challenge, manual trading remains disabled",
+  "provenance_refs": [
+    "planning/2026-10-14-research-engine-goal-brief-r002.md#sha256=be7ce1350158737a63167aceec98b82916f88457743e6ad6da72c647544343e0",
+    "validation\\engine-slice-2026-10-17-r001\\real-case-preparation\\DECISION-BRIEF.md"
+  ],
+  "call_limit": 4,
+  "permitted_continuation": [
+    "explicit-retry",
+    "material-correction",
+    "material-recheck"
+  ],
+  "jobs": [
+    {
+      "job_id": "amd-helion-20261017-r001-analysis",
+      "stage": "analysis",
+      "role": "analysis",
+      "model": "gpt-6.1-sol",
+      "scope_sha256": "a805031a2cc3983a30c43354ec0c62202e2ebf08ae96aba4f5df71a7a9b9c19c",
+      "package_sha256": "ef3c6b7ed23a1d776e95a4fd516c28a7513b67feed5b3538325ca727644793c6",
+      "target_from_job_id": null
+    },
+    {
+      "job_id": "amd-helion-20261017-r001-review",
+      "stage": "review",
+      "role": "review",
+      "model": "gpt-6-astra",
+      "scope_sha256": "1bc82b26f6e96f68e131a5fa6d4c8e2a17b1b195e72b7407f5975ecf1d1b9801",
+      "package_sha256": null,
+      "target_from_job_id": "amd-helion-20261017-r001-analysis"
+    },
+    {
+      "job_id": "amd-helion-20261017-r001-correction",
+      "stage": "correction",
+      "role": "analysis",
+      "model": "gpt-6.1-sol",
+      "scope_sha256": "8c5f2830895d5daa1b33f2aa9bc256e43c46a4228f6a9ad34b913c81252349a9",
+      "package_sha256": null,
+      "target_from_job_id": "amd-helion-20261017-r001-review"
+    },
+    {
+      "job_id": "amd-helion-20261017-r001-recheck",
+      "stage": "recheck",
+      "role": "review",
+      "model": "gpt-6-astra",
+      "scope_sha256": "8d04d654bdd11359b677bd0fdd031315502109355fd651ef2e604b3562ce2367",
+      "package_sha256": null,
+      "target_from_job_id": "amd-helion-20261017-r001-correction"
+    }
+  ]
+}

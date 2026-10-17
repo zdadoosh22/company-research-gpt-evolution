@@ -554,6 +554,8 @@ def main():
     commands.add_parser("status")
     commands.add_parser("recover")
     run = commands.add_parser("run-one")
+    run.add_argument("--executable", default="codex",
+        help="Concrete Codex executable; real dispatch requires the reviewed pinned Windows binary")
     retry = commands.add_parser("retry")
     for command in (run, retry):
         command.add_argument("--job-id", required=True)
@@ -576,7 +578,7 @@ def main():
     elif args.command == "retry":
         result = queue.retry(job_id=args.job_id, batch_id=args.batch_id, decision_id=args.decision_id, rationale=args.rationale, provenance_refs=args.provenance_ref)
     else:
-        result = queue.run_one(job_id=args.job_id, batch_id=args.batch_id)
+        result = queue.run_one(job_id=args.job_id, batch_id=args.batch_id, executable=args.executable)
     print(json.dumps(result, indent=2))
 
 

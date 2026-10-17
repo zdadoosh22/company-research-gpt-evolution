@@ -1,0 +1,111 @@
+test_client_capture_is_pinned_and_factory_uses_same_restrictions (test_research_runtime.ResearchRuntimeTests.test_client_capture_is_pinned_and_factory_uses_same_restrictions) ... ok
+test_client_timeout_fails_closed (test_research_runtime.ResearchRuntimeTests.test_client_timeout_fails_closed) ... ok
+test_duplicate_request_from_one_process_fails_closed (test_research_runtime.ResearchRuntimeTests.test_duplicate_request_from_one_process_fails_closed) ... ok
+test_extra_serialized_tool_fails_closed (test_research_runtime.ResearchRuntimeTests.test_extra_serialized_tool_fails_closed) ... ok
+test_missing_request_from_one_process_fails_closed (test_research_runtime.ResearchRuntimeTests.test_missing_request_from_one_process_fails_closed) ... ok
+test_missing_selected_model_catalog_entry_is_rejected (test_research_runtime.ResearchRuntimeTests.test_missing_selected_model_catalog_entry_is_rejected) ... ok
+test_models_catalog_filters_unrelated_models_and_preserves_selected_metadata (test_research_runtime.ResearchRuntimeTests.test_models_catalog_filters_unrelated_models_and_preserves_selected_metadata) ... ok
+test_non_code_mode_catalog_is_rejected (test_research_runtime.ResearchRuntimeTests.test_non_code_mode_catalog_is_rejected) ... ok
+test_present_null_or_object_tools_field_fails_closed (test_research_runtime.ResearchRuntimeTests.test_present_null_or_object_tools_field_fails_closed) ... ok
+test_staged_model_catalog_mutation_fails_closed (test_research_runtime.ResearchRuntimeTests.test_staged_model_catalog_mutation_fails_closed) ... ok
+test_unexpected_serialized_model_fails_closed (test_research_runtime.ResearchRuntimeTests.test_unexpected_serialized_model_fails_closed) ... ok
+test_unknown_model_catalog_is_rejected (test_research_runtime.ResearchRuntimeTests.test_unknown_model_catalog_is_rejected) ... ok
+test_worker_factory_rejects_changed_source_catalog_hash (test_research_runtime.ResearchRuntimeTests.test_worker_factory_rejects_changed_source_catalog_hash) ... ok
+test_actionable_and_credential_output_rejected (test_scoped_research_adapter.ScopedAdapterTests.test_actionable_and_credential_output_rejected) ... ok
+test_auth_refused (test_scoped_research_adapter.ScopedAdapterTests.test_auth_refused) ... ok
+test_direct_dispatch_bypass_refused (test_scoped_research_adapter.ScopedAdapterTests.test_direct_dispatch_bypass_refused) ... ok
+test_duplicate_dispatch_claim_prevents_inference (test_scoped_research_adapter.ScopedAdapterTests.test_duplicate_dispatch_claim_prevents_inference) ... ok
+test_empty_or_duplicate_coverage_rejected (test_scoped_research_adapter.ScopedAdapterTests.test_empty_or_duplicate_coverage_rejected) ... ok
+test_exact_disabled_host_diagnostic_preserves_completion_but_not_other_errors (test_scoped_research_adapter.ScopedAdapterTests.test_exact_disabled_host_diagnostic_preserves_completion_but_not_other_errors) ... ok
+test_finished_review_with_material_findings_still_needs_disposition (test_scoped_research_adapter.ScopedAdapterTests.test_finished_review_with_material_findings_still_needs_disposition) ... ok
+test_known_environment_secret_output_not_persisted (test_scoped_research_adapter.ScopedAdapterTests.test_known_environment_secret_output_not_persisted) ... ok
+test_legacy_read_compatible_but_new_dispatch_requires_compact (test_scoped_research_adapter.ScopedAdapterTests.test_legacy_read_compatible_but_new_dispatch_requires_compact) ... ok
+test_material_findings_block_conclusions (test_scoped_research_adapter.ScopedAdapterTests.test_material_findings_block_conclusions) ... ok
+test_missing_completion_event_refused (test_scoped_research_adapter.ScopedAdapterTests.test_missing_completion_event_refused) ... ok
+test_missing_value_stays_null_and_blocks (test_scoped_research_adapter.ScopedAdapterTests.test_missing_value_stays_null_and_blocks) ... ok
+test_model_substitution_refused (test_scoped_research_adapter.ScopedAdapterTests.test_model_substitution_refused) ... ok
+test_paths_hashes_and_method_before_call (test_scoped_research_adapter.ScopedAdapterTests.test_paths_hashes_and_method_before_call) ... ok
+test_private_account_json_cannot_be_authorized_by_hash (test_scoped_research_adapter.ScopedAdapterTests.test_private_account_json_cannot_be_authorized_by_hash) ... ok
+test_quota_model_timeout_defer_without_fallback (test_scoped_research_adapter.ScopedAdapterTests.test_quota_model_timeout_defer_without_fallback) ... ok
+test_review_requested_route_honest_unknown_backend (test_scoped_research_adapter.ScopedAdapterTests.test_review_requested_route_honest_unknown_backend) ... ok
+test_runtime_unavailable_never_calls_auth_or_worker (test_scoped_research_adapter.ScopedAdapterTests.test_runtime_unavailable_never_calls_auth_or_worker) ... ok
+test_safe_subscription_command_and_checkpoint (test_scoped_research_adapter.ScopedAdapterTests.test_safe_subscription_command_and_checkpoint) ... ok
+test_source_chronology (test_scoped_research_adapter.ScopedAdapterTests.test_source_chronology) ... ok
+test_target_mutation_refused (test_scoped_research_adapter.ScopedAdapterTests.test_target_mutation_refused) ... ok
+test_unauthorized_tool_and_instruction_events_fail_closed (test_scoped_research_adapter.ScopedAdapterTests.test_unauthorized_tool_and_instruction_events_fail_closed) ... ok
+test_unknown_or_mismatched_metadata_and_incomplete_extraction (test_scoped_research_adapter.ScopedAdapterTests.test_unknown_or_mismatched_metadata_and_incomplete_extraction) ... ok
+test_unknown_publication_snapshot_date_contract (test_scoped_research_adapter.ScopedAdapterTests.test_unknown_publication_snapshot_date_contract) ... ok
+test_unknown_source_or_location (test_scoped_research_adapter.ScopedAdapterTests.test_unknown_source_or_location) ... ok
+test_authorization_rejects_fake_models_and_invalid_limits (test_scoped_research_queue.ScopedQueueTests.test_authorization_rejects_fake_models_and_invalid_limits) ... ok
+test_completed_checkpoint_recovers_idempotently (test_scoped_research_queue.ScopedQueueTests.test_completed_checkpoint_recovers_idempotently) ... ok
+test_completed_job_cannot_dispatch_twice (test_scoped_research_queue.ScopedQueueTests.test_completed_job_cannot_dispatch_twice) ... ok
+test_dispatch_claimed_once_and_fabrication_refused (test_scoped_research_queue.ScopedQueueTests.test_dispatch_claimed_once_and_fabrication_refused) ... ok
+test_duplicate_completed_checkpoint_is_ambiguous (test_scoped_research_queue.ScopedQueueTests.test_duplicate_completed_checkpoint_is_ambiguous) ... ok
+test_enqueue_persisted_idempotent_no_execution (test_scoped_research_queue.ScopedQueueTests.test_enqueue_persisted_idempotent_no_execution) ... ok
+test_exception_redacted_and_attempt_consumed (test_scoped_research_queue.ScopedQueueTests.test_exception_redacted_and_attempt_consumed) ... ok
+test_expired_batch_never_dispatches (test_scoped_research_queue.ScopedQueueTests.test_expired_batch_never_dispatches) ... ok
+test_failure_requires_explicit_decision_and_no_timer (test_scoped_research_queue.ScopedQueueTests.test_failure_requires_explicit_decision_and_no_timer) ... ok
+test_four_attempt_ceiling_includes_failures (test_scoped_research_queue.ScopedQueueTests.test_four_attempt_ceiling_includes_failures) ... ok
+test_interruption_recovery_never_resubmits (test_scoped_research_queue.ScopedQueueTests.test_interruption_recovery_never_resubmits) ... ok
+test_legacy_migration_preserves_records_and_attempts (test_scoped_research_queue.ScopedQueueTests.test_legacy_migration_preserves_records_and_attempts) ... ok
+test_metadata_must_match_saved_file (test_scoped_research_queue.ScopedQueueTests.test_metadata_must_match_saved_file) ... ok
+test_metadata_only_success_rejected (test_scoped_research_queue.ScopedQueueTests.test_metadata_only_success_rejected) ... ok
+test_missing_recovery_output_requires_decision (test_scoped_research_queue.ScopedQueueTests.test_missing_recovery_output_requires_decision) ... ok
+test_model_substitution_checkpoint_rejected (test_scoped_research_queue.ScopedQueueTests.test_model_substitution_checkpoint_rejected) ... ok
+test_mutation_prevents_call (test_scoped_research_queue.ScopedQueueTests.test_mutation_prevents_call) ... ok
+test_owned_dispatch_parameters_cannot_be_overridden (test_scoped_research_queue.ScopedQueueTests.test_owned_dispatch_parameters_cannot_be_overridden) ... ok
+test_partial_output_needs_input_without_retry (test_scoped_research_queue.ScopedQueueTests.test_partial_output_needs_input_without_retry) ... ok
+test_result_schema_validated_not_just_hash (test_scoped_research_queue.ScopedQueueTests.test_result_schema_validated_not_just_hash) ... ok
+test_retry_cannot_run_without_permitted_continuation (test_scoped_research_queue.ScopedQueueTests.test_retry_cannot_run_without_permitted_continuation) ... ok
+test_retry_decision_idempotent_and_single_use (test_scoped_research_queue.ScopedQueueTests.test_retry_decision_idempotent_and_single_use) ... ok
+test_review_cannot_bind_arbitrary_target (test_scoped_research_queue.ScopedQueueTests.test_review_cannot_bind_arbitrary_target) ... ok
+test_review_target_binds_later_without_new_scope_or_budget (test_scoped_research_queue.ScopedQueueTests.test_review_target_binds_later_without_new_scope_or_budget) ... ok
+test_run_requires_both_names_and_recorded_authorization (test_scoped_research_queue.ScopedQueueTests.test_run_requires_both_names_and_recorded_authorization) ... ok
+test_saved_request_mismatch_rejected (test_scoped_research_queue.ScopedQueueTests.test_saved_request_mismatch_rejected) ... ok
+test_selected_job_leaves_older_unrelated_job_untouched (test_scoped_research_queue.ScopedQueueTests.test_selected_job_leaves_older_unrelated_job_untouched) ... ok
+test_success_without_claiming_dispatch_rejected (test_scoped_research_queue.ScopedQueueTests.test_success_without_claiming_dispatch_rejected) ... ok
+test_tampered_recovery_output_requires_decision (test_scoped_research_queue.ScopedQueueTests.test_tampered_recovery_output_requires_decision) ... ok
+test_unknown_identity_consumed_without_backend_claim (test_scoped_research_queue.ScopedQueueTests.test_unknown_identity_consumed_without_backend_claim) ... ok
+test_versions_and_case_identity_cannot_reset_budget (test_scoped_research_queue.ScopedQueueTests.test_versions_and_case_identity_cannot_reset_budget) ... ok
+test_worker_lock_prevents_second_job (test_scoped_research_queue.ScopedQueueTests.test_worker_lock_prevents_second_job) ... ok
+test_wrong_dispatch_identity_rejected (test_scoped_research_queue.ScopedQueueTests.test_wrong_dispatch_identity_rejected) ... ok
+test_ambiguous_disposition_lineages_require_reconciliation (test_research_records.RecordTests.test_ambiguous_disposition_lineages_require_reconciliation) ... ok
+test_backdated_disposition_cannot_use_later_analysis (test_research_records.RecordTests.test_backdated_disposition_cannot_use_later_analysis) ... ok
+test_full_parked_fixture_is_not_trade_acceptance (test_research_records.RecordTests.test_full_parked_fixture_is_not_trade_acceptance) ... ok
+test_packet_reproduced_and_schema_tamper_rejected (test_research_records.RecordTests.test_packet_reproduced_and_schema_tamper_rejected) ... ok
+test_projection_never_falls_back_from_broken_newer_disposition (test_research_records.RecordTests.test_projection_never_falls_back_from_broken_newer_disposition) ... ok
+test_request_identity_and_coverage_cannot_be_relaxed (test_research_records.RecordTests.test_request_identity_and_coverage_cannot_be_relaxed) ... ok
+test_review_can_finish_with_material_negative_findings (test_research_records.RecordTests.test_review_can_finish_with_material_negative_findings) ... ok
+test_review_wrong_target_and_same_dispatch_refused (test_research_records.RecordTests.test_review_wrong_target_and_same_dispatch_refused) ... ok
+test_supported_disposition_refuses_finished_review_with_material_gap (test_research_records.RecordTests.test_supported_disposition_refuses_finished_review_with_material_gap) ... ok
+test_tampered_dependency_regresses_projection (test_research_records.RecordTests.test_tampered_dependency_regresses_projection) ... ok
+test_targeted_correction_requires_material_review (test_research_records.RecordTests.test_targeted_correction_requires_material_review) ... ok
+test_translated_artifact_cannot_self_promote_to_accepted (test_research_records.RecordTests.test_translated_artifact_cannot_self_promote_to_accepted) ... ok
+test_unknown_cost_is_null_and_decimal_not_float (test_research_records.RecordTests.test_unknown_cost_is_null_and_decimal_not_float) ... ok
+test_unsupported_promotion_and_immutable_versions (test_research_records.RecordTests.test_unsupported_promotion_and_immutable_versions) ... ok
+test_direct_call_rejects_future_scope_publication_and_access (test_research_packet.ResearchPacketTests.test_direct_call_rejects_future_scope_publication_and_access) ... ok
+test_exact_passage_headers_footnotes_and_hashes_are_frozen (test_research_packet.ResearchPacketTests.test_exact_passage_headers_footnotes_and_hashes_are_frozen) ... ok
+test_late_capture_is_labelled_retrospective (test_research_packet.ResearchPacketTests.test_late_capture_is_labelled_retrospective) ... ok
+test_loaded_bytes_must_still_match_verified_file (test_research_packet.ResearchPacketTests.test_loaded_bytes_must_still_match_verified_file) ... ok
+test_omitted_authorized_source_location_is_rejected (test_research_packet.ResearchPacketTests.test_omitted_authorized_source_location_is_rejected) ... ok
+test_staging_rejects_packet_or_schema_mutation (test_research_packet.ResearchPacketTests.test_staging_rejects_packet_or_schema_mutation) ... ok
+test_tampered_ranges_and_manifest_path_escape_fail_closed (test_research_packet.ResearchPacketTests.test_tampered_ranges_and_manifest_path_escape_fail_closed) ... ok
+test_unknown_and_incompatible_context_are_explicit_gaps (test_research_packet.ResearchPacketTests.test_unknown_and_incompatible_context_are_explicit_gaps) ... ok
+test_unknown_publication_requires_valid_snapshot_provenance (test_research_packet.ResearchPacketTests.test_unknown_publication_requires_valid_snapshot_provenance) ... ok
+test_engine_cli (unittest.loader._FailedTest.test_engine_cli) ... ERROR
+
+======================================================================
+ERROR: test_engine_cli (unittest.loader._FailedTest.test_engine_cli)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_engine_cli
+Traceback (most recent call last):
+  File "C:\Users\aidan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'test_engine_cli'
+
+
+----------------------------------------------------------------------
+Ran 95 tests in 17.862s
+
+FAILED (errors=1)

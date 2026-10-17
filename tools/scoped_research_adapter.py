@@ -291,34 +291,51 @@ def needs_continuation(result):
             any(c['status']=='withheld' for c in result['coverage']))
 
 
-DISABLED_FEATURES = (
-    "shell_tool", "unified_exec", "apps", "plugins", "remote_plugin", "hooks",
-    "memories", "multi_agent", "multi_agent_v2", "browser_use", "browser_use_external",
-    "computer_use", "in_app_browser", "image_generation", "view_image", "code_mode",
-    "code_mode_host", "workspace_dependencies", "goals", "skill_search",
-    "skill_mcp_dependency_install", "shell_snapshot", "unbounded_connection_retries",
-)
+try:
+    from .research_runtime import DISABLED_FEATURES
+except ImportError:
+    from research_runtime import DISABLED_FEATURES
+
+PINNED_CLIENT_VERSION = "0.162.0-alpha.17.2"
+PINNED_CLIENT_SHA256 = "e98c516f1c8935789aabe9122ee7e05ec4c3efd1ba6acf179242e031c495b99e"
+PINNED_CATALOG_SHA256 = "3096c0167d00a39847a269fdcd81dfcf105c660f43e368421dc5655cee9e51d1"
+PINNED_CATALOG_PATH = "state/research-engine/runtime/selected-catalog-" + PINNED_CATALOG_SHA256 + ".json"
+DISABLED_HOST_DIAGNOSTIC = ("Code Mode is unavailable because code-mode host is disabled. "
+    "Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`.")
 
 
-def runtime_capabilities(executable, *, runner=subprocess.run, environ=None):
-    """Non-inference inspection; settings acceptance never implies isolation.
+def runtime_capabilities(executable, *, project_root=None, runner=subprocess.run, environ=None):
+    """Measure the pinned installed client's tool surface without inference.
 
-    Current CLI debug prompt-input emits input messages only, not registered
-    tools. The Windows packet-only read sandbox failed its launch canary. Until
-    an actual tool inventory or a successful enforced capability canary exists,
-    there is no honest positive production verifier. Replacing this verifier
-    requires reviewed code and new measured evidence, not a JSON ready flag.
+    This is client-side restriction verification, not backend attestation or
+    subscription availability. The synthetic provider has no model, auth or
+    forwarding. The real worker uses the same pinned catalog/profile factory.
     """
-    return {"status": "unavailable", "verified_live": False,
+    try:
+        from .research_runtime import verify_client_tools
+    except ImportError:
+        from research_runtime import verify_client_tools
+    unavailable = {"status": "unavailable", "verified_live": False,
         "reason": "runtime-restrictions-unverified",
         "requested_disabled_features": list(DISABLED_FEATURES),
         "tool_inventory": None,
-        "blockers": ["Installed debug prompt-input does not expose registered tools",
-            "Windows packet-only filesystem sandbox failed: effective root read access required",
-            "Staging and read-only permissions do not establish read or tool isolation"],
-        "evidence": ["validation/engine-slice-2026-10-15-r001/RUNTIME-INSPECTION.json",
-            "work/sandbox-isolation-probe-r002.json"],
-        "inference_calls": 0}
+        "blockers": ["Pinned client verification has not passed"], "inference_calls": 0}
+    if project_root is None:
+        return unavailable
+    root = Path(project_root).resolve()
+    try:
+        catalog = _within(root / PINNED_CATALOG_PATH, root)
+        facts = verify_client_tools(executable, expected_version=PINNED_CLIENT_VERSION,
+            expected_sha256=PINNED_CLIENT_SHA256, catalog_path=catalog,
+            expected_catalog_sha256=PINNED_CATALOG_SHA256, runner=runner)
+    except (OSError, ValueError, subprocess.TimeoutExpired):
+        return unavailable
+    return {"status": "verified", "verified_live": runner is subprocess.run,
+        "reason": "pinned-client-offers-no-model-tools",
+        "verification_scope": "Actual installed client and frozen catalog/config; not subscription server or backend identity",
+        "requested_disabled_features": list(DISABLED_FEATURES), "tool_inventory": [],
+        "catalog_sha256": PINNED_CATALOG_SHA256, "facts": facts,
+        "blockers": [], "inference_calls": 0}
 
 
 def _audit_events(stdout, model):
@@ -335,9 +352,11 @@ def _audit_events(stdout, model):
         safe = {"type": event["type"]}
         if event["type"].startswith("item."):
             item = event.get("item")
-            if not isinstance(item, dict) or item.get("type") not in {"reasoning", "agent_message"}:
+            diagnostic = (isinstance(item, dict) and event["type"] == "item.completed" and
+                item.get("type") == "error" and item.get("message") == DISABLED_HOST_DIAGNOSTIC)
+            if not isinstance(item, dict) or (item.get("type") not in {"reasoning", "agent_message"} and not diagnostic):
                 raise ValueError("Unauthorized tool or state event")
-            safe["item_type"] = item["type"]
+            safe["item_type"] = "disabled-code-host-diagnostic" if diagnostic else item["type"]
         def identities(node):
             if isinstance(node, dict):
                 for key, value in node.items():
@@ -402,7 +421,7 @@ def run_scoped_job(project_root, job, *, state_root=None, runner=subprocess.run,
         "No trading approval, allocations or actionable alerts. Unknown publication snapshots "
         "prove captured bytes only, not historical public availability. Return the prefix output "
         "schema exactly. Never infer backend identity. Frozen packet:\n" + packet["bytes"].decode("utf-8"))
-    capabilities = runtime_capabilities(executable, runner=runner, environ=environ)
+    capabilities = runtime_capabilities(executable, project_root=root, runner=runner, environ=environ)
     engineering_test = runner is not subprocess.run
     meta = {"schema_version": 2, "job_id": job["job_id"], "role": job["role"],
         "dispatch_id": dispatch["dispatch_id"], "status": "partial", "reason": "not-started",
@@ -435,6 +454,22 @@ def run_scoped_job(project_root, job, *, state_root=None, runner=subprocess.run,
                     raise ValueError("Worker cwd must be outside repository")
                 staged = stage_packet(packet, SCHEMA, staged_root)
                 schema_path, output_path = staged_root / "schema.json", staged_root / "candidate.json"
+                try:
+                    from .research_runtime import build_worker_args
+                except ImportError:
+                    from research_runtime import build_worker_args
+                # Fake transports remain explicit engineering fixtures. They
+                # exercise the same argument factory with fixture catalog bytes.
+                catalog_path = root / PINNED_CATALOG_PATH
+                if engineering_test:
+                    catalog_path = Path(__file__).resolve().parents[1] / "validation/engine-slice-2026-10-17-r001/MODEL-CAPABILITIES.json"
+                catalog_hash = _hash(catalog_path)
+                if not engineering_test and (_hash(Path(executable)) != PINNED_CLIENT_SHA256 or catalog_hash != PINNED_CATALOG_SHA256):
+                    raise ValueError("Pinned runtime changed before dispatch")
+                args = build_worker_args(executable, role=job["role"], catalog_path=catalog_path,
+                    expected_catalog_sha256=catalog_hash, model_catalog_path=staged_root / "model_catalog.json",
+                    output_schema=schema_path, output_path=output_path)
+                staged["model_catalog.json"] = _hash(staged_root / "model_catalog.json")
                 meta["staged_input_manifest"] = staged
                 kwargs = dict(cwd=str(staged_root), env=subscription_environment(environ), capture_output=True,
                     text=True, encoding="utf-8", errors="replace", shell=False)
@@ -452,15 +487,6 @@ def run_scoped_job(project_root, job, *, state_root=None, runner=subprocess.run,
                     verify_dispatch(root, dispatch, job)
                     meta.update(authentication="chatgpt-subscription", reason="in-progress")
                     _write_json(folder / "metadata.json", meta)
-                    args = [executable, "exec", "--ignore-user-config", "--strict-config", "--ephemeral",
-                        "--sandbox", "read-only", "--skip-git-repo-check", "--model", model, "--json", "--color", "never",
-                        "-c", 'forced_login_method="chatgpt"', "-c", 'model_provider="openai"',
-                        "-c", 'model_reasoning_effort="high"', "-c", 'service_tier="default"',
-                        "-c", 'web_search="disabled"', "-c", 'approval_policy="never"',
-                        "-c", 'project_doc_max_bytes=0', "-c", 'mcp_servers={}',
-                        "--output-schema", str(schema_path), "--output-last-message", str(output_path)]
-                    for feature in DISABLED_FEATURES:
-                        args.extend(["--disable", feature])
                     args.append("-")
                     completed = runner(args, input=prompt, timeout=timeout_seconds, **kwargs)
                     meta["returncode"] = completed.returncode

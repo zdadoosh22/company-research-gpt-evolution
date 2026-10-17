@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-10-17T01:10:24.368345+00:00",
+  "request": {
+    "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+    "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+  },
+  "job_paths": {
+    "analysis": "monitoring/research-engine/cases/amd-helion-20261017-r001/inputs/analysis-job.json",
+    "review": "monitoring/research-engine/cases/amd-helion-20261017-r001/inputs/review-job-template.json",
+    "correction": "monitoring/research-engine/cases/amd-helion-20261017-r001/inputs/correction-job-template.json",
+    "recheck": "monitoring/research-engine/cases/amd-helion-20261017-r001/inputs/recheck-job-template.json"
+  },
+  "packet_sha256": "7d57c269a695c75479ed09b9b73a04e732b1d784eadf13ec5711a6a887a47806",
+  "packet_bytes": 95199,
+  "original_bytes": 47707,
+  "primary_qualifying": [
+    {
+      "source_id": "amd-helion-20261012",
+      "qualifying": true,
+      "gaps": []
+    },
+    {
+      "source_id": "history-amd-funding-park",
+      "qualifying": false,
+      "gaps": [
+        "incompatible-basis",
+        "incompatible-period"
+      ]
+    }
+  ],
+  "status": "Prepared and validated only; no queue or authorization dispatch yet; future job files are unbound templates, not results.",
+  "batch_path": "monitoring/research-engine/cases/amd-helion-20261017-r001/inputs/batch-r001.json",
+  "supersedes": "PREPARATION-CHECK.json input locations only; previous bytes preserved",
+  "correction": "Raw command inputs moved into inputs/ so batch-r001.json cannot be misread as a typed research record by the documented *-r*.json discovery convention."
+}

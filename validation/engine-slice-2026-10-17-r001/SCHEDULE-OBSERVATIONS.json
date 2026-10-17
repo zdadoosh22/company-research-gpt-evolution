@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-17T00:55:37.509812+00:00",
+  "scope": "Preliminary three-discovery-subject schedule refresh only. Not the complete candidate guard, a selection, analysis, new dossier, trigger or monitoring activation.",
+  "sources": [
+    {
+      "ticker": "NFLX",
+      "url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-to-Announce-Third-Quarter-2026-Financial-Results/default.aspx",
+      "published_date": "2026-09-14",
+      "observed_at": "2026-10-17T00:55:36.387406+00:00",
+      "event_date": "2026-10-20",
+      "timing": "Approximately13:01 Pacific results;13:45 Pacific interview",
+      "event_status": "prospective scheduled; not observed result",
+      "quote": null,
+      "consensus": null,
+      "actionable": false,
+      "final_url": "https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2026/Netflix-to-Announce-Third-Quarter-2026-Financial-Results/default.aspx",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "capture_path": "validation/engine-slice-2026-10-17-r001/candidate-schedule/nflx-issuer-notice.html",
+      "capture_sha256": "277bfdbcd54d3919228ae1870ec8ab552f0299686e0c57a67379560abe821d36",
+      "capture_bytes": 48794,
+      "capture_status": "saved original response bytes",
+      "derived_text_path": "validation/engine-slice-2026-10-17-r001/candidate-schedule/nflx-issuer-notice.txt",
+      "derived_text_sha256": "c0c9ed06e081e2c1616089e485aa578046d8296d6565835603c504f93e93d691",
+      "extraction_method": "stdlib HTMLParser; script/style omitted; nonempty normalized text nodes become numbered lines",
+      "consistency_checks": {
+        "September 14": false,
+        "2026": true,
+        "October 20": true,
+        "1:01": true,
+        "1:45": true
+      },
+      "exact_passage_locations": [
+        "line81"
+      ],
+      "supplemental_date_check": {
+        "literal": "Sept. 14, 2026",
+        "location": "derived text line78",
+        "present": true,
+        "interpretation": "Matches the stated2026-09-14 day. Initial full-month literal test failed because source abbreviates September; that negative literal test is retained."
+      }
+    },
+    {
+      "ticker": "AMD",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results",
+      "published_date": "2026-10-06",
+      "observed_at": "2026-10-17T00:55:36.955917+00:00",
+      "event_date": "2026-11-03",
+      "timing": "After market close results;17:00 Eastern /14:00 Pacific conference call",
+      "event_status": "prospective scheduled; not observed result",
+      "quote": null,
+      "consensus": null,
+      "actionable": false,
+      "final_url": "https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "capture_path": "validation/engine-slice-2026-10-17-r001/candidate-schedule/amd-issuer-notice.html",
+      "capture_sha256": "8cca4138a89fe037ea4e4ef5ebc8b68106921c04d8178fe44322dfb54b737426",
+      "capture_bytes": 32855,
+      "capture_status": "saved original response bytes",
+      "derived_text_path": "validation/engine-slice-2026-10-17-r001/candidate-schedule/amd-issuer-notice.txt",
+      "derived_text_sha256": "b214d583ea5cef5cd5770bb10f9863ce4aac9afb874445cbac3628775416d4ed",
+      "extraction_method": "stdlib HTMLParser; script/style omitted; nonempty normalized text nodes become numbered lines",
+      "consistency_checks": {
+        "Oct. 06, 2026": true,
+        "Nov. 3, 2026": true,
+        "5 p.m. ET / 2 p.m. PT": true
+      },
+      "exact_passage_locations": [
+        "line41"
+      ]
+    },
+    {
+      "ticker": "UBER",
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx",
+      "published_date": "2026-10-05",
+      "observed_at": "2026-10-17T00:55:37.281327+00:00",
+      "event_date": "2026-11-04",
+      "timing": "05:00 Pacific /08:00 Eastern conference call; release time not specified by this notice",
+      "event_status": "prospective scheduled; not observed result",
+      "quote": null,
+      "consensus": null,
+      "actionable": false,
+      "final_url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "capture_path": "validation/engine-slice-2026-10-17-r001/candidate-schedule/uber-issuer-notice.html",
+      "capture_sha256": "7d64da68ae21bf34265701dab3f431716a62c8e2b3c10e7a025d97075381e871",
+      "capture_bytes": 64465,
+      "capture_status": "saved original response bytes",
+      "derived_text_path": "validation/engine-slice-2026-10-17-r001/candidate-schedule/uber-issuer-notice.txt",
+      "derived_text_sha256": "db41d97b5cc5a7cc3cab6cd81bee607f44436fc373f24639a073c987a0dc55f3",
+      "extraction_method": "stdlib HTMLParser; script/style omitted; nonempty normalized text nodes become numbered lines",
+      "consistency_checks": {
+        "October 05, 2026": true,
+        "November 4th": true,
+        "5:00 a.m. Pacific Time": true,
+        "8:00 a.m. Eastern Time": true
+      },
+      "exact_passage_locations": [
+        "line30"
+      ]
+    }
+  ],
+  "limitations": [
+    "Publication dates are day precision; no invented publication clock time.",
+    "Future schedule does not prove future occurrence or results availability.",
+    "No current financials, claims, analyst expectations, market/execution prices, fees or eligibility verified.",
+    "All other candidate dispositions remain authoritative; no closed audit reopened.",
+    "Research worker remains blocked; all four real-case attempts unused."
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "groups": [
+    {
+      "ids": ["BRIEF-L0306", "BRIEF-L0308", "BRIEF-L0309", "BRIEF-L0310", "BRIEF-L0311", "TEST-L0525-03", "TEST-L0525-04"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/research_memory.py", "tools/RESEARCH-MEMORY.md", "validation/tests/test_research_memory.py"],
+      "notes": "The index uses entity/disposition/claim records and memory validation/retrieval retains labelled assumptions, claims, review/correction/supersession, rejected and parked records. Fixture coverage includes test_rejected_parked_conflicting_superseded_retained_with_links, test_later_successor_does_not_rewrite_earlier_history, test_import_filters_and_references_keep_both_sides, and test_explicit_contrary_record_survives_nonmatching_words. These tests establish software handling, not truth of imported claims."
+    },
+    {
+      "ids": ["BRIEF-L0316", "BRIEF-L0526"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/research_memory.py", "tools/research_records.py", "validation/tests/test_research_memory.py", "validation/engine-slice-2026-10-15-r001/STATUS-ACCEPTANCE-AUDIT-20261016.md"],
+      "notes": "validate_record, load_bundle and eligibility carry entity/security, type, provenance/location, origin, dates, review state, limitations and supersession; test_originating_run_inference_and_explicit_values, test_unknown_future_publication_and_later_analysis, test_unknown_analysis_is_not_backfilled_from_event, and test_late_capture_requires_retrospective_label cover selected metadata/time rules. Inherited historical availability assertions remain unverified, as the dated audit states."
+    },
+    {
+      "ids": ["BRIEF-L0328", "BRIEF-L0513"],
+      "status": "verified",
+      "paths": ["validation/engine-slice-2026-10-15-r001/STATUS-ACCEPTANCE-AUDIT-20261016.md", "AGENTS.md"],
+      "notes": "The dated audit explicitly limits supplier/industry links to research leads and says they do not establish equivalent economics; continuation r007 confirms broad completion of older pilots is not a release prerequisite. These are recorded scope/process facts, not tested business conclusions."
+    },
+    {
+      "ids": ["BRIEF-L0353", "BRIEF-L0357", "BRIEF-L0358", "BRIEF-L0359", "BRIEF-L0365"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/research_checkpoint.py", "tools/decision_readiness.py", "validation/tests/test_research_checkpoint.py", "validation/tests/test_gate_projection.py", "validation/engine-slice-2026-10-15-r001/STATUS-ACCEPTANCE-AUDIT-20261016.md"],
+      "notes": "_rebuild preserves separate software/research/operations/trade/edge status fields and the ten-gate projection delegates to project_gates. Tests test_all_execution_outcomes_stay_distinct_from_trade_acceptance, test_invalid_release_blocks_software_without_minting_live_gates, test_exact_current_verification_and_tamper_regression, and test_stale_verifier_or_user_checkbox_is_not_acceptance cover the current projection boundary. Operational/trade/edge defaults remain conservative; this does not prove full future transitions or any current account/operational attestation."
+    },
+    {
+      "ids": ["BRIEF-L0459", "BRIEF-L0466"],
+      "status": "implemented-fixture-tested",
+      "paths": ["validation/engine-slice-2026-10-15-r001/REQUIREMENTS.json", "tools/research_checkpoint.py", "validation/tests/test_research_checkpoint.py", "validation/engine-slice-2026-10-15-r001/REQUIREMENT-EVIDENCE-20261016-r007.json"],
+      "notes": "The requirement inventory predates implementation and records stable ids, source lines, implementation/tests/evidence/status/limitations; _rebuild publishes requirement counts. test_requirement_counts_are_version_bound_not_completion and test_requirement_matrix_cannot_omit_work_by_duplicate_or_deferral exercise binding and omission controls. The existence and chronology of the dated inventory are directly inspectable facts."
+    },
+    {
+      "ids": ["BRIEF-L0467", "BRIEF-L0469", "BRIEF-L0575", "BRIEF-L0577", "BRIEF-L0578", "BRIEF-L0579", "BRIEF-L0580", "BRIEF-L0581", "BRIEF-L0582", "BRIEF-L0583"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/research_checkpoint.py", "validation/tests/test_research_checkpoint.py", "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md", "validation/engine-slice-2026-10-15-r001/USER-CLARIFICATION-20261016-r002.md"],
+      "notes": "Checkpoint validation/projection stores task/stage, revision/evidence references, requirements/outcomes/checks, worker-call authorization, disposition/gates and next action. Continuation r007 supplies dated current values and origins; test_complete_requires_start_and_chronology, test_crash_after_start_does_not_invent_running_or_complete, and test_referenced_evidence_tamper_regresses_completion exercise lifecycle/evidence rules. The continuation is a dated progress record, not proof that every future task records correctly."
+    },
+    {
+      "ids": ["BRIEF-L0474", "BRIEF-L0476", "BRIEF-L0477"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/research_memory.py", "tools/RESEARCH-MEMORY.md", "validation/tests/test_research_memory.py", "validation/engine-slice-2026-10-15-r001/RETRIEVAL-FINDINGS.md"],
+      "notes": "The existing deterministic memory path preserves exact table lines/headers/units and applies entity/security, question, evidence-cutoff and review-status eligibility over the scoped FTS5 index. Direct coverage: test_table_exact_lines_units_and_headers_preserved, test_period_basis_scope_and_unit_mismatch_fail_closed, test_wrong_entity_security_question_type_review_status, and test_source_tampering_after_import_is_rejected. No broad extraction migration or extraction-failure claim is made."
+    },
+    {
+      "ids": ["BRIEF-L0479", "BRIEF-L0504", "BRIEF-L0550"],
+      "status": "evaluated-failed",
+      "paths": ["tools/research_memory.py", "validation/engine-slice-2026-10-15-r001/RETRIEVAL-FINDINGS.md", "validation/engine-slice-2026-10-15-r001/retrieval-results/COMPARISON.json", "validation/engine-slice-2026-10-15-r001/retrieval-results-verification-r002/COMPARISON.json"],
+      "notes": "The frozen held-out comparison ran with zero live worker calls and equivalent frozen inputs, but preserves a required preservation-limit passage recall miss: each route is 4/5. No query/gold/source tuning or savings/usage claim followed. Thus the reproducible pipeline exists while this retrieval acceptance criterion remains failed; packet sizes/hashes are recorded, actual model usage is unavailable."
+    },
+    {
+      "ids": ["BRIEF-L0494", "BRIEF-L0495", "BRIEF-L0497", "BRIEF-L0498"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/research_records.py", "tools/research_checkpoint.py", "tools/decision_readiness.py", "validation/tests/test_research_records.py", "validation/tests/test_research_checkpoint.py", "validation/tests/test_gate_projection.py"],
+      "notes": "project_case/project_gates connect versioned research/dossier/disposition evidence to a separate read-only ten-gate view; checkpoint rebuild derives status from authoritative events. Coverage includes test_full_parked_fixture_is_not_trade_acceptance, test_tampered_dependency_regresses_projection, test_delete_projection_rebuild_is_identical_at_same_cutoff, test_all_execution_outcomes_stay_distinct_from_trade_acceptance, and test_exact_current_verification_and_tamper_regression. Fixture integration does not establish a real reviewed case or live readiness."
+    },
+    {
+      "ids": ["BRIEF-L0500", "BRIEF-L0509", "BRIEF-L0511", "BRIEF-L0529", "BRIEF-L0536", "BRIEF-L0597", "BRIEF-L0619", "BRIEF-L0621"],
+      "status": "blocked",
+      "paths": ["validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md", "validation/engine-slice-2026-10-15-r001/RUNTIME-ROUTE-INSPECTION-20261016-r002.md", "validation/engine-slice-2026-10-15-r001/ENGINEERING-REVIEW-20261016-r005.md", "validation/tests/test_scoped_research_adapter.py", "validation/tests/test_research_packet.py"],
+      "notes": "The required packet-only runtime restriction remains unavailable, so no actual Sol High analysis/Astra High review, real disposition or end-to-end accepted release exists. Fixture tests cover path escape, omitted source, packet mutation and refusal when runtime is unavailable, but cannot prove the real restriction. r007 records the matrix as incomplete (168 items unassessed at that dated cutoff) and the goal as blocked. Do not infer a real case, qualifying release or final handoff from software controls."
+    },
+    {
+      "ids": ["BRIEF-L0505", "BRIEF-L0506", "BRIEF-L0507", "BRIEF-L0508", "BRIEF-L0560", "BRIEF-L0561", "BRIEF-L0562", "BRIEF-L0563", "BRIEF-L0564", "BRIEF-L0565", "BRIEF-L0567", "BRIEF-L0569", "BRIEF-L0611", "BRIEF-L0612"],
+      "status": "verified",
+      "paths": ["validation/engine-slice-2026-10-15-r001/ENGINEERING-REVIEW-20261016-r005.md", "validation/engine-slice-2026-10-15-r001/REGRESSION-20261016-r008.txt", "validation/engine-slice-2026-10-15-r001/ROLLBACK-VERIFICATION-20261016.md", "validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md", "validation/engine-slice-2026-10-15-r001/REQUIREMENT-EVIDENCE-20261016-r007.json"],
+      "notes": "Dated records show a direct engineering review, three material repairs/rechecks, installed command/status smoke, a 413-run final-code regression (412 passed, one permission-skipped symlink case), rollback instructions, and an r007 matrix. The engineering review covers the listed challenge areas and preserves the retrieval failure. This verifies those recorded events only: the matrix remained incomplete, so it does not satisfy BRIEF-L0509 or establish final software acceptance."
+    },
+    {
+      "ids": ["BRIEF-L0517", "BRIEF-L0523", "BRIEF-L0524", "BRIEF-L0525", "BRIEF-L0527", "BRIEF-L0528", "BRIEF-L0530", "BRIEF-L0531", "BRIEF-L0533", "BRIEF-L0534", "TEST-L0534-01", "TEST-L0534-02"],
+      "status": "implemented-fixture-tested",
+      "paths": ["validation/tests/test_evidence.py", "validation/tests/test_finance.py", "validation/tests/test_decision_economics.py", "validation/tests/test_research_memory.py", "validation/tests/test_scoped_research_queue.py", "validation/tests/test_scoped_research_adapter.py", "validation/tests/test_research_records.py", "validation/tests/test_gate_projection.py", "validation/tests/test_research_checkpoint.py", "validation/tests/test_engine_rollback.py", "validation/engine-slice-2026-10-15-r001/ROLLBACK-VERIFICATION-20261016.md"],
+      "notes": "Specific adversarial fixture examples include period/unit mismatch; missing-vs-zero, date/FX/fee arithmetic; memory conflicts/supersession/rejected/parked and rebuild; queue selection/duplicate/budget/timeout recovery; worker metadata/tool/substitution rejection; review material-gap handling; stale/tampered gate bindings; status interruption/rebuild/escaping; and temporary rollback preserving original rows/config bytes. Representative functions: test_missing_is_not_zero, test_gbx_pence_hundred_factor_and_explicit_units, test_rejected_parked_conflicting_superseded_retained_with_links, test_selected_job_leaves_older_unrelated_job_untouched, test_model_substitution_checkpoint_rejected, test_supported_disposition_refuses_finished_review_with_material_gap, test_stale_verifier_or_user_checkbox_is_not_acceptance, and test_migrate_backup_restore_and_baseline_status_inspection. These are fixture behaviors only; actual operations/migration are not established."
+    },
+    {
+      "ids": ["BRIEF-L0552", "BRIEF-L0594"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/research_memory.py", "tools/scoped_research_adapter.py", "validation/tests/test_research_memory.py", "validation/tests/test_scoped_research_adapter.py", "validation/engine-slice-2026-10-15-r001/COMMAND-SMOKE-20261016.json"],
+      "notes": "The dated command smoke record contains deterministic help/argument/packet/worker-contract checks; test_all_commands_help_and_invalid_arguments and test_runtime_unavailable_never_calls_auth_or_worker cover local fixtures. No live route probe or model call is claimed."
+    },
+    {
+      "ids": ["BRIEF-L0571", "BRIEF-L0585", "BRIEF-L0587", "BRIEF-L0589", "BRIEF-L0593", "BRIEF-L0595", "BRIEF-L0596", "BRIEF-L0599", "BRIEF-L0613", "BRIEF-L0615", "BRIEF-L0622", "BRIEF-L0623"],
+      "status": "verified",
+      "paths": ["validation/engine-slice-2026-10-15-r001/CONTINUATION-r007.md", "validation/engine-slice-2026-10-15-r001/STATUS-ACCEPTANCE-AUDIT-20261016.md", "workflows/research-engine.md", "AGENTS.md"],
+      "notes": "Dated records preserve the next bounded action, failed-route policy, absence of a real case, missing live verification and consequences, required external/model prerequisites, and separate live-trading status/blockers. No broader research or repeat runtime/retrieval probe was performed here. The projection is static HTML, not a dashboard; this audit did not perform visual/browser inspection, so the conditional visual-validation clause remains unresolved if browser inspection is applicable."
+    },
+    {
+      "ids": ["BRIEF-L0605", "BRIEF-L0606", "BRIEF-L0607"],
+      "status": "implemented-fixture-tested",
+      "paths": ["tools/run.ps1", "tools/research_checkpoint.py", "tools/research_records.py", "workflows/research-engine.md", "validation/tests/test_research_checkpoint.py", "validation/tests/test_research_records.py"],
+      "notes": "The project contains reproducible launch/command documentation, rebuildable JSON/static-HTML status projection, versioned record/checkpoint contracts and recovery guidance. Fixture checks test checkpoint reconstruction, evidence tamper invalidation, record dependency validation and case projection. No actual release or operational recovery is implied."
+    }
+  ]
+}

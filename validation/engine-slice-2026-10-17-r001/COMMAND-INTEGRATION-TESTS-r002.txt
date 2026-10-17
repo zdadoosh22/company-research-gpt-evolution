@@ -1,0 +1,9 @@
+test_archive_refuses_incomplete_or_tampered_state (test_research_engine_integration.EngineIntegrationTests.test_archive_refuses_incomplete_or_tampered_state) ... ok
+test_explicit_two_stage_cycle_archive_and_projection (test_research_engine_integration.EngineIntegrationTests.test_explicit_two_stage_cycle_archive_and_projection) ... ok
+test_four_stage_material_correction_and_recheck_use_exact_shared_budget (test_research_engine_integration.EngineIntegrationTests.test_four_stage_material_correction_and_recheck_use_exact_shared_budget) ... ok
+test_prepare_command_freezes_reproducible_packet (test_research_engine_integration.EngineIntegrationTests.test_prepare_command_freezes_reproducible_packet) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 4.938s
+
+OK

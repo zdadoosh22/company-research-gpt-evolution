@@ -1,0 +1,193 @@
+{
+  "status": "verified",
+  "verified_live": true,
+  "reason": "pinned-client-offers-no-model-tools",
+  "verification_scope": "Actual installed client and frozen catalog/config; not subscription server or backend identity",
+  "requested_disabled_features": [
+    "shell_tool",
+    "unified_exec",
+    "apps",
+    "plugins",
+    "remote_plugin",
+    "hooks",
+    "memories",
+    "multi_agent",
+    "multi_agent_v2",
+    "browser_use",
+    "browser_use_external",
+    "computer_use",
+    "in_app_browser",
+    "image_generation",
+    "view_image",
+    "code_mode",
+    "code_mode_host",
+    "workspace_dependencies",
+    "goals",
+    "skill_search",
+    "skill_mcp_dependency_install",
+    "shell_snapshot",
+    "unbounded_connection_retries",
+    "send_message_to_user_async"
+  ],
+  "tool_inventory": [],
+  "catalog_sha256": "3096c0167d00a39847a269fdcd81dfcf105c660f43e368421dc5655cee9e51d1",
+  "facts": {
+    "observed_at": "2026-10-17T01:08:02.786952+00:00",
+    "client": {
+      "sha256": "e98c516f1c8935789aabe9122ee7e05ec4c3efd1ba6acf179242e031c495b99e",
+      "version": "0.162.0-alpha.17.2"
+    },
+    "capability_catalog_sha256": "3096c0167d00a39847a269fdcd81dfcf105c660f43e368421dc5655cee9e51d1",
+    "frozen_selected_catalog_sha256": "434f7c8516411ba4eee6a21694da6105e2861c989701fef402da36663d880366",
+    "selected_capabilities": [
+      {
+        "slug": "gpt-6.1-sol",
+        "tool_mode": "code_mode_only",
+        "shell_type": "unified_exec",
+        "experimental_supported_tools": [
+          "send_user_message_async",
+          "clock"
+        ]
+      },
+      {
+        "slug": "gpt-6-astra",
+        "tool_mode": "code_mode_only",
+        "shell_type": "unified_exec",
+        "experimental_supported_tools": [
+          "send_user_message_async",
+          "clock"
+        ]
+      }
+    ],
+    "model_catalog_path": "C:\\Users\\aidan\\AppData\\Local\\Temp\\cr2-runtime-inspection-46_io3c4\\model_catalog.json",
+    "roles_sha256": "095904bc6f6bedd65e6772048831906f5c633cc15652e806bf03e8de81e949f6",
+    "configuration_sha256": "7b18479a6da61075e52fe1182a23b9e3fbf142b6ff9da91fe04aac913894cb8c",
+    "configuration": {
+      "base_args": [
+        "exec",
+        "--ignore-user-config",
+        "--ignore-rules",
+        "--strict-config",
+        "--ephemeral",
+        "--skip-git-repo-check",
+        "--json",
+        "--color",
+        "never"
+      ],
+      "disabled_features": [
+        "shell_tool",
+        "unified_exec",
+        "apps",
+        "plugins",
+        "remote_plugin",
+        "hooks",
+        "memories",
+        "multi_agent",
+        "multi_agent_v2",
+        "browser_use",
+        "browser_use_external",
+        "computer_use",
+        "in_app_browser",
+        "image_generation",
+        "view_image",
+        "code_mode",
+        "code_mode_host",
+        "workspace_dependencies",
+        "goals",
+        "skill_search",
+        "skill_mcp_dependency_install",
+        "shell_snapshot",
+        "unbounded_connection_retries",
+        "send_message_to_user_async"
+      ],
+      "worker_settings": [
+        "forced_login_method=\"chatgpt\"",
+        "model_provider=\"openai\"",
+        "model_reasoning_effort=\"high\"",
+        "service_tier=\"default\"",
+        "web_search=\"disabled\"",
+        "approval_policy=\"never\"",
+        "project_doc_max_bytes=0",
+        "mcp_servers={}",
+        "apps._default.enabled=false",
+        "features.code_mode_host=false",
+        "default_permissions=\"cr2_packet\"",
+        "windows.sandbox=\"mxc\"",
+        "permissions.cr2_packet.filesystem={\":minimal\"=\"read\",\":workspace_roots\"=\"read\",\"C:/Windows/Temp\"=\"deny\"}",
+        "permissions.cr2_packet.network.enabled=false",
+        "permissions.cr2_packet.network.allow_local_binding=false",
+        "model_catalog_json=\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-runtime-inspection-46_io3c4\\\\model_catalog.json\""
+      ],
+      "verification_settings": [
+        "model_provider=\"cr2_synthetic\"",
+        "model_providers.cr2_synthetic.name=\"Local synthetic inspection only\"",
+        "model_providers.cr2_synthetic.base_url=\"http://127.0.0.1:51306/v1\"",
+        "model_providers.cr2_synthetic.wire_api=\"responses\"",
+        "model_providers.cr2_synthetic.requires_openai_auth=false",
+        "model_providers.cr2_synthetic.request_max_retries=0",
+        "model_providers.cr2_synthetic.stream_max_retries=0",
+        "model_reasoning_effort=\"high\"",
+        "service_tier=\"default\"",
+        "web_search=\"disabled\"",
+        "approval_policy=\"never\"",
+        "project_doc_max_bytes=0",
+        "mcp_servers={}",
+        "apps._default.enabled=false",
+        "features.code_mode_host=false",
+        "default_permissions=\"cr2_packet\"",
+        "windows.sandbox=\"mxc\"",
+        "permissions.cr2_packet.filesystem={\":minimal\"=\"read\",\":workspace_roots\"=\"read\",\"C:/Windows/Temp\"=\"deny\"}",
+        "permissions.cr2_packet.network.enabled=false",
+        "permissions.cr2_packet.network.allow_local_binding=false",
+        "model_catalog_json=\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-runtime-inspection-46_io3c4\\\\model_catalog.json\""
+      ],
+      "sandbox_profile_evidence": "MXC command profile from dated canary evidence",
+      "provider_override_scope": "unauthenticated loopback only for verification"
+    },
+    "requests": [
+      {
+        "path": "/v1/responses",
+        "model": "gpt-6.1-sol",
+        "tools": [],
+        "tools_field_present": false,
+        "tool_list_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "tool_choice": "auto"
+      },
+      {
+        "path": "/v1/responses",
+        "model": "gpt-6-astra",
+        "tools": [],
+        "tools_field_present": false,
+        "tool_list_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "tool_choice": "auto"
+      }
+    ],
+    "attempts": [
+      {
+        "requested_model": "gpt-6.1-sol",
+        "returncode": 1,
+        "stdout_sha256": "557c1000656f9d17a829b29afaa254dcc85cc1685ac6fcaadad79b73ae2d33d7",
+        "stderr_sha256": "3157c90d3b8d0df1b2ee9f8245c119214388989dc35d95473a67d817efad0687",
+        "code_mode_host_disabled_warning": true
+      },
+      {
+        "requested_model": "gpt-6-astra",
+        "returncode": 1,
+        "stdout_sha256": "babcb75ce4e5899df61ecd228b508cfd3dd3580274681b0ad0213ce41af3c83b",
+        "stderr_sha256": "3157c90d3b8d0df1b2ee9f8245c119214388989dc35d95473a67d817efad0687",
+        "code_mode_host_disabled_warning": true
+      }
+    ],
+    "authentication": "none; empty temporary CODEX_HOME and environment allowlist",
+    "remote_inference_calls": 0,
+    "forwarding": false,
+    "scope": "client-serialized tool lists for the selected models and this exact installed CLI configuration",
+    "limitations": [
+      "Does not establish backend model identity, subscription entitlement, or current call availability.",
+      "Does not establish server-side tool restrictions or exhaustive sandbox behavior.",
+      "MXC filesystem/network behavior remains supported only by the separately dated command canaries."
+    ]
+  },
+  "blockers": [],
+  "inference_calls": 0
+}

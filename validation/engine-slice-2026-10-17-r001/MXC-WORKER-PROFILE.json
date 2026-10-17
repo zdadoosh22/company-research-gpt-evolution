@@ -1,0 +1,42 @@
+{
+  "created_at": "2026-10-17T00:50:00.316417+00:00",
+  "stage": "C:\\Users\\aidan\\AppData\\Local\\Temp\\cr2-mxc-worker-xyl8ph26",
+  "profile": [
+    "windows.sandbox=\"mxc\"",
+    "permissions.cr2_packet.filesystem={\":minimal\"=\"read\",\":workspace_roots\"=\"read\",\"C:/Windows/Temp\"=\"deny\"}",
+    "permissions.cr2_packet.network.enabled=false",
+    "permissions.cr2_packet.network.allow_local_binding=false"
+  ],
+  "results": [
+    {
+      "case": "allowed-read",
+      "returncode": 0,
+      "stdout": "ALLOW-PACKET",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-mxc-worker-xyl8ph26\\\\home\"))\n"
+    },
+    {
+      "case": "outside-read",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-mxc-worker-xyl8ph26\\\\home\"))\nAccess is denied.\n"
+    },
+    {
+      "case": "packet-write",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-mxc-worker-xyl8ph26\\\\home\"))\nAccess is denied.\n"
+    },
+    {
+      "case": "loopback-network",
+      "returncode": 7,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-mxc-worker-xyl8ph26\\\\home\"))\ncurl: (7) Failed to connect to 127.0.0.1:63107 after 0 ms: Could not connect to server\n"
+    }
+  ],
+  "unsandboxed_network_control": "LOOPBACK-SENTINEL",
+  "sandboxed_network_hits": 0,
+  "write_exists": false,
+  "inference_calls": 0,
+  "saved_configuration_changed": false,
+  "limitation": "Command capability canaries; hosted/model tools not yet established."
+}

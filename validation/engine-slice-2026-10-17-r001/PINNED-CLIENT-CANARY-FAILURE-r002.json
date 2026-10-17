@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-10-17T01:04:49.534144+00:00",
+  "error_type": "RuntimeVerificationError",
+  "reason": "Each model process must make exactly one valid loopback request",
+  "diagnostic": {
+    "model": "gpt-6.1-sol",
+    "returncode": 1,
+    "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"01a14763-db50-7511-8bb0-ee42afb6e210\"}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_0\",\"type\":\"error\",\"message\":\"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`.\"}}\n{\"type\":\"turn.started\"}\n{\"type\":\"error\",\"message\":\"{\\\"error\\\":{\\\"message\\\":\\\"Synthetic inspection complete; no inference service\\\",\\\"type\\\":\\\"invalid_request_error\\\"}}\"}\n{\"type\":\"turn.failed\",\"error\":{\"message\":\"{\\\"error\\\":{\\\"message\\\":\\\"Synthetic inspection complete; no inference service\\\",\\\"type\\\":\\\"invalid_request_error\\\"}}\"}}\n",
+    "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-runtime-inspection-9hkb_vba\\\\home\"))\nReading prompt from stdin...\n",
+    "requests": [],
+    "unexpected": [
+      "invalid-request"
+    ]
+  },
+  "remote_inference_calls": 0,
+  "accepted": false
+}

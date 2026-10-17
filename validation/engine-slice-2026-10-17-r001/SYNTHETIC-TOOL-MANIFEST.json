@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-17T00:52:43.862141+00:00",
+  "executable_sha256": "e98c516f1c8935789aabe9122ee7e05ec4c3efd1ba6acf179242e031c495b99e",
+  "provider": "cr2_synthetic",
+  "authentication": "none; empty temporary CODEX_HOME",
+  "remote_inference_calls": 0,
+  "forwarding": false,
+  "requests": [
+    {
+      "path": "/v1/responses",
+      "model": "gpt-6.1-sol",
+      "tools": [],
+      "tool_choice": "auto"
+    }
+  ],
+  "returncode": 1,
+  "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"01a14758-ca71-7ca2-80c8-ab1d9bcc0db0\"}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_0\",\"type\":\"error\",\"message\":\"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`.\"}}\n{\"type\":\"turn.started\"}\n{\"type\":\"error\",\"message\":\"{\\\"error\\\":{\\\"message\\\":\\\"Synthetic inspection complete; no inference service\\\",\\\"type\\\":\\\"invalid_request_error\\\"}}\"}\n{\"type\":\"turn.failed\",\"error\":{\"message\":\"{\\\"error\\\":{\\\"message\\\":\\\"Synthetic inspection complete; no inference service\\\",\\\"type\\\":\\\"invalid_request_error\\\"}}\"}}\n",
+  "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-tools-synthetic-wlzpzzqw\\\\home\"))\n",
+  "limitation": "Custom-provider tool inventory only; not subscription-route identity or isolation proof."
+}

@@ -1,0 +1,55 @@
+{
+  "origin": "Main Sol direct comparison of all168 proposed mappings against their exact original requirements, specific implementation/test excerpts and dated findings; delegated maps are provisional inputs, not authority.",
+  "overrides": {
+    "BRIEF-L0107": {
+      "status": "verified",
+      "notes": "A required scope/exclusion rule can be verified as retained without claiming the deferred capabilities were implemented. This original row is required_for_software_acceptance=true and must not be classified deferred. The genuinely optional rows0453/0155 retain their optional deferral."
+    },
+    "BRIEF-L0163": {
+      "status": "verified",
+      "notes": "The frozen protocol/source/configuration/retrospective labels and separate outputs exist. This row requires a valid frozen comparison, not perfect recall. The measured4/5 failure remains failed at the actual retrieval acceptance rows and is not corrected or hidden by this classification."
+    },
+    "BRIEF-L0504": {
+      "status": "verified",
+      "notes": "The held-out comparison was executed deterministically with zero live worker calls. Execution is verified; its preserved4/5 recall result is not a successful retrieval-quality acceptance."
+    },
+    "BRIEF-L0550": {
+      "status": "verified",
+      "notes": "Equivalent frozen questions/cutoffs/source bytes and packet sizes/hashes are recorded. No model usage or savings estimate was fabricated. The known recall failure remains visible under0479 and other actual retrieval acceptance items."
+    },
+    "BRIEF-L0507": {
+      "status": "blocked",
+      "notes": "The previous16October revision has413 tests,412 pass/one permission skip;17October currently has24 focused adapter passes. Neither is a final regression for the unfinished current release and required real cycle. Run the final full suite after final executable repairs; do not repeat broad checks merely for counts."
+    },
+    "BRIEF-L0529": {
+      "status": "implemented-fixture-tested",
+      "notes": "This is the engineering failure-scenario requirement. Existing fixtures test path escape, omitted source, allowlist/input mutation, isolated cwd and fail-closed unavailable runtime. New MXC commands add narrowly measured file/network access evidence. None attests a real subscription worker; the real runtime/case requirements remain blocked separately."
+    },
+    "BRIEF-L0536": {
+      "status": "implemented-fixture-tested",
+      "notes": "Routine queue/parser/projection tests use temporary state/fakes and stage only hash-bound inputs. Engineering isolation refusal and synthetic MXC canaries are explicit. A temporary cwd is not presented as anti-leakage proof, and no fake worker is promoted into a real research result."
+    },
+    "BRIEF-L0530": {
+      "status": "blocked",
+      "notes": "Review/finding/correction state controls have fixture coverage, but that does not demonstrate semantic detection of an unsupported economic conclusion or incorrect expectations comparison. Atomic TEST-L0530-01/02 remain blocked; the required actual analytical review is outstanding."
+    },
+    "BRIEF-L0593": {
+      "status": "blocked",
+      "notes": "The coordinator is completing independent remaining work; that imperative cannot be marked fully discharged while this audit/runtime implementation and original real cycle are unfinished."
+    },
+    "BRIEF-L0597": {
+      "status": "verified",
+      "notes": "Actual goal status was recovered as active after explicit user resumption; current stage makes independent measured progress. No completion, pause, immediate blocked transition or renewed credit authority is inferred. This process observation does not discharge remaining technical work."
+    },
+    "BRIEF-L0621": {
+      "status": "verified",
+      "notes": "The requested output explicitly allows operational prerequisites to be outstanding. Broker, phone, trial, policy and activation limits are displayed as outstanding; this does not require live acceptance for software release."
+    }
+  },
+  "limitations": [
+    "All original419 identities and source wording remain unchanged.",
+    "Fixture-tested, verified dated process, real analytical acceptance and live readiness remain distinct.",
+    "Any later capability proof or real cycle requires a successor assessment; these mappings do not predict success.",
+    "Parent review rejects both blanket green grouping and marking a correctly executed failed comparison as an unperformed protocol."
+  ]
+}
