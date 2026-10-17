@@ -1,0 +1,35 @@
+{
+  "job_id": "amd-helion-20261017-r001-analysis",
+  "role": "analysis",
+  "attempt": 1,
+  "dispatch_id": "196e97ff0065416ab065a4f19a87b3fe",
+  "model_requested": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "speed": "standard",
+  "authentication": "chatgpt-subscription",
+  "runtime_verified_live": true,
+  "engineering_test": false,
+  "started_at": "2026-10-17T01:14:57.666560+00:00",
+  "completed_at": "2026-10-17T01:15:57.914727+00:00",
+  "returncode": 0,
+  "reason": "invalid-output-input-or-unauthorized-event",
+  "packet_sha256": "a2328a17b467200cc65a71c0ce06bd1ee9cb131f1e967ef2881272b0ca0e1c51",
+  "prompt_sha256": "42994dd275ac08725b1ebe6328f569565cf58f05c85d5336e07567493dd2a1d1",
+  "target_sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d",
+  "observed_at": "2026-10-17T01:19:43.863983+00:00",
+  "usage": [
+    {
+      "input_tokens": 30754,
+      "cached_input_tokens": 0,
+      "output_tokens": 5381
+    }
+  ],
+  "outcome": "Process returned0 and allowed event sequence completed; subsequent validation refused. Exact rejected field/stage unavailable in old adapter.",
+  "accepted_analysis": false,
+  "unaccepted_output_retained": false,
+  "remaining_case_attempts": 3,
+  "recovery_defect": "Temporary output was discarded on validation failure; cannot honestly reconstruct its text. No claim that the economics were wrong or that the call was valid.",
+  "repair_commit": "f3624dc51074b018c2ad8b6ffae479163a3e474b",
+  "repair_test": "59 affected adapter/queue tests passed; rejected nonsecret candidate retained privately, known-secret candidate not persisted; no result/acceptance minted.",
+  "retry_policy": "One explicit retry of the identical frozen analysis package after recovery repair; this spends attempt2 and is not an automatic retry/refund. Shared original ceiling remains4."
+}

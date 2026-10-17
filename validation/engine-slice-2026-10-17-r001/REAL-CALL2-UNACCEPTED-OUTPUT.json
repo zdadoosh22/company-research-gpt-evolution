@@ -1,0 +1,420 @@
+{
+  "conclusions": [
+    {
+      "blocking_issues": [],
+      "claim": "The qualifying release establishes an issuer-announced rack blueprint with configurations under development and availability planned for November 2026. It does not establish completed commercialization, shipments or customer acceptance.",
+      "evidence": [
+        {
+          "location": "Configuration examples and paragraph stating configurations are under development and planned for November 2026",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "id": "C1",
+      "numerical_inputs": [
+        {
+          "basis": "guidance",
+          "evidence": [
+            {
+              "location": "CPU-only rack configuration example",
+              "source_id": "amd-helion-20261012"
+            }
+          ],
+          "explanation": "Issuer-stated prospective maximum CPU cores per example rack; not demonstrated deployment capacity, sales volume or an economic forecast.",
+          "name": "example_rack_maximum_cpu_cores",
+          "value": 32768
+        }
+      ],
+      "status": "supported"
+    },
+    {
+      "blocking_issues": [],
+      "claim": "The development could be commercially meaningful: configurable CPU/GPU systems and compatibility with existing infrastructure offer a plausible adoption mechanism. This remains a qualitative hypothesis. Partner endorsements do not establish paid demand, and the CPU-only configuration connects to separate inference infrastructure, so Helion adoption would not necessarily imply bundled AMD GPU sales. The HPE quotation concerns a Helios customer agreement, not a Helion order.",
+      "evidence": [
+        {
+          "location": "CPU-only and integrated configuration examples; existing-infrastructure paragraph; Ecosystem Support, including HPE quotation",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "id": "C2",
+      "numerical_inputs": [],
+      "status": "supported"
+    },
+    {
+      "blocking_issues": [],
+      "claim": "Park the incremental opportunity case on this packet. The release supports a development worth investigating, but supplies no quantified Helion commercial commitments, realized economics or revenue-to-cash timetable sufficient to establish an earnings revision or mispricing. This is an evidence-sufficiency disposition, not a conclusion that Helion has no demand or economic value.",
+      "evidence": [
+        {
+          "location": "Entire qualifying release, especially development/availability paragraph, partner statements and CAUTIONARY STATEMENT",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "id": "C3",
+      "numerical_inputs": [],
+      "status": "supported"
+    },
+    {
+      "blocking_issues": [
+        "F2",
+        "G2"
+      ],
+      "claim": "Current financial resilience, financing sufficiency, distribution affordability and ownership claims cannot be determined.",
+      "evidence": [
+        {
+          "location": "CAUTIONARY STATEMENT: financial obligations, financing restrictions and commercial commitments",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "id": "C4",
+      "numerical_inputs": [
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "No qualifying dated unrestricted-cash and liquid-investment balances.",
+          "name": "available_liquidity_usd",
+          "value": null
+        },
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "No qualifying current principal, maturity and coupon bridge.",
+          "name": "holding_window_debt_service_usd",
+          "value": null
+        },
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "Operating cash generation, investment, commitments and distributions are not quantified on compatible dates.",
+          "name": "holding_window_financing_requirement_usd",
+          "value": null
+        },
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "No current shares, awards, warrants, convertibles or acquisition-claim reconciliation.",
+          "name": "valuation_date_diluted_ownership_denominator",
+          "value": null
+        },
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "Dividend policy, amount and payment timing are not established; absence is not a zero dividend assumption.",
+          "name": "holding_window_dividends_per_share_usd",
+          "value": null
+        },
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "No qualifying evidence establishes completed or prospective repurchases and their financing.",
+          "name": "holding_window_buyback_cash_usd",
+          "value": null
+        }
+      ],
+      "status": "withheld"
+    },
+    {
+      "blocking_issues": [
+        "F1",
+        "F2",
+        "G1",
+        "G2",
+        "G3",
+        "G4"
+      ],
+      "claim": "A positive monetization forecast, valuation, expected price response, prospective return or superiority-to-cash conclusion is withheld.",
+      "evidence": [
+        {
+          "location": "Development/availability paragraph and CAUTIONARY STATEMENT",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "id": "C5",
+      "numerical_inputs": [
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "Technical capacity and partner support do not quantify paid Helion shipments.",
+          "name": "paid_helion_shipments",
+          "value": null
+        },
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "No attributable AMD selling prices, component content or economic terms.",
+          "name": "incremental_amd_revenue_usd",
+          "value": null
+        },
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "No product costs, pricing or incremental expense bridge.",
+          "name": "incremental_operating_margin",
+          "value": null
+        },
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "No working-capital, investment, tax or collection timetable.",
+          "name": "incremental_owner_cash_usd",
+          "value": null
+        },
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "No dated market-price observation or executable quote.",
+          "name": "share_price_usd",
+          "value": null
+        },
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "No dated, defined expectations baseline against which to measure surprise.",
+          "name": "market_expected_incremental_earnings_usd",
+          "value": null
+        },
+        {
+          "basis": "missing",
+          "evidence": [],
+          "explanation": "No supported cash-flow revision, expectations comparison or valuation transmission mechanism.",
+          "name": "announcement_price_response",
+          "value": null
+        }
+      ],
+      "status": "withheld"
+    },
+    {
+      "blocking_issues": [
+        "F3",
+        "G4",
+        "G5"
+      ],
+      "claim": "The frozen target's auxiliary project history, other-company event assertions, prior-review adequacy, attempt counts and review identity cannot be independently validated from this packet. Historical public availability and dissemination timing also remain unverified.",
+      "evidence": [],
+      "id": "C6",
+      "numerical_inputs": [],
+      "status": "withheld"
+    }
+  ],
+  "continuation": "Decision-changing evidence would include dated Helion commercial commitments or accepted shipments with attributable AMD economics, a revenue-to-cash bridge, and a compatible current liquidity/debt/ownership reconciliation. Any later positive opportunity assessment would additionally require dated expectations, a price-response mechanism and evidence addressing delay, costs and adverse outcomes. No further work or external action is represented as performed.",
+  "coverage": [
+    {
+      "category": "business_drivers",
+      "evidence": [
+        {
+          "location": "Configuration examples, existing-infrastructure paragraph and Ecosystem Support",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "status": "covered"
+    },
+    {
+      "category": "contrary_evidence",
+      "evidence": [
+        {
+          "location": "Configurations under development; CPU-only connection to separate inference infrastructure; HPE Helios reference; CAUTIONARY STATEMENT",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "status": "covered"
+    },
+    {
+      "category": "event_window",
+      "evidence": [
+        {
+          "location": "Release dateline of October 12, 2026; planned November 2026 availability; forward-looking timing cautions",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "status": "covered"
+    },
+    {
+      "category": "financial_resilience",
+      "evidence": [],
+      "status": "withheld"
+    },
+    {
+      "category": "material_limitations",
+      "evidence": [
+        {
+          "location": "Entire qualifying nonfinancial release and CAUTIONARY STATEMENT",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "status": "covered"
+    },
+    {
+      "category": "model_assumptions",
+      "evidence": [
+        {
+          "location": "Configuration examples and forward-looking development/availability statements",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "status": "covered"
+    },
+    {
+      "category": "ownership_financing_claims",
+      "evidence": [],
+      "status": "withheld"
+    },
+    {
+      "category": "security_identity",
+      "evidence": [
+        {
+          "location": "Opening issuer identification: Advanced Micro Devices, Inc. (NASDAQ: AMD)",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "status": "covered"
+    },
+    {
+      "category": "source_facts",
+      "evidence": [
+        {
+          "location": "Opening announcement, configuration examples, planned availability and CAUTIONARY STATEMENT",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "status": "covered"
+    }
+  ],
+  "findings": [
+    {
+      "affected_conclusions": [
+        "C5"
+      ],
+      "claim": "The commercialization-to-shareholder-value chain remains unsupported. November availability is forward-looking; endorsements, technical capacity and the Helios agreement cannot establish Helion orders or cash generation. The exact target generally recognizes this distinction, and independent examination does not close the gap.",
+      "evidence": [
+        {
+          "location": "Development/availability paragraph; configuration examples; HPE quotation; CAUTIONARY STATEMENT",
+          "source_id": "amd-helion-20261012"
+        },
+        {
+          "location": "Exact question and decision scope; Claims, gaps and stopping conditions",
+          "source_id": "frozen-target"
+        }
+      ],
+      "id": "F1",
+      "outcome": "unresolved",
+      "proposed_correction": "Retain the limited park disposition. Require paid adoption, attributable AMD content/pricing, costs, incremental investment, collections and recognition timing before estimating earnings or cash. Test no repricing, adverse surprise, delay, gaps/halts and correct-but-late outcomes without inventing probabilities or response ranges.",
+      "severity": "material"
+    },
+    {
+      "affected_conclusions": [
+        "C4",
+        "C5"
+      ],
+      "claim": "The target's characterization of prior financing arithmetic as adequate cannot be independently adopted. The referenced disposition is explicitly nonqualifying and has incompatible basis and period; its underlying financial disclosures and arithmetic are absent. The Helion release does not supply a current financial or ownership bridge.",
+      "evidence": [
+        {
+          "location": "Exact question and decision scope: reference to adequate prior financing arithmetic and unresolved current funding/claims",
+          "source_id": "frozen-target"
+        },
+        {
+          "location": "Entire passage; qualifying_evidence=false; gaps=incompatible-basis,incompatible-period",
+          "source_id": "history-amd-funding-park"
+        },
+        {
+          "location": "Entire release; CAUTIONARY STATEMENT concerning financial obligations and commercial commitments",
+          "source_id": "amd-helion-20261012"
+        }
+      ],
+      "id": "F2",
+      "outcome": "unresolved",
+      "proposed_correction": "Describe prior adequacy only as an unverified historical project assertion. Withhold current solvency, funding sufficiency and per-share economics until compatible primary disclosures reconcile cash, debt, commitments, financing costs, distributions and dilution. Do not treat financing proceeds as an equity windfall or assume dividends and buybacks are affordable.",
+      "severity": "material"
+    },
+    {
+      "affected_conclusions": [
+        "C6"
+      ],
+      "claim": "The exact frozen target asserts discovery-search results, other-company event dates, closed-review status and unused review attempts without qualifying supporting passages. These assertions are unnecessary to the limited Helion park conclusion.",
+      "evidence": [
+        {
+          "location": "Opening preparation status; Selection and source guard; independent-review and attempt-ceiling paragraphs; Metadata clarification r002",
+          "source_id": "frozen-target"
+        }
+      ],
+      "id": "F3",
+      "outcome": "unresolved",
+      "proposed_correction": "Label these statements as unverified target history and exclude them from evidentiary support. Do not certify prior or current model-review completion, attempt counts or effective backend identity.",
+      "severity": "minor"
+    }
+  ],
+  "gaps": [
+    {
+      "affected_conclusions": [
+        "C5"
+      ],
+      "description": "No quantified Helion orders, paid deployments, attributable AMD economic terms, realized margins or revenue-to-owner-cash timetable appear in the qualifying passage. The release is an interested issuer source; partner quotations within it are not independent corroboration.",
+      "id": "G1",
+      "material": true
+    },
+    {
+      "affected_conclusions": [
+        "C4",
+        "C5"
+      ],
+      "description": "Current liquidity, cash use, debt settlements and maturities, total financing costs, commitment overlaps, dividends, repurchases and outstanding equity claims are missing. The historical project disposition is excluded for incompatible basis and period. Missing amounts remain unknown, not zero.",
+      "id": "G2",
+      "material": true
+    },
+    {
+      "affected_conclusions": [
+        "C5"
+      ],
+      "description": "No current price, dated expectations baseline, valuation bridge, observed announcement response, transaction costs or delay evidence is supplied. A useful product may already be anticipated, produce no repricing, disappoint, arrive late or monetize after the proposed window. These are qualitative possibilities, not probability estimates.",
+      "id": "G3",
+      "material": true
+    },
+    {
+      "affected_conclusions": [
+        "C5",
+        "C6"
+      ],
+      "description": "The release bears an October 12 publication date and the packet records October 17 access, but captured_at is null and no historical publication snapshot or dissemination record is supplied. The frozen bytes do not independently prove when the announcement first became publicly available or when expectations incorporated it.",
+      "id": "G4",
+      "material": true
+    },
+    {
+      "affected_conclusions": [
+        "C6"
+      ],
+      "description": "The packet contains no qualifying support for the target's ancillary cohort/search history, Netflix and Uber chronology, previous review adequacy, attempt usage or effective backend identity. No separate analytical artifact or review record is supplied for validating that process.",
+      "id": "G5",
+      "material": false
+    },
+    {
+      "affected_conclusions": [
+        "C5"
+      ],
+      "description": "Issuer identity and NASDAQ:AMD are supported, but share class, current ownership denominator and a reconciled pricing snapshot are not established. USD is packet context, not evidence of monetary Helion economics or independently verified trading-currency details.",
+      "id": "G6",
+      "material": true
+    },
+    {
+      "affected_conclusions": [
+        "C5",
+        "C6"
+      ],
+      "description": "The supplied extractions are marked complete; no incomplete-extraction flag is present. Original documents and hashes were not independently verified in this inline-only analysis. Completeness metadata does not establish authenticity, external corroboration or historical public availability.",
+      "id": "G7",
+      "material": false
+    }
+  ],
+  "sources": [
+    {
+      "location": "Qualifying Helion release passage, derived lines 38–88 including forward-looking cautions",
+      "source_id": "amd-helion-20261012"
+    },
+    {
+      "location": "Nonqualifying historical project disposition; excluded from substantive financial support",
+      "source_id": "history-amd-funding-park"
+    },
+    {
+      "location": "Exact frozen target; SHA-256 7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d; reviewed as untrusted target text",
+      "source_id": "frozen-target"
+    }
+  ],
+  "status": "scoped-analysis-complete",
+  "summary": "The qualifying announcement supports a potentially meaningful product-development case, but not demonstrated Helion commercialization, incremental owner cash or a price-response opportunity. Park the incremental opportunity case pending decision-changing evidence. The exact frozen preparation target was independently challenged; current financial, ownership, valuation and auxiliary process conclusions remain withheld. No numerical forecast, probability, financial calculation, trading approval or backend-identity certification is made."
+}

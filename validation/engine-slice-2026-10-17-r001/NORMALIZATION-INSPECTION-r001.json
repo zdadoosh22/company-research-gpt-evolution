@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "edits": [
+    {
+      "pointer": "/conclusions/2/blocking_issues/0",
+      "before": "F1: No quantified incremental commercialization or earnings-to-cash bridge.",
+      "after": "F1",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/2/blocking_issues/1",
+      "before": "G1: No qualifying commercial commitments, realized unit economics or revenue-recognition timetable.",
+      "after": "G1",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/3/blocking_issues/0",
+      "before": "F2: Current funding and obligations are not established.",
+      "after": "F2",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/3/blocking_issues/1",
+      "before": "G2: No dated current liquidity and funding bridge.",
+      "after": "G2",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/4/blocking_issues/0",
+      "before": "F1: Incremental economic benefit is unquantified.",
+      "after": "F1",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/4/blocking_issues/1",
+      "before": "F2: Current ownership, financing claims and distributions are unresolved.",
+      "after": "F2",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/4/blocking_issues/2",
+      "before": "G3: No valuation-date ownership and claims bridge.",
+      "after": "G3",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/5/blocking_issues/0",
+      "before": "F1: No defensible operating revision.",
+      "after": "F1",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/5/blocking_issues/1",
+      "before": "F2: Funding and ownership foundations remain unresolved.",
+      "after": "F2",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/5/blocking_issues/2",
+      "before": "F3: Expectations, market conditions and price-response evidence are absent.",
+      "after": "F3",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/5/blocking_issues/3",
+      "before": "G4: Historical public availability and event novelty are not independently established.",
+      "after": "G4",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/5/blocking_issues/4",
+      "before": "G5: No executable price, delay or cost evidence.",
+      "after": "G5",
+      "reason": "Exact known issue ID followed by a nonempty ': ' label."
+    },
+    {
+      "pointer": "/conclusions/4/blocking_issues/3",
+      "before": null,
+      "after": "G1",
+      "reason": "Existing material unresolved issue names this already-withheld conclusion."
+    },
+    {
+      "pointer": "/conclusions/5/blocking_issues/5",
+      "before": null,
+      "after": "G1",
+      "reason": "Existing material unresolved issue names this already-withheld conclusion."
+    },
+    {
+      "pointer": "/conclusions/4/blocking_issues/4",
+      "before": null,
+      "after": "G2",
+      "reason": "Existing material unresolved issue names this already-withheld conclusion."
+    },
+    {
+      "pointer": "/conclusions/5/blocking_issues/6",
+      "before": null,
+      "after": "G2",
+      "reason": "Existing material unresolved issue names this already-withheld conclusion."
+    },
+    {
+      "pointer": "/conclusions/5/blocking_issues/7",
+      "before": null,
+      "after": "G3",
+      "reason": "Existing material unresolved issue names this already-withheld conclusion."
+    },
+    {
+      "pointer": "/conclusions/2/blocking_issues/2",
+      "before": null,
+      "after": "G6",
+      "reason": "Existing material unresolved issue names this already-withheld conclusion."
+    },
+    {
+      "pointer": "/conclusions/5/blocking_issues/8",
+      "before": null,
+      "after": "G6",
+      "reason": "Existing material unresolved issue names this already-withheld conclusion."
+    }
+  ],
+  "canonical_raw_sha256": "bbb6666e610149b6ef83e1b4f8fb4af5a53f779978a036600d932823cab54228",
+  "canonical_processed_sha256": "3278721956088caffde1cd6496ca86d4314c28f9d668cf64c19be99be3469255",
+  "exact_raw_byte_sha256": "94c7881a22614d4c2dc2753b987ea4a45e532a36619b6960977431eb66ef38cd",
+  "limitations": [
+    "Canonical JSON hashes identify parsed objects; exact source-byte hashing requires the caller to retain and hash the original bytes.",
+    "This helper does not certify schema, provenance, analytical validity, readiness, or approval.",
+    "The normalized copy must pass the unchanged strict validator before use."
+  ],
+  "inspection_only": true,
+  "raw_validation_failure": "Unresolved material issue must block affected conclusion",
+  "processed_strict_validation": "passed in memory only",
+  "unchanged_except_blocking_issues": true,
+  "idempotent": true,
+  "accepted_result_written": false,
+  "queue_modified": false,
+  "model_calls": 0,
+  "job_sha256": "86673bf667f9a1a23c0bf03b2850bc9e7cd2462a757e68efc950baec40074b6d",
+  "helper_sha256": "ee1c2cd030c206c6febfbe8f6683b29c9c6121506a13ee85e3615ffab4299e4c",
+  "remaining_work": "Explicit revalidation, immutable failure lineage, recovery and exported review provenance require implementation and verification before any acceptance."
+}

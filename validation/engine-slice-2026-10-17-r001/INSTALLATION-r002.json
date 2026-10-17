@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-10-17T01:35:34.673287+00:00",
+  "code_commit": "ff97483a2ea55a4fd3ec36e3167df2389153d71b",
+  "original_untracked_paths_preserved": 33,
+  "methodology_sha256": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+  "observation_config_sha256": "10c985e9dca1e1a255e951bebe79a2399b444b750e670252eadc86b141c86e14",
+  "tracked_state_paths": 0,
+  "observation_restart": false,
+  "observation_portfolio_database_migration": false,
+  "pushed": false,
+  "normalizer_in_worker_or_queue": false,
+  "tests": "437 tests,436 passed,one existing Windows symlink-permission skip",
+  "scope": "Code installed; not software release or analytical/trading acceptance."
+}

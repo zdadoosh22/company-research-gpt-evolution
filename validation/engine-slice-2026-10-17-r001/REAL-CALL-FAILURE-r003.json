@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-10-17T01:30:39.564812+00:00",
+  "attempt": 3,
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "speed": "standard",
+  "authentication": "chatgpt-subscription",
+  "reported_backend_model": null,
+  "accepted_analysis": false,
+  "candidate": {
+    "path": "validation/engine-slice-2026-10-17-r001/REAL-CALL3-UNACCEPTED-OUTPUT.json",
+    "sha256": "94c7881a22614d4c2dc2753b987ea4a45e532a36619b6960977431eb66ef38cd"
+  },
+  "validation_stage": "output-schema-and-provenance",
+  "validation_detail": "Unresolved material issue must block affected conclusion",
+  "usage": [
+    {
+      "input_tokens": 30945,
+      "cached_input_tokens": 0,
+      "output_tokens": 5327
+    }
+  ],
+  "diagnosis": "Exact source references and partial status were corrected. Blocking-issue labels include descriptions instead of exact IDs; some redundant backreferences are absent even though the source issue explicitly lists an already-withheld conclusion. Strict validation rejects the raw output.",
+  "inspection_only": "An in-memory derivative canonicalizing only known ID labels and adding already-declared material-issue backlinks passed the unchanged strict validator.19 proposed mechanical edits; no claim/source/numeric/status changed. No derivative saved as an accepted result, no queue acceptance changed.",
+  "required_before_use": "Review/test deterministic normalizer and explicit immutable revalidation/provenance protocol. Preserve original failed metadata/raw output. Require independent Astra review of exact processed target and processing receipt.",
+  "case_attempts_consumed": 3,
+  "case_attempts_remaining": 1,
+  "remaining_reserved_for": "Required actual Astra High review only; no further Sol inference, correction/recheck or budget reset is authorized."
+}

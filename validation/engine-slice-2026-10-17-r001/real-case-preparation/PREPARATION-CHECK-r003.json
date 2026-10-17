@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-10-17T01:14:36.183528+00:00",
+  "job_paths": {
+    "analysis": "monitoring/research-engine/cases/amd-helion-20261017-r001/inputs/analysis-job-r002.json",
+    "review": "monitoring/research-engine/cases/amd-helion-20261017-r001/inputs/review-job-r002.json",
+    "correction": "monitoring/research-engine/cases/amd-helion-20261017-r001/inputs/correction-job-r002.json",
+    "recheck": "monitoring/research-engine/cases/amd-helion-20261017-r001/inputs/recheck-job-r002.json"
+  },
+  "batch_path": "monitoring/research-engine/cases/amd-helion-20261017-r001/inputs/batch-input-r002.json",
+  "packet_record": {
+    "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/evidence-packet-r001.json",
+    "sha256": "f34da74d5ba1e036da19759fabc9ddbeecfbfe492950c960d621e16f1a3b234a"
+  },
+  "packet_sha256": "a2328a17b467200cc65a71c0ce06bd1ee9cb131f1e967ef2881272b0ca0e1c51",
+  "packet_bytes": 95726,
+  "input_correction": "Initial request binding correctly rejected non-applicable currency versus issuer reportingUSD. Retained original drafts; r002 tags issuer reporting contextUSD without introducing monetary data. No queue/model attempt before correction.",
+  "primary_qualifying": [
+    {
+      "source_id": "amd-helion-20261012",
+      "qualifying": true,
+      "gaps": []
+    },
+    {
+      "source_id": "history-amd-funding-park",
+      "qualifying": false,
+      "gaps": [
+        "incompatible-basis",
+        "incompatible-period"
+      ]
+    }
+  ]
+}

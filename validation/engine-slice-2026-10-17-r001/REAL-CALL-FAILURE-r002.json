@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-10-17T01:24:14.757396+00:00",
+  "attempt": 2,
+  "requested_model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "accepted_analysis": false,
+  "candidate": {
+    "path": "validation/engine-slice-2026-10-17-r001/REAL-CALL2-UNACCEPTED-OUTPUT.json",
+    "sha256": "baf5bf1519a63cb6ed339fcdbf566ba084f40bc3b66b9e889bfea9332f94a415"
+  },
+  "validation_stage": "output-schema-and-provenance",
+  "diagnosed_failures": [
+    "Unknown archived source/location: paraphrased locations and invented frozen-target source ID.",
+    "Claimed scoped-analysis-complete despite withheld categories; strict validator would also reject that.",
+    "Analysis text described independent challenge before the required fresh Astra review."
+  ],
+  "scope": "These are recorded output/role nonconformance issues, not a certification of the unaccepted economic claims. Guards remain unchanged.",
+  "usage": [
+    {
+      "input_tokens": 30751,
+      "cached_input_tokens": 0,
+      "output_tokens": 5421
+    }
+  ],
+  "repair_commit": "aff56e587e9618e48a25409655fd53617e219b78",
+  "repair": "Explicit role/status and exact allowed reference-pair instructions; schema/provenance/coverage validation unchanged.60 affected adapter/queue tests pass.",
+  "remaining_before_retry": 2,
+  "limit": "One final Sol retry uses attempt3, leaving exactly attempt4 for Astra. No correction/recheck possible if that review needs another model pass."
+}

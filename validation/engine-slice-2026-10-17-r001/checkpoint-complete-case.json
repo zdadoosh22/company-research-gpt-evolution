@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "id": "engine-real-case-20261017-complete",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "real-case-20261017-r001",
+  "phase": "complete",
+  "created_at": "2026-10-17T01:35:34.673287+00:00",
+  "observed_at": "2026-10-17T01:35:34.673287+00:00",
+  "origin": "User resumption; ordinary allowance available, stored credits unchanged205.600657. No new credit spending authority.",
+  "request": "Continue bounded engine slice, real Sol/Astra case and original requirement reconciliation.",
+  "work": [
+    "Installed pinned runtime route and authorized/froze actual AMD Helion case; no observation restart or broker work.",
+    "Three actual Sol High standard-speed subscription attempts consumed. All unaccepted; failures and surviving raw candidates retained. Exactly one case call remains reserved for Astra.",
+    "Repaired safe unaccepted-output retention and explicit role/source/status prompt contract without weakening strict validation.",
+    "All419 original requirement IDs classified:82verified,270fixture-tested,59blocked,5optionaldeferred,3evaluated-failed. This is dated classification, not release acceptance.",
+    "Installed pure opt-in issue-reference normalizer with8fixtures. Actual third candidate passes unchanged strict validator in memory after19reference-only edits; raw remains rejected and no accepted result/queue state changed.",
+    "Parent reviewed helper and read-only revalidation design. Queue/export lineage and interruption recovery still require implementation and verification.",
+    "Full current regression437run:436pass,one existing Windows symlink-permission skip."
+  ],
+  "outcome": "partial",
+  "artifacts": [
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REAL-CALL-FAILURE-r001.json",
+      "sha256": "fe2c7f49011442fc9e6348624374fbfddccde30656618296cae366b6193914b6"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REAL-CALL-FAILURE-r002.json",
+      "sha256": "5a742d7a62ce9c708229e0efe4677118ca9baba611492a704d274e469430d9ec"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REAL-CALL-FAILURE-r003.json",
+      "sha256": "4213e3cfa741a0dcb6d9791d47085691a48432f205ed0f272657ea1a2849eebc"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REAL-CASE-AUTHORIZATION.json",
+      "sha256": "f324578e413b4c8ae49fb890b47369f5cb78b50452b0d49c8019777adbb2beab"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/QUEUE-STATUS-r004.json",
+      "sha256": "d6204fd220b7b4520985cae97d02420c2f6617028e933f1d3efdd577f1aa85cd"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REGRESSION-20261017-r003.txt",
+      "sha256": "8776ea3a17d917b26bd12e03c8067f0dd53308a3230b9ee83fc9b4ec2994ee4a"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/NORMALIZATION-INSPECTION-r001.json",
+      "sha256": "9c1bc28b46b8379bc49f4f0215cfd64cfda272b0b25286cf3ed1a7df3de06dbf"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/inspect-normalization.py",
+      "sha256": "b706d968df5b17308f9a58184b441c14d30ce42dac033839ba2ee3716bbbb02d"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REVALIDATION-DESIGN-r001.md",
+      "sha256": "44e55ca8c79414b92af60d9d17e9045cc0a41b661f1ded6cf979f276eaf1ca8c"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/INSTALLATION-r002.json",
+      "sha256": "bf3e8cd9ef2788eb56c16ffe10b6687b02dc623c78c72840f006f535ec0db167"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REQUIREMENT-CONSISTENCY-r009.json",
+      "sha256": "0caf3cbae7f5b86a9bef598bc5a64c0699ed470f1a6355687dfb45e4a77468f1"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-17-r001/REQUIREMENT-EVIDENCE-20261017-r009.json",
+      "sha256": "7908064dd5186b58b3b1bd8c4ba594f67d1612e2a9b92a67a8aac20d4e6b80d0"
+    },
+    {
+      "path": "tools/research_output.py",
+      "sha256": "ee1c2cd030c206c6febfbe8f6683b29c9c6121506a13ee85e3615ffab4299e4c"
+    },
+    {
+      "path": "validation/tests/test_research_output.py",
+      "sha256": "33ac25f2ccd80a658fd2868144335c5e55bbcfdd3e3638f1fb79d772423d5429"
+    }
+  ],
+  "checks": [
+    {
+      "id": "regression-current",
+      "method": "Full unittest discovery after installed pure helper;437run/436pass/one permission skip",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-17-r001/REGRESSION-20261017-r003.txt"
+      ]
+    },
+    {
+      "id": "normalization-inspection",
+      "method": "Original still fails; copy passes unchanged strict validator; every non-blocker field identical; idempotent; no queue/model work",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-17-r001/NORMALIZATION-INSPECTION-r001.json",
+        "validation/engine-slice-2026-10-17-r001/inspect-normalization.py"
+      ]
+    },
+    {
+      "id": "real-case-analysis",
+      "method": "Three actual requested Sol High calls, return0 but strict output conformance rejected; no accepted analysis",
+      "outcome": "failed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-17-r001/REAL-CALL-FAILURE-r001.json",
+        "validation/engine-slice-2026-10-17-r001/REAL-CALL-FAILURE-r002.json",
+        "validation/engine-slice-2026-10-17-r001/REAL-CALL-FAILURE-r003.json"
+      ]
+    },
+    {
+      "id": "installation-boundary",
+      "method": "Original33untracked paths retained; methodology/config hashes unchanged; no tracked private state/restart/migration",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-17-r001/INSTALLATION-r002.json"
+      ]
+    }
+  ],
+  "blockers": {
+    "resolved": [
+      "Actual subscription-authenticated Sol invocation demonstrated under reviewed client restrictions",
+      "Previously unassessed requirement IDs classified with exact evidence"
+    ],
+    "introduced": [
+      "Three failed actual attempts consumed; no accepted analysis target yet",
+      "Deterministic normalization acceptance/export/recovery protocol unimplemented"
+    ],
+    "unchanged": [
+      "Required fresh Astra review and case disposition missing",
+      "Frozen retrieval recall4/5 each route retained as failure",
+      "59required acceptance blockers and3failed requirement outcomes remain; no final release",
+      "Portfolio,quote,phone,trial,strategy andactivation remain unaccepted"
+    ]
+  },
+  "readiness_impact": {
+    "label": "not assessed",
+    "requirements": [],
+    "artifact_paths": [],
+    "explanation": "Engineering and execution evidence improved but analysis remains unaccepted and no gate passes."
+  },
+  "verified_gate_changes": [],
+  "next_action": "Implement/review/test explicit deterministic revalidation and exported immutable failure lineage, then if valid use only the remaining Astra High call under current authorization. Preserve3consumed attempts; no more Sol calls or new batch. If blocked preserve exact partial state.",
+  "unknowns": [
+    "No independently verified backend model identity; visible/requested identity only.",
+    "Astra subscription availability not tested by an actual inference.",
+    "No accepted company recommendation or demonstrated investment edge.",
+    "Current batch expires2026-10-19T01:10:24.368345+00:00; inspect actual authorization before any dispatch."
+  ],
+  "supersedes": []
+}

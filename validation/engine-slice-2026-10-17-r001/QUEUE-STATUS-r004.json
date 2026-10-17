@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-10-17T01:35:34.673287+00:00",
+  "mode": "explicit-run-only",
+  "background_enabled": false,
+  "jobs": [
+    {
+      "job_id": "amd-helion-20261017-r001-analysis",
+      "role": "analysis",
+      "status": "needs-retry-decision",
+      "reason": "invalid-output-input-or-unauthorized-event",
+      "attempt": 3,
+      "retry_not_before": null,
+      "created_at": "2026-10-17T01:14:50.640227+00:00",
+      "updated_at": "2026-10-17T01:26:28.175152+00:00"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "amd-helion-20261017-r001",
+      "batch_id": "amd-helion-20261017-r001-batch",
+      "call_limit": 4,
+      "legacy_attempts": 0,
+      "created_at": "2026-10-17T01:14:50.644229+00:00",
+      "remaining_attempts": 1,
+      "consumed_attempts": 3
+    }
+  ],
+  "scope": "Selected noncredential research-state facts only; private queue, paths and full dispatch records not published."
+}

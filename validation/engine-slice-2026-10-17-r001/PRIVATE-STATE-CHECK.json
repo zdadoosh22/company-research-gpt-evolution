@@ -1,0 +1,8 @@
+{
+  "observed_at": "2026-10-17T01:25:58.583858+00:00",
+  "gitignore_sha256": "b0bd78635803bd0ddd89dd293924684cce9208cacfc237a6808f2b1941d03e4d",
+  "technical_catalog_ignored": true,
+  "tracked_state_paths": 0,
+  "method": "git check-ignore named noncredential technical catalog; git ls-files -- state; no credential/broker/account contents inspected.",
+  "scope": "Private-state convention and explicit nonpublication; not operational acceptance."
+}

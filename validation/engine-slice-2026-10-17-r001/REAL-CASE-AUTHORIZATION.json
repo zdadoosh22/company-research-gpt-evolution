@@ -1,0 +1,16 @@
+{
+  "prepared_at": "2026-10-17T01:14:50.660401+00:00",
+  "enqueue": {
+    "job_id": "amd-helion-20261017-r001-analysis",
+    "enqueued": true,
+    "reason": "explicitly-enqueued"
+  },
+  "authorization": {
+    "batch_id": "amd-helion-20261017-r001-batch",
+    "version": 1,
+    "recorded": true,
+    "sha256": "d2323561dbae3959e7db39c408228c53bce51825692b23bd5d5e2b6547f3ccbd"
+  },
+  "attempts_before_dispatch": 0,
+  "purpose": "Named explicit first real case only; no automatic research, retries, fallback or trade authority."
+}
