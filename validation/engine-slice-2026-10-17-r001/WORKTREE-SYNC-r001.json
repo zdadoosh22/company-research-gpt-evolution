@@ -1,0 +1,32 @@
+{
+  "observed_at": "2026-10-17T01:45:07.609953+00:00",
+  "main_commit_at_sync": "fa72244f274927e186b643cee815fd32a9f6013d",
+  "prototype_exactly_matches_archived_patch": true,
+  "isolated_conflicting_files_preserved": [
+    {
+      "original_relative_path": "validation/engine-slice-2026-10-17-r001/checkpoint-start-revalidation.json",
+      "archive_filename": "0-checkpoint-start-revalidation.json",
+      "sha256": "36676fc818b9ec4d0857b6a2c6c92dd6b9c013d7f4f78ed4fbcbe94004a7f464"
+    },
+    {
+      "original_relative_path": "validation/engine-slice-2026-10-17-r001/checkpoint-complete-revalidation-delegate.json",
+      "archive_filename": "1-checkpoint-complete-revalidation-delegate.json",
+      "sha256": "058a0f7bed9ab709a8ce8bc9b3be034a7d9b9ffef90ca5c5d3e60f3526f83599"
+    },
+    {
+      "original_relative_path": "monitoring/research-engine/checkpoints/719634e255ac50c87a7f8de447011979c3271201d7b7835cd1babfbd8a677923.json",
+      "archive_filename": "2-719634e255ac50c87a7f8de447011979c3271201d7b7835cd1babfbd8a677923.json",
+      "sha256": "10dd9c8c6972ac29ae4aeb75ce6af927f400fd3d5ec72ce199335d09facbba9c"
+    },
+    {
+      "original_relative_path": "monitoring/research-engine/checkpoints/ab30ae4aea6f096493aaf84993e3118ef3f737bf287a456b323f6043e1751dbc.json",
+      "archive_filename": "3-ab30ae4aea6f096493aaf84993e3118ef3f737bf287a456b323f6043e1751dbc.json",
+      "sha256": "010916b6fead88523a6871422b9030383fcd48bf85970c1220eac04e6fd41426"
+    }
+  ],
+  "authoritative_checkpoint_bytes_match": true,
+  "prototype_integrated_into_original": false,
+  "new_model_calls": 0,
+  "research_queue_modified": false,
+  "scope": "Worktree synchronization and byte preservation only; no revalidation acceptance or broader test claim."
+}
