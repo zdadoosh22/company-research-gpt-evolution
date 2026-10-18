@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-10-18T01:42:16.376718+00:00",
+  "changed_functions": [
+    "validate_record"
+  ],
+  "unchanged_selection_and_ingestion_functions": [
+    "build_packet",
+    "eligibility",
+    "query",
+    "baseline_ids",
+    "load_bundle"
+  ],
+  "interpretation": "Only provided-label validation changes. Prior non-held-out packet results remain dated prior-code observations, not a newly rerun held-out result.",
+  "old_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+  "new_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+}

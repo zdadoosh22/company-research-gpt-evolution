@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-10-18T01:42:47.867761+00:00",
+  "files": [
+    {
+      "path": "tools/research_memory.py",
+      "before_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+      "installed_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+    },
+    {
+      "path": "validation/tests/test_research_memory.py",
+      "before_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+      "installed_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+    }
+  ],
+  "regression": "REGRESSION-r008-manifest.json",
+  "tests": 471,
+  "passed": 470,
+  "skipped": 1,
+  "observation_import_closure_changed": false,
+  "service_restart": false,
+  "database_schema_change": false,
+  "activation": "disabled",
+  "model_calls": 0,
+  "limitation": "Existing malformed imported polarity metadata fails revalidation; no source bytes or labels automatically rewritten."
+}

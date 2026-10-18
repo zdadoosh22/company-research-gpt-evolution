@@ -1,0 +1,6 @@
+.Research memory refused: Derived memory state must stay in state/research-memory or state/research-engine
+......................................
+----------------------------------------------------------------------
+Ran 39 tests in 7.593s
+
+OK

@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-10-18T01:40:11.750118+00:00",
+  "scope": "Ordinary ingestion label validation and conservative context retention; no financial inference",
+  "discovery": "Gemini criticism prompted inspection of ingestion parity. Omitted polarity defaulted to unknown, but arbitrary supplied labels were previously accepted and could bypass nonmatching context retention.",
+  "repair": "validate_record now rejects non-string and unrecognized supplied polarity values. Recognized vocabulary: supporting, contrary, supporting-and-contrary, unknown. Missing labels retain existing unknown default.",
+  "compatible_behavior": [
+    "No source text, historical protocol, query, gold, eligibility, ranking, packet budget or financial conclusion changed.",
+    "Existing correctly labelled records preserve behavior; malformed stored records may now fail revalidation, as intended.",
+    "No automatic relabelling of supplied source metadata, semantic classification or upgrade of provisional research."
+  ],
+  "verification": [
+    "39 memory tests passed in7.593seconds, including five new synthetic cases without the historical corpus.",
+    "Invalid provided labels tested: contray, neutral, limited, empty string, null, list and boolean. Failed imports leave empty fixture state unchanged.",
+    "Missing label, explicit supporting-plus-limitations metadata, eligible irrelevant unknown context, and one-byte cap failure tested."
+  ],
+  "files": [
+    {
+      "path": "tools/research_memory.py",
+      "sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+    },
+    {
+      "path": "validation/tests/test_research_memory.py",
+      "sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+    }
+  ],
+  "acceptance": "No acceptance-row classification promotion. Original frozen4/5 failure remains; one known-corpus ordinary diagnostic5/5 remains non-held-out and version-bound to predecessor code.",
+  "remaining": [
+    "Cannot identify semantic opposition hidden in incorrectly but validly supporting-labelled text without explicit limitations/links or analytical review.",
+    "Unknown-context retention trades precision for conservatism and can withhold oversized packets.",
+    "Actual Astra case review, disposition and final whole-goal engineering acceptance remain incomplete."
+  ]
+}

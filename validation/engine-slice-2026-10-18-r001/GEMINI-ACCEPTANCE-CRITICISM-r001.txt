@@ -1,0 +1,173 @@
+- heading "You said Bounded evaluation criticism, baseline 18 October 2026. No browsing, code execution, account access,…" [level=5]
+  - paragraph: Bounded evaluation criticism, baseline 18 October 2026. No browsing, code execution, account access, investment advice or project access. Use only this context. Return at most 650 words, identify overclaim risks and exact next acceptance decisions. Do not claim to run tests or approve a release.
+  - paragraph
+  - paragraph: A local evidence-research engine must implement request→frozen packet→bounded analysis→independent review→disposition→rebuildable status. The goal requires one actually independently reviewed real case plus deterministic evaluation, missing/contrary evidence controls and a final engineering audit. Its actual company review remains missing, so the full goal is incomplete regardless of retrieval results. Separate broker/trade/live gates remain disabled.
+  - paragraph
+  - paragraph: "An original held-out retrieval protocol was frozen BEFORE first execution: same retrospective question, sources, cutoff, query terms and bounds for direct lexical and SQLite FTS routes; five gold supporting/contrary passages and six negative controls. Both original routes returned4/5 gold, excluded6/6 negative controls, preserved the table. The missed caution text was: 'Original issuer PDFs returned HTTP403 to local preservation. Verified numerical extracts and precise links retained; complete PDFs remain online.' It contains none of the frozen query terms (turnover, operating profit, CFO, GBp, GBP, EUR, partial, missing, Ice Cream, withheld, source). The frozen selection was text matching with balance=False. Original protocol/query/gold/source bytes/results remain untouched; no rerun is being presented as held-out success."
+  - paragraph
+  - paragraph: "The existing ordinary production route has a separate balance=True default: first apply entity/security/question/time/status eligibility; after initial matches retain eligible explicitly contrary, conflicting/linked, limited or UNKNOWN-polarity context; omit future/incompatible material; fail closed if packet caps could hide such context. It cannot discover unlabelled semantic opposition; inherited source labels are not independent source verification. This implementation pre-existed the diagnostic below; no code change was made for its result."
+  - paragraph
+  - paragraph: "We preregistered and ran ONE expressly NON-HELD-OUT diagnostic after the original failure and corpus were known: identical old sources, exact same query, cutoff, gold and packet bounds, same existing two route rankers, but their existing ordinary balance=True path. Frozen loader strips evaluator polarity/expected-exclusion labels before selection; records default to polarity unknown. Gold is scored only AFTER packet construction. Both ordinary routes now retain5/5 gold, exclude6/6 negatives, preserve exact six-row table and normalized labels; packets19854 UTF8 bytes each. Rebuilding the index reproduces IDs/hash/exclusions. The previously missed caution is retained as unknown-polarity, partial-provisional PROJECT ANALYSIS with explicit context-retention inclusion reason, not independently verified issuer evidence. Zero model or network calls. No original result/classification was relabelled."
+  - paragraph
+  - paragraph: Original goal says evaluate gold supporting/contrary recall, period/unit preservation, cutoffs, stale/superseded material and bounded references, and repair material implementation defects. Original frozen rubric requires all five, and forbids outcome-driven alteration of frozen selection/query/source/gold; later non-held-out protocols are permitted while preserving it. Current419-item acceptance matrix retains three evaluated-failed classifications for original retrieval/evaluation criteria and does not claim full acceptance. Full real case review is separately blocked.
+  - paragraph
+  - paragraph: "Questions: (1) What narrow claim does the diagnostic support, and what does it NOT establish? (2) Is it sound to preserve the original4/5 failure while recording the ordinary-route functional result separately? (3) Should unknown-polarity context retention be viewed as retrieval robustness or blanket inclusion with scaling/cap risks, and which bounded tests matter? (4) What evidence or interpretation is still needed before resolving any retrieval-related acceptance row, without changing goal scope or retroactively tuning a held-out test? Be critical, avoid inventing requirements or assuming this solves the missing actual independent company review."
+  - button "Expand":
+    - img: expand_more
+  - button "Copy prompt":
+    - img: copy
+  - button "Edit":
+    - img: edit
+  - heading "Gemini said" [level=6]
+  - heading "1. Narrow Claim Supported vs. Overclaim Risks" [level=3]
+  - list:
+    - paragraph:
+      - text: "What the Diagnostic Supports: The pre-existing"
+      - code: balance=True
+      - text: code path, when fed eligible records whose evaluator polarity labels are stripped to
+      - code: unknown
+      - text: ", deterministically retains all 5 gold passages, excludes the 6 negative controls, preserves the 6-row table within 19,854 UTF-8 bytes, and tags the HTTP 403 provenance note as"
+      - code: partial-provisional PROJECT ANALYSIS
+      - text: with an explicit
+      - code: context-retention
+      - text: reason.
+    - paragraph: "What It Does NOT Establish (Overclaim Risks):"
+    - list:
+      - paragraph: "Held-out retrieval generalization: The diagnostic was defined after the missed passage and corpus were known; it is a post-hoc mechanism verification, not a blind benchmark."
+      - paragraph:
+        - text: "Lexical or semantic recall of cautions: Neither ranker matched the HTTP 403 caution. It survived solely because"
+        - code: balance=True
+        - text: sweeps in eligible
+        - code: unknown
+        - text: "-polarity records after initial lexical matches."
+      - paragraph:
+        - text: "Production ingestion parity: The frozen test loader artificially strips polarity labels so records default to"
+        - code: unknown
+        - text: . This does not prove that the production ingestion pipeline assigns
+        - code: unknown
+        - text: or
+        - code: limited
+        - text: polarity to similar provenance cautions.
+      - paragraph: "Primary source verification or goal completion: Retaining an internal project note about HTTP 403 blocks does not verify the unarchived issuer PDFs, nor does it satisfy the missing independent real-company review."
+  - heading "2. Preserving the 4/5 Held-Out Failure Alongside the Diagnostic" [level=3]
+  - paragraph:
+    - text: Preserving the original 4/5 failure while separately logging the
+    - code: balance=True
+    - text: diagnostic is methodologically sound and mandatory under the rubric. The frozen protocol forbids outcome-driven edits to selection parameters (
+    - code: balance=False
+    - text: ) but explicitly permits subsequent non-held-out protocols. Keeping the original 4/5 failure immutable prevents retroactive test tuning (p-hacking), while recording the
+    - code: balance=True
+    - text: run separately provides an auditable record that the production default handles the case without code changes.
+  - 'heading "3. Unknown-Polarity Retention: Robustness vs. Blanket Inclusion" [level=3]'
+  - paragraph:
+    - text: Because the test loader strips polarity labels to
+    - code: unknown
+    - text: and
+    - code: balance=True
+    - text: retains all eligible
+    - code: unknown
+    - text: "-polarity passages after initial matches, the mechanism acts as blanket inclusion of all eligible corpus items, not selective contrary-context retrieval. It succeeded here only because:"
+  - list:
+    - paragraph: The 6 negative controls failed upstream eligibility checks (entity, security, question, time, or status) rather than relying on topical ranker exclusion.
+    - paragraph: The eligible corpus was small enough (19,854 bytes) to fit beneath the packet byte cap.
+  - paragraph:
+    - text: "Scaling & Cap Risks: In a larger corpus where many paragraphs pass entity and cutoff checks and carry"
+    - code: unknown
+    - text: polarity,
+    - code: balance=True
+    - text: will annex every eligible passage until it breaches
+    - code: max_utf8_bytes
+    - text: and fails closed, halting packet generation.
+  - paragraph: "Highest-Value Bounded Tests:"
+  - list:
+    - paragraph:
+      - text: "Production Ingestion Polarity Parity Test: Run raw source records (without evaluator label stripping) through production ingestion into"
+      - code: balance=True
+      - text: to verify whether the HTTP 403 caution is natively tagged
+      - code: limited
+      - text: /
+      - code: unknown
+      - text: (retained) or
+      - code: supporting
+      - text: /
+      - code: neutral
+      - text: (dropped).
+    - paragraph:
+      - text: "In-Scope Irrelevant Negative Control Test: Add a negative control that shares the exact entity, security, valid time window, and active status, with"
+      - code: unknown
+      - text: polarity but irrelevant content, to verify whether
+      - code: balance=True
+      - text: falsely pulls it into the packet.
+    - paragraph:
+      - text: "Cap-Breach Fail-Closed Boundary Test: Add eligible"
+      - code: unknown
+      - text: "-polarity passages until total bytes exceed the packet limit by 1 byte, confirming deterministic fail-closed behavior and establishing the maximum safe corpus size per entity/period."
+  - heading "4. Missing Evidence & Next Acceptance Decisions" [level=3]
+  - paragraph: "Evidence/Interpretation Required Before Resolving Retrieval Rows:"
+  - list:
+    - paragraph:
+      - text: Document whether
+      - code: balance=False
+      - text: in the frozen protocol was an intentional isolated test of bare text rankers or a harness configuration discrepancy against the production
+      - code: balance=True
+      - text: default.
+    - paragraph:
+      - text: Confirm via schema/code inspection how production ingestion assigns polarity and
+      - code: limited
+      - text: status to provenance cautions when the evaluator's label-stripping loader is not used.
+  - paragraph: "Exact Next Acceptance Decisions (419-Item Matrix):"
+  - list:
+    - paragraph:
+      - text: Retain
+      - code: Evaluated-Failed
+      - text: "on the Frozen Held-Out Protocol Row:"
+      - text: Do not relabel the original 4/5 result; the frozen
+      - code: balance=False
+      - text: test missed 1/5 gold passages.
+    - paragraph:
+      - text: "Keep Retrieval Defect-Repair Rows Open Pending Ingestion Proof: Only resolve functional retrieval/contrary-control rows as satisfied-by-existing-production-path after verifying that production ingestion natively assigns"
+      - code: limited
+      - text: or
+      - code: unknown
+      - text: status to the HTTP 403 caution without evaluator label stripping, or by explicitly binding provenance/limitation records at ingestion.
+    - paragraph:
+      - text: "Hold Overall Engine Acceptance Blocked: No retrieval resolution can clear overall release; the full lifecycle ("
+      - code: request
+      - math:
+        - generic: →
+      - generic: →
+      - code: packet
+      - math:
+        - generic: →
+      - generic: →
+      - code: analysis
+      - math:
+        - generic: →
+      - generic: →
+      - code: independent review
+      - math:
+        - generic: →
+      - generic: →
+      - code: disposition
+      - text: ) on a real company case and the final engineering audit remain mandatory open gates.
+  - button "Good response":
+    - img: thumb_up
+  - button "Bad response":
+    - img: thumb_down
+  - button "Redo":
+    - img: refresh
+  - button "Share & export":
+    - img: share_1
+  - button "Copy":
+    - img: copy
+  - button "Show more options":
+    - img: more_horiz
+  - paragraph:
+    - text: Gemini is AI and can make mistakes, including about people.
+    - link "Your privacy & Gemini Opens in a new window":
+      - /url: https://support.google.com/gemini?p=privacy_notice
+      - text: Your privacy & Gemini
+      - generic: Opens in a new window
+  - button:
+    - img: arrow_downward
+  

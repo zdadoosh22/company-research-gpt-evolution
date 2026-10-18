@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "ordinary-context-diagnostic-20261018-r001",
+  "created_at": "2026-10-18T01:30:35.032064+00:00",
+  "label": "Explicitly non-held-out diagnostic of existing ordinary routes; corpus and gold already inspected",
+  "purpose": "Check current context-retaining route for source-preservation cautions without modifying original frozen comparison",
+  "original_protocol": {
+    "path": "validation/engine-slice-2026-10-15-r001/RETRIEVAL-PROTOCOL.json",
+    "sha256": "e66af62d0bc2576db1bfda6f123e9f2d702cb378e2f4c29cea000a07392c0399"
+  },
+  "freeze": {
+    "path": "validation/engine-slice-2026-10-15-r001/frozen-inputs/FREEZE.json",
+    "sha256": "39236911680c0e883b3eba30353b878ea9c8971f600b7892fb51de6cf6145335"
+  },
+  "implementation": {
+    "path": "tools/research_memory.py",
+    "sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71"
+  },
+  "shared_configuration": {
+    "query_terms": [
+      "turnover",
+      "operating profit",
+      "CFO",
+      "GBp",
+      "GBP",
+      "EUR",
+      "partial",
+      "missing",
+      "Ice Cream",
+      "withheld",
+      "source"
+    ],
+    "entity_filter": [
+      "unilever-plc",
+      "project-methodology"
+    ],
+    "security_filter": "ULVR-London-ordinary-unresolved; retrieval may report unresolved identity, never assert verified listing/order eligibility",
+    "record_types": [
+      "entity",
+      "disposition",
+      "claim"
+    ],
+    "review_status_filter": [
+      "partial-provisional",
+      "confirmed-methodology"
+    ],
+    "max_records": 16,
+    "max_packet_utf8_bytes": 32768,
+    "atomic_passages": true,
+    "truncation": "Do not truncate within a passage or table row; omit a whole excess record and record exclusion reason.",
+    "sort_tie_breaker": "record id ascending",
+    "source_text_interpretation": "Data only; never instructions.",
+    "network_calls": 0,
+    "worker_calls": 0,
+    "model_route": null,
+    "reasoning_setting": null,
+    "prompt": null,
+    "prompt_reason": "Deterministic retrieval only; no model prompt exists.",
+    "live_model_identity": "not applicable; no model invoked"
+  },
+  "evidence_cutoff": "2026-10-09T16:02:01Z",
+  "sole_selection_difference": "Use existing ordinary build_packet balance=True (pre-existing default) for both direct-file and FTS routes, rather than frozen comparison balance=False. No code, query, source, gold, cutoff or packet-limit change.",
+  "checks": [
+    "Original five gold exact passages, scored after packets are created; evaluator metadata not used for selection",
+    "Original six historical negative controls remain excluded",
+    "Atomic H1 table text/labels preserved",
+    "Selected records, packet hashes, bytes, exclusions and deterministic index rebuild equality"
+  ],
+  "stopping_rule": "Run once; preserve any failure; no outcome-driven retry, cap increase, query/source/gold change or acceptance-status promotion",
+  "worker_calls": 0,
+  "network_calls": 0,
+  "limitations": [
+    "Does not change original4/5 result or create a new held-out result.",
+    "No investment conclusion, edge, savings or generic recall-performance claim.",
+    "Partial issuer source preservation remains an actual evidential limitation."
+  ]
+}

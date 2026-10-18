@@ -307,6 +307,54 @@ raise SystemExit('Fault injection was not reached')
         record = next(r for r in result["packet"]["records"] if r["id"] == "contrary-no-match")
         self.assertIn("contrary or conflicting", record["inclusion_reason"])
 
+    def test_ordinary_ingestion_missing_polarity_retains_unmatched_access_caution(self):
+        caution = self.add("access-caution", "Archived document retrieval returned HTTP403.")
+        caution.pop("polarity")
+        self.load()  # Ordinary import; no frozen/evaluator-label stripping.
+        result = self.query()
+        retained = next(r for r in result["packet"]["records"] if r["id"] == "access-caution")
+        self.assertEqual(retained["polarity"], "unknown")
+        self.assertEqual(retained["review_status"], "partial-provisional")
+        self.assertEqual(retained["readiness_effect"], "none")
+        self.assertNotIn("query text matched", retained["inclusion_reason"])
+
+    def test_ordinary_retention_is_not_a_semantic_relevance_classifier(self):
+        self.add("unrelated-context", "The office wallpaper is blue.")
+        self.load()
+        result = self.query()
+        self.assertIn("unrelated-context", result["selected_record_ids"])
+        record = next(r for r in result["packet"]["records"] if r["id"] == "unrelated-context")
+        self.assertEqual(record["polarity"], "unknown")
+        self.assertNotIn("query text matched", record["inclusion_reason"])
+
+    def test_explicit_limitation_retained_without_unknown_or_contrary_label(self):
+        self.add("limited-context", "The document could not be preserved.",
+                 polarity="supporting", limitations=["Original document unavailable"])
+        self.load()
+        result = self.query()
+        record = next(r for r in result["packet"]["records"] if r["id"] == "limited-context")
+        self.assertEqual(record["polarity"], "supporting")
+        self.assertEqual(record["limitations"], ["Original document unavailable"])
+        self.assertEqual(record["review_status"], "partial-provisional")
+
+    def test_unknown_context_one_byte_over_cap_withholds_packet(self):
+        self.add("unmatched-caution", "Archived document retrieval returned HTTP403.")
+        self.load()
+        complete = self.query()
+        self.assertIn("unmatched-caution", complete["selected_record_ids"])
+        result = self.query(max_packet_utf8_bytes=complete["packet_utf8_bytes"] - 1)
+        self.assertEqual(result["selected_record_ids"], [])
+        self.assertIn("packet-withheld-budget-could-hide-contrary-evidence", set(self.reasons(result).values()))
+
+    def test_invalid_provided_polarity_cannot_silently_drop_context(self):
+        record = self.add("misspelled-caution", "Archived document could not be preserved.")
+        for label in ("contray", "neutral", "limited", "", None, [], True):
+            with self.subTest(label=label):
+                record["polarity"] = label
+                with self.assertRaisesRegex(ValueError, "Invalid polarity"):
+                    self.load()
+                self.assertEqual(self.memory.data()[0], [])
+
     def test_whole_passage_byte_bound_and_query_tie_order(self):
         self.load()
         result = self.query(max_packet_utf8_bytes=900)

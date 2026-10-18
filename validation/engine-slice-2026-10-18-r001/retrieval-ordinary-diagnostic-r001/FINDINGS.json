@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-10-18T01:32:46.876872+00:00",
+  "label": "Non-held-out, one-shot functional diagnostic; original evaluation is unchanged",
+  "artifacts": [
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/retrieval-ordinary-diagnostic-r001/PROTOCOL.json",
+      "sha256": "f22f9fad0779e9b931e0dc6a239a08c01b30f8e5659da32bf4d8c1369e952f07"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/retrieval-ordinary-diagnostic-r001/RUN.py",
+      "sha256": "4f0482e2afd2ee16d2dd471238c98de24a6d007cd7eef6b7b346df661f0addbb"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/retrieval-ordinary-diagnostic-r001/RESULT.json",
+      "sha256": "6709b5285a041e15a97670b00258bfd33a8e9265557b5fba2e267d889ef013c9"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/retrieval-ordinary-diagnostic-r001/direct-packet.json",
+      "sha256": "288c188b27da9cfb7618d446d964f1b61af2edff135c13127b336bc23c6e23cb"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/retrieval-ordinary-diagnostic-r001/fts-packet.json",
+      "sha256": "3d994db386b258ca99b1c06b8b713a758c30def07642cf72b9f2297887a8130e"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/retrieval-ordinary-diagnostic-r001/direct-exclusions.json",
+      "sha256": "4a5de6761d099d8af7f9faea7ed8d9391d9a6b39bd3a5601ff8115a5e35e4641"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/retrieval-ordinary-diagnostic-r001/fts-exclusions.json",
+      "sha256": "4a5de6761d099d8af7f9faea7ed8d9391d9a6b39bd3a5601ff8115a5e35e4641"
+    }
+  ],
+  "observed": {
+    "direct_gold_passed": 5,
+    "fts_gold_passed": 5,
+    "negative_controls_per_route": 6,
+    "table_preserved_both": true,
+    "fts_rebuild_equal": true
+  },
+  "claim": "In this known bounded corpus, existing ordinary unknown/limited-context retention prevents losing the archived source-access caution despite no lexical match.",
+  "nonclaims": [
+    "Does not retroactively pass frozen4/5 evaluation.",
+    "Does not prove general recall, source completeness, independent source truth, trading edge, efficiency gain or release acceptance.",
+    "Gold is not used to select records; unknown polarity retains eligible context without classifying its semantic opposition.",
+    "Both ordinary routes apply the same retention policy; no unique FTS benefit is established."
+  ],
+  "classification_changes": [],
+  "worker_calls": 0,
+  "network_calls": 0,
+  "next": "Reconcile independent criticism with the exact original acceptance clauses; leave original failed rows unchanged pending that review."
+}

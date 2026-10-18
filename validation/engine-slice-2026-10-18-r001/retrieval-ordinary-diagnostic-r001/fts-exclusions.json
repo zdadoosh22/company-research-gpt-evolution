@@ -1,0 +1,50 @@
+[
+  {
+    "record_id": "LATER-COST-CONCLUSION",
+    "reason": "analytical-conclusion-after-cutoff",
+    "source_id": "later-cost-conclusion",
+    "public_source_date": null,
+    "versioned_no_later_than": "2026-10-14T23:59:59Z",
+    "superseded_by": null
+  },
+  {
+    "record_id": "OTHER-ENTITY",
+    "reason": "wrong-entity",
+    "source_id": "other-entity-control",
+    "public_source_date": null,
+    "versioned_no_later_than": "2026-10-09T16:02:01Z",
+    "superseded_by": null
+  },
+  {
+    "record_id": "UL-ANNUAL-TTM-CLAIM",
+    "reason": "dependency-unknown-publication-date:ul-r2-u1",
+    "source_id": "ul-r2-report",
+    "public_source_date": null,
+    "versioned_no_later_than": "2026-10-09T16:02:01Z",
+    "superseded_by": null
+  },
+  {
+    "record_id": "UL-R1-STALE-CLAIM",
+    "reason": "superseded-for-default-reuse",
+    "source_id": "ul-r1-report",
+    "public_source_date": null,
+    "versioned_no_later_than": "2026-10-09T16:02:01Z",
+    "superseded_by": "UL-SECURITY-CURRENCY"
+  },
+  {
+    "record_id": "UL-R1-SUPERSEDED",
+    "reason": "superseded-for-default-reuse",
+    "source_id": "ul-r1-run",
+    "public_source_date": null,
+    "versioned_no_later_than": "2026-10-09T16:02:01Z",
+    "superseded_by": "UL-DISPOSITION"
+  },
+  {
+    "record_id": "UL-U1-UNKNOWN-DATE",
+    "reason": "unknown-publication-date",
+    "source_id": "ul-r2-u1",
+    "public_source_date": null,
+    "versioned_no_later_than": "2026-10-09T16:02:01Z",
+    "superseded_by": null
+  }
+]

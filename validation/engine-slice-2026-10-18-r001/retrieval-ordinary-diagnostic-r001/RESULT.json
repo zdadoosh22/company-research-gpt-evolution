@@ -1,0 +1,164 @@
+{
+  "label": "Explicitly non-held-out diagnostic of existing ordinary routes; corpus and gold already inspected",
+  "routes": {
+    "direct": {
+      "selected_record_ids": [
+        "UL-H1-INTERPRETATION",
+        "UL-H1-TABLE",
+        "UL-SECURITY-CURRENCY",
+        "UL-DISPOSITION",
+        "UL-IDENTITY",
+        "LESSON-DEFINITIONS",
+        "UL-PRESERVATION-LIMIT",
+        "UL-SCREEN-WITHHELD"
+      ],
+      "gold": [
+        {
+          "id": "GOLD-S1",
+          "record_id": "UL-H1-TABLE",
+          "passed": true
+        },
+        {
+          "id": "GOLD-S2",
+          "record_id": "UL-H1-INTERPRETATION",
+          "passed": true
+        },
+        {
+          "id": "GOLD-C1",
+          "record_id": "UL-SECURITY-CURRENCY",
+          "passed": true
+        },
+        {
+          "id": "GOLD-C2",
+          "record_id": "UL-DISPOSITION",
+          "passed": true
+        },
+        {
+          "id": "GOLD-C3",
+          "record_id": "UL-PRESERVATION-LIMIT",
+          "passed": true
+        }
+      ],
+      "negatives": [
+        {
+          "id": "UL-U1-UNKNOWN-DATE",
+          "passed": true,
+          "reason": "unknown-publication-date"
+        },
+        {
+          "id": "UL-ANNUAL-TTM-CLAIM",
+          "passed": true,
+          "reason": "dependency-unknown-publication-date:ul-r2-u1"
+        },
+        {
+          "id": "UL-R1-SUPERSEDED",
+          "passed": true,
+          "reason": "superseded-for-default-reuse"
+        },
+        {
+          "id": "UL-R1-STALE-CLAIM",
+          "passed": true,
+          "reason": "superseded-for-default-reuse"
+        },
+        {
+          "id": "LATER-COST-CONCLUSION",
+          "passed": true,
+          "reason": "analytical-conclusion-after-cutoff"
+        },
+        {
+          "id": "OTHER-ENTITY",
+          "passed": true,
+          "reason": "wrong-entity"
+        }
+      ],
+      "table_preserved": true,
+      "packet_sha256": "cb57fd3c195b175e3ed96dfe55abf9b602eb0c389167134cb905dfb72849ab4a",
+      "packet_utf8_bytes": 19854,
+      "source_refs_and_reasons": true
+    },
+    "fts": {
+      "selected_record_ids": [
+        "UL-SECURITY-CURRENCY",
+        "UL-H1-INTERPRETATION",
+        "UL-H1-TABLE",
+        "UL-DISPOSITION",
+        "UL-IDENTITY",
+        "LESSON-DEFINITIONS",
+        "UL-PRESERVATION-LIMIT",
+        "UL-SCREEN-WITHHELD"
+      ],
+      "gold": [
+        {
+          "id": "GOLD-S1",
+          "record_id": "UL-H1-TABLE",
+          "passed": true
+        },
+        {
+          "id": "GOLD-S2",
+          "record_id": "UL-H1-INTERPRETATION",
+          "passed": true
+        },
+        {
+          "id": "GOLD-C1",
+          "record_id": "UL-SECURITY-CURRENCY",
+          "passed": true
+        },
+        {
+          "id": "GOLD-C2",
+          "record_id": "UL-DISPOSITION",
+          "passed": true
+        },
+        {
+          "id": "GOLD-C3",
+          "record_id": "UL-PRESERVATION-LIMIT",
+          "passed": true
+        }
+      ],
+      "negatives": [
+        {
+          "id": "UL-U1-UNKNOWN-DATE",
+          "passed": true,
+          "reason": "unknown-publication-date"
+        },
+        {
+          "id": "UL-ANNUAL-TTM-CLAIM",
+          "passed": true,
+          "reason": "dependency-unknown-publication-date:ul-r2-u1"
+        },
+        {
+          "id": "UL-R1-SUPERSEDED",
+          "passed": true,
+          "reason": "superseded-for-default-reuse"
+        },
+        {
+          "id": "UL-R1-STALE-CLAIM",
+          "passed": true,
+          "reason": "superseded-for-default-reuse"
+        },
+        {
+          "id": "LATER-COST-CONCLUSION",
+          "passed": true,
+          "reason": "analytical-conclusion-after-cutoff"
+        },
+        {
+          "id": "OTHER-ENTITY",
+          "passed": true,
+          "reason": "wrong-entity"
+        }
+      ],
+      "table_preserved": true,
+      "packet_sha256": "c85bac562dc0b5115a330eafb465bf06e47f35eefbcd62ce37c9c435b97419b9",
+      "packet_utf8_bytes": 19854,
+      "source_refs_and_reasons": true
+    }
+  },
+  "rebuild_equal": true,
+  "worker_calls": 0,
+  "network_calls": 0,
+  "original_frozen_result": "unchanged:4/5each route",
+  "limitations": [
+    "Does not change original4/5 result or create a new held-out result.",
+    "No investment conclusion, edge, savings or generic recall-performance claim.",
+    "Partial issuer source preservation remains an actual evidential limitation."
+  ]
+}

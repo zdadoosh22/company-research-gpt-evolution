@@ -111,6 +111,11 @@ def table_rows(text):
 
 
 def validate_record(record, sources):
+    # An unrecognized provided label must not silently bypass conservative
+    # context retention. load_bundle defaults an omitted label to unknown.
+    if not isinstance(record.get("polarity"), str) or record["polarity"] not in {
+            "supporting", "contrary", "supporting-and-contrary", "unknown"}:
+        raise ValueError("Invalid polarity; explicitly classify or preserve unknown")
     for field in ("id", "record_type", "entity_id", "question_scope", "source_id",
                   "source_path", "source_sha256", "location", "text", "text_sha256", "review_status",
                   "originating_run"):

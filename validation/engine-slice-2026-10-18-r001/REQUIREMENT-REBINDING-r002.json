@@ -1,0 +1,1973 @@
+{
+  "created_at": "2026-10-18T01:43:19.777976+00:00",
+  "predecessor": {
+    "path": "validation/engine-slice-2026-10-18-r001/REQUIREMENT-EVIDENCE-20261018-r012.json",
+    "sha256": "bfa46952f11caf9720648386c80ccfba49030604d871803fdc432f4380ed50b7"
+  },
+  "scope": "Source-binding and validation-only compatibility reconciliation; no classification promotion",
+  "changes": [
+    {
+      "id": "BRIEF-L0020",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0026",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0036",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0045",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0047",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0067",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0074",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0080",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0095",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0106",
+      "retained_classification": "blocked",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0107",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0111",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0139",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0142",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0151",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0152",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0155",
+      "retained_classification": "deferred",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0173",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0174",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0176",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0177",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0181",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0185",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0195",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0197",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0198",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0199",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0201",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0204",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0206",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0246",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0248",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0298",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0300",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0302",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0308",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0309",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0310",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0311",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0312",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0314",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0316",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0318",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0320",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0324",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0326",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0330",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0336",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0337",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0338",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0339",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0341",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0343",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0345",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0347",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0381",
+      "retained_classification": "deferred",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0383",
+      "retained_classification": "deferred",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0385",
+      "retained_classification": "deferred",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0389",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0393",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0394",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0395",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0396",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0397",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0398",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0400",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0402",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0404",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0406",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0408",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0412",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0413",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0414",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0415",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0416",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0417",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0418",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0449",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0453",
+      "retained_classification": "deferred",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0455",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0473",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0474",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0475",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0476",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0477",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0479",
+      "retained_classification": "evaluated-failed",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0504",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0517",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0523",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0524",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0525",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0526",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0527",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0528",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0530",
+      "retained_classification": "blocked",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0531",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0533",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0534",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0550",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0552",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0554",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0571",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0585",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0587",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0589",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0593",
+      "retained_classification": "blocked",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0594",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0595",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0596",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0599",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0605",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0606",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0607",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0610",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0613",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0615",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0622",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0623",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0523-01",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0523-02",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0523-03",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0523-04",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0523-05",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0523-06",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0523-07",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0523-08",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0525-01",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0525-02",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0525-03",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0525-04",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0525-05",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0525-06",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0525-07",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0526-01",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0526-02",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0526-03",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0526-04",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0526-05",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0534-01",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0534-02",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "COMMAND-RETRIEVE",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0193",
+      "retained_classification": "verified",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0306",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0334",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "tools/research_memory.py",
+          "prior_sha256": "b6c7a464b311d07ebe9171e03d860056694081fcbfb3cfdbcf254e675ca53f71",
+          "current_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678"
+        },
+        {
+          "path": "validation/tests/test_research_memory.py",
+          "prior_sha256": "a89efe7139d90e569788d7ade368c608ea6739385d31a9d334e60db8c3b02a1f",
+          "current_sha256": "b53ace7c46039b2d0071785a703fdc765d89a1c615d46a82a1be3702f0214445"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0391",
+      "retained_classification": "implemented-fixture-tested",
+      "ref_changes": [
+        {
+          "path": "workflows/research-engine.md",
+          "prior_sha256": "e22839dca9a44569a594e6a23620ef6b160d66f66a546a1c5a09ae85383ffe47",
+          "current_sha256": "b6559b42a9b16dbece0596f1611ec2d842380aa3564f99e124c1647199a6a4ed"
+        }
+      ]
+    }
+  ],
+  "regression": {
+    "path": "validation/engine-slice-2026-10-18-r001/REGRESSION-r008-manifest.json",
+    "sha256": "82564a2611b20afa7a511c912bfa5b3cb808f305f52d5ffa9643cd2db11215c0"
+  },
+  "implementation_delta": {
+    "path": "validation/engine-slice-2026-10-18-r001/RETRIEVAL-DELTA-CHECK-r001.json",
+    "sha256": "bd378e5fe418d6c3560f626737bc84d357df5c273b71968cfad27afffb9bb7bc"
+  },
+  "limitations": [
+    "Original frozen4/5 result remains failed.",
+    "Known-corpus ordinary5/5 diagnostic is explicitly non-held-out and dated to predecessor validation code.",
+    "Actual Astra review/disposition and final whole-engine engineering release remain unperformed."
+  ]
+}
