@@ -1,0 +1,10 @@
+.....................................................................................................................................................................................................................................................................................s....usage: python.exe -m unittest prepare [-h] --request REQUEST --job JOB
+                                      --record-id RECORD_ID --created-at
+                                      CREATED_AT
+python.exe -m unittest prepare: error: the following arguments are required: --request, --job, --record-id, --created-at
+..Research memory refused: Derived memory state must stay in state/research-memory or state/research-engine
+.......................................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 483 tests in 88.110s
+
+OK (skipped=1)

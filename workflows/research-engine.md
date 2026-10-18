@@ -1,6 +1,6 @@
 # Bounded research engine
 
-Implementation follows the authorised r002 brief and its dated user clarification. This document records implemented interfaces while the larger slice remains incomplete. Company judgement, opportunity economics, portfolio policy and execution remain separate. The existing observation service retains `research_enabled=false`.
+Implementation follows the authorised r002 brief and its dated user clarification. The bounded slice has completed its actual reviewed parked case; final version-bound acceptance is documented in `validation/engine-slice-2026-10-18-r001/INSTALLED-WORKFLOW-AND-READINESS-r003.md` and the selected release record. Broader live readiness remains separate. Company judgement, opportunity economics, portfolio policy and execution remain separate. The existing observation service retains `research_enabled=false`.
 
 ## Explicit checkpoint commands
 
@@ -137,3 +137,11 @@ Final tested installed source:471tests,470passed and one existing Windows permis
 The human separately authorised exactly one further Astra review attempt in `validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md`, after all five earlier dispatches were consumed. The new `authorize-review-second-amendment <manifest.json>` queue command appends an independently hash-bound second amendment; it does not overwrite the original case ceiling, first exception or any failed dispatch. It requires the same frozen case/batch/package/review job, exact first-exception digest, exact unclaimed interrupted fifth-dispatch snapshot, matching terminal job, new distinct authority and original authorization interval. Registration and explicit retry remain separate. It permits at most the sixth dispatch for this review; failed sixth still consumes it and a seventh is rejected. No generic amendment loop or inference refund is included.
 
 A pre-integration private SQLite backup and code backups were preserved. Restore operational state only as a coherent SQLite/metadata set under the documented rollback rules; never restore to manufacture unused attempts. The local reviewed code delta itself does not apply the amendment or run the model. Actual registration/dispatch outcomes must be recorded separately. The five-attempt status and no-further-authority statements in older checkpoints describe their dates; the r002 human amendment supersedes that authority limit only for this one sixth review. All analytical/portfolio/execution gates stay separate.
+
+### Final installed snapshot (18 October)
+
+The latest installed source-bound regression is r013:480run,479passed,one confirmed Windows symlink-creation permission skip. The actual AMD Helion case is parked/independently-reviewed with material financial/expectations conclusions withheld. The Windows atomic-archive failure is repaired and original review/packet bytes preserved. Earlier incomplete-case/five-attempt/test-count paragraphs describe dated history. See the final installed-workflow/readiness report above, r018 requirement matrix and current release pointer; no live gate follows from software acceptance.
+
+### Owned-source release inventory correction (18 October)
+
+The r018 matrix/r001 final report/r002 engineering acceptance were rejected release candidates: source enumeration crossed the existing external tools/node_modules junction. Preserve their dated language as historical, not current acceptance. The installed repair prunes that generated subtree before traversal, rejects other unsafe components and binds65owned files. Shared successor recorder r014 ran483tests:482passed/one existing Windows permission skip,65source hashes unchanged. Current acceptance uses requirement matrix r022, engineering acceptance r003 and report r003, subject to the actual selected release validator. The earlier r013/480-test paragraph is historical. No research or live gate changes follow.

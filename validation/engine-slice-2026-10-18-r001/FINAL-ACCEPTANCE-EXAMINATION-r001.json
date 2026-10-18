@@ -1,0 +1,2823 @@
+{
+  "created_at": "2026-10-18T02:20:27.058077+00:00",
+  "predecessor": {
+    "path": "validation/engine-slice-2026-10-18-r001/REQUIREMENT-EVIDENCE-20261018-r016.json",
+    "sha256": "4479c4db585f908e328b20c2e6d744873f7885fc0ec0ea50260086974857cc8c"
+  },
+  "scope": "Direct examination of named old blockers against exact original clauses, actual completed case and current controls. No matrix pointer changed by this record.",
+  "examinations": [
+    {
+      "id": "BRIEF-L0030",
+      "original_requirement": "- Why repricing could occur within the proposed holding window.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Reviewed F3/C6 and dossier price_response explain why stated November availability is not a verified earnings surprise, binding realization date or demonstrated within-window repricing. Positive mechanism remains withheld; park is the permitted result.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0031",
+      "original_requirement": "- What expectations are already reflected in the proposed entry price.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Review G5 and dossier expectations explicitly withhold comparison: no dated external or market-implied Helion baseline or entry quote supplied. No incompatible or invented expectations comparison is adopted.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0032",
+      "original_requirement": "- Whether the opportunity survives realistic manual-response delays and costs.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Dossier costs/price_response/entry_conditions keep spread, fees, FX and manual-delay survival unknown; no positive executable opportunity accepted. This is an assessed stopping condition, not proven execution viability.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0033",
+      "original_requirement": "- Overnight gaps, adverse developments, catalyst delays and missed entries.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual dossier separately covers no repricing, adverse surprise, delayed catalyst, overnight gap and correct-but-late outcomes, without probabilities or fills; independently reviewed F3 sustains this uncertainty.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0034",
+      "original_requirement": "- Entry, exit, expiry and reassessment conditions.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual parked dossier/disposition specify no supported entry/sizing/exit instruction, explicit research reopening conditions and no actionable window. expires_at null means a non-actionable park, not a perpetual valid trade.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0043",
+      "original_requirement": "2. One real research case has passed through evidence preparation, bounded analysis, independent challenge and a documented supported, rejected or parked disposition.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual saved request/evidence/partial Sol analysis, fresh requested Astra review-complete, dossier and parked disposition revalidate as independently-reviewed. Missing financial inputs are retained, not filled to obtain a positive result.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0049",
+      "original_requirement": "A missing required implementation or unperformed required model review means the goal remains incomplete. A reviewed research rejection or justified park can satisfy the real-case requirement.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "The required actual independent review is now performed and an honestly parked case exists. This resolves this prerequisite only; aggregate goal/release acceptance is still unproven.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0101",
+      "original_requirement": "- **Accepted/adapted:** P0 queue recovery; isolated allowlisted worker inputs; a deterministic research-record bridge and read-only gate projection; a maximum 4-call real-case ceiling; a narrow entity/disposition/claim FTS5 index; explicit checkpoint semantics with a static/rebuildable projection; and an evidence-driven candidate guard that does not reopen closed LEVI/JPM audits.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Existing queue/isolation/record bridge/FTS/checkpoint/candidate guard are exercised by actual chain and fixtures. Original case ceiling remains4; two separately human-authorised immutable one-shot amendments permit exactly sixth, with all earlier attempts preserved. Closed audits not reopened.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0106",
+      "original_requirement": "- **Accepted/adapted:** make held-out retrieval A/B fully deterministic with zero evaluation worker calls; cap the real case at exactly four possible calls; identify `research_memory.py` (or equivalent), `scoped_research_queue.py`, `scoped_research_adapter.py` and `decision_readiness.py` as reuse/extension targets rather than a new architecture; add compact authorized-passage packets with byte/hash/size records; allow validated correction deltas or JSON Patch with full replacement fallback; add an optional deterministic SEC EDGAR companyfacts/XBRL adapter; add a verified-cost-schedule transaction-friction pre-screen; and record institutional library access as an optional user-controlled evidence route.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Original architecture reuse, deterministic comparison and byte-bound passage packets are retained. Actual case uses scoped adapter/queue/records; both exceptional dispatch slots have direct human authority. Optional adapters/library/friction routes retain their existing evidence/unknown status, not promoted by this case. Frozen comparison remains a recorded negative result, not a claimed gain.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0115",
+      "original_requirement": "**Request → existing-history lookup → source collection → extraction and calculations → frozen evidence packet → authorized model batch → validation and independent review → disposition → rebuildable status projection.**",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Saved selection/history/source/extraction registers precede frozen packet and actual analysis/review, dossier/disposition and current status. No financial calculation is invented for nonfinancial issuer prose; missing economic inputs stop the case. Actual history export/import/query/rebuild now works.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0153",
+      "original_requirement": "| Bounded worker analysis and independent review | Yes | Explicit approved routes only | Frozen input, route/usage record, review disposition | Reject/park; no substitution |",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual scoped Sol and fresh requested Astra route ran on hash-bound inputs, with usage and exact targets retained. Inference/backend identity are distinguished; no fallback or model substitution is asserted. The result is parked.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0214",
+      "original_requirement": "- **Sol High:** bounded research analysis and corrections.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual Sol High standard-speed analysis attempts and retained reference-only normalization lineage are archived. Analytical content remains partial; normalization changed references only, then received fresh independent review. No claim of accepted complete financial thesis.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0215",
+      "original_requirement": "- **Astra High:** material independent challenge.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual fresh requested Astra High standard-speed review completed on exact frozen target. Requested route is evidenced, actual_model is null and backend independently unverified; no stronger identity assertion made.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0219",
+      "original_requirement": "Independent review receives the frozen source packet and the exact target artifact in a fresh review context. It must challenge economics and contrary evidence, not merely polish the author’s prose.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Review job/result/execution/packet and target-processing context bind exact source packet and analysis. Actual review independently sustains F1-F3, qualifies announcement/demand/funding/expectations claims, and excludes unsupported contextual G8 assertions rather than polishing prose.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0229",
+      "original_requirement": "1. The chosen case’s scoped company foundation.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Scoped foundation question is answered at its approved depth: configurations/plans attributed, financial/security-claims/funding conclusions withheld where current evidence absent. No full-thesis or current-funding certification invented.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0230",
+      "original_requirement": "2. Its opportunity assessment, including a justified early rejection or park if the foundation prevents further conclusions.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Independent review sustains the early park because the incremental source cannot support a capital-risking opportunity. Actual dossier records why costs, expectations and owner-cash bridge remain unknown.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0238",
+      "original_requirement": "This authorizes a maximum of **4 bounded worker calls for the selected real case**: Sol analysis, Astra independent review, at most one correction and at most one material recheck. Even if the selected case concludes in a rejection or park, execute the 1 `Sol High` scoped analysis call and 1 `Astra High` independent review call on that disposition; skip calls 3–4 (correction and material recheck) unless material review findings require them. The main Goal agent performs the engineering review directly. The held-out retrieval A/B evaluation uses no live worker calls and is fully deterministic. Deterministic tests use fixtures or fake workers and do not spend live calls. Normal implementation turns are separate from these worker calls.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Original four-call ledger preserved. Six dispatches occurred only through two later explicit human amendments; three Sol inference claims, two unclaimed preflight failures, one actual Astra review. No seventh authorised. Main coordinator engineering review and zero-worker retrieval comparison separately recorded.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0256",
+      "original_requirement": "Use the existing candidate set initially. Reassess current dates, source availability and material developments before selecting one. Do not rerun closed LEVI or JPM audits merely because they are available; use their current dated dispositions and reopen only for a genuinely evidence-changing question. Historical research priority is not a current investment ranking.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Dated17Oct selection brief/capture register reassess existing AMD/Uber/Netflix cohort, preserve prospective schedules and distinguish incomplete Uber index access from absence of news. Closed LEVI/JPM work and partial pilots not reopened or promoted.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0260",
+      "original_requirement": "- An available source capable of changing the decision.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "New12Oct Helion issuer source, preserved and extracted, can test whether incremental commercialization evidence changes prior park. Actual independent review concludes it does not establish enough economics. Source availability is not positive investment evidence.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0261",
+      "original_requirement": "- A plausible several-day to several-month mechanism.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Initial prospective November availability offers a plausible dated development to inspect, not a proved repricing mechanism. F3/adverse cases reject treating it as sufficient; no arbitrary trade frequency or timing assumption.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0262",
+      "original_requirement": "- Evidence that can be evaluated within this assignment.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "The bounded announcement-sufficiency question was evaluated from saved supplied evidence in actual Sol/Astra cycle and led to a specific park. This does not claim all current AMD economics were evaluated.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0263",
+      "original_requirement": "- Compatibility with realistic manual execution.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Manual compatibility was assessed conditionally and not certified: days-to-months scope excludes intraday dependence, while missing executable/delay evidence blocks any instruction. A parked guard outcome does not need broker eligibility fabricated.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0264",
+      "original_requirement": "- Potential economics that warrant investigation after costs and adverse cases.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Candidate economic qualification is not passed positively: no net-return/cost case established. The limited source-sufficiency investigation ends parked under the brief allowance to reject/park when no qualifying capital-risking opportunity is shown; no broader deep investment investigation or ranking accepted.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0266",
+      "original_requirement": "Selection must remain evidence-driven and current-date verified. Do not hard-code AMD, NFLX or any other candidate; if no candidate has a resolvable evidence gap, reject or park the cycle rather than manufacture a selection.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Dated cohort/source selection is evidence-driven, not a hard-coded buy list. The actual cycle parks instead of manufacturing a selected tradable opportunity; market/account facts remain unknown.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0268",
+      "original_requirement": "Record the selection rationale and why the other candidates were deferred. Keep one deep investigation active.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Decision brief names existing alternatives and reasons for deferral, including prospective schedules, prior parks and access limitations. Only one bounded deep case was active; this record does not prove universal absence of other opportunities.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0270",
+      "original_requirement": "For the selected case, produce a decision brief before broad research. Identify the essential claims, material unknowns, decisive source steps and stopping conditions.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Decision brief r002 predates actual model cycle and names claims, material unknowns, decisive supplied source questions and stopping conditions. Earlier unused-attempt statements remain dated history superseded by actual ledger/amendments.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0274",
+      "original_requirement": "- **Resolve:** an available source or calculation could materially change the decision.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual analysis/review resolve what issuer text states, distinguish Helion/Helios and CPU-only/GPU attachment, and inspect whether it supplies commercial evidence. They do not claim missing economics were resolved.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0275",
+      "original_requirement": "- **Bound:** uncertainty can be represented through justified ranges.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Mechanism is bounded qualitatively where evidence permits; no unsupported monetary range, probability or tax/ownership estimate substituted for unknowns. The brief does not require numerical bounds when unavailable.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0276",
+      "original_requirement": "- **Park:** a material unknown prevents a defensible conclusion and cannot currently be resolved.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual disposition parks the incremental case with specific evidence-changing reopening conditions, preserving material F1-F3/G1-G6. It is packet-scoped insufficiency, not a claim that evidence cannot ever be found.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0280",
+      "original_requirement": "Do not impose proprietary customer economics, a perfect daily balance sheet or a full five-year valuation as universal prerequisites. Apply the approved scoped-company coverage to the actual decision.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "No perfect daily balance sheet, proprietary customer model or five-year valuation imposed as a universal prerequisite. The source-sufficiency question is completed via a reviewed early park; broader financial conclusions withheld only where affected.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0282",
+      "original_requirement": "Conversely, a short holding period does not excuse missing security identity, financial resilience, ownership claims, material limitations or contrary evidence.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual review covers security, funding/claims, business drivers, assumptions, limitations and contrary evidence. Missing current financial resilience and ownership inputs are explicitly withheld, not excused by the short horizon.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0286",
+      "original_requirement": "**Event or development → business consequences → market expectations → plausible price response → feasible entry and exit.**",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual dossier follows event-to-business-to-expectations-to-response-to-execution chain and identifies where each unsupported link stops. Completing a negative/park assessment does not require inventing a feasible entry.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0288",
+      "original_requirement": "Include no repricing, adverse surprise, delayed catalyst, overnight gaps and “correct thesis, too late” outcomes. Explain why the opportunity would be preferable to cash at the proposed entry conditions.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "All five adverse mechanisms and cash comparison appear in actual dossier. Superiority to cash is withheld because no supported net shareholder return/cost/baseline exists; no inference of positive economics from planned availability.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0290",
+      "original_requirement": "If an expectation measure is definitionally incompatible, withhold that comparison. Investigate a different justified mechanism only if the evidence supports it.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "No definitionally compatible expectation baseline is supplied; actual review G5 and dossier withhold comparisons. No alternate unjustified mechanism substituted. Correct behavior here is refusal, not a numerical comparison.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0426",
+      "original_requirement": "A scoped company review must cover the security/claims, financial resilience through the holding window, business drivers, assumptions, limitations and contrary evidence.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual9category coverage and independent review retain missing security/claims/resilience as material; business/source/contrary findings are scoped. Review-complete does not mean those company facts are now known.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0486",
+      "original_requirement": "- Verify worker restrictions, model-route reporting and failure recovery.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Pinned client/tool/sandbox measurements plus current runtime source/tests and actual completed selected routes record restrictions, requested-route/unknown-backend distinction, and recovered failures. No OS/model semantic immunity asserted.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0487",
+      "original_requirement": "- Select the real case and run its bounded analysis/review cycle.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual selected bounded case completed analysis and fresh requested Astra review, preserving all6 dispatch intents and failures under separately explicit authority.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0488",
+      "original_requirement": "- Save corrections and the final supported, rejected or parked disposition.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Reference-only normalization lineage is preserved and reviewed; no further substantive correction needed for the independent reviewer-supported park. Actual final parked dossier/disposition saved, not a placeholder.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0490",
+      "original_requirement": "**Exit evidence:** an actual reviewed case, an audit trail for the worker calls and no unsupported promotion into trade readiness.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual reviewed case and selected public worker archive/processing lineage now revalidate; no accepted-scoped trade registry writes or live-gate promotion occurred.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0500",
+      "original_requirement": "**Exit evidence:** connected end-to-end behavior, accurate gate displays and explicit outstanding external prerequisites.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual case-status and explicit checkpoint rebuild connect parked/reviewed case to five readiness axes and ten unchanged gates. Earlier actual browser inspection and current status JSON show non-activation; account/trial prerequisites remain explicit.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0530",
+      "original_requirement": "| Review | Unsupported economic conclusions, incorrect expectation comparisons, unresolved material findings and targeted re-review after corrections. |",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual independent review challenges unsupported economics, timing, missing expectations and current claims; material findings remain unresolved and affected conclusions withheld. No economic correction accepted without re-review; reference-only processing received exact-target fresh review.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0608",
+      "original_requirement": "- The real case’s evidence packet, analysis, independent review and disposition.",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual packet, partial analysis, completed independent review, dossier/disposition and source/execution/processing hashes are saved and revalidated; original evidence cutoff and backend limitations retained.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "BRIEF-L0620",
+      "original_requirement": "2. **Research conclusions supported, rejected or parked.**",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Research result is explicitly parked, with limited announcement/sufficiency conclusions supported and all capital-risking conclusions withheld. No positive investment result claimed.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0530-01",
+      "original_requirement": "unsupported economic conclusions",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual review F1-F3 challenges technical-capacity-to-owner-cash, liquidity/ownership and planned-availability-to-price leaps; C3-C6 remain withheld. Record tests guard unsupported supported-disposition promotion. This is scoped actual challenge, not proof of semantic accuracy for all companies.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "TEST-L0530-02",
+      "original_requirement": "incorrect expectation comparisons",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Actual review G5/F3 rejects a numerical expectations/price comparison without compatible evidence; dossier explicitly withholds it. Metadata qualification fixtures reject incompatible source basis/period/unit. No real numerical comparison or universal semantic correctness is claimed.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    },
+    {
+      "id": "COMMAND-RUN-BATCH",
+      "original_requirement": "run only an explicit authorized batch",
+      "previous_status": "blocked",
+      "assessment": "verified for the explicitly scoped park/negative-cycle behavior",
+      "rationale": "Named actual queue run executed only exact bound review under persisted case/batch/package/amendment and explicit retry, with prior history unchanged and no background jobs. No unrestricted run-all interface.",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/request-r001.json",
+          "sha256": "12da432b1c2c1e89c7b7ded17f501ae628e947259921dea2c16bae0535a3b275"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+          "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        },
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+          "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-DISPOSITION-r001.json",
+          "sha256": "8937cc690f1cb278718fc87e4c3d593596a99db49d610abf41d37286230e4181"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-CASE-STATUS-r001.json",
+          "sha256": "0946139387438259ba03d3bba65891352d228bcf1e5012869312524341d970f0"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SIXTH-REVIEW-OUTCOME-r001.json",
+          "sha256": "08e9c51513efea51a41cf94733ac298641d7d08fea86e54007fc272b9147d08a"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/DECISION-BRIEF-r002.md",
+          "sha256": "7301cbba07e91d3ed839684123d774b9382f610c4f5cdb2e34fbd228db34ca6d"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-17-r001/real-case-preparation/capture-register.json",
+          "sha256": "d22edd6f7bc90c16359083d9ad3397fa5298a3b96fb43c2ac2fa4911ce0387c7"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/SECOND-AMENDMENT-VERIFICATION-r001.json",
+          "sha256": "4f63acb4d645893a1bee968a0df3671f5cb76c559a5145ada48bb23729900349"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+          "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+        },
+        {
+          "path": "validation/engine-slice-2026-10-18-r001/ACTUAL-MEMORY-query-r001.json",
+          "sha256": "0a872ad0683fb468a94334feebb122189971b2a47ec184447ab846db28479e77"
+        }
+      ]
+    }
+  ],
+  "pending": [
+    "Aggregate final goal/release/delivery requirements",
+    "Preservation of14-day gate versus actual operational acceptance distinction",
+    "Dedicated malicious-source integration fixture",
+    "Final test snapshot after that fixture",
+    "Three preserved failed retrieval classifications; acceptance evidence requires explicit decision, not changed old outcomes."
+  ]
+}

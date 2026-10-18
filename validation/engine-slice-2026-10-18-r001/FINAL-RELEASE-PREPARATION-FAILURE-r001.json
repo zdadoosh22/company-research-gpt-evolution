@@ -1,0 +1,15 @@
+{
+  "observed_at": "2026-10-18T02:38:44.422554+00:00",
+  "phase": "final release preparation before pointer creation",
+  "outcome": "failed safely",
+  "exception": "ValueError: Artifact missing or outside project",
+  "source_inventory_count": 131,
+  "outside_project_vendor_paths": 66,
+  "example_repository_path": "tools/node_modules/playwright-core/bin/install_media_pack.ps1",
+  "example_resolved_family": "bundled runtime node/node_modules outside project",
+  "guard": "artifact_path/make_reference correctly reject outside-project resolved targets",
+  "release_pointer_created": false,
+  "goal_completed": false,
+  "actual_case_changed": false,
+  "next": "Prune generated dependency subtree before traversal, retain all owned source and reject other escaping links; share policy with successor snapshot recorder. No guard relaxation or vendor copying."
+}

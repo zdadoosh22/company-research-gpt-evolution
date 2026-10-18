@@ -79,6 +79,66 @@ class ReleaseTests(unittest.TestCase):
     def _case(self, status="independently-reviewed", disposition="supported"):
         return {"review_status": status, "research_disposition": disposition}
 
+    def test_vendor_subtree_is_pruned_before_traversal_but_nested_owned_code_is_bound(self):
+        vendor = self.root / "tools/node_modules"
+        (vendor / "package/nested").mkdir(parents=True)
+        (vendor / "package/vendor.py").write_text("external dependency bytes")
+        (vendor / "package/nested/vendor.ps1").write_text("external dependency script")
+        (self.root / "tools/owned/nested").mkdir(parents=True)
+        owned = self.root / "tools/owned/nested/worker.py"
+        owned.write_text("owned worker")
+        (self.root / "tools/owned/nested/check.ps1").write_text("owned check")
+        (self.root / "validation/tests/nested").mkdir()
+        (self.root / "validation/tests/nested/test_owned.py").write_text("pass")
+        real_scandir = release.os.scandir
+        def guarded_scandir(path):
+            self.assertFalse(Path(path).is_relative_to(vendor), "Vendor dependency subtree must never be traversed")
+            return real_scandir(path)
+        with patch.object(release.os, "scandir", side_effect=guarded_scandir):
+            paths = release._source_files(self.root)
+            self.assertEqual(paths, sorted(["tools/demo.py", "tools/owned/nested/check.ps1",
+                "tools/owned/nested/worker.py", "validation/tests/nested/test_owned.py",
+                "validation/tests/test_demo.py"]))
+            self._record()
+            with patch.object(release, "project_case", return_value=self._case()):
+                self.assertEqual(release.project_release(self.root, now=NOW)["software_completion"], "complete")
+                owned.write_text("tampered nested owned worker")
+                self.assertEqual(release.project_release(self.root, now=NOW)["software_completion"], "blocked")
+
+    def test_nonvendor_junction_and_escape_are_rejected_before_descent(self):
+        unsafe = self.root / "tools/linked"
+        unsafe.mkdir()
+        (unsafe / "external.py").write_text("must not be traversed")
+        original_scandir = release.os.scandir
+        original_resolve = Path.resolve
+        original_junction = Path.is_junction
+        entered = []
+        def guarded_scandir(path):
+            self.assertNotEqual(Path(path), unsafe, "Unsafe directory was traversed before rejection")
+            entered.append(Path(path))
+            return original_scandir(path)
+        def junction(path):
+            return path == unsafe or original_junction(path)
+        def escaping(path, *args, **kwargs):
+            return self.root.parent / "synthetic-external-source" if path == unsafe else original_resolve(path, *args, **kwargs)
+        with patch.object(release.os, "scandir", side_effect=guarded_scandir):
+            with patch.object(Path, "is_junction", junction):
+                with self.assertRaisesRegex(ValueError, "junction"):
+                    release._source_files(self.root)
+            with patch.object(Path, "resolve", escaping):
+                with self.assertRaisesRegex(ValueError, "escapes project"):
+                    release._source_files(self.root)
+        self.assertNotIn(unsafe, entered)
+
+    def test_nonvendor_symlink_file_is_rejected_before_binding(self):
+        source = self.root / "tools/demo.py"
+        original = Path.is_symlink
+        def symlink(path):
+            return path == source or original(path)
+        with patch.object(Path, "is_symlink", symlink):
+            with self.assertRaisesRegex(ValueError, "symlink"):
+                release._source_files(self.root)
+
     def test_expired_research_gate_cannot_support_software_release(self):
         self._record()
         case=self._case()

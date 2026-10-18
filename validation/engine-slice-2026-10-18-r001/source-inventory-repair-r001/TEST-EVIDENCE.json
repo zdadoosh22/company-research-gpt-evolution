@@ -1,0 +1,26 @@
+{
+  "recorded_at": "2026-10-18T02:40:10.157855+00:00",
+  "scope": "DEV source-inventory repair only; no production writes or model calls",
+  "files": [
+    {
+      "path": "tools/research_release.py",
+      "installed_sha256": "c319057bf09b711b164240ea286006e90a08122e62342974b7a6822a49e99f20",
+      "dev_sha256": "c4a01a209bd8ba97499c3ccadee961783c9a5d262c6cb7cd02f69245307023e0"
+    },
+    {
+      "path": "validation/tests/test_research_release.py",
+      "installed_sha256": "319f73c48a31d0df9461f56c69e7229cea0fa7110df41e013c8f534fc4f897cc",
+      "dev_sha256": "593e4731cb1e51bbd9be2cd85613fa547dbc428d2b0ccb9c1096318bef7368ee"
+    }
+  ],
+  "normalized_delta_sha256": "93c784b7fa0433d362ac05c412127514eed0a364008e81d8d774bab2757998a1",
+  "capture_successor_sha256": "3a55423cd517eb12e3095ef44161445de890972a564c9974bc3dd071069e51d1",
+  "preserved_original_capture_sha256": "a85460f33fd1bd7752e1e4c564c82e6df123bfce2c52e0e83b59847de55ef7f0",
+  "command": "python -m unittest discover -s validation/tests -p test_research_release.py -q",
+  "exit_code": 0,
+  "tests": 13,
+  "output": "----------------------------------------------------------------------\nRan 13 tests in 19.599s\n\nOK\n",
+  "shared_owned_source_count": 65,
+  "successor_snapshot_matches_shared_inventory": true,
+  "dependency_vendor_entries": 0
+}

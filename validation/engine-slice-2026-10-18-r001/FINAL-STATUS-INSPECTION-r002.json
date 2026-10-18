@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-10-18T02:49:09.530482+00:00",
+  "status_axes": {
+    "software_completion": "complete",
+    "research_disposition": "parked",
+    "operational_readiness": "evidence incomplete",
+    "trade_readiness": "evidence incomplete",
+    "edge_evidence": "not assessed",
+    "activation": "disabled",
+    "live_recommendations_enabled": false
+  },
+  "gates": [
+    {
+      "evidence": [],
+      "gate": "activation",
+      "reason": "No current version-bound acceptance evaluated",
+      "status": "evidence incomplete"
+    },
+    {
+      "evidence": [],
+      "gate": "decision",
+      "reason": "No current version-bound acceptance evaluated",
+      "status": "evidence incomplete"
+    },
+    {
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        }
+      ],
+      "gate": "dossier",
+      "reason": "Scoped evidence retained outside trading acceptance registry",
+      "status": "evidence incomplete"
+    },
+    {
+      "evidence": [],
+      "gate": "monitoring",
+      "reason": "No current version-bound acceptance evaluated",
+      "status": "evidence incomplete"
+    },
+    {
+      "evidence": [],
+      "gate": "operational_trial",
+      "reason": "No current version-bound acceptance evaluated",
+      "status": "evidence incomplete"
+    },
+    {
+      "evidence": [],
+      "gate": "phone",
+      "reason": "No current version-bound acceptance evaluated",
+      "status": "evidence incomplete"
+    },
+    {
+      "evidence": [],
+      "gate": "portfolio_policy",
+      "reason": "No current version-bound acceptance evaluated",
+      "status": "evidence incomplete"
+    },
+    {
+      "evidence": [],
+      "gate": "quote",
+      "reason": "No current version-bound acceptance evaluated",
+      "status": "evidence incomplete"
+    },
+    {
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        }
+      ],
+      "gate": "research",
+      "reason": "Scoped evidence retained outside trading acceptance registry",
+      "status": "evidence incomplete"
+    },
+    {
+      "evidence": [],
+      "gate": "strategy_validation",
+      "reason": "No current version-bound acceptance evaluated",
+      "status": "evidence incomplete"
+    }
+  ],
+  "browser": "Actual IAB tab4 loopback single-file frozen snapshot inspected; software complete, parked case,10 incomplete gates, live disabled visibly present; tab closed.",
+  "screenshot_sha256": "342b429979c30c27849a3f5bd3c649c6f8e624981f8994db78dd44951b11eb87",
+  "html_sha256": "4cad5b6a6f5dd511757c8ca844d48187ac63980112fbe42796b1a5b5b76ac758",
+  "limitation": "Screenshot predates final completion event, so current stage correctly shows outcome not recorded there. Completion command rebuilds subsequent projection."
+}

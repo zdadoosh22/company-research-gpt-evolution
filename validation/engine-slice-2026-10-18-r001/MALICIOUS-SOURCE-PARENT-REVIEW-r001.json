@@ -1,0 +1,8 @@
+{
+  "reviewed_at": "2026-10-18T02:22:17.141245+00:00",
+  "production_code_changed": false,
+  "test_sha256": "e61f6bfac2ed3bba6243b9615508b37308302806db67f554acffcb0fb7383f2c",
+  "parent_review": "Exact one-test delta inspected and independently run:28tests pass. Actual packet/prompt/staged-manifest trusted configuration and simulated event rejection checked; real process/network transports trapped.",
+  "limitation": "Engineering fixture boundary checks, not real-model semantic immunity or independent OS sandbox attack proof. Existing measured runtime denial evidence remains separate.",
+  "full_regression": "REGRESSION-r013-installed-manifest.json:480run479pass1existingpermissionSkip;before/after source unchanged"
+}

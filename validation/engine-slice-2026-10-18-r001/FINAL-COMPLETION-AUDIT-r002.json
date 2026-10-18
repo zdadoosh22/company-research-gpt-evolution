@@ -1,0 +1,18 @@
+{
+  "protected_hashes": {
+    "methodology/company-research-v1.0.0.md": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+    "monitoring/config.json": "10c985e9dca1e1a255e951bebe79a2399b444b750e670252eadc86b141c86e14"
+  },
+  "source_manifest_exact": true,
+  "original419_ids_exact": true,
+  "optional_deferred_only": [
+    "BRIEF-L0155",
+    "BRIEF-L0381",
+    "BRIEF-L0383",
+    "BRIEF-L0385",
+    "BRIEF-L0453"
+  ],
+  "head_before_final_commit": "071bac04454cb1343adb44fa38d4b45947740305",
+  "no_additional_model_dispatch": "No inference invoked in release verification stage; six attempts remain consumed.",
+  "readiness": "No live acceptance inferred; await final projection inspection."
+}

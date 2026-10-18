@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-18T02:19:24.534932+00:00",
+  "scope": "One deterministic malicious-source adapter test; no production source changes, external transport or model inference",
+  "file": "validation/tests/test_scoped_research_adapter.py",
+  "installed_sha256": "fc57465700a1f96476f42b5b5b8d41a41dcbaca89d2f1bef9204afa6faaadae9",
+  "dev_sha256": "e61f6bfac2ed3bba6243b9615508b37308302806db67f554acffcb0fb7383f2c",
+  "patch_sha256": "2bd4883a2319f60134bd48541a8fc97aaf813b5ceed7b6c59c0383327d3a75f9",
+  "command": "python -m unittest discover -s validation/tests -p test_scoped_research_adapter.py -q",
+  "tests": 28,
+  "exit_code": 0,
+  "output": "----------------------------------------------------------------------\nRan 28 tests in 2.070s\n\nOK\n",
+  "limitations": [
+    "Fake runner tests packet/prompt/configuration boundary and unauthorized-event rejection only.",
+    "Does not establish real-model behavioral immunity or independent operating-system sandbox denial.",
+    "Runtime verification and dispatch claim are existing mocked fixture boundaries; no inference is performed."
+  ]
+}

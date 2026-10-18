@@ -1,0 +1,39 @@
+{
+  "changes": [
+    {
+      "requirement": "BRIEF-L0140",
+      "old": {
+        "path": "tools/research_release.py",
+        "sha256": "c319057bf09b711b164240ea286006e90a08122e62342974b7a6822a49e99f20"
+      }
+    },
+    {
+      "requirement": "BRIEF-L0140",
+      "old": {
+        "path": "validation/tests/test_research_release.py",
+        "sha256": "319f73c48a31d0df9461f56c69e7229cea0fa7110df41e013c8f534fc4f897cc"
+      }
+    },
+    {
+      "requirement": "BRIEF-L0355",
+      "old": {
+        "path": "tools/research_release.py",
+        "sha256": "c319057bf09b711b164240ea286006e90a08122e62342974b7a6822a49e99f20"
+      }
+    },
+    {
+      "requirement": "BRIEF-L0355",
+      "old": {
+        "path": "validation/tests/test_research_release.py",
+        "sha256": "319f73c48a31d0df9461f56c69e7229cea0fa7110df41e013c8f534fc4f897cc"
+      }
+    }
+  ],
+  "new_assessment": "REQUIREMENT-EVIDENCE-20261018-r020.json",
+  "counts": {
+    "verified": 132,
+    "blocked": 10,
+    "implemented-fixture-tested": 272,
+    "deferred": 5
+  }
+}

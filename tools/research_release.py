@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 import json
+import os
 from pathlib import Path
 import re
 
@@ -28,17 +29,42 @@ def _exact_ref(root, ref):
 
 
 def _source_files(root):
+    """Owned source inventory; generated dependency trees are outside this scope."""
+    root = Path(root).resolve()
     paths = []
+    excluded = root / "tools/node_modules"
+
+    def checked(path):
+        # Inspect every component before descent, including validation itself.
+        current = root
+        for part in path.relative_to(root).parts:
+            current /= part
+            if current.is_symlink() or current.is_junction():
+                raise ValueError("Source symlink or junction")
+            if not current.resolve().is_relative_to(root):
+                raise ValueError("Source path escapes project")
+
+    def visit(directory, suffixes):
+        with os.scandir(directory) as entries:
+            for entry in entries:
+                path = Path(entry.path)
+                # Prune before stat, resolve or recursion: this generated
+                # dependency subtree can itself contain external junctions.
+                if path == excluded:
+                    continue
+                checked(path)
+                if entry.is_dir(follow_symlinks=False):
+                    visit(path, suffixes)
+                elif entry.is_file(follow_symlinks=False) and path.suffix in suffixes:
+                    paths.append(path.relative_to(root).as_posix())
+
     for folder, suffixes in (("tools", (".py", ".ps1")), ("validation/tests", (".py",))):
         base = root / folder
+        checked(base)
         if base.exists():
-            if base.is_symlink():
+            if not base.is_dir():
                 raise ValueError("Source directory")
-            for path in base.rglob("*"):
-                if path.is_symlink():
-                    raise ValueError("Source symlink")
-                if path.is_file() and path.suffix in suffixes:
-                    paths.append(path.relative_to(root).as_posix())
+            visit(base, suffixes)
     return sorted(paths)
 
 

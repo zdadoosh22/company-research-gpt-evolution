@@ -1,0 +1,27 @@
+{
+  "raw_default_check": "Failed because CRLF treated as trailing whitespace; no source bytes changed or historical failures erased.",
+  "windows_crlf_aware_git_check_exit": 0,
+  "output": "",
+  "explicit_line_content_checks": [
+    {
+      "path": "tools/research_release.py",
+      "crlf_count": 182,
+      "actual_trailing_space_or_tab_lines": 0
+    },
+    {
+      "path": "validation/tests/test_research_release.py",
+      "crlf_count": 233,
+      "actual_trailing_space_or_tab_lines": 0
+    },
+    {
+      "path": "validation/tests/test_scoped_research_adapter.py",
+      "crlf_count": 432,
+      "actual_trailing_space_or_tab_lines": 0
+    },
+    {
+      "path": "workflows/research-engine.md",
+      "crlf_count": 147,
+      "actual_trailing_space_or_tab_lines": 0
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "command": "single known skipped symlink-permission fixture, verbose",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_symlink_artifact_cannot_escape_allowlist (validation.tests.test_research_checkpoint.CheckpointTests.test_symlink_artifact_cannot_escape_allowlist) ... skipped 'OS does not permit creating symlinks in this test'\n\n----------------------------------------------------------------------\nRan 1 test in 0.011s\n\nOK (skipped=1)\n",
+  "interpretation": "Confirms existing OS permission limitation. This is not a snapshot, memory or rebuild test and does not prove symlink behavior on a capable host."
+}

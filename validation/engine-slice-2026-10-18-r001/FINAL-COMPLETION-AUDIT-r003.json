@@ -1,0 +1,37 @@
+{
+  "protected_hashes": {
+    "methodology/company-research-v1.0.0.md": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+    "monitoring/config.json": "10c985e9dca1e1a255e951bebe79a2399b444b750e670252eadc86b141c86e14"
+  },
+  "source_manifest_exact": true,
+  "original419_ids_exact": true,
+  "optional_deferred_only": [
+    "BRIEF-L0155",
+    "BRIEF-L0381",
+    "BRIEF-L0383",
+    "BRIEF-L0385",
+    "BRIEF-L0453"
+  ],
+  "head_before_final_commit": "071bac04454cb1343adb44fa38d4b45947740305",
+  "no_additional_model_dispatch": "No inference invoked in release verification stage; six attempts remain consumed.",
+  "readiness": "Software complete; research parked; operational/trade evidence incomplete; edge not assessed; activation disabled; no live recommendations.",
+  "created_at": "2026-10-18T02:50:24.137566+00:00",
+  "current_assessment": {
+    "path": "validation/engine-slice-2026-10-18-r001/REQUIREMENT-EVIDENCE-20261018-r022.json",
+    "sha256": "1876b4f095f90aa336e3ea6e1686b903a4950c428d80dcdbc0138e733763705a"
+  },
+  "current_release": {
+    "path": "monitoring/research-engine/releases/release-20261018-r002.json",
+    "sha256": "397adc19490644c1c6a694a929ad30df7020476ceb1a74f3131ed4cc6df897f5"
+  },
+  "release_verified": {
+    "path": "validation/engine-slice-2026-10-18-r001/FINAL-RELEASE-VERIFICATION-r003.json",
+    "sha256": "c8eb6202a291a86421d313de6b4081260fe95caefa31e22cff5f5e3afec589a0"
+  },
+  "status_inspection": {
+    "path": "validation/engine-slice-2026-10-18-r001/FINAL-STATUS-INSPECTION-r002.json",
+    "sha256": "601f4a8d85def2c6fda110f221a7530f7245cf9b8112d5cb22d3cadba69cf7d5"
+  },
+  "temporary_server_stopped": true,
+  "completion_conclusion": "All original419 IDs retained:142 verified,272 meaningful implementation/fixture tested,5 optional deferred. Actual reviewed parked case satisfies permitted real-cycle requirement. Final code483run/482pass/1existing OS skip,65unchanged hashes. Original negative experiments retained and accepted only at bounded current combined evidence scope. No required core work remains in this bounded assignment; broader live readiness remains separate."
+}

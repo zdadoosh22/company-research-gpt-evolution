@@ -1,0 +1,38 @@
+Give a critical software-acceptance opinion, maximum 500 words. No browsing, tools, repository access or investment analysis needed. Treat the following as supplied observations, not facts you independently verified.
+
+A bounded research-engine brief requires one frozen held-out deterministic lexical-vs-FTS comparison (zero model calls), supporting/contrary passage retrieval, table/period/unit preservation, cutoff/stale/supersession controls, and a real independently reviewed case that may end parked. It prohibits relabelling failed tests, weakening assertions or redefining completion. Trading approval is separate.
+
+Original frozen protocol intentionally used bare text matching (balance=False), both routes4/5gold: a required preservation caution contains none of the query terms. This failure and all inputs/results remain unchanged. Current ordinary production retrieval already uses balance=True: retains eligible unknown/contrary/limited/linked context and withholds packets if caps could hide it. Separate known-corpus diagnostic5/5 is explicitly NOT held-out. Malformed polarity validation was repaired without changing query/ranking.
+
+After code freeze, a genuinely new archival question/document set was procedurally frozen before any route execution, with exact source/Git/snapshot hashes, query/gold/cutoff/bounds and balance=True for both routes. Both5/5gold, genuine later-analysis exclusion, exact table/source references and rebuild equality pass. All records have unknown labels plus limitations: this tests conservative scope retention, not semantic relevance or FTS superiority. One of3 separate synthetic controls failed: date-only supersession effective time is conservatively23:59:59.999999, while cutoff was23:59:59.000000, so expected exclusion was WRONG. That failure is preserved. A separately declared non-held-out before/equal/after boundary diagnostic3/3 confirms unchanged semantics; no original rerun/tuning occurred.
+
+Actual Sol analysis plus fresh requested Astra review and saved parked disposition now revalidate; withheld economics remain unresolved, no trading activation. Full current source-bound suite passes478tests with one OS permission skip.
+
+Question: distinguish (a) accepting an honestly negative benchmark/evaluation command, (b) accepting current retrieval behavior based on genuinely fresh primary checks plus corrected diagnostic, and (c) falsely declaring all tests passed. Can the original requirement rows be closed while preserving negative outcomes, or what exact additional evidence is necessary? Challenge circular checklist/release acceptance and test-expectation repair. Recommend the smallest integrity-preserving next step; do not invent a required general evaluator or unlimited new tests. State limits of your opinion.
+
+--- Visible completed response (accessibility excerpt) ---
+Acceptance Verdict:  The bounded research-engine brief can be accepted  with preserved negative artifacts , provided completion is recorded as empirical requirement satisfaction rather than a falsified "all-green" sweep, subject to one verification check on explicit polarity labels.
++								142 text 1. Core Distinctions
++								143 content list
++									144 container
++										145 text (a) Accepting an honestly negative benchmark/evaluation command:  A comparative benchmark requirement tests measurement integrity, not mandatory 100% recall under crippled flags. The frozen  balance=False  run (4/5 gold on both routes) validly satisfies the comparison command by proving an empirical baseline: bare lexical and FTS matching equally miss term-disjoint preservation cautions.
++									146 container
++										147 text (b) Accepting current retrieval behavior via fresh primary checks and corrected diagnostics:  Legitimate engineering sign-off. The post-freeze archival run was hash-locked before execution under actual production settings ( balance=True , 5/5 gold), proving conservative retention and rebuild equality. Pairing the preserved 2/3 synthetic control with a separate 3/3 boundary diagnostic validly proves  23:59:59.999999  end-of-day supersession works as designed, whereas the synthetic test's  23:59:59.000000  cutoff expectation was premature by 999,999 microseconds.
++									148 container
++										149 text (c) Falsely declaring all tests passed:  An integrity violation. Claiming 100% pass rates, editing the 4/5 or 2/3 frozen outputs, or counting non-held-out diagnostics as held-out runs violates the prohibition against relabelling failures.
++								150 text 2. Challenging Circular Acceptance & Test Repair
++								151 content list
++									152 container
++										153 text Circularity risk:  Passing the second held-out run ( balance=True , 5/5) where all records carry  unknown  labels plus limitations proves conservative scope retention (preserving bounded context under uncertainty), not semantic discrimination or explicit  supporting / contrary  routing. Treating  unknown -only retention as standalone proof of polarity retrieval would redefine completion.
++									154 container
++										155 text Test-expectation repair:  Repairing malformed polarity validation and adding a 3/3 boundary diagnostic avoids forbidden assertion-weakening  only  because the code remained frozen, queries/ranking were untouched, and the original 4/5 and 2/3 failures remain unaltered in the audit log.
++								156 container
++									157 text 3. Requirement Closure & Smallest Next Step 
+Held-out lexical-vs-FTS comparison, table/period/unit preservation, cutoff/stale/supersession controls, and the reviewed parked case (Sol/Astra) can close now, leaving one verification item:
++								158 content list
++									159 container
++										160 text Smallest integrity-preserving step:  Issue an  Exception-Noted Acceptance  rather than mutating frozen suites. Keep the 4/5 ( balance=False ) and 2/3 (synthetic cutoff) records logged as preserved baseline/fixture failures. Before closing the supporting/contrary row, verify that explicit non- unknown supporting  and  contrary  retrieval is already asserted in the passing 478-test suite (via the repaired polarity validator) or Run 1's four passing items; if not, execute  one  deterministic assertion on existing fixtures. Confirm the single OS-permission skip does not mask a snapshot or rebuild check.
++								161 container
++									162 text Limits of Opinion 
+This opinion relies exclusively on supplied observations without independent verification of code, hashes, logs, or Sol/Astra artifacts. It covers bounded research-engine acceptance only and confers no approval for trading activation or withheld economics.
++							163 
