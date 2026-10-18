@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-10-18T01:17:46.002627+00:00",
+  "files": [
+    {
+      "path": "tools/scoped_research_queue.py",
+      "before_sha256": "0dbe9169672dbd7f2933b43d93b248c4c8fd0d83ef30bd992dbd481e6d6f2142",
+      "installed_sha256": "73a4f7d09aa94ffc240e694d9e95d6338a337ad17557d1ecd64464bb7654afed"
+    },
+    {
+      "path": "validation/tests/test_scoped_research_queue.py",
+      "before_sha256": "5db03d6385214a4b93d462e8e7a12637970df08830d0e55c77a048c5605eb473",
+      "installed_sha256": "0e01a6fb7bae1ae3c17d7e2b6796b0cd08e5ddb39e8c83138660de36b7ebc875"
+    }
+  ],
+  "regression": "REGRESSION-r004-manifest.json",
+  "queue_backup_sha256": "bbdae4986bc489dfdd5b2822265aa03a32dd9478cb419c4ae1e7c42a60f14c14",
+  "queue_backup_integrity": "ok",
+  "schema_change": "One new scoped_review_exceptions table; existing authorizations, case limits and dispatches preserved. Created on explicit CLI initialization.",
+  "observation_database_changed": false,
+  "service_restart": false,
+  "activation": "disabled",
+  "remaining_actual_review_attempts_before_exception": 0
+}

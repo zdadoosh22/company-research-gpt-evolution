@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "exception": "FileNotFoundError",
+  "message": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\9614f1d9b40d9c4f\\\\codex.exe'",
+  "diagnostic": null,
+  "remote_inference_calls": 0
+}

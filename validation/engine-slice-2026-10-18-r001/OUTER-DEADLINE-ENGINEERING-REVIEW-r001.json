@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-10-18T01:25:34.059949+00:00",
+  "reviewer": "Separate /root/review_exception_audit Sol agent; backend identity not independently verified",
+  "scope": "Regular-file capture and outer isolated synthetic verifier deadline; engineering only",
+  "findings": "No material issue for intended Windows installation",
+  "limitations": [
+    "60 seconds bounds communication; termination/wait may add approximately7 seconds.",
+    "Regular capture files are not byte-size capped.",
+    "POSIX nested clients use separate process groups; only Windows deployment accepted.",
+    "Tests and live synthetic probes do not establish the original stall cause or company research approval."
+  ],
+  "files": [
+    {
+      "path": "tools/research_runtime.py",
+      "sha256": "f46e90ec40c52302e7cf9d5e94b73b38c5123e8b19d785c7379434516527b77b"
+    },
+    {
+      "path": "validation/tests/test_research_runtime.py",
+      "sha256": "c3979e2e98b97b02a68d73ae253013250d279cf2507e8c2bf2db8011ae2a78cc"
+    }
+  ]
+}

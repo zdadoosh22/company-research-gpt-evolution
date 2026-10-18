@@ -15,12 +15,16 @@ import re
 import subprocess
 import tempfile
 import threading
+import signal
+import sys
 from datetime import datetime, timezone
+from contextlib import ExitStack
 
 
 ROLE_MODELS = {"analysis": "gpt-6.1-sol", "review": "gpt-6-astra"}
 CAPABILITY_CATALOG = Path("validation/engine-slice-2026-10-17-r001/MODEL-CAPABILITIES.json")
 CLIENT_VERSION_RE = re.compile(r"(?<![A-Za-z0-9])\d+\.\d+\.\d+(?:-[A-Za-z0-9.]+)?(?![A-Za-z0-9])")
+MAX_INSPECTION_SECONDS = 60
 
 DISABLED_FEATURES = (
     "shell_tool", "unified_exec", "apps", "plugins", "remote_plugin", "hooks",
@@ -34,6 +38,59 @@ DISABLED_FEATURES = (
 
 class RuntimeVerificationError(ValueError):
     """The candidate client did not satisfy a required runtime observation."""
+
+
+def bounded_client_run(args, *, timeout, **kwargs):
+    """Bound capture even when a timed-out client's descendants retain pipes.
+
+    Only this newly started process tree is terminated. No account, model or
+    unrelated process is inspected. Used for local synthetic inspection only.
+    """
+    capture = kwargs.pop("capture_output", False)
+    input_text = kwargs.pop("input", None)
+    if input_text is not None:
+        kwargs["stdin"] = subprocess.PIPE
+    if os.name != "nt":
+        kwargs["start_new_session"] = True
+    with ExitStack() as stack:
+        # Capture to finite local files, not PIPE reader threads. A descendant
+        # retaining stdout must not make communicate or stream.close await EOF.
+        outputs = []
+        if capture:
+            text = kwargs.get("text") or kwargs.get("encoding") or kwargs.get("universal_newlines")
+            options = {"mode": "w+", "encoding": kwargs.get("encoding") or "utf-8",
+                       "errors": kwargs.get("errors") or "strict"} if text else {"mode": "w+b"}
+            outputs = [stack.enter_context(tempfile.TemporaryFile(**options)) for _ in range(2)]
+            kwargs.update(stdout=outputs[0], stderr=outputs[1])
+        process = subprocess.Popen(args, **kwargs)
+        try:
+            stdout, stderr = process.communicate(input_text, timeout=timeout)
+        except subprocess.TimeoutExpired:
+            if os.name == "nt":
+                killer = Path(os.environ.get("SystemRoot", "C:/Windows")) / "System32/taskkill.exe"
+                try:
+                    subprocess.run([str(killer), "/PID", str(process.pid), "/T", "/F"],
+                        stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL, timeout=5)
+                except (OSError, subprocess.TimeoutExpired):
+                    pass
+            else:
+                try:
+                    os.killpg(process.pid, signal.SIGKILL)
+                except ProcessLookupError:
+                    pass
+            if process.poll() is None:
+                process.kill()
+            try:
+                process.wait(timeout=2)
+            except subprocess.TimeoutExpired:
+                pass
+            raise subprocess.TimeoutExpired(args, timeout) from None
+        if capture:
+            for stream in outputs:
+                stream.seek(0)
+            stdout, stderr = (stream.read() for stream in outputs)
+        return subprocess.CompletedProcess(args, process.returncode, stdout, stderr)
 
 
 def _sha256(data: bytes) -> str:
@@ -183,7 +240,7 @@ def build_worker_args(executable, *, role, catalog_path, expected_catalog_sha256
 
 
 def _allowlisted_environment(home):
-    keys = ("SystemRoot", "WINDIR", "COMSPEC", "TEMP", "TMP", "PATH")
+    keys = ("SystemRoot", "SystemDrive", "LOCALAPPDATA", "WINDIR", "COMSPEC", "TEMP", "TMP", "PATH")
     env = {key: os.environ[key] for key in keys if key in os.environ}
     env.update(CODEX_HOME=str(home), NO_PROXY="127.0.0.1,localhost")
     return env
@@ -210,12 +267,56 @@ def _version_and_hash(executable, expected_version, expected_sha256, runner, env
 def verify_client_tools(executable, *, expected_version, expected_sha256,
                         catalog_path=CAPABILITY_CATALOG, runner=subprocess.run,
                         expected_catalog_sha256=None, timeout_seconds=35):
+    """Verify locally under an outer process deadline, including cleanup.
+
+    Injectable engineering runners stay in-process. The real unauthenticated
+    probe runs in its own child so HTTP shutdown/temp cleanup cannot strand
+    the research queue before its model invocation is claimed.
+    """
+    if runner is not subprocess.run:
+        return _verify_client_tools_in_process(executable, expected_version=expected_version,
+            expected_sha256=expected_sha256, catalog_path=catalog_path, runner=runner,
+            expected_catalog_sha256=expected_catalog_sha256, timeout_seconds=timeout_seconds)
+    payload = dict(executable=str(Path(executable).resolve()), expected_version=expected_version,
+        expected_sha256=expected_sha256, catalog_path=str(Path(catalog_path).resolve()),
+        expected_catalog_sha256=expected_catalog_sha256, timeout_seconds=timeout_seconds)
+    deadline = min(MAX_INSPECTION_SECONDS, 25 + 2 * timeout_seconds)
+    with tempfile.TemporaryDirectory(prefix="cr2-inspection-parent-") as home:
+        try:
+            result = bounded_client_run([sys.executable, str(Path(__file__).resolve()),
+                json.dumps(payload)], env=_allowlisted_environment(home),
+                capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=deadline)
+        except subprocess.TimeoutExpired as exc:
+            raise RuntimeVerificationError("Outer synthetic inspection deadline exceeded; no inference") from exc
+    if result.returncode != 0:
+        error = RuntimeVerificationError("Isolated synthetic inspection failed")
+        error.diagnostic = {"returncode": result.returncode,
+                            "stdout": result.stdout[:4096], "stderr": result.stderr[:4096]}
+        raise error
+    try:
+        facts = json.loads(result.stdout)
+    except (ValueError, TypeError) as exc:
+        raise RuntimeVerificationError("Isolated inspection returned invalid evidence") from exc
+    if not isinstance(facts, dict) or facts.get("remote_inference_calls") != 0 or facts.get("forwarding") is not False:
+        raise RuntimeVerificationError("Isolated inspection evidence contract differs")
+    facts["outer_deadline_seconds"] = deadline
+    facts["inspection_process_isolated"] = True
+    return facts
+
+
+def _verify_client_tools_in_process(executable, *, expected_version, expected_sha256,
+                        catalog_path=CAPABILITY_CATALOG, runner=subprocess.run,
+                        expected_catalog_sha256=None, timeout_seconds=35):
     """Capture both model request tool lists locally; never calls inference.
 
     The returned object is an evidence record, not a readiness boolean. Any
     unexpected request, tool, model, response, catalog value, or timeout raises.
     """
     executable = _windows_executable(executable)
+    # Preserve injectable deterministic test runners; the live local probe
+    # needs bounded descendant cleanup as well as a subprocess deadline.
+    if runner is subprocess.run:
+        runner = bounded_client_run
     catalog = freeze_catalog(catalog_path, expected_sha256=expected_catalog_sha256)
     observations = []
     unexpected = []
@@ -375,3 +476,15 @@ def verify_client_tools(executable, *, expected_version, expected_sha256,
         server.shutdown()
         server.server_close()
         thread.join(timeout=2)
+
+
+if __name__ == "__main__":
+    # Only the synthetic child entry point; no subscription or model provider.
+    try:
+        parameters = json.loads(sys.argv[1])
+        parameters["runner"] = bounded_client_run
+        print(json.dumps(_verify_client_tools_in_process(**parameters)))
+    except Exception as exc:
+        print(json.dumps({"error": type(exc).__name__, "message": str(exc),
+                          "diagnostic": getattr(exc, "diagnostic", None)}), file=sys.stderr)
+        raise SystemExit(1)

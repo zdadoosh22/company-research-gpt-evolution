@@ -6,6 +6,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import time
 from unittest.mock import patch
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
@@ -170,6 +171,56 @@ class ResearchRuntimeTests(unittest.TestCase):
         fake = FakeClient(timeout=True)
         with self.assertRaisesRegex(runtime.RuntimeVerificationError, "timed out"):
             self.verify(fake)
+
+    def test_real_timeout_kills_owned_descendant_holding_capture_pipes(self):
+        # A child inherits stdout/stderr and outlives its sleeping parent.
+        # Killing only the parent leaves communicate waiting for that child.
+        code = ("import subprocess,sys,time; "
+                "subprocess.Popen([sys.executable,'-c','import time; time.sleep(20)']); "
+                "print('started',flush=True); time.sleep(20)")
+        started = time.monotonic()
+        with self.assertRaises(subprocess.TimeoutExpired):
+            runtime.bounded_client_run([sys.executable, "-c", code],
+                capture_output=True, text=True, timeout=0.5)
+        self.assertLess(time.monotonic() - started, 10)
+
+    def test_bounded_client_preserves_successful_capture_and_input(self):
+        result = runtime.bounded_client_run([sys.executable, "-c",
+            "import sys; print(sys.stdin.read()); print('diagnostic',file=sys.stderr)"],
+            input="synthetic", capture_output=True, text=True, timeout=5)
+        self.assertEqual(result.returncode, 0)
+        self.assertEqual(result.stdout.strip(), "synthetic")
+        self.assertEqual(result.stderr.strip(), "diagnostic")
+
+    def test_synthetic_environment_retains_required_os_paths_not_credentials(self):
+        with patch.dict(runtime.os.environ, {"SystemDrive": "C:",
+                "LOCALAPPDATA": "C:/synthetic/local", "OPENAI_API_KEY": "synthetic-secret"}):
+            env = runtime._allowlisted_environment(self.root)
+        self.assertEqual(env["SystemDrive"], "C:")
+        self.assertEqual(env["LOCALAPPDATA"], "C:/synthetic/local")
+        self.assertNotIn("OPENAI_API_KEY", env)
+        self.assertEqual(env["CODEX_HOME"], str(self.root))
+
+    def test_exited_parent_does_not_wait_for_descendant_capture_eof(self):
+        code = ("import subprocess,sys; "
+                "subprocess.Popen([sys.executable,'-c','import time; time.sleep(2)']); "
+                "print('parent-complete',flush=True)")
+        started = time.monotonic()
+        result = runtime.bounded_client_run([sys.executable, "-c", code],
+            capture_output=True, text=True, timeout=1)
+        self.assertEqual(result.returncode, 0)
+        self.assertIn("parent-complete", result.stdout)
+        self.assertLess(time.monotonic() - started, 1.8)
+
+    def test_outer_deadline_bounds_a_child_stuck_outside_subprocess_execution(self):
+        probe = self.root / "stuck-synthetic-probe.py"
+        probe.write_text("import time; print('stuck cleanup',flush=True); time.sleep(20)")
+        started = time.monotonic()
+        with patch.object(runtime, "__file__", str(probe)), patch.object(runtime, "MAX_INSPECTION_SECONDS", 0.5):
+            with self.assertRaisesRegex(runtime.RuntimeVerificationError, "Outer synthetic inspection deadline"):
+                runtime.verify_client_tools(self.exe, expected_version="fixture",
+                    expected_sha256=self.exe_hash, catalog_path=CATALOG)
+        self.assertLess(time.monotonic() - started, 10)
 
     def test_unexpected_serialized_model_fails_closed(self):
         fake = FakeClient(request_model="gpt-other")

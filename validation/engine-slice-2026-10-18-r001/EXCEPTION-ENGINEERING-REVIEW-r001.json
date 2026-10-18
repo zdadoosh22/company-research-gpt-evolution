@@ -1,0 +1,34 @@
+{
+  "created_at": "2026-10-18T01:16:22.383545+00:00",
+  "scope": "Bounded queue exception patch; engineering only, not independent company analysis",
+  "reviewer": "Separate /root/review_exception_audit agent; inherited Sol route, backend not independently verified",
+  "initial_finding": {
+    "severity": "P2",
+    "finding": "A scope-identical authorization successor invalidated the frozen exception and status",
+    "reproduced": "Temporary existing fixture only",
+    "disposition": "Repaired: lookup original authorizing row by batch/hash, verify canonical content and current unchanged fixed scope/review package"
+  },
+  "final_review": "No remaining material findings in the bounded patch review",
+  "tests_added": [
+    "Successor authorization preserves exception and permits claimed fifth review",
+    "Fifth failed attempt consumes slot and sixth retry is denied",
+    "Nonzero inference or usage cannot qualify",
+    "Authority path escape rejected",
+    "Prior four dispatch records unchanged; original call_limit remains4"
+  ],
+  "files": [
+    {
+      "path": "tools/scoped_research_queue.py",
+      "sha256": "73a4f7d09aa94ffc240e694d9e95d6338a337ad17557d1ecd64464bb7654afed"
+    },
+    {
+      "path": "validation/tests/test_scoped_research_queue.py",
+      "sha256": "0e01a6fb7bae1ae3c17d7e2b6796b0cd08e5ddb39e8c83138660de36b7ebc875"
+    }
+  ],
+  "limitations": [
+    "Agent review is engineering criticism, not Astra company review.",
+    "Local authority record is provenance, not an independent cryptographic human signature.",
+    "Final-source full regression recorded separately."
+  ]
+}

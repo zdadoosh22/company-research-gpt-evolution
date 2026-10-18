@@ -147,6 +147,9 @@ class ScopedQueue:
                 decision_id TEXT PRIMARY KEY, batch_id TEXT NOT NULL, job_id TEXT NOT NULL,
                 prior_attempt INTEGER NOT NULL, rationale TEXT NOT NULL, provenance_refs TEXT NOT NULL,
                 recorded_at TEXT NOT NULL, dispatch_id TEXT)""")
+            db.execute("""CREATE TABLE IF NOT EXISTS scoped_review_exceptions (
+                case_id TEXT PRIMARY KEY, manifest TEXT NOT NULL, sha256 TEXT NOT NULL,
+                recorded_at TEXT NOT NULL)""")
             if not db.execute("SELECT 1 FROM scoped_queue_migrations WHERE version=2").fetchone():
                 for row in db.execute("SELECT * FROM scoped_jobs").fetchall():
                     db.execute("INSERT INTO scoped_legacy_jobs VALUES (?,?,?)", (row["job_id"], _json(dict(row)), _now()))
@@ -210,10 +213,112 @@ class ScopedQueue:
             raise ValueError("Missing or invalid batch authorization")
         return row, json.loads(row["manifest"])
 
-    def _remaining(self, db, case_id):
+    def _review_exception(self, db, case_id):
+        row = db.execute("SELECT * FROM scoped_review_exceptions WHERE case_id=?", (case_id,)).fetchone()
+        if row is None:
+            return None
+        manifest = json.loads(row["manifest"])
+        if package_sha256(manifest) != row["sha256"]:
+            raise ValueError("Review exception hash differs")
+        self._validate_review_exception(db, manifest)
+        return manifest
+
+    def _validate_review_exception(self, db, manifest):
+        required = {"schema_version", "case_id", "batch_id", "job_id", "created_at",
+                    "authorization_sha256", "package_sha256", "failed_dispatch_id",
+                    "failure_metadata_sha256", "authority"}
+        if (not isinstance(manifest, dict) or set(manifest) != required or
+                type(manifest["schema_version"]) is not int or manifest["schema_version"] != 1):
+            raise ValueError("Invalid review exception schema")
+        _no_credentials(manifest)
+        for key in ("case_id", "batch_id", "job_id", "failed_dispatch_id"):
+            _ident(manifest[key])
+        stamp = _stamp(manifest["created_at"])
+        if stamp > datetime.now(timezone.utc):
+            raise ValueError("Review exception is future-dated")
+        authority = manifest["authority"]
+        if not isinstance(authority, dict) or set(authority) != {"path", "sha256"}:
+            raise ValueError("Explicit hash-bound user authority required")
+        relative = Path(authority["path"])
+        path = (self.root / relative).resolve()
+        if relative.is_absolute() or not path.is_relative_to(self.root / "validation") or path.suffix != ".md":
+            raise ValueError("Authority must be an explicit validation Markdown record")
+        if hashlib.sha256(path.read_bytes()).hexdigest() != authority["sha256"]:
+            raise ValueError("User authority hash differs")
+        auth_row = db.execute("SELECT * FROM scoped_authorizations WHERE batch_id=? AND sha256=?",
+                              (manifest["batch_id"], manifest["authorization_sha256"])).fetchone()
+        if auth_row is None:
+            raise ValueError("Review exception authorization differs")
+        auth = json.loads(auth_row["manifest"])
+        if package_sha256(auth) != auth_row["sha256"] or auth["case_id"] != manifest["case_id"]:
+            raise ValueError("Review exception authorization differs")
+        _, current_auth = self._authorization(db, manifest["batch_id"])
+        if ({k: v for k, v in auth.items() if k not in {"version", "jobs"}} !=
+                {k: v for k, v in current_auth.items() if k not in {"version", "jobs"}} or
+                len(auth["jobs"]) != len(current_auth["jobs"])):
+            raise ValueError("Review exception authorization scope changed")
+        if stamp < _stamp(auth["created_at"]) or stamp >= _stamp(auth["expires_at"]):
+            raise ValueError("Review exception outside original authorization interval")
+        spec = next((x for x in auth["jobs"] if x["job_id"] == manifest["job_id"]), None)
+        if (spec is None or spec["role"] != "review" or spec["stage"] != "review" or
+                spec["model"] != MODELS["review"] or spec["package_sha256"] != manifest["package_sha256"]):
+            raise ValueError("Exception only permits the existing frozen Astra review")
+        if next((x for x in current_auth["jobs"] if x["job_id"] == manifest["job_id"]), None) != spec:
+            raise ValueError("Review exception frozen job changed")
+        failure = db.execute("SELECT * FROM scoped_dispatches WHERE dispatch_id=?",
+                             (manifest["failed_dispatch_id"],)).fetchone()
+        if (failure is None or failure["case_id"] != manifest["case_id"] or
+                failure["job_id"] != manifest["job_id"] or failure["invocation_claimed_at"] is not None or
+                failure["reason"] != "runtime-restrictions-unverified" or
+                failure["package_sha256"] != manifest["package_sha256"] or
+                failure["status"] != "needs-retry-decision" or not failure["metadata_path"]):
+            raise ValueError("Exception requires a preserved unclaimed runtime preflight failure")
+        case = db.execute("SELECT * FROM scoped_cases WHERE case_id=?", (manifest["case_id"],)).fetchone()
+        preceding = db.execute("SELECT COUNT(*) FROM scoped_dispatches WHERE case_id=? AND consumed_at<=?",
+                               (manifest["case_id"], failure["consumed_at"])).fetchone()[0]
+        if case is None or preceding + case["legacy_attempts"] != case["call_limit"]:
+            raise ValueError("Exception must follow the last original-budget dispatch")
+        metadata = Path(failure["metadata_path"]).resolve()
+        if not metadata.is_relative_to(self.folder / "jobs"):
+            raise ValueError("Failure metadata escapes queue")
+        raw = metadata.read_bytes()
+        if hashlib.sha256(raw).hexdigest() != manifest["failure_metadata_sha256"]:
+            raise ValueError("Failure metadata hash differs")
+        meta = json.loads(raw)
+        if (meta.get("dispatch_id") != failure["dispatch_id"] or
+                meta.get("runtime_capabilities", {}).get("inference_calls") != 0 or meta.get("usage")):
+            raise ValueError("Failure does not establish zero inference")
+        return auth
+
+    def authorize_review_exception(self, manifest):
+        """Record at most one explicitly user-authorized extra review, never a refund.
+
+        The authority record is local provenance, not a cryptographic human
+        signature. Operators must obtain actual user authorization before use.
+        """
+        with self._worker_lock(), self._db() as db:
+            auth = self._validate_review_exception(db, manifest)
+            prior = db.execute("SELECT * FROM scoped_review_exceptions WHERE case_id=?",
+                               (manifest["case_id"],)).fetchone()
+            digest = package_sha256(manifest)
+            if prior:
+                if prior["sha256"] != digest or prior["manifest"] != _json(manifest):
+                    raise ValueError("A case can have only one immutable review exception")
+                return {"recorded": False, "sha256": digest, "additional_attempts": 1}
+            if _stamp(auth["expires_at"]) <= datetime.now(timezone.utc):
+                raise ValueError("Original authorization expired")
+            if self._remaining(db, manifest["case_id"]) != 0:
+                raise ValueError("Review exception requires exhausted original ceiling")
+            db.execute("INSERT INTO scoped_review_exceptions VALUES (?,?,?,?)",
+                       (manifest["case_id"], _json(manifest), digest, _now()))
+            return {"recorded": True, "sha256": digest, "additional_attempts": 1}
+
+    def _remaining(self, db, case_id, job_id=None):
         case = db.execute("SELECT * FROM scoped_cases WHERE case_id=?", (case_id,)).fetchone()
         used = db.execute("SELECT COUNT(*) FROM scoped_dispatches WHERE case_id=?", (case_id,)).fetchone()[0]
-        return case["call_limit"] - case["legacy_attempts"] - used
+        exception = self._review_exception(db, case_id)
+        extra = int(exception is not None and (job_id is None or exception["job_id"] == job_id))
+        return case["call_limit"] + extra - case["legacy_attempts"] - used
 
     def authorize_batch(self, manifest):
         """Append a version; only previously unbound named packages may be bound.
@@ -801,7 +906,10 @@ class ScopedQueue:
             cases = [dict(r) for r in db.execute("SELECT * FROM scoped_cases ORDER BY case_id")]
             for case in cases:
                 case["remaining_attempts"] = self._remaining(db, case["case_id"])
-                case["consumed_attempts"] = case["call_limit"] - case["remaining_attempts"]
+                exception = self._review_exception(db, case["case_id"])
+                case["additional_review_attempts"] = int(exception is not None)
+                case["effective_call_limit"] = case["call_limit"] + case["additional_review_attempts"]
+                case["consumed_attempts"] = case["effective_call_limit"] - case["remaining_attempts"]
             dispatches = [dict(r) for r in db.execute("SELECT * FROM scoped_dispatches ORDER BY consumed_at,dispatch_id")]
             decisions = [dict(r) for r in db.execute("SELECT * FROM scoped_retry_decisions ORDER BY recorded_at,decision_id")]
         return {"schema_version": 2, "mode": "explicit-run-only", "background_enabled": False, "database": str(self.database), "jobs": jobs, "cases": cases, "dispatches": dispatches, "retry_decisions": decisions}
@@ -907,7 +1015,7 @@ class ScopedQueue:
                     raise ValueError("Decision ID already records a different retry")
                 return {"decision_id": decision_id, "recorded": False, "dispatch_id": prior["dispatch_id"]}
             _, auth = self._authorization(db, batch_id)
-            if _stamp(auth["expires_at"]) <= datetime.now(timezone.utc) or "explicit-retry" not in auth["permitted_continuation"] or self._remaining(db, auth["case_id"]) <= 0:
+            if _stamp(auth["expires_at"]) <= datetime.now(timezone.utc) or "explicit-retry" not in auth["permitted_continuation"] or self._remaining(db, auth["case_id"], job_id) <= 0:
                 raise ValueError("Retry is expired, prohibited, or budget exhausted")
             if job_id not in {s["job_id"] for s in auth["jobs"]}:
                 raise ValueError("Retry job outside batch scope")
@@ -939,7 +1047,7 @@ class ScopedQueue:
                         raise ValueError("Selected job has not been enqueued")
                     if row["status"] not in {"queued", "retry-authorized"}:
                         return {"status": row["status"], "reason": row["reason"], "job_id": job_id, "job_attempts_started": 0}
-                    if self._remaining(db, auth["case_id"]) <= 0:
+                    if self._remaining(db, auth["case_id"], job_id) <= 0:
                         return {"status": "blocked", "reason": "case-attempt-limit", "job_id": job_id, "job_attempts_started": 0}
                     if spec["package_sha256"] is None:
                         raise ValueError("Named job package is not yet bound")
@@ -994,7 +1102,7 @@ def verify_dispatch(project_root, dispatch, job):
         if current is None or current["status"] != "running" or current["attempt"] != row["attempt"] or package_sha256(job) != row["package_sha256"] or current["package_sha256"] != row["package_sha256"] or authorization is None or authorization["sha256"] != row["authorization_sha256"]:
             raise ValueError("Dispatch identity differs from durable queue")
         auth = json.loads(authorization["manifest"])
-        if package_sha256(auth) != authorization["sha256"] or _stamp(auth["expires_at"]) <= datetime.now(timezone.utc) or row["model"] != MODELS.get(job["role"]) or row["role"] != job["role"] or queue._remaining(db, row["case_id"]) < 0:
+        if package_sha256(auth) != authorization["sha256"] or _stamp(auth["expires_at"]) <= datetime.now(timezone.utc) or row["model"] != MODELS.get(job["role"]) or row["role"] != job["role"] or queue._remaining(db, row["case_id"], row["job_id"]) < 0:
             raise ValueError("Dispatch authorization is invalid or expired")
         spec = next((s for s in auth["jobs"] if s["job_id"] == job["job_id"]), None)
         if spec is None:
@@ -1008,7 +1116,7 @@ def main():
     parser = argparse.ArgumentParser(description="Explicit scoped queue: no background worker or automatic retry")
     parser.add_argument("--project-root", default=str(Path(__file__).resolve().parents[1]))
     commands = parser.add_subparsers(dest="command", required=True)
-    for command in ("enqueue", "authorize-batch"):
+    for command in ("enqueue", "authorize-batch", "authorize-review-exception"):
         commands.add_parser(command).add_argument("package")
     commands.add_parser("status")
     commands.add_parser("recover")
@@ -1024,12 +1132,17 @@ def main():
     retry.add_argument("--provenance-ref", action="append", required=True)
     args = parser.parse_args()
     queue = ScopedQueue(args.project_root)
-    if args.command in {"enqueue", "authorize-batch"}:
+    if args.command in {"enqueue", "authorize-batch", "authorize-review-exception"}:
         path = Path(args.package).resolve()
         if not path.is_relative_to(queue.root) or any(p.lower() == ".codex" or p.lower().startswith(".env") or p.lower() == "auth.json" or p.lower().endswith(".dpapi") for p in path.parts):
             parser.error("Package must be a noncredential project file")
         payload = json.loads(path.read_text(encoding="utf-8"))
-        result = queue.enqueue(payload) if args.command == "enqueue" else queue.authorize_batch(payload)
+        if args.command == "enqueue":
+            result = queue.enqueue(payload)
+        elif args.command == "authorize-batch":
+            result = queue.authorize_batch(payload)
+        else:
+            result = queue.authorize_review_exception(payload)
     elif args.command == "status":
         result = queue.status()
     elif args.command == "recover":

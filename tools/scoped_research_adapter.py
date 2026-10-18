@@ -298,8 +298,8 @@ try:
 except ImportError:
     from research_runtime import DISABLED_FEATURES
 
-PINNED_CLIENT_VERSION = "0.162.0-alpha.17.2"
-PINNED_CLIENT_SHA256 = "e98c516f1c8935789aabe9122ee7e05ec4c3efd1ba6acf179242e031c495b99e"
+PINNED_CLIENT_VERSION = "0.163.0-alpha.10.2"
+PINNED_CLIENT_SHA256 = "9ecb9df2ecafcc00542ef0966c6f1737a81397dc9531b0a4b178238e2bf4a46d"
 PINNED_CATALOG_SHA256 = "3096c0167d00a39847a269fdcd81dfcf105c660f43e368421dc5655cee9e51d1"
 PINNED_CATALOG_PATH = "state/research-engine/runtime/selected-catalog-" + PINNED_CATALOG_SHA256 + ".json"
 DISABLED_HOST_DIAGNOSTIC = ("Code Mode is unavailable because code-mode host is disabled. "

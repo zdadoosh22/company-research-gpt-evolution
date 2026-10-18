@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "engine-review-exception-20261018-complete",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "review-exception-20261018-r001",
+  "phase": "complete",
+  "created_at": "2026-10-18T01:26:14.410138+00:00",
+  "observed_at": "2026-10-18T01:26:14.410138+00:00",
+  "origin": "User explicitly resumed and authorized up to 100 additional existing credits; original bounded engine goal and four-call case ceiling remain.",
+  "request": "Implement explicit user-authorized single review exception and use it only after verification.",
+  "work": [
+    "Implemented and independently audited immutable one-review exception; repaired authorization-successor compatibility defect.",
+    "Passed final466-test frozen-source regression with one existing permission skip and installed identical source.",
+    "Extra review dispatch stalled before invocation; explicitly interrupted its live session and recovered queue with five consumed dispatches.",
+    "Repaired verifier using regular-file capture and outer process deadline; installed live synthetic verification passed, zero inference."
+  ],
+  "outcome": "partial",
+  "artifacts": [
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/CONTINUATION-r002.md",
+      "sha256": "c4c090247b224126e7359ca9d5f6e7c81dff1c2c2b335bfa14fbc35cabc57d96"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/EXCEPTION-ENGINEERING-REVIEW-r001.json",
+      "sha256": "d14810d1c048d8f2c9f26570183be81fc7d7608146f47d69ea924b2cd7a18c8e"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/OUTER-DEADLINE-ENGINEERING-REVIEW-r001.json",
+      "sha256": "3dbc209e2b177a0a954cfcbeb61d88690e5f796507d71515960519edb436d660"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/OUTER-DEADLINE-INTEGRATION-r001.json",
+      "sha256": "0b0629103c31aa93e7bbd46abf1ee56d348bcb8d63717119e1cabcf829e91681"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/INSTALLED-ISOLATED-VERIFICATION-r001.json",
+      "sha256": "9e50c514e2eb87093901b3f3801879611ff3ae17e22f14a7db5d0640a9fdec14"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/REGRESSION-r005.txt",
+      "sha256": "14354c2b850e4157f836a0ae0e99336774c72807ac2e41af7e89d4699ca5bd53"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/REGRESSION-r005-manifest.json",
+      "sha256": "4a5979d0a23221442a1277c068e6c79857920155992f2aa8974b92a3d9149ad9"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/REVIEW-INTERRUPTION-PROJECTION-r001.json",
+      "sha256": "b77cceefca821c6890d764ba9769da7a080167331f845c4acff0576d38dccf75"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r001.md",
+      "sha256": "7967f1684559e6682287efb23e084e9f103146c1e469e32f502e032c3f91a148"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/EXCEPTION-AUTHORIZED-r001.json",
+      "sha256": "5fb552eff7a96e594c2c8cb1e4f2884e7454e2f98e5078e33c95c08d82027fee"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/EXCEPTION-RETRY-DECISION-r001.json",
+      "sha256": "ffe7e6ef2653bfb649ea3ff32a81485a444a6f6ed20826644253283bf9ce3ee9"
+    },
+    {
+      "path": "validation/engine-slice-2026-10-18-r001/OUTER-DEADLINE-TESTS-r001.txt",
+      "sha256": "8cb6b49810789b851072bb64dd404232ce47be33f64e98ea17488f1a0fd894e8"
+    }
+  ],
+  "checks": [
+    {
+      "id": "frozen-source-regression",
+      "method": "466 tests;465 passed, one existing Windows permission skip; snapshot unchanged",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-18-r001/REGRESSION-r005.txt",
+        "validation/engine-slice-2026-10-18-r001/REGRESSION-r005-manifest.json"
+      ]
+    },
+    {
+      "id": "installed-local-verification",
+      "method": "Actual isolated synthetic verifier; zero remote inference; both requested models offer no tools",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-18-r001/INSTALLED-ISOLATED-VERIFICATION-r001.json"
+      ]
+    },
+    {
+      "id": "outer-deadline",
+      "method": "18 runtime tests including actual sleeping-child deadline and inherited-handle cases",
+      "outcome": "passed",
+      "artifact_paths": [
+        "validation/engine-slice-2026-10-18-r001/OUTER-DEADLINE-TESTS-r001.txt"
+      ]
+    }
+  ],
+  "blockers": {
+    "resolved": [
+      "One-shot explicit exception implemented and used without resetting previous attempts.",
+      "Whole synthetic probe now has independently reviewed and tested outer deadline."
+    ],
+    "introduced": [
+      "Fifth dispatch interrupted pre-invocation; case has zero attempts remaining and no independent Astra review."
+    ],
+    "unchanged": [
+      "Retained analysis partial; review, dossier/disposition and final requirement/retrieval acceptance incomplete."
+    ]
+  },
+  "readiness_impact": {
+    "label": "unchanged",
+    "requirements": [],
+    "artifact_paths": [],
+    "explanation": "Engineering/recovery progress; no actual new model review, analytical acceptance or trading gate changes."
+  },
+  "verified_gate_changes": [],
+  "next_action": "Continue deterministic full-scope acceptance/retrieval audit. No further model dispatch authorized; any new review proposal requires a separately explicit amendment preserving all five attempts.",
+  "unknowns": [
+    "No current security eligibility, financial/current claims, consensus, quote or transaction cost acceptance."
+  ],
+  "supersedes": []
+}

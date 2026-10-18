@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-10-18T01:06:15.230497+00:00",
+  "results": [
+    {
+      "case": "allowed-read",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-sandbox-pcr64h24\\\\home\"))\nError: failed to prepare MXC sandbox: MXC requires nonempty Unicode host LOCALAPPDATA\n"
+    },
+    {
+      "case": "outside-read",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-sandbox-pcr64h24\\\\home\"))\nError: failed to prepare MXC sandbox: MXC requires nonempty Unicode host LOCALAPPDATA\n"
+    },
+    {
+      "case": "packet-write",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-sandbox-pcr64h24\\\\home\"))\nError: failed to prepare MXC sandbox: MXC requires nonempty Unicode host LOCALAPPDATA\n"
+    }
+  ],
+  "write_exists": false,
+  "remote_inference_calls": 0,
+  "environment_change": "SystemDrive allowed through in synthetic-only probe",
+  "limitations": [
+    "Network not retested in this record; no replacement pin acceptance."
+  ]
+}

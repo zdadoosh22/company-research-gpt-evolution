@@ -422,6 +422,130 @@ class ScopedQueueTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.queue.authorize_batch(auth)
 
+    def exhausted_review_exception(self):
+        review = copy.deepcopy(self.job)
+        review.update(job_id="review1", role="review")
+        auth = self.prepare(self.manifest([self.spec(self.job), self.spec(review, "review", "j1", False)]))
+        self.run_job(adapter=self.failed)
+        self.decide("first-retry")
+        self.run_job(adapter=self.failed)
+        self.decide("second-retry")
+        meta = json.loads(Path(self.run_job()["metadata_path"]).read_text())
+        review["target"] = {"path": str(Path(meta["result_path"]).relative_to(self.root)), "sha256": meta["output_sha256"]}
+        self.queue.enqueue(review)
+        auth["version"] = 2
+        auth["jobs"][1]["package_sha256"] = package_sha256(review)
+        authorization = self.queue.authorize_batch(auth)
+        def preflight(root, job, **kwargs):
+            result = self.checkpoint(job, kwargs, reason="runtime-restrictions-unverified")
+            result.update(runtime_capabilities={"inference_calls": 0}, usage=[])
+            Path(result["metadata_path"]).write_text(json.dumps(result))
+            return result
+        failed = self.queue.run_one(job_id="review1", batch_id="b1", adapter=preflight)
+        authority = self.root / "validation/user-review-exception.md"
+        authority.parent.mkdir(exist_ok=True)
+        authority.write_text("Engineering fixture: user explicitly permits one extra review; not real authority.")
+        manifest = {"schema_version": 1, "case_id": "case1", "batch_id": "b1", "job_id": "review1",
+                    "created_at": datetime.now(timezone.utc).isoformat(),
+                    "authorization_sha256": authorization["sha256"], "package_sha256": package_sha256(review),
+                    "failed_dispatch_id": failed["dispatch_id"],
+                    "failure_metadata_sha256": hashlib.sha256(Path(failed["metadata_path"]).read_bytes()).hexdigest(),
+                    "authority": {"path": "validation/user-review-exception.md",
+                                  "sha256": hashlib.sha256(authority.read_bytes()).hexdigest()}}
+        return manifest
+
+    def test_review_exception_preserves_four_attempts_permits_only_one_more(self):
+        manifest = self.exhausted_review_exception()
+        before = self.queue.status()["dispatches"]
+        self.assertEqual(len(before), 4)
+        self.assertTrue(self.queue.authorize_review_exception(manifest)["recorded"])
+        self.assertFalse(self.queue.authorize_review_exception(manifest)["recorded"])
+        self.assertEqual(ScopedQueue(self.root).status()["cases"][0]["remaining_attempts"], 1)
+        with self.assertRaises(ValueError):
+            self.decide("analysis-not-allowed")
+        self.queue.retry(job_id="review1", batch_id="b1", decision_id="extra-review",
+                         rationale="Explicit fixture exception", provenance_refs=["fixture-authority"])
+        result = self.queue.run_one(job_id="review1", batch_id="b1", adapter=self.adapter)
+        self.assertEqual(result["status"], "complete")
+        state = self.queue.status()
+        self.assertEqual(state["dispatches"][:4], before)
+        self.assertEqual(state["cases"][0]["call_limit"], 4)
+        self.assertEqual(state["cases"][0]["effective_call_limit"], 5)
+        self.assertEqual(state["cases"][0]["remaining_attempts"], 0)
+        self.assertEqual(state["cases"][0]["consumed_attempts"], 5)
+        self.assertEqual(self.queue.run_one(job_id="review1", batch_id="b1", adapter=self.adapter)["job_attempts_started"], 0)
+        self.assertFalse(self.queue.authorize_review_exception(manifest)["recorded"])
+
+    def test_review_exception_tampered_authority_or_expansion_rejected(self):
+        manifest = self.exhausted_review_exception()
+        for key, value in (("job_id", "j1"), ("package_sha256", "0" * 64),
+                           ("authorization_sha256", "0" * 64), ("failure_metadata_sha256", "0" * 64)):
+            candidate = copy.deepcopy(manifest)
+            candidate[key] = value
+            with self.subTest(key=key), self.assertRaises(ValueError):
+                self.queue.authorize_review_exception(candidate)
+        self.queue.authorize_review_exception(manifest)
+        candidate = copy.deepcopy(manifest)
+        candidate["created_at"] = datetime.now(timezone.utc).isoformat()
+        with self.assertRaises(ValueError):
+            self.queue.authorize_review_exception(candidate)
+        (self.root / manifest["authority"]["path"]).write_text("Changed")
+        with self.assertRaises(ValueError):
+            self.queue.status()
+
+    def test_claimed_failure_cannot_obtain_review_exception(self):
+        manifest = self.exhausted_review_exception()
+        with self.queue._db() as db:
+            db.execute("UPDATE scoped_dispatches SET invocation_claimed_at=? WHERE dispatch_id=?",
+                       (datetime.now(timezone.utc).isoformat(), manifest["failed_dispatch_id"]))
+        with self.assertRaises(ValueError):
+            self.queue.authorize_review_exception(manifest)
+
+    def test_failed_exception_attempt_still_consumes_slot_without_second_retry(self):
+        manifest = self.exhausted_review_exception()
+        self.queue.authorize_review_exception(manifest)
+        self.queue.retry(job_id="review1", batch_id="b1", decision_id="extra-review",
+                         rationale="One fixture review", provenance_refs=["fixture-authority"])
+        result = self.queue.run_one(job_id="review1", batch_id="b1", adapter=self.failed)
+        self.assertEqual(result["status"], "needs-retry-decision")
+        self.assertEqual(self.queue.status()["cases"][0]["remaining_attempts"], 0)
+        with self.assertRaises(ValueError):
+            self.queue.retry(job_id="review1", batch_id="b1", decision_id="forbidden-sixth",
+                             rationale="Not authorized", provenance_refs=["fixture-authority"])
+
+    def test_review_exception_retains_original_authorization_under_identical_successor(self):
+        manifest = self.exhausted_review_exception()
+        self.queue.authorize_review_exception(manifest)
+        with self.queue._db() as db:
+            _, auth = self.queue._authorization(db, "b1")
+        auth["version"] += 1
+        self.queue.authorize_batch(auth)
+        self.assertEqual(ScopedQueue(self.root).status()["cases"][0]["remaining_attempts"], 1)
+        self.queue.retry(job_id="review1", batch_id="b1", decision_id="extra-review",
+                         rationale="Explicit fixture exception", provenance_refs=["fixture-authority"])
+        self.assertEqual(self.queue.run_one(job_id="review1", batch_id="b1", adapter=self.adapter)["status"], "complete")
+
+    def test_review_exception_rejects_inference_usage_and_authority_escape(self):
+        manifest = self.exhausted_review_exception()
+        with self.queue._db() as db:
+            row = db.execute("SELECT metadata_path FROM scoped_dispatches WHERE dispatch_id=?",
+                             (manifest["failed_dispatch_id"],)).fetchone()
+        path = Path(row["metadata_path"])
+        original = path.read_bytes()
+        for calls, usage in ((1, []), (0, [{"input_tokens": 1}])):
+            meta = json.loads(original)
+            meta.update(runtime_capabilities={"inference_calls": calls}, usage=usage)
+            path.write_text(json.dumps(meta))
+            candidate = copy.deepcopy(manifest)
+            candidate["failure_metadata_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+            with self.subTest(calls=calls, usage=usage), self.assertRaisesRegex(ValueError, "zero inference"):
+                self.queue.authorize_review_exception(candidate)
+        path.write_bytes(original)
+        candidate = copy.deepcopy(manifest)
+        candidate["authority"]["path"] = "../outside.md"
+        with self.assertRaisesRegex(ValueError, "validation Markdown"):
+            self.queue.authorize_review_exception(candidate)
+
     def test_legacy_migration_preserves_records_and_attempts(self):
         self.queue.enqueue(self.job)
         with self.queue._db() as db:

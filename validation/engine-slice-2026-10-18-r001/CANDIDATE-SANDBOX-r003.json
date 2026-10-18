@@ -1,0 +1,34 @@
+{
+  "observed_at": "2026-10-18T01:07:02.140159+00:00",
+  "results": [
+    {
+      "case": "allowed-read",
+      "returncode": 0,
+      "stdout": "ALLOW-PACKET",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-sandbox-axtgwd_0\\\\home\"))\n"
+    },
+    {
+      "case": "outside-read",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-sandbox-axtgwd_0\\\\home\"))\nAccess is denied.\n"
+    },
+    {
+      "case": "packet-write",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-sandbox-axtgwd_0\\\\home\"))\nAccess is denied.\n"
+    },
+    {
+      "case": "loopback-network",
+      "returncode": 7,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-sandbox-axtgwd_0\\\\home\"))\ncurl: (7) Failed to connect to 127.0.0.1:53141 after 1 ms: Could not connect to server\n"
+    }
+  ],
+  "write_exists": false,
+  "network_control": "CONTROL",
+  "sandbox_network_hits": 0,
+  "remote_inference_calls": 0,
+  "environment_change": "Synthetic probe passes SystemDrive and LOCALAPPDATA; empty temporary CODEX_HOME. No credentials."
+}

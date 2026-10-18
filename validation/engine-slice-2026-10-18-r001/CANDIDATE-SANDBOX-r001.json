@@ -1,0 +1,41 @@
+{
+  "observed_at": "2026-10-18T01:05:48.420281+00:00",
+  "client": "0.163.0-alpha.10.2",
+  "profile": [
+    "windows.sandbox=\"mxc\"",
+    "permissions.cr2_packet.filesystem={\":minimal\"=\"read\",\":workspace_roots\"=\"read\",\"C:/Windows/Temp\"=\"deny\"}",
+    "permissions.cr2_packet.network.enabled=false",
+    "permissions.cr2_packet.network.allow_local_binding=false"
+  ],
+  "results": [
+    {
+      "case": "allowed-read",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-replacement-canary-0lopt7ks\\\\home\"))\nError: failed to prepare MXC sandbox: MXC requires nonempty Unicode host SystemDrive\n"
+    },
+    {
+      "case": "outside-read",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-replacement-canary-0lopt7ks\\\\home\"))\nError: failed to prepare MXC sandbox: MXC requires nonempty Unicode host SystemDrive\n"
+    },
+    {
+      "case": "packet-write",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-replacement-canary-0lopt7ks\\\\home\"))\nError: failed to prepare MXC sandbox: MXC requires nonempty Unicode host SystemDrive\n"
+    },
+    {
+      "case": "loopback-network",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"C:\\\\Users\\\\aidan\\\\AppData\\\\Local\\\\Temp\\\\cr2-replacement-canary-0lopt7ks\\\\home\"))\nError: failed to prepare MXC sandbox: MXC requires nonempty Unicode host SystemDrive\n"
+    }
+  ],
+  "unsandboxed_network_control": "LOOPBACK-SENTINEL",
+  "sandboxed_network_hits": 0,
+  "write_exists": false,
+  "remote_inference_calls": 0,
+  "limitation": "Command canaries only; does not independently identify model backend or prove every sandbox behavior."
+}
