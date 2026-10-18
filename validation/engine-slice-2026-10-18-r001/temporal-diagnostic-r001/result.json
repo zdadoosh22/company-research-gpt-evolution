@@ -1,0 +1,217 @@
+{
+  "protocol_sha256": "0ee026492eee43827049946ee2d90ac52aca0b9c950d1159b57684f1606f1484",
+  "stamp": "2026-10-10T23:59:59.999999+00:00",
+  "cases": [
+    {
+      "case": {
+        "cutoff": "2026-10-10T23:59:59+00:00",
+        "excluded": false
+      },
+      "passed": true,
+      "result": {
+        "packet": {
+          "schema": "cr2.research-memory.v1",
+          "query_terms": [
+            "receipt",
+            "guide"
+          ],
+          "filters": {
+            "entities": [
+              "netflix-inc"
+            ],
+            "security_id": "NASDAQ:NFLX:common",
+            "question_scope": "archival-receipt-guidance",
+            "record_types": [
+              "claim"
+            ],
+            "review_statuses": [
+              "archived-project-analysis-unverified"
+            ],
+            "evidence_cutoff": "2026-10-10T23:59:59+00:00",
+            "retrospective": true
+          },
+          "historical_label": "Retrospective archival project-analysis reconstruction; procedural held-out test, not contemporaneous capture, issuer verification, economic judgement or edge evidence.",
+          "source_text_interpretation": "data-only",
+          "readiness_effect": "none",
+          "records": [
+            {
+              "id": "nflx-receipt-reference",
+              "record_type": "claim",
+              "entity_id": "netflix-inc",
+              "security_id": "NASDAQ:NFLX:common",
+              "question_scope": "archival-receipt-guidance",
+              "source_id": "nflx-archive-1",
+              "source_path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+              "source_sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+              "location": "lines 13-13",
+              "text": "The January letter provided a roughly $11bn FY2026 FCF projection before the termination receipt. It already anticipated a Brazil deposit shifted out of 2025. April raised the projection to roughly $12.5bn, principally reflecting the receipt after taxes; July retained roughly $12.5bn. Thus there IS a dated receipt-free management reference. Earlier foundation uncertainty about isolating the receipt is narrowed, not erased. The change does not certify $11bn as October's recurring forecast, establish exact attributable taxes, or undo other intervening operating and transaction changes. January's 31.5% margin target included about $275m acquisition-related expenses; the identical later margin target cannot automatically be adjusted upward for their presumed removal.",
+              "text_sha256": "441dac1ea744bd545c9d728aa68f7dceed5939b8d5fef27639c87db0428e3262",
+              "review_status": "archived-project-analysis-unverified",
+              "originating_run": "archival-study-20261010",
+              "versioned_no_later_than": "2026-10-10T00:50:47+01:00",
+              "origin_kind": "project-analysis",
+              "claim_kind": "attributed-project-record",
+              "limitations": [
+                "Retrospective retrieval of saved project analysis; issuer facts and economic conclusions not independently verified here."
+              ],
+              "schema": "cr2.research-memory.v1",
+              "public_source_date": null,
+              "captured_at": null,
+              "project_record_created_at": null,
+              "analysis_at": null,
+              "reviewed_at": null,
+              "valid_until": null,
+              "superseded_effective_at": "2026-10-10",
+              "event_period": null,
+              "event_date": null,
+              "accounting_basis": null,
+              "scope": null,
+              "declared_unit": null,
+              "declared_currency": null,
+              "review_scope": null,
+              "disposition": null,
+              "assumptions": [],
+              "affected_record_ids": [],
+              "contradicts": [],
+              "reopen_conditions": [],
+              "source_dependencies": [],
+              "polarity": "unknown",
+              "superseded_by": "synthetic-successor",
+              "readiness_effect": "none",
+              "dependency_source_ids": [],
+              "table": null,
+              "inclusion_reason": "Requested entity/security/question and chronology/status checks passed; query text matched; project-analysis; approval is not inferred.",
+              "source_reference": {
+                "source_id": "nflx-archive-1",
+                "path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+                "sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+                "location": "lines 13-13"
+              }
+            }
+          ]
+        },
+        "excluded": [],
+        "packet_sha256": "cedf95013c9289df785a4942cd6c1aac8b8fc51548bd14d941de4f29c6d4be88",
+        "packet_utf8_bytes": 3185,
+        "selected_record_ids": [
+          "nflx-receipt-reference"
+        ],
+        "record_count": 1,
+        "network_calls": 0,
+        "worker_calls": 0,
+        "complete_within_bounds": true
+      }
+    },
+    {
+      "case": {
+        "cutoff": "2026-10-10T23:59:59.999999+00:00",
+        "excluded": true
+      },
+      "passed": true,
+      "result": {
+        "packet": {
+          "schema": "cr2.research-memory.v1",
+          "query_terms": [
+            "receipt",
+            "guide"
+          ],
+          "filters": {
+            "entities": [
+              "netflix-inc"
+            ],
+            "security_id": "NASDAQ:NFLX:common",
+            "question_scope": "archival-receipt-guidance",
+            "record_types": [
+              "claim"
+            ],
+            "review_statuses": [
+              "archived-project-analysis-unverified"
+            ],
+            "evidence_cutoff": "2026-10-10T23:59:59.999999+00:00",
+            "retrospective": true
+          },
+          "historical_label": "Retrospective archival project-analysis reconstruction; procedural held-out test, not contemporaneous capture, issuer verification, economic judgement or edge evidence.",
+          "source_text_interpretation": "data-only",
+          "readiness_effect": "none",
+          "records": []
+        },
+        "excluded": [
+          {
+            "record_id": "nflx-receipt-reference",
+            "reason": "superseded-for-default-reuse",
+            "source_id": "nflx-archive-1",
+            "public_source_date": null,
+            "versioned_no_later_than": "2026-10-10T00:50:47+01:00",
+            "superseded_by": "synthetic-successor"
+          }
+        ],
+        "packet_sha256": "1b869e4e8d2c795c7066ea055111e24cfbc1a01ee194b997420bc6352131b43e",
+        "packet_utf8_bytes": 616,
+        "selected_record_ids": [],
+        "record_count": 0,
+        "network_calls": 0,
+        "worker_calls": 0,
+        "complete_within_bounds": true
+      }
+    },
+    {
+      "case": {
+        "cutoff": "2026-10-11T00:00:00+00:00",
+        "excluded": true
+      },
+      "passed": true,
+      "result": {
+        "packet": {
+          "schema": "cr2.research-memory.v1",
+          "query_terms": [
+            "receipt",
+            "guide"
+          ],
+          "filters": {
+            "entities": [
+              "netflix-inc"
+            ],
+            "security_id": "NASDAQ:NFLX:common",
+            "question_scope": "archival-receipt-guidance",
+            "record_types": [
+              "claim"
+            ],
+            "review_statuses": [
+              "archived-project-analysis-unverified"
+            ],
+            "evidence_cutoff": "2026-10-11T00:00:00+00:00",
+            "retrospective": true
+          },
+          "historical_label": "Retrospective archival project-analysis reconstruction; procedural held-out test, not contemporaneous capture, issuer verification, economic judgement or edge evidence.",
+          "source_text_interpretation": "data-only",
+          "readiness_effect": "none",
+          "records": []
+        },
+        "excluded": [
+          {
+            "record_id": "nflx-receipt-reference",
+            "reason": "superseded-for-default-reuse",
+            "source_id": "nflx-archive-1",
+            "public_source_date": null,
+            "versioned_no_later_than": "2026-10-10T00:50:47+01:00",
+            "superseded_by": "synthetic-successor"
+          }
+        ],
+        "packet_sha256": "714bf6e64f7cd41f37ce759d78f381f1d886ae079bf33d21ae136805f8a8e4dd",
+        "packet_utf8_bytes": 609,
+        "selected_record_ids": [],
+        "record_count": 0,
+        "network_calls": 0,
+        "worker_calls": 0,
+        "complete_within_bounds": true
+      }
+    }
+  ],
+  "all_passed": true,
+  "source_unchanged": true,
+  "interpretation": "Does not replace frozen failed control; diagnoses documented existing date-only semantics only.",
+  "calls_in_this_local_diagnostic": {
+    "model": 0,
+    "network": 0
+  }
+}

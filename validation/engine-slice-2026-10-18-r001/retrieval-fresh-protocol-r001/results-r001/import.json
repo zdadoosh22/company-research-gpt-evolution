@@ -1,0 +1,13 @@
+{
+  "records": 6,
+  "sources": 2,
+  "bundle_sha256": "473d0f7f2e9e4e8ac8db2bfcbd6dea7295796e599c31c1eb794f8c8e3b9cb396",
+  "provenance": {
+    "records_path": "validation\\engine-slice-2026-10-18-r001\\retrieval-fresh-protocol-r001\\normalized-records.json",
+    "records_sha256": "78a18c0cc837278efaee682924e3ca65f6116b264d335c5f44d77162035c5233",
+    "manifest_path": "validation\\engine-slice-2026-10-18-r001\\retrieval-fresh-protocol-r001\\source-manifest.json",
+    "manifest_sha256": "a09b6bef8842d0c49b29228b6219bc036e9e97dec52a8628c0a5dcffc9adec34",
+    "source_root": ".",
+    "frozen": false
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "records": [
+    {
+      "id": "nflx-receipt-reference",
+      "record_type": "claim",
+      "entity_id": "netflix-inc",
+      "security_id": "NASDAQ:NFLX:common",
+      "question_scope": "archival-receipt-guidance",
+      "source_id": "nflx-archive-1",
+      "source_path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+      "source_sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+      "location": "lines 13-13",
+      "text": "The January letter provided a roughly $11bn FY2026 FCF projection before the termination receipt. It already anticipated a Brazil deposit shifted out of 2025. April raised the projection to roughly $12.5bn, principally reflecting the receipt after taxes; July retained roughly $12.5bn. Thus there IS a dated receipt-free management reference. Earlier foundation uncertainty about isolating the receipt is narrowed, not erased. The change does not certify $11bn as October's recurring forecast, establish exact attributable taxes, or undo other intervening operating and transaction changes. January's 31.5% margin target included about $275m acquisition-related expenses; the identical later margin target cannot automatically be adjusted upward for their presumed removal.",
+      "text_sha256": "441dac1ea744bd545c9d728aa68f7dceed5939b8d5fef27639c87db0428e3262",
+      "review_status": "archived-project-analysis-unverified",
+      "originating_run": "archival-study-20261010",
+      "versioned_no_later_than": "2026-10-10T00:50:47+01:00",
+      "origin_kind": "project-analysis",
+      "claim_kind": "attributed-project-record",
+      "limitations": [
+        "Retrospective retrieval of saved project analysis; issuer facts and economic conclusions not independently verified here."
+      ]
+    },
+    {
+      "id": "nflx-tax-residual-limit",
+      "record_type": "claim",
+      "entity_id": "netflix-inc",
+      "security_id": "NASDAQ:NFLX:common",
+      "question_scope": "archival-receipt-guidance",
+      "source_id": "nflx-archive-1",
+      "source_path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+      "source_sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+      "location": "lines 15-15",
+      "text": "The $1.5bn guide increase and $2.8bn gross receipt imply a $1.3bn **unallocated combined tax-and-other-changes residual**, NOT a discovered tax payment. April's word “primarily”, rounded projections and timing prevent that inference. The historical FY identity remains roughly `9,700 + T_fee_cash_FY`, before other recurring adjustments, where T is unallocated. Even a conditional 0–2,800 T envelope is an assumption exercise rather than a proved tax bound; foreign tax-credit, timing and other impacts are not allocated by that exercise.",
+      "text_sha256": "66456037b6a336c15e8a0faf3413f144660fc3d21c94f3bc0a1cd0f8d2382e5d",
+      "review_status": "archived-project-analysis-unverified",
+      "originating_run": "archival-study-20261010",
+      "versioned_no_later_than": "2026-10-10T00:50:47+01:00",
+      "origin_kind": "project-analysis",
+      "claim_kind": "attributed-project-record",
+      "limitations": [
+        "Retrospective retrieval of saved project analysis; issuer facts and economic conclusions not independently verified here."
+      ]
+    },
+    {
+      "id": "nflx-source-period-unit-table",
+      "record_type": "claim",
+      "entity_id": "netflix-inc",
+      "security_id": "NASDAQ:NFLX:common",
+      "question_scope": "archival-receipt-guidance",
+      "source_id": "nflx-archive-1",
+      "source_path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+      "source_sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+      "location": "lines 19-26",
+      "text": "All dollars below are USD; millions in calculations. New retrieval register and review-input manifest bind exact archived bytes. Source notes supplement, rather than rewrite, the previous authenticated financial records.\n\n| ID / provenance | Period and location | Class and usable inference | Limitation / treatment |\n|---|---|---|---|\n| S1: [January letter](https://s22.q4cdn.com/959853165/files/doc_financials/2025/q4/FINAL-Q4-25-Shareholder-Letter.pdf); archived foundation cash-note register | 20 Jan2026, FY2025 / FY2026 guidance; opening forecasts and Cash Flow and Capital Structure section | Interested management: FYFCF about11,000, cash-content/amort about1.1x; roughly700 Brazil deposit moved to2026; about275 acquisition costs included in margin | Receipt-free at that date, not sustainable owner cash or unchanged July economics. Do not call700 exact same payment as June729 |\n| S2: [April letter SEC](https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm), [issuer PDF](https://s22.q4cdn.com/959853165/files/doc_financials/2026/q1/FINAL-Q1-26-Shareholder-Letter.pdf) | 16 Apr2026, Cash Flow and Capital Structure section; letter unaudited | Interested guidance bridge:11,000 to12,500 principally after-tax fee; fee2,800;1.1x cash ratio; ads3,000 | SEC raw request failed but full primary web document was read; issuer PDF raw and derived text archived. Neither published projection reconciles actual fee cash taxes |\n| S3: July letter / June10-Q from frozen foundation | July16/17,2026; letter forecasts and10-Q cash/content/debt/share notes | June actuals, JulyFYrev51.0–51.4bn, margin31.5%, FCF~12.5bn; Q3rev12.86bn/OI4.268bn | Approximate guide with FX/content-timing dependence; FYcash not automatically FCFE/normalized |\n| S4: [Annual10-K](https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm), June10-Q | Jan23 andJuly17filings; contractual content obligations footnote, cashflow, compensation and stock notes | Reported content payments/amortization, known obligation stock and excluded-title estimate; FY2025SBC368.449, H12026SBC271.717 | Three-year excluded-title1–4bn is management judgement, mostly beyond12months, not a maximum or proof of spending above forecasts |",
+      "text_sha256": "8d12ffc77e89e545f580aa74c1609e0d01847a8ae204d444ca69022420bdca91",
+      "review_status": "archived-project-analysis-unverified",
+      "originating_run": "archival-study-20261010",
+      "versioned_no_later_than": "2026-10-10T00:50:47+01:00",
+      "origin_kind": "project-analysis",
+      "claim_kind": "attributed-project-record",
+      "limitations": [
+        "Retrospective retrieval of saved project analysis; issuer facts and economic conclusions not independently verified here."
+      ]
+    },
+    {
+      "id": "nflx-sustainable-band-limit",
+      "record_type": "claim",
+      "entity_id": "netflix-inc",
+      "security_id": "NASDAQ:NFLX:common",
+      "question_scope": "archival-receipt-guidance",
+      "source_id": "nflx-archive-1",
+      "source_path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+      "source_sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+      "location": "lines 37-37",
+      "text": "**Receipt:** the January guide establishes a soft, dated management counterfactual; April confirms the dominant bridge. Exact T is not indispensable to a later model using independent recurring tax and cash assumptions. The conditional gross-receipt-exclusion interval9.7–12.5bn tests the sensitivity under the stated fee-tax assumption only. It must not be called a sustainable band. Removing a cash payment or extrapolating H1 would still require recurrence and seasonality treatment. No second addback of85m already noncash-reversed transaction-financing amortization is allowed.",
+      "text_sha256": "afbaee9292c92a3d923189557d8e3b389db64009b00be5bdc5f7da14f20abd7b",
+      "review_status": "archived-project-analysis-unverified",
+      "originating_run": "archival-study-20261010",
+      "versioned_no_later_than": "2026-10-10T00:50:47+01:00",
+      "origin_kind": "project-analysis",
+      "claim_kind": "attributed-project-record",
+      "limitations": [
+        "Retrospective retrieval of saved project analysis; issuer facts and economic conclusions not independently verified here."
+      ]
+    },
+    {
+      "id": "nflx-provisional-disposition",
+      "record_type": "claim",
+      "entity_id": "netflix-inc",
+      "security_id": "NASDAQ:NFLX:common",
+      "question_scope": "archival-receipt-guidance",
+      "source_id": "nflx-archive-1",
+      "source_path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+      "source_sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+      "location": "lines 7-9",
+      "text": "Can the reviewed financial foundation support a defensible conditional valuation and expectations framework, without requiring an approved investment or exact unknowable inputs? **Provisional answer: park numeric valuation and the opportunity assessment pending a bounded economic forecast, rather than treat the guide or a tax sensitivity as sustainable cash.** The useful result is an explicitly narrowed gap register and tested expectations/adverse framework, not a claim that Netflix cannot be valued, that it is unattractive, or that every accounting detail must become certain. The reviewer must challenge whether this stop is too strict.\n\nThe four pillars are assessed separately. Dated ownership and a management expectations baseline are sufficient for limited work. Free discount-rate ingredients exist. Exact receipt tax and quarterly vendor consensus are NOT individual stop conditions. The aggregate missing piece is a defensible range linking growth and margin to recurring content cash investment and other owner-cash burdens beyond the present guide. That prevents selection of independent primary valuation and cross-check assumptions in this stage. A broad conditional algebra is possible, but it is not being presented as economically justified downside/central/upside values.",
+      "text_sha256": "48c6f6247af2eb954ec9cb590b7e83ff506db6f04adf35f4d86ae0068f1b2a68",
+      "review_status": "archived-project-analysis-unverified",
+      "originating_run": "archival-study-20261010",
+      "versioned_no_later_than": "2026-10-10T00:50:47+01:00",
+      "origin_kind": "project-analysis",
+      "claim_kind": "attributed-project-record",
+      "limitations": [
+        "Retrospective retrieval of saved project analysis; issuer facts and economic conclusions not independently verified here."
+      ]
+    },
+    {
+      "id": "nflx-later-readiness",
+      "record_type": "claim",
+      "entity_id": "netflix-inc",
+      "security_id": "NASDAQ:NFLX:common",
+      "question_scope": "archival-receipt-guidance",
+      "source_id": "nflx-archive-2",
+      "source_path": "monitoring/studies/2026-10-11-netflix-pre-event-readiness-r002.md",
+      "source_sha256": "ace6f1bf2bb732c17b48361d4ef57a86079575682d338e53ad5ea666f8094838",
+      "location": "lines 3-3",
+      "text": "11 October2026 Europe/London. **Prospective correction; awaiting scoped independent re-review and parent disposition.** This advances the accepted pre-event protocol towards an actual opportunity decision by testing its current corporate funding/claims prerequisites. It is not a completed current valuation or approved investment signal.",
+      "text_sha256": "8affab6df781c06d7bd7c8a47064587ca7b3b870fed5c3992dd8c077636b1b5d",
+      "review_status": "archived-project-analysis-unverified",
+      "originating_run": "archival-study-20261011",
+      "versioned_no_later_than": "2026-10-11T19:10:17+01:00",
+      "origin_kind": "project-analysis",
+      "claim_kind": "attributed-project-record",
+      "limitations": [
+        "Retrospective retrieval of saved project analysis; issuer facts and economic conclusions not independently verified here."
+      ]
+    }
+  ]
+}

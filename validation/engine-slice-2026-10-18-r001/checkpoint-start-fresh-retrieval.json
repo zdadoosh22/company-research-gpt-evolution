@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "engine-fresh-retrieval-20261018-start",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "fresh-retrieval-20261018-r001",
+  "phase": "start",
+  "created_at": "2026-10-18T01:46:46.428879+00:00",
+  "observed_at": "2026-10-18T01:46:46.428879+00:00",
+  "origin": "User explicitly resumed and authorized up to 100 additional existing credits; original bounded engine goal and four-call case ceiling remain.",
+  "request": "Evaluate current ordinary retrieval on a genuinely new question/source set frozen before any query, preserving prior failure and known-corpus diagnostic.",
+  "work": [],
+  "outcome": null,
+  "artifacts": [],
+  "checks": [],
+  "blockers": {
+    "resolved": [],
+    "introduced": [],
+    "unchanged": [
+      "Independent actual Astra review pending",
+      "Final release and frozen retrieval acceptance incomplete"
+    ]
+  },
+  "readiness_impact": {
+    "label": "not assessed",
+    "requirements": [],
+    "artifact_paths": [],
+    "explanation": "Stage start only; no research or trading gate acceptance."
+  },
+  "verified_gate_changes": [],
+  "next_action": "Independent bounded preparation of new protocol and exact preserved source records, then coordinator inspection before deterministic route execution. No actual research model dispatch.",
+  "unknowns": [
+    "No current security eligibility, financial/current claims, consensus, quote or transaction cost acceptance."
+  ],
+  "supersedes": []
+}

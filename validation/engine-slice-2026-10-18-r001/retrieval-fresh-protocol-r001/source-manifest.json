@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "source_id": "nflx-archive-1",
+      "repository_path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+      "sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+      "bytes": 19765
+    },
+    {
+      "source_id": "nflx-archive-2",
+      "repository_path": "monitoring/studies/2026-10-11-netflix-pre-event-readiness-r002.md",
+      "sha256": "ace6f1bf2bb732c17b48361d4ef57a86079575682d338e53ad5ea666f8094838",
+      "bytes": 13117
+    }
+  ]
+}

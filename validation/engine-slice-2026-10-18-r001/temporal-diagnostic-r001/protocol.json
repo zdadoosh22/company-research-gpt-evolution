@@ -1,0 +1,28 @@
+{
+  "kind": "non-held-out precision diagnostic after known failed frozen expectation",
+  "implementation_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678",
+  "source_bundle": "validation/engine-slice-2026-10-18-r001/retrieval-fresh-protocol-r001",
+  "mutation": {
+    "superseded_by": "synthetic-successor",
+    "superseded_effective_at": "2026-10-10"
+  },
+  "cases": [
+    {
+      "cutoff": "2026-10-10T23:59:59+00:00",
+      "excluded": false
+    },
+    {
+      "cutoff": "2026-10-10T23:59:59.999999+00:00",
+      "excluded": true
+    },
+    {
+      "cutoff": "2026-10-11T00:00:00+00:00",
+      "excluded": true
+    }
+  ],
+  "expected_stamp": "2026-10-10T23:59:59.999999+00:00",
+  "no_engine_change": true,
+  "model_calls": 0,
+  "network_calls": 0,
+  "boundary": "Does not replace frozen failed control; diagnoses documented existing date-only semantics only."
+}

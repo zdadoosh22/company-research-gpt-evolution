@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "source_id": "nflx-archive-1",
+      "repository_path": "monitoring/studies/2026-10-10-netflix-feasibility-r001.md",
+      "sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+      "bytes": 19765,
+      "snapshot_path": "raw/2026-10-10-netflix-feasibility-r001.md",
+      "version_commit": "1886bebe9865c091ef40224324cd579fd0c512c1",
+      "versioned_no_later_than": "2026-10-10T00:50:47+01:00",
+      "git_blob_matches_current_bytes": true,
+      "public_source_date": null,
+      "captured_at": null,
+      "origin_kind": "project-analysis",
+      "limitation": "Project analysis and attributed references only; no underlying issuer source independently verified in this evaluation."
+    },
+    {
+      "source_id": "nflx-archive-2",
+      "repository_path": "monitoring/studies/2026-10-11-netflix-pre-event-readiness-r002.md",
+      "sha256": "ace6f1bf2bb732c17b48361d4ef57a86079575682d338e53ad5ea666f8094838",
+      "bytes": 13117,
+      "snapshot_path": "raw/2026-10-11-netflix-pre-event-readiness-r002.md",
+      "version_commit": "4204eec97d681800356db9ffd3582e98b646bdf3",
+      "versioned_no_later_than": "2026-10-11T19:10:17+01:00",
+      "git_blob_matches_current_bytes": true,
+      "public_source_date": null,
+      "captured_at": null,
+      "origin_kind": "project-analysis",
+      "limitation": "Project analysis and attributed references only; no underlying issuer source independently verified in this evaluation."
+    }
+  ]
+}

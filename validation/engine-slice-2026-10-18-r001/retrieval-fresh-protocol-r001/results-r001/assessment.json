@@ -1,0 +1,125 @@
+{
+  "routes": {
+    "direct": {
+      "gold": [
+        {
+          "record_id": "nflx-receipt-reference",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-tax-residual-limit",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-source-period-unit-table",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-sustainable-band-limit",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-provisional-disposition",
+          "passed": true
+        }
+      ],
+      "negative_controls": [
+        {
+          "record_id": "nflx-later-readiness",
+          "passed": true
+        }
+      ],
+      "source_reference_checks": true,
+      "bounds_pass": true,
+      "hash_pass": true,
+      "byte_count_pass": true,
+      "complete_within_bounds": true
+    },
+    "fts": {
+      "gold": [
+        {
+          "record_id": "nflx-receipt-reference",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-tax-residual-limit",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-source-period-unit-table",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-sustainable-band-limit",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-provisional-disposition",
+          "passed": true
+        }
+      ],
+      "negative_controls": [
+        {
+          "record_id": "nflx-later-readiness",
+          "passed": true
+        }
+      ],
+      "source_reference_checks": true,
+      "bounds_pass": true,
+      "hash_pass": true,
+      "byte_count_pass": true,
+      "complete_within_bounds": true
+    },
+    "rebuilt": {
+      "gold": [
+        {
+          "record_id": "nflx-receipt-reference",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-tax-residual-limit",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-source-period-unit-table",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-sustainable-band-limit",
+          "passed": true
+        },
+        {
+          "record_id": "nflx-provisional-disposition",
+          "passed": true
+        }
+      ],
+      "negative_controls": [
+        {
+          "record_id": "nflx-later-readiness",
+          "passed": true
+        }
+      ],
+      "source_reference_checks": true,
+      "bounds_pass": true,
+      "hash_pass": true,
+      "byte_count_pass": true,
+      "complete_within_bounds": true
+    }
+  },
+  "rebuild_equivalent": true,
+  "controls_pass": false,
+  "source_provenance": {
+    "records_path": "validation\\engine-slice-2026-10-18-r001\\retrieval-fresh-protocol-r001\\normalized-records.json",
+    "records_sha256": "78a18c0cc837278efaee682924e3ca65f6116b264d335c5f44d77162035c5233",
+    "manifest_path": "validation\\engine-slice-2026-10-18-r001\\retrieval-fresh-protocol-r001\\source-manifest.json",
+    "manifest_sha256": "a09b6bef8842d0c49b29228b6219bc036e9e97dec52a8628c0a5dcffc9adec34",
+    "source_root": ".",
+    "frozen": false
+  },
+  "runner_sha256": "81278c65e4549a5a02859bca6f6d75ddf813274c49191bcd3f16f4152ab152ee",
+  "protocol_sha256": "2e316f91ac119a1c85615ab95faed736576c6abf810e988af823650308e3d52d",
+  "call_scope": "Runner invokes only local filesystem/Git, Python standard library and deterministic research_memory APIs; no model/network transport is invoked. No system-wide transport interception or measurement is claimed.",
+  "model_calls_in_this_runner": 0,
+  "network_calls_in_this_runner": 0,
+  "disposition": "Archival engineering evidence only; no research/review/trade acceptance promotion."
+}

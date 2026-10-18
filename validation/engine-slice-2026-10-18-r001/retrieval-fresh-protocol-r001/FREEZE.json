@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-10-18T01:47:58.584382+00:00",
+  "files": {
+    "protocol.json": {
+      "sha256": "2e316f91ac119a1c85615ab95faed736576c6abf810e988af823650308e3d52d",
+      "bytes": 5529
+    },
+    "source-manifest.json": {
+      "sha256": "a09b6bef8842d0c49b29228b6219bc036e9e97dec52a8628c0a5dcffc9adec34",
+      "bytes": 526
+    },
+    "source-register.json": {
+      "sha256": "c580e62135936c8823565aeeceed5135d2a37ae712ba6b7dd60cd06021956e9d",
+      "bytes": 1530
+    },
+    "normalized-records.json": {
+      "sha256": "78a18c0cc837278efaee682924e3ca65f6116b264d335c5f44d77162035c5233",
+      "bytes": 11918
+    },
+    "gold.json": {
+      "sha256": "c331df35e8fd72479b05bf4fcbe5c5303dea49dfeda3013e20870aea2a33a725",
+      "bytes": 6642
+    },
+    "raw/2026-10-10-netflix-feasibility-r001.md": {
+      "sha256": "2d4851a5975081313621c9d8307282bcdd27357d2ada6d98a8ece995fb39d681",
+      "bytes": 19765
+    },
+    "raw/2026-10-11-netflix-pre-event-readiness-r002.md": {
+      "sha256": "ace6f1bf2bb732c17b48361d4ef57a86079575682d338e53ad5ea666f8094838",
+      "bytes": 13117
+    }
+  },
+  "route_execution_count": 0,
+  "immutability": "All subsequent changes require a new revision preserving this freeze; no result-driven tuning."
+}

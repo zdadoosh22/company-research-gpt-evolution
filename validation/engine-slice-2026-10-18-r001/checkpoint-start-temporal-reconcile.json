@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "engine-temporal-reconcile-20261018-start",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "temporal-reconcile-20261018-r001",
+  "phase": "start",
+  "created_at": "2026-10-18T01:52:09.888119+00:00",
+  "observed_at": "2026-10-18T01:52:09.888119+00:00",
+  "origin": "User explicitly resumed and authorized up to 100 additional existing credits; original bounded engine goal and four-call case ceiling remain.",
+  "request": "Reconcile preserved failed date-only supersession expectation against current timestamp semantics and exact boundary diagnostics. Read-only inspection preceded this recorded stage start.",
+  "work": [],
+  "outcome": null,
+  "artifacts": [],
+  "checks": [],
+  "blockers": {
+    "resolved": [],
+    "introduced": [],
+    "unchanged": [
+      "Independent actual Astra review pending",
+      "Final release and frozen retrieval acceptance incomplete"
+    ]
+  },
+  "readiness_impact": {
+    "label": "not assessed",
+    "requirements": [],
+    "artifact_paths": [],
+    "explanation": "Stage start only; no research or trading gate acceptance."
+  },
+  "verified_gate_changes": [],
+  "next_action": "Freeze separately labelled non-held-out temporal diagnostic, execute with unchanged source, preserve prior failed result, save continuation.",
+  "unknowns": [
+    "No current security eligibility, financial/current claims, consensus, quote or transaction cost acceptance."
+  ],
+  "supersedes": []
+}

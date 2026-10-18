@@ -1,0 +1,59 @@
+{
+  "schema": "cr2.fresh-ordinary-retrieval-protocol.r001",
+  "status": "frozen-before-route-execution-awaiting-coordinator-inspection",
+  "implementation_commit": "a9c0c3318966ed5b7a5d5c1a132ccf6d0a404f54",
+  "implementation_sha256": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678",
+  "question": "In the saved Netflix feasibility analysis, what supports a dated receipt-free FY2026 FCF guidance reference, and what prevents treating that reference or the guide-increase residual as sustainable owner cash or a discovered tax payment?",
+  "shared_route_configuration": {
+    "query_terms": [
+      "receipt",
+      "guide"
+    ],
+    "fts_query": "\"receipt\" OR \"guide\"",
+    "entities": [
+      "netflix-inc"
+    ],
+    "security_id": "NASDAQ:NFLX:common",
+    "question_scope": "archival-receipt-guidance",
+    "record_types": [
+      "claim"
+    ],
+    "review_statuses": [
+      "archived-project-analysis-unverified"
+    ],
+    "evidence_cutoff": "2026-10-10T23:59:59+00:00",
+    "retrospective": true,
+    "max_records": 16,
+    "max_packet_utf8_bytes": 32768,
+    "balance": true,
+    "historical_label": "Retrospective archival project-analysis reconstruction; procedural held-out test, not contemporaneous capture, issuer verification, economic judgement or edge evidence."
+  },
+  "network_calls": 0,
+  "worker_calls": 0,
+  "source_manifest": "source-manifest.json",
+  "normalized_records": "normalized-records.json",
+  "gold": "gold.json",
+  "source_register": "source-register.json",
+  "held_out": {
+    "kind": "procedural, retrospective; not blind or security-isolated",
+    "declaration": "New Netflix question and document set selected after code freeze a9c0c33. Author inspected source for gold; no imports, rankings, indexes or retrieval were executed. No query/gold/code tuning after outcomes; failure is retained. Prior Unilever failed held-out and successful non-held-out diagnostic remain unchanged."
+  },
+  "routes": {
+    "baseline": "load_bundle(root, records_path, manifest_path, frozen=False), then baseline_ids(records, query_terms), then build_packet with shared config excluding fts_query; source_root omitted",
+    "fts": "ResearchMemory(root, fresh isolated state/research-memory directory); import_bundle(records_path, manifest_path, frozen=False); query(query_terms, route=\"new\", fts_query=fts_query, remaining shared config)."
+  },
+  "label_separation": "normalized records contain no gold/evaluator polarity/expected exclusion fields. All absent polarity defaults to unknown in ordinary load_bundle. Neither gold.json nor protocol evaluator roles enter source bytes or worker packets.",
+  "acceptance": [
+    "All five gold exact source passages appear on each route; no paraphrase substitution.",
+    "Later-readiness passage absent with exact analytical-conclusion-after-cutoff reason on each route.",
+    "Table text lines19-26 must equal source verbatim including USD/millions, headers, FY2025/FY2026, June/H1 periods and all limitations; no claim of normalized numeric table extraction or original issuer headers.",
+    "Every selected record has exact source reference/hash/location and nonempty inclusion reason; all source hashes match manifest/register/snapshots.",
+    "Packet record_count <=16 and canonical UTF8 bytes <=32768; persist packet hash/bytes, selected IDs, exclusions, complete_within_bounds and actual zero-call measurements. No savings, performance, efficiency or edge claim.",
+    "Repeat after index rebuild with unchanged inputs; canonical packet bytes/hash, selected IDs and exclusions equal first FTS run. Direct baseline is independent of SQLite."
+  ],
+  "time_integrity": "Cutoff tests project analytical availability, not public-news eligibility. Git commits prove preserved byte versions no later than recorded commit timestamps; they do not prove original source publication/capture. All publication/capture dates remain null. No metadata dates are inferred from filenames.",
+  "stale_supersession": "No authentic within-set supersession/expiry lineage claimed. Separately labelled synthetic metadata-only control on a copy of receipt-reference: valid_until=2026-10-09 => expired-for-current-reuse; or superseded_by=synthetic-successor and superseded_effective_at=2026-10-10 => superseded-for-default-reuse. These are engineering fault injections, not archived facts and not primary route inputs. Cutoff one second before recorded feasibility Git timestamp must exclude all original feasibility records. Preserve real corpus unchanged.",
+  "rebuild": "Verify freeze hashes, original source bytes against snapshot bytes and register commit bytes; if mismatch stop, never silently substitute. Use new disposable derived index; import explicit bundle; preserve first output; rebuild; compare exact output. No operational/private state accessed.",
+  "interface_limitations": "Existing evaluate CLI is incompatible: it pins balance=False and Unilever six-row table rubric. Use the frozen existing Python APIs above from a coordinator-reviewed standalone runner, with no modifications to engine source. Snapshots retained inside this folder cannot be source_root aliases under current load_bundle allowlist; original approved paths are route inputs and equality to raw snapshots is mandatory.",
+  "result_disposition": "Unexecuted. This protocol creates no new company research, reviewed disposition, investment approval, trade gate, actual model review or case call allowance."
+}
