@@ -1,0 +1,22 @@
+{
+  "inspected_at": "2026-10-18T01:55:18.245127+00:00",
+  "method": "Actual IAB local browser DOM/accessibility and viewport screenshot via CUA; one frozen loopback-only HTML route, closed tab and terminated owning exec session30302, no remaining listener observed.",
+  "html_sha256": "888c097fb01ad69cb67b2a0a21bb0a7d50c99c9641da816828b3c8194eddcd3a",
+  "screenshot_sha256": "b904cbb5871be524f8e9aa73baed581f85205571cdb0c4f720bdd74277fd6470",
+  "observed": [
+    "Live recommendations disabled",
+    "Software in progress; Research active; Operations/Trade readiness evidence incomplete; Edge not assessed",
+    "Ten separate gates all incomplete",
+    "Software release unproven",
+    "82verified/270fixture-tested/59blocked/5deferred/3evaluated-failed",
+    "AMD case awaiting review; no completed analysis/review/disposition chain",
+    "Current stage start displayed as outcome not recorded; matching completion saved after inspection"
+  ],
+  "limitations": [
+    "Desktop viewport inspected; no mobile, keyboard, accessibility compliance or all historical rows visual certification.",
+    "Derived status is not authoritative; snapshot precedes later completion.",
+    "Case summary states incomplete chain rather than proving absence of the separately saved partial analysis.",
+    "Historical dated next actions include superseded instructions; they are provenance, not current authority."
+  ],
+  "gate_changes": []
+}

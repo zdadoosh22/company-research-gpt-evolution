@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "engine-sixth-review-20261018-start",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "sixth-review-20261018-r001",
+  "phase": "start",
+  "created_at": "2026-10-18T02:06:35.191810+00:00",
+  "observed_at": "2026-10-18T02:06:35.191810+00:00",
+  "origin": "User explicitly resumed and authorized up to 100 additional existing credits; original bounded engine goal and four-call case ceiling remain.",
+  "request": "Execute exactly sixth authorised Astra High review of frozen AMD partial analysis; preserve all previous attempts and stop after this attempt without automatic retry.",
+  "work": [],
+  "outcome": null,
+  "artifacts": [],
+  "checks": [],
+  "blockers": {
+    "resolved": [],
+    "introduced": [],
+    "unchanged": [
+      "Independent actual Astra review pending",
+      "Final release and frozen retrieval acceptance incomplete"
+    ]
+  },
+  "readiness_impact": {
+    "label": "not assessed",
+    "requirements": [],
+    "artifact_paths": [],
+    "explanation": "Stage start only; no research or trading gate acceptance."
+  },
+  "verified_gate_changes": [],
+  "next_action": "Check current allowance, invoke only named frozen review with pinned binary, poll same live session until terminal and inspect/archive valid actual output or preserve failure.",
+  "unknowns": [
+    "No current security eligibility, financial/current claims, consensus, quote or transaction cost acceptance."
+  ],
+  "supersedes": []
+}

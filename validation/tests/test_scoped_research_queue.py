@@ -546,6 +546,163 @@ class ScopedQueueTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "validation Markdown"):
             self.queue.authorize_review_exception(candidate)
 
+    def interrupted_fifth_second_amendment(self):
+        first = self.exhausted_review_exception()
+        self.queue.authorize_review_exception(first)
+        self.queue.retry(job_id="review1", batch_id="b1", decision_id="extra-review",
+                         rationale="Explicit first exception", provenance_refs=["fixture-authority"])
+        def interrupted(root, job, **kwargs):
+            raise KeyboardInterrupt("Engineering fixture interruption before invocation")
+        with self.assertRaises(KeyboardInterrupt):
+            self.queue.run_one(job_id="review1", batch_id="b1", adapter=interrupted)
+        self.queue.recover()
+        with self.queue._db() as db:
+            failure = dict(db.execute("SELECT * FROM scoped_dispatches WHERE job_id='review1' ORDER BY attempt DESC LIMIT 1").fetchone())
+        authority = self.root / "validation/user-review-second-amendment.md"
+        authority.write_text("Engineering fixture only: explicit one further review authority, distinct from the first.")
+        return {"schema_version": 1, "case_id": "case1", "batch_id": "b1", "job_id": "review1",
+                "created_at": datetime.now(timezone.utc).isoformat(),
+                "authorization_sha256": first["authorization_sha256"], "package_sha256": first["package_sha256"],
+                "prior_exception_sha256": package_sha256(first), "failed_dispatch_id": failure["dispatch_id"],
+                "failed_dispatch_sha256": package_sha256(failure),
+                "failed_job_terminal": {key: failure[key] for key in ("job_id", "attempt", "package_sha256", "status", "reason")},
+                "authority": {"path": str(authority.relative_to(self.root)),
+                              "sha256": hashlib.sha256(authority.read_bytes()).hexdigest()}}
+
+    def test_second_amendment_preserves_history_and_only_permits_sixth_review(self):
+        manifest = self.interrupted_fifth_second_amendment()
+        before = self.queue.status()["dispatches"]
+        with self.queue._db() as db:
+            first = dict(db.execute("SELECT * FROM scoped_review_exceptions").fetchone())
+        self.assertTrue(self.queue.authorize_review_second_amendment(manifest)["recorded"])
+        state = ScopedQueue(self.root).status()
+        self.assertEqual(state["cases"][0]["call_limit"], 4)
+        self.assertEqual(state["cases"][0]["effective_call_limit"], 6)
+        self.assertEqual(state["cases"][0]["remaining_attempts"], 1)
+        self.assertEqual(state["cases"][0]["additional_review_attempts"], 2)
+        self.assertEqual(state["cases"][0]["consumed_attempts"], 5)
+        self.assertEqual(self.queue.run_one(job_id="review1", batch_id="b1", adapter=self.adapter)["job_attempts_started"], 0)
+        with self.assertRaises(ValueError):
+            self.decide("analysis-still-prohibited")
+        with self.assertRaisesRegex(ValueError, "replay prohibited"):
+            self.queue.authorize_review_second_amendment(manifest)
+        self.queue.retry(job_id="review1", batch_id="b1", decision_id="sixth-review",
+                         rationale="Second fixture authority", provenance_refs=["fixture-second-authority"])
+        result = self.queue.run_one(job_id="review1", batch_id="b1", adapter=self.adapter)
+        self.assertEqual(result["status"], "complete")
+        state = self.queue.status()
+        self.assertEqual(state["dispatches"][:5], before)
+        self.assertEqual(state["cases"][0]["remaining_attempts"], 0)
+        self.assertEqual(state["cases"][0]["consumed_attempts"], 6)
+        self.assertEqual(self.queue.run_one(job_id="review1", batch_id="b1", adapter=self.adapter)["job_attempts_started"], 0)
+        with self.queue._db() as db:
+            self.assertEqual(dict(db.execute("SELECT * FROM scoped_review_exceptions").fetchone()), first)
+        with self.assertRaises(ValueError):
+            self.queue.authorize_review_second_amendment(manifest)
+
+    def test_failed_sixth_consumes_last_slot_and_cannot_retry_seventh(self):
+        manifest = self.interrupted_fifth_second_amendment()
+        self.queue.authorize_review_second_amendment(manifest)
+        with self.queue._db() as db:
+            _, auth = self.queue._authorization(db, "b1")
+        auth["version"] += 1
+        self.queue.authorize_batch(auth)
+        self.assertEqual(ScopedQueue(self.root).status()["cases"][0]["remaining_attempts"], 1)
+        self.queue.retry(job_id="review1", batch_id="b1", decision_id="sixth-review",
+                         rationale="Second fixture authority", provenance_refs=["fixture-second-authority"])
+        self.assertEqual(self.queue.run_one(job_id="review1", batch_id="b1", adapter=self.failed)["status"], "needs-retry-decision")
+        self.assertEqual(self.queue.status()["cases"][0]["remaining_attempts"], 0)
+        with self.assertRaises(ValueError):
+            self.queue.retry(job_id="review1", batch_id="b1", decision_id="seventh-forbidden",
+                             rationale="Prohibited", provenance_refs=["fixture-second-authority"])
+
+    def test_second_amendment_rejects_scope_proof_authority_and_chronology_changes(self):
+        manifest = self.interrupted_fifth_second_amendment()
+        for key, value in (("case_id", "another-case"), ("batch_id", "another-batch"),
+                           ("job_id", "j1"), ("package_sha256", "0" * 64),
+                           ("authorization_sha256", "0" * 64), ("prior_exception_sha256", "0" * 64),
+                           ("failed_dispatch_sha256", "0" * 64), ("created_at", "2000-01-01T00:00:00+00:00"),
+                           ("created_at", "2999-01-01T00:00:00+00:00"), ("failed_job_terminal", {})):
+            candidate = copy.deepcopy(manifest)
+            candidate[key] = value
+            with self.subTest(key=key, value=value), self.assertRaises(ValueError):
+                self.queue.authorize_review_second_amendment(candidate)
+        with self.queue._db() as db:
+            first = json.loads(db.execute("SELECT manifest FROM scoped_review_exceptions").fetchone()[0])
+        for authority in (first["authority"], dict(manifest["authority"], path="../outside.md"),
+                          dict(manifest["authority"], sha256="0" * 64)):
+            candidate = copy.deepcopy(manifest)
+            candidate["authority"] = authority
+            with self.subTest(authority=authority), self.assertRaises(ValueError):
+                self.queue.authorize_review_second_amendment(candidate)
+        self.queue.authorize_review_second_amendment(manifest)
+        (self.root / manifest["authority"]["path"]).write_text("Mutated second authority")
+        with self.assertRaisesRegex(ValueError, "authority hash differs"):
+            self.queue.status()
+
+    def test_second_amendment_rejects_claimed_or_mutated_fifth_even_with_rehashed_snapshot(self):
+        manifest = self.interrupted_fifth_second_amendment()
+        with self.queue._db() as db:
+            original = dict(db.execute("SELECT * FROM scoped_dispatches WHERE dispatch_id=?", (manifest["failed_dispatch_id"],)).fetchone())
+        for key, value in (("invocation_claimed_at", datetime.now(timezone.utc).isoformat()),
+                           ("metadata_path", "unexpected-metadata.json"), ("reason", "job-timeout"),
+                           ("status", "running"), ("model", "gpt-6.1-sol"), ("completed_at", None)):
+            with self.queue._db() as db:
+                db.execute(f"UPDATE scoped_dispatches SET {key}=? WHERE dispatch_id=?", (value, manifest["failed_dispatch_id"]))
+                modified = dict(db.execute("SELECT * FROM scoped_dispatches WHERE dispatch_id=?", (manifest["failed_dispatch_id"],)).fetchone())
+            candidate = copy.deepcopy(manifest)
+            candidate["failed_dispatch_sha256"] = package_sha256(modified)
+            with self.subTest(key=key), self.assertRaises(ValueError):
+                self.queue.authorize_review_second_amendment(candidate)
+            with self.queue._db() as db:
+                db.execute(f"UPDATE scoped_dispatches SET {key}=? WHERE dispatch_id=?", (original[key], manifest["failed_dispatch_id"]))
+        self.queue.authorize_review_second_amendment(manifest)
+        with self.queue._db() as db:
+            db.execute("UPDATE scoped_dispatches SET completed_at=? WHERE dispatch_id=?", (datetime.now(timezone.utc).isoformat(), manifest["failed_dispatch_id"]))
+        with self.assertRaisesRegex(ValueError, "preserved unclaimed"):
+            self.queue.status()
+
+    def test_second_amendment_expiry_blocks_registration_and_retry_without_hiding_history(self):
+        manifest = self.interrupted_fifth_second_amendment()
+        with patch("scoped_research_queue.datetime") as clock:
+            clock.now.return_value = datetime.now(timezone.utc) + timedelta(days=1)
+            clock.fromisoformat.side_effect = datetime.fromisoformat
+            with self.assertRaisesRegex(ValueError, "expired"):
+                self.queue.authorize_review_second_amendment(manifest)
+        self.queue.authorize_review_second_amendment(manifest)
+        with patch("scoped_research_queue.datetime") as clock:
+            clock.now.return_value = datetime.now(timezone.utc) + timedelta(days=1)
+            clock.fromisoformat.side_effect = datetime.fromisoformat
+            self.assertEqual(self.queue.status()["cases"][0]["consumed_attempts"], 5)
+            with self.assertRaises(ValueError):
+                self.queue.retry(job_id="review1", batch_id="b1", decision_id="expired-sixth",
+                                 rationale="Expired", provenance_refs=["fixture-second-authority"])
+            with self.assertRaises(ValueError):
+                self.queue.run_one(job_id="review1", batch_id="b1", adapter=self.adapter)
+
+    def test_second_amendment_rejects_replayed_authority_copy_and_nonterminal_job(self):
+        manifest = self.interrupted_fifth_second_amendment()
+        with self.queue._db() as db:
+            first = json.loads(db.execute("SELECT manifest FROM scoped_review_exceptions").fetchone()[0])
+        copied = self.root / "validation/copied-first-authority.md"
+        copied.write_bytes((self.root / first["authority"]["path"]).read_bytes())
+        candidate = copy.deepcopy(manifest)
+        candidate["authority"] = {"path": str(copied.relative_to(self.root)),
+                                  "sha256": hashlib.sha256(copied.read_bytes()).hexdigest()}
+        with self.assertRaisesRegex(ValueError, "distinct new authority"):
+            self.queue.authorize_review_second_amendment(candidate)
+        with self.queue._db() as db:
+            db.execute("UPDATE scoped_jobs SET status='running' WHERE job_id='review1'")
+        with self.assertRaisesRegex(ValueError, "Current review job"):
+            self.queue.authorize_review_second_amendment(manifest)
+        with self.queue._db() as db:
+            db.execute("UPDATE scoped_jobs SET status='needs-retry-decision' WHERE job_id='review1'")
+        self.queue.authorize_review_second_amendment(manifest)
+        with self.queue._db() as db:
+            db.execute("UPDATE scoped_review_second_amendments SET sha256=?", ("0" * 64,))
+        with self.assertRaisesRegex(ValueError, "amendment hash differs"):
+            self.queue.status()
+
     def test_legacy_migration_preserves_records_and_attempts(self):
         self.queue.enqueue(self.job)
         with self.queue._db() as db:

@@ -150,6 +150,9 @@ class ScopedQueue:
             db.execute("""CREATE TABLE IF NOT EXISTS scoped_review_exceptions (
                 case_id TEXT PRIMARY KEY, manifest TEXT NOT NULL, sha256 TEXT NOT NULL,
                 recorded_at TEXT NOT NULL)""")
+            db.execute("""CREATE TABLE IF NOT EXISTS scoped_review_second_amendments (
+                case_id TEXT PRIMARY KEY, manifest TEXT NOT NULL, sha256 TEXT NOT NULL,
+                recorded_at TEXT NOT NULL)""")
             if not db.execute("SELECT 1 FROM scoped_queue_migrations WHERE version=2").fetchone():
                 for row in db.execute("SELECT * FROM scoped_jobs").fetchall():
                     db.execute("INSERT INTO scoped_legacy_jobs VALUES (?,?,?)", (row["job_id"], _json(dict(row)), _now()))
@@ -313,11 +316,111 @@ class ScopedQueue:
                        (manifest["case_id"], _json(manifest), digest, _now()))
             return {"recorded": True, "sha256": digest, "additional_attempts": 1}
 
+    def _review_second_amendment(self, db, case_id):
+        row = db.execute("SELECT * FROM scoped_review_second_amendments WHERE case_id=?",
+                         (case_id,)).fetchone()
+        if row is None:
+            return None
+        manifest = json.loads(row["manifest"])
+        if package_sha256(manifest) != row["sha256"]:
+            raise ValueError("Second review amendment hash differs")
+        self._validate_review_second_amendment(db, manifest)
+        return manifest
+
+    def _validate_review_second_amendment(self, db, manifest, *, require_current_job=False):
+        required = {"schema_version", "case_id", "batch_id", "job_id", "created_at",
+                    "authorization_sha256", "package_sha256", "prior_exception_sha256",
+                    "failed_dispatch_id", "failed_dispatch_sha256", "failed_job_terminal", "authority"}
+        if (not isinstance(manifest, dict) or set(manifest) != required or
+                type(manifest["schema_version"]) is not int or manifest["schema_version"] != 1):
+            raise ValueError("Invalid second review amendment schema")
+        _no_credentials(manifest)
+        for key in ("case_id", "batch_id", "job_id", "failed_dispatch_id"):
+            _ident(manifest[key])
+        stamp = _stamp(manifest["created_at"])
+        if stamp > datetime.now(timezone.utc):
+            raise ValueError("Second review amendment is future-dated")
+        first = self._review_exception(db, manifest["case_id"])
+        if first is None or package_sha256(first) != manifest["prior_exception_sha256"]:
+            raise ValueError("Second review amendment requires the immutable first exception")
+        for key in ("case_id", "batch_id", "job_id", "authorization_sha256", "package_sha256"):
+            if manifest[key] != first[key]:
+                raise ValueError("Second review amendment cannot expand frozen review scope")
+        auth = self._validate_review_exception(db, first)
+        if stamp < _stamp(first["created_at"]) or stamp >= _stamp(auth["expires_at"]):
+            raise ValueError("Second review amendment outside original authorization interval")
+        authority = manifest["authority"]
+        if not isinstance(authority, dict) or set(authority) != {"path", "sha256"}:
+            raise ValueError("Explicit new hash-bound user authority required")
+        relative = Path(authority["path"])
+        path = (self.root / relative).resolve()
+        if relative.is_absolute() or not path.is_relative_to(self.root / "validation") or path.suffix != ".md":
+            raise ValueError("Authority must be an explicit validation Markdown record")
+        first_path = (self.root / first["authority"]["path"]).resolve()
+        if path == first_path or authority["sha256"] == first["authority"]["sha256"]:
+            raise ValueError("Second review amendment requires distinct new authority")
+        if hashlib.sha256(path.read_bytes()).hexdigest() != authority["sha256"]:
+            raise ValueError("User authority hash differs")
+        failure = db.execute("SELECT * FROM scoped_dispatches WHERE dispatch_id=?",
+                             (manifest["failed_dispatch_id"],)).fetchone()
+        if (failure is None or package_sha256(dict(failure)) != manifest["failed_dispatch_sha256"] or
+                any(failure[key] != manifest[key] for key in ("case_id", "batch_id", "job_id", "package_sha256")) or
+                failure["invocation_claimed_at"] is not None or failure["metadata_path"] is not None or
+                failure["status"] != "needs-retry-decision" or failure["reason"] != "worker-interrupted" or
+                failure["model"] != MODELS["review"] or failure["role"] != "review" or
+                failure["stage"] != "review" or not failure["retry_decision_id"] or not failure["completed_at"]):
+            raise ValueError("Second amendment requires the preserved unclaimed interrupted fifth dispatch")
+        consumed, completed = _stamp(failure["consumed_at"]), _stamp(failure["completed_at"])
+        if (consumed < _stamp(first["created_at"]) or completed < consumed or stamp < completed):
+            raise ValueError("Second review authority or interrupted dispatch chronology differs")
+        case = db.execute("SELECT * FROM scoped_cases WHERE case_id=?", (manifest["case_id"],)).fetchone()
+        preceding = db.execute("SELECT COUNT(*) FROM scoped_dispatches WHERE case_id=? AND consumed_at<=?",
+                               (manifest["case_id"], failure["consumed_at"])).fetchone()[0]
+        if case is None or case["call_limit"] != 4 or preceding + case["legacy_attempts"] != 5:
+            raise ValueError("Second amendment must follow the consumed fifth dispatch")
+        first_failure = db.execute("SELECT attempt FROM scoped_dispatches WHERE dispatch_id=?",
+                                   (first["failed_dispatch_id"],)).fetchone()
+        if failure["attempt"] != first_failure["attempt"] + 1:
+            raise ValueError("Fifth dispatch must consume the first review exception")
+        decision = db.execute("SELECT * FROM scoped_retry_decisions WHERE decision_id=?",
+                              (failure["retry_decision_id"],)).fetchone()
+        if (decision is None or decision["dispatch_id"] != failure["dispatch_id"] or
+                decision["job_id"] != manifest["job_id"] or decision["batch_id"] != manifest["batch_id"] or
+                decision["prior_attempt"] != first_failure["attempt"]):
+            raise ValueError("Fifth dispatch retry decision differs")
+        terminal = {key: failure[key] for key in ("job_id", "attempt", "package_sha256", "status", "reason")}
+        if manifest["failed_job_terminal"] != terminal:
+            raise ValueError("Interrupted fifth job terminal proof differs")
+        if require_current_job:
+            job = db.execute("SELECT * FROM scoped_jobs WHERE job_id=?", (manifest["job_id"],)).fetchone()
+            if job is None or {key: job[key] for key in terminal} != terminal:
+                raise ValueError("Current review job is not the interrupted fifth attempt")
+        return auth
+
+    def authorize_review_second_amendment(self, manifest):
+        """Append exactly one further review slot; never alter or refund prior attempts."""
+        with self._worker_lock(), self._db() as db:
+            auth = self._validate_review_second_amendment(db, manifest, require_current_job=True)
+            if db.execute("SELECT 1 FROM scoped_review_second_amendments WHERE case_id=?",
+                          (manifest["case_id"],)).fetchone():
+                raise ValueError("Second review amendment already recorded; replay prohibited")
+            if _stamp(auth["expires_at"]) <= datetime.now(timezone.utc):
+                raise ValueError("Original authorization expired")
+            if self._remaining(db, manifest["case_id"]) != 0:
+                raise ValueError("Second review amendment requires exhausted five-attempt ceiling")
+            digest = package_sha256(manifest)
+            db.execute("INSERT INTO scoped_review_second_amendments VALUES (?,?,?,?)",
+                       (manifest["case_id"], _json(manifest), digest, _now()))
+            return {"recorded": True, "sha256": digest, "additional_attempts": 1,
+                    "total_additional_review_attempts": 2}
+
     def _remaining(self, db, case_id, job_id=None):
         case = db.execute("SELECT * FROM scoped_cases WHERE case_id=?", (case_id,)).fetchone()
         used = db.execute("SELECT COUNT(*) FROM scoped_dispatches WHERE case_id=?", (case_id,)).fetchone()[0]
         exception = self._review_exception(db, case_id)
-        extra = int(exception is not None and (job_id is None or exception["job_id"] == job_id))
+        second = self._review_second_amendment(db, case_id)
+        eligible = exception is not None and (job_id is None or exception["job_id"] == job_id)
+        extra = int(exception is not None) + int(second is not None) if eligible else 0
         return case["call_limit"] + extra - case["legacy_attempts"] - used
 
     def authorize_batch(self, manifest):
@@ -907,7 +1010,8 @@ class ScopedQueue:
             for case in cases:
                 case["remaining_attempts"] = self._remaining(db, case["case_id"])
                 exception = self._review_exception(db, case["case_id"])
-                case["additional_review_attempts"] = int(exception is not None)
+                second = self._review_second_amendment(db, case["case_id"])
+                case["additional_review_attempts"] = int(exception is not None) + int(second is not None)
                 case["effective_call_limit"] = case["call_limit"] + case["additional_review_attempts"]
                 case["consumed_attempts"] = case["effective_call_limit"] - case["remaining_attempts"]
             dispatches = [dict(r) for r in db.execute("SELECT * FROM scoped_dispatches ORDER BY consumed_at,dispatch_id")]
@@ -1116,7 +1220,7 @@ def main():
     parser = argparse.ArgumentParser(description="Explicit scoped queue: no background worker or automatic retry")
     parser.add_argument("--project-root", default=str(Path(__file__).resolve().parents[1]))
     commands = parser.add_subparsers(dest="command", required=True)
-    for command in ("enqueue", "authorize-batch", "authorize-review-exception"):
+    for command in ("enqueue", "authorize-batch", "authorize-review-exception", "authorize-review-second-amendment"):
         commands.add_parser(command).add_argument("package")
     commands.add_parser("status")
     commands.add_parser("recover")
@@ -1132,7 +1236,7 @@ def main():
     retry.add_argument("--provenance-ref", action="append", required=True)
     args = parser.parse_args()
     queue = ScopedQueue(args.project_root)
-    if args.command in {"enqueue", "authorize-batch", "authorize-review-exception"}:
+    if args.command in {"enqueue", "authorize-batch", "authorize-review-exception", "authorize-review-second-amendment"}:
         path = Path(args.package).resolve()
         if not path.is_relative_to(queue.root) or any(p.lower() == ".codex" or p.lower().startswith(".env") or p.lower() == "auth.json" or p.lower().endswith(".dpapi") for p in path.parts):
             parser.error("Package must be a noncredential project file")
@@ -1141,8 +1245,10 @@ def main():
             result = queue.enqueue(payload)
         elif args.command == "authorize-batch":
             result = queue.authorize_batch(payload)
-        else:
+        elif args.command == "authorize-review-exception":
             result = queue.authorize_review_exception(payload)
+        else:
+            result = queue.authorize_review_second_amendment(payload)
     elif args.command == "status":
         result = queue.status()
     elif args.command == "recover":

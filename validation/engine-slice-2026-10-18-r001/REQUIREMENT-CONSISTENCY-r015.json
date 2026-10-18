@@ -1,0 +1,89 @@
+{
+  "status": "dated-assessment",
+  "assessment": {
+    "path": "validation/engine-slice-2026-10-18-r001/REQUIREMENT-EVIDENCE-20261018-r015.json",
+    "sha256": "42997867cc24ef366e726446ae74440a7dd00358e27d671a37695140be99036f"
+  },
+  "assessed_at": "2026-10-18T02:06:08.543132+00:00",
+  "total": 419,
+  "counts": {
+    "verified": 82,
+    "blocked": 59,
+    "implemented-fixture-tested": 270,
+    "deferred": 5,
+    "evaluated-failed": 3
+  },
+  "milestones": [
+    {
+      "id": "COMMAND-PREPARE-CASE",
+      "name": "prepare a bounded case",
+      "status": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-RETRIEVE",
+      "name": "retrieve filtered historical records",
+      "status": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-PREPARE-BATCH",
+      "name": "prepare an explicit authorized batch",
+      "status": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-RUN-BATCH",
+      "name": "run only an explicit authorized batch",
+      "status": "blocked"
+    },
+    {
+      "id": "COMMAND-RETRY-DECISION",
+      "name": "record an explicit retry decision consuming a new authorized attempt",
+      "status": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-CHECKPOINT",
+      "name": "record a validated task checkpoint",
+      "status": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-STATUS",
+      "name": "inspect rebuildable status",
+      "status": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-EVALUATE",
+      "name": "evaluate the bounded slice",
+      "status": "evaluated-failed"
+    },
+    {
+      "id": "COMMAND-START",
+      "name": "support explicit --start",
+      "status": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-COMPLETE",
+      "name": "support explicit --complete before final response/task exit",
+      "status": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-HELP-SMOKE",
+      "name": "deterministic --help smoke check",
+      "status": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-ARGUMENT-SMOKE",
+      "name": "deterministic argument smoke check",
+      "status": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-PACKET-SMOKE",
+      "name": "deterministic packet smoke check",
+      "status": "implemented-fixture-tested"
+    },
+    {
+      "id": "COMMAND-WORKER-CONTRACT-SMOKE",
+      "name": "deterministic worker-contract smoke check",
+      "status": "implemented-fixture-tested"
+    }
+  ],
+  "limitation": "Fixture coverage and checklist counts do not establish investment or live gate acceptance."
+}

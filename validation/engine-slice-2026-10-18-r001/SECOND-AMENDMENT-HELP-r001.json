@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "stdout": "usage: scoped_research_queue.py [-h] [--project-root PROJECT_ROOT]\n                                {enqueue,authorize-batch,authorize-review-exception,authorize-review-second-amendment,status,recover,run-one,retry}\n                                ...\n\nExplicit scoped queue: no background worker or automatic retry\n\npositional arguments:\n  {enqueue,authorize-batch,authorize-review-exception,authorize-review-second-amendment,status,recover,run-one,retry}\n\noptions:\n  -h, --help            show this help message and exit\n  --project-root PROJECT_ROOT\n",
+  "stderr": "",
+  "effect": "Parser help only; no queue instance or model invocation."
+}

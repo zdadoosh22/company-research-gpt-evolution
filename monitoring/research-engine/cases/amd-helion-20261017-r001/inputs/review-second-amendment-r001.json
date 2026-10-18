@@ -1,0 +1,23 @@
+{
+  "case_id": "amd-helion-20261017-r001",
+  "batch_id": "amd-helion-20261017-r001-batch",
+  "job_id": "amd-helion-20261017-r001-review",
+  "authorization_sha256": "3c71459996d57c2ad5fbf1e3e56bb18a2d52d8d48f488cc0442249c2010adf58",
+  "package_sha256": "7437978f98a34d1961f0f0b30af883e98e6c2868fdc0dcd43c63060c84ae238a",
+  "schema_version": 1,
+  "created_at": "2026-10-18T02:02:53.834982+00:00",
+  "prior_exception_sha256": "61f4c3cac312470acc26065111a96c26cdef3e10b8ffb639a6a9ba7fa41f0e4c",
+  "failed_dispatch_id": "f6e59f3ddbe14ec5b02f5af07b72326d",
+  "failed_dispatch_sha256": "4755931543b9464438bfe35e98c6e89fde11fd97b13bc0fca148bd8f24c60cb3",
+  "failed_job_terminal": {
+    "job_id": "amd-helion-20261017-r001-review",
+    "attempt": 2,
+    "package_sha256": "7437978f98a34d1961f0f0b30af883e98e6c2868fdc0dcd43c63060c84ae238a",
+    "status": "needs-retry-decision",
+    "reason": "worker-interrupted"
+  },
+  "authority": {
+    "path": "validation/engine-slice-2026-10-18-r001/USER-REVIEW-EXTENSION-20261018-r002.md",
+    "sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6"
+  }
+}

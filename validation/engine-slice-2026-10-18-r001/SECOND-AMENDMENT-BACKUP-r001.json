@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-10-18T02:03:12.177236+00:00",
+  "backup_sha256": "271cc7b8f95fc2036c4314e31597a1e787b15aaa6d93263285b4966e01ce5351",
+  "integrity_check": "ok",
+  "contains_private_operational_state": true,
+  "publish_backup": false,
+  "observation_database_changed": false
+}

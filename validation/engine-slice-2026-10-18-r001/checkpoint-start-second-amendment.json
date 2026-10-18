@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "engine-second-amendment-20261018-start",
+  "task_id": "research-engine-slice-r001",
+  "turn_id": "second-amendment-20261018-r001",
+  "phase": "start",
+  "created_at": "2026-10-18T02:00:41.057797+00:00",
+  "observed_at": "2026-10-18T02:00:41.057797+00:00",
+  "origin": "User explicitly resumed and authorized up to 100 additional existing credits; original bounded engine goal and four-call case ceiling remain.",
+  "request": "Review and verify isolated sixth-only Astra dispatch amendment under explicit human authority, then integrate only if exact bounded semantics hold.",
+  "work": [],
+  "outcome": null,
+  "artifacts": [],
+  "checks": [],
+  "blockers": {
+    "resolved": [],
+    "introduced": [],
+    "unchanged": [
+      "Independent actual Astra review pending",
+      "Final release and frozen retrieval acceptance incomplete"
+    ]
+  },
+  "readiness_impact": {
+    "label": "not assessed",
+    "requirements": [],
+    "artifact_paths": [],
+    "explanation": "Stage start only; no research or trading gate acceptance."
+  },
+  "verified_gate_changes": [],
+  "next_action": "Inspect isolated delta and tests; protect original queue, authority and past dispatches; verify installed source before any named dispatch.",
+  "unknowns": [
+    "No current security eligibility, financial/current claims, consensus, quote or transaction cost acceptance."
+  ],
+  "supersedes": []
+}

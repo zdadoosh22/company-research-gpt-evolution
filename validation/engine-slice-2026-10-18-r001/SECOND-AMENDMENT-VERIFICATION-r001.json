@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-10-18T02:06:08.543132+00:00",
+  "original_case_limit": 4,
+  "effective_review_only_limit": 6,
+  "consumed": 5,
+  "remaining": 1,
+  "first_exception_and_five_dispatches_byte_values_unchanged": true,
+  "retry_job_status": "retry-authorized",
+  "installed_regression": "477run476pass1existingpermissionSkip; before/after source hashes unchanged",
+  "new_dispatch": false
+}

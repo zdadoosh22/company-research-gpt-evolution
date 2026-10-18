@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-10-18T02:00:09.013651+00:00",
+  "code_sha256": {
+    "tools/research_records.py": "af3122e4401c1d14195c62e12393245a07718a077880cf1dd2d43840eff68e28",
+    "tools/research_release.py": "c319057bf09b711b164240ea286006e90a08122e62342974b7a6822a49e99f20",
+    "tools/scoped_research_queue.py": "73a4f7d09aa94ffc240e694d9e95d6338a337ad17557d1ecd64464bb7654afed",
+    "tools/research_checkpoint.py": "4c50e71cca753dc70b459af3af94ae3579134f222ba7b3f9282cf02a39ebb057",
+    "tools/research_engine.py": "b8e5cb993c86141c644ec392f4593ffb9bec31ae9abd2750d1226e8ea9672c8d",
+    "tools/research_memory.py": "fc97de4da1b7c334fe716d1c4c8ac60cb6df0efe1e0f8ded983cad47a493a678",
+    "tools/research_runtime.py": "f46e90ec40c52302e7cf9d5e94b73b38c5123e8b19d785c7379434516527b77b"
+  },
+  "regression_manifest_sha256": "d1d4ec3eaf913abef6c7b97035c8bde52922874a2bcbf2ce3ded964570f3f752",
+  "review_sha256": "86cccf2fdccb1bf170329f77e7a46dcfadbaea6f32d6fd01f7be8c95ff819be7",
+  "release_accepted": false,
+  "actual_new_dispatch": false,
+  "material_new_implementation_defect_reproduced": false,
+  "open_completion_findings": [
+    "EGR-01 actual independent review/disposition absent",
+    "EGR-02 unresolved retrieval/requirement acceptance"
+  ],
+  "pending_delta": "Second one-shot amendment in isolated checkout, not reviewed or integrated."
+}

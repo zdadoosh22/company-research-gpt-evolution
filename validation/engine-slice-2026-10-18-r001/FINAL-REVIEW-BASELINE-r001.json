@@ -1,0 +1,54 @@
+{
+  "observed_at": "2026-10-18T01:59:16.042312+00:00",
+  "dispatches": [
+    {
+      "dispatch_id": "196e97ff0065416ab065a4f19a87b3fe",
+      "job_id": "amd-helion-20261017-r001-analysis",
+      "attempt": 1,
+      "status": "needs-retry-decision",
+      "reason": "invalid-output-input-or-unauthorized-event",
+      "invocation_claimed_at": "2026-10-17T01:14:58.136969+00:00"
+    },
+    {
+      "dispatch_id": "56bc7c704fcd45feb82d3d102845cdde",
+      "job_id": "amd-helion-20261017-r001-analysis",
+      "attempt": 2,
+      "status": "needs-retry-decision",
+      "reason": "invalid-output-input-or-unauthorized-event",
+      "invocation_claimed_at": "2026-10-17T01:19:49.944423+00:00"
+    },
+    {
+      "dispatch_id": "b4f7bf5febe7405a8e836bb62552a1c4",
+      "job_id": "amd-helion-20261017-r001-analysis",
+      "attempt": 3,
+      "status": "needs-input",
+      "reason": "analytical-output-validated",
+      "invocation_claimed_at": "2026-10-17T01:25:04.089923+00:00"
+    },
+    {
+      "dispatch_id": "4e75b1b5128f4c009a1904d9d2ae721f",
+      "job_id": "amd-helion-20261017-r001-review",
+      "attempt": 1,
+      "status": "needs-retry-decision",
+      "reason": "runtime-restrictions-unverified",
+      "invocation_claimed_at": null
+    },
+    {
+      "dispatch_id": "f6e59f3ddbe14ec5b02f5af07b72326d",
+      "job_id": "amd-helion-20261017-r001-review",
+      "attempt": 2,
+      "status": "needs-retry-decision",
+      "reason": "worker-interrupted",
+      "invocation_claimed_at": null
+    }
+  ],
+  "total": 5,
+  "claimed": 3,
+  "protection": {
+    "methodology/company-research-v1.0.0.md": "0295fba9b6be33b6939a579ed8fbece873a029583a8a87e64cc77bf139e1dbe6",
+    "monitoring/config.json": "10c985e9dca1e1a255e951bebe79a2399b444b750e670252eadc86b141c86e14"
+  },
+  "new_authority": "USER-REVIEW-EXTENSION-20261018-r002.md",
+  "amendment_implemented_or_applied": false,
+  "interpretation": "Human authorises sixth only; current queue still enforces consumed5/effective5. No new dispatch performed."
+}

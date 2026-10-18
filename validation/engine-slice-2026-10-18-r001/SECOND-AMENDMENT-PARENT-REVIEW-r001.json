@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-10-18T02:04:27.921163+00:00",
+  "authority_sha256": "83c92086fffd3aca7f186b9053d59bf8bfb47f5bbcbfe29258ae3fe5129a7db6",
+  "parent_inspection": [
+    "Exact installed-to-dev queue/test delta, not divergent devHEAD diff",
+    "Separate append-only second table leaves original case/first exception untouched",
+    "Same job/batch/package/model-stage/auth binding and original expiry",
+    "Full terminal fifth dispatch hash plus first-exception hash, null invocation/metadata, ordinal5 and consumed retry identity",
+    "Before-consumed/completed/authority chronology and initial current terminal job",
+    "Different authority path and content hash, replay/tampering denied",
+    "Exactly one sixth via explicit retry, never seventh including failed sixth",
+    "Existing authorization successor continuity and status after expiry remain readable",
+    "Real-case read-only manifest validation passed before integration"
+  ],
+  "focused_tests": "47passed",
+  "full_development_tests": "477run476passed1existingpermissionSkip",
+  "installed_tests": "running session4537; no claim yet",
+  "scope": "Engineering delta only; no independent analytical review or release acceptance",
+  "material_new_defect_reproduced": false,
+  "limits": [
+    "No backend identity attestation or guaranteed quota/latency",
+    "No queue amendment applied or model dispatched yet",
+    "First ad-hoc real-case validator harness omitted folder attr; corrected explicit root/folder without constructor/production writes."
+  ],
+  "installed_full_regression": "REGRESSION-r011-installed-manifest.json:477run476pass1existingpermissionSkip;source snapshot unchanged",
+  "amendment_registered": true,
+  "explicit_retry_recorded": true
+}
