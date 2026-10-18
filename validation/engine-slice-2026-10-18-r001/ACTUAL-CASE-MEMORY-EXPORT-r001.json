@@ -1,0 +1,10 @@
+{
+  "records.json": {
+    "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/memory/010640feee5c134ae347a6ee6f8abe839f48eca4c9f000bf5dba3e7cb512b3e4/records.json",
+    "sha256": "11299b0413eda0782675c0941c5c64515615b1aad4c7551484037bd4c1af2e6d"
+  },
+  "sources.json": {
+    "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/memory/010640feee5c134ae347a6ee6f8abe839f48eca4c9f000bf5dba3e7cb512b3e4/sources.json",
+    "sha256": "9aa0b910d65b4b03214203f901036222685b5fff8afb0b6c29057be48f5da7f4"
+  }
+}

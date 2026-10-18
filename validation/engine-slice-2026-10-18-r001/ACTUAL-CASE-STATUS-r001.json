@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "id": "research-case-projection",
+  "observed_at": "2026-10-18T02:13:43.141246+00:00",
+  "authoritative": false,
+  "research_disposition": "parked",
+  "review_status": "independently-reviewed",
+  "operational_readiness": "evidence incomplete",
+  "trade_readiness": "evidence incomplete",
+  "edge_evidence": "not assessed",
+  "activation": "disabled",
+  "live_recommendations_enabled": false,
+  "evidence": [
+    {
+      "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/disposition-r001.json",
+      "sha256": "e120e3d0ffbb0ad24c2030d5228c3f22e0a22d977d581aba7ca802b0f7fbffb5"
+    },
+    {
+      "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+      "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+    },
+    {
+      "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/review-r001.json",
+      "sha256": "7ebb3d9f8c1d2eb57db608f5a1a07e703fdcc41efab0eda1cfb1103aab51bf30"
+    },
+    {
+      "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+      "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+    }
+  ],
+  "limitations": [
+    "The qualifying packet lacks quantified Helion commitments, accepted shipments, AMD content, realized prices, margins, collection terms and incremental investment. Commercial availability, shipment, acceptance, revenue recognition and cash collection remain distinct. This absence is established only for the supplied packet.",
+    "Current liquidity, cash movements, principal settlements, coupons, facility headroom, commitments and investment realization timing are unavailable. The historical disposition has incompatible basis and period and cannot supply current reported financial inputs.",
+    "Issuer and NASDAQ ticker identification are supported, but exact share class, current ownership denominator and contingent claims are not established. Dividend and buyback amounts and affordability remain unknown; no zero-distribution or zero-dilution assumption is justified.",
+    "The displayed publication date and access metadata do not establish an independently verified historical publication snapshot. Captured_at is null. Captured content does not prove investor novelty or the first tradable response window. November availability lacks an exact day and binding shipment or recognition schedule.",
+    "The packet supplies no market quote, defined expectations baseline, market-reaction series, executable spread, fees, FX costs or response-delay evidence. Price-response ranges, expected returns and superiority to cash cannot be calculated.",
+    "The qualifying evidence is an interested issuer release containing selected partner quotations. Independent customer, competitor and performance evidence is absent. Adoption, comparative performance, pricing power and durable advantage therefore remain unverified.",
+    "Backend model identity was not independently attested; requested Astra route, exact dispatch and output lineage are recorded.",
+    "Research disposition is not trade gate acceptance."
+  ],
+  "gates": [
+    {
+      "gate": "activation",
+      "status": "evidence incomplete",
+      "evidence": [],
+      "reason": "No current version-bound acceptance evaluated"
+    },
+    {
+      "gate": "decision",
+      "status": "evidence incomplete",
+      "evidence": [],
+      "reason": "No current version-bound acceptance evaluated"
+    },
+    {
+      "gate": "dossier",
+      "status": "evidence incomplete",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/dossier-r001.json",
+          "sha256": "20c5e81f3cf78260f9798b0707a4617e1c7378ae9694b822f90a7371b92a8835"
+        }
+      ],
+      "reason": "Scoped evidence retained outside trading acceptance registry"
+    },
+    {
+      "gate": "monitoring",
+      "status": "evidence incomplete",
+      "evidence": [],
+      "reason": "No current version-bound acceptance evaluated"
+    },
+    {
+      "gate": "operational_trial",
+      "status": "evidence incomplete",
+      "evidence": [],
+      "reason": "No current version-bound acceptance evaluated"
+    },
+    {
+      "gate": "phone",
+      "status": "evidence incomplete",
+      "evidence": [],
+      "reason": "No current version-bound acceptance evaluated"
+    },
+    {
+      "gate": "portfolio_policy",
+      "status": "evidence incomplete",
+      "evidence": [],
+      "reason": "No current version-bound acceptance evaluated"
+    },
+    {
+      "gate": "quote",
+      "status": "evidence incomplete",
+      "evidence": [],
+      "reason": "No current version-bound acceptance evaluated"
+    },
+    {
+      "gate": "research",
+      "status": "evidence incomplete",
+      "evidence": [
+        {
+          "path": "monitoring/research-engine/cases/amd-helion-20261017-r001/analysis-r001.json",
+          "sha256": "0d60cd155704304edd7cd7a98ba7c375c25ff0d66f31afd540355b34b68f0a4d"
+        }
+      ],
+      "reason": "Scoped evidence retained outside trading acceptance registry"
+    },
+    {
+      "gate": "strategy_validation",
+      "status": "evidence incomplete",
+      "evidence": [],
+      "reason": "No current version-bound acceptance evaluated"
+    }
+  ],
+  "case_id": "amd-helion-20261017-r001"
+}

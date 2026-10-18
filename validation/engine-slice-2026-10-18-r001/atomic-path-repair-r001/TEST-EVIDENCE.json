@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-10-18T02:10:57.716746+00:00",
+  "scope": "DEV engineering fixture validation only; no original source or production state changes; no model calls",
+  "files": [
+    {
+      "path": "tools/research_checkpoint.py",
+      "installed_sha256": "4c50e71cca753dc70b459af3af94ae3579134f222ba7b3f9282cf02a39ebb057",
+      "dev_sha256": "0a1c44ce8dbeded1193a350364e97b1d02d25191611ed3a1704a08fcb0e9a657"
+    },
+    {
+      "path": "validation/tests/test_research_checkpoint.py",
+      "installed_sha256": "bce7827b82d70e9addc8c79c54c578100fc8e9018442e41f463159361cdac57d",
+      "dev_sha256": "623300d2514a2722fc994e4a509c48fd00f0a235f3737b4d7621486584a6abe8"
+    }
+  ],
+  "patch_sha256": "78d2b8ad84c08d9a765365e82b0850db07585de25580a60334702d381dc8cff9",
+  "command": "python -m unittest discover -s validation/tests -p test_research_checkpoint.py -q",
+  "exit_code": 0,
+  "tests": 17,
+  "skipped": 1,
+  "skip_reason": "Existing symlink artifact test: Windows does not permit creating symlinks in this test environment",
+  "output": "----------------------------------------------------------------------\nRan 17 tests in 1.298s\n\nOK (skipped=1)\n",
+  "regression_geometry": {
+    "destination_chars": 240,
+    "former_temp_chars": 277,
+    "new_temp_chars": 236
+  }
+}

@@ -1,0 +1,3 @@
+# Formatting-check disposition — 18 October2026
+
+The broad staged whitespace check failed on the preserved installed-to-dev.patch artifact: its represented CRLF source lines contain extra carriage returns. The source/test delta had already been directly inspected using normalized line comparison and exact frozen hashes. The shell subsequently ran the separate Git commit despite the Python staging/check helper raising; do not describe that broad check as passed. Preserve the original patch bytes and digest as historical evidence. This is an artifact-formatting issue, not a reproduced runtime defect. A separately scoped committed source/test/workflow whitespace check passed. No code changed and no further regression was justified by this record.

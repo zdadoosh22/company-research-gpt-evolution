@@ -1,15 +1,17 @@
 import copy
 from datetime import datetime, timezone
 import json
+import os
 from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'tools'))
 from alert_contract import GATES
 from research_checkpoint import (canonical, make_reference, record_checkpoint, rebuild_projection,
-                                 render_html, load_checkpoint_input, requirements_snapshot, EVENT_DIRECTORY)
+                                 render_html, load_checkpoint_input, requirements_snapshot, EVENT_DIRECTORY, _atomic)
 
 NOW = datetime(2026, 10, 15, 12, tzinfo=timezone.utc)
 
@@ -25,6 +27,50 @@ class CheckpointTests(unittest.TestCase):
               dict(id='COMMAND-ONE' if duplicate else 'BRIEF-TWO',status='not-assessed',evidence=[])]
         assessment=save('validation/assessment.json',dict(schema_version=1,created_at='2026-10-15T10:00:00Z',inventory=inventory,requirements=rows))
         save('monitoring/research-engine/requirements/current.json',dict(assessment=assessment))
+
+    def long_atomic_target(self):
+        name = "target-processing-failure_projection.json"
+        # Resolve a real temporary path and keep its destination below the
+        # classic Windows MAX_PATH limit while the former temporary exceeds it.
+        padding = 240 - len(str(self.root.resolve())) - len(name) - 2
+        if padding < 1:
+            self.skipTest("Temporary directory is too long to construct this bounded fixture")
+        parent = self.root.resolve() / ("p" * padding)
+        parent.mkdir()
+        target = parent / name
+        self.assertEqual(len(str(target)), 240)
+        self.assertGreater(len(str(target.with_name(name + "." + "a" * 32 + ".tmp"))), 260)
+        return target
+
+    def test_atomic_long_path_create_and_overwrite_use_short_same_directory_temp(self):
+        target = self.long_atomic_target()
+        with patch("research_checkpoint.os.replace", wraps=os.replace) as replace:
+            _atomic(target, b"original bytes")
+            self.assertEqual(target.read_bytes(), b"original bytes")
+            _atomic(target, b"replacement bytes")
+        self.assertEqual(target.read_bytes(), b"replacement bytes")
+        for call in replace.call_args_list:
+            source, destination = call.args
+            self.assertEqual(source.parent, target.parent)
+            self.assertEqual(destination, target)
+            self.assertRegex(source.name, r"^[0-9a-f]{32}\.tmp$")
+            self.assertLess(len(str(source)), 260)
+        self.assertEqual(list(target.parent.iterdir()), [target])
+
+    def test_atomic_replace_failure_preserves_long_destination_and_cleans_temp(self):
+        target = self.long_atomic_target()
+        target.write_bytes(b"immutable prior destination bytes")
+        def failed_replace(source, destination):
+            self.assertEqual(source.read_bytes(), b"new unpublished bytes")
+            self.assertEqual(destination.read_bytes(), b"immutable prior destination bytes")
+            self.assertEqual(source.parent, destination.parent)
+            self.assertLess(len(str(source)), 260)
+            raise PermissionError("Engineering fixture: replacement unavailable")
+        with patch("research_checkpoint.os.replace", side_effect=failed_replace):
+            with self.assertRaises(PermissionError):
+                _atomic(target, b"new unpublished bytes")
+        self.assertEqual(target.read_bytes(), b"immutable prior destination bytes")
+        self.assertEqual(list(target.parent.iterdir()), [target])
 
     def test_requirement_counts_are_version_bound_not_completion(self):
         self.assessment();p=requirements_snapshot(self.root,now=NOW)

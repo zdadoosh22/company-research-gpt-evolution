@@ -1,0 +1,40 @@
+{
+  "observed_at": "2026-10-18T02:10:23.328304+00:00",
+  "dispatch_id": "b0431f05083644a9a1a3fc301d087672",
+  "overall_case_dispatch": 6,
+  "review_job_attempt": 3,
+  "execution_outcome": "completed",
+  "queue_status": "needs-input",
+  "analytical_status": "review-complete",
+  "model_requested": "gpt-6-astra",
+  "actual_model": null,
+  "models_observed": [],
+  "backend_independently_verified": false,
+  "result_sha256": "314875b1adcfd8e23c7ca7034fc025a8cbb58bf7218b936850a93ad533280f3e",
+  "usage": [
+    {
+      "input_tokens": 36088,
+      "cached_input_tokens": 0,
+      "output_tokens": 4489
+    }
+  ],
+  "supported_conclusions": [
+    "C1 attributed prospective announcement only",
+    "C2 evidence insufficiency supports keeping opportunity assessment parked"
+  ],
+  "withheld_conclusions": [
+    "C3 financial contribution",
+    "C4 financial resilience",
+    "C5 per-share economics",
+    "C6 positive opportunity/valuation/returns/entry-exit"
+  ],
+  "material_unresolved_findings": [
+    "F1",
+    "F2",
+    "F3"
+  ],
+  "review_continuation": "The scoped independent review is complete. Before reconsidering the withheld conclusions, obtain Helion-specific commercial evidence and reconcile AMD content, prices, incremental costs, recognition, collections and investment. Establish current liquidity, obligations, distributions and ownership claims from compatible primary disclosures. A subsequent opportunity assessment also needs verified chronology, dated expectations, market prices and response evidence covering no repricing, adverse surprise, delay, gaps or halts, and correct-but-late outcomes. This review provides no trading approval and makes no backend-identity attestation.",
+  "scope": "Actual completed requested Astra route; backend identity not independently attested; no trade or release acceptance.",
+  "archival_status": "deterministic export failed on Windows temp path263>260; original result retained; no retry inference",
+  "remaining_dispatch_authority": 0
+}

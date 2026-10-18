@@ -1,0 +1,11 @@
+{
+  "command": "tools/run.ps1 engine archive-result --job-id amd-helion-20261017-r001-review --case-id amd-helion-20261017-r001",
+  "exit_code": 1,
+  "error": "FileNotFoundError while creating target-processing-failure_projection.json.<uuid32>.tmp",
+  "target_path_chars": 226,
+  "temporary_path_chars": 263,
+  "identified_code": "research_checkpoint._atomic appends37characters to destination name",
+  "review_result_changed": false,
+  "partial_archive": "target.txt may already exist; immutable equality checks must govern deterministic rerun",
+  "next": "Repair helper with same-directory bounded temporary basename and real filesystem failure/overwrite tests; no more model dispatch."
+}

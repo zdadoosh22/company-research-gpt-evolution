@@ -226,7 +226,8 @@ def _lock(root):
 def _atomic(path, data):
     if path.is_symlink():
         raise ValueError("Output cannot be a symlink")
-    temporary = path.with_name(path.name + "." + uuid4().hex + ".tmp")
+    # Keep the same directory without extending an already long destination name.
+    temporary = path.with_name(uuid4().hex + ".tmp")
     try:
         with temporary.open("xb") as handle:
             handle.write(data)

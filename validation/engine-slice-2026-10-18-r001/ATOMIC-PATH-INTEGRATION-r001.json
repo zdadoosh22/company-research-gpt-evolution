@@ -1,0 +1,21 @@
+{
+  "installed_at": "2026-10-18T02:11:55.491720+00:00",
+  "files": [
+    {
+      "path": "tools/research_checkpoint.py",
+      "installed_sha256": "4c50e71cca753dc70b459af3af94ae3579134f222ba7b3f9282cf02a39ebb057",
+      "dev_sha256": "0a1c44ce8dbeded1193a350364e97b1d02d25191611ed3a1704a08fcb0e9a657"
+    },
+    {
+      "path": "validation/tests/test_research_checkpoint.py",
+      "installed_sha256": "bce7827b82d70e9addc8c79c54c578100fc8e9018442e41f463159361cdac57d",
+      "dev_sha256": "623300d2514a2722fc994e4a509c48fd00f0a235f3737b4d7621486584a6abe8"
+    }
+  ],
+  "parent_review": "Exact normalized two-file delta inspected; same-directory exclusive write,fsync,atomicreplace,symlinkcheck and cleanup retained; no new material issue found.",
+  "parent_focused_tests": "17run16pass1existingpermissionSkip,1.237s",
+  "original_model_output_changed": false,
+  "no_new_model_call": true,
+  "full_installed_regression": "REGRESSION-r012-installed-manifest.json:479run478pass1existingpermissionSkip;source hashes unchanged",
+  "actual_archive_retry": "SIXTH-REVIEW-ARCHIVE-r002.json succeeded; exact original output and packet hashes preserved"
+}
