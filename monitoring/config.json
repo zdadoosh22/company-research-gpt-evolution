@@ -1,4 +1,4 @@
-{
+﻿{
   "mode": "observation-only",
   "timezone": "Europe/London",
   "check_times": [
@@ -6,7 +6,7 @@
     "18:00"
   ],
   "service_interval_seconds": 30,
-  "research_enabled": false,
+  "research_enabled": true,
   "model": "gpt-6.1-sol",
   "quote_acquisition": "manual-only",
   "notification_transport": "telegram-pending-setup",
@@ -16,7 +16,7 @@
     "initial_contribution_gbp": "300",
     "objective": "Aggressive shorter-term growth after all recorded costs",
     "holding_horizon": "Days to a few months; no need for intraday trading",
-    "loss_tolerance": "User accepts possible total loss of the initial Â£300; no additional money or borrowing authorised",
+    "loss_tolerance": "User accepts possible total loss of the initial Ã‚Â£300; no additional money or borrowing authorised",
     "exit_rule_research": "Compare explicit loss controls with thesis-based exits before choosing",
     "subscription_incentive": "Possible future subscription upgrades or capital additions do not influence investment judgements; no automatic purchase or contribution",
     "policy_status": "Mandate confirmed; numerical strategy and exit rules unvalidated"
@@ -90,10 +90,11 @@
   "portfolio_policy": {
     "objectives": "Aggressive growth over days to a few months, after costs; no intraday requirement",
     "investment_universe": null,
-    "acceptable_downside": "Potential total loss of isolated Â£300 accepted; no borrowing, unrelated holdings or automatic contributions",
+    "acceptable_downside": "Potential total loss of isolated Ã‚Â£300 accepted; no borrowing, unrelated holdings or automatic contributions",
     "position_limits": null,
     "concentration_limits": null,
     "return_discipline": null,
     "selling_reasons": null
   }
 }
+
