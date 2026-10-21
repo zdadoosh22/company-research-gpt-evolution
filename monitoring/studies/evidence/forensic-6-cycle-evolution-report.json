@@ -1,0 +1,50 @@
+[
+  {
+    "cycle": 1,
+    "trades_count": 40,
+    "rejected_count": 4,
+    "wins": 22,
+    "win_rate": 55.00000000000001,
+    "avg_net": 11.168280758290333
+  },
+  {
+    "cycle": 2,
+    "trades_count": 38,
+    "rejected_count": 6,
+    "wins": 20,
+    "win_rate": 52.63157894736842,
+    "avg_net": 10.456085008726665
+  },
+  {
+    "cycle": 3,
+    "trades_count": 35,
+    "rejected_count": 9,
+    "wins": 19,
+    "win_rate": 54.285714285714285,
+    "avg_net": 9.397248152203428
+  },
+  {
+    "cycle": 4,
+    "trades_count": 35,
+    "rejected_count": 9,
+    "wins": 19,
+    "win_rate": 54.285714285714285,
+    "avg_net": 9.397248152203428
+  },
+  {
+    "cycle": 5,
+    "trades_count": 35,
+    "rejected_count": 9,
+    "wins": 19,
+    "win_rate": 54.285714285714285,
+    "avg_net": 8.48389381122984
+  },
+  {
+    "cycle": 6,
+    "trades_count": 35,
+    "rejected_count": 9,
+    "wins": 19,
+    "win_rate": 54.285714285714285,
+    "avg_net": 8.48389381122984
+  }
+]

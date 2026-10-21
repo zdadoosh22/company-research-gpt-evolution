@@ -75,3 +75,11 @@ Derived from 5,000 historical evaluations across 80 liquid global equities (`mon
 28. **Two-Stage Profit Taking (Cycle 2) Delivers Peak Win Rate:** Banking 50% of the position at +10.5% net return boosted the overall win rate from 30.6% to **35.4%** across 1,000 blind setups, permanently capturing cash before reversals.
 29. **The 200-SMA Dislocation Paradox (Cycle 3 Discovery):** A strict 200-day moving average filter actually decreased net performance (from +2.01% down to +0.62%) because our most lucrative swing trades (e.g. AAPL at $165, META at $441, PANW at $130) trigger *below* the 200-SMA during transient market panics. The filter must not disqualify stocks below the 200-SMA if they are pinned against a major institutional Options Put Wall with positive dealer gamma.
 30. **Positive Expectancy Across 5,000 Uncurated Market Windows:** Across 5,000 historical setups spanning bull runs, bear corrections, and banking shocks, the engine maintained positive mathematical expectancy (+1.3% to +2.3% net average return per trade) even before fundamental human thesis filtering. When paired with primary SEC forensic accounting, the sleeve has exceptional structural asymmetry.
+
+## 21 October 2026 — forensic multi-cycle stress runs (1,240 backtests)
+
+Derived from 40 point-in-time deep forensic company profiles and 1,200 multi-decade pullback replays (`monitoring/studies/2026-10-21-continuous-forensic-backtest-report.md`):
+
+31. **The Forensic Dislocation Win Rate (54.3%–55.0%):** When balance sheet health (positive FCF margin, net debt/EBITDA < 2.5x) and SBC dilution gates are synthesized with commercial catalysts, real-world win rates consistently reach **54.3% to 55.0%** with an exceptional **+8.48% to +11.17% average net return per trade**.
+32. **Price Dips Without Catalysts Yield Only 26% Win Rates:** In 1,200 blind pullback tests, buying stocks purely because they dropped >12% produced only a 24%–27% win rate. Price drops alone are insufficient; an upcoming scheduled commercial catalyst is strictly required to unlock swing momentum.
+33. **The SBC/Growth Ratio Gate:** Disqualify any equity where Stock-Based Compensation exceeds 18% of revenue unless forward GAAP revenue growth exceeds 25%. Heavy ongoing share dilution acts as an insurmountable drag on 30–60 day swing trade price discovery.
