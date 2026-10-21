@@ -1,0 +1,110 @@
+{
+  "total": 17,
+  "wins": 6,
+  "win_pct": 35.294117647058826,
+  "avg_net": 1.5629436405107118,
+  "trades": [
+    {
+      "ticker": "NVDA",
+      "catalyst": "Q1'24 Historic +50% AI Guidance Shock",
+      "realized_net": 3.2,
+      "won": true
+    },
+    {
+      "ticker": "NVDA",
+      "catalyst": "Q2'24 Record Data Center Demand Beat",
+      "realized_net": 2.8842886926994136,
+      "won": false
+    },
+    {
+      "ticker": "NVDA",
+      "catalyst": "Q4'24 Acceleration Across All Geographies",
+      "realized_net": 1.5430478972797748,
+      "won": false
+    },
+    {
+      "ticker": "META",
+      "catalyst": "Q4'22 Year of Efficiency Initial Announcement",
+      "realized_net": 3.2,
+      "won": true
+    },
+    {
+      "ticker": "META",
+      "catalyst": "Q2'23 Operating Leverage & Ad Rebound Beat",
+      "realized_net": -2.2407958223046434,
+      "won": false
+    },
+    {
+      "ticker": "META",
+      "catalyst": "Q4'23 Inaugural Dividend & +25% Rev Growth",
+      "realized_net": -0.5085662245986693,
+      "won": false
+    },
+    {
+      "ticker": "MSFT",
+      "catalyst": "Q3'23 Azure Cloud AI Inflection Beat",
+      "realized_net": 2.8895132623143436,
+      "won": false
+    },
+    {
+      "ticker": "AMZN",
+      "catalyst": "Q2'23 AWS Stabilization & North America Margin",
+      "realized_net": -0.5978921573030764,
+      "won": false
+    },
+    {
+      "ticker": "AAPL",
+      "catalyst": "Q2'24 Historic $110B Share Repurchase Program",
+      "realized_net": 1.8551919628400173,
+      "won": false
+    },
+    {
+      "ticker": "GOOGL",
+      "catalyst": "Q1'24 Inaugural Dividend & Cloud Acceleration",
+      "realized_net": -0.8678406890698114,
+      "won": false
+    },
+    {
+      "ticker": "AVGO",
+      "catalyst": "Q2'24 VMware Integration & 10-for-1 Split",
+      "realized_net": 3.2,
+      "won": true
+    },
+    {
+      "ticker": "ARM",
+      "catalyst": "Q3'24 v9 Architecture Licensing Explosion Beat",
+      "realized_net": 3.2,
+      "won": true
+    },
+    {
+      "ticker": "PLTR",
+      "catalyst": "Q1'23 Commercial AIP Architecture Launch Beat",
+      "realized_net": -5.8,
+      "won": false
+    },
+    {
+      "ticker": "PLTR",
+      "catalyst": "Q1'24 Commercial AIP Bootcamps Acceleration",
+      "realized_net": 0.11705353524595558,
+      "won": false
+    },
+    {
+      "ticker": "CRWD",
+      "catalyst": "Q3'24 Record Free Cash Flow Margin Milestone",
+      "realized_net": 3.584249159872296,
+      "won": true
+    },
+    {
+      "ticker": "NFLX",
+      "catalyst": "Q4'23 13.1M Net Adds Record & WWE Rights",
+      "realized_net": 2.519095505865698,
+      "won": false
+    },
+    {
+      "ticker": "UBER",
+      "catalyst": "Q3'23 S&P 500 Inclusion Readiness Free Cash",
+      "realized_net": 8.3926967658408,
+      "won": true
+    }
+  ]
+}
