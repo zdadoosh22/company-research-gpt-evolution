@@ -144,8 +144,12 @@ def bridge_notices(conn):
     init_transport(conn)
     for row in conn.execute("SELECT * FROM outbox WHERE status='pending'").fetchall():
         payload=json.loads(row['payload'])
-        is_signal=payload.get('actionable') or payload.get('mode')=='model-signal'
-        header='MODEL PORTFOLIO SIGNAL (£300 SLEEVE — MANUAL T212 EXECUTION)\n' if is_signal else 'OBSERVATION ONLY — DO NOT TRADE\n'
+        verdict=str(payload.get('verdict','')).upper()
+        if payload.get('actionable'): header='MODEL PORTFOLIO SIGNAL (£300 SLEEVE — MANUAL T212 EXECUTION)\n'
+        elif verdict.startswith('WATCH'): header='MODEL WATCH ALERT — NOT ACTIONABLE ABOVE THE STATED CEILING (£300 SLEEVE)\n'
+        elif verdict.startswith('PASS'): header='MODEL PASS NOTICE — NO TRADE (£300 SLEEVE)\n'
+        elif payload.get('mode')=='model-signal': header='MODEL PORTFOLIO NOTICE (£300 SLEEVE)\n'
+        else: header='OBSERVATION ONLY — DO NOT TRADE\n'
         body=payload.get('formatted_text') if isinstance(payload.get('formatted_text'),str) else json.dumps(payload,indent=2,ensure_ascii=False)
         text=(header+body)[:3900]
         if payload.get('status') in ('withdrawn','expired'):
@@ -337,7 +341,7 @@ def main():
     f=sub.add_parser('fund'); f.add_argument('--amount',default='300')
     for name in ('quote','fx-quote'): sub.add_parser(name).add_argument('json_file')
     ta=sub.add_parser('trial-alert'); ta.add_argument('json_file'); ta.add_argument('--force',action='store_true'); ta.add_argument('--model-signal',action='store_true')
-    ss=sub.add_parser('send-signal'); ss.add_argument('--json',dest='json_file'); ss.add_argument('--text'); ss.add_argument('--id',dest='alert_id'); ss.add_argument('--ticker'); ss.add_argument('--verdict',default='ACTIONABLE_BUY_SIGNAL')
+    ss=sub.add_parser('send-signal'); ss.add_argument('--json',dest='json_file'); ss.add_argument('--text'); ss.add_argument('--id',dest='alert_id'); ss.add_argument('--ticker'); ss.add_argument('--verdict',default='ACTIONABLE_BUY_SIGNAL'); ss.add_argument('--expires-hours',type=float,default=None)
     sub.add_parser('ack').add_argument('alert_id')
     w=sub.add_parser('withdraw'); w.add_argument('alert_id'); w.add_argument('reason')
     o=sub.add_parser('order'); o.add_argument('alert_id'); o.add_argument('side',choices=['buy','sell']); o.add_argument('ticker'); o.add_argument('quantity'); o.add_argument('--reserve-gbp',default='0'); o.add_argument('--order-id',required=True)
@@ -403,8 +407,14 @@ def main():
             else:
                 raise ValueError('send-signal requires either --json <file> or --text "<message>"')
             if args.alert_id: payload['id']=args.alert_id
+            verdict=str(payload.get('verdict',args.verdict)).upper()
+            payload['verdict']=verdict
             payload['mode']='model-signal'
-            payload['actionable']=True
+            # Only an ACTIONABLE BUY SIGNAL is actionable; WATCH/PASS are information notices.
+            payload['actionable']=verdict.startswith('ACTIONABLE')
+            if 'expires_at' not in payload:
+                hours=args.expires_hours if args.expires_hours is not None else (24 if payload['actionable'] else 168)
+                payload['expires_at']=(datetime.now(timezone.utc)+timedelta(hours=hours)).isoformat()
             result=store.create_signal_alert(payload)
             bridge_notices(store.conn)
             secret=STATE/'telegram.dpapi'

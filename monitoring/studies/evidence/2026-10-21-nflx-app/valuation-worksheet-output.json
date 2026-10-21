@@ -1,0 +1,109 @@
+﻿{
+ "NFLX": {
+  "px": 65.8,
+  "shares_m": 4165.0,
+  "mktcap_bn": 274.1,
+  "net_debt_bn": 7.114,
+  "ev_bn": 281.2,
+  "ev_incl_leases_bn": 283.5,
+  "fcf_norm_bn": 10.3,
+  "fcf_yield_pct": 3.76,
+  "implied_10y_growth_at_9pct": 9.1,
+  "implied_10y_growth_at_8pct": 6.6,
+  "FY27_EPS_bear": 3.25,
+  "FY27_NI_bear_bn": 13.32,
+  "FY27_EPS_base": 3.66,
+  "FY27_NI_base_bn": 14.82,
+  "FY27_EPS_bull": 3.95,
+  "FY27_NI_bull_bn": 15.75,
+  "PE_at_price_on_base_FY27": 18.0
+ },
+ "APP": {
+  "px": 267.9,
+  "shares_m": 337.0,
+  "mktcap_bn": 90.3,
+  "net_debt_bn": 0.5,
+  "ev_bn": 90.8,
+  "q3_NI_run_bn": 1.328,
+  "q3_EPS_implied": 3.94,
+  "owner_fcfe_runrate_bn": 5.02,
+  "owner_fcfe_H1_annualised_bn": 3.96,
+  "fcfe_yield_runrate_pct": 5.56,
+  "fcfe_yield_H1_pct": 4.38,
+  "implied_10y_growth_runrate_at_11pct": 7.8,
+  "implied_10y_growth_H1_at_11pct": 11.0,
+  "FY26E_EPS": 15.46,
+  "PE_on_FY26E": 17.3
+ },
+ "NFLX_test": {
+  "name": "NFLX",
+  "qty": "2.0251",
+  "entry_with_delay": 66.06,
+  "debit_gbp": 100.0,
+  "net_pct": {
+   "bear": -26.5,
+   "base": 7.76,
+   "bull": 37.19,
+   "stop": -9.45
+  },
+  "gbp": {
+   "bear": -26.5,
+   "base": 7.76,
+   "bull": 37.19,
+   "stop": -9.45
+  },
+  "prob_weighted_net_pct": 1.65,
+  "up_to_down_ratio": 1.18,
+  "breakeven_exit": "66.26",
+  "base_passes_8pct": false,
+  "ratio_passes_2": false
+ },
+ "NFLX_ceiling": 62.0,
+ "APP_test100": {
+  "name": "APP",
+  "qty": "0.4973",
+  "entry_with_delay": 268.97,
+  "debit_gbp": 99.98,
+  "net_pct": {
+   "bear": -24.01,
+   "base": 5.64,
+   "bull": 33.44,
+   "stop": -12.52
+  },
+  "gbp": {
+   "bear": -24.01,
+   "base": 5.64,
+   "bull": 33.44,
+   "stop": -12.52
+  },
+  "prob_weighted_net_pct": 3.7,
+  "up_to_down_ratio": 1.51,
+  "breakeven_exit": "269.78",
+  "base_passes_8pct": false,
+  "ratio_passes_2": false
+ },
+ "APP_test75": {
+  "name": "APP75",
+  "qty": "0.373",
+  "entry_with_delay": 268.97,
+  "debit_gbp": 74.99,
+  "net_pct": {
+   "bear": -24.01,
+   "base": 5.64,
+   "bull": 33.44,
+   "stop": -12.52
+  },
+  "gbp": {
+   "bear": -18.01,
+   "base": 4.23,
+   "bull": 25.08,
+   "stop": -9.39
+  },
+  "prob_weighted_net_pct": 3.7,
+  "up_to_down_ratio": 1.51,
+  "breakeven_exit": "269.78",
+  "base_passes_8pct": false,
+  "ratio_passes_2": false
+ },
+ "APP_ceiling": 260.6
+}

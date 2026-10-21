@@ -234,7 +234,10 @@ def cmd_alert(args):
         '--text', args.text,
         '--verdict', args.verdict
     ]
-    os.system(' '.join(f'"{c}"' if ' ' in c else c for c in cmd))
+    if args.expires_hours is not None:
+        cmd += ['--expires-hours', str(args.expires_hours)]
+    import subprocess
+    subprocess.run(cmd, check=False)
 
 
 def main():
@@ -267,7 +270,8 @@ def main():
     al = sub.add_parser('alert', help="Send model trade signal to Telegram and SQLite ledger")
     al.add_argument('--ticker', required=True, help="Stock ticker")
     al.add_argument('--text', required=True, help="Formatted signal message text")
-    al.add_argument('--verdict', default='ACTIONABLE_BUY_SIGNAL', help="Verdict type")
+    al.add_argument('--verdict', default='ACTIONABLE_BUY_SIGNAL', help="ACTIONABLE_BUY_SIGNAL | WATCH_LIMIT_TRIGGER | PASS_REJECT")
+    al.add_argument('--expires-hours', type=float, default=None, help="Alert lifetime (default 24h for BUY, 168h for WATCH/PASS)")
 
     args = parser.parse_args()
     handlers = {
