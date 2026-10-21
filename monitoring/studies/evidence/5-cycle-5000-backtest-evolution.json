@@ -1,0 +1,68 @@
+[
+  {
+    "cycle": 1,
+    "refinements": {
+      "realistic_gap_fill": true,
+      "two_stage_profit": false,
+      "sma_200_filter": false,
+      "earnings_derisk": false
+    },
+    "win_pct": 30.599999999999998,
+    "avg_net": 2.2945293263149087,
+    "losses": 432,
+    "breakevens": 162
+  },
+  {
+    "cycle": 2,
+    "refinements": {
+      "realistic_gap_fill": true,
+      "two_stage_profit": true,
+      "sma_200_filter": false,
+      "earnings_derisk": false
+    },
+    "win_pct": 35.4,
+    "avg_net": 2.0055319373540814,
+    "losses": 429,
+    "breakevens": 138
+  },
+  {
+    "cycle": 3,
+    "refinements": {
+      "realistic_gap_fill": true,
+      "two_stage_profit": true,
+      "sma_200_filter": true,
+      "earnings_derisk": false
+    },
+    "win_pct": 29.4,
+    "avg_net": 0.6172417727641791,
+    "losses": 485,
+    "breakevens": 132
+  },
+  {
+    "cycle": 4,
+    "refinements": {
+      "realistic_gap_fill": true,
+      "two_stage_profit": true,
+      "sma_200_filter": true,
+      "earnings_derisk": true
+    },
+    "win_pct": 32.9,
+    "avg_net": 1.5147882433393698,
+    "losses": 441,
+    "breakevens": 137
+  },
+  {
+    "cycle": 5,
+    "refinements": {
+      "realistic_gap_fill": true,
+      "two_stage_profit": true,
+      "sma_200_filter": true,
+      "earnings_derisk": true,
+      "vol_scaling": true
+    },
+    "win_pct": 31.1,
+    "avg_net": 1.2956410734884998,
+    "losses": 439,
+    "breakevens": 145
+  }
+]
