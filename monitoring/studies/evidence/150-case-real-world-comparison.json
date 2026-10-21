@@ -1,0 +1,154 @@
+{
+  "blind_summary": {
+    "count": 149,
+    "win_rate": 53.02013422818792,
+    "avg_net": 7.368360203150298
+  },
+  "confirmed_summary": {
+    "count": 143,
+    "win_rate": 53.84615384615385,
+    "avg_net": 7.638234528817296
+  },
+  "confirmed_sample_trades": [
+    {
+      "ticker": "NVDA",
+      "date": "2022-10-17",
+      "net_return": 17.45,
+      "won": true,
+      "catalyst": "Post-Export Control Bottom & Generative AI Buildout"
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2023-01-06",
+      "net_return": 17.45,
+      "won": true,
+      "catalyst": "ChatGPT Consumer Inflection & GPU Demand Spike"
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2023-05-26",
+      "net_return": 11.783823728189345,
+      "won": true,
+      "catalyst": "Historic +50% Data Center Guidance Shock"
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2023-08-28",
+      "net_return": -10.3,
+      "won": false,
+      "catalyst": "Q2'24 Record Earnings Follow-Through"
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2024-01-08",
+      "net_return": 17.45,
+      "won": true,
+      "catalyst": "CES 2024 Desktop Super RTX GPU Launch"
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2024-04-22",
+      "net_return": 17.45,
+      "won": true,
+      "catalyst": "Pre-Earnings Tech Panic Trough"
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2022-12-29",
+      "net_return": 13.43314381205542,
+      "won": true,
+      "catalyst": "Zhengzhou Supply Chain Trough & China Reopening"
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2023-03-13",
+      "net_return": 12.127512437124803,
+      "won": true,
+      "catalyst": "Silicon Valley Bank Crisis Safe-Haven Inflow"
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2023-08-18",
+      "net_return": -1.1539202511644349,
+      "won": false,
+      "catalyst": "Post-Q3 Hardware Margin Clearance Bottom"
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2024-04-22",
+      "net_return": 17.45,
+      "won": true,
+      "catalyst": "DOJ Antitrust Lawsuit Panic Trough"
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2024-06-11",
+      "net_return": 4.95,
+      "won": false,
+      "catalyst": "WWDC 2024 Apple Intelligence Announcement"
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2022-11-04",
+      "net_return": 4.95,
+      "won": false,
+      "catalyst": "Post-Q1 Cloud Moderation Bottom"
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2023-01-26",
+      "net_return": 4.95,
+      "won": false,
+      "catalyst": "OpenAI Multi-Billion Investment Partnership"
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2023-05-05",
+      "net_return": 9.223300954802841,
+      "won": true,
+      "catalyst": "Copilot Enterprise Integration Alpha Testing"
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2023-10-23",
+      "net_return": 11.744303261985413,
+      "won": true,
+      "catalyst": "Activision Blizzard Deal Closure"
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2024-08-08",
+      "net_return": 3.0847388314031328,
+      "won": false,
+      "catalyst": "Global Yen Carry Unwind Macro Capitulation"
+    },
+    {
+      "ticker": "META",
+      "date": "2022-11-04",
+      "net_return": 17.45,
+      "won": true,
+      "catalyst": "Metaverse Panic Capitulation & Initial Layoffs"
+    },
+    {
+      "ticker": "META",
+      "date": "2023-02-02",
+      "net_return": -10.3,
+      "won": false,
+      "catalyst": "Year of Efficiency First Announcement"
+    },
+    {
+      "ticker": "META",
+      "date": "2023-07-28",
+      "net_return": -10.3,
+      "won": false,
+      "catalyst": "Reels Monetization Parity & Ad Rebound"
+    },
+    {
+      "ticker": "META",
+      "date": "2023-10-27",
+      "net_return": 12.994348139186808,
+      "won": true,
+      "catalyst": "Middle East Ad Spend Fear Overreaction"
+    }
+  ]
+}
