@@ -50,3 +50,11 @@ Derived from the 1,000-run Monte Carlo stress test and 4-strategy exit optimizat
 
 19. **The Optimal Exit Mandate (Trailing Breakeven at +10%):** Across the empirical daily price paths of all 20 backtested cases, Strategy C (raising the stop to Breakeven +0.30% FX upon reaching +10% gain, while holding for a +25% runner target) outperformed Fixed 15% and Fixed 8% targets, generating a **+78.6% compounded return** and an average **+4.91% net return per trade**. Never allow an idea that reaches +10% to turn into a losing trade.
 20. **Sleeve Ruin Probability is 0.00% under £100 max position sizing:** In 1,000 simulated annual trade runs incorporating 15-minute to 2-hour manual fill delays, spread drag, and +/-3% GBP/USD FX volatility, the maximum expected drawdown was only **5.6%**, the worst-case 1-in-1,000 sequence drawdown was **21.5%**, and the probability of sleeve ruin (<£150 NAV) was **0.00%**. Sizing at £100 max (£75 for binary gap events) provides robust mathematical safety.
+
+## 21 October 2026 — 100-case quarantined backtest suite & engine training
+
+Derived from 98 successfully evaluated historical inflection setups across 2023–2025 (`monitoring/studies/2026-10-21-100-case-backtest-training-report.md`):
+
+21. **Statistical Validation of Strategy C (Trailing Breakeven at +10%):** Across 98 historical cases, the strategy achieved a **53.1% win rate (>+8% net), a 12.2% breakeven protection rate, and an average net return of +8.46% per trade** after all FX and friction costs.
+22. **The -10% Hard Stop as Essential Capital Defense:** In 34 losing setups, the -10% stop loss prevented severe capital bleed in stocks that subsequently dropped -20% to -41% (e.g. MDB -41.3%, BA -22.5%, SHOP -22.4%, INTC -21.9%, PYPL -21.7%). The rule of cutting losses at -10% is non-negotiable.
+23. **Breakeven Conversion Rate:** 12.2% of trades reached double-digit gains (+10% to +18%) before macro reversals set in. Converting these to 0.00% breakeven exits was the decisive factor in eliminating drawdown clusters.
