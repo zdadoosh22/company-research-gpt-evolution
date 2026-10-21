@@ -52,7 +52,9 @@ Entry modelled at **\$268.97** (price +0.4% for spread/manual delay), 0.15% FX e
 Analyst-judgement weights (not statistical): bear 30% / base 45% / bull 25% => probability-weighted net **+3.70%**, upside-to-downside **1.51:1**.
 - Base-case net return >8%: **FAIL (5.64%)**.
 - Upside/downside >2:1: **FAIL (1.51:1)**.
-- **Ceiling solve:** highest entry meeting both tests is **\$260.60** (about 2.7% below the current price; this is essentially the 52-week low of \$260.59).
+- **Ceiling solve:**
+  - *Scenario-weighted basis (`decision_economics.scenario_analysis`):* highest entry meeting both >8% Base net return and >2:1 probability-weighted upside/downside is **\$260.60** (about 2.7% below the current price; essentially the 52-week low of \$260.59).
+  - *Strict Base-vs-Stop basis (`.\tools\engine.cmd math`):* against the \$228.00 conditional stop, the >2:1 Base-Target-to-Stop ratio solves to **\$245.98** (**\$245.00** round, giving +15.52% Base net vs -7.59% stop loss = 2.05:1).
 - **What flips the verdict at the current price:** a base case of about **\$291 or higher** (i.e. a beat-and-raise as the central case). Q2 evidence (EBITDA at the bottom of guidance) does not justify that.
 
 ## 4. Mandatory adversarial challenge (Astra red-team)

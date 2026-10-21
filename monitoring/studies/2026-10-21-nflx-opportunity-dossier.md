@@ -32,7 +32,7 @@ All figures \$ unless stated; balance sheet at 30 Sep 2026 from Ex. 99.1.
 **Non-recurring items stripped (hard accounting rule):**
 - **Q1'26 \$2.8B Warner Bros. Discovery merger termination fee** (paid by Paramount Skydance on WBD's behalf), booked in "Interest and other income" (nine-month figure \$2,947M vs \$127M prior year). It inflates Q1 net income (\$5,283M, EPS \$1.23) and Q1 FCF (\$5,094M). I strip **\$2.2B after tax** from FY26 cash flow (range \$1.8 to \$2.8B; exact cash-tax on the fee is not isolated in the sources read).
 - **Q4 real-estate transaction** (FCF guide cut \$0.5B): treated as a one-off asset purchase, added back at \$0.5B (the amount is inferred from the guide change, not disclosed).
-- Normalised recurring FY26 FCF = 12.0 - 2.2 + 0.5 = **\$10.3B** (range ~\$9.8 to \$10.8B).
+- Normalised recurring FY26 FCF = 12.0 - 2.2 + 0.5 = **\$10.3B** (range ~\$9.8 to \$10.8B). **Cross-check from our preserved record:** the January receipt-free FY26 FCF guide was about \$11.0B (`2026-10-10-netflix-feasibility-r001.md`), so \$10.3B is ~6% more conservative. Using \$11.0B would lift the normalised yield to ~4.0%; it would not change the verdict, because the failing tests rest on scenario exit prices (EPS and multiple), not on the FCF level.
 - **SBC:** GAAP operating income already expenses it (Q3 \$134M; nine months \$405M); reported FCF adds it back via CFO. SBC-adjusted owner FCF is ~\$9.75B (yield 3.56% vs 3.76% reported basis). No separate dilution charge is made, to avoid double counting; buybacks (4.8B in Q3) far exceed SBC.
 
 **Market-implied expectations (reverse DCF via `finance.discounted_cashflows`):** with normalised FCF \$10.3B, EV \$281.2B, 3% terminal growth, the price implies **9.1% FCF growth for 10 years at a 9% discount rate (6.6% at 8%)**. That is roughly in line with 11% revenue growth plus modest margin expansion and buyback accretion, so the market is not pricing a collapse and the stock is **not obviously cheap on fundamentals**; it is cheaper, not mispriced.
@@ -60,7 +60,9 @@ Entry modelled at **\$66.06** (price +0.4% for spread and manual-delay allowance
 Analyst-judgement weights (not statistical): bear 35% / base 45% / bull 20% => probability-weighted net **+1.65%**, upside-to-downside **1.18:1**.
 - Base-case net return >8%: **FAIL (7.76%)**, marginally.
 - Upside/downside >2:1: **FAIL (1.18:1)**.
-- **Ceiling solve:** the highest entry price at which base net >8% and ratio >2:1 both hold is **\$62.00** (about 5.8% below the current price).
+- **Ceiling solve:**
+  - *Scenario-weighted basis (`decision_economics.scenario_analysis`):* highest entry meeting both >8% Base net return and >2:1 probability-weighted upside/downside is **\$62.00** (about 5.8% below the current price).
+  - *Strict Base-vs-Stop basis (`.\tools\engine.cmd math`):* against the \$55.00 conditional stop, the >2:1 Base-Target-to-Stop ratio solves to **\$60.24** (**\$60.00** round, giving +18.17% Base net vs -8.97% stop loss = 2.03:1).
 
 ## 4. Mandatory adversarial challenge (Astra red-team)
 - **"It is down 44%, so it must be cheap."** The reverse DCF says the price implies ~9% growth for a decade, which is about what the business plausibly delivers. Price fell because earnings power was cut and the multiple compressed; the value case is modest, not compelling.
