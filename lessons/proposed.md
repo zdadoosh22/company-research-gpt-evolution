@@ -23,3 +23,13 @@ Proposed by the author of `monitoring/studies/2026-10-21-*-opportunity-dossier.m
 6. **Event trades: a stop is not protective across a gap.** For binary prints, size to the bear-case loss (not the stop) and say so in the verdict (APP: £75 tranche, bear ~-24%).
 7. **Ceiling-solve method.** Report the highest entry price at which both the >8% net base return and >2:1 asymmetry tests hold, with scenario prices and weights stated as analyst judgement. This turns a failed hurdle into a concrete limit trigger (NFLX $62.00; APP $260.60).
 8. **Quote source.** Yahoo chart endpoint gives delayed quotes and GBPUSD for free; label as delayed and non-broker. The route is unofficial and may change.
+
+## 21 October 2026 — backtest calibration & second run (QCOM, NBIS, TE)
+
+Proposed from historical replays and opportunity dossiers covering QCOM, NBIS, and TE:
+
+9. **Quarantined point-in-time backtesting avoids hindsight bias.** In historical replay (`.\tools\engine.cmd backtest <ticker> --as-of YYYY-MM-DD`), the engine must enforce a complete blind quarantine on all forward information before scoring. On QCOM (2026-05-01 at $177.01), it held discipline through an earnings run to $259.92 (+46.8%) while noting a -6.9% initial drawdown.
+10. **Micro-cap turnaround drawdowns overwhelm stop-losses.** Backtest of TE (2026-06-15 at $8.92) revealed a devastating -60.8% Maximum Adverse Excursion to $3.49 as capital-raise dilution hit. Penny stocks and restructuring stories with negative recurring EBITDA must be rejected (PASS / REJECT) regardless of bull-case targets.
+11. **Isolate non-recurring tariff and tax credits from operating EBITDA.** TE's Q2 2026 Adjusted EBITDA of $10.7M was entirely created by a $24.4M IEEPA tariff refund in cost of sales. Stripping this non-recurring credit exposed true operating EBITDA of -$13.7M. Always audit cost-of-goods-sold notes for government tariff/subsidy windfalls.
+12. **Dealer Gamma (GEX) identifies market pinning vs. air-pocket risks.** QCOM's positive gamma regime (+$6.24M/1%) pinned spot at $177.96 directly on top of the $177.50 Max Pain strike, creating tight range-bound action. Conversely, negative gamma regimes (NFLX -$55.5M/1%) accelerate sell-offs down toward major Put Walls ($60.00). Use options structure to validate stop and ceiling placement.
+13. **High-growth infrastructure Capex burn demands strict limit discipline.** For hyper-scalers like NBIS (+454% YoY rev growth, >$40B backlog), high CapEx ($600M+/qtr) and negative GAAP earnings mean valuation must be anchored to key institutional Put Walls ($165.00) rather than chasing momentum at market prices.
