@@ -108,13 +108,14 @@ def cmd_memory(args):
     query = args.query.lower()
     matches = []
 
-    # Check lessons/confirmed.md
-    confirmed_path = ROOT / 'lessons' / 'confirmed.md'
-    if confirmed_path.exists():
-        text = confirmed_path.read_text(encoding='utf-8', errors='ignore')
-        for line in text.splitlines():
-            if query in line.lower() and line.strip().startswith(('-', '*', '#', '1', '2', '3', '4', '5')):
-                matches.append(('Lesson', line.strip()))
+    # Check lessons/confirmed.md and lessons/proposed.md
+    for lesson_file, label in (('confirmed.md', 'Lesson'), ('proposed.md', 'Proposed lesson')):
+        lesson_path = ROOT / 'lessons' / lesson_file
+        if lesson_path.exists():
+            text = lesson_path.read_text(encoding='utf-8', errors='ignore')
+            for line in text.splitlines():
+                if query in line.lower() and line.strip():
+                    matches.append((label, line.strip()[:400]))
 
     # Check monitoring/studies/
     studies_dir = ROOT / 'monitoring' / 'studies'
