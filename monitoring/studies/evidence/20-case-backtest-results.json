@@ -1,0 +1,382 @@
+[
+  {
+    "case": {
+      "id": "BT-01",
+      "ticker": "META",
+      "date": "2024-04-25",
+      "horizon": 60,
+      "name": "Meta Q1'24 Capex Guide Panic",
+      "thesis_type": "OVERREACTION"
+    },
+    "spot": 441.3800048828125,
+    "high_52w": 531.489990234375,
+    "dd_52w": -16.954220588768955,
+    "end_ret": 10.718654455394883,
+    "mfe_ret": 22.980196554828346,
+    "mae_ret": -3.2330462126481496,
+    "verdict": "WATCH / LIMIT TRIGGER",
+    "rationale": "High-quality earnings sell-off; wait for dealer gamma stabilization and entry ceiling.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-02",
+      "ticker": "GOOGL",
+      "date": "2024-07-24",
+      "horizon": 60,
+      "name": "Google Q2'24 YouTube Ad Deceleration",
+      "thesis_type": "OVERREACTION"
+    },
+    "spot": 172.6300048828125,
+    "high_52w": 191.75,
+    "dd_52w": -9.971314272327248,
+    "end_ret": -5.618960744174206,
+    "mfe_ret": 0.93842036225813,
+    "mae_ret": -14.719343650229632,
+    "verdict": "WATCH / LIMIT TRIGGER",
+    "rationale": "High-quality earnings sell-off; wait for dealer gamma stabilization and entry ceiling.",
+    "correct_call": false
+  },
+  {
+    "case": {
+      "id": "BT-03",
+      "ticker": "AMZN",
+      "date": "2024-08-02",
+      "horizon": 60,
+      "name": "Amazon Q2'24 AWS Margin & Guidance Miss",
+      "thesis_type": "OVERREACTION"
+    },
+    "spot": 167.89999389648438,
+    "high_52w": 201.1999969482422,
+    "dd_52w": -16.55069759286532,
+    "end_ret": 12.203696389528629,
+    "mfe_ret": 16.3609304462746,
+    "mae_ret": -9.702200046639732,
+    "verdict": "WATCH / LIMIT TRIGGER",
+    "rationale": "High-quality earnings sell-off; wait for dealer gamma stabilization and entry ceiling.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-04",
+      "ticker": "DELL",
+      "date": "2024-05-31",
+      "horizon": 60,
+      "name": "Dell Q1'25 AI Server Margin Compression",
+      "thesis_type": "OVERREACTION"
+    },
+    "spot": 139.55999755859375,
+    "high_52w": 179.6999969482422,
+    "dd_52w": -22.33722875421623,
+    "end_ret": -19.848092170259925,
+    "mfe_ret": 15.73517275582308,
+    "mae_ret": -37.711377310193384,
+    "verdict": "WATCH / LIMIT TRIGGER",
+    "rationale": "High-quality earnings sell-off; wait for dealer gamma stabilization and entry ceiling.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-05",
+      "ticker": "CRWD",
+      "date": "2024-07-22",
+      "horizon": 60,
+      "name": "CrowdStrike Global IT Outage Crash",
+      "thesis_type": "EVENT_SHOCK"
+    },
+    "spot": 65.97750091552734,
+    "high_52w": 99.58174896240234,
+    "dd_52w": -33.74538848435216,
+    "end_ret": 14.5504123995424,
+    "mfe_ret": 22.746390036868313,
+    "mae_ret": -23.909668155021567,
+    "verdict": "ACTIONABLE BUY (or LIMIT TRIGGER)",
+    "rationale": "Transient exogenous shock hitting high-FCF moat business.",
+    "correct_call": false
+  },
+  {
+    "case": {
+      "id": "BT-06",
+      "ticker": "PANW",
+      "date": "2024-02-21",
+      "horizon": 60,
+      "name": "Palo Alto Networks Platformization Reset",
+      "thesis_type": "EVENT_SHOCK"
+    },
+    "spot": 130.98500061035156,
+    "high_52w": 190.4199981689453,
+    "dd_52w": -31.21258172991975,
+    "end_ret": 20.922241975491573,
+    "mfe_ret": 25.04103744621098,
+    "mae_ret": 1.1566205157758525,
+    "verdict": "ACTIONABLE BUY (or LIMIT TRIGGER)",
+    "rationale": "Transient exogenous shock hitting high-FCF moat business.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-07",
+      "ticker": "AAPL",
+      "date": "2024-04-19",
+      "horizon": 60,
+      "name": "Apple DOJ Antitrust Suit & China Fears",
+      "thesis_type": "EVENT_SHOCK"
+    },
+    "spot": 165.0,
+    "high_52w": 199.6199951171875,
+    "dd_52w": -17.342949586219422,
+    "end_ret": 38.71515447443181,
+    "mfe_ret": 43.775754986387305,
+    "mae_ret": -0.13939135002367653,
+    "verdict": "ACTIONABLE BUY (or LIMIT TRIGGER)",
+    "rationale": "Transient exogenous shock hitting high-FCF moat business.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-08",
+      "ticker": "MSFT",
+      "date": "2024-08-05",
+      "horizon": 60,
+      "name": "Aug 5 Yen Carry Unwind Macro Market Sell-Off",
+      "thesis_type": "EVENT_SHOCK"
+    },
+    "spot": 395.1499938964844,
+    "high_52w": 468.3500061035156,
+    "dd_52w": -15.629339436979198,
+    "end_ret": 9.312923922298522,
+    "mfe_ret": 11.8183001210586,
+    "mae_ret": 0.5871206782370519,
+    "verdict": "ACTIONABLE BUY (or LIMIT TRIGGER)",
+    "rationale": "Transient exogenous shock hitting high-FCF moat business.",
+    "correct_call": false
+  },
+  {
+    "case": {
+      "id": "BT-09",
+      "ticker": "SMCI",
+      "date": "2024-08-28",
+      "horizon": 60,
+      "name": "Super Micro Hindenburg Short Report & 10-K Delay",
+      "thesis_type": "ACCOUNTING_TRAP"
+    },
+    "spot": 44.3489990234375,
+    "high_52w": 122.9000015258789,
+    "dd_52w": -63.914565929359256,
+    "end_ret": -33.031181273688645,
+    "mfe_ret": 14.11757136526408,
+    "mae_ret": -61.10396992075573,
+    "verdict": "PASS / REJECT",
+    "rationale": "Governance/accounting red flag, non-recurring distortion, or negative cash trajectory.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-10",
+      "ticker": "INTC",
+      "date": "2024-08-02",
+      "horizon": 60,
+      "name": "Intel Q2'24 Foundry Loss Disaster & Dividend Cut",
+      "thesis_type": "ACCOUNTING_TRAP"
+    },
+    "spot": 21.479999542236328,
+    "high_52w": 51.279998779296875,
+    "dd_52w": -58.11232438853258,
+    "end_ret": 6.703913243695059,
+    "mfe_ret": 14.804471009987296,
+    "mae_ret": -13.826812740449801,
+    "verdict": "PASS / REJECT",
+    "rationale": "Governance/accounting red flag, non-recurring distortion, or negative cash trajectory.",
+    "correct_call": false
+  },
+  {
+    "case": {
+      "id": "BT-11",
+      "ticker": "SNOW",
+      "date": "2024-02-29",
+      "horizon": 60,
+      "name": "Snowflake CEO Transition & Consumption Slump",
+      "thesis_type": "ACCOUNTING_TRAP"
+    },
+    "spot": 188.27999877929688,
+    "high_52w": 237.72000122070312,
+    "dd_52w": -20.797577901535238,
+    "end_ret": -17.059695838876,
+    "mfe_ret": 3.144252287724303,
+    "mae_ret": -23.348200414324594,
+    "verdict": "PASS / REJECT",
+    "rationale": "Governance/accounting red flag, non-recurring distortion, or negative cash trajectory.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-12",
+      "ticker": "TSLA",
+      "date": "2024-01-25",
+      "horizon": 60,
+      "name": "Tesla Q4'23 Auto Margin Deterioration",
+      "thesis_type": "ACCOUNTING_TRAP"
+    },
+    "spot": 182.6300048828125,
+    "high_52w": 265.1300048828125,
+    "dd_52w": -31.11681004813658,
+    "end_ret": -22.21978905223898,
+    "mfe_ret": 12.57734249935667,
+    "mae_ret": -23.99934329475538,
+    "verdict": "PASS / REJECT",
+    "rationale": "Governance/accounting red flag, non-recurring distortion, or negative cash trajectory.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-13",
+      "ticker": "NVDA",
+      "date": "2024-02-22",
+      "horizon": 60,
+      "name": "Nvidia Q4'24 Post-Earnings Continuation",
+      "thesis_type": "MOMENTUM_EXPANSION"
+    },
+    "spot": 78.53800201416016,
+    "high_52w": 78.57499694824219,
+    "dd_52w": -0.04708232328204865,
+    "end_ret": 17.75063524048115,
+    "mfe_ret": 24.016398466971435,
+    "mae_ret": -3.7332235750208387,
+    "verdict": "WATCH / LIMIT TRIGGER (Strict Ceiling)",
+    "rationale": "Rapid S-curve growth, but stretched multiple requires strict pull-back limit entry.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-14",
+      "ticker": "PLTR",
+      "date": "2024-05-07",
+      "horizon": 60,
+      "name": "Palantir Q1'24 AIP Commercial Acceleration",
+      "thesis_type": "MOMENTUM_EXPANSION"
+    },
+    "spot": 21.399999618530273,
+    "high_52w": 27.5,
+    "dd_52w": -22.181819568980824,
+    "end_ret": 15.607477626755584,
+    "mfe_ret": 39.39252549273991,
+    "mae_ret": -4.2056057690345146,
+    "verdict": "WATCH / LIMIT TRIGGER (Strict Ceiling)",
+    "rationale": "Rapid S-curve growth, but stretched multiple requires strict pull-back limit entry.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-15",
+      "ticker": "ARM",
+      "date": "2024-02-08",
+      "horizon": 60,
+      "name": "Arm Holdings Post-IPO Q3 Licensing Explosion",
+      "thesis_type": "MOMENTUM_EXPANSION"
+    },
+    "spot": 113.88999938964844,
+    "high_52w": 126.58499908447266,
+    "dd_52w": -10.028834211510794,
+    "end_ret": -6.067254429490232,
+    "mfe_ret": 43.998595907364724,
+    "mae_ret": -24.830976320004506,
+    "verdict": "WATCH / LIMIT TRIGGER (Strict Ceiling)",
+    "rationale": "Rapid S-curve growth, but stretched multiple requires strict pull-back limit entry.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-16",
+      "ticker": "AVGO",
+      "date": "2024-06-13",
+      "horizon": 60,
+      "name": "Broadcom Q2'24 Custom AI ASIC & Stock Split",
+      "thesis_type": "MOMENTUM_EXPANSION"
+    },
+    "spot": 167.8990020751953,
+    "high_52w": 173.5850067138672,
+    "dd_52w": -3.2756312001326995,
+    "end_ret": -11.726689925476864,
+    "mfe_ret": 10.281776707969858,
+    "mae_ret": -23.465894131729303,
+    "verdict": "WATCH / LIMIT TRIGGER (Strict Ceiling)",
+    "rationale": "Rapid S-curve growth, but stretched multiple requires strict pull-back limit entry.",
+    "correct_call": false
+  },
+  {
+    "case": {
+      "id": "BT-17",
+      "ticker": "AMD",
+      "date": "2024-08-06",
+      "horizon": 60,
+      "name": "AMD MI300 AI Revenue Guidance Raise",
+      "thesis_type": "PRODUCT_INFLECTION"
+    },
+    "spot": 130.17999267578125,
+    "high_52w": 227.3000030517578,
+    "dd_52w": -42.72767667049334,
+    "end_ret": 14.149650072273534,
+    "mfe_ret": 33.69950287617289,
+    "mae_ret": -1.3903807500601273,
+    "verdict": "WATCH / LIMIT TRIGGER",
+    "rationale": "Cyclical trough with positive product mix shift; required >2:1 asymmetry.",
+    "correct_call": true
+  },
+  {
+    "case": {
+      "id": "BT-18",
+      "ticker": "MU",
+      "date": "2024-06-27",
+      "horizon": 60,
+      "name": "Micron Post-Q3 HBM Sell-Off Trap",
+      "thesis_type": "PRODUCT_INFLECTION"
+    },
+    "spot": 132.22999572753906,
+    "high_52w": 157.5399932861328,
+    "dd_52w": -16.065760211519333,
+    "end_ret": -29.23693358681949,
+    "mfe_ret": 3.7056714161663784,
+    "mae_ret": -36.38356994285022,
+    "verdict": "WATCH / LIMIT TRIGGER",
+    "rationale": "Cyclical trough with positive product mix shift; required >2:1 asymmetry.",
+    "correct_call": false
+  },
+  {
+    "case": {
+      "id": "BT-19",
+      "ticker": "ORCL",
+      "date": "2024-06-12",
+      "horizon": 60,
+      "name": "Oracle OCI Multi-Cloud Database Partnerships",
+      "thesis_type": "PRODUCT_INFLECTION"
+    },
+    "spot": 140.3800048828125,
+    "high_52w": 140.9600067138672,
+    "dd_52w": -0.41146552456685487,
+    "end_ret": -0.3490564725176615,
+    "mfe_ret": 4.423700839918165,
+    "mae_ret": -10.421715610442849,
+    "verdict": "WATCH / LIMIT TRIGGER",
+    "rationale": "Cyclical trough with positive product mix shift; required >2:1 asymmetry.",
+    "correct_call": false
+  },
+  {
+    "case": {
+      "id": "BT-20",
+      "ticker": "DDOG",
+      "date": "2024-05-08",
+      "horizon": 60,
+      "name": "Datadog Cloud Optimization Trough",
+      "thesis_type": "PRODUCT_INFLECTION"
+    },
+    "spot": 117.27999877929688,
+    "high_52w": 138.61000061035156,
+    "dd_52w": -15.388501361467952,
+    "end_ret": -10.496246322238878,
+    "mfe_ret": 14.938612256835814,
+    "mae_ret": -15.757158867570931,
+    "verdict": "WATCH / LIMIT TRIGGER",
+    "rationale": "Cyclical trough with positive product mix shift; required >2:1 asymmetry.",
+    "correct_call": false
+  }
+]
