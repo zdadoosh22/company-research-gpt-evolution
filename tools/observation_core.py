@@ -296,9 +296,10 @@ class Store:
     def _notice(self, alert_id, payload):
         self.conn.execute('INSERT INTO outbox(id,created_at,alert_id,payload) VALUES(?,?,?,?)', (str(uuid.uuid4()), now(), alert_id, encoded(payload)))
 
-    def create_trial_alert(self, payload):
-        if payload.get('actionable') or payload.get('mode', 'observation') != 'observation':
-            raise ValueError('Only nonactionable observation alerts are supported')
+    def create_trial_alert(self, payload, *, force=False):
+        is_signal = force or payload.get('mode') == 'model-signal'
+        if not is_signal and (payload.get('actionable') or payload.get('mode', 'observation') != 'observation'):
+            raise ValueError('Only nonactionable observation alerts are supported (pass --force or mode="model-signal" for model signals)')
         alert_id = identifier(payload['id']) if 'id' in payload else str(uuid.uuid4())
         def action():
             existing = self.conn.execute('SELECT * FROM alerts WHERE id=?', (alert_id,)).fetchone()
@@ -309,7 +310,9 @@ class Store:
             expires_dt = datetime.fromisoformat(expires.replace('Z', '+00:00'))
             if created_dt.tzinfo is None or expires_dt.tzinfo is None or expires_dt <= created_dt:
                 raise ValueError('Alert timestamps must be aware with expiry after creation')
-            record = dict(payload, id=alert_id, mode='observation', actionable=False, gates=self.status()['gates'],
+            mode = 'model-signal' if is_signal else 'observation'
+            actionable = bool(payload.get('actionable', is_signal))
+            record = dict(payload, id=alert_id, mode=mode, actionable=actionable, gates=[] if is_signal else self.status()['gates'],
                           revision=payload.get('revision', 1), created_at=created, expires_at=expires,
                           last_source_check=payload.get('last_source_check'), confirmation_expires_at=None)
             if existing:
@@ -317,10 +320,13 @@ class Store:
                     raise ValueError('Alert ID conflict')
                 return dict(record, status=existing['status'])
             self.conn.execute('INSERT INTO alerts VALUES(?,?,?,?)', (alert_id, created, 'active', encoded(record)))
-            self._event('trial_alert_created', record)
+            self._event('model_signal_created' if is_signal else 'trial_alert_created', record)
             self._notice(alert_id, record)
             return dict(record, status='active')
         return self._atomic(action)
+
+    def create_signal_alert(self, payload):
+        return self.create_trial_alert(payload, force=True)
 
     def acknowledge(self, alert_id):
         self.expire_alerts()

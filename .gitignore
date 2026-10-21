@@ -36,3 +36,11 @@ cookies.json
 /validation/chat-handoff-2026-10-09-github-setup/*.zip
 /validation/chat-handoff-2026-10-09-github-setup/UPLOAD-VERIFICATION.json
 /validation/chat-handoff-2026-10-09-github-setup/CHAT-STARTER-MESSAGE.txt
+
+# Legacy checkpoint bloat & local bundles (ignored so agents never waste context)
+monitoring/research-engine/checkpoints/
+validation/**/CHECKPOINT-*.json
+validation/**/checkpoint-*.json
+company-research-2-bundle.txt
+*.mp4
+

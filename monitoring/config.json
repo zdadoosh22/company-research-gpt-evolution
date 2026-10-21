@@ -1,25 +1,25 @@
-﻿{
-  "mode": "observation-only",
+{
+  "mode": "model-portfolio",
   "timezone": "Europe/London",
   "check_times": [
     "09:00",
     "18:00"
   ],
   "service_interval_seconds": 30,
-  "research_enabled": true,
-  "model": "gpt-6.1-sol",
-  "quote_acquisition": "manual-only",
-  "notification_transport": "telegram-pending-setup",
-  "trial_minimum_days": 14,
+  "research_enabled": false,
+  "model": "claude-sonnet",
+  "quote_acquisition": "manual-or-web",
+  "notification_transport": "telegram",
+  "trial_minimum_days": 0,
   "mandate": {
-    "owner": "Aidan; isolated experimental sleeve within Trading 212 Stocks ISA",
-    "initial_contribution_gbp": "300",
-    "objective": "Aggressive shorter-term growth after all recorded costs",
-    "holding_horizon": "Days to a few months; no need for intraday trading",
-    "loss_tolerance": "User accepts possible total loss of the initial Ã‚Â£300; no additional money or borrowing authorised",
-    "exit_rule_research": "Compare explicit loss controls with thesis-based exits before choosing",
-    "subscription_incentive": "Possible future subscription upgrades or capital additions do not influence investment judgements; no automatic purchase or contribution",
-    "policy_status": "Mandate confirmed; numerical strategy and exit rules unvalidated"
+    "owner": "Aidan; isolated £300 Model Sleeve within Trading 212 Stocks ISA",
+    "initial_contribution_gbp": "300.00",
+    "objective": "Aggressive shorter-term growth (>8% net hurdle, >2:1 upside/downside) after all costs",
+    "holding_horizon": "Days to a few months; no intraday trading",
+    "loss_tolerance": "User accepts risk on isolated £300 sleeve; no additional money or borrowing authorised",
+    "exit_rule_research": "Every signal requires Max Entry Ceiling, Hard Stop-Loss, Thesis-Invalidation Exit, and Time-Exit Date",
+    "execution_boundary": "Model Portfolio Signal Generator via Telegram; Aidan manually reviews and executes all orders in Trading 212",
+    "policy_status": "Active — governed by AGENTS.md, CLAUDE.md, and monitoring/DECISION-SCOPE.md"
   },
   "watchlist": [
     {
@@ -45,7 +45,6 @@
       "ticker": "AMD",
       "cik": "0000002488",
       "expected_name": "ADVANCED MICRO DEVICES INC",
-      "role": "discovery-only; not selected investment",
       "research_context_paths": [
         "monitoring/studies/2026-10-09-amd-discovery-screen.json",
         "monitoring/studies/2026-10-09-amd-discovery-screen.md"
@@ -56,7 +55,6 @@
       "ticker": "UBER",
       "cik": "0001543151",
       "expected_name": "Uber Technologies, Inc",
-      "role": "discovery-only; not selected investment",
       "research_context_paths": [
         "monitoring/studies/2026-10-09-uber-discovery-screen.json",
         "monitoring/studies/2026-10-09-uber-discovery-screen.md"
@@ -67,7 +65,6 @@
       "ticker": "NFLX",
       "cik": "0001065280",
       "expected_name": "NETFLIX INC",
-      "role": "discovery-only; not selected investment",
       "research_context_paths": [
         "monitoring/studies/2026-10-09-netflix-discovery-screen.json",
         "monitoring/studies/2026-10-09-netflix-discovery-screen.md"
@@ -88,13 +85,23 @@
   ],
   "sec_user_agent": "CompanyResearch2 personal research monitoring",
   "portfolio_policy": {
-    "objectives": "Aggressive growth over days to a few months, after costs; no intraday requirement",
-    "investment_universe": null,
-    "acceptable_downside": "Potential total loss of isolated Ã‚Â£300 accepted; no borrowing, unrelated holdings or automatic contributions",
-    "position_limits": null,
-    "concentration_limits": null,
-    "return_discipline": null,
-    "selling_reasons": null
+    "objectives": "Aggressive growth over days to a few months, net of costs; no intraday requirement",
+    "total_sleeve_gbp": "300.00",
+    "max_position_gbp": "100.00",
+    "max_concurrent_positions": 3,
+    "tranche_exceptions_gbp": [
+      "150.00",
+      "75.00"
+    ],
+    "t212_fx_fee_one_way_pct": "0.15",
+    "t212_fx_fee_round_trip_pct": "0.30",
+    "minimum_net_return_hurdle_pct": "8.0",
+    "minimum_upside_downside_ratio": "2.0",
+    "mandatory_exit_controls": [
+      "max_entry_price_ceiling",
+      "hard_price_stop_loss",
+      "thesis_invalidation_trigger",
+      "time_exit_reassessment_date"
+    ]
   }
 }
-

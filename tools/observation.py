@@ -50,7 +50,8 @@ def engine_lock(state_root=STATE, wait_seconds=0):
 
 def read_config(root=ROOT):
     config=json.loads((root/'monitoring'/'config.json').read_text(encoding='utf-8-sig'))
-    if config.get('mode')!='observation-only': raise ValueError('This version only supports observation-only mode')
+    if config.get('mode') not in ('observation-only', 'model-portfolio'):
+        raise ValueError('Supported config modes: observation-only, model-portfolio')
     return config
 
 def write_json(path,value):
@@ -143,7 +144,10 @@ def bridge_notices(conn):
     init_transport(conn)
     for row in conn.execute("SELECT * FROM outbox WHERE status='pending'").fetchall():
         payload=json.loads(row['payload'])
-        text=('OBSERVATION ONLY — DO NOT TRADE\n'+json.dumps(payload,indent=2,ensure_ascii=False))[:3900]
+        is_signal=payload.get('actionable') or payload.get('mode')=='model-signal'
+        header='MODEL PORTFOLIO SIGNAL (£300 SLEEVE — MANUAL T212 EXECUTION)\n' if is_signal else 'OBSERVATION ONLY — DO NOT TRADE\n'
+        body=payload.get('formatted_text') if isinstance(payload.get('formatted_text'),str) else json.dumps(payload,indent=2,ensure_ascii=False)
+        text=(header+body)[:3900]
         if payload.get('status') in ('withdrawn','expired'):
             # Edit delivered original, then send separate historical withdrawal notice.
             original=conn.execute("SELECT t.message_id FROM outbox o JOIN transport_outbox t ON t.dedup_key='core:'||o.id WHERE o.alert_id=? AND t.message_id IS NOT NULL AND t.operation='send' ORDER BY o.created_at LIMIT 1",(row['alert_id'],)).fetchone()
@@ -331,7 +335,9 @@ def main():
     for name in ('init','status','daemon','backup'): sub.add_parser(name)
     t=sub.add_parser('tick'); t.add_argument('--force',action='store_true'); t.add_argument('--no-models',action='store_true'); t.add_argument('--offline',action='store_true')
     f=sub.add_parser('fund'); f.add_argument('--amount',default='300')
-    for name in ('quote','fx-quote','trial-alert'): sub.add_parser(name).add_argument('json_file')
+    for name in ('quote','fx-quote'): sub.add_parser(name).add_argument('json_file')
+    ta=sub.add_parser('trial-alert'); ta.add_argument('json_file'); ta.add_argument('--force',action='store_true'); ta.add_argument('--model-signal',action='store_true')
+    ss=sub.add_parser('send-signal'); ss.add_argument('--json',dest='json_file'); ss.add_argument('--text'); ss.add_argument('--id',dest='alert_id'); ss.add_argument('--ticker'); ss.add_argument('--verdict',default='ACTIONABLE_BUY_SIGNAL')
     sub.add_parser('ack').add_argument('alert_id')
     w=sub.add_parser('withdraw'); w.add_argument('alert_id'); w.add_argument('reason')
     o=sub.add_parser('order'); o.add_argument('alert_id'); o.add_argument('side',choices=['buy','sell']); o.add_argument('ticker'); o.add_argument('quantity'); o.add_argument('--reserve-gbp',default='0'); o.add_argument('--order-id',required=True)
@@ -375,10 +381,39 @@ def main():
         elif args.command in ('init','status'): result=render_status(store)
         elif args.command=='backup': result={'backup':str(backup(store.conn))}
         elif args.command=='fund': result=store.confirm_funding(args.amount)
-        elif args.command in ('quote','fx-quote','trial-alert'):
+        elif args.command in ('quote','fx-quote'):
             payload=json.loads(Path(args.json_file).read_text(encoding='utf-8-sig'))
-            handlers={'quote':store.quote,'fx-quote':store.fx_quote,'trial-alert':store.create_trial_alert}
+            handlers={'quote':store.quote,'fx-quote':store.fx_quote}
             result=handlers[args.command](payload)
+        elif args.command=='trial-alert':
+            payload=json.loads(Path(args.json_file).read_text(encoding='utf-8-sig'))
+            force_signal=bool(getattr(args,'force',False) or getattr(args,'model_signal',False))
+            result=store.create_trial_alert(payload,force=force_signal)
+            bridge_notices(store.conn)
+            secret=STATE/'telegram.dpapi'
+            if force_signal and secret.exists():
+                client=load_credentials(secret)
+                dispatch_outbox(store.conn,client,preflight=notification_preflight)
+        elif args.command=='send-signal':
+            if args.json_file:
+                payload=json.loads(Path(args.json_file).read_text(encoding='utf-8-sig'))
+            elif args.text:
+                payload={'formatted_text':args.text,'verdict':args.verdict}
+                if args.ticker: payload['ticker']=args.ticker
+            else:
+                raise ValueError('send-signal requires either --json <file> or --text "<message>"')
+            if args.alert_id: payload['id']=args.alert_id
+            payload['mode']='model-signal'
+            payload['actionable']=True
+            result=store.create_signal_alert(payload)
+            bridge_notices(store.conn)
+            secret=STATE/'telegram.dpapi'
+            if secret.exists():
+                client=load_credentials(secret)
+                sent=dispatch_outbox(store.conn,client,preflight=notification_preflight)
+                result['telegram_dispatch']=sent
+            else:
+                result['telegram_dispatch']='staged_in_outbox (run configure-telegram to enable live delivery)'
         elif args.command=='ack': result=store.acknowledge(args.alert_id)
         elif args.command=='withdraw': result=store.withdraw(args.alert_id,args.reason)
         elif args.command=='order': result=store.report_order(args.alert_id,args.side,args.ticker,args.quantity,args.reserve_gbp,order_id=args.order_id)
@@ -395,7 +430,7 @@ def main():
             set_state(store.conn,'reconciliation_required',''); set_state(store.conn,'last_reconciliation',utcnow())
             store._event('manual_reconciliation',{'note':args.note}); store.conn.commit()
             result={'recorded':True,'actionable':False}
-        if args.command in ('fund','quote','fx-quote','trial-alert','ack','withdraw','order','fill','cancel','cash-event','reconcile'):
+        if args.command in ('fund','quote','fx-quote','trial-alert','send-signal','ack','withdraw','order','fill','cancel','cash-event','reconcile'):
             backup(store.conn)
         if args.command not in ('status','init','tick'): render_status(store)
         print(json.dumps(result,indent=2,default=str))
