@@ -1,0 +1,72 @@
+[
+  {
+    "cycle": 1,
+    "desc": "Cycle 1: Baseline Tactical (Fixed Stops & Fixed Targets)",
+    "win_pct": 30.4,
+    "etf_win_pct": 30.09259259259259,
+    "avg_net": -0.4934334963617278
+  },
+  {
+    "cycle": 2,
+    "desc": "Cycle 2: + Hourly VWAP Momentum Cross Filter",
+    "win_pct": 30.4,
+    "etf_win_pct": 27.3542600896861,
+    "avg_net": -0.6002450507046223
+  },
+  {
+    "cycle": 3,
+    "desc": "Cycle 3: + Dynamic 1.5x ATR Volatility Stops",
+    "win_pct": 21.6,
+    "etf_win_pct": 26.00896860986547,
+    "avg_net": -0.16975253926892447
+  },
+  {
+    "cycle": 4,
+    "desc": "Cycle 4: + Rapid 2-Day Time-Exit (14 Hours Max Hold)",
+    "win_pct": 22.400000000000002,
+    "etf_win_pct": 31.363636363636367,
+    "avg_net": -0.21888053246326553
+  },
+  {
+    "cycle": 5,
+    "desc": "Cycle 5: + Tightened 1.25x ATR Stop (Fast Risk Rejection)",
+    "win_pct": 20.4,
+    "etf_win_pct": 24.229074889867842,
+    "avg_net": -0.4612946883063565
+  },
+  {
+    "cycle": 6,
+    "desc": "Cycle 6: + Leveraged 3x ETF Volatility Decay Optimization",
+    "win_pct": 20.599999999999998,
+    "etf_win_pct": 27.530364372469634,
+    "avg_net": -0.1792702448782638
+  },
+  {
+    "cycle": 7,
+    "desc": "Cycle 7: + Asymmetric 2.5R Runner Target Extension",
+    "win_pct": 19.8,
+    "etf_win_pct": 26.00896860986547,
+    "avg_net": -0.27105595863736226
+  },
+  {
+    "cycle": 8,
+    "desc": "Cycle 8: + Overnight Gap Protection Filter",
+    "win_pct": 15.8,
+    "etf_win_pct": 20.833333333333336,
+    "avg_net": -0.613613471901233
+  },
+  {
+    "cycle": 9,
+    "desc": "Cycle 9: + Pre-Market VWAP Expansion Filter",
+    "win_pct": 21.2,
+    "etf_win_pct": 26.153846153846157,
+    "avg_net": -0.15301599662754947
+  },
+  {
+    "cycle": 10,
+    "desc": "Cycle 10: Full Institutional Tactical Architecture Synthesized",
+    "win_pct": 22.400000000000002,
+    "etf_win_pct": 30.985915492957744,
+    "avg_net": -0.22569829031073305
+  }
+]

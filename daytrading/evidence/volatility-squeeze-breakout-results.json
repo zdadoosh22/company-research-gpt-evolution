@@ -1,0 +1,83 @@
+{
+  "total": 1000,
+  "wins": 413,
+  "win_pct": 41.3,
+  "avg_net": 1.0069834164500322,
+  "sample_trades": [
+    {
+      "ticker": "PLTR",
+      "realized_net": 4.6422051288496755,
+      "won": true
+    },
+    {
+      "ticker": "NVDL",
+      "realized_net": -7.3,
+      "won": false
+    },
+    {
+      "ticker": "AMD",
+      "realized_net": 3.5281408890221777,
+      "won": true
+    },
+    {
+      "ticker": "AMD",
+      "realized_net": -7.3,
+      "won": false
+    },
+    {
+      "ticker": "COIN",
+      "realized_net": -7.3,
+      "won": false
+    },
+    {
+      "ticker": "NVDA",
+      "realized_net": 1.6052572664903895,
+      "won": false
+    },
+    {
+      "ticker": "TQQQ",
+      "realized_net": 8.72113851619674,
+      "won": true
+    },
+    {
+      "ticker": "AMD",
+      "realized_net": -2.061260745661066,
+      "won": false
+    },
+    {
+      "ticker": "TSLA",
+      "realized_net": -3.204055269437209,
+      "won": false
+    },
+    {
+      "ticker": "NVDA",
+      "realized_net": -5.362381887951361,
+      "won": false
+    },
+    {
+      "ticker": "AMD",
+      "realized_net": -1.6466993648770476,
+      "won": false
+    },
+    {
+      "ticker": "TSLA",
+      "realized_net": 7.754870017809243,
+      "won": true
+    },
+    {
+      "ticker": "UPRO",
+      "realized_net": -1.4099317540163805,
+      "won": false
+    },
+    {
+      "ticker": "NVDA",
+      "realized_net": -1.1253877852977667,
+      "won": false
+    },
+    {
+      "ticker": "TSLA",
+      "realized_net": -3.204055269437209,
+      "won": false
+    }
+  ]
+}

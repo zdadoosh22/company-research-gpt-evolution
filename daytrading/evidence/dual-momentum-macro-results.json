@@ -1,0 +1,98 @@
+{
+  "total": 1000,
+  "wins": 387,
+  "win_pct": 38.7,
+  "avg_net": -0.6387123196597749,
+  "sample_trades": [
+    {
+      "ticker": "NVDL",
+      "regime": "BULL",
+      "realized_net": -6.3,
+      "won": false
+    },
+    {
+      "ticker": "SQQQ",
+      "regime": "BEAR",
+      "realized_net": -8.085575740803511,
+      "won": false
+    },
+    {
+      "ticker": "SQQQ",
+      "regime": "BEAR",
+      "realized_net": -6.980805938494168,
+      "won": false
+    },
+    {
+      "ticker": "TSLA",
+      "regime": "BULL",
+      "realized_net": -3.649332682291667,
+      "won": false
+    },
+    {
+      "ticker": "TSLA",
+      "regime": "BULL",
+      "realized_net": 1.4802068587231778,
+      "won": false
+    },
+    {
+      "ticker": "TQQQ",
+      "regime": "BULL",
+      "realized_net": 5.786952675793675,
+      "won": true
+    },
+    {
+      "ticker": "SOXL",
+      "regime": "BULL",
+      "realized_net": -6.3,
+      "won": false
+    },
+    {
+      "ticker": "TSLA",
+      "regime": "BULL",
+      "realized_net": 6.370878097601687,
+      "won": true
+    },
+    {
+      "ticker": "TSLA",
+      "regime": "BULL",
+      "realized_net": -4.380929220849287,
+      "won": false
+    },
+    {
+      "ticker": "SOXL",
+      "regime": "BULL",
+      "realized_net": -6.3,
+      "won": false
+    },
+    {
+      "ticker": "TSLA",
+      "regime": "BULL",
+      "realized_net": -6.3,
+      "won": false
+    },
+    {
+      "ticker": "SQQQ",
+      "regime": "BEAR",
+      "realized_net": 10.168692559489598,
+      "won": true
+    },
+    {
+      "ticker": "NVDL",
+      "regime": "BULL",
+      "realized_net": 3.45,
+      "won": true
+    },
+    {
+      "ticker": "TQQQ",
+      "regime": "BULL",
+      "realized_net": -8.481694317527031,
+      "won": false
+    },
+    {
+      "ticker": "NVDA",
+      "regime": "BULL",
+      "realized_net": 11.45,
+      "won": true
+    }
+  ]
+}
