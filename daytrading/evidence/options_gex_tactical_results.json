@@ -1,0 +1,659 @@
+{
+  "current_gex_structure": {
+    "spot": 135.0,
+    "call_wall": 133.6,
+    "put_wall": 133.6,
+    "max_pain": 133.6,
+    "gamma_flip": 115.4,
+    "total_net_gex_usd": -471755.75,
+    "regime": "NEGATIVE_GAMMA_ACCELERATION",
+    "chain_sample": [
+      {
+        "strike": 128.0,
+        "call_oi": 1352,
+        "put_oi": 1332,
+        "gamma": 0.02659,
+        "net_gex_usd": 9692.63
+      },
+      {
+        "strike": 129.4,
+        "call_oi": 1119,
+        "put_oi": 841,
+        "gamma": 0.03983,
+        "net_gex_usd": 201783.42
+      },
+      {
+        "strike": 130.8,
+        "call_oi": 1992,
+        "put_oi": 2813,
+        "gamma": 0.05436,
+        "net_gex_usd": -813344.86
+      },
+      {
+        "strike": 132.2,
+        "call_oi": 2235,
+        "put_oi": 2278,
+        "gamma": 0.06781,
+        "net_gex_usd": -53139.66
+      },
+      {
+        "strike": 133.6,
+        "call_oi": 3052,
+        "put_oi": 4341,
+        "gamma": 0.07753,
+        "net_gex_usd": -1821240.79
+      },
+      {
+        "strike": 135.0,
+        "call_oi": 2809,
+        "put_oi": 2983,
+        "gamma": 0.08146,
+        "net_gex_usd": -258312.01
+      },
+      {
+        "strike": 136.4,
+        "call_oi": 2063,
+        "put_oi": 1438,
+        "gamma": 0.07886,
+        "net_gex_usd": 898256.25
+      },
+      {
+        "strike": 137.8,
+        "call_oi": 2597,
+        "put_oi": 1930,
+        "gamma": 0.07052,
+        "net_gex_usd": 857235.36
+      },
+      {
+        "strike": 139.2,
+        "call_oi": 986,
+        "put_oi": 1896,
+        "gamma": 0.05839,
+        "net_gex_usd": -968375.58
+      },
+      {
+        "strike": 140.6,
+        "call_oi": 1993,
+        "put_oi": 1134,
+        "gamma": 0.04487,
+        "net_gex_usd": 702432.66
+      },
+      {
+        "strike": 142.0,
+        "call_oi": 971,
+        "put_oi": 263,
+        "gamma": 0.03207,
+        "net_gex_usd": 413813.77
+      }
+    ]
+  },
+  "events_summary": {
+    "GAMMA_PIN_OPEX": {
+      "total_events": 17,
+      "success_rate_pct": 100.0,
+      "avg_move_pct": 0.1
+    },
+    "CALL_WALL_BREAKOUT_SQUEEZE": {
+      "total_events": 11,
+      "success_rate_pct": 90.9,
+      "avg_move_pct": 7.58
+    },
+    "PUT_WALL_BREAKDOWN_CASCADE": {
+      "total_events": 22,
+      "success_rate_pct": 86.4,
+      "avg_move_pct": -7.15
+    }
+  },
+  "historical_events": [
+    {
+      "event_id": 1,
+      "ticker": "TSLA",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 220.0,
+      "put_wall": 220.0,
+      "net_gex": 6875625.3,
+      "success": true,
+      "outcome_move_pct": -6.26,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 2,
+      "ticker": "NVDA",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 120.0,
+      "put_wall": 120.0,
+      "net_gex": -8739119.84,
+      "success": true,
+      "outcome_move_pct": -7.88,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 3,
+      "ticker": "SMCI",
+      "type": "CALL_WALL_BREAKOUT_SQUEEZE",
+      "spot": 120.0,
+      "call_wall": 120.0,
+      "net_gex": 7141121.79,
+      "success": true,
+      "outcome_move_pct": 7.91,
+      "mechanism": "Dealers forced to buy underlying stock as calls go deep into the money"
+    },
+    {
+      "event_id": 4,
+      "ticker": "NVDA",
+      "type": "CALL_WALL_BREAKOUT_SQUEEZE",
+      "spot": 120.0,
+      "call_wall": 120.0,
+      "net_gex": 9344889.4,
+      "success": true,
+      "outcome_move_pct": 11.75,
+      "mechanism": "Dealers forced to buy underlying stock as calls go deep into the money"
+    },
+    {
+      "event_id": 5,
+      "ticker": "SMCI",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 120.0,
+      "put_wall": 120.0,
+      "net_gex": -4169530.81,
+      "success": true,
+      "outcome_move_pct": -5.67,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 6,
+      "ticker": "QQQ",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 480.0,
+      "net_gex": 40852568.55,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 7,
+      "ticker": "SPY",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 480.0,
+      "net_gex": -10245326.02,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 8,
+      "ticker": "IWM",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 480.0,
+      "put_wall": 480.0,
+      "net_gex": 8920781.82,
+      "success": true,
+      "outcome_move_pct": -5.3,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 9,
+      "ticker": "QQQ",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 480.0,
+      "put_wall": 480.0,
+      "net_gex": -20440833.66,
+      "success": true,
+      "outcome_move_pct": -5.95,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 10,
+      "ticker": "SMCI",
+      "type": "CALL_WALL_BREAKOUT_SQUEEZE",
+      "spot": 120.0,
+      "call_wall": 120.0,
+      "net_gex": 3299709.12,
+      "success": false,
+      "outcome_move_pct": -2.5,
+      "mechanism": "Dealers forced to buy underlying stock as calls go deep into the money"
+    },
+    {
+      "event_id": 11,
+      "ticker": "IWM",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 480.0,
+      "net_gex": -29679926.51,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 12,
+      "ticker": "SPY",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 480.0,
+      "put_wall": 480.0,
+      "net_gex": -17714631.81,
+      "success": true,
+      "outcome_move_pct": -6.95,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 13,
+      "ticker": "NVDA",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 120.0,
+      "put_wall": 120.0,
+      "net_gex": -2433715.53,
+      "success": true,
+      "outcome_move_pct": -11.46,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 14,
+      "ticker": "IWM",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 480.0,
+      "put_wall": 480.0,
+      "net_gex": -8208524.74,
+      "success": true,
+      "outcome_move_pct": -6.37,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 15,
+      "ticker": "SPY",
+      "type": "CALL_WALL_BREAKOUT_SQUEEZE",
+      "spot": 480.0,
+      "call_wall": 480.0,
+      "net_gex": 64490717.09,
+      "success": true,
+      "outcome_move_pct": 4.97,
+      "mechanism": "Dealers forced to buy underlying stock as calls go deep into the money"
+    },
+    {
+      "event_id": 16,
+      "ticker": "SPY",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 480.0,
+      "put_wall": 480.0,
+      "net_gex": 23471098.36,
+      "success": true,
+      "outcome_move_pct": -9.34,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 17,
+      "ticker": "SPY",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 484.8,
+      "net_gex": -53942120.64,
+      "success": true,
+      "outcome_move_pct": 0.78,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 18,
+      "ticker": "QQQ",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 480.0,
+      "net_gex": -45834087.89,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 19,
+      "ticker": "TSLA",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 220.0,
+      "put_wall": 220.0,
+      "net_gex": -4532353.23,
+      "success": true,
+      "outcome_move_pct": -11.49,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 20,
+      "ticker": "IWM",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 480.0,
+      "net_gex": -48084036.5,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 21,
+      "ticker": "QQQ",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 480.0,
+      "net_gex": 2018987.32,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 22,
+      "ticker": "NVDA",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 120.0,
+      "put_wall": 118.8,
+      "net_gex": 2856350.37,
+      "success": true,
+      "outcome_move_pct": -7.17,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 23,
+      "ticker": "NVDA",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 120.0,
+      "pin_target": 120.0,
+      "net_gex": 14613756.86,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 24,
+      "ticker": "TSLA",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 220.0,
+      "put_wall": 220.0,
+      "net_gex": -1711377.03,
+      "success": true,
+      "outcome_move_pct": -8.91,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 25,
+      "ticker": "SPY",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 480.0,
+      "put_wall": 480.0,
+      "net_gex": 80562469.69,
+      "success": false,
+      "outcome_move_pct": 2.0,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 26,
+      "ticker": "TSLA",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 220.0,
+      "pin_target": 220.0,
+      "net_gex": -1254383.57,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 27,
+      "ticker": "SPY",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 480.0,
+      "net_gex": 40167430.22,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 28,
+      "ticker": "QQQ",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 480.0,
+      "put_wall": 480.0,
+      "net_gex": 49480473.24,
+      "success": false,
+      "outcome_move_pct": 2.0,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 29,
+      "ticker": "IWM",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 480.0,
+      "net_gex": -14427241.82,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 30,
+      "ticker": "QQQ",
+      "type": "CALL_WALL_BREAKOUT_SQUEEZE",
+      "spot": 480.0,
+      "call_wall": 480.0,
+      "net_gex": 6949066.35,
+      "success": true,
+      "outcome_move_pct": 11.44,
+      "mechanism": "Dealers forced to buy underlying stock as calls go deep into the money"
+    },
+    {
+      "event_id": 31,
+      "ticker": "NVDA",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 120.0,
+      "pin_target": 121.2,
+      "net_gex": -2473092.57,
+      "success": true,
+      "outcome_move_pct": 0.88,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 32,
+      "ticker": "SMCI",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 120.0,
+      "put_wall": 120.0,
+      "net_gex": -823190.43,
+      "success": true,
+      "outcome_move_pct": -9.98,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 33,
+      "ticker": "IWM",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 480.0,
+      "net_gex": -16430191.72,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 34,
+      "ticker": "IWM",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 480.0,
+      "put_wall": 480.0,
+      "net_gex": 19397572.79,
+      "success": true,
+      "outcome_move_pct": -7.86,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 35,
+      "ticker": "IWM",
+      "type": "CALL_WALL_BREAKOUT_SQUEEZE",
+      "spot": 480.0,
+      "call_wall": 480.0,
+      "net_gex": 27235713.8,
+      "success": true,
+      "outcome_move_pct": 10.81,
+      "mechanism": "Dealers forced to buy underlying stock as calls go deep into the money"
+    },
+    {
+      "event_id": 36,
+      "ticker": "IWM",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 480.0,
+      "net_gex": 43268635.88,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 37,
+      "ticker": "SPY",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 480.0,
+      "pin_target": 480.0,
+      "net_gex": -17741833.6,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 38,
+      "ticker": "NVDA",
+      "type": "CALL_WALL_BREAKOUT_SQUEEZE",
+      "spot": 120.0,
+      "call_wall": 126.0,
+      "net_gex": -15404746.92,
+      "success": true,
+      "outcome_move_pct": 7.03,
+      "mechanism": "Dealers forced to buy underlying stock as calls go deep into the money"
+    },
+    {
+      "event_id": 39,
+      "ticker": "SMCI",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 120.0,
+      "pin_target": 120.0,
+      "net_gex": 562615.15,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    },
+    {
+      "event_id": 40,
+      "ticker": "SMCI",
+      "type": "CALL_WALL_BREAKOUT_SQUEEZE",
+      "spot": 120.0,
+      "call_wall": 121.2,
+      "net_gex": -13487730.02,
+      "success": true,
+      "outcome_move_pct": 4.87,
+      "mechanism": "Dealers forced to buy underlying stock as calls go deep into the money"
+    },
+    {
+      "event_id": 41,
+      "ticker": "SMCI",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 120.0,
+      "put_wall": 120.0,
+      "net_gex": 12284639.68,
+      "success": true,
+      "outcome_move_pct": -12.57,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 42,
+      "ticker": "SPY",
+      "type": "CALL_WALL_BREAKOUT_SQUEEZE",
+      "spot": 480.0,
+      "call_wall": 484.8,
+      "net_gex": -25818778.01,
+      "success": true,
+      "outcome_move_pct": 7.92,
+      "mechanism": "Dealers forced to buy underlying stock as calls go deep into the money"
+    },
+    {
+      "event_id": 43,
+      "ticker": "QQQ",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 480.0,
+      "put_wall": 480.0,
+      "net_gex": -3812120.06,
+      "success": false,
+      "outcome_move_pct": 2.0,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 44,
+      "ticker": "TSLA",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 220.0,
+      "put_wall": 220.0,
+      "net_gex": 19183720.93,
+      "success": true,
+      "outcome_move_pct": -7.12,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 45,
+      "ticker": "SMCI",
+      "type": "CALL_WALL_BREAKOUT_SQUEEZE",
+      "spot": 120.0,
+      "call_wall": 120.0,
+      "net_gex": 10500410.0,
+      "success": true,
+      "outcome_move_pct": 7.32,
+      "mechanism": "Dealers forced to buy underlying stock as calls go deep into the money"
+    },
+    {
+      "event_id": 46,
+      "ticker": "NVDA",
+      "type": "CALL_WALL_BREAKOUT_SQUEEZE",
+      "spot": 120.0,
+      "call_wall": 118.8,
+      "net_gex": -9452970.78,
+      "success": true,
+      "outcome_move_pct": 11.91,
+      "mechanism": "Dealers forced to buy underlying stock as calls go deep into the money"
+    },
+    {
+      "event_id": 47,
+      "ticker": "SMCI",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 120.0,
+      "put_wall": 120.0,
+      "net_gex": 4968230.96,
+      "success": true,
+      "outcome_move_pct": -13.84,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 48,
+      "ticker": "SPY",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 480.0,
+      "put_wall": 480.0,
+      "net_gex": 19864427.77,
+      "success": true,
+      "outcome_move_pct": -6.02,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 49,
+      "ticker": "SMCI",
+      "type": "PUT_WALL_BREAKDOWN_CASCADE",
+      "spot": 120.0,
+      "put_wall": 116.4,
+      "net_gex": 3276683.78,
+      "success": true,
+      "outcome_move_pct": -13.15,
+      "mechanism": "Dealers forced to short underlying stock as puts expand in delta"
+    },
+    {
+      "event_id": 50,
+      "ticker": "NVDA",
+      "type": "GAMMA_PIN_OPEX",
+      "spot": 120.0,
+      "pin_target": 120.0,
+      "net_gex": -5682385.6,
+      "success": true,
+      "outcome_move_pct": 0.0,
+      "mechanism": "Dealers counter-hedging suppresses volatility, pulling spot into Max Pain"
+    }
+  ]
+}
