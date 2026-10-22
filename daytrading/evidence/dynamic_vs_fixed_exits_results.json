@@ -1,0 +1,18 @@
+{
+  "fixed_percentage_system": {
+    "total_trades": 1500,
+    "win_rate_pct": 55.53,
+    "profit_factor": 1.005,
+    "net_expectancy_pct": 0.01,
+    "avg_win_pct": 3.518,
+    "avg_loss_pct": -4.371
+  },
+  "dynamic_volatility_gex_system": {
+    "total_trades": 1500,
+    "win_rate_pct": 52.8,
+    "profit_factor": 0.988,
+    "net_expectancy_pct": -0.022,
+    "avg_win_pct": 3.579,
+    "avg_loss_pct": -4.05
+  }
+}

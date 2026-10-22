@@ -133,22 +133,35 @@ Every single-stock tactical trade must pass the four forensic balance sheet filt
 
 ---
 
-## 8. Two-Stage Bracket Orders & Position Sizing Rigor
+## 8. Adaptive Bracket Orders, Volatility Scaling & Extended-Hours Rigor
 
 ### 8.1. Sizing Architecture in Trading 212 ISA
 * **Default Trade Allocation:** **£75.00 fixed commitment** (for £1,000 sleeve = 7.5% allocation).
 * **Aggressive Allocation:** **£100.00 fixed commitment** (for £1,000 sleeve = 10.0% allocation).
 * **Max Concurrent Positions:** Maximum **3 open trades simultaneously** (£225 to £300 deployed capital, leaving $\ge 70\%$ in dry powder).
-* **Maximum Dollar Risk Per Trade:** Capped at **£5.25 (at £75)** or **£7.00 (at £100)** via strict -7.0% stop.
+* **Maximum Dollar Risk Per Trade:** Capped at **£4.50 to £5.50 (at £75)** or **£6.00 to £7.50 (at £100)** via dynamic ATR stops.
 
-### 8.2. Two-Stage Profit Banking
-1. **Initial Stop:** -7.0% hard stop.
-2. **Stage 1 (Bank 50% Cash):** When price hits **+7.5% net**, immediately sell 50% of the position. Bank positive cash into the ISA.
-3. **Breakeven Ratchet:** Simultaneously move the stop loss on the remaining 50% shares to **Breakeven (+0.30% to cover round-trip FX)**. The trade is now mathematically riskless.
-4. **Stage 2 (Runner Target):** Let the remaining 50% run toward **+17.0% net**.
-5. **Blended Realized Gain:** **+11.70% Net Return** on full target hits.
+### 8.2. Dynamic Volatility-Normalized Exits (Replacing Rigid Fixed Percentages)
+Instead of arbitrary static +7.5% / +17.0% targets, the engine dynamically calculates targets and stops based on 14-day ATR, ticker beta, and Options GEX structure:
+* **High-Beta 3x Leveraged ETFs (`SOXL`, `TQQQ`):** Target 1 = $+12.0\%$ to $+16.5\%$, Target 2 = $+24.0\%$ to $+35.0\%$, Dynamic Stop = $-8.0\%$ to $-8.5\%$.
+* **High-Beta Momentum Tech (`NVDA`, `PLTR`, `APP`):** Target 1 = $+7.0\%$ to $+9.0\%$, Target 2 = $+15.0\%$ to $+20.0\%$, Dynamic Stop = $-6.0\%$ to $-6.5\%$.
+* **UK London Moats (`RR.L`, `RIO.L`):** Target 1 = $+3.5\%$ to $+4.5\%$, Target 2 = $+8.5\%$ to $+10.5\%$, Dynamic Stop = $-3.8\%$ to $-4.2\%$.
+* **Options GEX Call Wall Snapping:** If a dominant Call Wall is located within 1.0% of Stage 1, the target automatically snaps to **$0.50 below the Call Wall strike** to exit immediately before institutional dealer overhead supply.
 
-### 8.3. The Zero-FX UK London ISA Edge
+### 8.3. Adaptive Holding Horizons (Desire Window vs. Hard Limits)
+The holding horizon is an adaptive objective rather than a blind blocker:
+1. **Intraday Flash Scalp (1 to 4 Hours):** If Target 1 is achieved within the first trading session with volume exhaustion, bank 60%–70% cash immediately and trail remainder with 15-minute VWAP.
+2. **Standard Tactical Swing (2 to 5 Trading Days):** Default expected trajectory for Squeeze and ORB continuations.
+3. **Extended Trend-Following Continuation (5 to 10 Days):**
+   * *Strictly Prohibited:* On 3x Inverse ETFs (`SQQQ`, `SOXS`) due to the $6.0\sigma^2$ decay equation.
+   * *Permitted:* On High-Moat Equities (`NVDA`, `PLTR`, `APP`, `RR.L`) and Bull ETFs IF price remains above its 10-day EMA, Dealer GEX remains positive, and Stage 1 profit is already banked with stop ratcheted to Breakeven (+0.30% FX coverage).
+
+### 8.4. Extended-Hours & Overnight Gap Management in Trading 212
+Trading 212 supports extended-hours trading on major US equities (pre-market from 04:00 ET / 09:00 UK time, after-hours to 20:00 ET / 01:00 UK):
+* **Overnight Catalyst Fences:** When holding through an overnight binary catalyst (FOMC, CPI, mega-cap earnings peer), risk score rises $>70/100$, triggering guidance to bank 75% before market close (21:00 UK).
+* **Pre-Market Early Cut Protocol:** If a stock gaps down in pre-market by $>5.0\%$, an extended-hours sell order can be executed at 09:00 UK on Trading 212, cutting the position before regular market open panic dumping occurs and saving 1.5% to 3.0% in gap slippage.
+
+### 8.5. The Zero-FX UK London ISA Edge
 * Trading US equities (`NVDA`, `PLTR`, `TQQQ`) incurs a **0.30% round-trip foreign exchange fee** in GBP accounts.
 * Trading London-listed equities (`RR.L`, `RIO.L`, `AZN.L`, `SHEL.L`) incurs **0.00% FX fee**.
 * Over 150 trades per year, prioritizing UK setups saves **+45.0% of a trade unit** in pure friction, elevating net expectancy by +0.30% per trade.

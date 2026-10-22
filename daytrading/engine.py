@@ -29,6 +29,7 @@ try:
     from options_gex_tactical_engine import OptionsGEXTacticalEngine
     from leveraged_etf_decay_engine import LeveragedETFDecayEngine
     from dual_factor_tactical_fused import FUNDAMENTAL_PROFILES
+    from adaptive_execution_engine import AdaptiveExecutionEngine
 except ImportError:
     pass
 
@@ -140,41 +141,46 @@ def cmd_scan(args):
 
 
 def cmd_bracket(args):
-    """Calculates exact two-stage take-profit and stop orders."""
+    """Calculates adaptive dynamic bracket orders, volatility-normalized targets, and extended-hours gap risk."""
     spot = float(args.price)
     budget = float(args.budget)
     fx_rate = float(args.fx)
-    is_uk = args.ticker.endswith(".L") if args.ticker else False
+    ticker = args.ticker.upper() if args.ticker else "EQUITY"
 
-    # Bracket Order Rules:
-    # Stop Loss: -7.0%
-    # Stage 1: +7.5% net (Bank 50% cash, immediately raise stop on remaining 50% to Breakeven)
-    # Stage 2: +17.0% net (Close remaining 50%)
-    stop_pct = -7.0
-    t1_pct = 7.5
-    t2_pct = 17.0
+    adaptive_engine = AdaptiveExecutionEngine()
+    bracket = adaptive_engine.calculate_dynamic_bracket(ticker, spot=spot, budget=budget, fx_rate=fx_rate)
+    gap_risk = adaptive_engine.evaluate_extended_hours_gap_risk(
+        ticker, spot=spot, pre_market_price=args.pre_market, overnight_catalyst=args.catalyst
+    )
 
-    stop_price = round(spot * (1.0 + stop_pct / 100.0), 2)
-    t1_price = round(spot * (1.0 + t1_pct / 100.0), 2)
-    t2_price = round(spot * (1.0 + t2_pct / 100.0), 2)
-    breakeven_price = round(spot * (1.0 + (0.0 if is_uk else 0.003)), 2)
+    sym = "£" if bracket["is_uk"] else "$"
 
-    shares = round(budget / (spot * (1.0 if is_uk else fx_rate)), 4)
-    sym = "£" if is_uk else "$"
-
-    print("\n" + "=" * 65)
-    print("           TACTICAL TWO-STAGE BRACKET EXECUTION PLAN")
-    print("=" * 65)
+    print("\n" + "=" * 70)
+    print(f"       TACTICAL ADAPTIVE BRACKET & HORIZON EXECUTION PLAN")
+    print("=" * 70)
     if args.ticker:
-        print(f"Ticker Asset       : {args.ticker.upper()} {'(Zero-FX UK ISA Edge)' if is_uk else '(USD Pair)'}")
-    print(f"Commitment Sizing  : £{budget:.2f} GBP (~{shares} units @ {sym}{spot:.2f})")
-    print(f"Hard Stop-Loss     : {sym}{stop_price:.2f} ({stop_pct:+.1f}% | Risk capped at £{(budget * 0.07):.2f})")
-    print(f"Stage 1 Take-Profit: {sym}{t1_price:.2f} ({t1_pct:+.1f}% | Bank 50% = +£{(budget * 0.5 * 0.075):.2f})")
-    print(f"Breakeven Ratchet  : Upon Stage 1 hit, raise stop on remaining shares to {sym}{breakeven_price:.2f}")
-    print(f"Stage 2 Take-Profit: {sym}{t2_price:.2f} ({t2_pct:+.1f}% | Bank 50% = +£{(budget * 0.5 * 0.17):.2f})")
-    print(f"Blended Net Return : +11.70% on full target hit (+£{(budget * 0.117):.2f} Net Profit)")
-    print(f"Hard Time-Exit     : 5 Trading Days Maximum (Mandatory Close on Day 5)")
-    print("=" * 65 + "\n")
+        fx_desc = "Zero-FX UK ISA Edge (0.00% FX)" if bracket["is_uk"] else "USD Pair (0.30% Round-Trip FX)"
+        print(f"Ticker Asset       : {ticker} [{fx_desc}]")
+    print(f"Spot Entry Price   : {sym}{spot:.2f} | 14D ATR: {bracket['atr_14_pct']:.2f}% | Vol: {bracket['daily_vol_pct']:.2f}%")
+    print(f"Commitment Sizing  : £{budget:.2f} GBP (~{bracket['shares']} units @ {sym}{spot:.2f})")
+    print("-" * 70)
+    print(f"Dynamic Hard Stop  : {sym}{bracket['stop_loss_price']:.2f} ({bracket['stop_loss_pct']:+.1f}% | Risk: £{(budget * abs(bracket['stop_loss_pct'])/100):.2f})")
+    if bracket['put_wall_note'] != "None":
+        print(f"  └─ Anchor Note   : {bracket['put_wall_note']}")
+    print(f"Stage 1 Target(50%): {sym}{bracket['stage_1_take_profit']:.2f} (+{bracket['stage_1_pct']:.1f}% | Bank 50% = +£{(budget * 0.5 * bracket['stage_1_pct']/100):.2f})")
+    if bracket['call_wall_note'] != "None":
+        print(f"  └─ Snapping Note : {bracket['call_wall_note']}")
+    print(f"Breakeven Ratchet  : Upon Stage 1 hit, raise stop on remaining 50% to {sym}{bracket['breakeven_ratchet']:.2f}")
+    print(f"Stage 2 Target(50%): {sym}{bracket['stage_2_take_profit']:.2f} (+{bracket['stage_2_pct']:.1f}% | Bank 50% = +£{(budget * 0.5 * bracket['stage_2_pct']/100):.2f})")
+    print("-" * 70)
+    print(f"Adaptive Horizon   : {bracket['horizon_plan']['recommended_horizon']} (Desire Window)")
+    print(f"Horizon Soft Limit : {bracket['horizon_plan']['hard_limit']}")
+    print(f"Can Extend Past 5D?: {'YES (Allow runner to compound if above 10 EMA)' if bracket['horizon_plan']['can_extend_past_5d'] else 'NO (Compounding decay limit on 3x products)'}")
+    print(f"Horizon Rationale  : {bracket['horizon_plan']['rationale']}")
+    print("-" * 70)
+    print(f"Overnight Gap Risk : {gap_risk['gap_risk_score']}/100 [{gap_risk['protocol']}]")
+    print(f"Extended-Hours T212: {gap_risk['action_guidance']}")
+    print("=" * 70 + "\n")
 
 
 def cmd_gex(args):
@@ -262,11 +268,13 @@ def main():
     sub.add_parser('scan', help="Scan active Squeeze, ORB, and VWAP setups across 200-ticker universe")
 
     # bracket
-    b = sub.add_parser('bracket', help="Calculate exact two-stage bracket orders")
+    b = sub.add_parser('bracket', help="Calculate adaptive dynamic bracket orders and horizon plan")
     b.add_argument('--price', type=float, required=True, help="Current spot entry price")
-    b.add_argument('--ticker', type=str, default="", help="Ticker symbol (optional, detects UK .L zero-FX)")
+    b.add_argument('--ticker', type=str, default="", help="Ticker symbol (e.g. NVDA, SOXL, RR.L)")
     b.add_argument('--budget', type=float, default=75.0, help="GBP commitment (default £75)")
     b.add_argument('--fx', type=float, default=0.7465, help="GBP per 1 USD (default 0.7465)")
+    b.add_argument('--pre-market', type=float, default=None, help="Pre-market quote price (if active)")
+    b.add_argument('--catalyst', action='store_true', help="Flag if overnight binary catalyst is active (FOMC/Earnings)")
 
     # gex
     g = sub.add_parser('gex', help="Calculate live options dealer gamma structure and walls")
