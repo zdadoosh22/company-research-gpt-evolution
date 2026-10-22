@@ -149,7 +149,13 @@ def cmd_scan(args):
 def cmd_bracket(args):
     """Calculates adaptive dynamic bracket orders, volatility-normalized targets, and extended-hours gap risk."""
     spot = float(args.price)
-    budget = float(args.budget)
+    if args.budget is not None:
+        budget = float(args.budget)
+    else:
+        # Full Growth Deployment: divide sleeve equity equally across active slots
+        portfolio = float(args.portfolio)
+        slots = max(1, int(args.slots))
+        budget = round(portfolio / slots, 2)
     fx_rate = float(args.fx)
     ticker = args.ticker.upper() if args.ticker else "EQUITY"
 
@@ -278,7 +284,9 @@ def main():
     b = sub.add_parser('bracket', help="Calculate adaptive dynamic bracket orders and horizon plan")
     b.add_argument('--price', type=float, required=True, help="Current spot entry price")
     b.add_argument('--ticker', type=str, default="", help="Ticker symbol (e.g. NVDA, SOXL, RR.L)")
-    b.add_argument('--budget', type=float, default=150.0, help="GBP commitment (default £150 / 15% sizing)")
+    b.add_argument('--budget', type=float, default=None, help="GBP commitment (default derived from slots or £250)")
+    b.add_argument('--portfolio', type=float, default=1000.0, help="Total tactical sleeve equity (default £1000)")
+    b.add_argument('--slots', type=int, default=3, help="Max concurrent trade slots for growth deployment (default 3 slots = 33.3%% per trade)")
     b.add_argument('--fx', type=float, default=0.7465, help="GBP per 1 USD (default 0.7465)")
     b.add_argument('--pre-market', type=float, default=None, help="Pre-market quote price (if active)")
     b.add_argument('--catalyst', action='store_true', help="Flag if overnight binary catalyst is active (FOMC/Earnings)")
