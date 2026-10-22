@@ -23,10 +23,119 @@ from options_gex_tactical_engine import OptionsGEXTacticalEngine
 from dual_factor_tactical_fused import FUNDAMENTAL_PROFILES
 
 
+def get_ticker_sector(ticker: str) -> str:
+    """Classifies ticker into GICS-derived tactical momentum sectors."""
+    t = ticker.upper()
+    if t.endswith(".L"):
+        return "UK_ZERO_FX_ISA"
+    prof = get_profile(t)
+    t_type = prof.get("type", "")
+    if "3x" in t_type or "2x" in t_type or t in UNIVERSE_200.get("bull_etf", []) or t in UNIVERSE_200.get("bear_etf", []):
+        return "LEVERAGED_ETF"
+    for sec_key, t_list in UNIVERSE_200.items():
+        if t in t_list:
+            if sec_key == "semis":
+                return "SEMICONDUCTORS"
+            elif sec_key == "cloud_cyber":
+                return "CLOUD_CYBER_SAAS"
+            elif sec_key == "fintech_crypto":
+                return "FINTECH_CRYPTO"
+            elif sec_key == "megacap":
+                return "MEGACAP_TITANS"
+            elif sec_key == "biotech_health":
+                return "HEALTH_BIOTECH"
+            elif sec_key == "industrials_defense":
+                return "INDUSTRIALS_ENERGY"
+            elif sec_key == "consumer_retail":
+                return "CONSUMER_RETAIL"
+            elif sec_key == "uk_london":
+                return "UK_ZERO_FX_ISA"
+    return "MOMENTUM_GROWTH"
+
+
 class AdaptiveExecutionEngine:
     def __init__(self, fx_fee_pct=0.0015):
         self.fx_fee_pct = fx_fee_pct
         self.gex_engine = OptionsGEXTacticalEngine()
+
+    def validate_portfolio_correlation(
+        self,
+        active_tickers: list[str],
+        candidate_ticker: str,
+        max_slots: int = 4
+    ) -> dict:
+        """
+        Phase 1 Sector Correlation Ceiling & Cross-Asset Concentration Gates:
+        1. 3x Leveraged ETF Concentration Gate: Max 1 active slot in 3x/2x leveraged ETFs.
+        2. Single-Sector Concentration Gate: Max 2 active slots in any single sector.
+        3. UK Zero-FX ISA Minimum Anchor: When 3 or 4 slots are active, at least 1 slot must be in UK Zero-FX ISA.
+        """
+        candidate_ticker = candidate_ticker.upper()
+        clean_actives = [t.upper().strip() for t in active_tickers if t and t.strip()]
+
+        cand_sector = get_ticker_sector(candidate_ticker)
+        cand_prof = get_profile(candidate_ticker)
+        cand_is_3x = cand_sector == "LEVERAGED_ETF" or "3x" in cand_prof.get("type", "") or "2x" in cand_prof.get("type", "")
+        cand_is_uk = cand_sector == "UK_ZERO_FX_ISA"
+
+        active_sectors = [get_ticker_sector(t) for t in clean_actives]
+        active_3x_count = sum(
+            1 for t in clean_actives
+            if get_ticker_sector(t) == "LEVERAGED_ETF" or "3x" in get_profile(t).get("type", "") or "2x" in get_profile(t).get("type", "")
+        )
+        active_uk_count = sum(1 for t in clean_actives if get_ticker_sector(t) == "UK_ZERO_FX_ISA")
+
+        is_allowed = True
+        violation_reason = None
+        status = "PASSED_CORRELATION_GATES"
+
+        # Gate 1: 3x Leveraged ETF Cap (Max 1 Slot)
+        if cand_is_3x and active_3x_count >= 1:
+            is_allowed = False
+            violation_reason = (
+                f"3X_LEVERAGED_ETF_CAP_EXCEEDED: Maximum 1 leveraged ETF slot allowed. "
+                f"Active 3x slots: {active_3x_count}. Candidate {candidate_ticker} rejected."
+            )
+            status = "BLOCKED_BY_LEVERAGED_ETF_GATE"
+
+        # Gate 2: Single-Sector Concentration Cap (Max 2 Slots)
+        same_sector_count = sum(1 for s in active_sectors if s == cand_sector)
+        if is_allowed and cand_sector != "UK_ZERO_FX_ISA" and same_sector_count >= 2:
+            is_allowed = False
+            violation_reason = (
+                f"SINGLE_SECTOR_CEILING_EXCEEDED: Sector '{cand_sector}' already has {same_sector_count} active slots (Max 2 allowed). "
+                f"Candidate {candidate_ticker} rejected to prevent correlated sector liquidation."
+            )
+            status = "BLOCKED_BY_SECTOR_CONCENTRATION_GATE"
+
+        # Gate 3: UK Zero-FX ISA Minimum Anchor (Require >=1 UK slot when 3 or 4 slots active)
+        future_slot_count = len(clean_actives) + 1
+        future_uk_count = active_uk_count + (1 if cand_is_uk else 0)
+        uk_anchor_satisfied = True
+        uk_note = "UK Zero-FX Anchor Satisfied"
+
+        if future_slot_count >= 3 and future_uk_count < 1:
+            uk_anchor_satisfied = False
+            uk_note = (
+                f"WARNING: UK ZERO-FX ANCHOR DEFICIT: Portfolio will have {future_slot_count} active slots with 0 UK allocations. "
+                f"Guidance: Strongly prioritize a UK Zero-FX ISA Leader (RR.L, RIO.L, AZN.L) to avoid 100% USD FX drag and cross-market correlation."
+            )
+
+        return {
+            "candidate_ticker": candidate_ticker,
+            "candidate_sector": cand_sector,
+            "is_allowed": is_allowed,
+            "status": status,
+            "violation_reason": violation_reason,
+            "active_slots_count": len(clean_actives),
+            "max_slots": max_slots,
+            "active_3x_etfs_count": active_3x_count,
+            "cand_is_3x": cand_is_3x,
+            "active_sector_count": same_sector_count,
+            "uk_anchor_satisfied": uk_anchor_satisfied,
+            "uk_anchor_note": uk_note,
+            "active_sectors": active_sectors
+        }
 
     def calculate_dynamic_bracket(self, ticker, spot, budget=150.0, fx_rate=0.7465, gex_data=None):
         """

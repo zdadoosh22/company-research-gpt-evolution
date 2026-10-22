@@ -35,7 +35,7 @@ try:
     from options_gex_tactical_engine import OptionsGEXTacticalEngine
     from leveraged_etf_decay_engine import LeveragedETFDecayEngine
     from dual_factor_tactical_fused import FUNDAMENTAL_PROFILES
-    from adaptive_execution_engine import AdaptiveExecutionEngine
+    from adaptive_execution_engine import AdaptiveExecutionEngine, get_ticker_sector
 except ImportError:
     pass
 
@@ -80,11 +80,11 @@ def cmd_scan(args):
 
     opener, _ = _yahoo_opener()
 
-    print("\n" + "=" * 90)
-    print("           MASTER QUANTITATIVE TACTICAL SQUEEZE & ORB SCANNER")
-    print("=" * 90)
-    print(f"{'Ticker':<7} | {'Spot':<9} | {'5D Range':<9} | {'Vol Surge':<10} | {'Forensic Gate':<14} | {'Tactical Signal'}")
-    print("-" * 90)
+    print("\n" + "=" * 105)
+    print("                 MASTER QUANTITATIVE TACTICAL SQUEEZE & ORB SCANNER")
+    print("=" * 105)
+    print(f"{'Ticker':<7} | {'Sector / Cluster':<18} | {'Spot':<9} | {'5D Range':<9} | {'Vol Surge':<10} | {'Forensic Gate':<14} | {'Tactical Signal'}")
+    print("-" * 105)
 
     for t in scan_universe:
         url = f"https://query1.finance.yahoo.com/v8/finance/chart/{t}?range=1mo&interval=1d"
@@ -139,13 +139,15 @@ def cmd_scan(args):
                 signal = "Normal Range"
 
             curr_sym = "£" if t.endswith(".L") else "$"
-            print(f"{t:<7} | {curr_sym}{spot:>7.2f} | {range_5d_pct:>6.1f}%  | {vol_surge:>7.2f}x   | {f_gate:<14} | {signal}")
+            sec_name = get_ticker_sector(t)
+            print(f"{t:<7} | {sec_name:<18} | {curr_sym}{spot:>7.2f} | {range_5d_pct:>6.1f}%  | {vol_surge:>7.2f}x   | {f_gate:<14} | {signal}")
         except Exception:
             # Fallback display for rate limit or offline
-            print(f"{t:<7} | {'--':>8} | {'--':>8} | {'--':>9} | {'--':<14} | Scan Feed Pending")
+            sec_name = get_ticker_sector(t)
+            print(f"{t:<7} | {sec_name:<18} | {'--':>8} | {'--':>8} | {'--':>9} | {'--':<14} | Scan Feed Pending")
             continue
 
-    print("=" * 90 + "\n")
+    print("=" * 105 + "\n")
 
 
 def cmd_bracket(args):
@@ -167,22 +169,31 @@ def cmd_bracket(args):
         ticker, spot=spot, pre_market_price=args.pre_market, overnight_catalyst=args.catalyst
     )
 
+    active_tickers = [t.strip().upper() for t in args.active_slots.split(",") if t.strip()] if getattr(args, 'active_slots', None) else []
+    corr_audit = adaptive_engine.validate_portfolio_correlation(active_tickers, ticker, max_slots=slots)
+
     sym = "£" if bracket["is_uk"] else "$"
     risk_gbp = budget * abs(bracket["stop_loss_pct"]) / 100.0
     portfolio_risk_pct = (risk_gbp / max(1.0, portfolio)) * 100.0
     blended_target_pct = (bracket["stage_1_pct"] * 0.5) + (bracket["stage_2_pct"] * 0.5)
     rr_ratio = blended_target_pct / max(0.1, abs(bracket["stop_loss_pct"]))
 
-    print("\n" + "=" * 72)
+    print("\n" + "=" * 74)
     print(f"       TACTICAL ADAPTIVE BRACKET & GROWTH SLOT EXECUTION PLAN")
-    print("=" * 72)
+    print("=" * 74)
     if args.ticker:
         fx_desc = "Zero-FX UK ISA Edge (0.00% FX)" if bracket["is_uk"] else "USD Pair (0.30% Round-Trip FX)"
         print(f"Ticker Asset       : {ticker} [{fx_desc}]")
+    print(f"Sector / Cluster   : {corr_audit['candidate_sector']} (Active in sector: {corr_audit['active_sector_count']}/2 | 3x ETFs: {corr_audit['active_3x_etfs_count']}/1)")
+    print(f"Correlation Gate   : {corr_audit['status']}")
+    if not corr_audit["is_allowed"]:
+        print(f"  |-- [!] CONCENTRATION BLOCKED : {corr_audit['violation_reason']}")
+    if not corr_audit["uk_anchor_satisfied"]:
+        print(f"  |-- [!] UK ANCHOR DEFICIT     : {corr_audit['uk_anchor_note']}")
     print(f"Spot Entry Price   : {sym}{spot:.2f} | 14D ATR: {bracket['atr_14_pct']:.2f}% | Vol: {bracket['daily_vol_pct']:.2f}%")
     print(f"Growth Sleeve Pool : £{portfolio:.2f} | Active Slot Sizing: £{budget:.2f} ({budget/portfolio*100:.1f}% / {slots} Slots)")
     print(f"Position Units     : ~{bracket['shares']} units @ {sym}{spot:.2f} | Blended R:R = 1:{rr_ratio:.2f}")
-    print("-" * 72)
+    print("-" * 74)
     print(f"Dynamic Hard Stop  : {sym}{bracket['stop_loss_price']:.2f} ({bracket['stop_loss_pct']:+.1f}% | Risk: £{risk_gbp:.2f} = {portfolio_risk_pct:.2f}% of Sleeve)")
     if bracket['put_wall_note'] != "None":
         print(f"  |-- Anchor Note   : {bracket['put_wall_note']}")
@@ -298,6 +309,7 @@ def main():
     b.add_argument('--fx', type=float, default=0.7465, help="GBP per 1 USD (default 0.7465)")
     b.add_argument('--pre-market', type=float, default=None, help="Pre-market quote price (if active)")
     b.add_argument('--catalyst', action='store_true', help="Flag if overnight binary catalyst is active (FOMC/Earnings)")
+    b.add_argument('--active-slots', type=str, default="", help="Comma-separated active tickers (e.g. 'TQQQ,NVDA') to verify correlation limits")
 
     # gex
     g = sub.add_parser('gex', help="Calculate live options dealer gamma structure and walls")
