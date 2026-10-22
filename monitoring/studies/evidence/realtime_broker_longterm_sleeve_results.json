@@ -1,0 +1,93 @@
+{
+  "engine": "Long-Term Research Engine (tools/ - \u00a3300 Model Sleeve)",
+  "initial_capital_gbp": 300.0,
+  "ending_equity_gbp": 374.66,
+  "net_profit_gbp": 74.66,
+  "net_annual_return_pct": 24.89,
+  "total_trades_executed": 8,
+  "win_rate_pct": 100.0,
+  "profit_factor": 6689.198,
+  "max_drawdown_gbp": 10.9,
+  "max_drawdown_pct": 3.39,
+  "total_broker_frictions_paid_gbp": 1.86,
+  "open_positions_at_end": 3,
+  "portfolio_history_sample": [
+    {
+      "day": 1,
+      "cash_gbp": 300.0,
+      "open_positions": 0,
+      "total_equity_gbp": 300.0,
+      "drawdown_pct": 0.0
+    },
+    {
+      "day": 26,
+      "cash_gbp": 150.0,
+      "open_positions": 2,
+      "total_equity_gbp": 304.11,
+      "drawdown_pct": 0.41
+    },
+    {
+      "day": 51,
+      "cash_gbp": 164.23,
+      "open_positions": 2,
+      "total_equity_gbp": 320.46,
+      "drawdown_pct": 0.42
+    },
+    {
+      "day": 76,
+      "cash_gbp": 89.23,
+      "open_positions": 3,
+      "total_equity_gbp": 313.24,
+      "drawdown_pct": 2.66
+    },
+    {
+      "day": 101,
+      "cash_gbp": 174.24,
+      "open_positions": 2,
+      "total_equity_gbp": 328.33,
+      "drawdown_pct": 0.91
+    },
+    {
+      "day": 126,
+      "cash_gbp": 254.62,
+      "open_positions": 1,
+      "total_equity_gbp": 338.01,
+      "drawdown_pct": 0.0
+    },
+    {
+      "day": 151,
+      "cash_gbp": 118.85,
+      "open_positions": 3,
+      "total_equity_gbp": 340.22,
+      "drawdown_pct": 1.26
+    },
+    {
+      "day": 176,
+      "cash_gbp": 118.85,
+      "open_positions": 3,
+      "total_equity_gbp": 355.65,
+      "drawdown_pct": 0.0
+    },
+    {
+      "day": 201,
+      "cash_gbp": 264.82,
+      "open_positions": 2,
+      "total_equity_gbp": 365.48,
+      "drawdown_pct": 0.36
+    },
+    {
+      "day": 226,
+      "cash_gbp": 216.89,
+      "open_positions": 2,
+      "total_equity_gbp": 379.8,
+      "drawdown_pct": 0.0
+    },
+    {
+      "day": 251,
+      "cash_gbp": 175.42,
+      "open_positions": 3,
+      "total_equity_gbp": 376.13,
+      "drawdown_pct": 1.36
+    }
+  ]
+}
