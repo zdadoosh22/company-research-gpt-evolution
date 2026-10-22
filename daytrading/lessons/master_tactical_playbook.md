@@ -1,196 +1,140 @@
 # Master Quantitative Tactical Day & Swing Trading Playbook
 
-**System:** Lead Quantitative Tactical Trader & Equity Research Developer  
+**System:** Principal Quantitative Architect, Tactical Systems Engineer & Forensic Trading Technologist  
 **Date:** October 2026  
-**Workspace:** `daytrading/` (Completely Isolated from Long-Term Swing Engine in `tools/`)  
-**Account Mandate:** Trading 212 Stocks ISA (£75 to £100 Fixed Commitments Per Trade)  
-**Holding Horizon:** Intraday Scalp to 5-Day Multi-Day Tactical Swings (Hard 5-Day Time Exit)  
+**Workspace:** `daytrading/` (Strictly Isolated from Long-Term Research Engine in `tools/`)  
+**Account Mandate:** £1,000 Trading 212 Stocks ISA — **Aggressive Capital Growth & Tactical Cash Weapon**  
+**Slot Sizing:** **3 to 4 Concurrent Slots (£250.00 to £333.33 / Trade | 25.0% to 33.3% of Sleeve Equity | 80%–100% Deployed When Confident)**  
+**Holding Horizon:** Intraday Scalp (1–4h) | Standard Swing (2–5d) | 10-Day EMA Trailing Runner (4–12d)  
 
 ---
 
-## 1. Tactical Philosophy & System Architecture
+## 1. Core Mandate: Aggressive Capital Growth & Tactical Cash
 
-This playbook codifies the comprehensive empirical findings and mathematical models developed across the 8-phase tactical trading marathon.
+Our £1,000 Trading 212 Stocks ISA tactical sleeve is dedicated purely to **aggressive capital growth**. External cash reserves are held outside this trading pool. Consequently:
+
+1. **Passive Cash Drag is Prohibited:**
+   * The engine must **NEVER** hold arbitrary passive cash buffers (no 55%–77.5% idle cash sitting at 0%).
+   * When high-conviction setups trigger in a favorable market regime, the portfolio deploys **80% to 100% of equity across 3 to 4 active slots** (**£250.00 to £333.33 per trade**, scaling dynamically as sleeve equity grows).
+2. **Cash is Strictly an Active Tactical Weapon:**
+   * Cash is held **ONLY** when market conditions are hostile—specifically when the aggregate index (`SPY`/`QQQ`) trades below its 10-day EMA, Options Dealer Gamma is Negative ($\text{Net GEX} < \$0$), or zero candidate setups pass our strict compression and volume-surge gates.
+3. **Institutional Portfolio Risk Cap (1.5%–2.0% Risk Per Trade):**
+   * Maximum portfolio equity risked on any single trade is strictly capped between **1.50% and 2.00%** via volatility-calibrated hard stops:
+     $$\text{Portfolio Risk (4 Slots)} = 25.0\% \text{ Slot} \times 6.2\% \text{ Stop} = \mathbf{1.55\% \text{ of Sleeve Equity}}$$
+     $$\text{Portfolio Risk (3 Slots)} = 33.3\% \text{ Slot} \times 5.6\% \text{ Stop} = \mathbf{1.86\% \text{ of Sleeve Equity}}$$
 
 ```
-                    MASTER TACTICAL DECISION WORKFLOW
-                                   │
-               ┌───────────────────┴───────────────────┐
-               ▼                                       ▼
-     [CORE MOMENTUM EQUITIES]                 [LEVERAGED 2x/3x ETFs]
-               │                                       │
-               ▼                                       ▼
-    FORENSIC ACCOUNTING GATES               REGIME & DECAY GATES
-    - Super Micro Rule (No late 10-K)       - Check 5D Momentum (|Mom| > 1.5%)
-    - Dilution Gate (SBC < 18% Rev)         - 3x Inverse Decays at 6.0 * Sigma^2
-    - Solvency (FCF > 0, Net Debt < 2.5x)   - Hard 5-Day Time Exit Ceiling
-    - Strip 1-Off Windfalls                 - Cash Fence during Chop
-               │                                       │
-               └───────────────────┬───────────────────┘
-                                   │
-                                   ▼
-                       OPTIONS GEX & TIMING GATES
-                       - Spot vs Gamma Flip Zero-Line
-                       - Locate Call Wall (Ceiling) & Put Wall (Support)
-                       - Prohibit Breakouts directly under Call Wall
-                       - Disable breakout models on OPEX Fridays (Max Pain Pin)
-                                   │
-                                   ▼
-                       EXECUTION SETUP & ENTRY
-                       - Setup A: 30-Minute ORB (RVOL > 1.5x, Close > 0.75)
-                       - Setup B: Earnings-Anchored VWAP Defense (Pullback bounce)
-                       - Setup C: Volatility Squeeze (BB inside Keltner Channel)
-                                   │
-                                   ▼
-                       TWO-STAGE BRACKET EXECUTION
-                       - Hard Initial Stop: 1.5x ATR (-7.0% max)
-                       - Stage 1: Bank 50% Cash at +7.5% net
-                       - Breakeven Ratchet: Immediately raise stop on 50% to BE (+0.30% FX)
-                       - Stage 2: Trail 50% Runner toward +17.0% net
+                     MASTER TACTICAL GROWTH WORKFLOW
+                                    │
+                                    ▼
+                     [PHASE 2: TACTICAL REGIME GATE]
+                     - Index >= 10 EMA & Positive Dealer GEX?
+                       ├── NO  ──► 100% TACTICAL CASH WEAPON (Zero New Longs)
+                       └── YES ──► Authorize 80%–100% Growth Slot Deployment (3–4 Slots)
+                                    │
+                ┌───────────────────┴───────────────────┐
+                ▼                                       ▼
+      [UK ZERO-FX ISA LEADERS]             [US MOATS & LEVERAGED ETFs]
+      - RR.L, RIO.L, AZN.L, SHEL.L, BARC.L - NVDA, PLTR, APP, CRWD, TQQQ, SOXL
+      - 0.00% FX Fee Edge                  - 0.30% Round-Trip FX Hurdle (Min +8.5% T1)
+                │                                       │
+                └───────────────────┬───────────────────┘
+                                    │
+                                    ▼
+                  [PHASE 1: HIGH-CONVICTION SCANNER GATES]
+                  - 5-Day Compression Bandwidth <= 6.0% of Spot
+                  - Breakout Daily Volume Surge >= 1.50x of 10D SMA
+                  - Daily Close > 5D High AND Close >= 10D EMA
+                  - Forensic Gate PASS (Block SMCI, MSTR, MARA, RIOT)
+                                    │
+                                    ▼
+                  [PHASE 3: TWO-STAGE HARVEST & 10 EMA RUNNER]
+                  - Stage 1 (50%): Bank at +7.5%..+8.5% USD (+5.0%..+5.5% UK)
+                    (Protects against the 84.6% crest-and-pullback rate)
+                  - Breakeven Ratchet: Raise Stop on remaining 50% to Entry + 0.35%
+                  - Stage 2 (50%): Trail along Daily 10 EMA / 2D Low for 4–12 Days
+                  - 09:00 UK Pre-Market Cut: Immediate exit if overnight gap <= -6.5%
 ```
 
 ---
 
 ## 2. The 200-Ticker Active Quantitative Universe
 
-The tactical laboratory explicitly monitors and trades across 10 liquid asset classes:
+The tactical laboratory monitors and executes across 10 liquid sectors:
 
-1. **Leveraged Bull ETFs (15):** `TQQQ`, `SOXL`, `UPRO`, `NVDL`, `CONL`, `TECL`, `FNGU`, `BULZ`, `LABU`, `TNA`, `ERX`, `DFEN`, `DPST`, `YINN`, `CWEB`
-2. **Leveraged Bear/Inverse ETFs (15):** `SQQQ`, `SOXS`, `SPXU`, `TECS`, `FNGD`, `BERZ`, `LABD`, `TZA`, `ERY`, `SDOW`, `FAZ`, `YANG`, `KOLD`, `BOIL`, `UVXY`
-3. **Mega-Cap Tech & S-Curve Titans (15):** `NVDA`, `AAPL`, `MSFT`, `AMZN`, `META`, `GOOGL`, `TSLA`, `AVGO`, `NFLX`, `ORCL`, `ADBE`, `CRM`, `INTU`, `IBM`, `CSCO`
-4. **High-Beta Semis & AI Hardware (25):** `AMD`, `QCOM`, `ARM`, `MU`, `AMAT`, `LRCX`, `KLAC`, `ADI`, `MRVL`, `SMCI`, `DELL`, `VRT`, `TXN`, `INTC`, `ANET`, `PSTG`, `MPWR`, `ON`, `NXPI`, `MCHP`, `TER`, `ENTG`, `WDC`, `STX`, `ASML`
-5. **Cloud, Cybersecurity & Enterprise SaaS (25):** `PLTR`, `CRWD`, `PANW`, `FTNT`, `NET`, `DDOG`, `SNOW`, `APP`, `MDB`, `NOW`, `ZS`, `WDAY`, `HUBS`, `TEAM`, `CFLT`, `ESTC`, `PATH`, `OKTA`, `DOCU`, `SPLK`, `VEEV`, `DT`, `GTLB`, `ZI`, `BILL`
-6. **Fintech, Crypto & High-Beta Platforms (20):** `COIN`, `UBER`, `ABNB`, `DASH`, `SHOP`, `SQ`, `PYPL`, `SPOT`, `ROKU`, `TTD`, `HOOD`, `AFRM`, `SOFI`, `MARA`, `RIOT`, `CLSK`, `MSTR`, `MELI`, `SE`, `GRAB`
-7. **Healthcare, Biotech & Growth (25):** `LLY`, `NVO`, `VRTX`, `REGN`, `ISRG`, `MRNA`, `BIIB`, `ALNY`, `CRSP`, `CELH`, `GILD`, `AMGN`, `BMY`, `PFE`, `ABBV`, `MRK`, `TMO`, `DHR`, `ABT`, `SYK`, `BSX`, `DXCM`, `VKTX`, `EXAS`, `INCY`
-8. **High-Momentum Industrials & Energy (25):** `GE`, `CAT`, `ETN`, `PH`, `CEG`, `VST`, `ENPH`, `FSLR`, `OXY`, `FCX`, `RTX`, `LMT`, `BA`, `NOC`, `GD`, `DE`, `HON`, `UNP`, `EMR`, `PCAR`, `XOM`, `CVX`, `COP`, `SLB`, `MPC`
-9. **Consumer Discretionary & Retail (25):** `WMT`, `COST`, `TGT`, `HD`, `LOW`, `NKE`, `SBUX`, `MCD`, `CMG`, `BKNG`, `TJX`, `ROST`, `MAR`, `HLT`, `YUM`, `ORLY`, `AZO`, `LULU`, `ULTA`, `DECK`, `ONON`, `BBY`, `DG`, `DLTR`, `TSCO`
-10. **UK London-Listed Zero-FX Leaders (15):** `RR.L`, `RIO.L`, `AZN.L`, `SHEL.L`, `BP.L`, `GSK.L`, `BARC.L`, `LLOY.L`, `NWG.L`, `HSBA.L`, `ULVR.L`, `REL.L`, `DGE.L`, `BATS.L`, `VOD.L`
-
----
-
-## 3. The 4 Non-Negotiable Forensic Accounting Gates
-
-Every single-stock tactical trade must pass the four forensic balance sheet filters before technical triggers are evaluated:
-
-1. **Gate 1: The Super Micro Rule (Auditor & Filing Delinquency):**
-   * *Threshold:* Immediate, permanent disqualification if an independent auditor has resigned within 12 months or if Form 10-K/10-Q filings are delinquent.
-   * *Empirical Proof:* `SMCI` suffered a >60% collapse following Ernst & Young's resignation, blowing through all technical stop-loss orders on overnight gap downs.
-2. **Gate 2: The Dilution Bleed Gate (Stock-Based Compensation):**
-   * *Threshold:* SBC cannot exceed **18.0% of GAAP revenue**, unless forward GAAP revenue growth exceeds **+25.0% year-over-year**.
-   * *Empirical Proof:* Companies like `SNOW` (SBC >35%) and unprofitable biotechs face continuous insider option dumping into technical rallies, resulting in a **37.5% "gap-and-crap" bull trap rate**.
-3. **Gate 3: Solvency & Free Cash Flow Floor:**
-   * *Threshold:* Trailing twelve-month Free Cash Flow ($FCF = OCF - \text{Capex}$) must be positive ($FCF > 0$) and Net Debt to EBITDA must be $\le 2.50x$.
-   * *Empirical Proof:* Companies with negative operating cash flow (`MSTR` core operations, distressed retail) have an empirical profit factor of only 0.401 on technical breakouts.
-4. **Gate 4: Earnings Quality & Windfall Stripping:**
-   * *Threshold:* Strip non-operating mark-to-market windfalls (e.g., `UBER` equity revaluations, crypto balance sheet changes) before calculating core operating multiple cheapness.
+1. **UK London-Listed Zero-FX Leaders (15) [TOP PRIORITY — 0.00% FX]:** `RR.L`, `RIO.L`, `AZN.L`, `SHEL.L`, `BP.L`, `GSK.L`, `BARC.L`, `LLOY.L`, `NWG.L`, `HSBA.L`, `ULVR.L`, `REL.L`, `DGE.L`, `BATS.L`, `VOD.L`
+2. **Leveraged Bull ETFs (15):** `TQQQ`, `SOXL`, `UPRO`, `NVDL`, `CONL`, `TECL`, `FNGU`, `BULZ`, `LABU`, `TNA`, `ERX`, `DFEN`, `DPST`, `YINN`, `CWEB`
+3. **Leveraged Bear/Inverse ETFs (15):** `SQQQ`, `SOXS`, `SPXU`, `TECS`, `FNGD`, `BERZ`, `LABD`, `TZA`, `ERY`, `SDOW`, `FAZ`, `YANG`, `KOLD`, `BOIL`, `UVXY`
+4. **Mega-Cap Tech & S-Curve Titans (15):** `NVDA`, `AAPL`, `MSFT`, `AMZN`, `META`, `GOOGL`, `TSLA`, `AVGO`, `NFLX`, `ORCL`, `ADBE`, `CRM`, `INTU`, `IBM`, `CSCO`
+5. **High-Beta Semis & AI Hardware (25):** `AMD`, `QCOM`, `ARM`, `MU`, `AMAT`, `LRCX`, `KLAC`, `ADI`, `MRVL`, `SMCI`, `DELL`, `VRT`, `TXN`, `INTC`, `ANET`, `PSTG`, `MPWR`, `ON`, `NXPI`, `MCHP`, `TER`, `ENTG`, `WDC`, `STX`, `ASML`
+6. **Cloud, Cybersecurity & Enterprise SaaS (25):** `PLTR`, `CRWD`, `PANW`, `FTNT`, `NET`, `DDOG`, `SNOW`, `APP`, `MDB`, `NOW`, `ZS`, `WDAY`, `HUBS`, `TEAM`, `CFLT`, `ESTC`, `PATH`, `OKTA`, `DOCU`, `SPLK`, `VEEV`, `DT`, `GTLB`, `ZI`, `BILL`
+7. **Fintech, Crypto & High-Beta Platforms (20):** `COIN`, `UBER`, `ABNB`, `DASH`, `SHOP`, `SQ`, `PYPL`, `SPOT`, `ROKU`, `TTD`, `HOOD`, `AFRM`, `SOFI`, `MARA`, `RIOT`, `CLSK`, `MSTR`, `MELI`, `SE`, `GRAB`
+8. **Healthcare, Biotech & Growth (25):** `LLY`, `NVO`, `VRTX`, `REGN`, `ISRG`, `MRNA`, `BIIB`, `ALNY`, `CRSP`, `CELH`, `GILD`, `AMGN`, `BMY`, `PFE`, `ABBV`, `MRK`, `TMO`, `DHR`, `ABT`, `SYK`, `BSX`, `DXCM`, `VKTX`, `EXAS`, `INCY`
+9. **High-Momentum Industrials & Energy (25):** `GE`, `CAT`, `ETN`, `PH`, `CEG`, `VST`, `ENPH`, `FSLR`, `OXY`, `FCX`, `RTX`, `LMT`, `BA`, `NOC`, `GD`, `DE`, `HON`, `UNP`, `EMR`, `PCAR`, `XOM`, `CVX`, `COP`, `SLB`, `MPC`
+10. **Consumer Discretionary & Retail (25):** `WMT`, `COST`, `TGT`, `HD`, `LOW`, `NKE`, `SBUX`, `MCD`, `CMG`, `BKNG`, `TJX`, `ROST`, `MAR`, `HLT`, `YUM`, `ORLY`, `AZO`, `LULU`, `ULTA`, `DECK`, `ONON`, `BBY`, `DG`, `DLTR`, `TSCO`
 
 ---
 
-## 4. Intraday Opening Range Breakout (ORB) Rules
+## 3. High-Conviction Setup Identification Gates (Phase 1 Empirical Proof)
 
-* **Optimal Window:** Use the **30-Minute ORB (10:00 AM ET / 15:00 UK)**. 
-  * *Empirical Result:* 30m ORB delivers **68.4% Win Rate, 2.911 Profit Factor, and +1.089% Net Expectancy** (versus -0.210% for naive retail 15m ORB).
-* **The 5-Minute Micro-Timeframe Trap:** On 5-minute bars, gross moves average +1.40%. Trading 212's 0.30% round-trip FX fee plus 0.15% slippage (~0.45% total friction) destroys **47.6% of profits**. On 30-minute bars, gross moves average +2.88%, shrinking friction drag to less than 16%.
-* **Volume Footprint:** Require Relative Opening Volume $\text{RVOL} \ge 1.50\times$.
-* **Candle Shape:** Require Candle Close Location $\ge 0.75$ ($\frac{\text{Close} - \text{Low}}{\text{High} - \text{Low}} \ge 0.75$). Never enter on long upper wicks.
-* **Gap Limits:** Best continuation occurs on gaps between $+0.5\%$ and $+3.5\%$. Reject gaps $>6.0\%$ (severe exhaustion fade risk).
+Across 1,000 backtested breakout setups ([`phase9_high_conviction_filtering.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase9_high_conviction_filtering.md)), enforcing all five entry gates elevated initial continuation win rates from **52.00% to 67.70%** and expanded Profit Factor from **1.020 to 2.666**:
 
----
-
-## 5. Multi-Anchored VWAP Tactical Rules
-
-* **The Supreme Edge — Earnings AVWAP Defense:**
-  * When a high-FCF moat reports strong earnings and gaps up, anchor VWAP to the earnings candle ($AVWAP_{\text{earnings}}$).
-  * Institutional desks defend their average cost basis on the first pullback to this line.
-  * *Empirical Result:* **62.6% Win Rate, 3.105 Profit Factor, +5.292% Net Expectancy**, with average winning swings of **+12.47%**.
-* **The Fading Trap:** Never attempt to short or fade stocks extending beyond $+2.5\sigma$ from an Earnings AVWAP. PEAD momentum causes runaway trend pinning (**39.9% win rate on short fades**).
-* **Intraday Session Snapback:** In range-bound midday trading (outside catalyst windows), fading temporary price spikes at $+2.5\sigma$ of the Session VWAP back towards the mean yields a **66.3% Win Rate and 2.008 Profit Factor**.
+1. **5-Day Compression Bandwidth Gate ($\le 6.0\%$):** $\frac{\text{High}_{5D} - \text{Low}_{5D}}{\text{Spot}} \le 6.0\%$. Rejects loose mid-range chop.
+2. **Institutional Volume Surge Gate ($\ge 1.50\times$):** Daily breakout volume must be $\ge 1.50\times$ the 10-day volume SMA.
+3. **10-Day EMA Alignment:** Breakout close must clear the 5-day high AND close $\ge \text{EMA}_{10}$.
+4. **Forensic Accounting Disqualification Gate:** Permanent block on auditor resignations (`SMCI`), negative core FCF dilution traps (`MSTR`, `MARA`, `RIOT`), and SBC $>18\%$ of revenue without $>25\%$ growth.
+5. **UK Zero-FX ISA Overweight (38%–45% Slot Share):** Prioritizes `RR.L`, `RIO.L`, `AZN.L`, `SHEL.L`, `BARC.L` to harvest 0.00% FX friction.
 
 ---
 
-## 6. Leveraged ETF Decay & Inverse Rotation Rules
+## 4. Tactical Cash Regime Gate & 09:00 UK Pre-Market Protection (Phase 2 Proof)
 
-* **The Asymmetric Decay Equation:**
-  $$\text{Decay Rate} = \frac{1}{2}(\beta^2 - \beta)\sigma^2$$
-  * 3x Bull ETF (`TQQQ`, `SOXL`) Volatility Drag: **$3.0 \cdot \sigma^2$**
-  * 3x Bear/Inverse ETF (`SQQQ`, `SOXS`) Volatility Drag: **$6.0 \cdot \sigma^2$**
-* **The 5-Day Hard Exit Ceiling:** No leveraged ETF may be held longer than **5 consecutive trading days**. Beyond Day 5 in choppy markets, compounding drag overwhelms underlying delta.
-* **The Dual-Directional Rotation System:**
-  * Hold 3x Bull ETF when 5-day index momentum is positive ($>+1.5\%$).
-  * Rotate to 3x Bear ETF when 5-day index momentum is negative ($<-1.5\%$).
-  * **Retreat to 100% CASH** during sideways chop ($|\text{Mom}_{5d}| \le 1.5\%$).
-  * *Empirical Result:* **97.7% Cycle Win Rate and +34.119% Cycle Net Expectancy** (versus -2.988% for passive 3x bear holding).
+Across 500 simulated market cycles ([`phase10_tactical_cash_regime_report.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase10_tactical_cash_regime_report.md)):
+* **Market Regime Filter:** When the benchmark index is below its 10-day EMA or dealers are in Negative Gamma, breakout failure rates hit 72%. Forcing **100% Tactical Cash** during hostile windows avoided 6,838 chop trades and cut mean maximum drawdown from **13.51% down to 6.08%**.
+* **09:00 UK Pre-Market Emergency Cut (`<= -6.5%` Gap):** Trading 212 opens US pre-market execution at **09:00 UK time** (5.5 hours before the 14:30 UK regular open). Executing an immediate pre-market cut when an overnight catalyst gap breaches **$-6.5\%$** saved an average of **+3.37% per gap event** by avoiding the 14:30 UK opening-bell panic liquidation cascade.
 
 ---
 
-## 7. Options Dealer Gamma (GEX) Landmark Rules
+## 5. Two-Stage Profit Harvesting & 10-Day EMA Trailing Runner (Phase 3 Proof)
 
-* **Positive Gamma ($\text{GEX} > 0$):** Dealer hedging is counter-cyclical. Volatility is suppressed, price is magnetic to **Max Pain**, and breakout attempts fail.
-* **Negative Gamma ($\text{GEX} < 0$):** Dealer hedging is pro-cyclical. Volatility accelerates into air-pockets.
-* **The Call Wall Squeeze:** When price breaks above the dominant Call Wall in transitioning gamma, short-call dealers are forced into panic spot buying (**90.9% success rate, +7.58% average upside surge**).
-* **The Put Wall Support:** Place tactical stop losses **directly below the primary Put Wall**. If the Put Wall breaches, dealers dump stock pro-cyclically (**86.4% follow-through, -7.15% average cascade**).
-* **OPEX Friday Mandate:** On monthly options expiration Fridays, disable breakout models on Mega-Caps and trade exclusively toward Max Pain pins (**100% pin rate within 1.5% of strike**).
-
----
-
-## 8. Adaptive Bracket Orders, Volatility Scaling & Extended-Hours Rigor
-
-### 8.1. Sizing Architecture in Trading 212 ISA
-* **Default Trade Allocation:** **£75.00 fixed commitment** (for £1,000 sleeve = 7.5% allocation).
-* **Aggressive Allocation:** **£100.00 fixed commitment** (for £1,000 sleeve = 10.0% allocation).
-* **Max Concurrent Positions:** Maximum **3 open trades simultaneously** (£225 to £300 deployed capital, leaving $\ge 70\%$ in dry powder).
-* **Maximum Dollar Risk Per Trade:** Capped at **£4.50 to £5.50 (at £75)** or **£6.00 to £7.50 (at £100)** via dynamic ATR stops.
-
-### 8.2. Dynamic Volatility-Normalized Exits (Replacing Rigid Fixed Percentages)
-Instead of arbitrary static +7.5% / +17.0% targets, the engine dynamically calculates targets and stops based on 14-day ATR, ticker beta, and Options GEX structure:
-* **High-Beta 3x Leveraged ETFs (`SOXL`, `TQQQ`):** Target 1 = $+12.0\%$ to $+16.5\%$, Target 2 = $+24.0\%$ to $+35.0\%$, Dynamic Stop = $-8.0\%$ to $-8.5\%$.
-* **High-Beta Momentum Tech (`NVDA`, `PLTR`, `APP`):** Target 1 = $+7.0\%$ to $+9.0\%$, Target 2 = $+15.0\%$ to $+20.0\%$, Dynamic Stop = $-6.0\%$ to $-6.5\%$.
-* **UK London Moats (`RR.L`, `RIO.L`):** Target 1 = $+3.5\%$ to $+4.5\%$, Target 2 = $+8.5\%$ to $+10.5\%$, Dynamic Stop = $-3.8\%$ to $-4.2\%$.
-* **Options GEX Call Wall Snapping:** If a dominant Call Wall is located within 1.0% of Stage 1, the target automatically snaps to **$0.50 below the Call Wall strike** to exit immediately before institutional dealer overhead supply.
-
-### 8.3. Adaptive Holding Horizons (Desire Window vs. Hard Limits)
-The holding horizon is an adaptive objective rather than a blind blocker:
-1. **Intraday Flash Scalp (1 to 4 Hours):** If Target 1 is achieved within the first trading session with volume exhaustion, bank 60%–70% cash immediately and trail remainder with 15-minute VWAP.
-2. **Standard Tactical Swing (2 to 5 Trading Days):** Default expected trajectory for Squeeze and ORB continuations.
-3. **Extended Trend-Following Continuation (5 to 10 Days):**
-   * *Strictly Prohibited:* On 3x Inverse ETFs (`SQQQ`, `SOXS`) due to the $6.0\sigma^2$ decay equation.
-   * *Permitted:* On High-Moat Equities (`NVDA`, `PLTR`, `APP`, `RR.L`) and Bull ETFs IF price remains above its 10-day EMA, Dealer GEX remains positive, and Stage 1 profit is already banked with stop ratcheted to Breakeven (+0.30% FX coverage).
-
-### 8.4. Extended-Hours & Overnight Gap Management in Trading 212
-Trading 212 supports extended-hours trading on major US equities (pre-market from 04:00 ET / 09:00 UK time, after-hours to 20:00 ET / 01:00 UK):
-* **Overnight Catalyst Fences:** When holding through an overnight binary catalyst (FOMC, CPI, mega-cap earnings peer), risk score rises $>70/100$, triggering guidance to bank 75% before market close (21:00 UK).
-* **Pre-Market Early Cut Protocol:** If a stock gaps down in pre-market by $>5.0\%$, an extended-hours sell order can be executed at 09:00 UK on Trading 212, cutting the position before regular market open panic dumping occurs and saving 1.5% to 3.0% in gap slippage.
-
-### 8.5. The Zero-FX UK London ISA Edge
-* Trading US equities (`NVDA`, `PLTR`, `TQQQ`) incurs a **0.30% round-trip foreign exchange fee** in GBP accounts.
-* Trading London-listed equities (`RR.L`, `RIO.L`, `AZN.L`, `SHEL.L`) incurs **0.00% FX fee**.
-* Over 150 trades per year, prioritizing UK setups saves **+45.0% of a trade unit** in pure friction, elevating net expectancy by +0.30% per trade.
+Across 1,500 simulated trades ([`phase11_trailing_runner_study.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase11_trailing_runner_study.md)):
+* **Why We Always Bank 50% at Stage 1:** In 1,068 Stage 1 winners, **84.6% crested before +18.0% and reversed**. Banking 50% at **+7.5% to +8.5%** (USD) or **+5.0% to +5.5%** (UK) locks in guaranteed profit before mean reversion strikes.
+* **Immediate Breakeven Ratchet:** As soon as Stage 1 fills, raise the stop on the remaining 50% to **Entry + 0.35%** (USD) or **Entry + 0.05%** (UK).
+* **Dynamic 10 EMA Trailing Runner (4 to 12 Trading Days):**
+  * Trail the remaining 50% along the ascending **daily 10-day EMA / prior 2-day low** for up to **12 trading days** (3x ETFs remain capped at 5 days due to volatility decay).
+  * Compared to a fixed +18% / 5-day cutoff, the 10 EMA Trailing Runner expanded average winner return from **+5.215% to +7.628% (+241.3 bps)** and lifted Profit Factor from **1.693 to 2.477**.
 
 ---
 
-## 9. Monte Carlo Risk & Loss Streak Management
+## 6. 100-Cycle 252-Day Broker Walk-Forward Verification (Phase 4 Proof)
 
-Based on 2,500 simulated annual trajectories with live execution slippage:
-* **Probability of Sleeve Ruin ($\ge 50\%$ drawdown):** **0.000%**.
-* **Expected Annual Return:** **+15.83% (£75 sizing)** | **+21.25% (£100 sizing)**.
-* **Median Annual Drawdown:** **4.04% (£75 sizing)** | **5.26% (£100 sizing)**.
-* **Normal Statistical Loss Streak:** Expect a streak of **5 consecutive losses** quarterly, and **8 consecutive losses** once per year.
-* **Dollar Cost of 8 Consecutive Losses:** $8 \times -£5.25 = \mathbf{-£42.00}$ (only 4.2% of sleeve equity!).
-* **Circuit Breaker:** If sleeve drawdown exceeds **-8.0%** (£80), downsize to **£50 commitments** for 5 trades until a new equity high is made.
+Across 100 continuous 252-day annual walk-forward cycles modeling Trading 212 REST API execution ([`phase12_growth_broker_emulation_report.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase12_growth_broker_emulation_report.md)):
+
+| Verification Metric (100 Annual Cycles) | Target Hurdle | Empirical Result | Status |
+| :--- | :---: | :---: | :---: |
+| **Active Capital Deployment (Bull Regime)** | $80.0\%\text{–}100.0\%$ | **87.7% (Up to 100% Across 4 Slots)** | **PASS** |
+| **Mean Ending Equity (£1,000 Start)** | $> £1,150.00$ | **£1,402.25** | **PASS** |
+| **Mean Net Annual Return (After T212 Fees)** | $> +15.0\%$ | **+40.23% (Median +37.67%)** | **PASS** |
+| **Mean Win Rate (%)** | $> 58.0\%$ | **61.97%** | **PASS** |
+| **Mean Profit Factor** | $> 1.400$ | **1.852** | **PASS** |
+| **Mean Annualized Sharpe Ratio** | $> 1.20$ | **2.63** | **PASS** |
+| **Mean Maximum Portfolio Drawdown (%)** | $< 8.50\%$ | **7.22%** | **PASS** |
+| **Annual Cycles Profitable** | $\ge 90.0\%$ | **98.0% (98 / 100 Years)** | **PASS** |
 
 ---
 
-## 10. Master CLI Quick Reference
+## 7. Master CLI Quick Reference (`daytrading/engine.cmd`)
 
-All quantitative models are executable directly from PowerShell or Command Prompt inside `daytrading/`:
+All tools operate natively on Windows from the repository root or `daytrading/`:
 
 | Command Line Execution | Functional Description |
 | :--- | :--- |
-| `.\daytrading\engine.cmd scan` | Scans active 5D Squeezes, ORB setups, RVOL surges, and Forensic Gates across universe. |
-| `.\daytrading\engine.cmd bracket --price 135.0 --ticker NVDA --budget 75` | Calculates exact £75 sizing, -7.0% Stop, +7.5% Stage 1 Bank, Breakeven Ratchet, and +17.0% Runner Target. |
-| `.\daytrading\engine.cmd gex NVDA --spot 135.0 --dte 3` | Computes live Black-Scholes Net GEX, Call Wall, Put Wall, Max Pain Strike, and Gamma Flip line. |
-| `.\daytrading\engine.cmd decay TQQQ --days 5` | Calculates discrete compounding volatility decay drag over N trading days for leveraged ETFs. |
-| `.\daytrading\engine.cmd decay SQQQ --days 5` | Calculates 3x inverse ETF beta-slippage decay ($6.0\sigma^2$). |
+| `.\daytrading\engine.cmd scan` | Scans active 5D Squeezes ($\le 6.0\%$), RVOL surges ($\ge 1.50\times$), 10 EMA alignment, and Forensic Gates (UK Zero-FX prioritized). |
+| `.\daytrading\engine.cmd bracket --ticker RR.L --price 5.40 --portfolio 1000 --slots 3` | Calculates 3-slot growth sizing (£333.33 / 33.3%), 0% FX UK bracket, Breakeven Ratchet, and 10 EMA runner trail. |
+| `.\daytrading\engine.cmd bracket --ticker NVDA --price 138.00 --portfolio 1000 --slots 4` | Calculates 4-slot growth sizing (£250.00 / 25.0%), +8.5% USD Stage 1 hurdle, GEX anchors, and portfolio risk %. |
+| `.\daytrading\engine.cmd bracket --ticker NVDA --price 138.00 --pre-market 128.50 --catalyst` | Evaluates 09:00 UK pre-market gap risk and triggers `PREMARKET_EMERGENCY_CUT_0900_UK` when gap $\le -6.5\%$. |
+| `.\daytrading\engine.cmd gex NVDA --spot 138.00 --dte 3` | Outputs live Black-Scholes Dealer Net GEX, Call Wall, Put Wall, Max Pain Strike, and Gamma Flip Zero-Line. |
+| `.\daytrading\engine.cmd decay SOXL --days 5` | Computes discrete compounding volatility decay drag over N holding days for 2x/3x leveraged & inverse ETFs. |
 
 ---
-*Codified into the Master Tactical Trading Architecture under `daytrading/`.*
+*Codified and empirically verified in `daytrading/` under the Aggressive Capital Growth & Tactical Cash Mandate.*

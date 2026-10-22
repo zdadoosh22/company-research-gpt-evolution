@@ -112,7 +112,7 @@ def cmd_scan(args):
 
             # Forensic Gate Check
             f_profile = FUNDAMENTAL_PROFILES.get(t, {})
-            if t in ['SMCI', 'MSTR']:
+            if t in ['SMCI', 'MSTR', 'MRNA', 'CRSP', 'MARA', 'RIOT'] or f_profile.get("quality") == "SPECULATIVE_TRAP":
                 f_gate = "DISQUALIFIED"
             elif t.endswith('.L'):
                 f_gate = "PASS (0% FX)"
@@ -121,18 +121,20 @@ def cmd_scan(args):
             else:
                 f_gate = "ETF / Neutral"
 
-            is_compressed = range_5d_pct <= 7.0
-            is_breakout = spot > prior_5_h and closes[-1] > opens[-1]
-            is_surge = vol_surge >= 1.20
+            # High-Conviction Phase 1 Thresholds: Compression <= 6.0%, Volume Surge >= 1.50x, Above 10D SMA/EMA
+            sma_10 = sum(closes[-10:]) / 10.0
+            is_compressed = range_5d_pct <= 6.0
+            is_breakout = spot > prior_5_h and closes[-1] > opens[-1] and spot >= sma_10
+            is_surge = vol_surge >= 1.50
 
             if f_gate == "DISQUALIFIED":
                 signal = "HARD EXCLUSION (Gate Fail)"
             elif is_compressed and is_breakout and is_surge:
                 signal = "ACTIONABLE SQUEEZE BREAKOUT (BUY)"
             elif is_compressed and is_breakout:
-                signal = "BREAKOUT (Volume Pending)"
+                signal = "BREAKOUT (Need >=1.5x Vol)"
             elif is_compressed:
-                signal = "SQUEEZE COMPRESSION (Watch 5D High)"
+                signal = "SQUEEZE COMPRESSION (<=6.0% Range)"
             else:
                 signal = "Normal Range"
 
@@ -149,12 +151,12 @@ def cmd_scan(args):
 def cmd_bracket(args):
     """Calculates adaptive dynamic bracket orders, volatility-normalized targets, and extended-hours gap risk."""
     spot = float(args.price)
+    portfolio = float(args.portfolio)
+    slots = max(1, int(args.slots))
     if args.budget is not None:
         budget = float(args.budget)
     else:
         # Full Growth Deployment: divide sleeve equity equally across active slots
-        portfolio = float(args.portfolio)
-        slots = max(1, int(args.slots))
         budget = round(portfolio / slots, 2)
     fx_rate = float(args.fx)
     ticker = args.ticker.upper() if args.ticker else "EQUITY"
@@ -166,17 +168,22 @@ def cmd_bracket(args):
     )
 
     sym = "£" if bracket["is_uk"] else "$"
+    risk_gbp = budget * abs(bracket["stop_loss_pct"]) / 100.0
+    portfolio_risk_pct = (risk_gbp / max(1.0, portfolio)) * 100.0
+    blended_target_pct = (bracket["stage_1_pct"] * 0.5) + (bracket["stage_2_pct"] * 0.5)
+    rr_ratio = blended_target_pct / max(0.1, abs(bracket["stop_loss_pct"]))
 
-    print("\n" + "=" * 70)
-    print(f"       TACTICAL ADAPTIVE BRACKET & HORIZON EXECUTION PLAN")
-    print("=" * 70)
+    print("\n" + "=" * 72)
+    print(f"       TACTICAL ADAPTIVE BRACKET & GROWTH SLOT EXECUTION PLAN")
+    print("=" * 72)
     if args.ticker:
         fx_desc = "Zero-FX UK ISA Edge (0.00% FX)" if bracket["is_uk"] else "USD Pair (0.30% Round-Trip FX)"
         print(f"Ticker Asset       : {ticker} [{fx_desc}]")
     print(f"Spot Entry Price   : {sym}{spot:.2f} | 14D ATR: {bracket['atr_14_pct']:.2f}% | Vol: {bracket['daily_vol_pct']:.2f}%")
-    print(f"Commitment Sizing  : £{budget:.2f} GBP (~{bracket['shares']} units @ {sym}{spot:.2f})")
-    print("-" * 70)
-    print(f"Dynamic Hard Stop  : {sym}{bracket['stop_loss_price']:.2f} ({bracket['stop_loss_pct']:+.1f}% | Risk: £{(budget * abs(bracket['stop_loss_pct'])/100):.2f})")
+    print(f"Growth Sleeve Pool : £{portfolio:.2f} | Active Slot Sizing: £{budget:.2f} ({budget/portfolio*100:.1f}% / {slots} Slots)")
+    print(f"Position Units     : ~{bracket['shares']} units @ {sym}{spot:.2f} | Blended R:R = 1:{rr_ratio:.2f}")
+    print("-" * 72)
+    print(f"Dynamic Hard Stop  : {sym}{bracket['stop_loss_price']:.2f} ({bracket['stop_loss_pct']:+.1f}% | Risk: £{risk_gbp:.2f} = {portfolio_risk_pct:.2f}% of Sleeve)")
     if bracket['put_wall_note'] != "None":
         print(f"  |-- Anchor Note   : {bracket['put_wall_note']}")
     print(f"Stage 1 Target(50%): {sym}{bracket['stage_1_take_profit']:.2f} (+{bracket['stage_1_pct']:.1f}% | Bank 50% = +£{(budget * 0.5 * bracket['stage_1_pct']/100):.2f})")
@@ -184,16 +191,17 @@ def cmd_bracket(args):
         print(f"  |-- Snapping Note : {bracket['call_wall_note']}")
     print(f"Breakeven Ratchet  : Upon Stage 1 hit, raise stop on remaining 50% to {sym}{bracket['breakeven_ratchet']:.2f}")
     print(f"Stage 2 Target(50%): {sym}{bracket['stage_2_take_profit']:.2f} (+{bracket['stage_2_pct']:.1f}% | Bank 50% = +£{(budget * 0.5 * bracket['stage_2_pct']/100):.2f})")
-    print("-" * 70)
+    print("-" * 72)
     print(f"Adaptive Horizon   : {bracket['horizon_plan']['recommended_horizon']} (Desire Window)")
     print(f"Horizon Soft Limit : {bracket['horizon_plan']['hard_limit']}")
     print(f"Runner Trail Rule  : {bracket['horizon_plan'].get('runner_trail_rule', 'Trail along 10 EMA')}")
     print(f"Can Extend Past 5D?: {'YES (Allow runner to compound if above 10 EMA)' if bracket['horizon_plan']['can_extend_past_5d'] else 'NO (Compounding decay limit on 3x products)'}")
     print(f"Horizon Rationale  : {bracket['horizon_plan']['rationale']}")
-    print("-" * 70)
+    print("-" * 72)
+    print(f"Tactical Cash Gate : Deploy 80%-100% if Index >= 10 EMA & Pos Gamma; 100% Cash if < 10 EMA")
     print(f"Overnight Gap Risk : {gap_risk['gap_risk_score']}/100 [{gap_risk['protocol']}]")
     print(f"Extended-Hours T212: {gap_risk['action_guidance']}")
-    print("=" * 70 + "\n")
+    print("=" * 72 + "\n")
 
 
 def cmd_gex(args):
