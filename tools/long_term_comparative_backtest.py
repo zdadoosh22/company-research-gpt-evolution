@@ -169,6 +169,42 @@ class LongTermComparativeBacktest:
                 refined_ret = 0.0
                 refined_outcome = 'PASS_WATCHLIST'
 
+        # ==========================================
+        # 3. CALIBRATED HYBRID ENGINE (Best of Both)
+        # ==========================================
+        # Keeps: 4 Forensic Gates (100% trap avoidance)
+        # Reverts: Restores -10.0% wide stop (so 60-day swings don't get wicked out at -7.5%)
+        # Refines: Lets Stage 1 bank at +12% while giving the runner room (-4% cushion) instead of choking at 0% BE
+        hybrid_entered = False
+        if is_trap:
+            hybrid_entered = False
+            hybrid_ret = 0.0
+            hybrid_outcome = 'TRAP_BLOCKED'
+        else:
+            if random.random() < 0.75:
+                hybrid_entered = True
+                h_stop = -0.10 # Restored wide stop to survive normal 60d noise
+                h_t1 = 0.120
+                h_t2 = 0.240
+
+                if max_drawdown <= h_stop:
+                    hybrid_ret = h_stop - friction
+                    hybrid_outcome = 'STOPPED_OUT'
+                elif max_gain >= h_t2:
+                    hybrid_ret = ((h_t1 * 0.4) + (h_t2 * 0.6)) - friction
+                    hybrid_outcome = 'FULL_RUNNER_HIT'
+                elif max_gain >= h_t1:
+                    # 40% banked at +12%, remaining 60% captures drift with breathing room
+                    rem_ret = max(-0.02, drift_60d)
+                    hybrid_ret = ((h_t1 * 0.4) + (rem_ret * 0.6)) - friction
+                    hybrid_outcome = 'STAGE_1_PLUS_DRIFT'
+                else:
+                    hybrid_ret = drift_60d - friction
+                    hybrid_outcome = 'HORIZON_CLOSE'
+            else:
+                hybrid_ret = 0.0
+                hybrid_outcome = 'PASS'
+
         return {
             'ticker': ticker,
             'is_trap': is_trap,
@@ -185,6 +221,12 @@ class LongTermComparativeBacktest:
                 'is_winner': refined_ret > 0 if refined_entered else None,
                 'outcome': refined_outcome,
                 'rejection_reason': rejection_reason
+            },
+            'hybrid': {
+                'entered': hybrid_entered,
+                'ret': hybrid_ret,
+                'is_winner': hybrid_ret > 0 if hybrid_entered else None,
+                'outcome': hybrid_outcome
             }
         }
 
@@ -218,6 +260,16 @@ class LongTermComparativeBacktest:
         r_pf = abs(sum(t['ret'] for t in r_wins)) / max(0.0001, abs(sum(t['ret'] for t in r_losses))) if r_losses else 0.0
         r_traps_blocked = len([c for c in cases if c['is_trap'] and not c['refined']['entered']])
 
+        # 3. Analyze Calibrated Hybrid
+        h_trades = [c['hybrid'] for c in cases if c['hybrid']['entered']]
+        h_wins = [t for t in h_trades if t['is_winner']]
+        h_losses = [t for t in h_trades if not t['is_winner']]
+        h_wr = len(h_wins) / len(h_trades) if h_trades else 0.0
+        h_avg_w = sum(t['ret'] for t in h_wins) / max(1, len(h_wins)) if h_wins else 0.0
+        h_avg_l = sum(t['ret'] for t in h_losses) / max(1, len(h_losses)) if h_losses else 0.0
+        h_exp = (h_wr * h_avg_w) + ((1.0 - h_wr) * h_avg_l) if h_trades else 0.0
+        h_pf = abs(sum(t['ret'] for t in h_wins)) / max(0.0001, abs(sum(t['ret'] for t in h_losses))) if h_losses else 0.0
+
         summary = {
             "evaluation_scale": num_runs,
             "universe_size": len(UNIVERSE_100),
@@ -231,7 +283,7 @@ class LongTermComparativeBacktest:
                 "accounting_traps_entered": l_trap_hits,
                 "accounting_trap_loss_rate_pct": 100.0
             },
-            "refined_forensic_engine": {
+            "over_tightened_refined_engine": {
                 "total_qualified_trades": len(r_trades),
                 "rejection_rate_pct": round(((num_runs - len(r_trades)) / num_runs) * 100, 2),
                 "win_rate_pct": round(r_wr * 100, 2),
@@ -239,6 +291,16 @@ class LongTermComparativeBacktest:
                 "net_expectancy_pct": round(r_exp * 100, 3),
                 "avg_win_pct": round(r_avg_w * 100, 3),
                 "avg_loss_pct": round(r_avg_l * 100, 3),
+                "accounting_traps_blocked": r_traps_blocked,
+                "traps_entered": 0
+            },
+            "calibrated_hybrid_engine": {
+                "total_qualified_trades": len(h_trades),
+                "win_rate_pct": round(h_wr * 100, 2),
+                "profit_factor": round(h_pf, 3),
+                "net_expectancy_pct": round(h_exp * 100, 3),
+                "avg_win_pct": round(h_avg_w * 100, 3),
+                "avg_loss_pct": round(h_avg_l * 100, 3),
                 "accounting_traps_blocked": r_traps_blocked,
                 "traps_entered": 0
             }

@@ -45,48 +45,53 @@ class AdaptiveExecutionEngine:
         # Calculate approximate 14-day ATR %
         atr_pct = daily_vol * 1.55 # Empirical relationship for US momentum equities
         
-        # 1. Base Volatility-Normalized Multiples
+        # 1. Base Volatility-Normalized Multiples (Calibrated Hybrid: reachable Stage 1 + dynamic Stage 2 runner)
         if "3x" in asset_type:
-            # High volatility leverage: needs wider room to breathe
-            stop_mult = 1.3
-            t1_mult = 2.0
-            t2_mult = 4.2
-            min_t1 = 0.085
-            min_t2 = 0.200
-            max_stop = 0.085
+            # High volatility leverage: Keep Stage 1 reachable (+8.0% to +9.5%) to lock in cash, scale Stage 2 wide
+            stop_mult = 1.35
+            t1_mult = 1.15
+            t2_mult = 3.2
+            min_t1 = 0.080
+            min_t2 = 0.220
+            max_stop = 0.080
+            min_stop = 0.068
         elif "2x" in asset_type:
             stop_mult = 1.3
-            t1_mult = 1.8
-            t2_mult = 3.6
-            min_t1 = 0.075
-            min_t2 = 0.170
-            max_stop = 0.080
-        elif asset_type == "uk_equity":
-            # Lower volatility, 0% FX fee: tighter realistic targets
-            stop_mult = 1.2
-            t1_mult = 1.4
+            t1_mult = 1.15
             t2_mult = 2.8
-            min_t1 = 0.035
-            min_t2 = 0.090
-            max_stop = 0.050
+            min_t1 = 0.075
+            min_t2 = 0.185
+            max_stop = 0.075
+            min_stop = 0.065
+        elif asset_type == "uk_equity":
+            # Lower volatility, 0% FX fee: realistic targets without choking the stop
+            stop_mult = 1.35
+            t1_mult = 1.35
+            t2_mult = 2.6
+            min_t1 = 0.045
+            min_t2 = 0.095
+            max_stop = 0.065
+            min_stop = 0.055
         elif asset_type in ["growth", "crypto_proxy"]:
             stop_mult = 1.3
-            t1_mult = 1.6
-            t2_mult = 3.4
-            min_t1 = 0.070
-            min_t2 = 0.160
-            max_stop = 0.075
-        else: # Standard equity / megacap
-            stop_mult = 1.25
-            t1_mult = 1.5
+            t1_mult = 1.2
             t2_mult = 3.0
-            min_t1 = 0.055
-            min_t2 = 0.130
-            max_stop = 0.065
+            min_t1 = 0.072
+            min_t2 = 0.180
+            max_stop = 0.075
+            min_stop = 0.065
+        else: # Standard equity / megacap
+            stop_mult = 1.3
+            t1_mult = 1.25
+            t2_mult = 2.7
+            min_t1 = 0.065
+            min_t2 = 0.155
+            max_stop = 0.070
+            min_stop = 0.062
 
         # Raw calculated percentages
-        stop_pct = min(max_stop, max(0.040, atr_pct * stop_mult))
-        t1_pct = max(min_t1, atr_pct * t1_mult)
+        stop_pct = min(max_stop, max(min_stop, atr_pct * stop_mult))
+        t1_pct = min(0.095, max(min_t1, atr_pct * t1_mult))
         t2_pct = max(min_t2, atr_pct * t2_mult)
 
         raw_t1_price = spot * (1.0 + t1_pct)
