@@ -3,7 +3,7 @@ Isolated Tactical Trading Laboratory: daytrading/engine.py
 
 Commands:
   scan                  Scans active Volatility Squeeze, ORB, and VWAP setups across universe
-  bracket               Calculates exact two-stage take-profit and stop orders (£75 to £100 sizing)
+  bracket               Calculates exact two-stage take-profit and stop orders (£150 / 15% sizing)
   gex <ticker>          Outputs options dealer gamma structure, Call/Put walls, Max Pain & Pin strikes
   decay <ticker>        Calculates leveraged ETF volatility decay drag over N holding days
 """
@@ -18,6 +18,12 @@ from pathlib import Path
 import subprocess
 import sys
 import urllib.request
+
+if hasattr(sys.stdout, 'reconfigure'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 
 # Add tools directory to path
 TOOLS_DIR = Path(__file__).resolve().parent / "tools"
@@ -52,8 +58,10 @@ def _yahoo_opener():
 
 def cmd_scan(args):
     """Scans liquid momentum leaders, leveraged ETFs, and UK leaders for tactical setups."""
-    # Priority multi-sector universe representative of the 200-ticker universe
+    # Priority multi-sector universe representative of the 200-ticker universe (UK 0% FX prioritized)
     scan_universe = [
+        # UK London-Listed Zero-FX Leaders (0.00% FX Edge in T212 Stocks ISA)
+        'RR.L', 'RIO.L', 'AZN.L', 'SHEL.L', 'BARC.L',
         # Leveraged Bull / Bear ETFs
         'TQQQ', 'SOXL', 'NVDL', 'CONL', 'SQQQ', 'SOXS', 'SPXU',
         # Mega-Cap Tech & S-Curve Titans
@@ -67,9 +75,7 @@ def cmd_scan(args):
         # Healthcare & High-Volatility Growth
         'LLY', 'CELH',
         # Industrials & Power
-        'VST', 'GE',
-        # UK London-Listed Zero-FX Leaders
-        'RR.L', 'RIO.L', 'AZN.L', 'SHEL.L'
+        'VST', 'GE'
     ]
 
     opener, _ = _yahoo_opener()
@@ -166,15 +172,16 @@ def cmd_bracket(args):
     print("-" * 70)
     print(f"Dynamic Hard Stop  : {sym}{bracket['stop_loss_price']:.2f} ({bracket['stop_loss_pct']:+.1f}% | Risk: £{(budget * abs(bracket['stop_loss_pct'])/100):.2f})")
     if bracket['put_wall_note'] != "None":
-        print(f"  └─ Anchor Note   : {bracket['put_wall_note']}")
+        print(f"  |-- Anchor Note   : {bracket['put_wall_note']}")
     print(f"Stage 1 Target(50%): {sym}{bracket['stage_1_take_profit']:.2f} (+{bracket['stage_1_pct']:.1f}% | Bank 50% = +£{(budget * 0.5 * bracket['stage_1_pct']/100):.2f})")
     if bracket['call_wall_note'] != "None":
-        print(f"  └─ Snapping Note : {bracket['call_wall_note']}")
+        print(f"  |-- Snapping Note : {bracket['call_wall_note']}")
     print(f"Breakeven Ratchet  : Upon Stage 1 hit, raise stop on remaining 50% to {sym}{bracket['breakeven_ratchet']:.2f}")
     print(f"Stage 2 Target(50%): {sym}{bracket['stage_2_take_profit']:.2f} (+{bracket['stage_2_pct']:.1f}% | Bank 50% = +£{(budget * 0.5 * bracket['stage_2_pct']/100):.2f})")
     print("-" * 70)
     print(f"Adaptive Horizon   : {bracket['horizon_plan']['recommended_horizon']} (Desire Window)")
     print(f"Horizon Soft Limit : {bracket['horizon_plan']['hard_limit']}")
+    print(f"Runner Trail Rule  : {bracket['horizon_plan'].get('runner_trail_rule', 'Trail along 10 EMA')}")
     print(f"Can Extend Past 5D?: {'YES (Allow runner to compound if above 10 EMA)' if bracket['horizon_plan']['can_extend_past_5d'] else 'NO (Compounding decay limit on 3x products)'}")
     print(f"Horizon Rationale  : {bracket['horizon_plan']['rationale']}")
     print("-" * 70)
@@ -271,7 +278,7 @@ def main():
     b = sub.add_parser('bracket', help="Calculate adaptive dynamic bracket orders and horizon plan")
     b.add_argument('--price', type=float, required=True, help="Current spot entry price")
     b.add_argument('--ticker', type=str, default="", help="Ticker symbol (e.g. NVDA, SOXL, RR.L)")
-    b.add_argument('--budget', type=float, default=75.0, help="GBP commitment (default £75)")
+    b.add_argument('--budget', type=float, default=150.0, help="GBP commitment (default £150 / 15% sizing)")
     b.add_argument('--fx', type=float, default=0.7465, help="GBP per 1 USD (default 0.7465)")
     b.add_argument('--pre-market', type=float, default=None, help="Pre-market quote price (if active)")
     b.add_argument('--catalyst', action='store_true', help="Flag if overnight binary catalyst is active (FOMC/Earnings)")

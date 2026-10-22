@@ -1,0 +1,32 @@
+{
+  "simulation_cycles": 50,
+  "initial_capital_gbp": 1000.0,
+  "trade_size_gbp": 150.0,
+  "capital_utilization_max_pct": 45.0,
+  "cash_buffer_reserve_pct": 55.0,
+  "mean_ending_equity_gbp": 983.97,
+  "mean_annual_return_pct": -1.6,
+  "mean_win_rate_pct": 46.04,
+  "mean_profit_factor": 0.969,
+  "mean_annualized_sharpe": -0.13,
+  "mean_max_drawdown_pct": 8.46,
+  "mean_trades_executed_per_year": 43.6,
+  "mean_broker_frictions_paid_gbp": 21.9,
+  "sample_single_cycle": {
+    "initial_capital_gbp": 1000.0,
+    "trade_size_gbp": 150.0,
+    "ending_equity_gbp": 886.22,
+    "net_profit_gbp": -113.78,
+    "net_annual_return_pct": -11.38,
+    "total_trades_executed": 49,
+    "winning_trades": 20,
+    "losing_trades": 29,
+    "win_rate_pct": 40.82,
+    "profit_factor": 0.566,
+    "annualized_sharpe_ratio": -1.48,
+    "max_drawdown_gbp": 125.27,
+    "max_drawdown_pct": 12.45,
+    "total_broker_frictions_paid_gbp": 22.8,
+    "open_positions_at_end": 2
+  }
+}

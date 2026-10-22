@@ -28,14 +28,15 @@ class AdaptiveExecutionEngine:
         self.fx_fee_pct = fx_fee_pct
         self.gex_engine = OptionsGEXTacticalEngine()
 
-    def calculate_dynamic_bracket(self, ticker, spot, budget=75.0, fx_rate=0.7465, gex_data=None):
+    def calculate_dynamic_bracket(self, ticker, spot, budget=150.0, fx_rate=0.7465, gex_data=None):
         """
         Calculates volatility-normalized, structural targets and stops.
-        Tailored dynamically to asset class:
-        - 3x ETFs: Wider targets, strict decay checks
-        - High-Beta Equities: ATR-scaled targets
-        - Low-Beta / UK Moats: Realistic compressed targets + 0% FX edge
-        Snaps targets relative to Options GEX Call Wall.
+        Overhauled for Trading 212 ISA Architecture:
+        - Default sizing: £150 (15% of £1,000 portfolio) to eliminate cash drag while keeping 55% reserve.
+        - Strict FX Target Hurdle: USD assets require minimum +8.5% Stage 1 target to clear 0.30% FX.
+        - UK Zero-FX ISA Edge: UK assets (0% FX) use nimble +5.0% to +6.5% targets.
+        - Dynamic 10 EMA Trailing Runner on Stage 2 (4 to 12 days).
+        - Snaps targets relative to Options GEX Call Wall.
         """
         prof = get_profile(ticker)
         daily_vol = prof["vol"]
@@ -47,11 +48,11 @@ class AdaptiveExecutionEngine:
         
         # 1. Base Volatility-Normalized Multiples (Calibrated Hybrid: reachable Stage 1 + dynamic Stage 2 runner)
         if "3x" in asset_type:
-            # High volatility leverage: Keep Stage 1 reachable (+8.0% to +9.5%) to lock in cash, scale Stage 2 wide
+            # High volatility leverage: Keep Stage 1 reachable (+8.5% to +10.0%) to lock in cash, scale Stage 2 wide
             stop_mult = 1.35
             t1_mult = 1.15
             t2_mult = 3.2
-            min_t1 = 0.080
+            min_t1 = 0.085 # Enforce minimum 8.5% hurdle for USD leveraged pairs
             min_t2 = 0.220
             max_stop = 0.080
             min_stop = 0.068
@@ -59,24 +60,24 @@ class AdaptiveExecutionEngine:
             stop_mult = 1.3
             t1_mult = 1.15
             t2_mult = 2.8
-            min_t1 = 0.075
+            min_t1 = 0.085
             min_t2 = 0.185
             max_stop = 0.075
             min_stop = 0.065
         elif asset_type == "uk_equity":
-            # Lower volatility, 0% FX fee: realistic targets without choking the stop
+            # Lower volatility, 0% FX fee: nimble realistic targets without FX drag
             stop_mult = 1.35
             t1_mult = 1.35
             t2_mult = 2.6
-            min_t1 = 0.045
-            min_t2 = 0.095
+            min_t1 = 0.050 # 0% FX allows nimble 5.0% take profit
+            min_t2 = 0.110
             max_stop = 0.065
             min_stop = 0.055
         elif asset_type in ["growth", "crypto_proxy"]:
             stop_mult = 1.3
             t1_mult = 1.2
             t2_mult = 3.0
-            min_t1 = 0.072
+            min_t1 = 0.085
             min_t2 = 0.180
             max_stop = 0.075
             min_stop = 0.065
@@ -84,14 +85,14 @@ class AdaptiveExecutionEngine:
             stop_mult = 1.3
             t1_mult = 1.25
             t2_mult = 2.7
-            min_t1 = 0.065
-            min_t2 = 0.155
+            min_t1 = 0.085 if not is_uk else 0.055
+            min_t2 = 0.160
             max_stop = 0.070
             min_stop = 0.062
 
         # Raw calculated percentages
         stop_pct = min(max_stop, max(min_stop, atr_pct * stop_mult))
-        t1_pct = min(0.095, max(min_t1, atr_pct * t1_mult))
+        t1_pct = min(0.110, max(min_t1, atr_pct * t1_mult))
         t2_pct = max(min_t2, atr_pct * t2_mult)
 
         raw_t1_price = spot * (1.0 + t1_pct)
@@ -166,12 +167,14 @@ class AdaptiveExecutionEngine:
     def classify_adaptive_horizon(self, ticker, asset_type, daily_vol):
         """
         Determines the optimal adaptive holding horizon rather than a rigid 5-day cutoff.
+        Includes exact 10 EMA / Swing-Low trailing rules for the Stage 2 runner.
         """
         if "inverse" in asset_type or ticker in ["SQQQ", "SOXS", "SPXU"]:
             return {
                 "recommended_horizon": "1 to 3 Trading Days",
                 "hard_limit": "4 Trading Days",
                 "can_extend_past_5d": False,
+                "runner_trail_rule": "Exit 100% at Stage 1 or Day 3. Never hold inverse runners into chop.",
                 "rationale": "High 6.0*sigma^2 beta-slippage decay makes inverse multi-day holding toxic."
             }
         elif "3x_etf" in asset_type:
@@ -179,27 +182,31 @@ class AdaptiveExecutionEngine:
                 "recommended_horizon": "2 to 4 Trading Days",
                 "hard_limit": "5 Trading Days (Unless strong bull trend with Benchmark > 10 EMA)",
                 "can_extend_past_5d": False,
+                "runner_trail_rule": "Trail Stage 2 along prior-day low. Bank remaining 50% by Day 5.",
                 "rationale": "Volatile compounding drag requires disciplined banking by Day 5."
             }
         elif asset_type == "uk_equity":
             return {
-                "recommended_horizon": "3 to 8 Trading Days",
+                "recommended_horizon": "3 to 10 Trading Days",
                 "hard_limit": "15 Trading Days",
                 "can_extend_past_5d": True,
+                "runner_trail_rule": "Trail Stage 2 runner along daily 10 EMA for 4-12 days (0% FX advantage).",
                 "rationale": "Zero FX drag and lower daily volatility permit patient multi-week swing compounding."
             }
         elif FUNDAMENTAL_PROFILES.get(ticker, {}).get("quality") == "HIGH_MOAT":
             return {
-                "recommended_horizon": "3 to 6 Trading Days",
-                "hard_limit": "10 Trading Days",
+                "recommended_horizon": "3 to 8 Trading Days",
+                "hard_limit": "12 Trading Days",
                 "can_extend_past_5d": True,
+                "runner_trail_rule": "Trail Stage 2 runner along daily 10 EMA / 2-day low for up to 12 days.",
                 "rationale": "High-FCF moats exhibit multi-week institutional accumulation; extend runner if above 10 EMA."
             }
         else:
             return {
-                "recommended_horizon": "2 to 5 Trading Days",
-                "hard_limit": "6 Trading Days",
+                "recommended_horizon": "2 to 6 Trading Days",
+                "hard_limit": "8 Trading Days",
                 "can_extend_past_5d": False,
+                "runner_trail_rule": "Trail Stage 2 along 2-day low; close if momentum stalls below breakeven.",
                 "rationale": "Standard momentum equity swing."
             }
 
