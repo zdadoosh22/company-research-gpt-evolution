@@ -1,0 +1,27 @@
+{
+  "summary": {
+    "evaluation_scale": 1000,
+    "universe_size": 116,
+    "legacy_naive_engine": {
+      "total_evaluations": 1000,
+      "win_rate_pct": 63.0,
+      "profit_factor": 2.762,
+      "net_expectancy_pct": 5.433,
+      "avg_win_pct": 13.519,
+      "avg_loss_pct": -8.334,
+      "accounting_traps_entered": 37,
+      "accounting_trap_loss_rate_pct": 100.0
+    },
+    "refined_forensic_engine": {
+      "total_qualified_trades": 608,
+      "rejection_rate_pct": 39.2,
+      "win_rate_pct": 50.16,
+      "profit_factor": 1.561,
+      "net_expectancy_pct": 1.937,
+      "avg_win_pct": 10.749,
+      "avg_loss_pct": -6.933,
+      "accounting_traps_blocked": 37,
+      "traps_entered": 0
+    }
+  }
+}

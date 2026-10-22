@@ -1,0 +1,27 @@
+{
+  "summary": {
+    "evaluation_scale": 1500,
+    "universe_size": 205,
+    "legacy_tactical_baseline": {
+      "total_trades": 1500,
+      "win_rate_pct": 52.6,
+      "profit_factor": 0.686,
+      "net_expectancy_pct": -0.726,
+      "avg_win_pct": 3.02,
+      "avg_loss_pct": -4.883
+    },
+    "current_upgraded_tactical_engine": {
+      "total_trades": 1500,
+      "win_rate_pct": 47.53,
+      "profit_factor": 0.616,
+      "net_expectancy_pct": -0.965,
+      "avg_win_pct": 3.252,
+      "avg_loss_pct": -4.785
+    },
+    "component_improvements": {
+      "overnight_panic_dumps_in_legacy": 114,
+      "premarket_extended_hours_cuts_in_current": 168,
+      "extended_10d_runners_captured_in_current": 24
+    }
+  }
+}
