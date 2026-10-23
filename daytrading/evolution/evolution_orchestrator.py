@@ -94,10 +94,47 @@ def dispatch_packet_for_chatgpt():
         except Exception:
             pass
 
+    # Dynamic Archetype Diagnosis
+    recommendation = "ARCH-EXPLORE"
+    rec_reason = "Generation 2 kickoff: Explore novel alpha factors or outside-the-box microstructure mechanisms."
+    if telemetry:
+        m = telemetry.get("metrics", {})
+        oos = m.get("out_of_sample", {})
+        max_dd = oos.get("max_drawdown_pct", 0.0)
+        stress_ret = m.get("stress_tested_oos", {}).get("mean_net_return_pct", 0.0)
+        
+        if next_gen % 4 == 0:
+            recommendation = "ARCH-VISUAL"
+            rec_reason = "Milestone generation: Upgrade Cyber War Room UI, visual scrubber, and aesthetic dashboards."
+        elif max_dd > 13.0:
+            recommendation = "ARCH-SHIELD"
+            rec_reason = f"Max Drawdown is {max_dd:.1f}%; prioritize tail-risk fortification and cash shield ratchets."
+        elif stress_ret < 50.0:
+            recommendation = "ARCH-MICRO"
+            rec_reason = f"Synthetic friction stress return ({stress_ret:.1f}%) indicates broker fee drag; prioritize intraday execution and slippage eradication."
+        elif next_gen % 2 == 0:
+            recommendation = "ARCH-MACRO"
+            rec_reason = "Optimize cross-asset Relative Strength sector rotation or introduce new asset clusters (UK dividend leaders / defense)."
+        else:
+            recommendation = "ARCH-MATH"
+            rec_reason = "Formulate stochastic calculus models (Kalman filter / Hurst exponent / Ornstein-Uhlenbeck drift)."
+
     packet = {
         "current_generation": gen,
         "next_generation": next_gen,
         "active_architecture": "5-Pillar All-Weather Alpha Architecture (RS Sector Rotation, ATR Volatility Bracket, RSI Dip Sniper, SQQQ Inverse Hedge, Cash Shield)",
+        "diagnostic_recommendation": {
+            "suggested_archetype": recommendation,
+            "rationale": rec_reason,
+            "allowed_archetypes": [
+                "ARCH-MACRO (Structural Regime & Cross-Asset Expansion)",
+                "ARCH-MICRO (Intraday Microstructure & Slippage Eradication)",
+                "ARCH-SHIELD (Anti-Fragility & Crisis Tail-Risk Fortress)",
+                "ARCH-MATH (Stochastic Calculus & Signal Theory)",
+                "ARCH-VISUAL (Cyber War Room & High-Aesthetic Terminal)",
+                "ARCH-EXPLORE (Outside-The-Box Radical Innovation)"
+            ]
+        },
         "baselines": {
             "is_mean_return_pct": 53.34,
             "oos_mean_return_pct": 91.59,
@@ -112,7 +149,8 @@ def dispatch_packet_for_chatgpt():
     print("\n" + "=" * 80)
     print(f"📋 DISPATCH PACKET FOR CHATGPT (GENERATION {next_gen})")
     print("=" * 80)
-    print("Master Prompt: daytrading/evolution/MASTER_META_OPTIMIZER_PROMPT_V2.md")
+    print("Master System Prompt: daytrading/evolution/MASTER_META_OPTIMIZER_PROMPT_V3.md")
+    print(f"🎯 Recommended Archetype: {recommendation} ({rec_reason})")
     print("Copy and paste the JSON block below into ChatGPT:")
     print("--------------------------------------------------------------------------------")
     print(json.dumps(packet, indent=2))
