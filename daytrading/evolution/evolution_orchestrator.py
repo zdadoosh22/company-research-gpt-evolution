@@ -150,6 +150,7 @@ def dispatch_packet_for_chatgpt():
     print(f"📋 DISPATCH PACKET FOR CHATGPT (GENERATION {next_gen})")
     print("=" * 80)
     print("Master System Prompt: daytrading/evolution/MASTER_META_OPTIMIZER_PROMPT_V3.md")
+    print("⚡ RELENTLESS RECURSION DIRECTIVE: Run continuously until Antigravity or ChatGPT limits are reached!")
     print(f"🎯 Recommended Archetype: {recommendation} ({rec_reason})")
     print("Copy and paste the JSON block below into ChatGPT:")
     print("--------------------------------------------------------------------------------")
@@ -186,6 +187,7 @@ def verify_generation(generation: int, hypothesis: str):
             pass
             
         show_scoreboard()
+        print(f"👉 NEXT TURN READY: Run 'python daytrading/evolution/evolution_orchestrator.py --mode dispatch' to obtain Generation {generation + 1}!\n")
     else:
         print(f"\n🚨 [ORCHESTRATOR] Generation {generation} FAILED HURDLES.")
         print("Executing automated rollback protocol: restoring daytrading/ ...")
@@ -203,7 +205,8 @@ def verify_generation(generation: int, hypothesis: str):
         # Git restore
         subprocess.run(["git", "restore", "daytrading/"], cwd=str(PROJECT_ROOT))
         print(f"🛡️ Rollback complete. Repository restored to clean baseline.")
-        print(f"📄 Autopsy saved to: {autopsy_file}\n")
+        print(f"📄 Autopsy saved to: {autopsy_file}")
+        print(f"👉 RECOVERY TURN READY: Run 'python daytrading/evolution/evolution_orchestrator.py --mode dispatch' to obtain Generation {generation + 1} with updated autopsy heuristics!\n")
 
 
 def main():
