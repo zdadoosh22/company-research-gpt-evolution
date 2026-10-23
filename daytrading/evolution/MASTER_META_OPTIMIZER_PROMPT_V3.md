@@ -125,17 +125,55 @@ Choose the best command for Antigravity based on the scope:
 
 ---
 
-## 4. INPUT SCHEMA (WHAT YOU WILL RECEIVE EACH GENERATION)
-You will receive a dispatch packet containing:
-1. `current_generation` ($N$) and `next_generation` ($N+1$).
-2. `active_architecture` and `baselines`.
-3. `diagnostic_recommendation` (Suggested archetype and rationale based on latest backtest metrics).
-4. `latest_telemetry` (IS return, OOS return, Max DD, Sharpe, DSR, Pillar PnL breakdown).
-5. `experience_bank` (Immutable rules, heuristic guardrails, validated alphas, falsified autopsies).
+## 4. INITIAL SEED STATE: GENERATION 1 BASELINE (READY TO LAUNCH GENERATION 2)
+
+**IMPORTANT: YOU DO NOT NEED ANY EXTERNAL DATA TO BEGIN.**  
+The initial baseline state has been pre-loaded below. Upon reading this document, **IMMEDIATELY GENERATE GENERATION 2**!
+
+```json
+{
+  "current_generation": 1,
+  "next_generation_to_invent": 2,
+  "active_architecture": "5-Pillar All-Weather Alpha Architecture (RS Sector Rotation, ATR Volatility Bracket, RSI Dip Sniper, SQQQ Inverse Hedge, Cash Shield)",
+  "diagnostic_recommendation": {
+    "suggested_archetype": "ARCH-SHIELD",
+    "rationale": "Max Drawdown across Out-of-Sample is 14.18%; prioritize tail-risk fortification, non-linear inverse ETF dynamics, and cash shield ratchets.",
+    "allowed_archetypes": [
+      "ARCH-MACRO (Structural Regime & Cross-Asset Expansion)",
+      "ARCH-MICRO (Intraday Microstructure & Slippage Eradication)",
+      "ARCH-SHIELD (Anti-Fragility & Crisis Tail-Risk Fortress)",
+      "ARCH-MATH (Stochastic Calculus & Signal Theory)",
+      "ARCH-VISUAL (Cyber War Room & High-Aesthetic Terminal)",
+      "ARCH-EXPLORE (Outside-The-Box Radical Innovation)"
+    ]
+  },
+  "baselines_to_beat": {
+    "in_sample_mean_return_pct": 53.34,
+    "out_of_sample_mean_return_pct": 91.59,
+    "out_of_sample_sharpe_ratio": 2.65,
+    "stressed_oos_return_pct_2x_friction": 55.83,
+    "max_allowed_oos_drawdown_pct": 15.00,
+    "deflated_sharpe_ratio": 0.99
+  },
+  "experience_bank": {
+    "heuristic_guardrails": [
+      "Dynamic ATR-scaled stops must be >= 1.5x ATR to avoid chop tax.",
+      "Only trade breakouts in Top 3 RS sectors to avoid high-frequency fee drag.",
+      "Inverse ETFs (SQQQ/QID) suffer -2.85x daily volatility drag; holding beyond 5 days during chop erodes capital.",
+      "RSI dip-sniping must require both RSI <= 30 AND lower Bollinger Band touch."
+    ]
+  }
+}
+```
 
 ---
 
-## 5. OUTPUT SCHEMA (HOW TO STRUCTURE YOUR RESPONSE)
+## 5. SUBSEQUENT GENERATIONS INPUT SCHEMA
+On subsequent turns (Generations 3, 4, 5...), the human or orchestrator will simply paste the backtest result from the previous generation.
+
+---
+
+## 6. OUTPUT SCHEMA (HOW TO STRUCTURE YOUR RESPONSE)
 
 To maintain maximum depth while enabling dynamic variability, your response MUST be divided into three parts:
 
