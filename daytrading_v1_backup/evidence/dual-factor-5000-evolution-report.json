@@ -1,0 +1,47 @@
+[
+  {
+    "iteration": 1,
+    "desc": "Base Dual-Factor (FCF > 5%, Debt < 2x, 5D Squeeze < 7%, Vol Surge > 1.25x)",
+    "win_pct": 24.6,
+    "etf_win_pct": 24.22360248447205,
+    "avg_net": -0.5685706140287144,
+    "wins": 246,
+    "total": 1000
+  },
+  {
+    "iteration": 2,
+    "desc": "+ Rapid Stage 1 Profit Lock (Bank 50% at +6.5% vs +7.5%)",
+    "win_pct": 18.4,
+    "etf_win_pct": 16.38418079096045,
+    "avg_net": -0.9273137385881012,
+    "wins": 184,
+    "total": 1000
+  },
+  {
+    "iteration": 3,
+    "desc": "+ Tightened 1.25x ATR Stop Loss (Fast Risk Invalidation)",
+    "win_pct": 20.200000000000003,
+    "etf_win_pct": 22.47191011235955,
+    "avg_net": -0.6187200041531976,
+    "wins": 202,
+    "total": 1000
+  },
+  {
+    "iteration": 4,
+    "desc": "+ Expanded Stage 2 Target (+18.0% Runner)",
+    "win_pct": 20.599999999999998,
+    "etf_win_pct": 18.633540372670808,
+    "avg_net": -0.5711707279555583,
+    "wins": 206,
+    "total": 1000
+  },
+  {
+    "iteration": 5,
+    "desc": "Full Institutional Dual-Factor Architecture Synthesized",
+    "win_pct": 21.4,
+    "etf_win_pct": 21.472392638036812,
+    "avg_net": -0.5046517829890317,
+    "wins": 214,
+    "total": 1000
+  }
+]

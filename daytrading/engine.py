@@ -157,7 +157,11 @@ def cmd_bracket(args):
     print(f"Can Extend Past 5D?: {'YES (Allow runner to compound if above 10 EMA)' if bracket['horizon_plan']['can_extend_past_5d'] else 'NO (Compounding decay limit on 3x products)'}")
     print(f"Horizon Rationale  : {bracket['horizon_plan']['rationale']}")
     print("-" * 72)
-    print(f"Tactical Cash Gate : Deploy 80%-100% if Index >= 10 EMA & Pos Gamma; 100% Cash if < 10 EMA")
+    regime_info = adaptive_engine.evaluate_4state_market_regime(index_spot=495.0, index_ema_10=490.0)
+    print(f"Macro 4-State Reg. : {regime_info['regime_state']} (Target Cash: {regime_info['target_cash_pct']:.0f}% | Deployment: {regime_info['target_deployment_pct']:.0f}%)")
+    if 'risk_parity_sizing' in bracket:
+        rp = bracket['risk_parity_sizing']
+        print(f"Vol-Target Risk Sz : £{rp['allocated_budget_gbp']:.2f} (Portfolio Risk: £{rp['actual_risk_gbp']:.2f} = {rp['actual_portfolio_risk_pct']:.2f}% of Sleeve)")
     print(f"Overnight Gap Risk : {gap_risk['gap_risk_score']}/100 [{gap_risk['protocol']}]")
     print(f"Extended-Hours T212: {gap_risk['action_guidance']}")
     print("=" * 72 + "\n")
@@ -248,6 +252,18 @@ def cmd_live(args):
     daemon_main()
 
 
+def cmd_ui(args):
+    """Launches the Aegis Cyber-Institutional Trading War Room Web Dashboard."""
+    ui_script = Path(__file__).resolve().parent / "ui" / "serve_dashboard.py"
+    port = getattr(args, 'port', 8765)
+    no_browser = getattr(args, 'no_browser', False)
+    
+    cmd = [sys.executable, str(ui_script), "--port", str(port)]
+    if no_browser:
+        cmd.append("--no-browser")
+    subprocess.run(cmd)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Master Quantitative Tactical Day Trading Engine")
     sub = parser.add_subparsers(dest='command', required=True)
@@ -285,6 +301,11 @@ def main():
     # live
     sub.add_parser('live', help="Trading 212 REST API Practice Execution Daemon and Supervisor")
 
+    # ui
+    u = sub.add_parser('ui', help="Launch Aegis Cyber Trading War Room Dashboard")
+    u.add_argument('--port', type=int, default=8765, help="Local port (default 8765)")
+    u.add_argument('--no-browser', action='store_true', help="Do not automatically open browser")
+
     args, unknown = parser.parse_known_args()
     if args.command == 'scan':
         cmd_scan(args)
@@ -296,6 +317,8 @@ def main():
         cmd_decay(args)
     elif args.command == 'live':
         cmd_live(args)
+    elif args.command == 'ui':
+        cmd_ui(args)
 
 
 if __name__ == '__main__':

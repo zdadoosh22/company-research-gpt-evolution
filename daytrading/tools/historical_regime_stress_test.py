@@ -446,14 +446,14 @@ def run_regime_simulation(
 
         # 4. Mark to Market Equity & Drawdown
         unrealized = sum(
-            t.size_gbp * t.shares_remaining_pct * (market_data.get(t.ticker, {}).get(dt, {}).get("close", t.entry_price) / t.entry_price)
+            t.size_gbp * t.shares_remaining_pct * (market_data.get(t.ticker, {}).get(dt, {}).get("close", t.entry_price) / max(0.0001, t.entry_price))
             for t in open_trades
         )
         total_equity = cash_gbp + unrealized
         if total_equity > peak_equity:
             peak_equity = total_equity
         dd_gbp = peak_equity - total_equity
-        dd_pct = (dd_gbp / peak_equity) * 100.0
+        dd_pct = (dd_gbp / max(1.0, peak_equity)) * 100.0
         if dd_pct > max_drawdown_pct:
             max_drawdown_pct = dd_pct
             max_drawdown_gbp = dd_gbp

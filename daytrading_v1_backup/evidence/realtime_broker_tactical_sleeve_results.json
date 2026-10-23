@@ -1,0 +1,108 @@
+{
+  "engine": "Tactical Day & Multi-Day Engine (daytrading/)",
+  "initial_capital_gbp": 1000.0,
+  "ending_equity_gbp": 1029.17,
+  "net_profit_gbp": 29.17,
+  "net_annual_return_pct": 2.92,
+  "total_trades_executed": 45,
+  "win_rate_pct": 57.78,
+  "profit_factor": 1.303,
+  "annualized_sharpe_ratio": 0.84,
+  "max_drawdown_gbp": 30.1,
+  "max_drawdown_pct": 2.91,
+  "total_broker_frictions_paid_gbp": 16.2,
+  "open_positions_at_end": 3,
+  "portfolio_history_sample": [
+    {
+      "day": 1,
+      "cash_gbp": 925.0,
+      "open_positions": 1,
+      "total_equity_gbp": 1000.0,
+      "drawdown_pct": 0.0
+    },
+    {
+      "day": 21,
+      "cash_gbp": 850.82,
+      "open_positions": 2,
+      "total_equity_gbp": 1000.81,
+      "drawdown_pct": 0.3
+    },
+    {
+      "day": 41,
+      "cash_gbp": 937.1,
+      "open_positions": 1,
+      "total_equity_gbp": 1012.1,
+      "drawdown_pct": 0.0
+    },
+    {
+      "day": 61,
+      "cash_gbp": 939.71,
+      "open_positions": 1,
+      "total_equity_gbp": 1014.71,
+      "drawdown_pct": 0.58
+    },
+    {
+      "day": 81,
+      "cash_gbp": 1000.71,
+      "open_positions": 0,
+      "total_equity_gbp": 1000.71,
+      "drawdown_pct": 1.95
+    },
+    {
+      "day": 101,
+      "cash_gbp": 937.37,
+      "open_positions": 1,
+      "total_equity_gbp": 1016.2,
+      "drawdown_pct": 0.44
+    },
+    {
+      "day": 121,
+      "cash_gbp": 945.97,
+      "open_positions": 1,
+      "total_equity_gbp": 1021.27,
+      "drawdown_pct": 1.09
+    },
+    {
+      "day": 141,
+      "cash_gbp": 932.9,
+      "open_positions": 1,
+      "total_equity_gbp": 1010.36,
+      "drawdown_pct": 2.15
+    },
+    {
+      "day": 161,
+      "cash_gbp": 942.72,
+      "open_positions": 1,
+      "total_equity_gbp": 1017.72,
+      "drawdown_pct": 1.43
+    },
+    {
+      "day": 181,
+      "cash_gbp": 864.59,
+      "open_positions": 2,
+      "total_equity_gbp": 1017.72,
+      "drawdown_pct": 1.43
+    },
+    {
+      "day": 201,
+      "cash_gbp": 947.52,
+      "open_positions": 1,
+      "total_equity_gbp": 1023.34,
+      "drawdown_pct": 0.89
+    },
+    {
+      "day": 221,
+      "cash_gbp": 950.62,
+      "open_positions": 1,
+      "total_equity_gbp": 1026.64,
+      "drawdown_pct": 0.57
+    },
+    {
+      "day": 241,
+      "cash_gbp": 948.17,
+      "open_positions": 1,
+      "total_equity_gbp": 1023.57,
+      "drawdown_pct": 0.87
+    }
+  ]
+}

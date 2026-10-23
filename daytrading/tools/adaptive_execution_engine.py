@@ -22,6 +22,12 @@ from orb_engine import UNIVERSE_200, FLAT_UNIVERSE, get_profile
 from options_gex_tactical_engine import OptionsGEXTacticalEngine
 from dual_factor_tactical_fused import FUNDAMENTAL_PROFILES
 
+try:
+    from regime_transition_engine import RegimeTransitionEngine, RegimeEvaluation
+except ImportError:
+    RegimeTransitionEngine = None
+    RegimeEvaluation = None
+
 
 def get_ticker_sector(ticker: str) -> str:
     """Classifies ticker into GICS-derived tactical momentum sectors."""
@@ -57,6 +63,93 @@ class AdaptiveExecutionEngine:
     def __init__(self, fx_fee_pct=0.0015):
         self.fx_fee_pct = fx_fee_pct
         self.gex_engine = OptionsGEXTacticalEngine()
+        if RegimeTransitionEngine:
+            self.regime_engine = RegimeTransitionEngine()
+        else:
+            self.regime_engine = None
+
+    def calculate_anchored_vwap(self, bars: list[dict], anchor_idx: int = 0) -> float:
+        """
+        Calculates Anchored Volume-Weighted Average Price (AVWAP) from anchor_idx forward.
+        Typical Price = (High + Low + Close) / 3.0.
+        """
+        if not bars:
+            return 0.0
+        anchor_idx = max(0, min(anchor_idx, len(bars) - 1))
+        subset = bars[anchor_idx:]
+        cum_pv = 0.0
+        cum_vol = 0.0
+        for b in subset:
+            h = b.get("high", b.get("close", 0.0))
+            l = b.get("low", b.get("close", 0.0))
+            c = b.get("close", 0.0)
+            v = b.get("volume", 1000.0)
+            tp = (h + l + c) / 3.0
+            cum_pv += tp * v
+            cum_vol += v
+        return round(cum_pv / max(1.0, cum_vol), 4)
+
+    def calculate_volatility_risk_budget(
+        self,
+        portfolio_equity: float,
+        stop_loss_pct: float,
+        max_slot_cap_gbp: float,
+        target_risk_pct: float = 0.025
+    ) -> dict:
+        """
+        Volatility-Targeted Risk Parity Position Sizing:
+        Sizes each slot so portfolio risk is strictly capped at target_risk_pct (default 2.5% = £25 on £1,000).
+        """
+        target_risk_gbp = portfolio_equity * target_risk_pct
+        abs_stop = max(0.01, abs(stop_loss_pct))
+        raw_budget = target_risk_gbp / abs_stop
+        allocated_budget = round(min(max_slot_cap_gbp, raw_budget), 2)
+        actual_risk_gbp = round(allocated_budget * abs_stop, 2)
+        actual_risk_pct = round((actual_risk_gbp / max(1.0, portfolio_equity)) * 100.0, 2)
+
+        return {
+            "target_risk_gbp": round(target_risk_gbp, 2),
+            "allocated_budget_gbp": allocated_budget,
+            "max_slot_cap_gbp": round(max_slot_cap_gbp, 2),
+            "actual_risk_gbp": actual_risk_gbp,
+            "actual_portfolio_risk_pct": actual_risk_pct,
+            "is_capped": allocated_budget >= max_slot_cap_gbp
+        }
+
+    def evaluate_4state_market_regime(
+        self,
+        index_spot: float,
+        index_ema_10: float,
+        index_sma_50: float | None = None,
+        index_sma_200: float | None = None,
+        net_gex_usd: float = 150_000_000.0,
+        realized_vol_pct: float = 16.5,
+        binary_macro_hazard: bool = False
+    ) -> dict:
+        """Evaluates 4-State Markov Regime Transition Matrix."""
+        if not self.regime_engine:
+            return self.evaluate_tactical_market_regime(index_spot, index_ema_10, net_gex_usd, binary_macro_hazard)
+        ev = self.regime_engine.evaluate_regime(
+            benchmark_spot=index_spot,
+            benchmark_ema_10=index_ema_10,
+            benchmark_sma_50=index_sma_50,
+            benchmark_sma_200=index_sma_200,
+            net_gex_usd=net_gex_usd,
+            realized_vol_pct=realized_vol_pct,
+            binary_macro_hazard=binary_macro_hazard
+        )
+        return {
+            "regime_state": ev.state,
+            "allow_new_long_slots": ev.max_active_slots > 0,
+            "max_active_slots": ev.max_active_slots,
+            "target_deployment_pct": ev.target_deployment_pct,
+            "target_cash_pct": ev.target_cash_pct,
+            "slot_budget_cap_gbp": ev.slot_budget_cap_gbp,
+            "allow_3x_etfs": ev.allow_3x_etfs,
+            "requires_uk_anchor": ev.requires_uk_anchor,
+            "allowed_asset_types": ev.allowed_asset_types,
+            "rationale": ev.rationale
+        }
 
     def validate_portfolio_correlation(
         self,
@@ -224,16 +317,16 @@ class AdaptiveExecutionEngine:
             # If Call Wall is between Spot and Stage 1 + 1.5%, snap Stage 1 just below Call Wall
             if spot < cw <= (raw_t1_price * 1.015):
                 snapped_t1 = cw * 0.995 # Exit 0.5% below dealer resistance
-                if (snapped_t1 - spot) / spot >= 0.045: # Ensure still at least 4.5%
+                if (snapped_t1 - spot) / max(0.0001, spot) >= 0.045: # Ensure still at least 4.5%
                     raw_t1_price = snapped_t1
-                    t1_pct = (raw_t1_price - spot) / spot
+                    t1_pct = (raw_t1_price - spot) / max(0.0001, spot)
                     gex_snapped = True
                     call_wall_note = f"Snapped to Call Wall (${cw:.2f} - 0.5%)"
                     
             # If Put Wall is near stop, place stop directly below Put Wall to use dealer support
             if (raw_stop_price * 0.985) <= pw < spot:
                 raw_stop_price = pw * 0.992 # 0.8% below put wall support
-                stop_pct = (spot - raw_stop_price) / spot
+                stop_pct = (spot - raw_stop_price) / max(0.0001, spot)
                 put_wall_note = f"Anchored below Put Wall (${pw:.2f} - 0.8%)"
 
         # Round values
@@ -247,10 +340,15 @@ class AdaptiveExecutionEngine:
         
         # Sizing in GBP
         unit_cost_gbp = spot if is_uk else (spot * fx_rate)
-        shares = round(budget / unit_cost_gbp, 4)
+        shares = round(budget / max(0.0001, unit_cost_gbp), 4)
         
         # Adaptive Horizon Classification
         horizon_plan = self.classify_adaptive_horizon(ticker, asset_type, daily_vol)
+        risk_parity = self.calculate_volatility_risk_budget(
+            portfolio_equity=budget * 3.0,
+            stop_loss_pct=stop_pct,
+            max_slot_cap_gbp=budget
+        )
 
         return {
             "ticker": ticker,
@@ -260,6 +358,7 @@ class AdaptiveExecutionEngine:
             "daily_vol_pct": round(daily_vol * 100, 2),
             "atr_14_pct": round(atr_pct * 100, 2),
             "commitment_gbp": budget,
+            "risk_parity_sizing": risk_parity,
             "shares": shares,
             "stop_loss_price": stop_price,
             "stop_loss_pct": round(-stop_pct * 100, 2),
@@ -651,12 +750,13 @@ class AdaptiveExecutionEngine:
             trailing_trades.append(net_trail)
 
         def calc_stats(rets: list[float]) -> dict:
+            n = max(1, len(rets))
             wins = [r for r in rets if r > 0]
             losses = [r for r in rets if r <= 0]
-            wr = len(wins) / len(rets)
+            wr = len(wins) / n
             avg_w = sum(wins) / max(1, len(wins))
             avg_l = sum(losses) / max(1, len(losses))
-            exp = sum(rets) / len(rets)
+            exp = sum(rets) / n
             pf = abs(sum(wins)) / max(0.0001, abs(sum(losses)))
             return {
                 "total_trades": len(rets),
@@ -754,9 +854,10 @@ class AdaptiveExecutionEngine:
             dynamic_results.append(dyn_ret)
 
         def get_stats(rets):
+            n = max(1, len(rets))
             wins = [r for r in rets if r > 0]
             losses = [r for r in rets if r <= 0]
-            wr = len(wins) / len(rets)
+            wr = len(wins) / n
             avg_w = sum(wins) / max(1, len(wins))
             avg_l = sum(losses) / max(1, len(losses))
             exp = (wr * avg_w) + ((1.0 - wr) * avg_l)

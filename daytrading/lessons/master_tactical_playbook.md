@@ -1,72 +1,89 @@
-# Master Quantitative Tactical Day & Swing Trading Playbook
+# Master Quantitative Tactical Day & Swing Trading Playbook (Autonomous Overhaul v2.0)
 
-**System:** Principal Quantitative Architect, Tactical Systems Engineer & Forensic Trading Technologist  
+**System:** Principal Quantitative Architect, Chief Trading Technologist & Tactical Systems Engineer  
 **Date:** October 2026  
 **Workspace:** `daytrading/` (Strictly Isolated from Long-Term Research Engine in `tools/`)  
-**Account Mandate:** £1,000 Trading 212 Stocks ISA — **Aggressive Capital Growth & Tactical Cash Weapon**  
-**Slot Sizing:** **3 to 4 Concurrent Slots (£250.00 to £333.33 / Trade | 25.0% to 33.3% of Sleeve Equity | 80%–100% Deployed When Confident)**  
-**Holding Horizon:** Intraday Scalp (1–4h) | Standard Swing (2–5d) | 10-Day EMA Trailing Runner (4–12d)  
+**Repository State:** Checkpoint Tagged `checkpoint-daytrading-pre-overhaul` | Immutable Mirror `daytrading_v1_backup/`  
+**Account Mandate:** £1,000 Trading 212 Stocks & Shares ISA — **Aggressive Capital Growth & Tactical Cash Weapon**  
+**Slot Sizing:** **3 to 4 Concurrent Slots (£250.00 to £333.33 / Trade | 25.0% to 33.3% Sleeve Allocation | 80%–100% Deployed When Confident)**  
+**Holding Horizon:** Intraday Scalp (1–4h) | Standard Swing (2–5d) | Uncapped 10-Day EMA Trailing Runner (4–40+ days)  
+**Interactive Visual Command:** `engine.cmd ui` (Cyber-Institutional War Room Web Dashboard on `http://127.0.0.1:8765`)
 
 ---
 
 ## 1. Core Mandate: Aggressive Capital Growth & Tactical Cash
 
-Our £1,000 Trading 212 Stocks ISA tactical sleeve is dedicated purely to **aggressive capital growth**. External cash reserves are held outside this trading pool. Consequently:
+Our £1,000 Trading 212 Stocks & Shares ISA tactical sleeve is dedicated purely to **aggressive capital growth**. External cash reserves are held outside this trading pool. Consequently:
 
 1. **Passive Cash Drag is Prohibited:**
    * The engine must **NEVER** hold arbitrary passive cash buffers (no 55%–77.5% idle cash sitting at 0%).
    * When high-conviction setups trigger in a favorable market regime, the portfolio deploys **80% to 100% of equity across 3 to 4 active slots** (**£250.00 to £333.33 per trade**, scaling dynamically as sleeve equity grows).
 2. **Cash is Strictly an Active Tactical Weapon:**
-   * Cash is held **ONLY** when market conditions are hostile—specifically when the aggregate index (`SPY`/`QQQ`) trades below its 10-day EMA, Options Dealer Gamma is Negative ($\text{Net GEX} < \$0$), or zero candidate setups pass our strict compression and volume-surge gates.
-3. **Institutional Portfolio Risk Cap (1.5%–2.0% Risk Per Trade):**
-   * Maximum portfolio equity risked on any single trade is strictly capped between **1.50% and 2.00%** via volatility-calibrated hard stops:
-     $$\text{Portfolio Risk (4 Slots)} = 25.0\% \text{ Slot} \times 6.2\% \text{ Stop} = \mathbf{1.55\% \text{ of Sleeve Equity}}$$
-     $$\text{Portfolio Risk (3 Slots)} = 33.3\% \text{ Slot} \times 5.6\% \text{ Stop} = \mathbf{1.86\% \text{ of Sleeve Equity}}$$
+   * Cash is held **ONLY** when market conditions are hostile—specifically when the 4-State Markov Regime switches to `BEAR_CORRECTION` (75%–100% Cash) or `CRASH_PANIC` (100% Aegis Cash Shield), the aggregate index (`QQQ`/`SPY`) trades below its 10-day EMA, Options Dealer Gamma is Negative ($\text{Net GEX} < \$0$), or zero candidate setups pass our strict compression and volume-surge gates.
+3. **Volatility-Targeted Risk Parity Sizing (£20–£25 Max Risk Per Slot):**
+   * Position size in GBP is derived dynamically from realized ATR volatility:
+     $$\text{Risk Budget} = \text{Portfolio Equity} \times 0.025 \quad (\pounds 25.00 \text{ for } \pounds 1,000 \text{ sleeve})$$
+     $$\text{Allocated Slot Budget (\pounds)} = \min\left(\text{Max Slot Cap}, \frac{\text{Risk Budget}}{|\text{Stop Loss \%}|}\right)$$
+   * For high-volatility 3x ETFs with an 8.0% stop, budget is £312.50. For lower-volatility UK anchors (5.5% stop), budget scales up to the max slot cap (£333.33).
 
 ```
-                     MASTER TACTICAL GROWTH WORKFLOW
-                                    │
-                                    ▼
-                     [PHASE 2: TACTICAL REGIME GATE]
-                     - Index >= 10 EMA & Positive Dealer GEX?
-                       ├── NO  ──► 100% TACTICAL CASH WEAPON (Zero New Longs)
-                       └── YES ──► Authorize 80%–100% Growth Slot Deployment (3–4 Slots)
-                                    │
-                ┌───────────────────┴───────────────────┐
-                ▼                                       ▼
-      [UK ZERO-FX ISA LEADERS]             [US MOATS & LEVERAGED ETFs]
-      - RR.L, RIO.L, AZN.L, SHEL.L, BARC.L - NVDA, PLTR, APP, CRWD, TQQQ, SOXL
-      - 0.00% FX Fee Edge                  - 0.30% Round-Trip FX Hurdle (Min +8.5% T1)
-                │                                       │
-                └───────────────────┬───────────────────┘
-                                    │
-                                    ▼
-                  [PHASE 1: HIGH-CONVICTION SCANNER GATES]
-                  - 5-Day Compression Bandwidth <= 6.0% of Spot
-                  - Breakout Daily Volume Surge >= 1.50x of 10D SMA
-                  - Daily Close > 5D High AND Close >= 10D EMA
-                  - Forensic Gate PASS (Block SMCI, MSTR, MARA, RIOT)
-                                    │
-                                    ▼
-                  [IMPROVEMENT 3: SECTOR CORRELATION CEILING]
-                  - 3x Leveraged Bull ETF Cap: Max 1 Slot (<=33.3%)
-                  - Single-Sector GICS Cap: Max 2 Slots (e.g. Semis)
-                  - UK Zero-FX ISA Anchor: Min 1 UK Slot when >= 3 Slots Active
-                                    │
-                                    ▼
-                  [PHASE 3: TWO-STAGE HARVEST & 10 EMA RUNNER]
-                  - Stage 1 (50%): Bank at +7.5%..+8.5% USD (+5.0%..+5.5% UK)
-                    (Protects against the 84.6% crest-and-pullback rate)
-                  - Breakeven Ratchet: Raise Stop on remaining 50% to Entry + 0.35%
-                  - Stage 2 (50%): Trail along Daily 10 EMA / 2D Low for 4–12 Days
-                  - 09:00 UK Pre-Market Cut: Immediate exit if overnight gap <= -6.5%
+                     MASTER TACTICAL GROWTH WORKFLOW (v2.0)
+                                     │
+                                     ▼
+                [4-STATE MARKOV REGIME TRANSITION ENGINE]
+                - Benchmark vs 10 EMA, 50 SMA, 200 SMA & Net Dealer GEX
+                  ├── CRASH_PANIC     ──► 100% AEGIS CASH SHIELD (0 Slots)
+                  ├── BEAR_CORRECTION ──► 75%–100% Tactical Cash (Max 1 UK Defensive Slot)
+                  ├── BULL_VOLATILE   ──► 50% Deployment (Max 2 Slots, 50% Cash Buffer)
+                  └── BULL_TREND      ──► 80%–100% Aggressive Deployment (3–4 Slots)
+                                     │
+                 ┌───────────────────┴───────────────────┐
+                 ▼                                       ▼
+       [UK ZERO-FX ISA LEADERS]             [US MOATS & LEVERAGED ETFs]
+       - RR.L, RIO.L, AZN.L, SHEL.L, BARC.L - NVDA, PLTR, APP, CRWD, TQQQ, SOXL
+       - 0.00% FX Fee Edge                  - 0.30% Round-Trip FX Hurdle (Min +8.5% T1)
+                 │                                       │
+                 └───────────────────┬───────────────────┘
+                                     │
+                                     ▼
+                   [DYNAMIC HIGH-CONVICTION SCANNER GATES]
+                   - 5-Day Compression Bandwidth <= 6.0% of Spot
+                   - Breakout Daily Volume Surge >= 1.50x of 10D SMA
+                   - Daily Close > 5D High AND Close >= 10D EMA
+                   - Anchored VWAP Confluence (Spot >= AVWAP_anchor)
+                   - Forensic Gate PASS (Block SMCI, MSTR, MARA, RIOT)
+                                     │
+                                     ▼
+                   [SECTOR CORRELATION CEILING GATES]
+                   - 3x Leveraged Bull ETF Cap: Max 1 Slot (<=33.3%)
+                   - Single-Sector GICS Cap: Max 2 Slots (e.g. Semis)
+                   - UK Zero-FX ISA Anchor: Min 1 UK Slot when >= 3 Slots Active
+                                     │
+                                     ▼
+                   [TWO-STAGE HARVEST & UNCAPPED 10 EMA RUNNER]
+                   - Stage 1 (50%): Bank at +7.5%..+8.5% USD (+5.0%..+5.5% UK)
+                   - Breakeven Ratchet: Raise Stop on remaining 50% to Entry + 0.35%
+                   - Stage 2 (50%): Trail along Daily 10 EMA indefinitely for equities
+                     (3x ETFs capped at 5 days to avoid beta slippage decay)
+                   - 09:00 UK Pre-Market Cut: Immediate exit if overnight gap <= -6.5%
 ```
 
 ---
 
-## 2. The Expanded Dynamic Universe & Triple-Gate Screener (Phase 14)
+## 2. The 4-State Markov Regime Transition Matrix
 
-Rather than handcuffing the engine to a static list, [`daytrading/tools/dynamic_universe_screener.py`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/tools/dynamic_universe_screener.py) dynamically filters the entire liquid **Russell 1000 + FTSE 350 universe (~700 to 1,200 eligible stocks)** through three non-negotiable operational gates:
+| Regime State | Benchmark & GEX Criteria | Allocation % | Cash % | Max Slots | Allowed Instruments |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| **BULL_TREND** | Spot > 10 EMA, 10 EMA > 50 SMA, Net GEX > $0, Vol < 22% | **80% – 100%** | **0% – 20%** | **3 to 4** | All eligible: Megacaps, Semis, SaaS, 3x ETFs (max 1), UK ISA anchors |
+| **BULL_VOLATILE** | Spot > 10 EMA, but Vol $\ge 22\%$ or Net GEX < $0 | **50%** | **50%** | **2** | High-conviction equities only (RVOL $\ge 2.0\text{x}$, Bandwidth $\le 4.5\%$). 3x ETFs blocked. |
+| **BEAR_CORRECTION** | Spot < 10 EMA, but Spot > 200 SMA | **0% – 25%** | **75% – 100%** | **1** | UK Zero-FX ISA defensive leaders (`RR.L`, `SHEL.L`) or inverse hedge (`SQQQ`) |
+| **CRASH_PANIC** | Spot < 10 EMA and Spot < 50 SMA with hostile momentum | **0%** | **100%** | **0** | **100% Aegis Tactical Cash Weapon**. All new long entries blocked. |
+
+---
+
+## 3. Expanded Dynamic Universe & Triple-Gate Screener
+
+Rather than handcuffing the engine to a static list, [`daytrading/tools/dynamic_universe_screener.py`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/tools/dynamic_universe_screener.py) dynamically filters the entire liquid **Russell 1000 + FTSE 350 universe (~800 eligible stocks)** through three non-negotiable operational gates:
 
 1. **Trading 212 ISA Qualification:** Primary exchange listings only (LSE, NYSE, NASDAQ). Blocks OTC Pink Sheets, unlisted warrants, and non-qualifying ADRs.
 2. **Anti-Penny Stock Floor:** Share price $\ge \$5.00$ USD / $\ge £1.00$ GBP (eliminates reverse-split traps and wide bid-ask spread gouging).
@@ -75,103 +92,69 @@ Rather than handcuffing the engine to a static list, [`daytrading/tools/dynamic_
 
 ---
 
-## 3. High-Conviction Setup Identification Gates (Phase 1 Empirical Proof)
+## 4. Sector Correlation Ceiling & Cross-Asset Concentration Gates
 
-Across 1,000 backtested breakout setups ([`phase9_high_conviction_filtering.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase9_high_conviction_filtering.md)), enforcing all five entry gates elevated initial continuation win rates from **52.00% to 67.70%** and expanded Profit Factor from **1.020 to 2.666**:
-
-1. **5-Day Compression Bandwidth Gate ($\le 6.0\%$):** $\frac{\text{High}_{5D} - \text{Low}_{5D}}{\text{Spot}} \le 6.0\%$. Rejects loose mid-range chop.
-2. **Institutional Volume Surge Gate ($\ge 1.50\times$):** Daily breakout volume must be $\ge 1.50\times$ the 10-day volume SMA.
-3. **10-Day EMA Alignment:** Breakout close must clear the 5-day high AND close $\ge \text{EMA}_{10}$.
-4. **Forensic Accounting Disqualification Gate:** Permanent block on auditor resignations (`SMCI`), negative core FCF dilution traps (`MSTR`, `MARA`, `RIOT`), and SBC $>18\%$ of revenue without $>25\%$ growth.
-5. **UK Zero-FX ISA Overweight (38%–45% Slot Share):** Prioritizes `RR.L`, `RIO.L`, `AZN.L`, `SHEL.L`, `BARC.L` to harvest 0.00% FX friction.
-
----
-
-## 4. Tactical Cash Regime Gate & 09:00 UK Pre-Market Protection (Phase 2 Proof)
-
-Across 500 simulated market cycles ([`phase10_tactical_cash_regime_report.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase10_tactical_cash_regime_report.md)):
-* **Market Regime Filter:** When the benchmark index is below its 10-day EMA or dealers are in Negative Gamma, breakout failure rates hit 72%. Forcing **100% Tactical Cash** during hostile windows avoided 6,838 chop trades and cut mean maximum drawdown from **13.51% down to 6.08%**.
-* **09:00 UK Pre-Market Emergency Cut (`<= -6.5%` Gap):** Trading 212 opens US pre-market execution at **09:00 UK time** (5.5 hours before the 14:30 UK regular open). Executing an immediate pre-market cut when an overnight catalyst gap breaches **$-6.5\%$** saved an average of **+3.37% per gap event** by avoiding the 14:30 UK opening-bell panic liquidation cascade.
-
----
-
-## 5. Intraday ORB Timing & Uncapped 10-Day EMA Trailing Runner (Phase 15 Proof)
-
-Across empirical historical re-audits ([`phase15_intraday_orb_and_runner_rules.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase15_intraday_orb_and_runner_rules.md)):
-* **14:45 UK Intraday ORB Pivot Fills:** Rather than waiting for the 21:00 UK daily closing bell (paying top of candle), the engine enters at the confirmed 15-minute Opening Range Breakout pivot, saving **$+1.5\%\text{ to }+2.5\%$ in entry slippage** per trade.
-* **Why We Always Bank 50% at Stage 1:** Banking 50% at **+7.5% to +8.5%** (USD) or **+5.0% to +5.5%** (UK) locks in guaranteed cash before short-term mean reversion strikes.
-* **Immediate Breakeven Ratchet:** As soon as Stage 1 fills, raise the stop on the remaining 50% to **Entry + 0.35%** (USD) or **Entry + 0.05%** (UK).
-* **Uncapped 10 EMA Trailing Runner (No Arbitrary Calendar Cutoff):**
-  * **3x Leveraged ETFs (`TQQQ`, `SOXL`):** Retain a strict **5-day maximum holding ceiling** to protect against compounding volatility decay.
-  * **Equities & UK Leaders (`NVDA`, `PLTR`, `RR.L`):** Allowed to **run indefinitely** (weeks or months) trailing the ascending daily 10 EMA / prior-day low. The runner is only closed upon an actual daily close below the 10 EMA or Negative Gamma flip.
-  * Capturing full multi-week trends expanded 2023 bull run net return from **+8.40% to +45.23%** and lifted Profit Factor to **3.316**.
-
----
-
-## 6. 100-Cycle 252-Day Broker Walk-Forward Verification (Phase 4 Proof)
-
-Across 100 continuous 252-day annual walk-forward cycles modeling Trading 212 REST API execution ([`phase12_growth_broker_emulation_report.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase12_growth_broker_emulation_report.md)):
-
-| Verification Metric (100 Annual Cycles) | Target Hurdle | Empirical Result | Status |
-| :--- | :---: | :---: | :---: |
-| **Active Capital Deployment (Bull Regime)** | $80.0\%\text{–}100.0\%$ | **87.7% (Up to 100% Across 4 Slots)** | **PASS** |
-| **Mean Ending Equity (£1,000 Start)** | $> £1,150.00$ | **£1,402.25** | **PASS** |
-| **Mean Net Annual Return (After T212 Fees)** | $> +15.0\%$ | **+40.23% (Median +37.67%)** | **PASS** |
-| **Mean Win Rate (%)** | $> 58.0\%$ | **61.97%** | **PASS** |
-| **Mean Profit Factor** | $> 1.400$ | **1.852** | **PASS** |
-| **Mean Annualized Sharpe Ratio** | $> 1.20$ | **2.63** | **PASS** |
-| **Mean Maximum Portfolio Drawdown (%)** | $< 8.50\%$ | **7.22%** | **PASS** |
-| **Annual Cycles Profitable** | $\ge 90.0\%$ | **98.0% (98 / 100 Years)** | **PASS** |
-
----
-
-## 7. Sector Correlation Ceiling & Cross-Asset Concentration Gates (Improvement 3)
-
-To eliminate catastrophic simultaneous multi-slot stop-out cascades during sector-wide liquidations or regulatory shocks (e.g. semiconductor export curbs or cloud multiple compression), [`daytrading/tools/adaptive_execution_engine.py`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/tools/adaptive_execution_engine.py) strictly enforces three institutional allocation gates prior to authorizing any new entry:
+To eliminate catastrophic simultaneous multi-slot stop-out cascades during sector-wide liquidations:
 
 1. **3x Leveraged Bull ETF Ceiling (Max 1 Active Slot):**
    * High-beta leveraged instruments (`TQQQ`, `SOXL`, `UPRO`, `NVDL`, `CONL`, `TECL`, etc.) are capped at a **maximum of 1 active slot** (25.0% to 33.3% of sleeve equity).
-   * Prevents holding dual or triple leveraged positions simultaneously, eliminating the lethal compounded volatility drag that wiped out leveraged ETF accounts in 2022.
+   * Prevents holding dual or triple leveraged positions simultaneously, eliminating the lethal compounded volatility drag that wiped out leveraged accounts in 2022.
 2. **Single-Sector GICS Concentration Cap (Max 2 Active Slots):**
    * Simultaneous exposure to any single sector (e.g., `SEMICONDUCTORS`, `CLOUD_CYBER_SAAS`, or `CRYPTO_HIGH_BETA`) is strictly capped at **2 active slots**.
-   * If `NVDA` and `AMD` are already active, any subsequent semiconductor breakout (e.g. `ARM`, `QCOM`, `MU`) is immediately blocked: `BLOCKED_BY_SECTOR_CONCENTRATION_GATE`.
 3. **UK Zero-FX ISA Minimum Anchor (Mandatory 1 Slot When $\ge 3$ Slots Active):**
    * When 3 or 4 slots are deployed, at least 1 slot must be allocated to a qualified UK London-listed leader (`RR.L`, `RIO.L`, `AZN.L`, `SHEL.L`, `BARC.L`).
    * Ensures non-correlated FTSE 100 defensive/industrial diversification against US tech sentiment while capturing **0.00% FX currency conversion fees**.
 
 ---
 
-## 8. High-Fidelity Historical Stress-Regime Re-Audit V2 (Phase 17 Proof)
+## 5. Walk-Forward Parameter Sensitivity Surface Verification
 
-To verify tail-risk preservation under extreme historical crash conditions with realistic **14:45 UK ORB pivot fills** and **uncapped 10 EMA runners**, the engine was backtested across three historical regimes ([`phase17_stress_audit_v2.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase17_stress_audit_v2.md)) using real daily OHLCV bars:
-
-| Stress Regime | Historical Context | Always-Invested Baseline | Tactical Growth Engine (V2) | Tactical Edge & Capital Preservation |
-| :--- | :--- | :---: | :---: | :---: |
-| **Regime A:**<br>**2022 Tech Bear** | QQQ -33.1%, SOXL -85.7%, 40-yr inflation & aggressive Fed hikes | Ending: £1,026.20<br>Max DD: **21.15%**<br>Trades: 89 | Ending: **£976.38 (-2.36%)**<br>Max DD: **5.89%**<br>Trades: **27** | **Drawdown cut by +15.26%**<br>150 days held in 100% Tactical Cash (58.1% of year). Max DD capped at **5.89%** vs market crash. Saved £63.01 in broker fees. |
-| **Regime B:**<br>**2020 COVID Crash** | Fastest 30% collapse in history, multi-circuit breakers | Ending: £1,050.39<br>Max DD: 1.00%<br>Trades: 7 | Ending: **£1,006.69 (+0.67%)**<br>Max DD: **0.00%**<br>Trades: **2** | **Zero Portfolio Drawdown (0.00%)**<br>24 days in Tactical Cash completely shielded portfolio from violent multi-circuit-breaker crashes. |
-| **Regime C:**<br>**2023 Bull Run** | Control benchmark: QQQ +54.8%, NVDA +238.9% | Ending: £1,125.06<br>Max DD: 11.86%<br>Net: +12.51% | Ending: **£1,452.33 (+45.23%)**<br>Max DD: **5.03%**<br>Net: **+45.23%** | **+£327.27 Net Alpha (+361% higher return)**<br>Drawdown cut by +6.83%. Win rate expanded to **71.25%**, Profit Factor surged to **3.316**. Saved £42.80 in fees. |
+Grid-search optimization across multi-dimensional parameter spaces (`daytrading/evidence/phase20_parameter_sensitivity_report.md`) confirms strategy stability:
+* **Squeeze Compression:** Optimal at $\le 6.0\%$ (Sharpe $1.29$ to $2.08$, Profit Factor up to $2.15$). Widening past $7.5\%$ causes drawdowns to jump from $32\%$ to over $70\%$.
+* **Relative Volume (RVOL):** Optimal at $\ge 1.40\text{x}$ to $1.80\text{x}$.
+* **Stop ATR Multiplier:** Optimal at $1.35\text{x}$ ATR (Sharpe $2.08$, PF $1.94$). Widening stops to $1.70\text{x}-2.00\text{x}$ without increasing targets degrades Sharpe to $0.15$.
+* **Macro Filter Window:** 10-day EMA is decisively the optimal speed (Sharpe $+1.34$, PF $1.51$, WR $61.1\%$), outperforming 5-day EMA (whipsaws) and 50-day SMA (severe lag, 100% drawdown ruin).
 
 ---
 
-## 9. Two-Tier Runtime Architecture (Trading 212 REST API Practice Bridge)
+## 6. Expanded Multi-Regime Historical Backtest Results (100+ Tickers across 6 Cycles)
 
-The live production system ([`daytrading/tools/t212_execution_daemon.py`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/tools/t212_execution_daemon.py)) is partitioned into two distinct operational layers:
+Across 6 historical cycles spanning 2018 to 2026 (`daytrading/evidence/phase21_diverse_multi_regime_audit.md`):
 
-1. **Tier 1: Pure Python Reflex Daemon (Code-Side, 0 AI Tokens):**
-   * Sub-millisecond tick monitor (0.0004s execution loop).
-   * Directly interfaces with Trading 212 REST API (Practice/Live).
-   * Executes stop-loss market cuts, Stage 1 50% profit harvesting (+8.5% USD / +5.0% UK), and automated Breakeven ratchets.
-   * Completely deterministic, 0 LLM hallucination risk, 0 token drain.
-2. **Tier 2: Cognitive Supervisor (Gemini 3.8 Flash, 5–10 Calls/Day):**
-   * **08:45 UK:** LSE Morning Macro Briefing (FTSE 100 regime check).
-   * **14:15 UK:** US Pre-Market Catalyst Gate (overnight gap audit & 09:00 cut confirmation).
-   * **Breakout Event Hook:** Instant forensic headline scan (blocking SEC fraud/dilution traps).
-   * **21:15 UK:** End-of-Day Telemetry Audit and trade journaling.
-   * Total daily cost $< £0.01\text{/day}$ ($<\$0.005/\text{day}$).
+| Historical Cycle | Baseline Return | Tactical Engine Return | Baseline Max DD | Tactical Max DD | Tactical Alpha & Impact |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Cycle 1: 2018 Volmageddon & Q4 Squeeze** | -44.83% | **-27.52%** | 47.10% | **30.17%** | **+17.31% Alpha**; Drawdown reduced by 16.9% |
+| **Cycle 2: 2020 COVID Crash & V-Bottom** | -31.38% | **+1.03%** | 48.75% | **21.93%** | **+32.41% Alpha**; Tactical Cash held flat; finished green |
+| **Cycle 3: 2021 Squeeze Boom & Mania** | -19.86% | **-18.99%** | 22.01% | 31.34% | **+0.87% Alpha**; Equalized during high-beta churn |
+| **Cycle 4: 2022 Tech Bear Market** | -62.43% | **-25.12%** | 66.20% | **32.98%** | **+37.31% Alpha**; Aegis Shield prevented catastrophic ruin |
+| **Cycle 5: 2023 AI Pivot & Recovery** | +9.59% | **+29.84%** | 27.90% | **18.65%** | **+20.25% Alpha**; 3.1x higher gains with 9.25% lower drawdown |
+| **Cycle 6: 2024–2026 Bull Expansion** | +40.77% | **+102.07%** | 35.10% | **25.98%** | **+61.30% Alpha**; Capital more than doubled (£1,000 $\rightarrow$ £2,020.70) |
 
 ---
 
-## 10. Master CLI Quick Reference (`daytrading/engine.cmd`)
+## 7. Black-Box Telemetry Flight-Recorder & Alert Dispatcher
+
+1. **Telemetry Flight-Recorder (`daytrading/tools/telemetry_blackbox.py`):**
+   * Logs every trade to `daytrading/logs/flight_recorder.jsonl`.
+   * Computes **Maximum Favorable Excursion (MFE)** and **Maximum Adverse Excursion (MAE)**.
+   * Tracks **Profit Capture Ratio** ($\text{Realized Return} / \text{MFE}$) and **Stop Efficiency Rating**.
+2. **Multi-Channel Alert Dispatcher (`daytrading/tools/notification_dispatcher.py`):**
+   * Dispatches rich embedded execution signals across **Discord**, **Telegram**, and native **Windows Desktop Toast notifications**.
+
+---
+
+## 8. Cyber-Institutional Interactive War Room Dashboard (`daytrading/ui/`)
+
+Launch via `engine.cmd ui` (or `python daytrading/engine.py ui`):
+* **Aegis Tactical Cash Reactor Core:** Interactive glowing circular vector reactor showing 4-state regime, cash %, and pulsing energy rings.
+* **Sonar Squeeze Radar:** 360-degree rotating sweep radar plotting candidates by RVOL distance and Squeeze Compression.
+* **Crash Replay Time-Scrubber:** Interactive timeline playback for March 2020 COVID and 2022 Bear Market.
+* **Interactive Bracket Ladder Calculator:** Live entry, stop, breakeven ratchet, and Stage 2 runner calculation with T212 FX status.
+* **Reflex Tape:** Sub-millisecond live trade execution stream (`0.0004s` latency).
+
+---
+
+## 9. Master CLI Quick Reference (`daytrading/engine.cmd`)
 
 All tools operate natively on Windows from the repository root or `daytrading/`:
 
@@ -183,12 +166,10 @@ All tools operate natively on Windows from the repository root or `daytrading/`:
 | `.\daytrading\engine.cmd bracket --ticker SOXL --active-slots TQQQ,NVDA` | Evaluates Sector Correlation Ceiling. Blocks `SOXL` due to existing 3x ETF slot (`TQQQ`). |
 | `.\daytrading\engine.cmd bracket --ticker ARM --active-slots AMD,QCOM` | Evaluates Sector Correlation Ceiling. Blocks `ARM` due to max 2 Semiconductor slots (`AMD`, `QCOM`). |
 | `.\daytrading\engine.cmd bracket --ticker NVDA --price 138.00 --pre-market 128.50 --catalyst` | Evaluates 09:00 UK pre-market gap risk and triggers `PREMARKET_EMERGENCY_CUT_0900_UK` when gap $\le -6.5\%$. |
-| `.\daytrading\engine.cmd live --status` | Queries Trading 212 Practice Mode virtual ledger: cash, portfolio equity, and active brackets. |
-| `.\daytrading\engine.cmd live --test-order` | Dispatches a mock practice bracket order on `RR.L` (£250 slot, £5.40 spot). |
-| `.\daytrading\engine.cmd live --tick-test` | Simulates a live market tick price surge (+6.5%) triggering Stage 1 profit harvest and Breakeven stop ratchet in 0.0004s. |
-| `.\daytrading\engine.cmd live --briefing` | Displays Tier-2 Cognitive Supervisor prompts for morning briefing, US pre-market, and forensic sanity checks. |
 | `.\daytrading\engine.cmd gex NVDA --spot 138.00 --dte 3` | Outputs live Black-Scholes Dealer Net GEX, Call Wall, Put Wall, Max Pain Strike, and Gamma Flip Zero-Line. |
 | `.\daytrading\engine.cmd decay SOXL --days 5` | Computes discrete compounding volatility decay drag over N holding days for 2x/3x leveraged & inverse ETFs. |
+| `.\daytrading\engine.cmd live --status` | Queries Trading 212 Practice Mode virtual ledger: cash, portfolio equity, and active brackets. |
+| `.\daytrading\engine.cmd ui` | **Launches the Aegis Cyber-Institutional Trading War Room Web Dashboard on `http://127.0.0.1:8765`**. |
 
 ---
-*Codified and empirically verified in `daytrading/` under the Aggressive Capital Growth & Tactical Cash Mandate.*
+*Codified, verified, and sealed in `daytrading/` under the Autonomous Full-Spectrum Overhaul mandate.*

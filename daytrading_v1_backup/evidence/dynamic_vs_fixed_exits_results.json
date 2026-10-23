@@ -1,0 +1,27 @@
+{
+  "phase": "Phase 3: Dynamic 10 EMA Trailing Runner vs Fixed +18% Exits",
+  "trades_evaluated": 1500,
+  "fixed_18pct_5day_cutoff_model": {
+    "total_trades": 1500,
+    "win_rate_pct": 64.53,
+    "profit_factor": 1.693,
+    "net_expectancy_per_trade_pct": 1.378,
+    "avg_win_net_pct": 5.215,
+    "avg_loss_net_pct": -5.603,
+    "cumulative_1500_trade_return_pct": 2067.1
+  },
+  "dynamic_10ema_trailing_runner_model": {
+    "total_trades": 1500,
+    "win_rate_pct": 64.53,
+    "profit_factor": 2.477,
+    "net_expectancy_per_trade_pct": 2.936,
+    "avg_win_net_pct": 7.628,
+    "avg_loss_net_pct": -5.603,
+    "cumulative_1500_trade_return_pct": 4403.3
+  },
+  "runner_telemetry": {
+    "runners_compounded_4_to_12_days": 309,
+    "pullbacks_harvested_above_breakeven_by_10ema": 659,
+    "avg_winner_expansion_bps": 241.3
+  }
+}

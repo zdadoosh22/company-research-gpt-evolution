@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Strat 1: Day-1 Market Open (Gap Chase)",
+    "total_trades": 41,
+    "win_rate": 36.58536585365854,
+    "avg_net": 0.2773871379366512,
+    "sample_trades": [
+      {
+        "ticker": "NVDA",
+        "catalyst": "Q1'24 Historic +50% AI Guidance Shock",
+        "realized_net": 3.2,
+        "won": true
+      },
+      {
+        "ticker": "NVDA",
+        "catalyst": "Q2'24 Record Data Center Demand Beat",
+        "realized_net": -6.3,
+        "won": false
+      },
+      {
+        "ticker": "NVDA",
+        "catalyst": "Q4'24 Acceleration Across All Geographies",
+        "realized_net": 4.9580809294427715,
+        "won": true
+      },
+      {
+        "ticker": "META",
+        "catalyst": "Q4'22 Year of Efficiency Initial Announcement",
+        "realized_net": 3.2,
+        "won": true
+      },
+      {
+        "ticker": "META",
+        "catalyst": "Q2'23 Operating Leverage & Ad Rebound Beat",
+        "realized_net": -3.6249254801130744,
+        "won": false
+      },
+      {
+        "ticker": "META",
+        "catalyst": "Q4'23 Inaugural Dividend & +25% Rev Growth",
+        "realized_net": 1.9628358917258122,
+        "won": false
+      },
+      {
+        "ticker": "MSFT",
+        "catalyst": "Q3'23 Azure Cloud AI Inflection Beat",
+        "realized_net": 2.635622209883992,
+        "won": false
+      },
+      {
+        "ticker": "MSFT",
+        "catalyst": "Q1'24 Commercial Cloud Gross Margin Expansion",
+        "realized_net": -2.3027835725876034,
+        "won": false
+      },
+      {
+        "ticker": "AMZN",
+        "catalyst": "Q2'23 AWS Stabilization & North America Margin",
+        "realized_net": -2.0722955077760763,
+        "won": false
+      },
+      {
+        "ticker": "AMZN",
+        "catalyst": "Q3'23 Record Operating Cash Flow Beat",
+        "realized_net": 7.902856839546817,
+        "won": true
+      }
+    ]
+  },
+  {
+    "name": "Strat 2: Day-1 Cash Close (Institutional Close Confirmation)",
+    "total_trades": 41,
+    "win_rate": 36.58536585365854,
+    "avg_net": 0.5508802997701995,
+    "sample_trades": [
+      {
+        "ticker": "NVDA",
+        "catalyst": "Q1'24 Historic +50% AI Guidance Shock",
+        "realized_net": 3.2,
+        "won": true
+      },
+      {
+        "ticker": "NVDA",
+        "catalyst": "Q2'24 Record Data Center Demand Beat",
+        "realized_net": 4.347714154013222,
+        "won": true
+      },
+      {
+        "ticker": "NVDA",
+        "catalyst": "Q4'24 Acceleration Across All Geographies",
+        "realized_net": 0.43085319569894814,
+        "won": false
+      },
+      {
+        "ticker": "META",
+        "catalyst": "Q4'22 Year of Efficiency Initial Announcement",
+        "realized_net": -6.3,
+        "won": false
+      },
+      {
+        "ticker": "META",
+        "catalyst": "Q2'23 Operating Leverage & Ad Rebound Beat",
+        "realized_net": 0.1748038326969753,
+        "won": false
+      },
+      {
+        "ticker": "META",
+        "catalyst": "Q4'23 Inaugural Dividend & +25% Rev Growth",
+        "realized_net": -1.7484526041101813,
+        "won": false
+      },
+      {
+        "ticker": "MSFT",
+        "catalyst": "Q3'23 Azure Cloud AI Inflection Beat",
+        "realized_net": 2.7571821541027686,
+        "won": false
+      },
+      {
+        "ticker": "MSFT",
+        "catalyst": "Q1'24 Commercial Cloud Gross Margin Expansion",
+        "realized_net": 1.2851098375671577,
+        "won": false
+      },
+      {
+        "ticker": "AMZN",
+        "catalyst": "Q2'23 AWS Stabilization & North America Margin",
+        "realized_net": -1.1311267473209385,
+        "won": false
+      },
+      {
+        "ticker": "AMZN",
+        "catalyst": "Q3'23 Record Operating Cash Flow Beat",
+        "realized_net": 7.450825278440952,
+        "won": true
+      }
+    ]
+  },
+  {
+    "name": "Strat 3: Day-2 Dip Reversal Entry",
+    "total_trades": 41,
+    "win_rate": 39.02439024390244,
+    "avg_net": 0.7966270363470505,
+    "sample_trades": [
+      {
+        "ticker": "NVDA",
+        "catalyst": "Q1'24 Historic +50% AI Guidance Shock",
+        "realized_net": 3.2,
+        "won": true
+      },
+      {
+        "ticker": "NVDA",
+        "catalyst": "Q2'24 Record Data Center Demand Beat",
+        "realized_net": 4.683830623939765,
+        "won": true
+      },
+      {
+        "ticker": "NVDA",
+        "catalyst": "Q4'24 Acceleration Across All Geographies",
+        "realized_net": -2.3769914405163624,
+        "won": false
+      },
+      {
+        "ticker": "META",
+        "catalyst": "Q4'22 Year of Efficiency Initial Announcement",
+        "realized_net": 3.2,
+        "won": true
+      },
+      {
+        "ticker": "META",
+        "catalyst": "Q2'23 Operating Leverage & Ad Rebound Beat",
+        "realized_net": -1.464479419511141,
+        "won": false
+      },
+      {
+        "ticker": "META",
+        "catalyst": "Q4'23 Inaugural Dividend & +25% Rev Growth",
+        "realized_net": -0.676696074073516,
+        "won": false
+      },
+      {
+        "ticker": "MSFT",
+        "catalyst": "Q3'23 Azure Cloud AI Inflection Beat",
+        "realized_net": 2.5482591617435757,
+        "won": false
+      },
+      {
+        "ticker": "MSFT",
+        "catalyst": "Q1'24 Commercial Cloud Gross Margin Expansion",
+        "realized_net": 1.3238910672862663,
+        "won": false
+      },
+      {
+        "ticker": "AMZN",
+        "catalyst": "Q2'23 AWS Stabilization & North America Margin",
+        "realized_net": -2.129918242807487,
+        "won": false
+      },
+      {
+        "ticker": "AMZN",
+        "catalyst": "Q3'23 Record Operating Cash Flow Beat",
+        "realized_net": 6.62275855660232,
+        "won": true
+      }
+    ]
+  }
+]

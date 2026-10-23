@@ -1,0 +1,459 @@
+{
+  "decay_matrix": [
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 15.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": 0.034,
+      "mean_etf_ret_pct": 0.103,
+      "ideal_leveraged_ret_pct": 0.103,
+      "decay_drag_pct": 0.0
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 15.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": 0.037,
+      "mean_etf_ret_pct": 0.113,
+      "ideal_leveraged_ret_pct": 0.111,
+      "decay_drag_pct": -0.002
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 15.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": -0.022,
+      "mean_etf_ret_pct": -0.065,
+      "ideal_leveraged_ret_pct": -0.066,
+      "decay_drag_pct": -0.001
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 15.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": 0.027,
+      "mean_etf_ret_pct": 0.075,
+      "ideal_leveraged_ret_pct": 0.082,
+      "decay_drag_pct": 0.007
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 30.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": -0.024,
+      "mean_etf_ret_pct": -0.072,
+      "ideal_leveraged_ret_pct": -0.072,
+      "decay_drag_pct": 0.0
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 30.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": 0.042,
+      "mean_etf_ret_pct": 0.119,
+      "ideal_leveraged_ret_pct": 0.127,
+      "decay_drag_pct": 0.008
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 30.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": 0.064,
+      "mean_etf_ret_pct": 0.186,
+      "ideal_leveraged_ret_pct": 0.192,
+      "decay_drag_pct": 0.006
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 30.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": 0.032,
+      "mean_etf_ret_pct": 0.11,
+      "ideal_leveraged_ret_pct": 0.097,
+      "decay_drag_pct": -0.012
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 60.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": -0.025,
+      "mean_etf_ret_pct": -0.075,
+      "ideal_leveraged_ret_pct": -0.075,
+      "decay_drag_pct": 0.0
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 60.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": 0.069,
+      "mean_etf_ret_pct": 0.223,
+      "ideal_leveraged_ret_pct": 0.206,
+      "decay_drag_pct": -0.016
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 60.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": -0.129,
+      "mean_etf_ret_pct": -0.406,
+      "ideal_leveraged_ret_pct": -0.386,
+      "decay_drag_pct": 0.019
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 60.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": -0.089,
+      "mean_etf_ret_pct": -0.226,
+      "ideal_leveraged_ret_pct": -0.266,
+      "decay_drag_pct": -0.04
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 90.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": 0.123,
+      "mean_etf_ret_pct": 0.368,
+      "ideal_leveraged_ret_pct": 0.368,
+      "decay_drag_pct": 0.0
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 90.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": -0.168,
+      "mean_etf_ret_pct": -0.536,
+      "ideal_leveraged_ret_pct": -0.504,
+      "decay_drag_pct": 0.033
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 90.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": 0.203,
+      "mean_etf_ret_pct": 0.526,
+      "ideal_leveraged_ret_pct": 0.61,
+      "decay_drag_pct": 0.084
+    },
+    {
+      "beta": 3.0,
+      "annual_vol_pct": 90.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": 0.076,
+      "mean_etf_ret_pct": 0.372,
+      "ideal_leveraged_ret_pct": 0.229,
+      "decay_drag_pct": -0.143
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 15.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": -0.016,
+      "mean_etf_ret_pct": -0.032,
+      "ideal_leveraged_ret_pct": -0.032,
+      "decay_drag_pct": 0.0
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 15.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": 0.031,
+      "mean_etf_ret_pct": 0.062,
+      "ideal_leveraged_ret_pct": 0.062,
+      "decay_drag_pct": 0.0
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 15.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": 0.019,
+      "mean_etf_ret_pct": 0.037,
+      "ideal_leveraged_ret_pct": 0.037,
+      "decay_drag_pct": 0.0
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 15.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": 0.056,
+      "mean_etf_ret_pct": 0.109,
+      "ideal_leveraged_ret_pct": 0.111,
+      "decay_drag_pct": 0.002
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 30.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": 0.023,
+      "mean_etf_ret_pct": 0.047,
+      "ideal_leveraged_ret_pct": 0.047,
+      "decay_drag_pct": 0.0
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 30.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": -0.011,
+      "mean_etf_ret_pct": -0.023,
+      "ideal_leveraged_ret_pct": -0.022,
+      "decay_drag_pct": 0.001
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 30.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": -0.022,
+      "mean_etf_ret_pct": -0.049,
+      "ideal_leveraged_ret_pct": -0.044,
+      "decay_drag_pct": 0.005
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 30.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": -0.026,
+      "mean_etf_ret_pct": -0.055,
+      "ideal_leveraged_ret_pct": -0.052,
+      "decay_drag_pct": 0.004
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 60.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": 0.004,
+      "mean_etf_ret_pct": 0.008,
+      "ideal_leveraged_ret_pct": 0.008,
+      "decay_drag_pct": 0.0
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 60.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": -0.067,
+      "mean_etf_ret_pct": -0.125,
+      "ideal_leveraged_ret_pct": -0.135,
+      "decay_drag_pct": -0.01
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 60.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": 0.048,
+      "mean_etf_ret_pct": 0.097,
+      "ideal_leveraged_ret_pct": 0.097,
+      "decay_drag_pct": -0.0
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 60.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": 0.261,
+      "mean_etf_ret_pct": 0.463,
+      "ideal_leveraged_ret_pct": 0.523,
+      "decay_drag_pct": 0.06
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 90.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": -0.044,
+      "mean_etf_ret_pct": -0.088,
+      "ideal_leveraged_ret_pct": -0.088,
+      "decay_drag_pct": -0.0
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 90.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": -0.02,
+      "mean_etf_ret_pct": -0.062,
+      "ideal_leveraged_ret_pct": -0.04,
+      "decay_drag_pct": 0.022
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 90.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": -0.112,
+      "mean_etf_ret_pct": -0.213,
+      "ideal_leveraged_ret_pct": -0.223,
+      "decay_drag_pct": -0.01
+    },
+    {
+      "beta": 2.0,
+      "annual_vol_pct": 90.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": 0.223,
+      "mean_etf_ret_pct": 0.443,
+      "ideal_leveraged_ret_pct": 0.446,
+      "decay_drag_pct": 0.003
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 15.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": -0.015,
+      "mean_etf_ret_pct": 0.046,
+      "ideal_leveraged_ret_pct": 0.046,
+      "decay_drag_pct": 0.0
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 15.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": -0.0,
+      "mean_etf_ret_pct": 0.006,
+      "ideal_leveraged_ret_pct": 0.001,
+      "decay_drag_pct": -0.005
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 15.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": -0.017,
+      "mean_etf_ret_pct": 0.057,
+      "ideal_leveraged_ret_pct": 0.051,
+      "decay_drag_pct": -0.007
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 15.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": -0.032,
+      "mean_etf_ret_pct": 0.102,
+      "ideal_leveraged_ret_pct": 0.096,
+      "decay_drag_pct": -0.006
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 30.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": 0.031,
+      "mean_etf_ret_pct": -0.092,
+      "ideal_leveraged_ret_pct": -0.092,
+      "decay_drag_pct": -0.0
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 30.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": -0.048,
+      "mean_etf_ret_pct": 0.127,
+      "ideal_leveraged_ret_pct": 0.145,
+      "decay_drag_pct": 0.018
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 30.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": -0.024,
+      "mean_etf_ret_pct": 0.07,
+      "ideal_leveraged_ret_pct": 0.071,
+      "decay_drag_pct": 0.002
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 30.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": -0.051,
+      "mean_etf_ret_pct": 0.127,
+      "ideal_leveraged_ret_pct": 0.154,
+      "decay_drag_pct": 0.027
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 60.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": -0.021,
+      "mean_etf_ret_pct": 0.064,
+      "ideal_leveraged_ret_pct": 0.064,
+      "decay_drag_pct": -0.0
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 60.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": 0.029,
+      "mean_etf_ret_pct": -0.134,
+      "ideal_leveraged_ret_pct": -0.087,
+      "decay_drag_pct": 0.047
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 60.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": 0.022,
+      "mean_etf_ret_pct": 0.031,
+      "ideal_leveraged_ret_pct": -0.067,
+      "decay_drag_pct": -0.099
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 60.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": -0.204,
+      "mean_etf_ret_pct": 0.799,
+      "ideal_leveraged_ret_pct": 0.611,
+      "decay_drag_pct": -0.189
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 90.0,
+      "days": 1,
+      "mean_benchmark_ret_pct": -0.014,
+      "mean_etf_ret_pct": 0.043,
+      "ideal_leveraged_ret_pct": 0.043,
+      "decay_drag_pct": -0.0
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 90.0,
+      "days": 3,
+      "mean_benchmark_ret_pct": 0.006,
+      "mean_etf_ret_pct": -0.022,
+      "ideal_leveraged_ret_pct": -0.017,
+      "decay_drag_pct": 0.005
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 90.0,
+      "days": 5,
+      "mean_benchmark_ret_pct": -0.131,
+      "mean_etf_ret_pct": 0.339,
+      "ideal_leveraged_ret_pct": 0.393,
+      "decay_drag_pct": 0.054
+    },
+    {
+      "beta": -3.0,
+      "annual_vol_pct": 90.0,
+      "days": 10,
+      "mean_benchmark_ret_pct": 0.355,
+      "mean_etf_ret_pct": -0.497,
+      "ideal_leveraged_ret_pct": -1.065,
+      "decay_drag_pct": -0.568
+    }
+  ],
+  "rotation_summary": {
+    "passive_3x_bull": {
+      "total_cycles": 1000,
+      "win_rate_pct": 48.4,
+      "avg_win_pct": 26.169,
+      "avg_loss_pct": -19.612,
+      "cycle_expectancy_pct": 2.546
+    },
+    "passive_3x_bear": {
+      "total_cycles": 1000,
+      "win_rate_pct": 38.7,
+      "avg_win_pct": 24.586,
+      "avg_loss_pct": -20.395,
+      "cycle_expectancy_pct": -2.988
+    },
+    "dual_directional_rotation": {
+      "total_cycles": 1000,
+      "win_rate_pct": 97.7,
+      "avg_win_pct": 35.015,
+      "avg_loss_pct": -3.946,
+      "cycle_expectancy_pct": 34.119
+    }
+  }
+}

@@ -23,12 +23,15 @@ def norm_pdf(x):
     return (1.0 / math.sqrt(2.0 * math.pi)) * math.exp(-0.5 * x * x)
 
 def bs_gamma(spot, strike, tte, vol, rate=0.045):
-    """Calculates Black-Scholes Gamma."""
-    if tte <= 0.0001 or vol <= 0.0001 or spot <= 0.0001:
+    """Calculates Black-Scholes Gamma with bulletproof domain protection."""
+    if tte <= 0.0001 or vol <= 0.0001 or spot <= 0.0001 or strike <= 0.0001:
         return 0.0
-    d1 = (math.log(spot / strike) + (rate + 0.5 * vol * vol) * tte) / (vol * math.sqrt(tte))
-    gamma = norm_pdf(d1) / (spot * vol * math.sqrt(tte))
-    return gamma
+    try:
+        d1 = (math.log(spot / strike) + (rate + 0.5 * vol * vol) * tte) / (vol * math.sqrt(tte))
+        gamma = norm_pdf(d1) / (spot * vol * math.sqrt(tte))
+        return gamma
+    except (ValueError, ZeroDivisionError):
+        return 0.0
 
 class OptionsGEXTacticalEngine:
     def __init__(self):

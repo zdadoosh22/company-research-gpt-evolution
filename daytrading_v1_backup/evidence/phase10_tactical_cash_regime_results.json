@@ -1,0 +1,23 @@
+{
+  "phase": "Phase 2: Tactical Regime Gate & Extended-Hours Protection",
+  "simulated_market_cycles": 500,
+  "always_invested_unfiltered_baseline": {
+    "mean_ending_equity_gbp": 1076.53,
+    "mean_net_return_pct": 7.65,
+    "mean_max_drawdown_pct": 13.51,
+    "worst_cycle_drawdown_pct": 33.6
+  },
+  "tactical_cash_and_premarket_protected_engine": {
+    "mean_ending_equity_gbp": 1297.44,
+    "mean_net_return_pct": 29.74,
+    "mean_max_drawdown_pct": 6.08,
+    "worst_cycle_drawdown_pct": 17.81
+  },
+  "protection_telemetry": {
+    "hostile_chop_trades_avoided_via_tactical_cash": 6838,
+    "premarket_0900_uk_cuts_executed": 791,
+    "avg_open_panic_slippage_saved_per_gap_pct": 3.37,
+    "mean_drawdown_reduction_pct": 7.43,
+    "capital_preservation_alpha_gbp": 220.91
+  }
+}
