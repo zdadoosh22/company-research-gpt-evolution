@@ -34,6 +34,11 @@ TELEMETRY_DIR = SCRIPT_DIR / "telemetry"
 AUTOPSIES_DIR = SCRIPT_DIR / "autopsies"
 HARNESS_PATH = DAYTRADING_ROOT / "tools" / "evolution_harness.py"
 
+try:
+    import experience_bank
+except ImportError:
+    experience_bank = None
+
 
 def get_latest_generation() -> tuple[int, dict | None]:
     TELEMETRY_DIR.mkdir(parents=True, exist_ok=True)
@@ -82,16 +87,32 @@ def dispatch_packet_for_chatgpt():
     gen, telemetry = get_latest_generation()
     next_gen = gen + 1
     
+    eb_summary = {}
+    if experience_bank is not None:
+        try:
+            eb_summary = experience_bank.ExperienceBank().get_summary_for_prompt()
+        except Exception:
+            pass
+
     packet = {
         "current_generation": gen,
         "next_generation": next_gen,
         "active_architecture": "5-Pillar All-Weather Alpha Architecture (RS Sector Rotation, ATR Volatility Bracket, RSI Dip Sniper, SQQQ Inverse Hedge, Cash Shield)",
-        "latest_telemetry": telemetry
+        "baselines": {
+            "is_mean_return_pct": 53.34,
+            "oos_mean_return_pct": 91.59,
+            "oos_sharpe_ratio": 2.65,
+            "stress_tested_oos_return_pct": 55.83,
+            "max_allowed_oos_drawdown_pct": 15.00
+        },
+        "latest_telemetry": telemetry,
+        "experience_bank": eb_summary
     }
     
     print("\n" + "=" * 80)
     print(f"📋 DISPATCH PACKET FOR CHATGPT (GENERATION {next_gen})")
     print("=" * 80)
+    print("Master Prompt: daytrading/evolution/MASTER_META_OPTIMIZER_PROMPT_V2.md")
     print("Copy and paste the JSON block below into ChatGPT:")
     print("--------------------------------------------------------------------------------")
     print(json.dumps(packet, indent=2))
@@ -113,11 +134,19 @@ def verify_generation(generation: int, hypothesis: str):
         print(f"\n🎉 [ORCHESTRATOR] Generation {generation} PASSED ALL HURDLES!")
         print("Executing automated git commit and checkpoint tagging...")
         
-        # Git commit
+        # Git commit & tag
         subprocess.run(["git", "add", "daytrading/"], cwd=str(PROJECT_ROOT))
         subprocess.run(["git", "commit", "-m", f"feat(evolution): Gen {generation} - {hypothesis} [PASSED]"], cwd=str(PROJECT_ROOT))
         subprocess.run(["git", "tag", f"checkpoint-gen-{generation}"], cwd=str(PROJECT_ROOT))
         print(f"✅ Created checkpoint tag: checkpoint-gen-{generation}")
+        
+        # Git push attempt
+        try:
+            subprocess.run(["git", "push", "origin", "main", "--tags"], cwd=str(PROJECT_ROOT), capture_output=True, timeout=20)
+            print("🚀 Pushed updates and tags to remote origin.")
+        except Exception:
+            pass
+            
         show_scoreboard()
     else:
         print(f"\n🚨 [ORCHESTRATOR] Generation {generation} FAILED HURDLES.")

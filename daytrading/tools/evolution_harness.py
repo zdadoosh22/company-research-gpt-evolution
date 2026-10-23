@@ -38,7 +38,12 @@ TELEMETRY_DIR = EVOLUTION_DIR / "telemetry"
 AUTOPSIES_DIR = EVOLUTION_DIR / "autopsies"
 
 sys.path.insert(0, str(SCRIPT_DIR))
+sys.path.insert(0, str(EVOLUTION_DIR))
 import full_universe_out_of_sample_backtest as fb
+try:
+    import experience_bank
+except ImportError:
+    experience_bank = None
 
 # Baseline Hurdles established in Phase 25 (v3.0-all-weather-converged)
 BASELINE_IS_MEAN_RETURN = 53.34      # Epochs 1-5 Mean Return Baseline
@@ -202,6 +207,29 @@ class EvolutionBacktestHarness:
             sym = "✅" if passed else "❌"
             print(f"  {sym} {h}: {'PASSED' if passed else 'FAILED'}")
         print(f"\n📁 Saved telemetry: {telemetry_file}")
+
+        # Update Institutional Experience Bank
+        if experience_bank is not None and self.generation > 1:
+            try:
+                eb = experience_bank.ExperienceBank()
+                if overall_passed:
+                    eb.record_validated_alpha(
+                        generation=self.generation,
+                        hypothesis=self.hypothesis,
+                        oos_return=oos_metrics["mean_net_return_pct"],
+                        oos_sharpe=oos_metrics["annualized_sharpe"],
+                        stress_return=stress_metrics["mean_net_return_pct"]
+                    )
+                else:
+                    failed_hurdles = [k for k, v in hurdles.items() if not v]
+                    eb.record_falsified_hypothesis(
+                        generation=self.generation,
+                        hypothesis=self.hypothesis,
+                        failure_reasons=failed_hurdles,
+                        autopsy_file=f"gen_{self.generation:03d}_autopsy.md"
+                    )
+            except Exception as e:
+                print(f"⚠️ Warning: Could not update ExperienceBank: {e}")
 
         return telemetry
 

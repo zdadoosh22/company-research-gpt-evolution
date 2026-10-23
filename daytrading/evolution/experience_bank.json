@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "last_updated": "2026-10-23T23:38:02.411761+00:00",
+  "trading_rules_invariants": [
+    "\u00a31,000 Trading 212 Stocks & Shares ISA capital constraint.",
+    "Exact 0.15% FX conversion fee on USD-denominated tickers.",
+    "Long-only cash equity; shorting prohibited; downside hedging via synthetic inverse ETFs (SQQQ/QID).",
+    "Holding periods: Intraday to multi-day tactical swing (max 10-15 days).",
+    "Quarantined Out-of-Sample: 2021 to 2026 is strictly blind evaluation data."
+  ],
+  "heuristic_guardrails": [
+    "Fixed percentage stops trigger excessive stop-outs in high-volatility regimes; always use dynamic ATR-scaled stops >= 1.5x ATR.",
+    "High-frequency breakout trading on low-beta assets generates excessive fee drag (>0.30% roundtrip); only trade breakouts in Top 3 RS sectors.",
+    "Inverse ETFs (SQQQ/QID) suffer from -2.85x daily volatility decay drag; holding beyond 5 consecutive days during chop guarantees capital erosion.",
+    "During Bear and Chop regimes, RSI dip-sniping must require both RSI <= 30 AND lower Bollinger Band touch to prevent catching falling knives."
+  ],
+  "validated_alphas": [
+    {
+      "generation": 1,
+      "hypothesis": "Baseline Engine Freeze v3.0: 5-Pillar All-Weather Profit Architecture",
+      "oos_return_pct": 91.59,
+      "oos_sharpe": 2.65,
+      "stress_tested_return_pct": 55.83,
+      "status": "ACTIVE_PRODUCTION_BENCHMARK"
+    }
+  ],
+  "falsified_hypotheses": []
+}
