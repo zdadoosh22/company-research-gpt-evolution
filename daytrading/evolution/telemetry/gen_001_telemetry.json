@@ -1,0 +1,399 @@
+{
+  "timestamp": "2026-10-23T23:34:37.405192+00:00",
+  "generation": 1,
+  "hypothesis": "Baseline Engine Freeze v3.0",
+  "verdict": "PASSED",
+  "overall_passed": true,
+  "hurdles": {
+    "is_profitable": true,
+    "oos_profitable": true,
+    "oos_return_vs_baseline": true,
+    "max_drawdown_limit": true,
+    "friction_stress_viable": true,
+    "win_rate_acceptable": true,
+    "dsr_significant": true
+  },
+  "metrics": {
+    "in_sample": {
+      "epoch_count": 5,
+      "mean_net_return_pct": 53.34,
+      "mean_win_rate_pct": 53.12,
+      "max_drawdown_pct": 25.33,
+      "annualized_sharpe": 0.9,
+      "pass_rate_pct": 60.0,
+      "epochs": [
+        {
+          "epoch_id": "EPOCH_1",
+          "epoch_name": "2015\u20132016 Sideways Chop & Oil Crash",
+          "market_type": "CHOP_AND_CRASH",
+          "date_range": "2015-01-02 to 2016-12-30",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1096.68,
+          "net_profit_gbp": 96.68,
+          "net_return_pct": 9.67,
+          "target_hurdle_pct": 10.0,
+          "hurdle_passed": false,
+          "max_drawdown_pct": 21.52,
+          "win_rate_pct": 47.2,
+          "profit_factor": 1.05,
+          "total_trades": 216,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": -24.3,
+            "INVERSE_WATERFALL_HARVESTER": 678.82,
+            "SECTOR_RS_ROTATION_BREAKOUT": -557.84
+          },
+          "broker_fees_gbp": 253.47
+        },
+        {
+          "epoch_id": "EPOCH_2",
+          "epoch_name": "2017 Low-Vol Synchronized Global Expansion",
+          "market_type": "BULL_TREND",
+          "date_range": "2017-01-03 to 2017-12-29",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1050.45,
+          "net_profit_gbp": 50.45,
+          "net_return_pct": 5.05,
+          "target_hurdle_pct": 25.0,
+          "hurdle_passed": false,
+          "max_drawdown_pct": 25.33,
+          "win_rate_pct": 47.0,
+          "profit_factor": 1.05,
+          "total_trades": 115,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": -3.58,
+            "INVERSE_WATERFALL_HARVESTER": 302.49,
+            "SECTOR_RS_ROTATION_BREAKOUT": -248.46
+          },
+          "broker_fees_gbp": 116.42
+        },
+        {
+          "epoch_id": "EPOCH_3",
+          "epoch_name": "2018 Volmageddon & Q4 Rate Hike Panic",
+          "market_type": "VOLATILE_CHOP_BEAR",
+          "date_range": "2018-01-02 to 2018-12-31",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1403.91,
+          "net_profit_gbp": 403.91,
+          "net_return_pct": 40.39,
+          "target_hurdle_pct": 12.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 13.78,
+          "win_rate_pct": 51.5,
+          "profit_factor": 1.52,
+          "total_trades": 97,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": -12.91,
+            "INVERSE_WATERFALL_HARVESTER": 663.45,
+            "SECTOR_RS_ROTATION_BREAKOUT": -246.63
+          },
+          "broker_fees_gbp": 122.44
+        },
+        {
+          "epoch_id": "EPOCH_4",
+          "epoch_name": "2019 Fed Pivot & Steady Bull Drift",
+          "market_type": "BULL_EXPANSION",
+          "date_range": "2019-01-02 to 2019-12-31",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1666.54,
+          "net_profit_gbp": 666.54,
+          "net_return_pct": 66.65,
+          "target_hurdle_pct": 30.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 13.93,
+          "win_rate_pct": 57.3,
+          "profit_factor": 1.77,
+          "total_trades": 110,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": 10.23,
+            "INVERSE_WATERFALL_HARVESTER": 285.38,
+            "SECTOR_RS_ROTATION_BREAKOUT": 370.93
+          },
+          "broker_fees_gbp": 136.45
+        },
+        {
+          "epoch_id": "EPOCH_5",
+          "epoch_name": "2020 COVID Flash Crash & Hyper-Stimulus V-Bottom",
+          "market_type": "CRASH_AND_SURGE",
+          "date_range": "2020-01-02 to 2020-12-31",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 2449.21,
+          "net_profit_gbp": 1449.21,
+          "net_return_pct": 144.92,
+          "target_hurdle_pct": 22.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 6.87,
+          "win_rate_pct": 62.6,
+          "profit_factor": 3.14,
+          "total_trades": 107,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": -27.31,
+            "INVERSE_WATERFALL_HARVESTER": 541.05,
+            "SECTOR_RS_ROTATION_BREAKOUT": 935.48
+          },
+          "broker_fees_gbp": 153.77
+        }
+      ]
+    },
+    "out_of_sample": {
+      "epoch_count": 5,
+      "mean_net_return_pct": 91.59,
+      "mean_win_rate_pct": 60.28,
+      "max_drawdown_pct": 14.18,
+      "annualized_sharpe": 2.65,
+      "pass_rate_pct": 100.0,
+      "epochs": [
+        {
+          "epoch_id": "EPOCH_6",
+          "epoch_name": "2021 Retail Mania, Crypto Boom & Squeeze Frenzy",
+          "market_type": "MOMENTUM_BOOM",
+          "date_range": "2021-01-04 to 2021-12-31",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 2503.26,
+          "net_profit_gbp": 1503.26,
+          "net_return_pct": 150.33,
+          "target_hurdle_pct": 25.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 8.69,
+          "win_rate_pct": 67.3,
+          "profit_factor": 2.79,
+          "total_trades": 101,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": 23.49,
+            "INVERSE_WATERFALL_HARVESTER": 521.73,
+            "SECTOR_RS_ROTATION_BREAKOUT": 958.05
+          },
+          "broker_fees_gbp": 165.33
+        },
+        {
+          "epoch_id": "EPOCH_7",
+          "epoch_name": "2022 Inflation Shock, 425bps Rate Hikes & Bear Trend",
+          "market_type": "SECULAR_BEAR",
+          "date_range": "2022-01-03 to 2022-12-30",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1738.29,
+          "net_profit_gbp": 738.29,
+          "net_return_pct": 73.83,
+          "target_hurdle_pct": 15.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 12.8,
+          "win_rate_pct": 53.4,
+          "profit_factor": 1.76,
+          "total_trades": 118,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": -9.32,
+            "INVERSE_WATERFALL_HARVESTER": 819.02,
+            "SECTOR_RS_ROTATION_BREAKOUT": -71.4
+          },
+          "broker_fees_gbp": 148.68
+        },
+        {
+          "epoch_id": "EPOCH_8",
+          "epoch_name": "2023 SVB Crisis & Generative AI Explosion",
+          "market_type": "TECH_BULL_RALLY",
+          "date_range": "2023-01-03 to 2023-12-29",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1647.19,
+          "net_profit_gbp": 647.19,
+          "net_return_pct": 64.72,
+          "target_hurdle_pct": 35.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 10.48,
+          "win_rate_pct": 62.6,
+          "profit_factor": 1.83,
+          "total_trades": 99,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": 14.44,
+            "INVERSE_WATERFALL_HARVESTER": 399.24,
+            "SECTOR_RS_ROTATION_BREAKOUT": 233.51
+          },
+          "broker_fees_gbp": 134.69
+        },
+        {
+          "epoch_id": "EPOCH_9",
+          "epoch_name": "2024 Tech Broadening & Global Rate Cuts",
+          "market_type": "BROAD_BULL_EXPANSION",
+          "date_range": "2024-01-02 to 2024-12-31",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1851.93,
+          "net_profit_gbp": 851.93,
+          "net_return_pct": 85.19,
+          "target_hurdle_pct": 45.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 10.42,
+          "win_rate_pct": 62.7,
+          "profit_factor": 1.8,
+          "total_trades": 110,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": 18.09,
+            "INVERSE_WATERFALL_HARVESTER": 428.58,
+            "SECTOR_RS_ROTATION_BREAKOUT": 405.26
+          },
+          "broker_fees_gbp": 178.12
+        },
+        {
+          "epoch_id": "EPOCH_10",
+          "epoch_name": "2025\u20132026 Macro Dispersion & Sovereign Volatility",
+          "market_type": "DISPERSION_CHOP_MOMENTUM",
+          "date_range": "2025-01-02 to 2026-06-30",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1838.93,
+          "net_profit_gbp": 838.93,
+          "net_return_pct": 83.89,
+          "target_hurdle_pct": 40.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 14.18,
+          "win_rate_pct": 55.4,
+          "profit_factor": 1.58,
+          "total_trades": 168,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": 2.58,
+            "INVERSE_WATERFALL_HARVESTER": 282.78,
+            "SECTOR_RS_ROTATION_BREAKOUT": 553.57
+          },
+          "broker_fees_gbp": 201.77
+        }
+      ]
+    },
+    "stress_tested_oos": {
+      "epoch_count": 5,
+      "mean_net_return_pct": 55.83,
+      "mean_win_rate_pct": 60.28,
+      "max_drawdown_pct": 14.18,
+      "annualized_sharpe": 1.47,
+      "pass_rate_pct": 80.0,
+      "epochs": [
+        {
+          "epoch_id": "EPOCH_6",
+          "epoch_name": "2021 Retail Mania, Crypto Boom & Squeeze Frenzy",
+          "market_type": "MOMENTUM_BOOM",
+          "date_range": "2021-01-04 to 2021-12-31",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 2200.3,
+          "net_profit_gbp": 1200.3,
+          "net_return_pct": 120.03,
+          "target_hurdle_pct": 25.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 8.69,
+          "win_rate_pct": 67.3,
+          "profit_factor": 2.79,
+          "total_trades": 101,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": 23.49,
+            "INVERSE_WATERFALL_HARVESTER": 521.73,
+            "SECTOR_RS_ROTATION_BREAKOUT": 958.05
+          },
+          "broker_fees_gbp": 330.66
+        },
+        {
+          "epoch_id": "EPOCH_7",
+          "epoch_name": "2022 Inflation Shock, 425bps Rate Hikes & Bear Trend",
+          "market_type": "SECULAR_BEAR",
+          "date_range": "2022-01-03 to 2022-12-30",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1384.3,
+          "net_profit_gbp": 384.3,
+          "net_return_pct": 38.43,
+          "target_hurdle_pct": 15.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 12.8,
+          "win_rate_pct": 53.4,
+          "profit_factor": 1.76,
+          "total_trades": 118,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": -9.32,
+            "INVERSE_WATERFALL_HARVESTER": 819.02,
+            "SECTOR_RS_ROTATION_BREAKOUT": -71.4
+          },
+          "broker_fees_gbp": 297.36
+        },
+        {
+          "epoch_id": "EPOCH_8",
+          "epoch_name": "2023 SVB Crisis & Generative AI Explosion",
+          "market_type": "TECH_BULL_RALLY",
+          "date_range": "2023-01-03 to 2023-12-29",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1350.2,
+          "net_profit_gbp": 350.2,
+          "net_return_pct": 35.02,
+          "target_hurdle_pct": 35.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 10.48,
+          "win_rate_pct": 62.6,
+          "profit_factor": 1.83,
+          "total_trades": 99,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": 14.44,
+            "INVERSE_WATERFALL_HARVESTER": 399.24,
+            "SECTOR_RS_ROTATION_BREAKOUT": 233.51
+          },
+          "broker_fees_gbp": 269.38
+        },
+        {
+          "epoch_id": "EPOCH_9",
+          "epoch_name": "2024 Tech Broadening & Global Rate Cuts",
+          "market_type": "BROAD_BULL_EXPANSION",
+          "date_range": "2024-01-02 to 2024-12-31",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1521.9,
+          "net_profit_gbp": 521.9,
+          "net_return_pct": 52.19,
+          "target_hurdle_pct": 45.0,
+          "hurdle_passed": true,
+          "max_drawdown_pct": 10.42,
+          "win_rate_pct": 62.7,
+          "profit_factor": 1.8,
+          "total_trades": 110,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": 18.09,
+            "INVERSE_WATERFALL_HARVESTER": 428.58,
+            "SECTOR_RS_ROTATION_BREAKOUT": 405.26
+          },
+          "broker_fees_gbp": 356.24
+        },
+        {
+          "epoch_id": "EPOCH_10",
+          "epoch_name": "2025\u20132026 Macro Dispersion & Sovereign Volatility",
+          "market_type": "DISPERSION_CHOP_MOMENTUM",
+          "date_range": "2025-01-02 to 2026-06-30",
+          "initial_capital_gbp": 1000.0,
+          "final_equity_gbp": 1334.9,
+          "net_profit_gbp": 334.9,
+          "net_return_pct": 33.49,
+          "target_hurdle_pct": 40.0,
+          "hurdle_passed": false,
+          "max_drawdown_pct": 14.18,
+          "win_rate_pct": 55.4,
+          "profit_factor": 1.58,
+          "total_trades": 168,
+          "pnl_by_pillar": {
+            "SQUEEZE_BREAKOUT": 0.0,
+            "WYCKOFF_RUBBERBAND_DIP": 2.58,
+            "INVERSE_WATERFALL_HARVESTER": 282.78,
+            "SECTOR_RS_ROTATION_BREAKOUT": 553.57
+          },
+          "broker_fees_gbp": 403.54
+        }
+      ]
+    },
+    "deflated_sharpe_ratio": 0.99
+  },
+  "baselines": {
+    "baseline_is_mean": 53.34,
+    "baseline_oos_mean": 91.59,
+    "max_allowed_oos_dd": 15.0
+  }
+}
