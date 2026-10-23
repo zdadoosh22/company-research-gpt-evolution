@@ -1,0 +1,177 @@
+{
+  "audit_name": "High-Fidelity Historical Stress-Regime Backtest Audit V2 (2020 COVID, 2022 Bear, 2023 Bull)",
+  "timestamp_utc": "2026-10-23T01:59:38.186881+00:00",
+  "regimes_evaluated": [
+    {
+      "regime_metadata": {
+        "name": "Regime A: 2022 Tech Bear Market",
+        "start": "2022-01-03",
+        "end": "2022-12-30",
+        "context": "QQQ dropped -33.1%, Semis dropped -40%, high inflation & aggressive rate hikes"
+      },
+      "always_invested_baseline": {
+        "regime": "Regime A: 2022 Tech Bear Market",
+        "date_range": "2022-01-03 to 2022-12-30",
+        "trading_days": 258,
+        "mode": "Always-Invested Baseline",
+        "initial_capital_gbp": 1000.0,
+        "ending_equity_gbp": 1026.2,
+        "net_profit_gbp": 26.2,
+        "net_return_pct": 2.62,
+        "total_trades_executed": 89,
+        "winning_trades": 47,
+        "losing_trades": 42,
+        "win_rate_pct": 52.81,
+        "profit_factor": 1.171,
+        "max_drawdown_gbp": 223.51,
+        "max_drawdown_pct": 21.15,
+        "tactical_cash_days": 0,
+        "premarket_cuts_count": 0,
+        "correlation_blocks_count": 0,
+        "total_broker_frictions_gbp": 94.88
+      },
+      "tactical_cash_and_correlation_capped_engine": {
+        "regime": "Regime A: 2022 Tech Bear Market",
+        "date_range": "2022-01-03 to 2022-12-30",
+        "trading_days": 258,
+        "mode": "Tactical Cash & Correlation Capped",
+        "initial_capital_gbp": 1000.0,
+        "ending_equity_gbp": 976.38,
+        "net_profit_gbp": -23.62,
+        "net_return_pct": -2.36,
+        "total_trades_executed": 27,
+        "winning_trades": 15,
+        "losing_trades": 12,
+        "win_rate_pct": 55.56,
+        "profit_factor": 0.842,
+        "max_drawdown_gbp": 60.95,
+        "max_drawdown_pct": 5.89,
+        "tactical_cash_days": 150,
+        "premarket_cuts_count": 2,
+        "correlation_blocks_count": 2,
+        "total_broker_frictions_gbp": 31.87
+      },
+      "alpha_comparison": {
+        "capital_preservation_alpha_gbp": -49.82,
+        "drawdown_reduction_pct": 15.26,
+        "tactical_cash_days": 150,
+        "premarket_cuts_executed": 2,
+        "correlation_blocks_enforced": 2
+      }
+    },
+    {
+      "regime_metadata": {
+        "name": "Regime B: March 2020 COVID Liquidation",
+        "start": "2020-02-18",
+        "end": "2020-04-30",
+        "context": "Fastest 30% collapse in history, multi-circuit breakers & extreme gap downs"
+      },
+      "always_invested_baseline": {
+        "regime": "Regime B: March 2020 COVID Liquidation",
+        "date_range": "2020-02-18 to 2020-04-30",
+        "trading_days": 52,
+        "mode": "Always-Invested Baseline",
+        "initial_capital_gbp": 1000.0,
+        "ending_equity_gbp": 1050.39,
+        "net_profit_gbp": 50.39,
+        "net_return_pct": 5.04,
+        "total_trades_executed": 7,
+        "winning_trades": 6,
+        "losing_trades": 1,
+        "win_rate_pct": 85.71,
+        "profit_factor": 83.071,
+        "max_drawdown_gbp": 10.43,
+        "max_drawdown_pct": 1.0,
+        "tactical_cash_days": 0,
+        "premarket_cuts_count": 0,
+        "correlation_blocks_count": 0,
+        "total_broker_frictions_gbp": 6.58
+      },
+      "tactical_cash_and_correlation_capped_engine": {
+        "regime": "Regime B: March 2020 COVID Liquidation",
+        "date_range": "2020-02-18 to 2020-04-30",
+        "trading_days": 52,
+        "mode": "Tactical Cash & Correlation Capped",
+        "initial_capital_gbp": 1000.0,
+        "ending_equity_gbp": 1006.69,
+        "net_profit_gbp": 6.69,
+        "net_return_pct": 0.67,
+        "total_trades_executed": 2,
+        "winning_trades": 2,
+        "losing_trades": 0,
+        "win_rate_pct": 100.0,
+        "profit_factor": 69677.197,
+        "max_drawdown_gbp": 0.0,
+        "max_drawdown_pct": 0.0,
+        "tactical_cash_days": 24,
+        "premarket_cuts_count": 0,
+        "correlation_blocks_count": 1,
+        "total_broker_frictions_gbp": 1.35
+      },
+      "alpha_comparison": {
+        "capital_preservation_alpha_gbp": -43.7,
+        "drawdown_reduction_pct": 1.0,
+        "tactical_cash_days": 24,
+        "premarket_cuts_executed": 0,
+        "correlation_blocks_enforced": 1
+      }
+    },
+    {
+      "regime_metadata": {
+        "name": "Regime C: 2023 AI Momentum Expansion",
+        "start": "2023-01-03",
+        "end": "2023-12-29",
+        "context": "Control benchmark: trending bull market, QQQ +54.8%, NVDA +238.9%"
+      },
+      "always_invested_baseline": {
+        "regime": "Regime C: 2023 AI Momentum Expansion",
+        "date_range": "2023-01-03 to 2023-12-29",
+        "trading_days": 256,
+        "mode": "Always-Invested Baseline",
+        "initial_capital_gbp": 1000.0,
+        "ending_equity_gbp": 1125.06,
+        "net_profit_gbp": 125.06,
+        "net_return_pct": 12.51,
+        "total_trades_executed": 125,
+        "winning_trades": 63,
+        "losing_trades": 62,
+        "win_rate_pct": 50.4,
+        "profit_factor": 1.225,
+        "max_drawdown_gbp": 136.77,
+        "max_drawdown_pct": 11.86,
+        "tactical_cash_days": 0,
+        "premarket_cuts_count": 0,
+        "correlation_blocks_count": 0,
+        "total_broker_frictions_gbp": 155.72
+      },
+      "tactical_cash_and_correlation_capped_engine": {
+        "regime": "Regime C: 2023 AI Momentum Expansion",
+        "date_range": "2023-01-03 to 2023-12-29",
+        "trading_days": 256,
+        "mode": "Tactical Cash & Correlation Capped",
+        "initial_capital_gbp": 1000.0,
+        "ending_equity_gbp": 1452.33,
+        "net_profit_gbp": 452.33,
+        "net_return_pct": 45.23,
+        "total_trades_executed": 80,
+        "winning_trades": 57,
+        "losing_trades": 23,
+        "win_rate_pct": 71.25,
+        "profit_factor": 3.316,
+        "max_drawdown_gbp": 60.78,
+        "max_drawdown_pct": 5.03,
+        "tactical_cash_days": 80,
+        "premarket_cuts_count": 2,
+        "correlation_blocks_count": 2,
+        "total_broker_frictions_gbp": 112.92
+      },
+      "alpha_comparison": {
+        "capital_preservation_alpha_gbp": 327.27,
+        "drawdown_reduction_pct": 6.83,
+        "tactical_cash_days": 80,
+        "premarket_cuts_executed": 2,
+        "correlation_blocks_enforced": 2
+      }
+    }
+  ]
+}

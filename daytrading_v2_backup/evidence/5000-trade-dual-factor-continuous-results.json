@@ -1,0 +1,42 @@
+[
+  {
+    "cycle": 1,
+    "desc": "Cycle 1: Baseline Dual-Factor (Quality + 5D Squeeze)",
+    "win_rate": 23.5,
+    "avg_net": 0.21191119424177796,
+    "wins": 235,
+    "total": 1000
+  },
+  {
+    "cycle": 2,
+    "desc": "Cycle 2: + Options Put Wall Support Filter",
+    "win_rate": 22.7,
+    "avg_net": 0.020069777634399762,
+    "wins": 227,
+    "total": 1000
+  },
+  {
+    "cycle": 3,
+    "desc": "Cycle 3: + Day-2 Reversal Confirmation",
+    "win_rate": 22.900000000000002,
+    "avg_net": 0.11155301026929976,
+    "wins": 229,
+    "total": 1000
+  },
+  {
+    "cycle": 4,
+    "desc": "Cycle 4: + Two-Stage Profit Banking (50% at +7.0%, Breakeven Stop)",
+    "win_rate": 24.099999999999998,
+    "avg_net": -0.028194586321064887,
+    "wins": 241,
+    "total": 1000
+  },
+  {
+    "cycle": 5,
+    "desc": "Cycle 5: Full Institutional Dual-Factor Architecture",
+    "win_rate": 23.599999999999998,
+    "avg_net": -0.14276164242756764,
+    "wins": 236,
+    "total": 1000
+  }
+]

@@ -1,0 +1,140 @@
+{
+  "timestamp": "2026-10-23T15:27:15.522547+00:00",
+  "status": "CONVERGED",
+  "total_iterations": 1,
+  "final_pass_rate_pct": 100.0,
+  "final_cycles": [
+    {
+      "cycle_id": "CYCLE_1_2018",
+      "cycle_name": "2018 Volmageddon & Q4 Liquidity Squeeze",
+      "date_range": "2018-02-01 to 2018-12-31",
+      "initial_capital_gbp": 1000.0,
+      "final_equity_gbp": 1554.77,
+      "net_profit_gbp": 554.77,
+      "net_return_pct": 55.48,
+      "min_hurdle_return": 12.0,
+      "hurdle_passed": true,
+      "max_drawdown_pct": 9.51,
+      "win_rate_pct": 57.9,
+      "profit_factor": 1.76,
+      "total_trades": 76,
+      "pnl_by_pillar": {
+        "SQUEEZE_BREAKOUT": 0.0,
+        "WYCKOFF_RUBBERBAND_DIP": 0.0,
+        "INVERSE_WATERFALL_HARVESTER": 627.82,
+        "SECTOR_RS_ROTATION_BREAKOUT": -73.05
+      },
+      "broker_fees_gbp": 131.13
+    },
+    {
+      "cycle_id": "CYCLE_2_2020",
+      "cycle_name": "2020 COVID Crash & V-Bottom Recovery",
+      "date_range": "2020-02-15 to 2020-12-31",
+      "initial_capital_gbp": 1000.0,
+      "final_equity_gbp": 1273.78,
+      "net_profit_gbp": 273.78,
+      "net_return_pct": 27.38,
+      "min_hurdle_return": 22.0,
+      "hurdle_passed": true,
+      "max_drawdown_pct": 15.73,
+      "win_rate_pct": 52.1,
+      "profit_factor": 1.41,
+      "total_trades": 73,
+      "pnl_by_pillar": {
+        "SQUEEZE_BREAKOUT": 0.0,
+        "WYCKOFF_RUBBERBAND_DIP": 9.55,
+        "INVERSE_WATERFALL_HARVESTER": 321.05,
+        "SECTOR_RS_ROTATION_BREAKOUT": -56.82
+      },
+      "broker_fees_gbp": 101.43
+    },
+    {
+      "cycle_id": "CYCLE_3_2021",
+      "cycle_name": "2021 Speculative Momentum & Squeeze Boom",
+      "date_range": "2021-01-04 to 2021-12-31",
+      "initial_capital_gbp": 1000.0,
+      "final_equity_gbp": 2060.93,
+      "net_profit_gbp": 1060.93,
+      "net_return_pct": 106.09,
+      "min_hurdle_return": 18.0,
+      "hurdle_passed": true,
+      "max_drawdown_pct": 12.36,
+      "win_rate_pct": 68.6,
+      "profit_factor": 1.94,
+      "total_trades": 86,
+      "pnl_by_pillar": {
+        "SQUEEZE_BREAKOUT": 0.0,
+        "WYCKOFF_RUBBERBAND_DIP": 10.06,
+        "INVERSE_WATERFALL_HARVESTER": 474.61,
+        "SECTOR_RS_ROTATION_BREAKOUT": 576.25
+      },
+      "broker_fees_gbp": 194.49
+    },
+    {
+      "cycle_id": "CYCLE_4_2022",
+      "cycle_name": "2022 Tech Bear Market & Fed Hiking Cycle",
+      "date_range": "2022-01-03 to 2022-12-30",
+      "initial_capital_gbp": 1000.0,
+      "final_equity_gbp": 1594.25,
+      "net_profit_gbp": 594.25,
+      "net_return_pct": 59.42,
+      "min_hurdle_return": 15.0,
+      "hurdle_passed": true,
+      "max_drawdown_pct": 17.56,
+      "win_rate_pct": 60.2,
+      "profit_factor": 1.69,
+      "total_trades": 88,
+      "pnl_by_pillar": {
+        "SQUEEZE_BREAKOUT": 0.0,
+        "WYCKOFF_RUBBERBAND_DIP": -9.32,
+        "INVERSE_WATERFALL_HARVESTER": 715.98,
+        "SECTOR_RS_ROTATION_BREAKOUT": -112.4
+      },
+      "broker_fees_gbp": 140.37
+    },
+    {
+      "cycle_id": "CYCLE_5_2023",
+      "cycle_name": "2023 AI Pivot & Banking Crisis / Recovery",
+      "date_range": "2023-01-03 to 2023-12-29",
+      "initial_capital_gbp": 1000.0,
+      "final_equity_gbp": 1483.51,
+      "net_profit_gbp": 483.51,
+      "net_return_pct": 48.35,
+      "min_hurdle_return": 35.0,
+      "hurdle_passed": true,
+      "max_drawdown_pct": 17.2,
+      "win_rate_pct": 59.3,
+      "profit_factor": 1.56,
+      "total_trades": 86,
+      "pnl_by_pillar": {
+        "SQUEEZE_BREAKOUT": 0.0,
+        "WYCKOFF_RUBBERBAND_DIP": 14.44,
+        "INVERSE_WATERFALL_HARVESTER": 353.34,
+        "SECTOR_RS_ROTATION_BREAKOUT": 115.73
+      },
+      "broker_fees_gbp": 121.58
+    },
+    {
+      "cycle_id": "CYCLE_6_2024_2026",
+      "cycle_name": "2024\u20132026 Bull Expansion & Dispersion",
+      "date_range": "2024-01-02 to 2026-06-30",
+      "initial_capital_gbp": 1000.0,
+      "final_equity_gbp": 4504.8,
+      "net_profit_gbp": 3504.8,
+      "net_return_pct": 350.48,
+      "min_hurdle_return": 90.0,
+      "hurdle_passed": true,
+      "max_drawdown_pct": 10.13,
+      "win_rate_pct": 64.3,
+      "profit_factor": 2.04,
+      "total_trades": 221,
+      "pnl_by_pillar": {
+        "SQUEEZE_BREAKOUT": 0.0,
+        "WYCKOFF_RUBBERBAND_DIP": 27.28,
+        "INVERSE_WATERFALL_HARVESTER": 1290.7,
+        "SECTOR_RS_ROTATION_BREAKOUT": 2186.81
+      },
+      "broker_fees_gbp": 554.34
+    }
+  ]
+}

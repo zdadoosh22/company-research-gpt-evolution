@@ -110,13 +110,13 @@ class RegimeTransitionEngine:
 
         # Classification Hierarchy
         if binary_macro_hazard or (not is_above_10ema and not is_above_50sma):
-            # State 4: CRASH_PANIC
+            # State 4: CRASH_PANIC (Aegis Shield + Inverse Waterfall slot)
             state: RegimeState = "CRASH_PANIC"
-            target_cash_pct = 100.0
-            target_deployment_pct = 0.0
-            max_active_slots = 0
-            slot_budget_cap_gbp = 0.0
-            allowed_types = []
+            target_cash_pct = 75.0
+            target_deployment_pct = 25.0
+            max_active_slots = 1 # 1 slot strictly reserved for Inverse Waterfall (SQQQ)
+            slot_budget_cap_gbp = round(self.portfolio_equity * 0.25, 2)
+            allowed_types = ["inverse_etf"]
             allow_3x = False
             require_uk = False
             reasons = []
@@ -126,21 +126,21 @@ class RegimeTransitionEngine:
                 reasons.append(f"Spot (${benchmark_spot:.2f}) < 10 EMA (${benchmark_ema_10:.2f})")
             if not is_above_50sma:
                 reasons.append(f"Spot (${benchmark_spot:.2f}) < 50 SMA (${benchmark_sma_50:.2f})")
-            rationale = "CRASH_PANIC: " + " | ".join(reasons) + " -> 100% Aegis Tactical Cash Shield Engaged."
+            rationale = "CRASH_PANIC: " + " | ".join(reasons) + " -> 75% Aegis Cash Shield + 1 Slot Inverse Waterfall Harvester (SQQQ/SPXU)."
 
         elif not is_above_10ema and is_above_200sma:
-            # State 3: BEAR_CORRECTION
+            # State 3: BEAR_CORRECTION (Wyckoff Dip-Buyer + Inverse ETF + UK Value)
             state = "BEAR_CORRECTION"
-            target_cash_pct = 75.0
-            target_deployment_pct = 25.0
-            max_active_slots = 1
+            target_cash_pct = 50.0
+            target_deployment_pct = 50.0
+            max_active_slots = 2
             slot_budget_cap_gbp = round(self.portfolio_equity * 0.25, 2)
-            allowed_types = ["uk_equity", "inverse_etf", "defensive"]
+            allowed_types = ["uk_equity", "inverse_etf", "wyckoff_dip", "energy_defense"]
             allow_3x = False
             require_uk = True
             rationale = (
                 f"BEAR_CORRECTION: Spot (${benchmark_spot:.2f}) < 10 EMA (${benchmark_ema_10:.2f}) but > 200 SMA (${benchmark_sma_200:.2f}). "
-                "Preserve 75%-100% Cash. Max 1 slot restricted to Zero-FX UK defensive leaders or inverse hedge."
+                "Deploy up to 2 tactical slots: Wyckoff Rubber-Band Dip-Buyer + Inverse Waterfall Harvester (SQQQ) + UK Zero-FX Value."
             )
 
         elif is_above_10ema and (not is_low_vol or not is_pos_gamma):

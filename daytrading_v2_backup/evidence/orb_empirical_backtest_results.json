@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "5m_ORB_filtered": {
+      "window": "5min",
+      "total_trades": 1000,
+      "win_rate": 66.4,
+      "profit_factor": 1.666,
+      "expectancy_pct": 0.251,
+      "avg_win_pct": 0.946,
+      "avg_loss_pct": -1.122,
+      "avg_friction_pct": 0.45
+    },
+    "15m_ORB_filtered": {
+      "window": "15min",
+      "total_trades": 1000,
+      "win_rate": 65.6,
+      "profit_factor": 2.22,
+      "expectancy_pct": 0.608,
+      "avg_win_pct": 1.686,
+      "avg_loss_pct": -1.448,
+      "avg_friction_pct": 0.448
+    },
+    "30m_ORB_filtered": {
+      "window": "30min",
+      "total_trades": 1000,
+      "win_rate": 68.4,
+      "profit_factor": 2.911,
+      "expectancy_pct": 1.089,
+      "avg_win_pct": 2.426,
+      "avg_loss_pct": -1.804,
+      "avg_friction_pct": 0.451
+    },
+    "15m_ORB_unfiltered_naive": {
+      "window": "15min_naive",
+      "total_trades": 1000,
+      "win_rate": 39.7,
+      "profit_factor": 0.763,
+      "expectancy_pct": -0.21,
+      "avg_win_pct": 1.706,
+      "avg_loss_pct": -1.472,
+      "avg_friction_pct": 0.449
+    }
+  }
+}

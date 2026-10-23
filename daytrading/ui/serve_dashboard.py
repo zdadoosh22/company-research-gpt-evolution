@@ -39,6 +39,28 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         if self.path in ("/", "/index.html"):
             self.path = "/dashboard.html"
             return super().do_GET()
+        elif self.path == "/api/10epochs":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            ep_file = DAYTRADING_ROOT / "evidence" / "full_universe_10epoch_results.json"
+            if ep_file.exists():
+                self.wfile.write(ep_file.read_bytes())
+            else:
+                self.wfile.write(b"{}")
+            return
+        elif self.path == "/api/allweather":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            aw_file = DAYTRADING_ROOT / "evidence" / "allweather_converged_6cycle_results.json"
+            if aw_file.exists():
+                self.wfile.write(aw_file.read_bytes())
+            else:
+                self.wfile.write(b"{}")
+            return
         elif self.path == "/api/status":
             self.send_response(200)
             self.send_header("Content-Type", "application/json")

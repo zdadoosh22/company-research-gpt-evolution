@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "session_trend_bounce": {
+      "anchor": "session",
+      "strategy": "trend_bounce",
+      "total_trades": 1000,
+      "win_rate": 53.4,
+      "profit_factor": 1.297,
+      "expectancy_pct": 0.258,
+      "avg_win_pct": 2.108,
+      "avg_loss_pct": -1.863,
+      "avg_friction_pct": 0.626
+    },
+    "earnings_trend_bounce": {
+      "anchor": "earnings",
+      "strategy": "trend_bounce",
+      "total_trades": 1000,
+      "win_rate": 62.6,
+      "profit_factor": 3.105,
+      "expectancy_pct": 5.292,
+      "avg_win_pct": 12.47,
+      "avg_loss_pct": -6.721,
+      "avg_friction_pct": 0.624
+    },
+    "weekly_high_low_trend_bounce": {
+      "anchor": "weekly_high_low",
+      "strategy": "trend_bounce",
+      "total_trades": 1000,
+      "win_rate": 54.8,
+      "profit_factor": 2.129,
+      "expectancy_pct": 2.329,
+      "avg_win_pct": 8.014,
+      "avg_loss_pct": -4.563,
+      "avg_friction_pct": 0.629
+    },
+    "session_mean_reversion": {
+      "anchor": "session",
+      "strategy": "mean_reversion",
+      "total_trades": 1000,
+      "win_rate": 66.3,
+      "profit_factor": 2.008,
+      "expectancy_pct": 0.851,
+      "avg_win_pct": 2.557,
+      "avg_loss_pct": -2.504,
+      "avg_friction_pct": 0.624
+    },
+    "earnings_mean_reversion": {
+      "anchor": "earnings",
+      "strategy": "mean_reversion",
+      "total_trades": 1000,
+      "win_rate": 39.9,
+      "profit_factor": 1.01,
+      "expectancy_pct": 0.058,
+      "avg_win_pct": 14.893,
+      "avg_loss_pct": -9.791,
+      "avg_friction_pct": 0.623
+    },
+    "weekly_high_low_mean_reversion": {
+      "anchor": "weekly_high_low",
+      "strategy": "mean_reversion",
+      "total_trades": 1000,
+      "win_rate": 54.8,
+      "profit_factor": 1.686,
+      "expectancy_pct": 2.05,
+      "avg_win_pct": 9.195,
+      "avg_loss_pct": -6.613,
+      "avg_friction_pct": 0.623
+    }
+  }
+}

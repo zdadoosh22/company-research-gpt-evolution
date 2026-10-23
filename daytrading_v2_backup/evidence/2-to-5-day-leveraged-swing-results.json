@@ -1,0 +1,83 @@
+{
+  "total": 1000,
+  "wins": 245,
+  "win_pct": 24.5,
+  "avg_net": -0.24316808578115845,
+  "sample_trades": [
+    {
+      "ticker": "SOXL",
+      "realized_net": 12.95,
+      "won": true
+    },
+    {
+      "ticker": "ARM",
+      "realized_net": -8.3,
+      "won": false
+    },
+    {
+      "ticker": "NVDL",
+      "realized_net": -8.3,
+      "won": false
+    },
+    {
+      "ticker": "NVDA",
+      "realized_net": -0.4646040378618369,
+      "won": false
+    },
+    {
+      "ticker": "ARM",
+      "realized_net": -8.069601424978723,
+      "won": false
+    },
+    {
+      "ticker": "PLTR",
+      "realized_net": 8.588558311143704,
+      "won": true
+    },
+    {
+      "ticker": "COIN",
+      "realized_net": -8.3,
+      "won": false
+    },
+    {
+      "ticker": "AMD",
+      "realized_net": 12.95,
+      "won": true
+    },
+    {
+      "ticker": "AMD",
+      "realized_net": -5.3085943958204425,
+      "won": false
+    },
+    {
+      "ticker": "SQQQ",
+      "realized_net": -8.3,
+      "won": false
+    },
+    {
+      "ticker": "NVDL",
+      "realized_net": 12.95,
+      "won": true
+    },
+    {
+      "ticker": "SQQQ",
+      "realized_net": -8.3,
+      "won": false
+    },
+    {
+      "ticker": "SOXL",
+      "realized_net": -8.3,
+      "won": false
+    },
+    {
+      "ticker": "AMD",
+      "realized_net": -8.3,
+      "won": false
+    },
+    {
+      "ticker": "TQQQ",
+      "realized_net": -0.9987882689433072,
+      "won": false
+    }
+  ]
+}

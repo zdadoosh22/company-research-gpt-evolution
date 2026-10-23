@@ -28,6 +28,12 @@ except ImportError:
     RegimeTransitionEngine = None
     RegimeEvaluation = None
 
+try:
+    from all_weather_alpha_engine import AllWeatherAlphaEngine, AllWeatherSignal
+except ImportError:
+    AllWeatherAlphaEngine = None
+    AllWeatherSignal = None
+
 
 def get_ticker_sector(ticker: str) -> str:
     """Classifies ticker into GICS-derived tactical momentum sectors."""
@@ -67,6 +73,64 @@ class AdaptiveExecutionEngine:
             self.regime_engine = RegimeTransitionEngine()
         else:
             self.regime_engine = None
+        if AllWeatherAlphaEngine:
+            self.all_weather_engine = AllWeatherAlphaEngine()
+        else:
+            self.all_weather_engine = None
+
+    def detect_oversold_capitulation_dip(self, ticker: str, bars: list[dict]) -> dict | None:
+        """Pillar 2: Wyckoff Undercut & Reclaim Dip Detector."""
+        if not self.all_weather_engine or len(bars) < 15:
+            return None
+        prof = get_profile(ticker)
+        daily_atr_pct = prof.get("vol", 0.03) * 1.55
+        is_uk = ticker.endswith(".L")
+        sig = self.all_weather_engine.detect_wyckoff_reversal_dip(ticker, bars, daily_atr_pct, is_uk)
+        if not sig:
+            return None
+        return {
+            "ticker": sig.ticker,
+            "strategy": sig.strategy_pillar,
+            "entry_price": sig.entry_price,
+            "stop_loss_price": sig.stop_loss_price,
+            "stop_loss_pct": sig.stop_loss_pct,
+            "stage_1_price": sig.stage_1_price,
+            "stage_1_pct": sig.stage_1_pct,
+            "stage_2_price": sig.stage_2_price,
+            "stage_2_pct": sig.stage_2_pct,
+            "max_holding_days": sig.max_holding_days,
+            "rationale": sig.rationale
+        }
+
+    def calculate_mean_reversion_bracket(self, ticker: str, spot: float, budget: float = 250.0) -> dict:
+        """Calculates tight mean-reversion brackets for oversold snapbacks."""
+        is_uk = ticker.endswith(".L")
+        sym = "£" if is_uk else "$"
+        stop_pct = 0.032 if is_uk else 0.038
+        t1_pct = 0.052 if is_uk else 0.075
+        t2_pct = 0.095 if is_uk else 0.135
+        stop_price = round(spot * (1.0 - stop_pct), 2)
+        t1_price = round(spot * (1.0 + t1_pct), 2)
+        t2_price = round(spot * (1.0 + t2_pct), 2)
+        unit_cost = spot if is_uk else (spot * 0.7465)
+        shares = round(budget / max(0.0001, unit_cost), 4)
+
+        return {
+            "ticker": ticker,
+            "spot": spot,
+            "is_uk": is_uk,
+            "mode": "WYCKOFF_RUBBERBAND_DIP",
+            "budget_gbp": budget,
+            "shares": shares,
+            "stop_loss_price": stop_price,
+            "stop_loss_pct": -round(stop_pct * 100, 2),
+            "stage_1_price": t1_price,
+            "stage_1_pct": round(t1_pct * 100, 2),
+            "stage_2_price": t2_price,
+            "stage_2_pct": round(t2_pct * 100, 2),
+            "max_holding_days": 3,
+            "exit_rule": "Harvest 60% at 10 EMA (+5.2%..+7.5%); close 40% at 20 EMA or Day 3."
+        }
 
     def calculate_anchored_vwap(self, bars: list[dict], anchor_idx: int = 0) -> float:
         """

@@ -1,0 +1,38 @@
+{
+  "monte_carlo_summary": {
+    "trade_size_\u00a375": {
+      "starting_capital_gbp": 1000.0,
+      "trade_commitment_gbp": 75.0,
+      "total_annual_trajectories": 2500,
+      "ending_capital_median_gbp": 1158.28,
+      "ending_capital_5th_pct_gbp": 1033.26,
+      "ending_capital_95th_pct_gbp": 1286.03,
+      "annual_return_median_pct": 15.83,
+      "annual_return_5th_pct": 3.33,
+      "annual_return_95th_pct": 28.6,
+      "max_drawdown_median_pct": 4.04,
+      "max_drawdown_95th_pct": 7.48,
+      "worst_case_drawdown_pct": 12.98,
+      "max_consecutive_losses_median": 5,
+      "max_consecutive_losses_95th_pct": 8,
+      "probability_of_ruin_pct": 0.0
+    },
+    "trade_size_\u00a3100": {
+      "starting_capital_gbp": 1000.0,
+      "trade_commitment_gbp": 100.0,
+      "total_annual_trajectories": 2500,
+      "ending_capital_median_gbp": 1212.46,
+      "ending_capital_5th_pct_gbp": 1040.6,
+      "ending_capital_95th_pct_gbp": 1378.72,
+      "annual_return_median_pct": 21.25,
+      "annual_return_5th_pct": 4.06,
+      "annual_return_95th_pct": 37.87,
+      "max_drawdown_median_pct": 5.26,
+      "max_drawdown_95th_pct": 10.03,
+      "worst_case_drawdown_pct": 21.47,
+      "max_consecutive_losses_median": 5,
+      "max_consecutive_losses_95th_pct": 8,
+      "probability_of_ruin_pct": 0.0
+    }
+  }
+}

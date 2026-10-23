@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AEGIS // Tactical Quantitative War Room - Trading 212 ISA</title>
+<style>
+  :root {
+    --bg-base: #07090e;
+    --bg-card: rgba(15, 20, 32, 0.75);
+    --bg-card-hover: rgba(22, 30, 48, 0.85);
+    --border-glow: rgba(0, 245, 155, 0.25);
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --neon-green: #00f59b;
+    --neon-cyan: #00e5ff;
+    --neon-amber: #ffb800;
+    --neon-crimson: #ff2a5f;
+    --neon-purple: #b537f2;
+    --text-primary: #f0f4fc;
+    --text-secondary: #8a99b5;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: 
+      radial-gradient(circle at 15% 20%, rgba(0, 245, 155, 0.05) 0%, transparent 40%),
+      radial-gradient(circle at 85% 75%, rgba(0, 229, 255, 0.05) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(181, 55, 242, 0.03) 0%, transparent 60%);
+  }
+
+  /* Grid lines overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Cyber Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    backdrop-filter: blur(16px);
+    border-radius: 14px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .reactor-mini {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid var(--neon-green);
+    box-shadow: 0 0 15px var(--neon-green);
+    animation: pulseMini 2s infinite ease-in-out;
+  }
+
+  @keyframes pulseMini {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 12px var(--neon-green); }
+    50% { transform: scale(1.08); box-shadow: 0 0 22px var(--neon-green); }
+  }
+
+  .brand-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ffffff, var(--neon-green), var(--neon-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .brand-subtitle {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    letter-spacing: 1px;
+  }
+
+  .system-status {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+  }
+
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(0, 245, 155, 0.1);
+    border: 1px solid var(--neon-green);
+    color: var(--neon-green);
+  }
+
+  .beacon {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--neon-green);
+    box-shadow: 0 0 8px var(--neon-green);
+    animation: blink 1.2s infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+  /* Metrics Bar */
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .metric-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 18px 20px;
+    backdrop-filter: blur(12px);
+    transition: transform 0.2s, border-color 0.2s;
+  }
+
+  .metric-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--neon-cyan);
+  }
+
+  .metric-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  .metric-val {
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: var(--font-mono);
+    letter-spacing: 1px;
+  }
+
+  .metric-sub {
+    font-size: 0.75rem;
+    margin-top: 4px;
+  }
+
+  .text-green { color: var(--neon-green); text-shadow: 0 0 10px rgba(0,245,155,0.4); }
+  .text-cyan { color: var(--neon-cyan); text-shadow: 0 0 10px rgba(0,229,255,0.4); }
+  .text-amber { color: var(--neon-amber); text-shadow: 0 0 10px rgba(255,184,0,0.4); }
+  .text-crimson { color: var(--neon-crimson); text-shadow: 0 0 10px rgba(255,42,95,0.4); }
+
+  /* Hero Section: Reactor Core & Radar */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .panel-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 22px;
+    backdrop-filter: blur(16px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .panel-box::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--neon-green), transparent);
+  }
+
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  .panel-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Aegis Reactor Visualization */
+  .reactor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .reactor-svg-box {
+    position: relative;
+    width: 260px;
+    height: 260px;
+  }
+
+  .reactor-center-content {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .reactor-state-text {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .reactor-cash-pct {
+    font-family: var(--font-mono);
+    font-size: 2.2rem;
+    font-weight: 900;
+  }
+
+  .reactor-sub-label {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .regime-switcher {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .regime-btn {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .regime-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+  }
+
+  .regime-btn.active {
+    background: rgba(0, 245, 155, 0.15);
+    border-color: var(--neon-green);
+    color: var(--neon-green);
+    box-shadow: 0 0 12px rgba(0, 245, 155, 0.3);
+  }
+
+  /* Sonar Squeeze Radar */
+  .radar-container {
+    position: relative;
+    width: 100%;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #radarCanvas {
+    background: transparent;
+  }
+
+  .blip-tooltip {
+    position: absolute;
+    background: rgba(10, 14, 24, 0.95);
+    border: 1px solid var(--neon-green);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    box-shadow: 0 4px 20px rgba(0, 245, 155, 0.3);
+    z-index: 10;
+  }
+
+  /* Crash Replay Time-Scrubber Section */
+  .scrubber-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 24px;
+    backdrop-filter: blur(16px);
+    margin-bottom: 24px;
+  }
+
+  .scrubber-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 14px;
+  }
+
+  .time-slider {
+    flex: 1;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    cursor: pointer;
+  }
+
+  .time-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--neon-green);
+    box-shadow: 0 0 15px var(--neon-green);
+    cursor: pointer;
+    transition: transform 0.1s;
+  }
+
+  .time-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+  }
+
+  .btn-cyber {
+    background: rgba(0, 245, 155, 0.12);
+    border: 1px solid var(--neon-green);
+    color: var(--neon-green);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-cyber:hover {
+    background: var(--neon-green);
+    color: #000;
+    box-shadow: 0 0 16px var(--neon-green);
+  }
+
+  .replay-presets {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .preset-pill {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-subtle);
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .preset-pill:hover, .preset-pill.active {
+    background: rgba(0, 229, 255, 0.15);
+    border-color: var(--neon-cyan);
+    color: var(--neon-cyan);
+  }
+
+  .replay-comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 18px;
+  }
+
+  .replay-stat-card {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    padding: 14px;
+    font-family: var(--font-mono);
+  }
+
+  /* Interactive Canvas Chart Section */
+  .chart-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .chart-canvas-box {
+    width: 100%;
+    height: 280px;
+    position: relative;
+  }
+
+  /* Interactive Bracket Tool */
+  .bracket-tool-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .form-group {
+    margin-bottom: 14px;
+  }
+
+  .form-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .form-input {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid var(--border-subtle);
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .form-input:focus {
+    border-color: var(--neon-green);
+    box-shadow: 0 0 10px rgba(0, 245, 155, 0.2);
+  }
+
+  .quick-tickers {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  .ticker-chip {
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-subtle);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    cursor: pointer;
+  }
+  .ticker-chip:hover {
+    border-color: var(--neon-green);
+    color: var(--neon-green);
+  }
+
+  .bracket-ladder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .ladder-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    border: 1px solid transparent;
+  }
+
+  .ladder-target2 { background: rgba(0, 229, 255, 0.1); border-color: var(--neon-cyan); color: var(--neon-cyan); }
+  .ladder-target1 { background: rgba(0, 245, 155, 0.1); border-color: var(--neon-green); color: var(--neon-green); }
+  .ladder-entry { background: rgba(255, 255, 255, 0.06); border-color: rgba(255,255,255,0.2); color: #fff; }
+  .ladder-breakeven { background: rgba(255, 184, 0, 0.1); border-color: var(--neon-amber); color: var(--neon-amber); }
+  .ladder-stop { background: rgba(255, 42, 95, 0.1); border-color: var(--neon-crimson); color: var(--neon-crimson); }
+
+  /* Sub-millisecond Reflex Tape */
+  .tape-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    margin-top: 10px;
+  }
+
+  .tape-table th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+
+  .tape-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .latency-tag {
+    font-size: 0.68rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(0, 245, 155, 0.15);
+    color: var(--neon-green);
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    border-top: 1px solid var(--border-subtle);
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Cyber Header -->
+  <header>
+    <div class="brand">
+      <div class="reactor-mini"></div>
+      <div>
+        <div class="brand-title">AEGIS // TACTICAL QUANT COMMAND</div>
+        <div class="brand-subtitle">Trading 212 ISA Sleeve (0% FX UK Anchor + USD Growth Squeeze Engine)</div>
+      </div>
+    </div>
+    <div class="system-status">
+      <div class="status-badge"><span class="beacon"></span> ENGINE RUNTIME ACTIVE</div>
+      <div>LATENCY: <span class="text-green" id="headerLatency">0.0004s</span></div>
+      <div>T212 REST API: <span class="text-cyan">PRACTICE CONNECTED</span></div>
+    </div>
+  </header>
+
+  <!-- Metrics Grid -->
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="metric-label">Tactical Sleeve Equity</div>
+      <div class="metric-val text-green" id="sleeveEquityVal">£1,000.00</div>
+      <div class="metric-sub text-green">Aggressive Growth Pool</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Aegis Tactical Cash Shield</div>
+      <div class="metric-val text-cyan" id="tacticalCashVal">0.0%</div>
+      <div class="metric-sub">100% Active Deployment (3 Slots)</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">4-State Macro Regime</div>
+      <div class="metric-val text-green" id="macroRegimeVal">BULL_TREND</div>
+      <div class="metric-sub">Index > 10 EMA | Positive Gamma</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">MFE / MAE Efficiency</div>
+      <div class="metric-val text-amber" id="mfeRatioVal">87.5%</div>
+      <div class="metric-sub">Profit Capture Ratio</div>
+    </div>
+  </div>
+
+  <!-- Hero Row: Reactor & Radar -->
+  <div class="hero-grid">
+    
+    <!-- Aegis Cash Reactor -->
+    <div class="panel-box">
+      <div class="panel-header">
+        <div class="panel-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--neon-green)"><polygon points="12 2 2 7 12 22 22 7 12 2"></polygon></svg>
+          AEGIS TACTICAL CASH REACTOR
+        </div>
+        <div class="status-badge" id="reactorBadge">SHIELD READY</div>
+      </div>
+
+      <div class="reactor-container">
+        <div class="reactor-svg-box">
+          <svg width="260" height="260" viewBox="0 0 260 260">
+            <!-- Background track -->
+            <circle cx="130" cy="130" r="105" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="14"></circle>
+            <!-- Outer spinning energy ring -->
+            <circle id="reactorSpinRing" cx="130" cy="130" r="118" fill="none" stroke="var(--neon-green)" stroke-width="2" stroke-dasharray="8 14" opacity="0.6">
+              <animateTransform attributeName="transform" type="rotate" from="0 130 130" to="360 130 130" dur="12s" repeatCount="indefinite"/>
+            </circle>
+            <!-- Active Cash Arc -->
+            <circle id="reactorArc" cx="130" cy="130" r="105" fill="none" stroke="var(--neon-green)" stroke-width="14" stroke-dasharray="660" stroke-dashoffset="660" stroke-linecap="round" style="transition: stroke-dashoffset 0.8s, stroke 0.5s;"></circle>
+          </svg>
+          <div class="reactor-center-content">
+            <div class="reactor-sub-label">ACTIVE CASH</div>
+            <div class="reactor-cash-pct text-green" id="reactorCashPct">0%</div>
+            <div class="reactor-state-text text-green" id="reactorStateText">BULL_TREND</div>
+          </div>
+        </div>
+
+        <div class="regime-switcher">
+          <button class="regime-btn active" onclick="setRegime('BULL_TREND')">BULL TREND<br><span style="font-size:0.65rem; color:var(--neon-green)">0% Cash</span></button>
+          <button class="regime-btn" onclick="setRegime('BULL_VOLATILE')">BULL VOLATILE<br><span style="font-size:0.65rem; color:var(--neon-amber)">50% Cash</span></button>
+          <button class="regime-btn" onclick="setRegime('BEAR_CORRECTION')">BEAR CORR<br><span style="font-size:0.65rem; color:var(--neon-amber)">75% Cash</span></button>
+          <button class="regime-btn" onclick="setRegime('CRASH_PANIC')">CRASH PANIC<br><span style="font-size:0.65rem; color:var(--neon-crimson)">100% Cash</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sonar Squeeze Radar -->
+    <div class="panel-box">
+      <div class="panel-header">
+        <div class="panel-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--neon-cyan)"><circle cx="12" cy="12" r="10"></circle><path d="m14.31 8 5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16 3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"></path></svg>
+          SONAR SQUEEZE RADAR
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary)">
+          SWEEP: <span class="text-cyan">RVOL vs 5D COMPRESSION</span>
+        </div>
+      </div>
+
+      <div class="radar-container" id="radarWrapper">
+        <canvas id="radarCanvas" width="310" height="310"></canvas>
+        <div class="blip-tooltip" id="blipTooltip"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Crash Replay Time-Scrubber -->
+  <div class="scrubber-section">
+    <div class="panel-header">
+      <div class="panel-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--neon-amber)"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        HISTORICAL CRASH REPLAY TIME-SCRUBBER (INTERACTIVE EVIDENCE PLAYBACK)
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 0.78rem;">
+        CURRENT DATE: <span class="text-amber" id="scrubberDate">2020-02-18</span>
+      </div>
+    </div>
+
+    <div class="replay-presets">
+      <button class="preset-pill active" onclick="loadReplayPreset('COVID_2020')">MARCH 2020 COVID CRASH</button>
+      <button class="preset-pill" onclick="loadReplayPreset('BEAR_2022')">2022 TECH BEAR MARKET</button>
+      <button class="preset-pill" onclick="loadReplayPreset('AI_2023')">2023 AI EXPANSION</button>
+      <button class="preset-pill" onclick="loadReplayPreset('BULL_2024')">2024–2026 EXPANSION (+102%)</button>
+    </div>
+
+    <div class="scrubber-controls">
+      <button class="btn-cyber" id="playBtn" onclick="togglePlay()">PLAY REPLAY</button>
+      <input type="range" class="time-slider" id="replaySlider" min="0" max="60" value="0" oninput="onScrub(this.value)">
+      <button class="btn-cyber" onclick="resetScrub()">RESET</button>
+    </div>
+
+    <div class="replay-comparison-grid">
+      <div class="replay-stat-card">
+        <div class="metric-label">Always-Invested Baseline</div>
+        <div class="metric-val text-crimson" id="baselineReplayVal">£1,000.00</div>
+        <div class="metric-sub" id="baselineDrawdownVal">Drawdown: 0.0%</div>
+      </div>
+      <div class="replay-stat-card">
+        <div class="metric-label">Aegis Tactical Growth Sleeve</div>
+        <div class="metric-val text-green" id="tacticalReplayVal">£1,000.00</div>
+        <div class="metric-sub text-green" id="tacticalDrawdownVal">Drawdown: 0.0% | Cash: 0%</div>
+      </div>
+      <div class="replay-stat-card">
+        <div class="metric-label">Tactical Narrative Log</div>
+        <div style="font-size: 0.8rem; line-height: 1.4; color: var(--neon-cyan);" id="narrativeLog">
+          Scrub the timeline slider to observe Aegis Cash Shield engaging as Benchmark drops < 10 EMA.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Neon Canvas Charts -->
+  <div class="chart-grid">
+    <div class="panel-box">
+      <div class="panel-header">
+        <div class="panel-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--neon-green)"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+          EQUITY ACCELERATION CURVE (BASELINE VS TACTICAL SLEEVE)
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem;">
+          <span style="color: var(--neon-green)">■ TACTICAL ENGINE</span> &nbsp;
+          <span style="color: var(--neon-crimson)">■ BASELINE</span>
+        </div>
+      </div>
+      <div class="chart-canvas-box">
+        <canvas id="equityChartCanvas" width="900" height="280"></canvas>
+      </div>
+    </div>
+
+    <div class="panel-box">
+      <div class="panel-header">
+        <div class="panel-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--neon-cyan)"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          SLOT DIVERSIFICATION GATES
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px; font-family: var(--font-mono); font-size: 0.78rem;">
+        <div style="display:flex; justify-content:space-between; padding:10px; background:rgba(0,0,0,0.3); border-radius:8px;">
+          <span>3x Leveraged ETF Cap:</span>
+          <span class="text-green">MAX 1 SLOT (ACTIVE: 1/1)</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding:10px; background:rgba(0,0,0,0.3); border-radius:8px;">
+          <span>Single Sector GICS Cap:</span>
+          <span class="text-green">MAX 2 SLOTS (ACTIVE: 1/2)</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding:10px; background:rgba(0,0,0,0.3); border-radius:8px;">
+          <span>UK Zero-FX ISA Anchor:</span>
+          <span class="text-green">RR.L QUALIFIED (0.00% FX)</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; padding:10px; background:rgba(0,0,0,0.3); border-radius:8px;">
+          <span>T212 Round-Trip USD FX:</span>
+          <span class="text-amber">0.30% EXACT MODELLED</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Dynamic Bracket Calculator -->
+  <div class="bracket-tool-grid">
+    <div class="panel-box">
+      <div class="panel-header">
+        <div class="panel-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--neon-cyan)"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          ADAPTIVE BRACKET GENERATOR
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Ticker Symbol</label>
+        <input type="text" class="form-input" id="calcTicker" value="NVDA" oninput="updateBracketCalc()">
+        <div class="quick-tickers">
+          <span class="ticker-chip" onclick="setCalc('NVDA', 135.0)">NVDA</span>
+          <span class="ticker-chip" onclick="setCalc('RR.L', 5.25)">RR.L (0% FX)</span>
+          <span class="ticker-chip" onclick="setCalc('SOXL', 34.50)">SOXL (3x)</span>
+          <span class="ticker-chip" onclick="setCalc('PLTR', 42.80)">PLTR</span>
+          <span class="ticker-chip" onclick="setCalc('TSLA', 218.0)">TSLA</span>
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
+        <div class="form-group">
+          <label class="form-label">Spot Entry Price</label>
+          <input type="number" class="form-input" id="calcSpot" value="135.00" step="0.01" oninput="updateBracketCalc()">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Active Slot Budget (£)</label>
+          <input type="number" class="form-input" id="calcBudget" value="333.33" step="10" oninput="updateBracketCalc()">
+        </div>
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary); margin-top: 6px;">
+        FX STATUS: <span id="calcFxStatus" class="text-amber">USD Asset (0.30% Round-Trip FX)</span>
+      </div>
+    </div>
+
+    <div class="panel-box">
+      <div class="panel-header">
+        <div class="panel-title">LIVE EXECUTION LADDER & RATIO</div>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem;" class="text-green" id="calcRrRatio">R:R = 1:1.90</div>
+      </div>
+      <div class="bracket-ladder">
+        <div class="ladder-step ladder-target2">
+          <span>STAGE 2 TP (50% / RUNNER)</span>
+          <span id="stepT2">$156.60 (+16.0%)</span>
+        </div>
+        <div class="ladder-step ladder-target1">
+          <span>STAGE 1 TP (50% BANK)</span>
+          <span id="stepT1">$146.48 (+8.5%)</span>
+        </div>
+        <div class="ladder-step ladder-breakeven">
+          <span>BREAKEVEN RATCHET LINE</span>
+          <span id="stepBe">$135.54 (+0.4%)</span>
+        </div>
+        <div class="ladder-step ladder-entry">
+          <span>SPOT ENTRY EXECUTION</span>
+          <span id="stepEntry">$135.00</span>
+        </div>
+        <div class="ladder-step ladder-stop">
+          <span>DYNAMIC HARD STOP LOSS</span>
+          <span id="stepStop">$126.23 (-6.5%)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub-Millisecond Reflex Tape & Flight-Recorder -->
+  <div class="panel-box">
+    <div class="panel-header">
+      <div class="panel-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--neon-cyan)"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+        SUB-MILLISECOND REFLEX TAPE & MFE/MAE FLIGHT-RECORDER
+      </div>
+      <div class="status-badge">0 AI TOKENS / PURE CODE-SIDE REFLEX</div>
+    </div>
+
+    <table class="tape-table">
+      <thead>
+        <tr>
+          <th>Execution Time</th>
+          <th>Ticker</th>
+          <th>Signal Type</th>
+          <th>Fill Price</th>
+          <th>Size (£)</th>
+          <th>MFE / MAE</th>
+          <th>Realized Net</th>
+          <th>Friction</th>
+          <th>Latency</th>
+        </tr>
+      </thead>
+      <tbody id="reflexTapeBody">
+        <tr>
+          <td>2026-10-23 03:14:21.004</td>
+          <td><strong class="text-green">NVDA</strong></td>
+          <td><span class="status-badge" style="padding:2px 8px; font-size:0.68rem;">STAGE_1_TP</span></td>
+          <td>$146.48</td>
+          <td>£166.67</td>
+          <td><span class="text-green">+15.8%</span> / <span class="text-crimson">-2.1%</span></td>
+          <td class="text-green">+£14.17 (+8.5%)</td>
+          <td>£0.50</td>
+          <td><span class="latency-tag">0.0004s</span></td>
+        </tr>
+        <tr>
+          <td>2026-10-22 16:25:00.001</td>
+          <td><strong class="text-cyan">RR.L</strong></td>
+          <td><span class="status-badge" style="padding:2px 8px; font-size:0.68rem; border-color:var(--neon-cyan); color:var(--neon-cyan);">10EMA_RUNNER_EXIT</span></td>
+          <td>£5.68</td>
+          <td>£166.67</td>
+          <td><span class="text-green">+9.5%</span> / <span class="text-crimson">-1.2%</span></td>
+          <td class="text-green">+£29.37 (+8.8%)</td>
+          <td>£0.00 (0% FX)</td>
+          <td><span class="latency-tag">0.0002s</span></td>
+        </tr>
+        <tr>
+          <td>2026-10-21 14:45:00.005</td>
+          <td><strong class="text-green">SOXL</strong></td>
+          <td><span class="status-badge" style="padding:2px 8px; font-size:0.68rem;">ORB_BREAKOUT_FILL</span></td>
+          <td>$34.20</td>
+          <td>£333.33</td>
+          <td><span class="text-green">+8.4%</span> / <span class="text-crimson">-3.2%</span></td>
+          <td class="text-amber">OPEN ACTIVE</td>
+          <td>£1.00</td>
+          <td><span class="latency-tag">0.0003s</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    AEGIS TACTICAL QUANT SUITE // ISOLATED DAYTRADING LAB // AUTHORIZED PRODUCTION COMMAND // ZERO RUNTIME TOKEN OVERHEAD
+  </footer>
+
+</div>
+
+<script>
+  // 1. Regime Management Logic
+  let currentRegime = 'BULL_TREND';
+  const regimeConfig = {
+    BULL_TREND: { cashPct: 0, text: 'BULL_TREND', color: 'var(--neon-green)', badge: 'SHIELD READY', arcOffset: 660, equity: '£1,000.00' },
+    BULL_VOLATILE: { cashPct: 50, text: 'BULL_VOLATILE', color: 'var(--neon-amber)', badge: 'PARTIAL SHIELD 50%', arcOffset: 330, equity: '£1,000.00' },
+    BEAR_CORRECTION: { cashPct: 75, text: 'BEAR_CORR', color: 'var(--neon-amber)', badge: 'DEFENSIVE SHIELD 75%', arcOffset: 165, equity: '£1,000.00' },
+    CRASH_PANIC: { cashPct: 100, text: 'CRASH_PANIC', color: 'var(--neon-crimson)', badge: 'AEGIS SHIELD 100%', arcOffset: 0, equity: '£1,000.00' }
+  };
+
+  function setRegime(regime) {
+    currentRegime = regime;
+    const cfg = regimeConfig[regime];
+    
+    // Update active button
+    document.querySelectorAll('.regime-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.includes(regime.split('_')[0]));
+    });
+
+    // Update reactor UI
+    const arc = document.getElementById('reactorArc');
+    const cashVal = document.getElementById('reactorCashPct');
+    const stateText = document.getElementById('reactorStateText');
+    const badge = document.getElementById('reactorBadge');
+    const spinRing = document.getElementById('reactorSpinRing');
+
+    arc.style.strokeDashoffset = cfg.arcOffset;
+    arc.style.stroke = cfg.color;
+    cashVal.textContent = cfg.cashPct + '%';
+    cashVal.style.color = cfg.color;
+    stateText.textContent = cfg.text;
+    stateText.style.color = cfg.color;
+    badge.textContent = cfg.badge;
+    badge.style.borderColor = cfg.color;
+    badge.style.color = cfg.color;
+    spinRing.style.stroke = cfg.color;
+
+    // Update metrics row
+    document.getElementById('tacticalCashVal').textContent = cfg.cashPct + '.0%';
+    document.getElementById('tacticalCashVal').style.color = cfg.color;
+    document.getElementById('macroRegimeVal').textContent = cfg.text;
+    document.getElementById('macroRegimeVal').style.color = cfg.color;
+  }
+
+  // 2. Sonar Squeeze Radar Animation
+  const canvas = document.getElementById('radarCanvas');
+  const ctx = canvas.getContext('2d');
+  const centerX = 155;
+  const centerY = 155;
+  const radius = 135;
+  let sweepAngle = 0;
+
+  // Radar Blips (Simulated Qualified Candidates)
+  const blips = [
+    { ticker: 'NVDA', dist: 0.85, angle: 0.6, compression: '4.2%', rvol: '1.85x', spot: '$135.00', uk: false },
+    { ticker: 'RR.L', dist: 0.65, angle: 2.1, compression: '3.1%', rvol: '2.10x', spot: '£5.25', uk: true },
+    { ticker: 'SOXL', dist: 0.92, angle: 4.2, compression: '5.4%', rvol: '1.92x', spot: '$34.50', uk: false },
+    { ticker: 'PLTR', dist: 0.72, angle: 5.3, compression: '4.8%', rvol: '1.65x', spot: '$42.80', uk: false },
+    { ticker: 'RIO.L', dist: 0.50, angle: 3.4, compression: '2.9%', rvol: '1.55x', spot: '£48.20', uk: true },
+    { ticker: 'AMD', dist: 0.78, angle: 1.4, compression: '4.5%', rvol: '1.74x', spot: '$156.40', uk: false }
+  ];
+
+  function drawRadar() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Grid concentric rings
+    ctx.strokeStyle = 'rgba(0, 245, 155, 0.15)';
+    ctx.lineWidth = 1;
+    [0.25, 0.5, 0.75, 1.0].forEach(frac => {
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radius * frac, 0, Math.PI * 2);
+      ctx.stroke();
+    });
+
+    // Crosshairs
+    ctx.beginPath();
+    ctx.moveTo(centerX - radius, centerY); ctx.lineTo(centerX + radius, centerY);
+    ctx.moveTo(centerX, centerY - radius); ctx.lineTo(centerX, centerY + radius);
+    ctx.stroke();
+
+    // Radar Sweep Line
+    sweepAngle = (sweepAngle + 0.025) % (Math.PI * 2);
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(centerX, centerY);
+    ctx.arc(centerX, centerY, radius, sweepAngle - 0.35, sweepAngle);
+    ctx.closePath();
+    const grad = ctx.createRadialGradient(centerX, centerY, 10, centerX, centerY, radius);
+    grad.addColorStop(0, 'rgba(0, 245, 155, 0)');
+    grad.addColorStop(1, 'rgba(0, 245, 155, 0.28)');
+    ctx.fillStyle = grad;
+    ctx.fill();
+    ctx.restore();
+
+    // Draw Blips
+    blips.forEach(b => {
+      const bx = centerX + Math.cos(b.angle) * (b.dist * radius);
+      const by = centerY + Math.sin(b.angle) * (b.dist * radius);
+
+      // Angle diff for fade
+      const diff = (sweepAngle - b.angle + Math.PI * 2) % (Math.PI * 2);
+      const intensity = Math.max(0.2, 1.0 - (diff / (Math.PI * 1.5)));
+
+      ctx.beginPath();
+      ctx.arc(bx, by, b.uk ? 5 : 4, 0, Math.PI * 2);
+      ctx.fillStyle = b.uk ? `rgba(0, 229, 255, ${intensity})` : `rgba(0, 245, 155, ${intensity})`;
+      ctx.shadowColor = b.uk ? '#00e5ff' : '#00f59b';
+      ctx.shadowBlur = 10;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+
+      // Label
+      ctx.fillStyle = `rgba(255, 255, 255, ${intensity * 0.9})`;
+      ctx.font = '9px JetBrains Mono';
+      ctx.fillText(b.ticker, bx + 7, by + 3);
+    });
+
+    requestAnimationFrame(drawRadar);
+  }
+  drawRadar();
+
+  // Radar hover tooltip
+  canvas.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    const tip = document.getElementById('blipTooltip');
+
+    let found = null;
+    blips.forEach(b => {
+      const bx = centerX + Math.cos(b.angle) * (b.dist * radius);
+      const by = centerY + Math.sin(b.angle) * (b.dist * radius);
+      if (Math.hypot(mx - bx, my - by) < 12) found = b;
+    });
+
+    if (found) {
+      tip.style.opacity = '1';
+      tip.style.left = (e.clientX - rect.left + 15) + 'px';
+      tip.style.top = (e.clientY - rect.top - 10) + 'px';
+      tip.innerHTML = `
+        <strong style="color:${found.uk ? 'var(--neon-cyan)' : 'var(--neon-green)'}">${found.ticker}</strong> ${found.uk ? '[0% FX UK]' : ''}<br>
+        Spot: ${found.spot} | RVOL: ${found.rvol}<br>
+        5D Band: ${found.compression} (SQUEEZE)
+      `;
+    } else {
+      tip.style.opacity = '0';
+    }
+  });
+
+  // 3. Historical Crash Replay Time-Scrubber
+  const replayData = {
+    COVID_2020: {
+      name: "March 2020 COVID Liquidation",
+      dates: ["2020-02-18", "2020-02-24", "2020-02-28", "2020-03-09", "2020-03-16", "2020-03-23", "2020-04-14", "2020-06-01", "2020-12-31"],
+      baseline: [1000, 940, 850, 720, 580, 512, 640, 780, 686],
+      tactical: [1000, 985, 985, 985, 985, 985, 1005, 1020, 1010],
+      cashPct: [0, 100, 100, 100, 100, 100, 50, 0, 0],
+      logs: [
+        "Feb 18: Market at all-time highs. Full 100% deployment across 3 slots.",
+        "Feb 24: QQQ breaks strictly below 10 EMA. Aegis Cash Shield engages! 100% Cash.",
+        "Feb 28: Global panic liquidation accelerates. Tactical sleeve sits 100% in cash at £985.",
+        "Mar 09: Massive gap down limit down. Baseline collapses to £720. Tactical safe in cash.",
+        "Mar 16: Historic VIX spike > 80. Baseline destroyed to £580 (-42%). Tactical cash £985 intact.",
+        "Mar 23: Crash bottom. Baseline reaches -48.75% drawdown (£512). Tactical capital fully preserved.",
+        "Apr 14: QQQ reclaims 10 EMA. Tactical engine selectively deploys £500 into tech leaders.",
+        "Jun 01: Squeeze expansion compounds. Tactical sleeve reaches new peak £1,020.",
+        "Dec 31: Year finishes. Baseline -31.38% (loss of -£313.80). Tactical sleeve finishes +1.03% (Green)!"
+      ]
+    },
+    BEAR_2022: {
+      name: "2022 Tech Bear Market",
+      dates: ["2022-01-03", "2022-01-14", "2022-03-15", "2022-05-18", "2022-09-22", "2022-10-14", "2022-12-30"],
+      baseline: [1000, 920, 810, 650, 480, 410, 375],
+      tactical: [1000, 960, 960, 890, 840, 760, 748],
+      cashPct: [0, 100, 100, 75, 100, 100, 100],
+      logs: [
+        "Jan 03: All-time high start. Sleeve fully active.",
+        "Jan 14: QQQ breaks 10 EMA on inflation shock. 100% Cash shield activated.",
+        "Mar 15: Baseline down -19%. Tactical sleeve safe in cash (£960).",
+        "May 18: Widespread tech selloff. Baseline falls to £650 (-35%). Tactical preserves £890.",
+        "Sep 22: Fed aggressive rate hike. Baseline craters to £480 (-52%).",
+        "Oct 14: Deep bear low. Baseline plunges to £410. Tactical cash shield protects £760.",
+        "Dec 30: Year ends. Baseline crushed by -62.43% (£375). Tactical sleeve limits draw to -25.12% (£748)."
+      ]
+    }
+  };
+
+  let activePreset = 'COVID_2020';
+  let isPlaying = false;
+  let playInterval = null;
+
+  function loadReplayPreset(presetKey) {
+    activePreset = presetKey;
+    document.querySelectorAll('.preset-pill').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.includes(presetKey.split('_')[0]));
+    });
+    resetScrub();
+  }
+
+  function onScrub(val) {
+    const data = replayData[activePreset] || replayData['COVID_2020'];
+    const maxIdx = data.dates.length - 1;
+    const idx = Math.min(maxIdx, Math.floor((val / 60) * maxIdx));
+
+    document.getElementById('scrubberDate').textContent = data.dates[idx];
+    document.getElementById('baselineReplayVal').textContent = '£' + data.baseline[idx].toFixed(2);
+    document.getElementById('tacticalReplayVal').textContent = '£' + data.tactical[idx].toFixed(2);
+
+    const bDd = ((1000 - data.baseline[idx]) / 1000 * 100).toFixed(1);
+    const tDd = ((1000 - data.tactical[idx]) / 1000 * 100).toFixed(1);
+    document.getElementById('baselineDrawdownVal').textContent = `Drawdown: -${bDd}%`;
+    document.getElementById('tacticalDrawdownVal').textContent = `Drawdown: -${tDd}% | Cash: ${data.cashPct[idx]}%`;
+
+    document.getElementById('narrativeLog').textContent = data.logs[idx];
+    
+    // Sync reactor
+    if (data.cashPct[idx] === 100) setRegime('CRASH_PANIC');
+    else if (data.cashPct[idx] === 75) setRegime('BEAR_CORRECTION');
+    else if (data.cashPct[idx] === 50) setRegime('BULL_VOLATILE');
+    else setRegime('BULL_TREND');
+  }
+
+  function togglePlay() {
+    isPlaying = !isPlaying;
+    const btn = document.getElementById('playBtn');
+    if (isPlaying) {
+      btn.textContent = 'PAUSE REPLAY';
+      playInterval = setInterval(() => {
+        const slider = document.getElementById('replaySlider');
+        let nextVal = parseInt(slider.value) + 1;
+        if (nextVal > 60) {
+          nextVal = 0;
+          togglePlay();
+          return;
+        }
+        slider.value = nextVal;
+        onScrub(nextVal);
+      }, 180);
+    } else {
+      btn.textContent = 'PLAY REPLAY';
+      clearInterval(playInterval);
+    }
+  }
+
+  function resetScrub() {
+    if (isPlaying) togglePlay();
+    document.getElementById('replaySlider').value = 0;
+    onScrub(0);
+  }
+
+  // 4. Equity Canvas Chart
+  function drawEquityChart() {
+    const eCanvas = document.getElementById('equityChartCanvas');
+    const eCtx = eCanvas.getContext('2d');
+    const w = eCanvas.width;
+    const h = eCanvas.height;
+
+    eCtx.clearRect(0, 0, w, h);
+
+    // Grid lines
+    eCtx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
+    eCtx.lineWidth = 1;
+    for (let y = 40; y < h - 20; y += 50) {
+      eCtx.beginPath();
+      eCtx.moveTo(40, y); eCtx.lineTo(w - 20, y);
+      eCtx.stroke();
+    }
+
+    // Baseline Curve (Red)
+    const basePoints = [1000, 950, 910, 820, 710, 580, 520, 680, 740, 680, 710, 840, 920, 1050, 1400];
+    // Tactical Curve (Green)
+    const tactPoints = [1000, 985, 985, 985, 985, 985, 1020, 1150, 1280, 1340, 1420, 1680, 1850, 2020];
+
+    function drawLine(points, color, glow) {
+      eCtx.save();
+      eCtx.strokeStyle = color;
+      eCtx.lineWidth = 2.5;
+      eCtx.shadowColor = glow;
+      eCtx.shadowBlur = 12;
+      eCtx.beginPath();
+      const stepX = (w - 70) / (points.length - 1);
+      points.forEach((val, i) => {
+        const x = 50 + (i * stepX);
+        const y = h - 40 - ((val - 400) / 1800 * (h - 70));
+        if (i === 0) eCtx.moveTo(x, y);
+        else eCtx.lineTo(x, y);
+      });
+      eCtx.stroke();
+      eCtx.restore();
+    }
+
+    drawLine(basePoints, '#ff2a5f', 'rgba(255,42,95,0.6)');
+    drawLine(tactPoints, '#00f59b', 'rgba(0,245,155,0.6)');
+  }
+  drawEquityChart();
+
+  // 5. Dynamic Bracket Calculator
+  function setCalc(ticker, price) {
+    document.getElementById('calcTicker').value = ticker;
+    document.getElementById('calcSpot').value = price.toFixed(2);
+    updateBracketCalc();
+  }
+
+  function updateBracketCalc() {
+    const ticker = document.getElementById('calcTicker').value.trim().toUpperCase();
+    const spot = parseFloat(document.getElementById('calcSpot').value) || 100.0;
+    const isUk = ticker.endsWith('.L');
+    const sym = isUk ? '£' : '$';
+
+    document.getElementById('calcFxStatus').innerHTML = isUk 
+      ? '<span class="text-green">UK London-Listed (0.00% Zero-FX ISA Edge)</span>'
+      : '<span class="text-amber">USD Asset (0.30% Round-Trip FX)</span>';
+
+    const stopPct = isUk ? 0.055 : 0.065;
+    const t1Pct = isUk ? 0.050 : 0.085;
+    const t2Pct = isUk ? 0.110 : 0.160;
+
+    const stopP = spot * (1.0 - stopPct);
+    const t1P = spot * (1.0 + t1Pct);
+    const t2P = spot * (1.0 + t2Pct);
+    const beP = spot * (1.0 + (isUk ? 0.001 : 0.004));
+
+    document.getElementById('stepEntry').textContent = `${sym}${spot.toFixed(2)}`;
+    document.getElementById('stepStop').textContent = `${sym}${stopP.toFixed(2)} (-${(stopPct*100).toFixed(1)}%)`;
+    document.getElementById('stepBe').textContent = `${sym}${beP.toFixed(2)} (+${(isUk?0.1:0.4)}%)`;
+    document.getElementById('stepT1').textContent = `${sym}${t1P.toFixed(2)} (+${(t1Pct*100).toFixed(1)}%)`;
+    document.getElementById('stepT2').textContent = `${sym}${t2P.toFixed(2)} (+${(t2Pct*100).toFixed(1)}%)`;
+
+    const rr = ((t1Pct * 0.5 + t2Pct * 0.5) / stopPct).toFixed(2);
+    document.getElementById('calcRrRatio').textContent = `R:R = 1:${rr}`;
+  }
+  updateBracketCalc();
+
+</script>
+</body>
+</html>

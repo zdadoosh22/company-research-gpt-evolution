@@ -1,0 +1,26 @@
+{
+  "summary": {
+    "Cohort_A_High_FCF_Moats": {
+      "cohort": "High-FCF Moats (Forensic Gate Passes)",
+      "total_trades": 1000,
+      "win_rate_pct": 59.2,
+      "profit_factor": 1.491,
+      "net_expectancy_pct": 1.517,
+      "avg_win_pct": 7.783,
+      "avg_loss_pct": -7.574,
+      "stage_2_runner_rate_pct": 30.8,
+      "gap_and_crap_trap_rate_pct": 11.7
+    },
+    "Cohort_B_Speculative_Unprofitable": {
+      "cohort": "Unprofitable / Speculative (Forensic Disqualified)",
+      "total_trades": 1000,
+      "win_rate_pct": 37.4,
+      "profit_factor": 0.401,
+      "net_expectancy_pct": -2.879,
+      "avg_win_pct": 5.161,
+      "avg_loss_pct": -7.683,
+      "stage_2_runner_rate_pct": 7.4,
+      "gap_and_crap_trap_rate_pct": 37.5
+    }
+  }
+}

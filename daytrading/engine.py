@@ -252,6 +252,19 @@ def cmd_live(args):
     daemon_main()
 
 
+def cmd_backtest(args):
+    """Executes All-Weather 6-Cycle Convergence Backtest or 10-Epoch Full-Universe Backtest."""
+    mode = getattr(args, 'mode', '6cycle')
+    if mode in ('6cycle', 'allweather', 'convergence'):
+        from all_weather_recursive_convergence_backtest import main as convergence_main
+        convergence_main()
+    elif mode in ('10epoch', 'fulluniverse', 'decade'):
+        from full_universe_out_of_sample_backtest import main as full_universe_main
+        full_universe_main()
+    else:
+        print(f"[!] Unknown backtest mode: {mode}. Choose '6cycle' or '10epoch'.")
+
+
 def cmd_ui(args):
     """Launches the Aegis Cyber-Institutional Trading War Room Web Dashboard."""
     ui_script = Path(__file__).resolve().parent / "ui" / "serve_dashboard.py"
@@ -301,6 +314,10 @@ def main():
     # live
     sub.add_parser('live', help="Trading 212 REST API Practice Execution Daemon and Supervisor")
 
+    # backtest
+    bt = sub.add_parser('backtest', help="Execute All-Weather 6-Cycle or 10-Epoch Full-Universe Backtest")
+    bt.add_argument('--mode', type=str, default='6cycle', choices=['6cycle', '10epoch', 'allweather', 'fulluniverse'], help="Backtest mode ('6cycle' or '10epoch')")
+
     # ui
     u = sub.add_parser('ui', help="Launch Aegis Cyber Trading War Room Dashboard")
     u.add_argument('--port', type=int, default=8765, help="Local port (default 8765)")
@@ -317,6 +334,8 @@ def main():
         cmd_decay(args)
     elif args.command == 'live':
         cmd_live(args)
+    elif args.command == 'backtest':
+        cmd_backtest(args)
     elif args.command == 'ui':
         cmd_ui(args)
 
