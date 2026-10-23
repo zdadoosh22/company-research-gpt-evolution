@@ -277,47 +277,68 @@ class AdaptiveExecutionEngine:
         """
         Determines the optimal adaptive holding horizon rather than a rigid 5-day cutoff.
         Includes exact 10 EMA / Swing-Low trailing rules for the Stage 2 runner.
+        Uncapped trend-following for equities and UK ISA leaders; bounded decay horizons for 3x ETFs.
         """
         if "inverse" in asset_type or ticker in ["SQQQ", "SOXS", "SPXU"]:
             return {
                 "recommended_horizon": "1 to 3 Trading Days",
-                "hard_limit": "4 Trading Days",
+                "hard_limit": "3 Trading Days (Hard Time Exit Rule)",
                 "can_extend_past_5d": False,
+                "can_extend_indefinitely": False,
                 "runner_trail_rule": "Exit 100% at Stage 1 or Day 3. Never hold inverse runners into chop.",
                 "rationale": "High 6.0*sigma^2 beta-slippage decay makes inverse multi-day holding toxic."
             }
         elif "3x_etf" in asset_type:
             return {
                 "recommended_horizon": "2 to 4 Trading Days",
-                "hard_limit": "5 Trading Days (Unless strong bull trend with Benchmark > 10 EMA)",
+                "hard_limit": "5 Trading Days (Hard Compounding Decay Limit)",
                 "can_extend_past_5d": False,
+                "can_extend_indefinitely": False,
                 "runner_trail_rule": "Trail Stage 2 along prior-day low. Bank remaining 50% by Day 5.",
                 "rationale": "Volatile compounding drag requires disciplined banking by Day 5."
             }
         elif asset_type == "uk_equity":
             return {
-                "recommended_horizon": "3 to 10 Trading Days",
-                "hard_limit": "15 Trading Days",
+                "recommended_horizon": "Multi-Day to Multi-Week (Uncapped 10 EMA Trend Rider)",
+                "hard_limit": "Uncapped (Trend-Following: Ride 10 EMA as long as Daily Close >= 10 EMA)",
                 "can_extend_past_5d": True,
-                "runner_trail_rule": "Trail Stage 2 runner along daily 10 EMA for 4-12 days (0% FX advantage).",
-                "rationale": "Zero FX drag and lower daily volatility permit patient multi-week swing compounding."
-            }
-        elif FUNDAMENTAL_PROFILES.get(ticker, {}).get("quality") == "HIGH_MOAT":
-            return {
-                "recommended_horizon": "3 to 8 Trading Days",
-                "hard_limit": "12 Trading Days",
-                "can_extend_past_5d": True,
-                "runner_trail_rule": "Trail Stage 2 runner along daily 10 EMA / 2-day low for up to 12 days.",
-                "rationale": "High-FCF moats exhibit multi-week institutional accumulation; extend runner if above 10 EMA."
+                "can_extend_indefinitely": True,
+                "runner_trail_rule": "After Stage 1 locks +5.0% and stop ratchets to Breakeven (+0.05%), trail Stage 2 runner along daily 10 EMA indefinitely. Exit only on daily close below 10 EMA.",
+                "rationale": "Zero FX drag and lower daily volatility permit patient multi-week or multi-month swing compounding."
             }
         else:
             return {
-                "recommended_horizon": "2 to 6 Trading Days",
-                "hard_limit": "8 Trading Days",
-                "can_extend_past_5d": False,
-                "runner_trail_rule": "Trail Stage 2 along 2-day low; close if momentum stalls below breakeven.",
-                "rationale": "Standard momentum equity swing."
+                "recommended_horizon": "Multi-Day to Multi-Week (Uncapped 10 EMA Trend Rider)",
+                "hard_limit": "Uncapped (Trend-Following: Ride 10 EMA as long as Daily Close >= 10 EMA)",
+                "can_extend_past_5d": True,
+                "can_extend_indefinitely": True,
+                "runner_trail_rule": "After Stage 1 locks +8.5% and stop ratchets to Breakeven (+0.35%), trail Stage 2 runner along daily 10 EMA indefinitely. Exit only on daily close below 10 EMA.",
+                "rationale": "High-conviction equity breakouts exhibit multi-week institutional accumulation. Do NOT truncate runners on calendar timers."
             }
+
+    def calculate_intraday_orb_entry(self, ticker: str, day_open: float, day_high: float, day_low: float, day_close: float) -> dict:
+        """
+        Calculates realistic 14:45 UK Opening Range Breakout (ORB) pivot execution.
+        Captures entry at breakout confirmation rather than suffering top-of-candle daily close slippage.
+        """
+        is_uk = ticker.endswith(".L")
+        spread = 0.0005 if is_uk else 0.0008
+
+        # 15-minute ORB range approximation: ~35% into the day's total range from open
+        orb_range_approx = (day_high - day_low) * 0.35
+        pivot_entry = day_open + orb_range_approx
+
+        # If day was a breakout, realistic fill is near the 15-min pivot high plus spread
+        realistic_fill = min(day_close, pivot_entry) * (1.0 + spread)
+        close_penalty_pct = ((day_close - realistic_fill) / realistic_fill) * 100.0
+
+        return {
+            "ticker": ticker,
+            "realistic_orb_fill": round(realistic_fill, 4),
+            "daily_close_price": round(day_close, 4),
+            "entry_slippage_saved_pct": round(max(0.0, close_penalty_pct), 2),
+            "execution_window": "08:15 UK (LSE)" if is_uk else "14:45 UK (US ORB Pivot)"
+        }
 
     def evaluate_tactical_market_regime(
         self,

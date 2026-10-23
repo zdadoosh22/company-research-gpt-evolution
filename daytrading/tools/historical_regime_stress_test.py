@@ -44,12 +44,14 @@ CORE_STRESS_UNIVERSE = [
     "RR.L", "RIO.L", "AZN.L", "SHEL.L",
     # 3x Leveraged Bull ETFs
     "TQQQ", "SOXL", "UPRO",
-    # Mega-Cap Tech Titans
+    # Mega-Cap Tech Titans & High-Moat Leaders
     "NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "TSLA",
+    # High-Growth Cloud & Momentum
+    "PLTR", "CRWD", "LLY",
     # High-Beta Semis
     "AMD", "QCOM", "MU",
-    # Industrials & Energy
-    "GE", "XOM", "CAT",
+    # Industrials, Energy & Quality Consumer
+    "GE", "XOM", "CAT", "COST",
     # Speculative Traps (For Forensic Disqualification check)
     "MARA", "RIOT"
 ]
@@ -115,7 +117,19 @@ def compute_ema_series(closes: list[float], period: int = 10) -> list[float]:
 
 
 class StressTrade:
-    def __init__(self, ticker: str, entry_date: str, entry_price: float, size_gbp: float, is_uk: bool, stop_pct: float, t1_pct: float, t2_pct: float, max_days: int = 6):
+    def __init__(
+        self,
+        ticker: str,
+        entry_date: str,
+        entry_price: float,
+        size_gbp: float,
+        is_uk: bool,
+        stop_pct: float,
+        t1_pct: float,
+        t2_pct: float,
+        max_days: int = 6,
+        can_extend_indefinitely: bool = True
+    ):
         self.ticker = ticker
         self.entry_date = entry_date
         self.entry_price = entry_price
@@ -125,6 +139,7 @@ class StressTrade:
         self.t1_pct = t1_pct
         self.t2_pct = t2_pct
         self.max_days = max_days
+        self.can_extend_indefinitely = can_extend_indefinitely
 
         self.stage_1_hit = False
         self.shares_remaining_pct = 1.0
@@ -144,6 +159,7 @@ def run_regime_simulation(
     market_data: dict[str, dict[str, dict]],
     calendar_dates: list[str],
     qqq_ema_map: dict[str, float],
+    ticker_ema_maps: dict[str, dict[str, float]],
     use_tactical_protection: bool,
     initial_capital: float = 1000.0,
     slots: int = 4
@@ -280,17 +296,52 @@ def run_regime_simulation(
                 # Tighten stop to -4.2% if regime flips hostile
                 trade.stop_pct = max(trade.stop_pct, -0.042)
 
-            # F. Time-Horizon Evaluation
-            if trade.hold_days >= trade.max_days:
-                rem_size = trade.size_gbp * trade.shares_remaining_pct
-                pnl_end = (rem_size * intraday_close_pct) - exit_friction
-                trade.realized_pnl_gbp += pnl_end
-                trade.friction_paid_gbp += exit_friction
-                cash_gbp += rem_size + pnl_end
-                trade.is_closed = True
-                trade.exit_reason = "HORIZON_REBALANCE_CLOSE"
-                closed_trades.append(trade)
-                continue
+            # F. Time-Horizon & Uncapped 10 EMA Trend-Trailing Evaluation
+            if trade.stage_1_hit:
+                # Stage 1 has banked 50%! The remaining 50% is a free trailing runner.
+                if not trade.can_extend_indefinitely and trade.hold_days >= 5:
+                    # 3x Leveraged ETFs: 5-day decay cap
+                    rem_size = trade.size_gbp * trade.shares_remaining_pct
+                    pnl_end = (rem_size * intraday_close_pct) - exit_friction
+                    trade.realized_pnl_gbp += pnl_end
+                    trade.friction_paid_gbp += exit_friction
+                    cash_gbp += rem_size + pnl_end
+                    trade.is_closed = True
+                    trade.exit_reason = "LEVERAGED_ETF_DECAY_5D_LIMIT"
+                    closed_trades.append(trade)
+                    continue
+
+                cand_ema = ticker_ema_maps.get(trade.ticker, {}).get(dt, 0.0) if ticker_ema_maps else 0.0
+                if trade.can_extend_indefinitely and cand_ema > 0:
+                    if close_p < cand_ema:
+                        # Daily close broke below the 10 EMA -> exit runner and bank accumulated gain!
+                        rem_size = trade.size_gbp * trade.shares_remaining_pct
+                        pnl_end = (rem_size * intraday_close_pct) - exit_friction
+                        trade.realized_pnl_gbp += pnl_end
+                        trade.friction_paid_gbp += exit_friction
+                        cash_gbp += rem_size + pnl_end
+                        trade.is_closed = True
+                        trade.exit_reason = "10_EMA_DAILY_CLOSE_VIOLATION"
+                        closed_trades.append(trade)
+                        continue
+                    else:
+                        # Trend continues strong above 10 EMA! Trail stop along 10 EMA
+                        ema_gain_pct = (cand_ema - trade.entry_price) / trade.entry_price
+                        trade.ema_trail_pct = max(trade.stop_pct, ema_gain_pct * 0.985)
+            else:
+                # Stage 1 NOT hit yet:
+                # If trade is stuck in stagnant chop without hitting Stage 1, exit after 8d (UK) / 6d (US)
+                max_chop = 8 if trade.is_uk else 6
+                if trade.hold_days >= max_chop:
+                    rem_size = trade.size_gbp * trade.shares_remaining_pct
+                    pnl_end = (rem_size * intraday_close_pct) - exit_friction
+                    trade.realized_pnl_gbp += pnl_end
+                    trade.friction_paid_gbp += exit_friction
+                    cash_gbp += rem_size + pnl_end
+                    trade.is_closed = True
+                    trade.exit_reason = "STAGNANT_CHOP_REBALANCE_CLOSE"
+                    closed_trades.append(trade)
+                    continue
 
             retained_trades.append(trade)
 
@@ -362,21 +413,32 @@ def run_regime_simulation(
                     entry_spread = 0.0012 * actual_budget
                     cash_gbp -= actual_budget
 
-                    bracket = adaptive_engine.calculate_dynamic_bracket(cand, spot=spot, budget=actual_budget)
+                    # Realistic 14:45 UK ORB Pivot Entry Pricing (Phase 2 Rule)
+                    if use_tactical_protection:
+                        orb_res = adaptive_engine.calculate_intraday_orb_entry(
+                            cand, cand_bar["open"], cand_bar["high"], cand_bar["low"], cand_bar["close"]
+                        )
+                        fill_price = orb_res["realistic_orb_fill"]
+                    else:
+                        fill_price = spot
+
+                    bracket = adaptive_engine.calculate_dynamic_bracket(cand, spot=fill_price, budget=actual_budget)
                     stop_pct = -0.052 if is_uk else -0.062
                     t1_pct = 0.050 if is_uk else 0.085
-                    t2_pct = 0.115 if is_uk else 0.175
+                    t2_pct = 0.220 if is_uk else 0.350
 
+                    is_3x = cand in {"TQQQ", "SOXL", "UPRO"}
                     new_trade = StressTrade(
                         ticker=cand,
                         entry_date=dt,
-                        entry_price=spot,
+                        entry_price=fill_price,
                         size_gbp=actual_budget,
                         is_uk=is_uk,
                         stop_pct=stop_pct,
                         t1_pct=t1_pct,
                         t2_pct=t2_pct,
-                        max_days=8 if is_uk else 6
+                        max_days=5 if is_3x else (8 if is_uk else 6),
+                        can_extend_indefinitely=not is_3x
                     )
                     new_trade.friction_paid_gbp += (entry_fx + entry_spread)
                     open_trades.append(new_trade)
@@ -478,15 +540,26 @@ def main():
     sorted_dates = sorted(list(all_dates))
     print(f"[+] Loaded historical bars for {len(market_data)} core instruments across {len(sorted_dates)} trading dates.\n")
 
-    # Calculate Benchmark (QQQ) 10-day EMA
+    # Calculate Benchmark (QQQ) 10-day EMA and all individual ticker 10-day EMAs
     qqq_closes = []
     qqq_dates = []
     for d in sorted_dates:
-        if d in market_data["QQQ"]:
+        if d in market_data.get("QQQ", {}):
             qqq_closes.append(market_data["QQQ"][d]["close"])
             qqq_dates.append(d)
     qqq_ema_values = compute_ema_series(qqq_closes, period=10)
     qqq_ema_map = {d: ema for d, ema in zip(qqq_dates, qqq_ema_values)}
+
+    ticker_ema_maps = {}
+    for ticker in market_data:
+        t_closes = []
+        t_dates = []
+        for d in sorted_dates:
+            if d in market_data[ticker]:
+                t_closes.append(market_data[ticker][d]["close"])
+                t_dates.append(d)
+        emas = compute_ema_series(t_closes, period=10)
+        ticker_ema_maps[ticker] = {d: ema for d, ema in zip(t_dates, emas)}
 
     regimes_to_test = [
         {
@@ -523,6 +596,7 @@ def main():
             market_data=market_data,
             calendar_dates=sorted_dates,
             qqq_ema_map=qqq_ema_map,
+            ticker_ema_maps=ticker_ema_maps,
             use_tactical_protection=False,
             initial_capital=1000.0,
             slots=4
@@ -536,6 +610,7 @@ def main():
             market_data=market_data,
             calendar_dates=sorted_dates,
             qqq_ema_map=qqq_ema_map,
+            ticker_ema_maps=ticker_ema_maps,
             use_tactical_protection=True,
             initial_capital=1000.0,
             slots=4
@@ -559,15 +634,17 @@ def main():
         print(f"    --> Capital Protection     : Drawdown cut by {res_baseline['max_drawdown_pct'] - res_tactical['max_drawdown_pct']:+.2f}%, Alpha: £{res_tactical['ending_equity_gbp'] - res_baseline['ending_equity_gbp']:+.2f}")
 
     summary_payload = {
-        "audit_name": "Historical Stress-Regime Backtest Audit (2020 COVID, 2022 Bear, 2023 Bull)",
+        "audit_name": "High-Fidelity Historical Stress-Regime Backtest Audit V2 (2020 COVID, 2022 Bear, 2023 Bull)",
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),
         "regimes_evaluated": comparative_results
     }
 
     if args.save_evidence:
-        out_file = DAYTRADING_ROOT / "evidence" / "historical_stress_regimes_results.json"
-        out_file.write_text(json.dumps(summary_payload, indent=2), encoding="utf-8")
-        print(f"\n[+] Saved complete stress test telemetry to {out_file}")
+        out_file_v2 = DAYTRADING_ROOT / "evidence" / "historical_stress_regimes_v2_results.json"
+        out_file_v2.write_text(json.dumps(summary_payload, indent=2), encoding="utf-8")
+        out_file_legacy = DAYTRADING_ROOT / "evidence" / "historical_stress_regimes_results.json"
+        out_file_legacy.write_text(json.dumps(summary_payload, indent=2), encoding="utf-8")
+        print(f"\n[+] Saved complete stress test telemetry to {out_file_v2}")
 
 
 if __name__ == "__main__":

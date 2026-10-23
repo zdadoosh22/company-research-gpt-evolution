@@ -36,6 +36,8 @@ try:
     from leveraged_etf_decay_engine import LeveragedETFDecayEngine
     from dual_factor_tactical_fused import FUNDAMENTAL_PROFILES
     from adaptive_execution_engine import AdaptiveExecutionEngine, get_ticker_sector
+    from dynamic_universe_screener import DynamicUniverseScreener
+    from t212_execution_daemon import LiveExecutionDaemon
 except ImportError:
     pass
 
@@ -57,97 +59,43 @@ def _yahoo_opener():
 
 
 def cmd_scan(args):
-    """Scans liquid momentum leaders, leveraged ETFs, and UK leaders for tactical setups."""
-    # Priority multi-sector universe representative of the 200-ticker universe (UK 0% FX prioritized)
-    scan_universe = [
-        # UK London-Listed Zero-FX Leaders (0.00% FX Edge in T212 Stocks ISA)
-        'RR.L', 'RIO.L', 'AZN.L', 'SHEL.L', 'BARC.L',
-        # Leveraged Bull / Bear ETFs
-        'TQQQ', 'SOXL', 'NVDL', 'CONL', 'SQQQ', 'SOXS', 'SPXU',
-        # Mega-Cap Tech & S-Curve Titans
-        'NVDA', 'TSLA', 'AAPL', 'MSFT', 'AMZN', 'META',
-        # High-Beta Semis & AI Hardware
-        'AMD', 'QCOM', 'ARM', 'DELL', 'VRT', 'SMCI',
-        # Cloud, Cybersecurity & Enterprise SaaS
-        'PLTR', 'APP', 'CRWD', 'PANW',
-        # Fintech & Crypto Platforms
-        'COIN', 'UBER', 'HOOD', 'MSTR',
-        # Healthcare & High-Volatility Growth
-        'LLY', 'CELH',
-        # Industrials & Power
-        'VST', 'GE'
-    ]
+    """Scans liquid momentum leaders, leveraged ETFs, and UK leaders for tactical setups via DynamicUniverseScreener."""
+    top_n = getattr(args, 'top', 25)
+    max_comp = getattr(args, 'max_compression', 6.0)
+    min_rvol = getattr(args, 'min_rvol', 1.40)
+    output_json = getattr(args, 'json', False)
 
-    opener, _ = _yahoo_opener()
+    screener = DynamicUniverseScreener()
+    results = screener.run_dynamic_scan(max_compression=max_comp, min_rvol=min_rvol, top_n=top_n)
 
-    print("\n" + "=" * 105)
-    print("                 MASTER QUANTITATIVE TACTICAL SQUEEZE & ORB SCANNER")
-    print("=" * 105)
-    print(f"{'Ticker':<7} | {'Sector / Cluster':<18} | {'Spot':<9} | {'5D Range':<9} | {'Vol Surge':<10} | {'Forensic Gate':<14} | {'Tactical Signal'}")
-    print("-" * 105)
+    if output_json:
+        print(json.dumps(results, indent=2))
+        return
 
-    for t in scan_universe:
-        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{t}?range=1mo&interval=1d"
-        try:
-            raw = json.loads(opener.open(url, timeout=5).read().decode('utf-8'))
-            chart = raw['chart']['result'][0]
-            quotes = chart['indicators']['quote'][0]
-            closes = [c for c in quotes['close'] if c is not None]
-            highs = [h for h in quotes['high'] if h is not None]
-            lows = [l for l in quotes['low'] if l is not None]
-            opens = [o for o in quotes.get('open', closes) if o is not None]
-            volumes = [v for v in quotes.get('volume', []) if v is not None]
+    print("\n" + "=" * 115)
+    print("        DYNAMIC INSTITUTIONAL LIQUIDITY & VOLATILITY SQUEEZE SCREENER (TRADING 212 ISA)")
+    print("=" * 115)
+    print(f"{'Ticker':<7} | {'Sector / Cluster':<18} | {'Spot':<9} | {'5D Band':<8} | {'RVOL':<7} | {'$ Vol/Day':<13} | {'Status / Signal'}")
+    print("-" * 115)
 
-            if len(closes) < 15:
-                continue
+    for r in results:
+        status = "[!] " + r["disqualification_reason"]
+        if r["is_passed"]:
+            status = "[+] SQUEEZE BREAKOUT (QUALIFIED)"
+            if r["is_uk"]:
+                status += " [0% FX UK ANCHOR]"
 
-            spot = closes[-1]
-            prior_5_h = max(highs[-6:-1])
-            prior_5_l = min(lows[-6:-1])
-            range_5d_pct = (prior_5_h - prior_5_l) / spot * 100.0
+        curr_symbol = "£" if r["is_uk"] else "$"
+        spot_str = f"{curr_symbol}{r['spot']:.2f}"
+        dvol_str = f"{curr_symbol}{r['dollar_volume']:,.0f}" if r["dollar_volume"] > 0 else "N/A"
+        band_str = f"{r['compression_pct']:.1f}%" if r["compression_pct"] > 0 else "N/A"
+        rvol_str = f"{r['rvol']:.2f}x" if r["rvol"] > 0 else "N/A"
 
-            avg_vol_10 = sum(volumes[-11:-1]) / 10.0 if len(volumes) >= 11 else volumes[-1]
-            curr_vol = volumes[-1]
-            vol_surge = (curr_vol / avg_vol_10) if avg_vol_10 > 0 else 1.0
+        print(f"{r['ticker']:<7} | {r.get('sector', 'UNKNOWN'):<18} | {spot_str:<9} | {band_str:<8} | {rvol_str:<7} | {dvol_str:<13} | {status}")
 
-            # Forensic Gate Check
-            f_profile = FUNDAMENTAL_PROFILES.get(t, {})
-            if t in ['SMCI', 'MSTR', 'MRNA', 'CRSP', 'MARA', 'RIOT'] or f_profile.get("quality") == "SPECULATIVE_TRAP":
-                f_gate = "DISQUALIFIED"
-            elif t.endswith('.L'):
-                f_gate = "PASS (0% FX)"
-            elif f_profile.get("quality") == "HIGH_MOAT":
-                f_gate = "PASS (Moat)"
-            else:
-                f_gate = "ETF / Neutral"
-
-            # High-Conviction Phase 1 Thresholds: Compression <= 6.0%, Volume Surge >= 1.50x, Above 10D SMA/EMA
-            sma_10 = sum(closes[-10:]) / 10.0
-            is_compressed = range_5d_pct <= 6.0
-            is_breakout = spot > prior_5_h and closes[-1] > opens[-1] and spot >= sma_10
-            is_surge = vol_surge >= 1.50
-
-            if f_gate == "DISQUALIFIED":
-                signal = "HARD EXCLUSION (Gate Fail)"
-            elif is_compressed and is_breakout and is_surge:
-                signal = "ACTIONABLE SQUEEZE BREAKOUT (BUY)"
-            elif is_compressed and is_breakout:
-                signal = "BREAKOUT (Need >=1.5x Vol)"
-            elif is_compressed:
-                signal = "SQUEEZE COMPRESSION (<=6.0% Range)"
-            else:
-                signal = "Normal Range"
-
-            curr_sym = "£" if t.endswith(".L") else "$"
-            sec_name = get_ticker_sector(t)
-            print(f"{t:<7} | {sec_name:<18} | {curr_sym}{spot:>7.2f} | {range_5d_pct:>6.1f}%  | {vol_surge:>7.2f}x   | {f_gate:<14} | {signal}")
-        except Exception:
-            # Fallback display for rate limit or offline
-            sec_name = get_ticker_sector(t)
-            print(f"{t:<7} | {sec_name:<18} | {'--':>8} | {'--':>8} | {'--':>9} | {'--':<14} | Scan Feed Pending")
-            continue
-
-    print("=" * 105 + "\n")
+    print("=" * 115)
+    passed_count = sum(1 for r in results if r["is_passed"])
+    print(f"[*] Evaluated dynamic liquid universe. Actionable Setups Found: {passed_count}/{len(results)}.\n")
 
 
 def cmd_bracket(args):
@@ -292,12 +240,24 @@ def cmd_decay(args):
     print("=" * 65 + "\n")
 
 
+def cmd_live(args):
+    """Launches or queries the Trading 212 REST API Practice Execution Daemon."""
+    from t212_execution_daemon import main as daemon_main
+    # Pass along sys.argv without the 'live' command
+    sys.argv = [sys.argv[0]] + sys.argv[2:]
+    daemon_main()
+
+
 def main():
     parser = argparse.ArgumentParser(description="Master Quantitative Tactical Day Trading Engine")
     sub = parser.add_subparsers(dest='command', required=True)
 
     # scan
-    sub.add_parser('scan', help="Scan active Squeeze, ORB, and VWAP setups across 200-ticker universe")
+    s = sub.add_parser('scan', help="Scan active Squeeze, ORB, and VWAP setups across dynamic universe")
+    s.add_argument('--top', type=int, default=25, help="Top N candidates to display (default 25)")
+    s.add_argument('--max-compression', type=float, default=6.0, help="Maximum 5-day bandwidth pct (default 6.0)")
+    s.add_argument('--min-rvol', type=float, default=1.40, help="Minimum RVOL threshold (default 1.40)")
+    s.add_argument('--json', action='store_true', help="Output raw JSON telemetry")
 
     # bracket
     b = sub.add_parser('bracket', help="Calculate adaptive dynamic bracket orders and horizon plan")
@@ -322,7 +282,10 @@ def main():
     d.add_argument('ticker', type=str, help="Leveraged/Inverse ETF symbol (e.g. TQQQ, SOXL, SQQQ)")
     d.add_argument('--days', type=int, default=5, help="Holding duration in trading days (default 5)")
 
-    args = parser.parse_args()
+    # live
+    sub.add_parser('live', help="Trading 212 REST API Practice Execution Daemon and Supervisor")
+
+    args, unknown = parser.parse_known_args()
     if args.command == 'scan':
         cmd_scan(args)
     elif args.command == 'bracket':
@@ -331,6 +294,8 @@ def main():
         cmd_gex(args)
     elif args.command == 'decay':
         cmd_decay(args)
+    elif args.command == 'live':
+        cmd_live(args)
 
 
 if __name__ == '__main__':

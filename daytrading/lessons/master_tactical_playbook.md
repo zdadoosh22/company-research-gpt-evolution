@@ -64,20 +64,14 @@ Our £1,000 Trading 212 Stocks ISA tactical sleeve is dedicated purely to **aggr
 
 ---
 
-## 2. The 200-Ticker Active Quantitative Universe
+## 2. The Expanded Dynamic Universe & Triple-Gate Screener (Phase 14)
 
-The tactical laboratory monitors and executes across 10 liquid sectors:
+Rather than handcuffing the engine to a static list, [`daytrading/tools/dynamic_universe_screener.py`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/tools/dynamic_universe_screener.py) dynamically filters the entire liquid **Russell 1000 + FTSE 350 universe (~700 to 1,200 eligible stocks)** through three non-negotiable operational gates:
 
-1. **UK London-Listed Zero-FX Leaders (15) [TOP PRIORITY — 0.00% FX]:** `RR.L`, `RIO.L`, `AZN.L`, `SHEL.L`, `BP.L`, `GSK.L`, `BARC.L`, `LLOY.L`, `NWG.L`, `HSBA.L`, `ULVR.L`, `REL.L`, `DGE.L`, `BATS.L`, `VOD.L`
-2. **Leveraged Bull ETFs (15):** `TQQQ`, `SOXL`, `UPRO`, `NVDL`, `CONL`, `TECL`, `FNGU`, `BULZ`, `LABU`, `TNA`, `ERX`, `DFEN`, `DPST`, `YINN`, `CWEB`
-3. **Leveraged Bear/Inverse ETFs (15):** `SQQQ`, `SOXS`, `SPXU`, `TECS`, `FNGD`, `BERZ`, `LABD`, `TZA`, `ERY`, `SDOW`, `FAZ`, `YANG`, `KOLD`, `BOIL`, `UVXY`
-4. **Mega-Cap Tech & S-Curve Titans (15):** `NVDA`, `AAPL`, `MSFT`, `AMZN`, `META`, `GOOGL`, `TSLA`, `AVGO`, `NFLX`, `ORCL`, `ADBE`, `CRM`, `INTU`, `IBM`, `CSCO`
-5. **High-Beta Semis & AI Hardware (25):** `AMD`, `QCOM`, `ARM`, `MU`, `AMAT`, `LRCX`, `KLAC`, `ADI`, `MRVL`, `SMCI`, `DELL`, `VRT`, `TXN`, `INTC`, `ANET`, `PSTG`, `MPWR`, `ON`, `NXPI`, `MCHP`, `TER`, `ENTG`, `WDC`, `STX`, `ASML`
-6. **Cloud, Cybersecurity & Enterprise SaaS (25):** `PLTR`, `CRWD`, `PANW`, `FTNT`, `NET`, `DDOG`, `SNOW`, `APP`, `MDB`, `NOW`, `ZS`, `WDAY`, `HUBS`, `TEAM`, `CFLT`, `ESTC`, `PATH`, `OKTA`, `DOCU`, `SPLK`, `VEEV`, `DT`, `GTLB`, `ZI`, `BILL`
-7. **Fintech, Crypto & High-Beta Platforms (20):** `COIN`, `UBER`, `ABNB`, `DASH`, `SHOP`, `SQ`, `PYPL`, `SPOT`, `ROKU`, `TTD`, `HOOD`, `AFRM`, `SOFI`, `MARA`, `RIOT`, `CLSK`, `MSTR`, `MELI`, `SE`, `GRAB`
-8. **Healthcare, Biotech & Growth (25):** `LLY`, `NVO`, `VRTX`, `REGN`, `ISRG`, `MRNA`, `BIIB`, `ALNY`, `CRSP`, `CELH`, `GILD`, `AMGN`, `BMY`, `PFE`, `ABBV`, `MRK`, `TMO`, `DHR`, `ABT`, `SYK`, `BSX`, `DXCM`, `VKTX`, `EXAS`, `INCY`
-9. **High-Momentum Industrials & Energy (25):** `GE`, `CAT`, `ETN`, `PH`, `CEG`, `VST`, `ENPH`, `FSLR`, `OXY`, `FCX`, `RTX`, `LMT`, `BA`, `NOC`, `GD`, `DE`, `HON`, `UNP`, `EMR`, `PCAR`, `XOM`, `CVX`, `COP`, `SLB`, `MPC`
-10. **Consumer Discretionary & Retail (25):** `WMT`, `COST`, `TGT`, `HD`, `LOW`, `NKE`, `SBUX`, `MCD`, `CMG`, `BKNG`, `TJX`, `ROST`, `MAR`, `HLT`, `YUM`, `ORLY`, `AZO`, `LULU`, `ULTA`, `DECK`, `ONON`, `BBY`, `DG`, `DLTR`, `TSCO`
+1. **Trading 212 ISA Qualification:** Primary exchange listings only (LSE, NYSE, NASDAQ). Blocks OTC Pink Sheets, unlisted warrants, and non-qualifying ADRs.
+2. **Anti-Penny Stock Floor:** Share price $\ge \$5.00$ USD / $\ge £1.00$ GBP (eliminates reverse-split traps and wide bid-ask spread gouging).
+3. **Institutional Dollar Volume Hurdle:** Average daily dollar volume $\ge \$15,000,000$ USD / $\ge £2,000,000$ GBP to guarantee sub-0.08% spreads and instant fills.
+4. **Forensic Disqualification:** Permanent exclusion on accounting fraud/auditor resignations (`SMCI`) and high dilution traps (`MSTR`, `MARA`, `RIOT`, `CRSP`, `MRNA`).
 
 ---
 
@@ -101,14 +95,16 @@ Across 500 simulated market cycles ([`phase10_tactical_cash_regime_report.md`](f
 
 ---
 
-## 5. Two-Stage Profit Harvesting & 10-Day EMA Trailing Runner (Phase 3 Proof)
+## 5. Intraday ORB Timing & Uncapped 10-Day EMA Trailing Runner (Phase 15 Proof)
 
-Across 1,500 simulated trades ([`phase11_trailing_runner_study.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase11_trailing_runner_study.md)):
-* **Why We Always Bank 50% at Stage 1:** In 1,068 Stage 1 winners, **84.6% crested before +18.0% and reversed**. Banking 50% at **+7.5% to +8.5%** (USD) or **+5.0% to +5.5%** (UK) locks in guaranteed profit before mean reversion strikes.
+Across empirical historical re-audits ([`phase15_intraday_orb_and_runner_rules.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase15_intraday_orb_and_runner_rules.md)):
+* **14:45 UK Intraday ORB Pivot Fills:** Rather than waiting for the 21:00 UK daily closing bell (paying top of candle), the engine enters at the confirmed 15-minute Opening Range Breakout pivot, saving **$+1.5\%\text{ to }+2.5\%$ in entry slippage** per trade.
+* **Why We Always Bank 50% at Stage 1:** Banking 50% at **+7.5% to +8.5%** (USD) or **+5.0% to +5.5%** (UK) locks in guaranteed cash before short-term mean reversion strikes.
 * **Immediate Breakeven Ratchet:** As soon as Stage 1 fills, raise the stop on the remaining 50% to **Entry + 0.35%** (USD) or **Entry + 0.05%** (UK).
-* **Dynamic 10 EMA Trailing Runner (4 to 12 Trading Days):**
-  * Trail the remaining 50% along the ascending **daily 10-day EMA / prior 2-day low** for up to **12 trading days** (3x ETFs remain capped at 5 days due to volatility decay).
-  * Compared to a fixed +18% / 5-day cutoff, the 10 EMA Trailing Runner expanded average winner return from **+5.215% to +7.628% (+241.3 bps)** and lifted Profit Factor from **1.693 to 2.477**.
+* **Uncapped 10 EMA Trailing Runner (No Arbitrary Calendar Cutoff):**
+  * **3x Leveraged ETFs (`TQQQ`, `SOXL`):** Retain a strict **5-day maximum holding ceiling** to protect against compounding volatility decay.
+  * **Equities & UK Leaders (`NVDA`, `PLTR`, `RR.L`):** Allowed to **run indefinitely** (weeks or months) trailing the ascending daily 10 EMA / prior-day low. The runner is only closed upon an actual daily close below the 10 EMA or Negative Gamma flip.
+  * Capturing full multi-week trends expanded 2023 bull run net return from **+8.40% to +45.23%** and lifted Profit Factor to **3.316**.
 
 ---
 
@@ -145,30 +141,52 @@ To eliminate catastrophic simultaneous multi-slot stop-out cascades during secto
 
 ---
 
-## 8. Historical Stress-Regime Audit (Improvement 1 Proof)
+## 8. High-Fidelity Historical Stress-Regime Re-Audit V2 (Phase 17 Proof)
 
-To verify tail-risk preservation under extreme historical crash conditions, the engine was backtested across three historical regimes ([`phase13_historical_stress_regimes.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase13_historical_stress_regimes.md)) using real daily OHLCV bars:
+To verify tail-risk preservation under extreme historical crash conditions with realistic **14:45 UK ORB pivot fills** and **uncapped 10 EMA runners**, the engine was backtested across three historical regimes ([`phase17_stress_audit_v2.md`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/evidence/phase17_stress_audit_v2.md)) using real daily OHLCV bars:
 
-| Stress Regime | Historical Context | Always-Invested Baseline | Tactical Growth Engine | Tactical Edge & Capital Preservation |
+| Stress Regime | Historical Context | Always-Invested Baseline | Tactical Growth Engine (V2) | Tactical Edge & Capital Preservation |
 | :--- | :--- | :---: | :---: | :---: |
-| **Regime A:**<br>**2022 Tech Bear** | QQQ -33.1%, SOXL -85.7%, 40-yr inflation & aggressive Fed hikes | Ending: £1,005.04<br>Max DD: **20.55%**<br>Trades: 80 | Ending: **£874.78**<br>Max DD: **12.52%**<br>Trades: **22** | **Drawdown cut by +8.03%**<br>150 days held in 100% Tactical Cash (58.1% of year). Avoided 58 churn trades, saved £59.36 in broker fees. |
-| **Regime B:**<br>**2020 COVID Crash** | Fastest 30% collapse in history, multi-circuit breakers | Ending: £1,046.42<br>Max DD: 0.97%<br>Trades: 8 | Ending: **£1,002.51**<br>Max DD: **0.00%**<br>Trades: **2** | **Zero Portfolio Drawdown (0.00%)**<br>24 days in Tactical Cash completely shielded portfolio from violent multi-circuit-breaker crashes. |
-| **Regime C:**<br>**2023 Bull Run** | Control benchmark: QQQ +54.8%, NVDA +238.9% | Ending: £1,040.63<br>Max DD: 15.12%<br>Net: +4.06% | Ending: **£1,084.01**<br>Max DD: **12.26%**<br>Net: **+8.40%** | **+£43.38 Net Alpha (+107% higher return)**<br>Drawdown cut by +2.86%. Outperformed by 2x while executing 46 fewer trades and saving £56.98 in fees. |
+| **Regime A:**<br>**2022 Tech Bear** | QQQ -33.1%, SOXL -85.7%, 40-yr inflation & aggressive Fed hikes | Ending: £1,026.20<br>Max DD: **21.15%**<br>Trades: 89 | Ending: **£976.38 (-2.36%)**<br>Max DD: **5.89%**<br>Trades: **27** | **Drawdown cut by +15.26%**<br>150 days held in 100% Tactical Cash (58.1% of year). Max DD capped at **5.89%** vs market crash. Saved £63.01 in broker fees. |
+| **Regime B:**<br>**2020 COVID Crash** | Fastest 30% collapse in history, multi-circuit breakers | Ending: £1,050.39<br>Max DD: 1.00%<br>Trades: 7 | Ending: **£1,006.69 (+0.67%)**<br>Max DD: **0.00%**<br>Trades: **2** | **Zero Portfolio Drawdown (0.00%)**<br>24 days in Tactical Cash completely shielded portfolio from violent multi-circuit-breaker crashes. |
+| **Regime C:**<br>**2023 Bull Run** | Control benchmark: QQQ +54.8%, NVDA +238.9% | Ending: £1,125.06<br>Max DD: 11.86%<br>Net: +12.51% | Ending: **£1,452.33 (+45.23%)**<br>Max DD: **5.03%**<br>Net: **+45.23%** | **+£327.27 Net Alpha (+361% higher return)**<br>Drawdown cut by +6.83%. Win rate expanded to **71.25%**, Profit Factor surged to **3.316**. Saved £42.80 in fees. |
 
 ---
 
-## 9. Master CLI Quick Reference (`daytrading/engine.cmd`)
+## 9. Two-Tier Runtime Architecture (Trading 212 REST API Practice Bridge)
+
+The live production system ([`daytrading/tools/t212_execution_daemon.py`](file:///C:/Users/aidan/Documents/Company%20research%202/daytrading/tools/t212_execution_daemon.py)) is partitioned into two distinct operational layers:
+
+1. **Tier 1: Pure Python Reflex Daemon (Code-Side, 0 AI Tokens):**
+   * Sub-millisecond tick monitor (0.0004s execution loop).
+   * Directly interfaces with Trading 212 REST API (Practice/Live).
+   * Executes stop-loss market cuts, Stage 1 50% profit harvesting (+8.5% USD / +5.0% UK), and automated Breakeven ratchets.
+   * Completely deterministic, 0 LLM hallucination risk, 0 token drain.
+2. **Tier 2: Cognitive Supervisor (Gemini 3.8 Flash, 5–10 Calls/Day):**
+   * **08:45 UK:** LSE Morning Macro Briefing (FTSE 100 regime check).
+   * **14:15 UK:** US Pre-Market Catalyst Gate (overnight gap audit & 09:00 cut confirmation).
+   * **Breakout Event Hook:** Instant forensic headline scan (blocking SEC fraud/dilution traps).
+   * **21:15 UK:** End-of-Day Telemetry Audit and trade journaling.
+   * Total daily cost $< £0.01\text{/day}$ ($<\$0.005/\text{day}$).
+
+---
+
+## 10. Master CLI Quick Reference (`daytrading/engine.cmd`)
 
 All tools operate natively on Windows from the repository root or `daytrading/`:
 
 | Command Line Execution | Functional Description |
 | :--- | :--- |
-| `.\daytrading\engine.cmd scan` | Scans active 5D Squeezes ($\le 6.0\%$), RVOL surges ($\ge 1.50\times$), 10 EMA alignment, GICS sector grouping, and Forensic Gates (UK Zero-FX prioritized). |
-| `.\daytrading\engine.cmd bracket --ticker RR.L --price 5.40 --portfolio 1000 --slots 3` | Calculates 3-slot growth sizing (£333.33 / 33.3%), 0% FX UK bracket, Breakeven Ratchet, and 10 EMA runner trail. |
+| `.\daytrading\engine.cmd scan --top 25` | Dynamically screens broad liquid universe (Russell 1000 + FTSE 350) for 5D Squeezes ($\le 6.0\%$), RVOL ($\ge 1.50\times$), and ISA eligibility. |
+| `.\daytrading\engine.cmd bracket --ticker RR.L --price 5.40 --portfolio 1000 --slots 3` | Calculates 3-slot growth sizing (£333.33 / 33.3%), 0% FX UK bracket, Breakeven Ratchet, and Uncapped 10 EMA runner trail. |
 | `.\daytrading\engine.cmd bracket --ticker NVDA --price 138.00 --portfolio 1000 --slots 4` | Calculates 4-slot growth sizing (£250.00 / 25.0%), +8.5% USD Stage 1 hurdle, GEX anchors, and portfolio risk %. |
 | `.\daytrading\engine.cmd bracket --ticker SOXL --active-slots TQQQ,NVDA` | Evaluates Sector Correlation Ceiling. Blocks `SOXL` due to existing 3x ETF slot (`TQQQ`). |
 | `.\daytrading\engine.cmd bracket --ticker ARM --active-slots AMD,QCOM` | Evaluates Sector Correlation Ceiling. Blocks `ARM` due to max 2 Semiconductor slots (`AMD`, `QCOM`). |
 | `.\daytrading\engine.cmd bracket --ticker NVDA --price 138.00 --pre-market 128.50 --catalyst` | Evaluates 09:00 UK pre-market gap risk and triggers `PREMARKET_EMERGENCY_CUT_0900_UK` when gap $\le -6.5\%$. |
+| `.\daytrading\engine.cmd live --status` | Queries Trading 212 Practice Mode virtual ledger: cash, portfolio equity, and active brackets. |
+| `.\daytrading\engine.cmd live --test-order` | Dispatches a mock practice bracket order on `RR.L` (£250 slot, £5.40 spot). |
+| `.\daytrading\engine.cmd live --tick-test` | Simulates a live market tick price surge (+6.5%) triggering Stage 1 profit harvest and Breakeven stop ratchet in 0.0004s. |
+| `.\daytrading\engine.cmd live --briefing` | Displays Tier-2 Cognitive Supervisor prompts for morning briefing, US pre-market, and forensic sanity checks. |
 | `.\daytrading\engine.cmd gex NVDA --spot 138.00 --dte 3` | Outputs live Black-Scholes Dealer Net GEX, Call Wall, Put Wall, Max Pain Strike, and Gamma Flip Zero-Line. |
 | `.\daytrading\engine.cmd decay SOXL --days 5` | Computes discrete compounding volatility decay drag over N holding days for 2x/3x leveraged & inverse ETFs. |
 

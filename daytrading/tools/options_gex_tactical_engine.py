@@ -40,8 +40,10 @@ class OptionsGEXTacticalEngine:
         Returns strikes, call_oi, put_oi, strike_gex, net_gex, walls.
         """
         tte = max(0.001, dte / 365.0)
-        step = round(spot * 0.01, 1) if spot > 50 else 0.5
-        strikes = [round(spot + (i * step), 1) for i in range(-15, 16)]
+        step = max(0.05, round(spot * 0.01, 2) if spot > 50 else round(spot * 0.02, 2))
+        strikes = [round(spot + (i * step), 2) for i in range(-15, 16) if (spot + (i * step)) > 0.1]
+        if not strikes:
+            strikes = [round(spot, 2)]
         
         chain = []
         call_wall = {"strike": 0, "oi": -1}
